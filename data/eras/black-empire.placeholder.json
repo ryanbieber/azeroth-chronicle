@@ -7,10 +7,10 @@
   "dateLabel": "Primordial era — placeholder content",
   "summary": "A non-canonical fixture used to prove era loading, layers, stories, and deep links.",
   "mapStateId": "black-empire-map-placeholder",
-  "defaultLayerIds": ["regions", "battles", "routes", "labels"],
-  "featuredEventIds": [],
+  "defaultLayerIds": ["regions", "battles", "locations", "routes", "labels"],
+  "featuredEventIds": ["archive-approach-placeholder", "archive-aftermath-placeholder"],
   "featuredBattleIds": ["atlas-conflict-placeholder"],
   "storyGuideId": "black-empire-guide-placeholder",
-  "sourceIds": [],
+  "sourceIds": ["fixture-specification-placeholder"],
   "contentStatus": "placeholder"
 }

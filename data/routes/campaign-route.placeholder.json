@@ -1,0 +1,9 @@
+{
+  "id": "campaign-route-placeholder",
+  "name": "Placeholder campaign route",
+  "worldspaceId": "azeroth",
+  "geometryId": "black-empire-route-placeholder",
+  "geographicCertainty": "exact",
+  "sourceIds": ["fixture-specification-placeholder"],
+  "contentStatus": "placeholder"
+}

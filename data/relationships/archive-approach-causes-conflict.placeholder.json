@@ -1,0 +1,8 @@
+{
+  "id": "archive-approach-causes-conflict-placeholder",
+  "fromId": "archive-approach-placeholder",
+  "toId": "atlas-conflict-placeholder",
+  "type": "causes",
+  "citationIds": ["fixture-interaction-citation-placeholder"],
+  "confidence": "explicit"
+}

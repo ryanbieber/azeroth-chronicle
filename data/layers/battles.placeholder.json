@@ -1,0 +1,6 @@
+{
+  "id": "battles",
+  "name": "Battles",
+  "kind": "battles",
+  "description": "Conflict markers whose geography is known well enough to display."
+}

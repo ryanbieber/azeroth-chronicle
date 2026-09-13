@@ -6,6 +6,7 @@
   "eraId": "black-empire",
   "worldspaceId": "azeroth",
   "summary": "A fictional conflict used only to exercise battle selection and dossier rendering.",
+  "campaignId": "archive-campaign-placeholder",
   "combatants": [
     { "factionId": "archive-expedition-placeholder", "role": "attacker" },
     { "factionId": "unnamed-domain-placeholder", "role": "defender" }
@@ -18,20 +19,31 @@
       "id": "placeholder-approach",
       "title": "Approach",
       "summary": "An animated route appears above the map plane.",
-      "routeId": "black-empire-route-placeholder"
+      "routeId": "campaign-route-placeholder",
+      "durationMs": 1200,
+      "narration": "The placeholder route is revealed for playback testing.",
+      "visualActions": [
+        { "type": "show_route", "routeId": "campaign-route-placeholder" }
+      ]
     },
     {
       "id": "placeholder-resolution",
       "title": "Resolution",
-      "summary": "The prototype returns to a deterministic final state."
+      "summary": "The prototype returns to a deterministic final state.",
+      "durationMs": 800,
+      "narration": "Playback settles on the documented placeholder outcome.",
+      "visualActions": [
+        { "type": "show_battle", "battleId": "atlas-conflict-placeholder" }
+      ]
     }
   ],
   "outcome": {
     "summary": "The interaction model is proven; no lore claim is made."
   },
-  "geographicCertainty": "unknown",
+  "geographicCertainty": "exact",
+  "geometryId": "atlas-conflict-location-placeholder",
   "importance": "major",
-  "position": [1.6, 0.35, -0.8],
-  "sourceIds": [],
+  "sourceIds": ["fixture-specification-placeholder"],
+  "claimIds": ["atlas-conflict-status-claim-placeholder"],
   "contentStatus": "placeholder"
 }

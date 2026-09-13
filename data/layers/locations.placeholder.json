@@ -1,0 +1,6 @@
+{
+  "id": "locations",
+  "name": "Locations",
+  "kind": "locations",
+  "description": "Time-aware location markers backed by SpatialState records."
+}

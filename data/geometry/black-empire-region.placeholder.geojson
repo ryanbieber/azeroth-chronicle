@@ -29,7 +29,31 @@
       },
       "geometry": {
         "type": "LineString",
-        "coordinates": [[3100, 6500], [4700, 5200], [6600, 4200]]
+        "coordinates": [[3100, 6500], [4700, 5200], [6600, 5800]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "atlas-conflict-location-placeholder",
+      "properties": {
+        "name": "Placeholder conflict marker",
+        "contentStatus": "placeholder"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [6600, 5800]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "archive-site-location-placeholder",
+      "properties": {
+        "name": "Archive site placeholder",
+        "contentStatus": "placeholder"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [3100, 6500]
       }
     }
   ]

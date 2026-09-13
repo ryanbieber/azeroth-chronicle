@@ -3,8 +3,17 @@
     "id": "black-empire-guide-placeholder",
     "eraId": "black-empire",
     "title": "Experience the Era prototype",
-    "description": "A short fictional sequence for testing the reusable story engine.",
-    "nodeIds": ["story-establish-placeholder", "story-conflict-placeholder"],
+    "description": "An eight-node fictional sequence for testing the reusable story engine without making lore claims.",
+    "nodeIds": [
+      "story-establish-placeholder",
+      "story-domain-placeholder",
+      "story-route-placeholder",
+      "story-conflict-placeholder",
+      "story-focus-placeholder",
+      "story-evidence-placeholder",
+      "story-consequence-placeholder",
+      "story-transition-placeholder"
+    ],
     "contentStatus": "placeholder"
   },
   "nodes": [
@@ -12,33 +21,92 @@
       "id": "story-establish-placeholder",
       "guideId": "black-empire-guide-placeholder",
       "title": "Establish the map",
-      "narration": "This node proves that a guide can focus the scene and change layers without embedding behavior in the UI.",
-      "camera": {
-        "position": [0, 7, 7],
-        "target": [0, 0, 0],
-        "durationMs": 900
-      },
-      "visualActions": [
-        { "type": "toggle_layer", "layerId": "regions", "visible": true }
-      ],
+      "narration": "This node proves that a guide can establish a scene without embedding era behavior in the UI.",
+      "camera": { "position": [0, 7, 7], "target": [0, 0, 0], "durationMs": 900 },
+      "visualActions": [{ "type": "toggle_layer", "layerId": "regions", "visible": true }],
+      "nextNodeIds": ["story-domain-placeholder"]
+    },
+    {
+      "id": "story-domain-placeholder",
+      "guideId": "black-empire-guide-placeholder",
+      "title": "Reveal a domain",
+      "narration": "The fictional domain demonstrates data-driven highlighting and optional dossier branches.",
+      "entityIds": ["unnamed-domain-placeholder"],
+      "optionalExploreEntityIds": ["unnamed-domain-placeholder"],
+      "visualActions": [{ "type": "highlight_faction", "factionId": "unnamed-domain-placeholder" }],
+      "previousNodeId": "story-establish-placeholder",
+      "nextNodeIds": ["story-route-placeholder"]
+    },
+    {
+      "id": "story-route-placeholder",
+      "guideId": "black-empire-guide-placeholder",
+      "title": "Trace an approach",
+      "narration": "A source-space LineString becomes a reusable historical route overlay.",
+      "eventIds": ["archive-approach-placeholder"],
+      "visualActions": [{ "type": "show_route", "routeId": "campaign-route-placeholder" }],
+      "previousNodeId": "story-domain-placeholder",
       "nextNodeIds": ["story-conflict-placeholder"]
     },
     {
       "id": "story-conflict-placeholder",
       "guideId": "black-empire-guide-placeholder",
       "title": "Reveal a conflict",
-      "narration": "This fictional node reveals the placeholder battle marker and route. It contains no canonical Warcraft assertion.",
+      "narration": "This fictional node reveals the placeholder battle marker. It contains no canonical Warcraft assertion.",
       "battleIds": ["atlas-conflict-placeholder"],
-      "camera": {
-        "position": [3, 5, 5],
-        "target": [1.6, 0, -0.8],
-        "durationMs": 900
-      },
+      "camera": { "position": [3, 5, 5], "target": [1.6, 0, -0.8], "durationMs": 900 },
       "visualActions": [
         { "type": "show_battle", "battleId": "atlas-conflict-placeholder" },
-        { "type": "show_route", "routeId": "black-empire-route-placeholder" }
+        { "type": "show_route", "routeId": "campaign-route-placeholder" }
       ],
-      "previousNodeId": "story-establish-placeholder",
+      "previousNodeId": "story-route-placeholder",
+      "nextNodeIds": ["story-focus-placeholder"]
+    },
+    {
+      "id": "story-focus-placeholder",
+      "guideId": "black-empire-guide-placeholder",
+      "title": "Focus a location",
+      "narration": "Time-varying spatial data focuses a fictional archive site without assuming a permanent entity position.",
+      "locationIds": ["archive-site-placeholder"],
+      "visualActions": [{ "type": "focus_location", "locationId": "archive-site-placeholder" }],
+      "previousNodeId": "story-conflict-placeholder",
+      "nextNodeIds": ["story-evidence-placeholder"]
+    },
+    {
+      "id": "story-evidence-placeholder",
+      "guideId": "black-empire-guide-placeholder",
+      "title": "Inspect the evidence",
+      "narration": "The guide exposes the same fictional claim and citation available in the permanent dossier.",
+      "optionalExploreEntityIds": ["archive-site-placeholder"],
+      "visualActions": [{
+        "type": "show_relationships",
+        "relationshipIds": ["archive-approach-causes-conflict-placeholder"]
+      }],
+      "previousNodeId": "story-focus-placeholder",
+      "nextNodeIds": ["story-consequence-placeholder"]
+    },
+    {
+      "id": "story-consequence-placeholder",
+      "guideId": "black-empire-guide-placeholder",
+      "title": "Follow the consequence",
+      "narration": "A second source-aware edge demonstrates what the placeholder conflict changed next.",
+      "eventIds": ["archive-aftermath-placeholder"],
+      "visualActions": [{
+        "type": "show_relationships",
+        "relationshipIds": ["archive-conflict-causes-aftermath-placeholder"]
+      }],
+      "previousNodeId": "story-evidence-placeholder",
+      "nextNodeIds": ["story-transition-placeholder"]
+    },
+    {
+      "id": "story-transition-placeholder",
+      "guideId": "black-empire-guide-placeholder",
+      "title": "Reach the final state",
+      "narration": "The prototype settles deterministically. A reviewed guide would connect this point to the next historical map state.",
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "black-empire-map-placeholder" },
+        { "type": "toggle_layer", "layerId": "labels", "visible": true }
+      ],
+      "previousNodeId": "story-consequence-placeholder",
       "nextNodeIds": []
     }
   ]

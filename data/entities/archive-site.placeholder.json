@@ -1,0 +1,11 @@
+{
+  "id": "archive-site-placeholder",
+  "type": "location",
+  "name": "Archive Site Placeholder",
+  "slug": "archive-site-placeholder",
+  "shortDescription": "A fictional location used to exercise time-aware spatial focus.",
+  "firstEraId": "black-empire",
+  "sourceIds": ["fixture-specification-placeholder"],
+  "tags": ["placeholder", "location"],
+  "contentStatus": "placeholder"
+}

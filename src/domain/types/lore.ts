@@ -46,6 +46,7 @@ export interface Claim {
   confidence: Confidence;
   status: 'active' | 'disputed' | 'superseded';
   editorNote?: string;
+  labelPriority?: number;
 }
 
 export interface Worldspace {
@@ -122,6 +123,38 @@ export interface SpatialState {
   position?: [number, number, number];
   geographicCertainty: GeographicCertainty;
   sourceIds: EntityId[];
+  editorNote?: string;
+  labelPriority?: number;
+}
+
+export interface LayerDefinition {
+  id: EntityId;
+  name: string;
+  kind: 'regions' | 'battles' | 'locations' | 'routes' | 'labels';
+  description?: string;
+}
+
+export interface Route {
+  id: EntityId;
+  name: string;
+  worldspaceId: EntityId;
+  geometryId: EntityId;
+  geographicCertainty: GeographicCertainty;
+  sourceIds: EntityId[];
+  editorNote?: string;
+  contentStatus: 'placeholder' | 'research' | 'reviewed' | 'published';
+}
+
+export interface Campaign {
+  id: EntityId;
+  name: string;
+  slug: string;
+  eraId: EntityId;
+  summary: string;
+  battleIds: EntityId[];
+  routeIds?: EntityId[];
+  sourceIds: EntityId[];
+  contentStatus: 'placeholder' | 'research' | 'reviewed' | 'published';
 }
 
 export interface LoreEvent {
@@ -155,6 +188,10 @@ export interface BattlePhase {
   title: string;
   summary: string;
   routeId?: EntityId;
+  durationMs?: number;
+  narration?: string;
+  camera?: CameraInstruction;
+  visualActions?: VisualAction[];
 }
 
 export interface Battle extends LoreEvent {
@@ -165,9 +202,11 @@ export interface Battle extends LoreEvent {
   phases?: BattlePhase[];
   outcome: { summary: string; winnerFactionId?: EntityId };
   geographicCertainty: GeographicCertainty;
+  geographicEditorNote?: string;
   animationId?: EntityId;
   importance: 'minor' | 'major' | 'era_defining';
   position?: [number, number, number];
+  geometryId?: EntityId;
 }
 
 export type RelationshipType =
@@ -239,6 +278,10 @@ export interface StoryGuide {
 export interface LoreDataset {
   worldspaces: Worldspace[];
   mapStates: MapState[];
+  spatialStates: SpatialState[];
+  layers: LayerDefinition[];
+  routes: Route[];
+  campaigns: Campaign[];
   eras: Era[];
   entities: LoreEntity[];
   events: LoreEvent[];

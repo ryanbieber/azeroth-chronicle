@@ -4,7 +4,7 @@
   "name": "Archive Expedition",
   "slug": "archive-expedition-placeholder",
   "shortDescription": "A fictional UI fixture. Replace it with reviewed source-backed content.",
-  "sourceIds": [],
+  "sourceIds": ["fixture-specification-placeholder"],
   "tags": ["placeholder"],
   "contentStatus": "placeholder"
 }

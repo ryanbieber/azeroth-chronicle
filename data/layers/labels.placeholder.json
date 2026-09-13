@@ -1,0 +1,6 @@
+{
+  "id": "labels",
+  "name": "Labels",
+  "kind": "labels",
+  "description": "Prioritized accessible names for visible atlas records."
+}

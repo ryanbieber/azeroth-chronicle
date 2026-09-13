@@ -12,7 +12,7 @@ export function BattlePage() {
   return (
     <main className="document-page">
       <BattleDossier battle={battle} entities={dataset.entities} />
-      <Link className="primary-link" to={`/map?era=${battle.eraId}&battle=${battle.slug}`}>
+      <Link className="primary-link" to={`/map?era=${battle.eraId}&selected=battle:${battle.slug}`}>
         Locate this battle on the atlas
       </Link>
     </main>

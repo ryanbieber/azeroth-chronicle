@@ -1,0 +1,12 @@
+{
+  "id": "archive-aftermath-placeholder",
+  "kind": "event",
+  "name": "Archive Aftermath Placeholder",
+  "slug": "archive-aftermath-placeholder",
+  "eraId": "black-empire",
+  "worldspaceId": "azeroth",
+  "summary": "A fictional consequence record used to test consequence traversal.",
+  "causedByEventIds": ["atlas-conflict-placeholder"],
+  "sourceIds": ["fixture-specification-placeholder"],
+  "contentStatus": "placeholder"
+}

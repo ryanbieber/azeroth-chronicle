@@ -1,0 +1,6 @@
+{
+  "id": "regions",
+  "name": "Domains",
+  "kind": "regions",
+  "description": "Validated region polygons for the active map state."
+}

@@ -1,0 +1,119 @@
+[
+  {
+    "id": "black-empire",
+    "type": "era",
+    "name": "The Black Empire",
+    "slug": "black-empire",
+    "path": "/eras/black-empire",
+    "eraId": "black-empire",
+    "aliases": [],
+    "tags": [],
+    "description": "A non-canonical fixture used to prove era loading, layers, stories, and deep links.",
+    "sourceIds": [],
+    "contentStatus": "placeholder"
+  },
+  {
+    "id": "archive-expedition-placeholder",
+    "type": "entity",
+    "name": "Archive Expedition",
+    "slug": "archive-expedition-placeholder",
+    "path": "/factions/archive-expedition-placeholder",
+    "aliases": [],
+    "tags": [
+      "placeholder"
+    ],
+    "description": "A fictional UI fixture. Replace it with reviewed source-backed content.",
+    "sourceIds": [],
+    "contentStatus": "placeholder"
+  },
+  {
+    "id": "archive-site-placeholder",
+    "type": "entity",
+    "name": "Archive Site Placeholder",
+    "slug": "archive-site-placeholder",
+    "path": "/locations/archive-site-placeholder",
+    "eraId": "black-empire",
+    "aliases": [],
+    "tags": [
+      "placeholder",
+      "location"
+    ],
+    "description": "A fictional location used to exercise time-aware spatial focus.",
+    "sourceIds": [
+      "fixture-specification-placeholder"
+    ],
+    "contentStatus": "placeholder"
+  },
+  {
+    "id": "unnamed-domain-placeholder",
+    "type": "entity",
+    "name": "Unnamed Domain",
+    "slug": "unnamed-domain-placeholder",
+    "path": "/factions/unnamed-domain-placeholder",
+    "aliases": [],
+    "tags": [
+      "placeholder"
+    ],
+    "description": "A fictional opposing-domain fixture for interaction testing only.",
+    "sourceIds": [],
+    "contentStatus": "placeholder"
+  },
+  {
+    "id": "archive-aftermath-placeholder",
+    "type": "event",
+    "name": "Archive Aftermath Placeholder",
+    "slug": "archive-aftermath-placeholder",
+    "path": "/events/archive-aftermath-placeholder",
+    "eraId": "black-empire",
+    "aliases": [],
+    "tags": [],
+    "description": "A fictional consequence record used to test consequence traversal.",
+    "sourceIds": [
+      "fixture-specification-placeholder"
+    ],
+    "contentStatus": "placeholder"
+  },
+  {
+    "id": "archive-approach-placeholder",
+    "type": "event",
+    "name": "Archive Approach Placeholder",
+    "slug": "archive-approach-placeholder",
+    "path": "/events/archive-approach-placeholder",
+    "eraId": "black-empire",
+    "aliases": [],
+    "tags": [],
+    "description": "A fictional precursor record used to test cause traversal.",
+    "sourceIds": [
+      "fixture-specification-placeholder"
+    ],
+    "contentStatus": "placeholder"
+  },
+  {
+    "id": "atlas-conflict-placeholder",
+    "type": "battle",
+    "name": "Atlas Conflict Placeholder",
+    "slug": "atlas-conflict-placeholder",
+    "path": "/battles/atlas-conflict-placeholder",
+    "eraId": "black-empire",
+    "aliases": [],
+    "tags": [],
+    "description": "A fictional conflict used only to exercise battle selection and dossier rendering.",
+    "sourceIds": [
+      "fixture-specification-placeholder"
+    ],
+    "contentStatus": "placeholder"
+  },
+  {
+    "id": "archive-campaign-placeholder",
+    "type": "campaign",
+    "name": "Archive Campaign Placeholder",
+    "slug": "archive-campaign-placeholder",
+    "path": "/eras/black-empire",
+    "eraId": "black-empire",
+    "aliases": [],
+    "tags": [],
+    "description": "A fictional campaign record used only to validate reusable campaign relationships.",
+    "sourceIds": [],
+    "contentStatus": "placeholder"
+  }
+]

@@ -4,7 +4,7 @@
   "name": "Unnamed Domain",
   "slug": "unnamed-domain-placeholder",
   "shortDescription": "A fictional opposing-domain fixture for interaction testing only.",
-  "sourceIds": [],
+  "sourceIds": ["fixture-specification-placeholder"],
   "tags": ["placeholder"],
   "contentStatus": "placeholder"
 }

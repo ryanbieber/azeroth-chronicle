@@ -1,0 +1,10 @@
+{
+  "id": "archive-site-spatial-placeholder",
+  "entityId": "archive-site-placeholder",
+  "eraId": "black-empire",
+  "worldspaceId": "azeroth",
+  "geometryId": "archive-site-location-placeholder",
+  "geographicCertainty": "exact",
+  "sourceIds": ["fixture-specification-placeholder"],
+  "labelPriority": 80
+}

@@ -2,5 +2,6 @@
   "id": "black-empire-map-placeholder",
   "name": "Black Empire placeholder map",
   "worldspaceId": "azeroth",
+  "terrainAsset": "models/azeroth/black-empire-map-placeholder/terrain.placeholder.glb",
   "geometryIds": ["black-empire-region-placeholder", "black-empire-route-placeholder"]
 }

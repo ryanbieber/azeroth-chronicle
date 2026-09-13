@@ -1,0 +1,548 @@
+{
+  "worldspaces": [
+    {
+      "id": "azeroth",
+      "name": "Azeroth",
+      "slug": "azeroth",
+      "coordinateSystem": {
+        "width": 10000,
+        "height": 10000,
+        "origin": "bottom-left",
+        "units": "atlas-units"
+      }
+    }
+  ],
+  "mapStates": [
+    {
+      "id": "black-empire-map-placeholder",
+      "name": "Black Empire placeholder map",
+      "worldspaceId": "azeroth",
+      "terrainAsset": "models/azeroth/black-empire-map-placeholder/terrain.placeholder.glb",
+      "geometryIds": [
+        "black-empire-region-placeholder",
+        "black-empire-route-placeholder"
+      ]
+    }
+  ],
+  "spatialStates": [
+    {
+      "id": "archive-site-spatial-placeholder",
+      "entityId": "archive-site-placeholder",
+      "eraId": "black-empire",
+      "worldspaceId": "azeroth",
+      "geometryId": "archive-site-location-placeholder",
+      "geographicCertainty": "exact",
+      "sourceIds": [
+        "fixture-specification-placeholder"
+      ]
+    },
+    {
+      "id": "unnamed-domain-spatial-placeholder",
+      "entityId": "unnamed-domain-placeholder",
+      "eraId": "black-empire",
+      "worldspaceId": "azeroth",
+      "geometryId": "black-empire-region-placeholder",
+      "geographicCertainty": "exact",
+      "sourceIds": []
+    }
+  ],
+  "layers": [
+    {
+      "id": "battles",
+      "name": "Battles",
+      "kind": "battles",
+      "description": "Conflict markers whose geography is known well enough to display."
+    },
+    {
+      "id": "labels",
+      "name": "Labels",
+      "kind": "labels",
+      "description": "Prioritized accessible names for visible atlas records."
+    },
+    {
+      "id": "locations",
+      "name": "Locations",
+      "kind": "locations",
+      "description": "Time-aware location markers backed by SpatialState records."
+    },
+    {
+      "id": "regions",
+      "name": "Domains",
+      "kind": "regions",
+      "description": "Validated region polygons for the active map state."
+    },
+    {
+      "id": "routes",
+      "name": "Routes",
+      "kind": "routes",
+      "description": "Campaign and battle movement recorded with explicit certainty."
+    }
+  ],
+  "routes": [
+    {
+      "id": "campaign-route-placeholder",
+      "name": "Placeholder campaign route",
+      "worldspaceId": "azeroth",
+      "geometryId": "black-empire-route-placeholder",
+      "geographicCertainty": "exact",
+      "sourceIds": [],
+      "contentStatus": "placeholder"
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "archive-campaign-placeholder",
+      "name": "Archive Campaign Placeholder",
+      "slug": "archive-campaign-placeholder",
+      "eraId": "black-empire",
+      "summary": "A fictional campaign record used only to validate reusable campaign relationships.",
+      "battleIds": [
+        "atlas-conflict-placeholder"
+      ],
+      "routeIds": [
+        "campaign-route-placeholder"
+      ],
+      "sourceIds": [],
+      "contentStatus": "placeholder"
+    }
+  ],
+  "eras": [
+    {
+      "id": "black-empire",
+      "name": "The Black Empire",
+      "slug": "black-empire",
+      "worldspaceId": "azeroth",
+      "order": 1,
+      "dateLabel": "Primordial era — placeholder content",
+      "summary": "A non-canonical fixture used to prove era loading, layers, stories, and deep links.",
+      "mapStateId": "black-empire-map-placeholder",
+      "defaultLayerIds": [
+        "regions",
+        "battles",
+        "locations",
+        "routes",
+        "labels"
+      ],
+      "featuredEventIds": [
+        "archive-approach-placeholder",
+        "archive-aftermath-placeholder"
+      ],
+      "featuredBattleIds": [
+        "atlas-conflict-placeholder"
+      ],
+      "storyGuideId": "black-empire-guide-placeholder",
+      "sourceIds": [],
+      "contentStatus": "placeholder"
+    }
+  ],
+  "entities": [
+    {
+      "id": "archive-expedition-placeholder",
+      "type": "faction",
+      "name": "Archive Expedition",
+      "slug": "archive-expedition-placeholder",
+      "shortDescription": "A fictional UI fixture. Replace it with reviewed source-backed content.",
+      "sourceIds": [],
+      "tags": [
+        "placeholder"
+      ],
+      "contentStatus": "placeholder"
+    },
+    {
+      "id": "archive-site-placeholder",
+      "type": "location",
+      "name": "Archive Site Placeholder",
+      "slug": "archive-site-placeholder",
+      "shortDescription": "A fictional location used to exercise time-aware spatial focus.",
+      "firstEraId": "black-empire",
+      "sourceIds": [
+        "fixture-specification-placeholder"
+      ],
+      "tags": [
+        "placeholder",
+        "location"
+      ],
+      "contentStatus": "placeholder"
+    },
+    {
+      "id": "unnamed-domain-placeholder",
+      "type": "faction",
+      "name": "Unnamed Domain",
+      "slug": "unnamed-domain-placeholder",
+      "shortDescription": "A fictional opposing-domain fixture for interaction testing only.",
+      "sourceIds": [],
+      "tags": [
+        "placeholder"
+      ],
+      "contentStatus": "placeholder"
+    }
+  ],
+  "events": [
+    {
+      "id": "archive-aftermath-placeholder",
+      "kind": "event",
+      "name": "Archive Aftermath Placeholder",
+      "slug": "archive-aftermath-placeholder",
+      "eraId": "black-empire",
+      "worldspaceId": "azeroth",
+      "summary": "A fictional consequence record used to test consequence traversal.",
+      "causedByEventIds": [
+        "atlas-conflict-placeholder"
+      ],
+      "sourceIds": [
+        "fixture-specification-placeholder"
+      ],
+      "contentStatus": "placeholder"
+    },
+    {
+      "id": "archive-approach-placeholder",
+      "kind": "event",
+      "name": "Archive Approach Placeholder",
+      "slug": "archive-approach-placeholder",
+      "eraId": "black-empire",
+      "worldspaceId": "azeroth",
+      "summary": "A fictional precursor record used to test cause traversal.",
+      "causesEventIds": [
+        "atlas-conflict-placeholder"
+      ],
+      "sourceIds": [
+        "fixture-specification-placeholder"
+      ],
+      "contentStatus": "placeholder"
+    }
+  ],
+  "battles": [
+    {
+      "id": "atlas-conflict-placeholder",
+      "kind": "battle",
+      "name": "Atlas Conflict Placeholder",
+      "slug": "atlas-conflict-placeholder",
+      "eraId": "black-empire",
+      "worldspaceId": "azeroth",
+      "summary": "A fictional conflict used only to exercise battle selection and dossier rendering.",
+      "campaignId": "archive-campaign-placeholder",
+      "combatants": [
+        {
+          "factionId": "archive-expedition-placeholder",
+          "role": "attacker"
+        },
+        {
+          "factionId": "unnamed-domain-placeholder",
+          "role": "defender"
+        }
+      ],
+      "objectives": [
+        {
+          "summary": "Demonstrate the battle dossier and map marker data flow."
+        }
+      ],
+      "phases": [
+        {
+          "id": "placeholder-approach",
+          "title": "Approach",
+          "summary": "An animated route appears above the map plane.",
+          "routeId": "campaign-route-placeholder",
+          "durationMs": 1200,
+          "narration": "The placeholder route is revealed for playback testing.",
+          "visualActions": [
+            {
+              "type": "show_route",
+              "routeId": "campaign-route-placeholder"
+            }
+          ]
+        },
+        {
+          "id": "placeholder-resolution",
+          "title": "Resolution",
+          "summary": "The prototype returns to a deterministic final state.",
+          "durationMs": 800,
+          "narration": "Playback settles on the documented placeholder outcome.",
+          "visualActions": [
+            {
+              "type": "show_battle",
+              "battleId": "atlas-conflict-placeholder"
+            }
+          ]
+        }
+      ],
+      "outcome": {
+        "summary": "The interaction model is proven; no lore claim is made."
+      },
+      "geographicCertainty": "exact",
+      "importance": "major",
+      "sourceIds": [
+        "fixture-specification-placeholder"
+      ],
+      "claimIds": [
+        "atlas-conflict-status-claim-placeholder"
+      ],
+      "contentStatus": "placeholder"
+    }
+  ],
+  "sources": [
+    {
+      "id": "fixture-specification-placeholder",
+      "title": "Azeroth Chronicle Placeholder Fixture Specification",
+      "sourceType": "other",
+      "notes": "An internal fictional source used only to exercise citation and provenance behavior."
+    },
+    {
+      "id": "warcraft-chronicle-volume-1",
+      "title": "World of Warcraft: Chronicle Volume 1",
+      "sourceType": "chronicle",
+      "volume": "1",
+      "notes": "Research inventory entry only. Edition details and claim-level citation locations require human review before use."
+    }
+  ],
+  "citations": [
+    {
+      "id": "fixture-interaction-citation-placeholder",
+      "sourceId": "fixture-specification-placeholder",
+      "section": "Technical interaction contract",
+      "note": "Supports only the assertion that these records are fictional UI fixtures."
+    }
+  ],
+  "claims": [
+    {
+      "id": "atlas-conflict-status-claim-placeholder",
+      "subjectId": "atlas-conflict-placeholder",
+      "predicate": "content-kind",
+      "value": "fictional technical fixture",
+      "citationIds": [
+        "fixture-interaction-citation-placeholder"
+      ],
+      "confidence": "explicit",
+      "status": "active",
+      "editorNote": "This claim describes repository test content, not Warcraft lore."
+    }
+  ],
+  "relationships": [
+    {
+      "id": "archive-approach-causes-conflict-placeholder",
+      "fromId": "archive-approach-placeholder",
+      "toId": "atlas-conflict-placeholder",
+      "type": "causes",
+      "citationIds": [
+        "fixture-interaction-citation-placeholder"
+      ],
+      "confidence": "explicit"
+    },
+    {
+      "id": "archive-conflict-causes-aftermath-placeholder",
+      "fromId": "atlas-conflict-placeholder",
+      "toId": "archive-aftermath-placeholder",
+      "type": "causes",
+      "citationIds": [
+        "fixture-interaction-citation-placeholder"
+      ],
+      "confidence": "explicit"
+    }
+  ],
+  "storyGuides": [
+    {
+      "id": "black-empire-guide-placeholder",
+      "eraId": "black-empire",
+      "title": "Experience the Era prototype",
+      "description": "An eight-node fictional sequence for testing the reusable story engine without making lore claims.",
+      "nodeIds": [
+        "story-establish-placeholder",
+        "story-domain-placeholder",
+        "story-route-placeholder",
+        "story-conflict-placeholder",
+        "story-focus-placeholder",
+        "story-evidence-placeholder",
+        "story-consequence-placeholder",
+        "story-transition-placeholder"
+      ],
+      "contentStatus": "placeholder"
+    }
+  ],
+  "storyNodes": [
+    {
+      "id": "story-establish-placeholder",
+      "guideId": "black-empire-guide-placeholder",
+      "title": "Establish the map",
+      "narration": "This node proves that a guide can establish a scene without embedding era behavior in the UI.",
+      "camera": {
+        "position": [
+          0,
+          7,
+          7
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "durationMs": 900
+      },
+      "visualActions": [
+        {
+          "type": "toggle_layer",
+          "layerId": "regions",
+          "visible": true
+        }
+      ],
+      "nextNodeIds": [
+        "story-domain-placeholder"
+      ]
+    },
+    {
+      "id": "story-domain-placeholder",
+      "guideId": "black-empire-guide-placeholder",
+      "title": "Reveal a domain",
+      "narration": "The fictional domain demonstrates data-driven highlighting and optional dossier branches.",
+      "entityIds": [
+        "unnamed-domain-placeholder"
+      ],
+      "optionalExploreEntityIds": [
+        "unnamed-domain-placeholder"
+      ],
+      "visualActions": [
+        {
+          "type": "highlight_faction",
+          "factionId": "unnamed-domain-placeholder"
+        }
+      ],
+      "previousNodeId": "story-establish-placeholder",
+      "nextNodeIds": [
+        "story-route-placeholder"
+      ]
+    },
+    {
+      "id": "story-route-placeholder",
+      "guideId": "black-empire-guide-placeholder",
+      "title": "Trace an approach",
+      "narration": "A source-space LineString becomes a reusable historical route overlay.",
+      "eventIds": [
+        "archive-approach-placeholder"
+      ],
+      "visualActions": [
+        {
+          "type": "show_route",
+          "routeId": "campaign-route-placeholder"
+        }
+      ],
+      "previousNodeId": "story-domain-placeholder",
+      "nextNodeIds": [
+        "story-conflict-placeholder"
+      ]
+    },
+    {
+      "id": "story-conflict-placeholder",
+      "guideId": "black-empire-guide-placeholder",
+      "title": "Reveal a conflict",
+      "narration": "This fictional node reveals the placeholder battle marker. It contains no canonical Warcraft assertion.",
+      "battleIds": [
+        "atlas-conflict-placeholder"
+      ],
+      "camera": {
+        "position": [
+          3,
+          5,
+          5
+        ],
+        "target": [
+          1.6,
+          0,
+          -0.8
+        ],
+        "durationMs": 900
+      },
+      "visualActions": [
+        {
+          "type": "show_battle",
+          "battleId": "atlas-conflict-placeholder"
+        },
+        {
+          "type": "show_route",
+          "routeId": "campaign-route-placeholder"
+        }
+      ],
+      "previousNodeId": "story-route-placeholder",
+      "nextNodeIds": [
+        "story-focus-placeholder"
+      ]
+    },
+    {
+      "id": "story-focus-placeholder",
+      "guideId": "black-empire-guide-placeholder",
+      "title": "Focus a location",
+      "narration": "Time-varying spatial data focuses a fictional archive site without assuming a permanent entity position.",
+      "locationIds": [
+        "archive-site-placeholder"
+      ],
+      "visualActions": [
+        {
+          "type": "focus_location",
+          "locationId": "archive-site-placeholder"
+        }
+      ],
+      "previousNodeId": "story-conflict-placeholder",
+      "nextNodeIds": [
+        "story-evidence-placeholder"
+      ]
+    },
+    {
+      "id": "story-evidence-placeholder",
+      "guideId": "black-empire-guide-placeholder",
+      "title": "Inspect the evidence",
+      "narration": "The guide exposes the same fictional claim and citation available in the permanent dossier.",
+      "optionalExploreEntityIds": [
+        "archive-site-placeholder"
+      ],
+      "visualActions": [
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "archive-approach-causes-conflict-placeholder"
+          ]
+        }
+      ],
+      "previousNodeId": "story-focus-placeholder",
+      "nextNodeIds": [
+        "story-consequence-placeholder"
+      ]
+    },
+    {
+      "id": "story-consequence-placeholder",
+      "guideId": "black-empire-guide-placeholder",
+      "title": "Follow the consequence",
+      "narration": "A second source-aware edge demonstrates what the placeholder conflict changed next.",
+      "eventIds": [
+        "archive-aftermath-placeholder"
+      ],
+      "visualActions": [
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "archive-conflict-causes-aftermath-placeholder"
+          ]
+        }
+      ],
+      "previousNodeId": "story-evidence-placeholder",
+      "nextNodeIds": [
+        "story-transition-placeholder"
+      ]
+    },
+    {
+      "id": "story-transition-placeholder",
+      "guideId": "black-empire-guide-placeholder",
+      "title": "Reach the final state",
+      "narration": "The prototype settles deterministically. A reviewed guide would connect this point to the next historical map state.",
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "black-empire-map-placeholder"
+        },
+        {
+          "type": "toggle_layer",
+          "layerId": "labels",
+          "visible": true
+        }
+      ],
+      "previousNodeId": "story-consequence-placeholder",
+      "nextNodeIds": []
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+import { Link, useParams } from 'react-router-dom';
+import { BattleDossier } from '../components/dossier/BattleDossier';
+import { staticLoreRepository } from '../domain/repositories/StaticLoreRepository';
+import { NotFound } from './EraPage';
+
+export function BattlePage() {
+  const { slug = '' } = useParams();
+  const battle = staticLoreRepository.findBattleBySlug(slug);
+  const dataset = staticLoreRepository.getDataset();
+  if (!battle) return <NotFound />;
+
+  return (
+    <main className="document-page">
+      <BattleDossier battle={battle} entities={dataset.entities} />
+      <Link className="primary-link" to={`/map?era=${battle.eraId}&battle=${battle.slug}`}>
+        Locate this battle on the atlas
+      </Link>
+    </main>
+  );
+}

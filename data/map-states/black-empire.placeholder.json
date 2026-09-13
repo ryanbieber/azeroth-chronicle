@@ -1,0 +1,6 @@
+{
+  "id": "black-empire-map-placeholder",
+  "name": "Black Empire placeholder map",
+  "worldspaceId": "azeroth",
+  "geometryIds": ["black-empire-region-placeholder", "black-empire-route-placeholder"]
+}

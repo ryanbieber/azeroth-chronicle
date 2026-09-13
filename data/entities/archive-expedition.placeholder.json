@@ -1,0 +1,10 @@
+{
+  "id": "archive-expedition-placeholder",
+  "type": "faction",
+  "name": "Archive Expedition",
+  "slug": "archive-expedition-placeholder",
+  "shortDescription": "A fictional UI fixture. Replace it with reviewed source-backed content.",
+  "sourceIds": [],
+  "tags": ["placeholder"],
+  "contentStatus": "placeholder"
+}

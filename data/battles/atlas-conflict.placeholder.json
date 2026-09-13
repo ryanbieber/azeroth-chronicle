@@ -1,0 +1,37 @@
+{
+  "id": "atlas-conflict-placeholder",
+  "kind": "battle",
+  "name": "Atlas Conflict Placeholder",
+  "slug": "atlas-conflict-placeholder",
+  "eraId": "black-empire",
+  "worldspaceId": "azeroth",
+  "summary": "A fictional conflict used only to exercise battle selection and dossier rendering.",
+  "combatants": [
+    { "factionId": "archive-expedition-placeholder", "role": "attacker" },
+    { "factionId": "unnamed-domain-placeholder", "role": "defender" }
+  ],
+  "objectives": [
+    { "summary": "Demonstrate the battle dossier and map marker data flow." }
+  ],
+  "phases": [
+    {
+      "id": "placeholder-approach",
+      "title": "Approach",
+      "summary": "An animated route appears above the map plane.",
+      "routeId": "black-empire-route-placeholder"
+    },
+    {
+      "id": "placeholder-resolution",
+      "title": "Resolution",
+      "summary": "The prototype returns to a deterministic final state."
+    }
+  ],
+  "outcome": {
+    "summary": "The interaction model is proven; no lore claim is made."
+  },
+  "geographicCertainty": "unknown",
+  "importance": "major",
+  "position": [1.6, 0.35, -0.8],
+  "sourceIds": [],
+  "contentStatus": "placeholder"
+}

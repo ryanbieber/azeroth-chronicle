@@ -1,0 +1,45 @@
+{
+  "guide": {
+    "id": "black-empire-guide-placeholder",
+    "eraId": "black-empire",
+    "title": "Experience the Era prototype",
+    "description": "A short fictional sequence for testing the reusable story engine.",
+    "nodeIds": ["story-establish-placeholder", "story-conflict-placeholder"],
+    "contentStatus": "placeholder"
+  },
+  "nodes": [
+    {
+      "id": "story-establish-placeholder",
+      "guideId": "black-empire-guide-placeholder",
+      "title": "Establish the map",
+      "narration": "This node proves that a guide can focus the scene and change layers without embedding behavior in the UI.",
+      "camera": {
+        "position": [0, 7, 7],
+        "target": [0, 0, 0],
+        "durationMs": 900
+      },
+      "visualActions": [
+        { "type": "toggle_layer", "layerId": "regions", "visible": true }
+      ],
+      "nextNodeIds": ["story-conflict-placeholder"]
+    },
+    {
+      "id": "story-conflict-placeholder",
+      "guideId": "black-empire-guide-placeholder",
+      "title": "Reveal a conflict",
+      "narration": "This fictional node reveals the placeholder battle marker and route. It contains no canonical Warcraft assertion.",
+      "battleIds": ["atlas-conflict-placeholder"],
+      "camera": {
+        "position": [3, 5, 5],
+        "target": [1.6, 0, -0.8],
+        "durationMs": 900
+      },
+      "visualActions": [
+        { "type": "show_battle", "battleId": "atlas-conflict-placeholder" },
+        { "type": "show_route", "routeId": "black-empire-route-placeholder" }
+      ],
+      "previousNodeId": "story-establish-placeholder",
+      "nextNodeIds": []
+    }
+  ]
+}

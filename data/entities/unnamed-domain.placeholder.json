@@ -1,0 +1,10 @@
+{
+  "id": "unnamed-domain-placeholder",
+  "type": "faction",
+  "name": "Unnamed Domain",
+  "slug": "unnamed-domain-placeholder",
+  "shortDescription": "A fictional opposing-domain fixture for interaction testing only.",
+  "sourceIds": [],
+  "tags": ["placeholder"],
+  "contentStatus": "placeholder"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "black-empire",
+  "name": "The Black Empire",
+  "slug": "black-empire",
+  "worldspaceId": "azeroth",
+  "order": 1,
+  "dateLabel": "Primordial era — placeholder content",
+  "summary": "A non-canonical fixture used to prove era loading, layers, stories, and deep links.",
+  "mapStateId": "black-empire-map-placeholder",
+  "defaultLayerIds": ["regions", "battles", "routes", "labels"],
+  "featuredEventIds": [],
+  "featuredBattleIds": ["atlas-conflict-placeholder"],
+  "storyGuideId": "black-empire-guide-placeholder",
+  "sourceIds": [],
+  "contentStatus": "placeholder"
+}

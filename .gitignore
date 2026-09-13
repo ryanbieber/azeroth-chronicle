@@ -1,0 +1,11 @@
+node_modules/
+dist/
+coverage/
+.vite/
+.docx-render/
+playwright-report/
+test-results/
+*.local
+.env
+.env.*
+!.env.example

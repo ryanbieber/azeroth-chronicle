@@ -1,0 +1,36 @@
+{
+  "type": "FeatureCollection",
+  "name": "black-empire-region-placeholder",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "black-empire-region-placeholder",
+      "properties": {
+        "name": "Placeholder influence region",
+        "contentStatus": "placeholder"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [2500, 3000],
+          [6800, 2500],
+          [7600, 6300],
+          [4200, 7600],
+          [2500, 3000]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "black-empire-route-placeholder",
+      "properties": {
+        "name": "Placeholder campaign route",
+        "contentStatus": "placeholder"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[3100, 6500], [4700, 5200], [6600, 4200]]
+      }
+    }
+  ]
+}

@@ -33,7 +33,6 @@ export const spatialStateSchema = z.object({
   worldspaceId: id,
   geometryId: id.optional(),
   position: vec3.optional(),
-  geometryId: id.optional(),
   geographicCertainty,
   sourceIds: z.array(id),
   editorNote: z.string().optional(),
@@ -181,6 +180,7 @@ export const battleSchema = z.object({
   animationId: id.optional(),
   importance: z.enum(['minor', 'major', 'era_defining']),
   position: vec3.optional(),
+  geometryId: id.optional(),
 }).superRefine((value, context) => {
   if (value.geographicCertainty === 'unknown' && value.position) {
     context.addIssue({ code: 'custom', message: 'Unknown battle geography cannot have an exact position.' });

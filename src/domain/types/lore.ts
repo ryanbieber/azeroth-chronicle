@@ -124,6 +124,7 @@ export interface SpatialState {
   geographicCertainty: GeographicCertainty;
   sourceIds: EntityId[];
   editorNote?: string;
+  labelPriority?: number;
 }
 
 export interface LayerDefinition {

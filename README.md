@@ -18,6 +18,8 @@ This repository is the implementation skeleton for the product and technical spe
 
 The full delivery sequence and architectural decisions are in [`docs/IMPLEMENTATION_PLAN.md`](./docs/IMPLEMENTATION_PLAN.md).
 
+Live GitHub Pages build: <https://ryanbieber.github.io/azeroth-chronicle/>
+
 ## Local development
 
 Requirements: Node.js 24 or newer and pnpm 11.
@@ -72,7 +74,7 @@ docs/                      Architecture and delivery plan
 
 ## Deployment
 
-`render.yaml` defines a Render Static Site build and an SPA fallback so direct dossier and map links resolve to `index.html`. Connect the GitHub repository in Render or create a Blueprint from the file. No backend, database, authentication, or secret-bearing client integration is required for the MVP.
+The repository deploys GitHub Pages from `.github/workflows/deploy-pages.yml`. That build supplies the repository base path and emits a `404.html` SPA fallback so direct dossier and map links work. `render.yaml` remains available for a Render Static Site deployment at the domain root. No backend, database, authentication, or secret-bearing client integration is required for the MVP.
 
 ## Project status
 

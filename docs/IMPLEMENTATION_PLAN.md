@@ -6,7 +6,7 @@ Build the Black Empire vertical slice as a static, client-heavy historical atlas
 
 The reusable engine must not contain Black Empire-specific behavior. Black Empire records live in the data layer and exercise generic era, map-state, battle, story, source, and relationship systems.
 
-## Current implementation status — 2026-09-13
+## Current implementation status — 2026-09-14
 
 The repository contains a complete reusable technical vertical slice and the first source-linked era baseline:
 
@@ -14,10 +14,10 @@ The repository contains a complete reusable technical vertical slice and the fir
 - Reusable Phase 1–5 systems are implemented: generated manifests and search, typed reference validation, source filtering, permanent dossiers, multi-record map layers, battle playback, guided-story persistence/branch return, causality, and provenance.
 - Phase 6 foundations are implemented: route splitting, responsive states, error/WebGL fallbacks, accessibility affordances, privacy and asset-origin decisions, Render/GitHub Pages deployment configuration, and visual regression coverage.
 - Chronicle Volumes 1–4 are registered as the editorial source backbone, with research templates, vocabulary, confidence rules, and a citation review checklist.
-- The nine approved eras are present in the top-level selector with separate research map states. Their detailed, one-by-one research and production backlog lives in `docs/eras/README.md`.
-- Era 1 now has a source-linked research vertical slice: original generated terrain, inferred/approximate GeoJSON, 13 people/powers/places, four events, two animated conflict dossiers, a causal chain, and a ten-node guided history. The fictional technical fixtures have been removed. Human citation and lore review still gates publication.
+- Nine eras are present in the top-level selector with separate research map states. Cosmic Origins is reserved as a future Era 0 but remains out of navigation until its reviewed content and non-geographic visualization exist. Their detailed, one-by-one research and production backlog lives in `docs/eras/README.md`.
+- Era 1, **Primordial Azeroth and the Black Empire**, now has a source-linked public research preview: original generated terrain, inferred/approximate GeoJSON, 13 people/powers/places, four events, two conflict dossiers, a causal chain, a continuous unnumbered ten-node guided history, and clickable illustrated character overviews. Detailed battle phases remain in battle dossiers rather than interrupting the guided chronicle. Human citation and lore review still gates promotion to reviewed or published content.
 
-The reusable engine acceptance path and the Era 1 research implementation are complete. The public MVP completion gate is **not** complete: Era 1 still requires human review of its claim-level Chronicle citations, original summaries, inferred cartography, conflicts, story, and causal chain. Later eras remain research scaffolds, and production-scale label density remains a future measurement gate.
+The reusable engine acceptance path and the Era 1 research-preview implementation are complete. This authorizes an explicitly labeled public preview, not promotion of the records to `published`: Era 1 still requires human review of its claim-level Chronicle citations, original summaries, inferred cartography, conflicts, story, and causal chain. Later eras remain research scaffolds, and production-scale label density remains a future measurement gate.
 
 ## Architectural decisions
 
@@ -99,8 +99,8 @@ MapViewport3D
 - A pure interpreter maps each VisualAction to explicit ports such as `setLayer`, `selectBattle`, `showRoute`, and `focusLocation`.
 - Unsupported action types fail validation during development and fail visibly but safely at runtime.
 - Entering a node applies actions idempotently from a known scene state.
-- The public tour card contains only Previous and Next controls plus a visible bottom-edge chapter timer; narration and timed map changes carry the story without archive-control clutter.
-- Branching into a dossier stores the guide/node return point. Returning restores the same node, not a restarted guide.
+- The public tour card is an unnumbered continuous sequence containing only Previous and Next controls plus a visible bottom-edge chapter timer; narration and timed map changes carry the story without archive-control clutter or embedded conflict sub-stories.
+- Reusable branch-return state remains available to future tours, but the Black Empire tour keeps optional dossiers separate from the guided sequence. Clicking a map figure outside the tour opens a concise reader-facing overview; research and provenance detail remains on permanent routes.
 - Tests cover every action type, node transitions, skip behavior, and branch-and-return state.
 - Node narration remains the accessible transcript and future voice-over script. Optional audio may enhance a node later, but must never replace the text or its skip/reduced-motion behavior.
 
@@ -138,7 +138,7 @@ MapViewport3D
 
 - Vitest: schemas, date helpers, coordinates, graph traversal, source filtering, and story interpreter.
 - Testing Library: curated layer visibility, dossier accessibility, guide progression, URL synchronization, and error states.
-- Playwright in Phase 4: load Black Empire, select a marker, branch to a dossier, return to a guide, skip battle playback, inspect provenance, and finish the guide.
+- Playwright in Phase 4: load Black Empire, open a concise marker overview, complete the unnumbered guide without embedded battle playback, verify permanent battle playback separately, and inspect provenance on permanent routes.
 - Visual regression in Phase 6 for the application shell and key dossier states; avoid pixel-locking the animated canvas.
 - Build validation fails on broken references, duplicate IDs/slugs, invalid bounds, missing required citations, and unintended causal cycles.
 
@@ -277,13 +277,13 @@ Reusable engine work:
 Black Empire content work:
 
 - Author one reviewed 8-15 node guide that explains the era and transition to the next state.
-- Separate required narrative from optional rabbit holes.
+- Keep the required narrative as one continuous unnumbered sequence. Place optional character exploration and detailed conflict phases outside the tour.
 
 Acceptance criteria:
 
 - Experience the Era runs end-to-end.
 - The map reacts to every node from data, not node-specific React code.
-- Branching to a dossier and returning preserves the exact guide node.
+- The guide never opens a nested story or conflict playback; map dossiers remain independently accessible.
 - Keyboard and reduced-motion users can complete the guide.
 
 ### Phase 5 Causality and sources
@@ -363,4 +363,4 @@ Acceptance criteria:
 
 ## MVP completion gate
 
-The MVP is complete only when a new user can identify the Black Empire era, navigate the 3D world, control core layers, inspect a sourced battle, complete a guided story, branch and return without losing progress, inspect causes and consequences, distinguish certainty states, and reach the next historical state—while the same information remains accessible through permanent text-first routes.
+The MVP is complete only when a new user can identify the Black Empire era, navigate the 3D world, inspect a character overview and sourced battle, complete one continuous guided story, inspect causes and consequences, distinguish certainty states, and reach the next historical state—while the same information remains accessible through permanent text-first routes.

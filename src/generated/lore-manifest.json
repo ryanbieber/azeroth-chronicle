@@ -298,7 +298,7 @@
     },
     {
       "id": "black-empire",
-      "name": "Cosmic Origins and the Black Empire",
+      "name": "Primordial Azeroth and the Black Empire",
       "slug": "black-empire",
       "worldspaceId": "azeroth",
       "order": 1,
@@ -501,6 +501,10 @@
         "elemental-lord",
         "air"
       ],
+      "mapFigure": {
+        "asset": "images/characters/black-empire/alakir.research.webp",
+        "scale": 0.92
+      },
       "contentStatus": "research"
     },
     {
@@ -612,6 +616,10 @@
         "elemental-lord",
         "water"
       ],
+      "mapFigure": {
+        "asset": "images/characters/black-empire/neptulon.research.webp",
+        "scale": 0.94
+      },
       "contentStatus": "research"
     },
     {
@@ -702,6 +710,10 @@
         "elemental-lord",
         "fire"
       ],
+      "mapFigure": {
+        "asset": "images/characters/black-empire/ragnaros.research.webp",
+        "scale": 1
+      },
       "contentStatus": "research"
     },
     {
@@ -724,6 +736,10 @@
         "elemental-lord",
         "earth"
       ],
+      "mapFigure": {
+        "asset": "images/characters/black-empire/therazane.research.webp",
+        "scale": 0.96
+      },
       "contentStatus": "research"
     },
     {
@@ -766,6 +782,11 @@
         "old-god",
         "black-empire"
       ],
+      "mapFigure": {
+        "asset": "images/characters/black-empire/yshaarj.research.webp",
+        "anchorEntityId": "yshaarj-central-bastion",
+        "scale": 1.08
+      },
       "contentStatus": "research"
     }
   ],
@@ -975,8 +996,8 @@
           "id": "elemental-unity",
           "title": "Rivals unite",
           "summary": "The four elemental powers recognized a common threat.",
-          "durationMs": 3800,
-          "narration": "The Black Empire's expansion prompted Azeroth's native elemental forces to cooperate for the first time against a shared enemy.",
+          "durationMs": 25000,
+          "narration": "As the Black Empire widened its shadow, the ancient enemies understood at last that none could stand alone. For the first time, Azeroth's elemental powers gathered against one foe.",
           "visualActions": [
             {
               "type": "highlight_faction",
@@ -992,8 +1013,8 @@
           "id": "firestorm-assault",
           "title": "Firestorms cross the empire",
           "summary": "Air and fire combined against Black Empire cities.",
-          "durationMs": 3800,
-          "narration": "Al'Akir's tempests and Ragnaros's flames combined into immense firestorms that burned Black Empire citadels.",
+          "durationMs": 22500,
+          "narration": "Wind and flame went forth together. Al'Akir's tempests bore the wrath of Ragnaros across the dark dominion, and immense firestorms descended upon the empire's citadels.",
           "visualActions": [
             {
               "type": "highlight_entity",
@@ -1013,8 +1034,8 @@
           "id": "stone-counterstroke",
           "title": "Stone closes around the cities",
           "summary": "Therazane raised barriers against the empire's settlements.",
-          "durationMs": 3800,
-          "narration": "Therazane reshaped the battlefield with jagged walls, hemming in enemies and breaking temple cities.",
+          "durationMs": 24500,
+          "narration": "Then Therazane laid her strength upon the field. Jagged walls rose at her bidding, hemming in the servants of the Old Gods and breaking against their temple cities.",
           "visualActions": [
             {
               "type": "highlight_entity",
@@ -1030,8 +1051,8 @@
           "id": "servant-swarms",
           "title": "The servant hosts endure",
           "summary": "The empire answered through the n'raqi and aqir.",
-          "durationMs": 3800,
-          "narration": "The n'raqi and aqir sustained the Old Gods' war effort in numbers the elemental coalition could not finally overcome.",
+          "durationMs": 24000,
+          "narration": "Yet from the cities came the n'raqi and the innumerable aqir. Rank after rank endured the elemental fury, until even the joined hosts could not overcome them.",
           "visualActions": [
             {
               "type": "highlight_faction",
@@ -1047,8 +1068,8 @@
           "id": "elemental-subjugation",
           "title": "The resistance fails",
           "summary": "The Old Gods defeated and enslaved the Elemental Lords.",
-          "durationMs": 3800,
-          "narration": "The elemental resistance ultimately failed. The Old Gods enslaved the Elemental Lords, and Black Empire influence spread over much of the world.",
+          "durationMs": 28000,
+          "narration": "In the end the resistance was broken. The Old Gods bound the Elemental Lords, and with no native power left to bar its way, the Black Empire spread across much of the world.",
           "visualActions": [
             {
               "type": "highlight_faction",
@@ -1128,8 +1149,8 @@
           "id": "winds-divide",
           "title": "The winds divide",
           "summary": "Al'Akir weakened rivals through spies, deception, and sudden storms.",
-          "durationMs": 3600,
-          "narration": "Al'Akir's tempests observed the other hosts, fostered distrust, and struck after rival forces had weakened one another.",
+          "durationMs": 25000,
+          "narration": "From the high airs Al'Akir watched the wars below. Through spies and deception he divided his enemies, and his tempests fell only when rival strength had already been spent.",
           "visualActions": [
             {
               "type": "highlight_entity",
@@ -1141,8 +1162,8 @@
           "id": "fire-overwhelms",
           "title": "Fire overwhelms",
           "summary": "Ragnaros answered strategy with volcanic, direct destruction.",
-          "durationMs": 3600,
-          "narration": "Ragnaros favored overwhelming force. His advance was associated with erupting volcanoes, fire, ash, and ruined terrain.",
+          "durationMs": 21500,
+          "narration": "Ragnaros placed no faith in subtle designs. Before him volcanoes opened, fire crowned the land, and ash followed where his overwhelming host had passed.",
           "visualActions": [
             {
               "type": "highlight_entity",
@@ -1154,8 +1175,8 @@
           "id": "earth-endures",
           "title": "Earth endures",
           "summary": "Therazane sheltered behind mountains and counterattacked exhausted enemies.",
-          "durationMs": 3600,
-          "narration": "Therazane protected her children with mountain barriers, emerging only after attacking forces had spent themselves.",
+          "durationMs": 26000,
+          "narration": "Therazane gathered her children behind the strength of mountains. There they endured the fury of their foes, and only when the assault was weary did the earth rise to answer.",
           "visualActions": [
             {
               "type": "highlight_entity",
@@ -1167,8 +1188,8 @@
           "id": "waters-divide",
           "title": "Water divides and conquers",
           "summary": "Neptulon waited for rival armies to separate before crushing them.",
-          "durationMs": 3600,
-          "narration": "Neptulon avoided wasteful assaults, divided opposing armies, and struck them with catastrophic waters when they were vulnerable.",
+          "durationMs": 25000,
+          "narration": "Neptulon did not squander his waters against a gathered host. He waited until the armies of his foes were divided, then loosed the deep against them in their weakness.",
           "visualActions": [
             {
               "type": "highlight_entity",
@@ -1621,8 +1642,8 @@
     {
       "id": "black-empire-guided-history",
       "eraId": "black-empire",
-      "title": "From World-Soul to Black Empire",
-      "description": "A ten-part guided history of primordial Azeroth, its elemental wars, the Old Gods' arrival, and the rise of the Black Empire.",
+      "title": "The Rise of the Black Empire",
+      "description": "A guided history of primordial Azeroth, its elemental wars, the Old Gods' arrival, and the rise of the Black Empire.",
       "nodeIds": [
         "black-empire-story-cosmos",
         "black-empire-story-world-soul",
@@ -1642,9 +1663,9 @@
     {
       "id": "black-empire-story-cosmos",
       "guideId": "black-empire-guided-history",
-      "title": "A world inside a larger cosmos",
+      "title": "Before the empire",
       "narration": "Before mountain or sea had received a name, Azeroth's tale had already begun amid powers vaster than the world. Chronicle sets Light against Shadow, Life against Death, and Order against Disorder, while fire, air, earth, water, Spirit, and Decay shaped the mortal realm.",
-      "durationMs": 31000,
+      "durationMs": 36500,
       "camera": {
         "position": [
           0,
@@ -1678,7 +1699,7 @@
       "guideId": "black-empire-guided-history",
       "title": "The sleeping titan within",
       "narration": "Deep within the young world, unseen beneath stone and flame, a mighty titan spirit stirred. As it grew, it drew heavily upon Spirit, the fifth element; and without that gentle balance, the native powers of Azeroth became restless and untamed.",
-      "durationMs": 29000,
+      "durationMs": 34500,
       "eventIds": [
         "spirit-imbalance"
       ],
@@ -1719,7 +1740,7 @@
       "guideId": "black-empire-guided-history",
       "title": "Four powers without balance",
       "narration": "Four great lords arose above the tumult: Al'Akir, master of air; Ragnaros, lord of fire; Therazane, mother of earth; and Neptulon, ruler of water. Each desired dominion, and each carried war according to the nature of their element.",
-      "durationMs": 28000,
+      "durationMs": 33000,
       "entityIds": [
         "alakir",
         "ragnaros",
@@ -1755,7 +1776,7 @@
       "guideId": "black-empire-guided-history",
       "title": "An age of elemental war",
       "narration": "Age followed uncounted age beneath storm, flood, fire, and heaving stone. The elemental hosts broke one another's realms and raised them anew, yet no victory endured; strife itself became the rhythm of primordial Azeroth.",
-      "durationMs": 25000,
+      "durationMs": 30000,
       "battleIds": [
         "elemental-wars"
       ],
@@ -1794,7 +1815,7 @@
       "guideId": "black-empire-guided-history",
       "title": "The Old Gods descend",
       "narration": "Then the long contest was broken by a terror from beyond the heavens. The Old Gods fell from the Great Dark and rooted themselves in Azeroth. Around them the land withered, while their deep-reaching tendrils sought the sleeping world-soul below.",
-      "durationMs": 29000,
+      "durationMs": 34500,
       "eventIds": [
         "old-gods-arrive"
       ],
@@ -1836,7 +1857,7 @@
       "guideId": "black-empire-guided-history",
       "title": "The empire's builders",
       "narration": "From the corrupted substance of the Old Gods arose servants shaped for their dark labor. The cunning n'raqi became taskmasters, and beneath their command the enduring aqir raised vast citadels and temple cities around their terrible masters.",
-      "durationMs": 27000,
+      "durationMs": 32000,
       "entityIds": [
         "nraqi",
         "aqir"
@@ -1868,7 +1889,7 @@
       "guideId": "black-empire-guided-history",
       "title": "A bastion near the world's center",
       "narration": "Greatest among those strongholds stood the bastion raised about Y'Shaarj, near the heart of Azeroth's largest continent. Its light upon this map is only approximate: Chronicle names its place in relation to the continent, but grants neither exact measure nor a proper city name.",
-      "durationMs": 32000,
+      "durationMs": 37000,
       "eventIds": [
         "black-empire-rises"
       ],
@@ -1905,7 +1926,7 @@
       "guideId": "black-empire-guided-history",
       "title": "The Black Empire spreads",
       "narration": "From that dreadful heart, the holdings of Y'Shaarj and the domains of the other Old Gods spread until together they formed the Black Empire. The boundary now revealed is a broad reconstruction of influence, not a surveyed frontier preserved by the source.",
-      "durationMs": 31000,
+      "durationMs": 35500,
       "eventIds": [
         "black-empire-rises"
       ],
@@ -1952,7 +1973,7 @@
       "guideId": "black-empire-guided-history",
       "title": "Old rivals form one resistance",
       "narration": "At last the ancient rivals beheld an enemy that threatened them all. For the first time the Elemental Lords stood together: wind bore fire against the empire, and earth rose against its cities. Yet even their joined wrath could not win the age.",
-      "durationMs": 31000,
+      "durationMs": 36500,
       "battleIds": [
         "elemental-assault-on-black-empire"
       ],
@@ -1996,7 +2017,7 @@
       "guideId": "black-empire-guided-history",
       "title": "A world awaiting the Ordering",
       "narration": "The Elemental Lords were defeated and bound, and the shadow of the Black Empire crept across much of Azeroth. Thus the primordial age darkened toward its end, until the Pantheon perceived the peril and sent titan-forged armies to answer it.",
-      "durationMs": 29000,
+      "durationMs": 34500,
       "eventIds": [
         "black-empire-dominion"
       ],

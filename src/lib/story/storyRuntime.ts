@@ -7,6 +7,7 @@ import { applyVisualActions } from './interpretVisualAction';
 
 export function visualActionsForStoryNode(node: StoryNode): VisualAction[] {
   return [
+    ...(node.entityIds ?? []).map((entityId): VisualAction => ({ type: 'highlight_entity', entityId })),
     ...(node.locationIds ?? []).map((locationId): VisualAction => ({ type: 'focus_location', locationId })),
     ...(node.battleIds ?? []).map((battleId): VisualAction => ({ type: 'show_battle', battleId })),
     ...(node.visualActions ?? []),
@@ -16,7 +17,8 @@ export function visualActionsForStoryNode(node: StoryNode): VisualAction[] {
 export function selectionForStoryNode(node: StoryNode): Selection {
   if (node.battleIds?.[0]) return { kind: 'battle', id: node.battleIds[0] };
   if (node.locationIds?.[0]) return { kind: 'entity', id: node.locationIds[0] };
-  if (node.entityIds?.length === 1) return { kind: 'entity', id: node.entityIds[0] };
+  const onlyEntityId = node.entityIds?.length === 1 ? node.entityIds[0] : undefined;
+  if (onlyEntityId) return { kind: 'entity', id: onlyEntityId };
   if (node.eventIds?.[0]) return { kind: 'event', id: node.eventIds[0] };
   return null;
 }

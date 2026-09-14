@@ -37,6 +37,7 @@ describe('lore dataset', () => {
     expect(events).toHaveLength(4);
     expect(battles).toHaveLength(2);
     expect(guide.nodeIds).toHaveLength(10);
+    expect(entities.filter((entity) => entity.type === 'character').every((entity) => Boolean(entity.mapFigure?.asset))).toBe(true);
     expect(['alakir', 'ragnaros', 'therazane', 'neptulon'].every((entityId) =>
       data.spatialStates.some((state) => state.entityId === entityId
         && state.eraId === era.id
@@ -59,6 +60,17 @@ describe('lore dataset', () => {
     expect(data.claims.every((claim) => claim.citationIds.every((citationId) =>
       data.citations.some((citation) => citation.id === citationId),
     ))).toBe(true);
+  });
+
+  it('paces each guided-history pane for slow narration', () => {
+    const data = loadDataset();
+    const guide = data.storyGuides.find((item) => item.id === 'black-empire-guided-history')!;
+    for (const nodeId of guide.nodeIds) {
+      const node = data.storyNodes.find((item) => item.id === nodeId)!;
+      const words = node.narration.trim().split(/\s+/).length;
+      const narrationMs = Math.round(((words / 82) * 60_000) / 500) * 500 + 5_000;
+      expect(node.durationMs).toBeGreaterThanOrEqual(narrationMs);
+    }
   });
 
   it('can exclude placeholder and research records from a publication build', () => {

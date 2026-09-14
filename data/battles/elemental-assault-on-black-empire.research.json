@@ -26,7 +26,7 @@
       "id": "elemental-unity",
       "title": "Rivals unite",
       "summary": "The four elemental powers recognized a common threat.",
-      "durationMs": 21000,
+      "durationMs": 25000,
       "narration": "As the Black Empire widened its shadow, the ancient enemies understood at last that none could stand alone. For the first time, Azeroth's elemental powers gathered against one foe.",
       "visualActions": [
         { "type": "highlight_faction", "factionId": "elemental-hosts" },
@@ -37,7 +37,7 @@
       "id": "firestorm-assault",
       "title": "Firestorms cross the empire",
       "summary": "Air and fire combined against Black Empire cities.",
-      "durationMs": 19000,
+      "durationMs": 22500,
       "narration": "Wind and flame went forth together. Al'Akir's tempests bore the wrath of Ragnaros across the dark dominion, and immense firestorms descended upon the empire's citadels.",
       "visualActions": [
         { "type": "highlight_entity", "entityId": "alakir" },
@@ -49,7 +49,7 @@
       "id": "stone-counterstroke",
       "title": "Stone closes around the cities",
       "summary": "Therazane raised barriers against the empire's settlements.",
-      "durationMs": 21000,
+      "durationMs": 24500,
       "narration": "Then Therazane laid her strength upon the field. Jagged walls rose at her bidding, hemming in the servants of the Old Gods and breaking against their temple cities.",
       "visualActions": [
         { "type": "highlight_entity", "entityId": "therazane" },
@@ -60,7 +60,7 @@
       "id": "servant-swarms",
       "title": "The servant hosts endure",
       "summary": "The empire answered through the n'raqi and aqir.",
-      "durationMs": 20000,
+      "durationMs": 24000,
       "narration": "Yet from the cities came the n'raqi and the innumerable aqir. Rank after rank endured the elemental fury, until even the joined hosts could not overcome them.",
       "visualActions": [
         { "type": "highlight_faction", "factionId": "nraqi" },
@@ -71,7 +71,7 @@
       "id": "elemental-subjugation",
       "title": "The resistance fails",
       "summary": "The Old Gods defeated and enslaved the Elemental Lords.",
-      "durationMs": 24000,
+      "durationMs": 28000,
       "narration": "In the end the resistance was broken. The Old Gods bound the Elemental Lords, and with no native power left to bar its way, the Black Empire spread across much of the world.",
       "visualActions": [
         { "type": "highlight_faction", "factionId": "black-empire-civilization" },

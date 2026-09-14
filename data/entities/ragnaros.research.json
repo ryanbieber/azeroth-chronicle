@@ -9,5 +9,6 @@
   "sourceIds": ["warcraft-chronicle-volume-1"],
   "claimIds": ["ragnaros-tactics-claim"],
   "tags": ["elemental-lord", "fire"],
+  "mapFigure": { "asset": "images/characters/black-empire/ragnaros.research.webp", "scale": 1 },
   "contentStatus": "research"
 }

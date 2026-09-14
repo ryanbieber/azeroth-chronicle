@@ -11,7 +11,7 @@ describe('application shell', () => {
     const selector = screen.getByRole('combobox', { name: 'Choose era' });
     expect(selector).toBeVisible();
     expect(screen.getAllByRole('option')).toHaveLength(9);
-    expect(screen.getByRole('option', { name: 'Cosmic Origins and the Black Empire' })).toBeVisible();
+    expect(screen.getByRole('option', { name: 'Primordial Azeroth and the Black Empire' })).toBeVisible();
     expect(screen.getByRole('option', { name: 'The Modern Cosmic Age' })).toBeVisible();
   });
 });

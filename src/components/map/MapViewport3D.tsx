@@ -87,25 +87,25 @@ function RegionMesh({ region, highlighted }: { region: RuntimePolygon; highlight
   if (!shapeGeometry) return null;
 
   const style = {
-    landmass: { color: '#566154', opacity: 0.18, height: 0.025, outline: '#778274' },
-    influence: { color: '#71345f', opacity: 0.1, height: 0.065, outline: '#d29abd' },
-    region: { color: '#5c3150', opacity: 0.42, height: 0.05, outline: '#966b8c' },
+    landmass: { color: '#7d8879', opacity: 0.018, height: 0.025, outline: '#758074' },
+    influence: { color: '#6e3d55', opacity: 0.055, height: 0.065, outline: '#b58a77' },
+    region: { color: '#75465d', opacity: 0.11, height: 0.05, outline: '#ad806e' },
   }[region.styleRole];
 
   return (
     <group>
       <mesh geometry={shapeGeometry} position={[0, style.height, 0]}>
-        <meshBasicMaterial color={highlighted ? '#a75f8d' : style.color} transparent opacity={highlighted ? 0.16 : style.opacity} depthWrite={false} />
+        <meshBasicMaterial color={highlighted ? '#9a6c71' : style.color} transparent opacity={highlighted ? 0.085 : style.opacity} depthWrite={false} />
       </mesh>
       {region.rings.map((ring, index) => (
         <Line
           key={`${region.id}-outline-${index}`}
           points={ring.map(([x, , z]) => [x, style.height + 0.018, z])}
-          color={highlighted ? '#fff1c8' : style.outline}
-          lineWidth={highlighted ? 2.4 : 1.2}
+          color={highlighted ? '#e3c59b' : style.outline}
+          lineWidth={highlighted ? 1.8 : 0.85}
           dashed={region.geographicCertainty === 'inferred'}
-          dashSize={0.13}
-          gapSize={0.09}
+          dashSize={0.08}
+          gapSize={0.07}
         />
       ))}
     </group>
@@ -205,6 +205,19 @@ function ElementalPresence({ entityId }: { entityId: string }) {
   );
 }
 
+function CharacterFigure({ entity, active, onSelect }: { entity: LoreEntity; active: boolean; onSelect: () => void }) {
+  if (!entity.mapFigure) return null;
+  const width = Math.round(164 * (entity.mapFigure.scale ?? 1));
+  return (
+    <Html center position={[0, 1.02, 0]} distanceFactor={5} zIndexRange={[4, 1]}>
+      <button className={`map-character-figure${active ? ' is-active' : ''}`} type="button" onClick={onSelect} aria-label={entity.name}>
+        <img src={`${import.meta.env.BASE_URL}${entity.mapFigure.asset}`} alt="" width={width} />
+        <span>{entity.name}</span>
+      </button>
+    </Html>
+  );
+}
+
 function AtlasScene({
   battles,
   geometry,
@@ -231,6 +244,14 @@ function AtlasScene({
     const entity = entities.find((item) => item.id === state.entityId);
     return runtime?.kind === 'point' && entity ? [{ state, runtime, entity }] : [];
   }).sort((a, b) => (b.state.labelPriority ?? 0) - (a.state.labelPriority ?? 0)).slice(0, 80), [entities, geometry, spatialStates]);
+  const characterFigures = useMemo(() => entities.flatMap((entity) => {
+    if (entity.type !== 'character' || !entity.mapFigure) return [];
+    const anchorId = entity.mapFigure.anchorEntityId ?? entity.id;
+    const anchorState = spatialStates.find((state) => state.entityId === anchorId);
+    const runtime = geometry.find((item) => item.id === anchorState?.geometryId && item.kind === 'point');
+    const active = highlightedIds.includes(entity.id) || selectedId === entity.id;
+    return runtime?.kind === 'point' ? [{ active, entity, runtime }] : [];
+  }), [entities, geometry, highlightedIds, selectedId, spatialStates]);
 
   useEffect(() => {
     const focused = locations.find((item) => item.entity.id === focusedLocationId);
@@ -291,10 +312,12 @@ function AtlasScene({
               <meshBasicMaterial color="#fff1c8" depthTest={false} />
             </mesh>
           )}
-          <group onClick={(event) => { event.stopPropagation(); select({ kind: 'entity', id: entity.id }); }}>
-            <ElementalPresence entityId={entity.id} />
-          </group>
-          {layers.labels && (
+          {!entity.mapFigure && (
+            <group onClick={(event) => { event.stopPropagation(); select({ kind: 'entity', id: entity.id }); }}>
+              <ElementalPresence entityId={entity.id} />
+            </group>
+          )}
+          {layers.labels && !entity.mapFigure && (
             <Html center position={[0, 0.38, 0]} distanceFactor={7}>
               <button className="map-label" type="button" onClick={() => select({ kind: 'entity', id: entity.id })}>{entity.name}</button>
             </Html>
@@ -302,6 +325,18 @@ function AtlasScene({
         </group>
         );
       })}
+
+      {layers.locations && characterFigures.map(({ active, entity, runtime }) => (
+        <group key={`figure-${entity.id}`} position={[runtime.position[0], 0.18, runtime.position[2]]}>
+          {active && (
+            <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.12, 0]}>
+              <ringGeometry args={[0.27, 0.32, 32]} />
+              <meshBasicMaterial color="#d7b777" transparent opacity={0.5} depthTest={false} />
+            </mesh>
+          )}
+          <CharacterFigure active={active} entity={entity} onSelect={() => select({ kind: 'entity', id: entity.id })} />
+        </group>
+      ))}
 
       {layers.battles && battles.filter((battle) =>
         battle.geographicCertainty !== 'unknown'

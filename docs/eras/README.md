@@ -1,8 +1,8 @@
-# Nine-Era Build Program
+# Historical Atlas Build Program
 
 ## Purpose and editorial status
 
-This is the implementation and research backlog for the nine user-approved navigation eras. The era names and summaries are approved product taxonomy; every person, place, boundary, date, battle, route, outcome, and causal link listed below remains a **research candidate** until it has claim-level citations and human lore review.
+This is the implementation and research backlog for the nine current navigation eras and the planned Cosmic Origins prologue. The era names and summaries are approved product taxonomy; every person, place, boundary, date, battle, route, outcome, and causal link listed below remains a **research candidate** until it has claim-level citations and human lore review.
 
 Application records live in `data/eras`. Each era owns a separate record in `data/map-states`, because the atlas must not imply that Azeroth had one permanent geography. Reviewed people and factions will live in `data/entities`; events and battles in `data/events` and `data/battles`; time-aware placements in `data/spatial-states`; routes and source geometry in `data/routes` and `data/geometry`; narrated sequences in `data/stories`.
 
@@ -10,7 +10,8 @@ Application records live in `data/eras`. Each era owns a separate record in `dat
 
 | Order | Era ID | Primary atlas problem | Current state |
 | --- | --- | --- | --- |
-| 1 | `black-empire` | Primordial Azeroth and cosmic-scale domains | Research vertical slice implemented; human review pending |
+| 0 | `cosmic-origins` | Non-geographic cosmic forces and the formation of Azeroth | Planned; intentionally absent from navigation until its visualization and reviewed content exist |
+| 1 | `black-empire` | Primordial Azeroth, elemental domains, and Black Empire influence | Public research-preview vertical slice implemented; human review pending |
 | 2 | `ordering-of-azeroth` | Titan-forged campaigns and planetary reordering | Era shell and empty map state |
 | 3 | `ancient-civilizations` | Changing empires across primordial Kalimdor | Era shell and empty map state |
 | 4 | `war-of-the-ancients` | A campaign ending in a world-changing rupture | Era shell and empty map state |
@@ -20,7 +21,7 @@ Application records live in `data/eras`. Each era owns a separate record in `dat
 | 8 | `age-of-adventurers` | Many campaigns and repeated map-state changes | Era shell and empty map state |
 | 9 | `modern-cosmic-age` | Fourth War through the evolving Worldsoul Saga | Era shell and empty map state |
 
-Build the eras in this order. Finish the publication gate for one era before beginning production terrain for the next; reusable engine improvements may continue across eras.
+Build the eras in this order, but do not expose an empty Cosmic Origins shell ahead of the completed Black Empire preview. Finish the publication gate for one era before beginning production terrain for the next; reusable engine improvements may continue across eras.
 
 ## Definition of done for every era
 
@@ -38,15 +39,25 @@ Chronicle Volumes 1–4 are the backbone, but volume boundaries are not era boun
 
 Era 9 extends beyond Chronicle Volume 4. Dragonflight and Worldsoul Saga material therefore requires first-party Blizzard sources and in-game citations rather than being attributed to Chronicle. Useful first-party research entry points include Blizzard's [Dragonflight overview](https://worldofwarcraft.blizzard.com/en-us/news/23785116), [Dragon Aspects history](https://worldofwarcraft.blizzard.com/en-us/news/23876527), [Visions of N'Zoth overview](https://worldofwarcraft.blizzard.com/en-us/news/23237904), and [Worldsoul Saga announcement](https://worldofwarcraft.blizzard.com/en-us/news/24025826). These links seed research only; they are not substitutes for claim-level citations.
 
-## Era 1 — Cosmic Origins and the Black Empire
+## Planned Era 0 — Cosmic Origins
 
-**Historical question:** How did cosmic forces, Azeroth's world-soul, the elemental conflicts, and the Old Gods produce the world ruled by the Black Empire?
+**Historical question:** What powers and processes shaped the Warcraft cosmos, world-souls, and the conditions from which Azeroth emerged?
 
-**Research packets:** cosmology terms and certainty; primordial Azeroth terrain; elemental powers and domains; Old Gods and Black Empire control; world-soul claims; sequence and causality. Candidate people/factions, named locations, conflicts, and boundaries must come from reviewed Volume 1 citations.
+**Release boundary:** this prologue is documented but intentionally omitted from `data/eras` and the public selector until it has a reviewed source boundary, a coherent guided sequence, and a purpose-built visualization. The published Black Empire preview must not open on an empty era shell.
+
+**Visualization direction:** use a non-geographic cosmic field and relationship-driven composition rather than painting Light, Shadow, Life, Death, Order, or Disorder onto Azeroth as territorial regions. The sequence should narrow from cosmic forces to the physical universe, world-souls, and finally Azeroth, handing off at the elemental imbalance. Do not force cosmic subjects into planetary coordinates.
+
+**Voice-over sequencing:** write and stabilize the transcript with the other eras, but defer recording and audio synchronization until every slice is complete.
+
+## Era 1 — Primordial Azeroth and the Black Empire
+
+**Historical question:** How did Azeroth's world-soul, the elemental conflicts, and the Old Gods produce the world ruled by the Black Empire?
+
+**Research packets:** primordial Azeroth terrain; elemental powers and domains; Old Gods and Black Empire control; world-soul claims; sequence and causality. The opening cosmic frame supplies only the context needed to understand Azeroth and is not presented as a complete cosmic history. Candidate people/factions, named locations, conflicts, and boundaries must come from reviewed Volume 1 citations.
 
 **Map production:** maintain the deliberately non-Earth, primordial Azeroth research terrain; reveal one contextual overlay, site, route, or conflict focus at a time instead of stacking every available layer; distinguish exact, approximate, inferred, and unknown geography; do not force cosmic locations onto the planetary map. The Chronicle maps indexed by Warcraft Wiki may guide reconstruction, but the application must use original simplified geometry rather than copied map art unless Blizzard grants explicit redistribution permission.
 
-**Animated tour spine:** cosmic frame → Azeroth's formation → elemental world → escalation of conflict → arrival/rise of the Old Gods → Black Empire domains → condition of the world before the ordering. Camera moves should begin wide, descend to world scale, reveal domains in sequence, animate only cited campaign routes, and finish in the exact map state inherited by Era 2.
+**Animated tour spine:** brief cosmic context → Azeroth's world-soul and elemental imbalance → elemental world → escalation of conflict → arrival/rise of the Old Gods → Black Empire domains → condition of the world before the ordering. Camera moves should begin wide, descend to world scale, reveal domains in sequence, animate only cited campaign routes, and finish in the exact map state inherited by Era 2.
 
 **Implemented research baseline:** 13 people/powers/places, four events, two supported conflict groupings, an original source-guided terrain state, claim-level provenance, and a ten-node tour. The detailed source and cartography audit is in `docs/research/era-1-black-empire.md`. Human review remains required before promotion.
 
@@ -163,4 +174,4 @@ setup narration
 
 Recommended node fields are already supported: narration, explicit duration, camera pose, record references, visual actions, and previous/next links. The atlas presents only Previous and Next controls during a tour; source records remain available through separate permanent dossiers. Future voice-over attaches to these nodes; transcript text remains authoritative and accessible.
 
-Default tour pacing targets a deliberate 90–100 spoken words per minute with roughly three seconds of additional settling time for map and camera changes. Explicit node durations may run longer when an embedded conflict has multiple animated phases.
+Default tour pacing targets a slow, weighty 82 spoken words per minute with roughly five seconds of additional settling time for map and camera changes. Guided-tour panes remain a single continuous sequence; detailed conflict phases belong in their permanent battle dossiers, not inside the tour.

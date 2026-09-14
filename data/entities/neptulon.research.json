@@ -9,5 +9,6 @@
   "sourceIds": ["warcraft-chronicle-volume-1"],
   "claimIds": ["neptulon-tactics-claim"],
   "tags": ["elemental-lord", "water"],
+  "mapFigure": { "asset": "images/characters/black-empire/neptulon.research.webp", "scale": 0.94 },
   "contentStatus": "research"
 }

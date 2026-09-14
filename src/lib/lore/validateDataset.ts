@@ -132,6 +132,7 @@ export function validateDatasetReferences(
     requireFrom(entity.lastEraId, eraIds, `entities.${entity.id}.lastEraId`, 'era');
     requireSources(entity.sourceIds, `entities.${entity.id}.sourceIds`);
     requireAllFrom(entity.claimIds, claimIds, `entities.${entity.id}.claimIds`, 'claim');
+    requireFrom(entity.mapFigure?.anchorEntityId, entityIds, `entities.${entity.id}.mapFigure.anchorEntityId`, 'entity');
   }
 
   const validateEvent = (event: LoreDataset['events'][number] | LoreDataset['battles'][number], prefix: string) => {

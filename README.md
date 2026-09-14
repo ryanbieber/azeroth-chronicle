@@ -10,7 +10,7 @@ This repository implements the [product and technical specification](./docs/azer
 
 - Vite, React, and TypeScript application shell
 - React Three Fiber atlas with orbit, pan, zoom, generated terrain, uncertainty-aware regions, and sourced site markers
-- Nine-era top navigation with shareable era and record routes
+- Nine available eras in the top navigation, with a planned Cosmic Origins prologue held back until it has complete content and an appropriate non-geographic visualization
 - Separate Zustand stores for era, layers, selection, story, and source filters
 - TypeScript domain contracts and Zod schemas
 - File-backed repository adapter with cross-record validation
@@ -18,7 +18,7 @@ This repository implements the [product and technical specification](./docs/azer
 - Source-linked Black Empire research slice plus empty research map states for the remaining eras
 - Unit tests, linting, type checks, CI, and Render static-site configuration
 
-The full delivery sequence and architectural decisions are in [`docs/IMPLEMENTATION_PLAN.md`](./docs/IMPLEMENTATION_PLAN.md). The research, terrain, people, battle, and animated-tour plan for all nine eras is in [`docs/eras/README.md`](./docs/eras/README.md).
+The full delivery sequence and architectural decisions are in [`docs/IMPLEMENTATION_PLAN.md`](./docs/IMPLEMENTATION_PLAN.md). The research, terrain, people, battle, and animated-tour program—including the planned Cosmic Origins prologue—is in [`docs/eras/README.md`](./docs/eras/README.md).
 
 Live GitHub Pages build: <https://ryanbieber.github.io/azeroth-chronicle/>
 
@@ -84,4 +84,4 @@ The repository deploys GitHub Pages from `.github/workflows/deploy-pages.yml`. T
 
 ## Project status
 
-The reusable engine, nine-era navigation, and source-linked Era 1 research baseline are implemented. This is not yet a lore-ready public release: Era 1 remains explicitly marked as research until its claims, citations, summaries, and inferred geography pass human review. See the current-status and content-gated sections of the implementation plan.
+The reusable engine, nine-era navigation, and source-linked **Primordial Azeroth and the Black Empire** preview are implemented. The deployed site is an unofficial public research preview, not a lore-reviewed publication: Era 1 remains explicitly marked as research until its claims, citations, summaries, and inferred geography pass human review. Cosmic Origins is reserved as a future Era 0 and is not exposed as an empty navigation shell. See the current-status and content-gated sections of the implementation plan.

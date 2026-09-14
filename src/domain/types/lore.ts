@@ -113,6 +113,11 @@ export interface LoreEntity {
   sourceIds: EntityId[];
   claimIds?: EntityId[];
   tags?: string[];
+  mapFigure?: {
+    asset: string;
+    anchorEntityId?: EntityId;
+    scale?: number;
+  };
   contentStatus: 'placeholder' | 'research' | 'reviewed' | 'published';
 }
 

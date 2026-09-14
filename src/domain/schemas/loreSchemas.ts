@@ -135,6 +135,11 @@ export const loreEntitySchema = z.object({
   sourceIds: z.array(id),
   claimIds: z.array(id).optional(),
   tags: z.array(z.string()).optional(),
+  mapFigure: z.object({
+    asset: z.string().min(1),
+    anchorEntityId: id.optional(),
+    scale: z.number().positive().optional(),
+  }).optional(),
   contentStatus,
 });
 

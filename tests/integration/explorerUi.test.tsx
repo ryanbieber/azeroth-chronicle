@@ -31,13 +31,15 @@ describe('explorer UI', () => {
     expect(screen.queryByRole('complementary')).not.toBeInTheDocument();
   });
 
-  it('keeps archive panels and contextual popups out of the map experience', async () => {
+  it('opens a compact dossier for a selected map entity without restoring archive controls', async () => {
     render(
       <MemoryRouter initialEntries={['/map?era=black-empire&selected=entity:yshaarj-central-bastion']}>
         <MapPage />
       </MemoryRouter>,
     );
     expect(screen.queryByRole('button', { name: /history/i })).not.toBeInTheDocument();
-    expect(screen.queryByRole('complementary')).not.toBeInTheDocument();
+    const dossier = screen.getByRole('complementary', { name: 'Selected atlas record' });
+    expect(dossier).toHaveTextContent("Y'Shaarj's Central Bastion");
+    expect(screen.queryByRole('link', { name: 'Read full dossier' })).not.toBeInTheDocument();
   });
 });

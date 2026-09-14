@@ -9,5 +9,10 @@
   "sourceIds": ["warcraft-chronicle-volume-1"],
   "claimIds": ["yshaarj-bastion-claim"],
   "tags": ["old-god", "black-empire"],
+  "mapFigure": {
+    "asset": "images/characters/black-empire/yshaarj.research.webp",
+    "anchorEntityId": "yshaarj-central-bastion",
+    "scale": 1.08
+  },
   "contentStatus": "research"
 }

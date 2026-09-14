@@ -16,6 +16,7 @@ describe('story runtime context', () => {
     } satisfies StoryNode;
 
     expect(visualActionsForStoryNode(node)).toEqual([
+      { type: 'highlight_entity', entityId: 'entity-example' },
       { type: 'focus_location', locationId: 'location-example' },
       { type: 'show_battle', battleId: 'battle-example' },
       { type: 'show_route', routeId: 'route-example' },

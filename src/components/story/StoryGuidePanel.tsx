@@ -2,11 +2,11 @@ import { staticLoreRepository } from '../../domain/repositories/StaticLoreReposi
 import { beginStoryGuide, endStoryGuide, enterStoryNode } from '../../lib/story/storyRuntime';
 import { useStoryStore } from '../../app/state/storyStore';
 import { useEffect } from 'react';
-import { BattlePlayback } from '../battle/BattlePlayback';
 
 function narrationDurationMs(narration: string): number {
   const words = narration.trim().split(/\s+/).filter(Boolean).length;
-  return Math.min(40_000, Math.max(14_000, Math.round((words / 1.55) * 1000) + 3_000));
+  const spokenMs = (words / 82) * 60_000;
+  return Math.min(90_000, Math.max(18_000, Math.round(spokenMs / 500) * 500 + 5_000));
 }
 
 export function StoryGuidePanel({ guideId, showLauncher = true }: { guideId: string; showLauncher?: boolean }) {
@@ -61,16 +61,12 @@ export function StoryGuidePanel({ guideId, showLauncher = true }: { guideId: str
   const previous = currentIndex > 0 ? guide.nodeIds[currentIndex - 1] : undefined;
   const next = currentIndex < guide.nodeIds.length - 1 ? guide.nodeIds[currentIndex + 1] : undefined;
   const durationMs = node.durationMs ?? narrationDurationMs(node.narration);
-  const battle = node.battleIds?.[0]
-    ? staticLoreRepository.getDataset().battles.find((item) => item.id === node.battleIds?.[0])
-    : undefined;
 
   return (
     <section className="story-card" aria-live="polite">
-      <p className="eyebrow">Story {currentIndex + 1} of {guide.nodeIds.length}</p>
+      <p className="eyebrow">Guided chronicle</p>
       <h2>{node.title}</h2>
       <p>{node.narration}</p>
-      {battle && <BattlePlayback battle={battle} autoplay controls={false} />}
       <div className="story-actions">
         <button type="button" disabled={!previous} onClick={() => previous && activate(previous)}>Previous</button>
         <button type="button" onClick={() => next ? activate(next) : endStoryGuide()}>Next</button>

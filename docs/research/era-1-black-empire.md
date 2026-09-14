@@ -1,4 +1,4 @@
-# Era 1 Research Ledger — Cosmic Origins and the Black Empire
+# Era 1 Research Ledger — Primordial Azeroth and the Black Empire
 
 ## Status
 
@@ -72,7 +72,7 @@ They do not supply survey-grade coastlines, exact borders, exact arrival sites, 
 - 2 conflict dossiers with 9 total playback phases
 - 23 claim records and 6 source-aware relationship edges
 - 5 citation records across Chronicle, Warcraft Wiki, and Blizzard sources
-- 1 ten-node autoplaying guided history paced for deliberate future voice-over, with only Previous and Next controls, a visible countdown bar, automatic battle phases, one contextual map emphasis at a time, transcript text, and reduced-motion camera skipping
+- 1 unnumbered, ten-node autoplaying guided history paced at roughly 82 spoken words per minute with a dramatic settling beat, with only Previous and Next controls, a visible countdown bar, no embedded sub-stories, original character figures, one contextual map emphasis at a time, transcript text, and reduced-motion camera skipping
 
 ## Human review checklist
 

@@ -9,5 +9,6 @@
   "sourceIds": ["warcraft-chronicle-volume-1"],
   "claimIds": ["alakir-tactics-claim"],
   "tags": ["elemental-lord", "air"],
+  "mapFigure": { "asset": "images/characters/black-empire/alakir.research.webp", "scale": 0.92 },
   "contentStatus": "research"
 }

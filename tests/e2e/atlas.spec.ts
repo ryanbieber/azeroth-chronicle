@@ -43,27 +43,36 @@ test('representative desktop renderer stays inside the Phase 0 scene budgets', a
   expect(report.usefulSceneMs).toBeLessThanOrEqual(2500);
 });
 
-test('guide advances automatically, uses only previous and next, and plays battle phases', async ({ page }) => {
-  test.setTimeout(90_000);
+test('guide advances as one unnumbered sequence with only previous and next', async ({ page }) => {
+  test.setTimeout(120_000);
   await page.goto('/map?era=black-empire');
   await page.getByRole('button', { name: 'Guided tour' }).click();
-  await expect(page.getByText('Story 1 of 10')).toBeVisible();
-  await expect(page.getByText('Story 2 of 10')).toBeVisible({ timeout: 35_000 });
+  await expect(page.getByRole('heading', { name: 'Before the empire' })).toBeVisible();
+  await expect(page.getByText(/Story \d+ of \d+/)).toHaveCount(0);
+  await expect(page.locator('.battle-playback')).toHaveCount(0);
+  await expect(page.getByRole('heading', { name: 'The sleeping titan within' })).toBeVisible({ timeout: 42_000 });
   await expect(page.getByRole('progressbar', { name: 'Time until next story point' })).toBeVisible();
   await expect(page.locator('.story-card button')).toHaveCount(2);
 
   await page.getByRole('button', { name: 'Next', exact: true }).click();
   await page.getByRole('button', { name: 'Next', exact: true }).click();
-  await expect(page.getByText('Story 4 of 10')).toBeVisible();
-  await expect(page.getByRole('heading', { name: 'The winds divide' })).toBeVisible();
-  await expect(page.getByRole('button', { name: "Al'Akir", exact: true })).toBeVisible();
-  await expect(page.getByRole('heading', { name: 'Fire overwhelms' })).toBeVisible({ timeout: 24_000 });
+  await expect(page.getByRole('heading', { name: 'An age of elemental war' })).toBeVisible();
+  const alakirFigure = page.getByRole('button', { name: "Al'Akir", exact: true });
+  await expect(alakirFigure).toBeVisible();
   await expect(page.getByRole('button', { name: 'Ragnaros', exact: true })).toBeVisible();
-  await expect(page.getByRole('button', { name: "Al'Akir", exact: true })).toHaveCount(0);
+  await expect(page.locator('.battle-playback')).toHaveCount(0);
 
-  for (let node = 5; node <= 10; node += 1) {
+  const remainingTitles = [
+    'The Old Gods descend',
+    "The empire's builders",
+    "A bastion near the world's center",
+    'The Black Empire spreads',
+    'Old rivals form one resistance',
+    'A world awaiting the Ordering',
+  ];
+  for (const title of remainingTitles) {
     await page.getByRole('button', { name: 'Next', exact: true }).click();
-    await expect(page.getByText(`Story ${node} of 10`)).toBeVisible();
+    await expect(page.getByRole('heading', { name: title })).toBeVisible();
   }
   await page.getByRole('button', { name: 'Next', exact: true }).click();
   await expect(page.getByRole('button', { name: 'Guided tour' })).toBeVisible();
@@ -74,4 +83,13 @@ test('the curated Chronicle scope cannot be disabled by visitors', async ({ page
   await expect(page.getByRole('button', { name: /controls/i })).toHaveCount(0);
   await expect(page.getByRole('checkbox')).toHaveCount(0);
   await expect(page.getByRole('button', { name: 'Guided tour' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Ragnaros', exact: true })).toBeVisible();
+  await page.getByRole('button', { name: 'Ragnaros', exact: true }).click();
+  await expect(page).toHaveURL(/selected=entity%3Aragnaros/);
+  const dossier = page.getByRole('complementary', { name: 'Selected atlas record' });
+  await expect(dossier.getByRole('heading', { name: 'Ragnaros' })).toBeVisible();
+  await expect(dossier.getByText('The Firelord')).toBeVisible();
+  await expect(dossier.getByText(/Favored direct force/)).toBeVisible();
+  await expect(dossier.getByRole('link', { name: 'Read full dossier' })).toHaveCount(0);
+  await expect(dossier.getByText('Claims and provenance')).toHaveCount(0);
 });

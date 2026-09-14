@@ -9,5 +9,6 @@
   "sourceIds": ["warcraft-chronicle-volume-1"],
   "claimIds": ["therazane-tactics-claim"],
   "tags": ["elemental-lord", "earth"],
+  "mapFigure": { "asset": "images/characters/black-empire/therazane.research.webp", "scale": 0.96 },
   "contentStatus": "research"
 }

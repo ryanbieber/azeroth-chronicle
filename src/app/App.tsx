@@ -1,11 +1,12 @@
 import { lazy, Suspense } from 'react';
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { AppShell } from '../components/layout/AppShell';
 import { AppErrorBoundary } from '../components/layout/AppErrorBoundary';
 import { BattlePage } from '../pages/BattlePage';
 import { EraPage, NotFound } from '../pages/EraPage';
 import { EntityPage } from '../pages/EntityPage';
 import { EventPage } from '../pages/EventPage';
+import { LandingPage } from '../pages/LandingPage';
 
 const MapPage = lazy(() => import('../pages/MapPage').then((module) => ({ default: module.MapPage })));
 
@@ -14,7 +15,7 @@ export function App() {
     <AppShell>
       <AppErrorBoundary>
       <Routes>
-        <Route path="/" element={<Navigate replace to="/map?era=black-empire" />} />
+        <Route path="/" element={<LandingPage />} />
         <Route
           path="/map"
           element={(

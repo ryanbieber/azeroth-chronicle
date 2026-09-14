@@ -8,6 +8,7 @@ This repository implements the [product and technical specification](./docs/azer
 
 ## What works now
 
+- Cinematic landing page with an accessible full-history tour that chains every completed guided era
 - Vite, React, and TypeScript application shell
 - React Three Fiber atlas with orbit, pan, zoom, generated terrain, relational cosmography, uncertainty-aware regions, and sourced site markers
 - Ten available eras in the top navigation, beginning with a complete Cosmic Origins research prologue

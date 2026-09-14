@@ -114,3 +114,29 @@ test('Cosmic Origins uses relational cosmography and reader-opened character con
   await expect(dossier.getByRole('heading', { name: 'Aman’Thul' })).toBeVisible();
   await expect(dossier.locator('.entity-overview-lede')).toContainText(/first titan to awaken/i);
 });
+
+test('landing page full tour chains every completed guided era', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.getByRole('heading', { name: /the full history/i })).toBeVisible();
+  await expect(page.locator('.landing-still')).toHaveCount(5);
+  await page.getByRole('button', { name: /full tour of the history/i }).click();
+
+  await expect(page).toHaveURL(/map\?era=cosmic-origins&tour=full/);
+  await expect(page.getByRole('heading', { name: 'Before time could be counted' })).toBeVisible();
+  for (let index = 0; index < 8; index += 1) {
+    await page.getByRole('button', { name: 'Next', exact: true }).click();
+  }
+  await expect(page.getByRole('heading', { name: 'One world among the stars' })).toBeVisible();
+  await page.getByRole('button', { name: 'Continue the chronicle' }).click();
+
+  await expect(page).toHaveURL(/map\?era=black-empire&tour=full/);
+  await expect(page.getByRole('heading', { name: 'Before the empire' })).toBeVisible();
+  for (let index = 0; index < 9; index += 1) {
+    await page.getByRole('button', { name: 'Next', exact: true }).click();
+  }
+  await expect(page.getByRole('heading', { name: 'A world awaiting the Ordering' })).toBeVisible();
+  await page.getByRole('button', { name: 'Continue the chronicle' }).click();
+
+  await expect(page).toHaveURL(/\?tour=complete$/);
+  await expect(page.getByRole('status')).toContainText('edge of the current chronicle');
+});

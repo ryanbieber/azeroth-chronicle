@@ -1,11 +1,13 @@
 import type { ReactNode } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { useEraStore } from '../../app/state/eraStore';
 import { staticLoreRepository } from '../../domain/repositories/StaticLoreRepository';
 import { beginStoryGuide, endStoryGuide } from '../../lib/story/storyRuntime';
 
 export function AppShell({ children }: { children: ReactNode }) {
   const navigate = useNavigate();
+  const location = useLocation();
+  const landing = location.pathname === '/';
   const eras = staticLoreRepository.listEras();
   const eraId = useEraStore((state) => state.eraId);
   const setEra = useEraStore((state) => state.setEra);
@@ -14,14 +16,14 @@ export function AppShell({ children }: { children: ReactNode }) {
   return (
     <div className="app-shell">
       <header className="topbar">
-        <NavLink className="brand" to="/map?era=black-empire">
+        <NavLink className="brand" to="/">
           <span className="brand-mark">AC</span>
           <span>
             <strong>Azeroth Chronicle</strong>
             <small>Unofficial fan atlas</small>
           </span>
         </NavLink>
-        <div className="topbar-actions">
+        {!landing && <div className="topbar-actions">
           {eras.length > 0 && (
             <label className="top-era-selector">
               <span>Era</span>
@@ -55,7 +57,7 @@ export function AppShell({ children }: { children: ReactNode }) {
             <NavLink to={`/map?era=${selectedEra?.slug ?? 'black-empire'}`}>Atlas</NavLink>
             <NavLink to={`/eras/${selectedEra?.slug ?? 'black-empire'}`}>Era dossier</NavLink>
           </nav>
-        </div>
+        </div>}
       </header>
       {children}
       <footer className="footer">

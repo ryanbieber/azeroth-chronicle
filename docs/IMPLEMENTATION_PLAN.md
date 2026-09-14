@@ -13,6 +13,7 @@ The repository contains a complete reusable technical vertical slice and the fir
 - Phase 0's parsed GeoJSON, external GLB terrain, coordinate adapter, camera rig, URL restoration, performance profile, and deep-link proof are implemented.
 - Reusable Phase 1–5 systems are implemented: generated manifests and search, typed reference validation, source filtering, permanent dossiers, multi-record map layers, battle playback, guided-story persistence/branch return, causality, and provenance.
 - Phase 6 foundations are implemented: route splitting, responsive states, error/WebGL fallbacks, accessibility affordances, privacy and asset-origin decisions, Render/GitHub Pages deployment configuration, and visual regression coverage.
+- The root route is a cinematic, reduced-motion-safe landing page. Its full-history action starts at the earliest completed guide and advances through later completed guided eras from data order, returning an explicit current-coverage message at the edge of the archive.
 - Chronicle Volumes 1–4 are registered as the editorial source backbone, with research templates, vocabulary, confidence rules, and a citation review checklist.
 - Ten eras are present in the top-level selector with separate research map states. Era 0, **Cosmic Origins**, now has a source-linked public research preview built around a non-geographic relational cosmography, four events, ten indexed subjects, claim provenance, and a continuous nine-node guided history. Their detailed, one-by-one research and production backlog lives in `docs/eras/README.md`.
 - Era 1, **Primordial Azeroth and the Black Empire**, now has a source-linked public research preview: original generated terrain, inferred/approximate GeoJSON, 13 people/powers/places, four events, two conflict dossiers, a causal chain, a continuous unnumbered ten-node guided history, and clickable illustrated character overviews. Detailed battle phases remain in battle dossiers rather than interrupting the guided chronicle. Human citation and lore review still gates promotion to reviewed or published content.
@@ -25,6 +26,7 @@ The reusable engine acceptance path and the Era 0–1 research-preview implement
 ### Application and routing
 
 - Use Vite, React, and strict TypeScript as a single-page application.
+- Use `/` as the public landing page and primary full-history tour entry; retain `/map` as the shareable atlas workspace.
 - Use React Router with permanent routes for `/eras/:slug`, `/battles/:slug`, `/events/:slug`, `/locations/:slug`, and `/factions/:slug`.
 - Use `/map` query parameters for restorable explorer state: `era`, selected record, and optionally a compact camera bookmark. Public layer visibility is curated by era and story state rather than exposed as visitor configuration.
 - Keep the 3D explorer client-rendered. Generate static dossier HTML only after measuring an actual search-indexing or link-preview need. If needed, add a build-time prerender step rather than a server runtime.

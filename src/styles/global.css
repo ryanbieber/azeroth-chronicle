@@ -56,6 +56,43 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .top-era-selector select { min-width: 180px; padding: 8px 30px 8px 10px; border: 1px solid var(--line); border-radius: 3px; color: var(--ink); background: #0c1015; }
 .top-tour-button { min-height: 36px; padding: 7px 11px; border: 1px solid var(--gold); border-radius: 3px; color: #160f07; background: var(--gold); cursor: pointer; font-size: 11px; font-weight: 700; }
 
+.app-shell:has(.landing-page) .topbar { position: absolute; inset: 0 0 auto; border-bottom-color: transparent; background: linear-gradient(180deg, rgba(5,7,10,.88), transparent); }
+.landing-page { position: relative; isolation: isolate; display: grid; flex: 1; place-items: center; min-height: calc(100dvh - 42px); overflow: hidden; padding: 130px 28px 120px; background: #05070a; }
+.landing-montage, .landing-veil { position: absolute; inset: 0; }
+.landing-montage { z-index: -3; overflow: hidden; }
+.landing-veil { z-index: -1; background: radial-gradient(circle at 50% 47%, rgba(6,8,11,.18) 0 12%, rgba(6,8,11,.72) 52%, #05070a 94%), linear-gradient(180deg, rgba(4,6,9,.42), rgba(4,6,9,.14) 42%, rgba(4,6,9,.9)); }
+.landing-still { position: absolute; margin: 0; overflow: hidden; opacity: .34; filter: saturate(.72) contrast(1.08) blur(1.2px); }
+.landing-still img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.landing-still-cosmos { inset: -10%; animation: landing-cosmos-drift 42s ease-in-out infinite alternate; }
+.landing-still-empire { right: -7%; bottom: -17%; width: 58%; height: 61%; transform: rotate(-4deg); border: 1px solid rgba(226,194,128,.13); border-radius: 48% 8% 0 0; opacity: .2; animation: landing-empire-drift 36s ease-in-out infinite alternate; }
+.landing-still-amanthul, .landing-still-ragnaros, .landing-still-yshaarj { overflow: visible; filter: saturate(.62) contrast(1.05) blur(.65px) drop-shadow(0 28px 32px rgba(0,0,0,.82)); }
+.landing-still-amanthul { top: 13%; left: 5%; width: 24%; height: 77%; opacity: .17; animation: landing-figure-left 29s ease-in-out infinite alternate; }
+.landing-still-ragnaros { right: 4%; bottom: 0; width: 27%; height: 72%; opacity: .19; animation: landing-figure-right 32s ease-in-out infinite alternate; }
+.landing-still-yshaarj { right: 22%; top: 9%; width: 22%; height: 58%; opacity: .1; animation: landing-figure-far 38s ease-in-out infinite alternate; }
+.landing-still-amanthul img, .landing-still-ragnaros img, .landing-still-yshaarj img { object-fit: contain; }
+.landing-hero { width: min(900px, 100%); text-align: center; text-shadow: 0 4px 24px rgba(0,0,0,.92); }
+.landing-hero .eyebrow { margin-bottom: 18px; letter-spacing: .22em; }
+.landing-hero h1 { margin: 0; font: 600 clamp(42px, 6.4vw, 88px)/.98 Cinzel, Cambria, Georgia, serif; letter-spacing: -.025em; text-wrap: balance; }
+.landing-lede { max-width: 680px; margin: 28px auto 0; color: #b8b3a8; font-size: clamp(15px, 1.45vw, 19px); line-height: 1.7; text-wrap: balance; }
+.landing-tour-complete { max-width: 640px; margin: 22px auto 0; padding: 12px 15px; border: 1px solid rgba(208,165,90,.28); color: #d8c6a0; background: rgba(8,11,15,.72); font-size: 13px; line-height: 1.5; }
+.landing-actions { display: grid; justify-items: center; gap: 18px; margin-top: 36px; }
+.landing-tour-button { min-width: min(420px, 100%); padding: 17px 28px 15px; border: 1px solid #e6be70; border-radius: 3px; color: #160f07; background: linear-gradient(180deg, #e8c276, #c99643); box-shadow: 0 16px 50px rgba(0,0,0,.48), 0 0 46px rgba(216,170,83,.12); cursor: pointer; }
+.landing-tour-button span, .landing-tour-button small { display: block; }
+.landing-tour-button span { font: 700 16px/1.2 Cinzel, Cambria, Georgia, serif; letter-spacing: .055em; text-transform: uppercase; }
+.landing-tour-button small { margin-top: 6px; color: rgba(28,18,7,.72); font-size: 10px; font-weight: 700; letter-spacing: .075em; text-transform: uppercase; }
+.landing-tour-button:hover { filter: brightness(1.08); transform: translateY(-1px); }
+.landing-actions > a { color: #d7cfbf; font-size: 12px; letter-spacing: .08em; text-decoration-color: rgba(215,207,191,.4); text-underline-offset: 5px; text-transform: uppercase; }
+.landing-era-thread { position: absolute; right: 28px; bottom: 22px; left: 28px; display: flex; justify-content: center; gap: 24px; color: rgba(221,213,198,.54); font-size: 9px; letter-spacing: .1em; text-transform: uppercase; }
+.landing-era-thread span { display: flex; align-items: center; gap: 7px; }
+.landing-era-thread i { width: 6px; height: 6px; border: 1px solid #d0a55a; border-radius: 50%; box-shadow: 0 0 9px rgba(208,165,90,.48); }
+.landing-era-thread .is-future { color: rgba(221,213,198,.3); }
+.landing-era-thread .is-future i { border-style: dashed; box-shadow: none; }
+@keyframes landing-cosmos-drift { from { transform: scale(1.02) translate3d(-1.4%, -.6%, 0); } to { transform: scale(1.11) translate3d(1.2%, 1%, 0); } }
+@keyframes landing-empire-drift { from { transform: rotate(-4deg) scale(1.03) translate3d(0, 2%, 0); } to { transform: rotate(-2deg) scale(1.1) translate3d(-2%, -1%, 0); } }
+@keyframes landing-figure-left { from { transform: translate3d(-2%, 2%, 0) scale(.98); } to { transform: translate3d(3%, -2%, 0) scale(1.045); } }
+@keyframes landing-figure-right { from { transform: translate3d(2%, 1%, 0) scale(1); } to { transform: translate3d(-3%, -2%, 0) scale(1.055); } }
+@keyframes landing-figure-far { from { transform: translate3d(1%, -1%, 0) scale(.96); } to { transform: translate3d(-2%, 3%, 0) scale(1.03); } }
+
 .atlas-layout {
   flex: 1;
   min-height: 0;
@@ -226,8 +263,14 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   .era-record-grid { grid-template-columns: 1fr; }
   .causal-columns { grid-template-columns: 1fr; }
   .playback-controls button { min-height: 42px; }
+  .landing-page { padding: 112px 20px 108px; }
+  .landing-still-amanthul { left: -13%; width: 47%; opacity: .14; }
+  .landing-still-ragnaros { right: -13%; width: 48%; opacity: .15; }
+  .landing-still-yshaarj, .landing-still-empire { display: none; }
+  .landing-era-thread { right: 14px; bottom: 14px; left: 14px; flex-wrap: wrap; gap: 8px 15px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  .landing-still { animation: none !important; }
 }

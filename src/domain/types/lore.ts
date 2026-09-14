@@ -122,6 +122,10 @@ export interface LoreEntity {
     anchorEntityId?: EntityId;
     scale?: number;
   };
+  mapVisual?: {
+    asset: string;
+    scale?: number;
+  };
   contentStatus: 'placeholder' | 'research' | 'reviewed' | 'published';
 }
 

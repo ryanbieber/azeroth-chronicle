@@ -11,5 +11,9 @@
   "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-dragon-aspects-history"],
   "claimIds": ["pantheon-purpose-claim"],
   "tags": ["titans", "pantheon", "order"],
+  "mapVisual": {
+    "asset": "images/subjects/cosmic-origins/pantheon-of-order.research.webp",
+    "scale": 1.12
+  },
   "contentStatus": "research"
 }

@@ -15,15 +15,16 @@ export function EntityDossier({ entity, compact = false }: { entity: LoreEntity;
   );
   const relatedBattles = dataset.battles.filter((battle) => battle.participantEntityIds?.includes(entity.id));
   const relationalStates = spatialStates.filter((state) => state.placementKind === 'relational');
+  const overviewAsset = entity.mapFigure?.asset ?? entity.mapVisual?.asset;
 
   if (compact) {
     return (
       <article className="dossier entity-overview" aria-labelledby="entity-title">
-        {entity.mapFigure && (
+        {overviewAsset && (
           <img
             className="entity-overview-portrait"
-            src={`${import.meta.env.BASE_URL}${entity.mapFigure.asset}`}
-            alt={`Illustration of ${entity.name}`}
+            src={`${import.meta.env.BASE_URL}${overviewAsset}`}
+            alt={`Visual representation of ${entity.name}`}
           />
         )}
         <p className="eyebrow">{entity.type} overview</p>

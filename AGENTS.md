@@ -63,6 +63,7 @@ The Black Empire is the first vertical slice, not a special case in the engine.
 
 - Preserve the historical-atlas, dark archival visual direction without copying Warcraft game UI or published page designs.
 - Effects must explain history, not decorate it.
+- Every key figure or embodied group introduced by a guided era must have a deliberate visual representation. It may appear only during the relevant story beat and need not remain on the map, but a generic marker alone is not sufficient for a key actor. Realms, forces, places, and concepts may instead be represented by terrain or environmental art when that treatment communicates them clearly. Keep representations source-aware, original, accessible through accompanying text, and explicit when their composition is interpretive rather than geographic.
 - Do not rely on color alone for confidence, geographic certainty, importance, or selection.
 - Every animation needs reduced-motion and skip-to-final-state behavior.
 - Keyboard users must be able to reach controls, stories, and dossiers.

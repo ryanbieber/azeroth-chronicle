@@ -47,7 +47,7 @@ Cosmic Origins uses a `relational` map-state presentation and `relational` spati
 
 The permanent caption reads “RELATIONAL COSMOGRAPHY · NOT TO SPATIAL SCALE.” A plain interpretation note replaces a symbol-heavy map key. All ten placements use `geographicCertainty: unknown`, `placementKind: relational`, and an editor note. Schema validation rejects relational terrain displacement and rejects a relational placement without an interpretation note.
 
-The field and Aman’Thul figure are original project assets generated with OpenAI image generation from text-only prompts. No Chronicle art, game asset, logo, map, or source scan was supplied to or transformed by the generation process.
+The cosmic field represents the abstract opposition, realms, forces, and sleeping-world imagery when its environmental composition already communicates the subject. Dedicated contextual visuals represent every key actor or embodied group: Aman’Thul remains a persistent clickable figure, while the Pantheon, Void Lords, and Old Gods appear during relevant story beats and are independently clickable for compact overviews. These are original project assets generated with OpenAI image generation from text-only prompts. No Chronicle art, game asset, logo, map, or source scan was supplied to or transformed by the generation process.
 
 ## Implemented records
 
@@ -58,7 +58,7 @@ The field and Aman’Thul figure are original project assets generated with Open
 - 15 new claim records and 3 new page-specific citations
 - 1 continuous, unnumbered nine-pane guided history
 - Slow narration timing at roughly 82 spoken words per minute plus a five-second visual settling beat
-- 1 original clickable character figure for the era's named character, Aman’Thul
+- 4 original clickable actor representations: a persistent Aman’Thul figure and contextual Pantheon, Void Lord, and Old God visuals
 - No battles or routes, because this source packet does not establish an atlas-appropriate conflict geography
 
 ## Human review checklist

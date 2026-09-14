@@ -1,4 +1,6 @@
 import { describe, expect, it } from 'vitest';
+import { existsSync } from 'node:fs';
+import { resolve } from 'node:path';
 import { loadDataset } from '../../src/lib/lore/loadDataset';
 import { validateDatasetReferences } from '../../src/lib/lore/validateDataset';
 import { geometryIds } from '../../src/lib/lore/loadGeometry';
@@ -84,6 +86,16 @@ describe('lore dataset', () => {
     expect(era.featuredBattleIds).toEqual([]);
     expect(guide.nodeIds).toHaveLength(9);
     expect(entities.filter((entity) => entity.type === 'character').every((entity) => Boolean(entity.mapFigure?.asset))).toBe(true);
+    const keyActorIds = ['amanthul', 'pantheon-of-order', 'void-lords', 'old-gods'];
+    expect(keyActorIds.every((entityId) => {
+      const entity = entities.find((item) => item.id === entityId);
+      return Boolean(entity?.mapFigure?.asset ?? entity?.mapVisual?.asset);
+    })).toBe(true);
+    expect(keyActorIds.every((entityId) => {
+      const entity = entities.find((item) => item.id === entityId);
+      const asset = entity?.mapFigure?.asset ?? entity?.mapVisual?.asset;
+      return Boolean(asset && existsSync(resolve('public', asset)));
+    })).toBe(true);
     expect(spatialStates).toHaveLength(10);
     expect(spatialStates.every((state) => state.placementKind === 'relational'
       && state.geographicCertainty === 'unknown'

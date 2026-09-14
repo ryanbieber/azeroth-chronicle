@@ -113,6 +113,19 @@ test('Cosmic Origins uses relational cosmography and reader-opened character con
   const dossier = page.getByRole('complementary', { name: 'Selected atlas record' });
   await expect(dossier.getByRole('heading', { name: 'Aman’Thul' })).toBeVisible();
   await expect(dossier.locator('.entity-overview-lede')).toContainText(/first titan to awaken/i);
+
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'The Pantheon gathers' })).toBeVisible();
+  const pantheonVisual = page.locator('.map-subject-visual').filter({ hasText: 'The Pantheon of Order' });
+  await expect(pantheonVisual).toBeVisible();
+  await pantheonVisual.click();
+  await expect(dossier.getByRole('heading', { name: 'The Pantheon of Order' })).toBeVisible();
+  await expect(dossier.locator('.entity-overview-portrait')).toBeVisible();
 });
 
 test('landing page full tour chains every completed guided era', async ({ page }) => {

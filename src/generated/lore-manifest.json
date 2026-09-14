@@ -982,6 +982,10 @@
         "void",
         "primordial"
       ],
+      "mapVisual": {
+        "asset": "images/subjects/cosmic-origins/old-gods.research.webp",
+        "scale": 1.08
+      },
       "contentStatus": "research"
     },
     {
@@ -1010,6 +1014,10 @@
         "pantheon",
         "order"
       ],
+      "mapVisual": {
+        "asset": "images/subjects/cosmic-origins/pantheon-of-order.research.webp",
+        "scale": 1.12
+      },
       "contentStatus": "research"
     },
     {
@@ -1134,6 +1142,10 @@
         "old-gods",
         "cosmology"
       ],
+      "mapVisual": {
+        "asset": "images/subjects/cosmic-origins/void-lords.research.webp",
+        "scale": 1.08
+      },
       "contentStatus": "research"
     },
     {

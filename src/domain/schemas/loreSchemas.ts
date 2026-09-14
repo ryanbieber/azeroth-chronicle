@@ -166,6 +166,10 @@ export const loreEntitySchema = z.object({
     anchorEntityId: id.optional(),
     scale: z.number().positive().optional(),
   }).optional(),
+  mapVisual: z.object({
+    asset: z.string().min(1),
+    scale: z.number().positive().optional(),
+  }).optional(),
   contentStatus,
 });
 

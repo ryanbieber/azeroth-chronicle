@@ -237,6 +237,19 @@ function CharacterFigure({ entity, active, onSelect }: { entity: LoreEntity; act
   );
 }
 
+function ContextualSubjectVisual({ entity, onSelect }: { entity: LoreEntity; onSelect: () => void }) {
+  if (!entity.mapVisual) return null;
+  const width = Math.round(174 * (entity.mapVisual.scale ?? 1));
+  return (
+    <Html center position={[0, 0.94, 0]} distanceFactor={5} zIndexRange={[4, 1]}>
+      <button className="map-subject-visual is-active" type="button" onClick={onSelect} aria-label={entity.name}>
+        <img src={`${import.meta.env.BASE_URL}${entity.mapVisual.asset}`} alt="" width={width} />
+        <span>{entity.name}</span>
+      </button>
+    </Html>
+  );
+}
+
 function AtlasScene({
   battles,
   geometry,
@@ -328,18 +341,21 @@ function AtlasScene({
         const inContext = highlightedIds.includes(entity.id) || focusedLocationId === entity.id || selectedId === entity.id;
         return (
         <group key={state.id} position={[runtime.position[0], 0.2, runtime.position[2]]}>
-          {inContext && (
+          {inContext && presentation !== 'relational' && (
             <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.14, 0]}>
               <ringGeometry args={[0.24, 0.34, 24]} />
               <meshBasicMaterial color="#fff1c8" depthTest={false} />
             </mesh>
           )}
-          {!entity.mapFigure && (
+          {presentation !== 'relational' && !entity.mapFigure && !entity.mapVisual && (
             <group onClick={(event) => { event.stopPropagation(); select({ kind: 'entity', id: entity.id }); }}>
               <ElementalPresence entityId={entity.id} />
             </group>
           )}
-          {layers.labels && !entity.mapFigure && (
+          {entity.mapVisual && (
+            <ContextualSubjectVisual entity={entity} onSelect={() => select({ kind: 'entity', id: entity.id })} />
+          )}
+          {layers.labels && !entity.mapFigure && !entity.mapVisual && (
             <Html center position={[0, 0.38, 0]} distanceFactor={7}>
               <button className="map-label" type="button" onClick={() => select({ kind: 'entity', id: entity.id })}>{entity.name}</button>
             </Html>

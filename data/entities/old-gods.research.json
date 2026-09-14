@@ -9,5 +9,9 @@
   "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-dragon-aspects-history"],
   "claimIds": ["old-gods-cosmic-origin-claim", "old-gods-arrival-claim"],
   "tags": ["old-gods", "void", "primordial"],
+  "mapVisual": {
+    "asset": "images/subjects/cosmic-origins/old-gods.research.webp",
+    "scale": 1.08
+  },
   "contentStatus": "research"
 }

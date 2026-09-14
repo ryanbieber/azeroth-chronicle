@@ -10,5 +10,9 @@
   "sourceIds": ["warcraft-chronicle-volume-1"],
   "claimIds": ["void-lords-world-soul-plan-claim"],
   "tags": ["void", "shadow", "old-gods", "cosmology"],
+  "mapVisual": {
+    "asset": "images/subjects/cosmic-origins/void-lords.research.webp",
+    "scale": 1.08
+  },
   "contentStatus": "research"
 }

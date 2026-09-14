@@ -1,0 +1,16 @@
+{
+  "id": "black-empire-dominion",
+  "kind": "event",
+  "name": "Black Empire Dominion",
+  "slug": "black-empire-dominion",
+  "eraId": "black-empire",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "After the elemental resistance failed", "relativeToId": "elemental-assault-on-black-empire" },
+  "summary": "The elementals failed to dislodge the Old Gods and were enslaved; without that resistance, Black Empire influence extended over much of the world.",
+  "participantEntityIds": ["black-empire-civilization", "old-gods", "elemental-hosts"],
+  "causedByEventIds": ["elemental-assault-on-black-empire"],
+  "relationshipIds": ["elemental-resistance-causes-black-empire-dominion", "black-empire-precedes-ordering"],
+  "sourceIds": ["warcraft-wiki-chronicle-volume-1"],
+  "claimIds": ["black-empire-dominion-claim"],
+  "contentStatus": "research"
+}

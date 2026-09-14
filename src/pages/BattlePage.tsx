@@ -2,6 +2,7 @@ import { Link, useParams } from 'react-router-dom';
 import { BattleDossier } from '../components/dossier/BattleDossier';
 import { staticLoreRepository } from '../domain/repositories/StaticLoreRepository';
 import { NotFound } from './EraPage';
+import { StoryReturnLink } from '../components/story/StoryReturnLink';
 
 export function BattlePage() {
   const { slug = '' } = useParams();
@@ -12,6 +13,7 @@ export function BattlePage() {
   return (
     <main className="document-page">
       <BattleDossier battle={battle} entities={dataset.entities} />
+      <StoryReturnLink eraId={battle.eraId} />
       <Link className="primary-link" to={`/map?era=${battle.eraId}&selected=battle:${battle.slug}`}>
         Locate this battle on the atlas
       </Link>

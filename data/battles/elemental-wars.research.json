@@ -1,0 +1,62 @@
+{
+  "id": "elemental-wars",
+  "kind": "battle",
+  "name": "The Elemental Wars",
+  "slug": "elemental-wars",
+  "eraId": "black-empire",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "unknown", "label": "Untold ages before the Old Gods' arrival" },
+  "summary": "The four Elemental Lords and their hosts fought across primordial Azeroth for ages, with dominion shifting continually and no lasting victor.",
+  "description": "The title is a descriptive grouping for Chronicle's world-spanning elemental conflict. Because the source supplies no stable front or exact battlefield, the atlas records its geography as unknown.",
+  "campaignId": "elemental-wars-campaign",
+  "participantEntityIds": ["alakir", "ragnaros", "therazane", "neptulon", "elemental-hosts"],
+  "causedByEventIds": ["spirit-imbalance"],
+  "relationshipIds": ["spirit-imbalance-causes-elemental-wars", "elemental-wars-precede-old-gods"],
+  "combatants": [
+    { "factionId": "elemental-hosts", "role": "participant", "commanderEntityIds": ["alakir", "ragnaros", "therazane", "neptulon"] }
+  ],
+  "objectives": [
+    { "factionId": "elemental-hosts", "summary": "Each rival elemental host sought dominion and the remaking of the world in its own image." }
+  ],
+  "phases": [
+    {
+      "id": "winds-divide",
+      "title": "The winds divide",
+      "summary": "Al'Akir weakened rivals through spies, deception, and sudden storms.",
+      "durationMs": 21000,
+      "narration": "From the high airs Al'Akir watched the wars below. Through spies and deception he divided his enemies, and his tempests fell only when rival strength had already been spent.",
+      "visualActions": [{ "type": "highlight_entity", "entityId": "alakir" }]
+    },
+    {
+      "id": "fire-overwhelms",
+      "title": "Fire overwhelms",
+      "summary": "Ragnaros answered strategy with volcanic, direct destruction.",
+      "durationMs": 18000,
+      "narration": "Ragnaros placed no faith in subtle designs. Before him volcanoes opened, fire crowned the land, and ash followed where his overwhelming host had passed.",
+      "visualActions": [{ "type": "highlight_entity", "entityId": "ragnaros" }]
+    },
+    {
+      "id": "earth-endures",
+      "title": "Earth endures",
+      "summary": "Therazane sheltered behind mountains and counterattacked exhausted enemies.",
+      "durationMs": 22000,
+      "narration": "Therazane gathered her children behind the strength of mountains. There they endured the fury of their foes, and only when the assault was weary did the earth rise to answer.",
+      "visualActions": [{ "type": "highlight_entity", "entityId": "therazane" }]
+    },
+    {
+      "id": "waters-divide",
+      "title": "Water divides and conquers",
+      "summary": "Neptulon waited for rival armies to separate before crushing them.",
+      "durationMs": 21000,
+      "narration": "Neptulon did not squander his waters against a gathered host. He waited until the armies of his foes were divided, then loosed the deep against them in their weakness.",
+      "visualActions": [{ "type": "highlight_entity", "entityId": "neptulon" }]
+    }
+  ],
+  "outcome": { "summary": "No permanent victor emerged; control shifted while the conflict continued for untold ages." },
+  "geographicCertainty": "unknown",
+  "geographicEditorNote": "Chronicle describes a world-spanning conflict without exact battle sites or stable fronts, so no marker or route is drawn.",
+  "importance": "era_defining",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["elemental-wars-claim"],
+  "contentStatus": "research"
+}

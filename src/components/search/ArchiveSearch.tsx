@@ -35,7 +35,15 @@ export function ArchiveSearch({ eraId }: { eraId: string }) {
               <li key={result.id}>
                 <div><strong>{result.name}</strong><span>{result.type} · {result.contentStatus}</span></div>
                 <div>
-                  {selection && <button type="button" onClick={() => select(selection)}>Show</button>}
+                  {selection && (
+                    <button
+                      type="button"
+                      aria-label={`Show ${result.name} on map`}
+                      onClick={() => select(selection)}
+                    >
+                      Show
+                    </button>
+                  )}
                   <Link to={result.path}>Dossier</Link>
                 </div>
               </li>

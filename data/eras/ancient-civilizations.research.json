@@ -1,0 +1,17 @@
+{
+  "id": "ancient-civilizations",
+  "name": "Rise of the Ancient Civilizations",
+  "slug": "ancient-civilizations",
+  "worldspaceId": "azeroth",
+  "order": 3,
+  "dateLabel": "Research boundary — dates pending citation review",
+  "summary": "The trolls and their empires, the aqir wars, the mogu, Pandaria, ancient humans, and the ascent of the kaldorei.",
+  "mapStateId": "ancient-civilizations-map-research",
+  "defaultLayerIds": ["regions", "battles", "locations", "routes", "labels"],
+  "featuredEventIds": [],
+  "featuredBattleIds": [],
+  "previousEraId": "ordering-of-azeroth",
+  "nextEraId": "war-of-the-ancients",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "contentStatus": "research"
+}

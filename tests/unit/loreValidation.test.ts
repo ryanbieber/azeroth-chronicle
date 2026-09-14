@@ -8,10 +8,57 @@ describe('lore dataset', () => {
     expect(validateDatasetReferences(loadDataset(), { geometryIds: geometryIds() })).toEqual([]);
   });
 
-  it('labels every shipped fixture as placeholder content', () => {
+  it('keeps all pre-publication records explicitly labeled', () => {
     const data = loadDataset();
-    const records = [...data.eras, ...data.entities, ...data.events, ...data.battles, ...data.storyGuides];
-    expect(records.every((record) => record.contentStatus === 'placeholder')).toBe(true);
+    const records = [
+      ...data.eras,
+      ...data.entities,
+      ...data.events,
+      ...data.battles,
+      ...data.campaigns,
+      ...data.routes,
+      ...data.storyGuides,
+    ];
+    expect(records.every((record) => record.contentStatus === 'research')).toBe(true);
+    expect(data.eras).toHaveLength(9);
+    expect(data.eras.every((era) => era.contentStatus === 'research')).toBe(true);
+  });
+
+  it('contains the complete source-linked Era 1 research baseline', () => {
+    const data = loadDataset();
+    const era = data.eras.find((item) => item.id === 'black-empire')!;
+    const entities = data.entities.filter((item) => item.firstEraId === era.id);
+    const events = data.events.filter((item) => item.eraId === era.id);
+    const battles = data.battles.filter((item) => item.eraId === era.id);
+    const guide = data.storyGuides.find((item) => item.id === era.storyGuideId)!;
+    const subjects = [...entities, ...events, ...battles];
+
+    expect(entities).toHaveLength(13);
+    expect(events).toHaveLength(4);
+    expect(battles).toHaveLength(2);
+    expect(guide.nodeIds).toHaveLength(10);
+    expect(['alakir', 'ragnaros', 'therazane', 'neptulon'].every((entityId) =>
+      data.spatialStates.some((state) => state.entityId === entityId
+        && state.eraId === era.id
+        && state.geographicCertainty === 'inferred'
+        && Boolean(state.geometryId)),
+    )).toBe(true);
+    expect(era.featuredEventIds).toEqual([
+      'spirit-imbalance',
+      'old-gods-arrive',
+      'black-empire-rises',
+      'black-empire-dominion',
+    ]);
+    expect(era.featuredBattleIds).toEqual([
+      'elemental-wars',
+      'elemental-assault-on-black-empire',
+    ]);
+    expect(subjects.every((subject) =>
+      data.claims.some((claim) => claim.subjectId === subject.id && claim.citationIds.length > 0),
+    )).toBe(true);
+    expect(data.claims.every((claim) => claim.citationIds.every((citationId) =>
+      data.citations.some((citation) => citation.id === citationId),
+    ))).toBe(true);
   });
 
   it('can exclude placeholder and research records from a publication build', () => {
@@ -29,15 +76,25 @@ describe('lore dataset', () => {
     battle.contentStatus = 'published';
     claim.citationIds = [];
     data.relationships.push({
-      id: 'reverse-cycle-placeholder',
-      fromId: 'atlas-conflict-placeholder',
-      toId: 'archive-approach-placeholder',
+      id: 'reverse-cycle-research',
+      fromId: 'black-empire-dominion',
+      toId: 'black-empire-rises',
       type: 'causes',
-      citationIds: ['fixture-interaction-citation-placeholder'],
+      citationIds: ['warcraft-wiki-black-empire-ancient-times'],
       confidence: 'explicit',
     });
     const codes = validateDatasetReferences(data, { geometryIds: geometryIds() }).map((issue) => issue.code);
     expect(codes).toContain('missing-citation');
     expect(codes).toContain('causal-cycle');
+  });
+
+  it('rejects cross-record references to the wrong collection', () => {
+    const data = structuredClone(loadDataset());
+    data.entities[0]!.sourceIds = ['regions'];
+    const issues = validateDatasetReferences(data, { geometryIds: geometryIds() });
+    expect(issues).toContainEqual(expect.objectContaining({
+      code: 'broken-reference',
+      message: 'Unknown source ID: regions',
+    }));
   });
 });

@@ -1,0 +1,17 @@
+{
+  "id": "long-vigil-new-kingdoms",
+  "name": "The Long Vigil and the New Kingdoms",
+  "slug": "long-vigil-new-kingdoms",
+  "worldspaceId": "azeroth",
+  "order": 5,
+  "dateLabel": "Research boundary — dates pending citation review",
+  "summary": "The night elves guard Kalimdor while Quel'Thalas, Arathor, the Seven Human Kingdoms, Khaz Modan, and other post-Sundering powers develop.",
+  "mapStateId": "long-vigil-new-kingdoms-map-research",
+  "defaultLayerIds": ["regions", "battles", "locations", "routes", "labels"],
+  "featuredEventIds": [],
+  "featuredBattleIds": [],
+  "previousEraId": "war-of-the-ancients",
+  "nextEraId": "rise-of-the-horde",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "contentStatus": "research"
+}

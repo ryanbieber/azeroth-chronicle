@@ -1,0 +1,11 @@
+{
+  "id": "elemental-wars-campaign",
+  "name": "The Elemental Wars",
+  "slug": "elemental-wars-campaign",
+  "eraId": "black-empire",
+  "summary": "A descriptive campaign grouping for the prolonged struggle among Azeroth's four elemental hosts.",
+  "battleIds": ["elemental-wars"],
+  "routeIds": [],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "contentStatus": "research"
+}

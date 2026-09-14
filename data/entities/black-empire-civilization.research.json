@@ -1,0 +1,14 @@
+{
+  "id": "black-empire-civilization",
+  "type": "faction",
+  "name": "The Black Empire",
+  "slug": "black-empire-civilization",
+  "shortDescription": "The civilization of Old God domains, citadels, and temple cities that spread across primordial Azeroth.",
+  "body": "The shaded atlas extent communicates broad influence only. Chronicle supports world-spanning expansion but does not provide survey-grade borders, so every boundary shown here is explicitly inferred.",
+  "firstEraId": "black-empire",
+  "lastEraId": "ordering-of-azeroth",
+  "sourceIds": ["warcraft-chronicle-volume-1", "warcraft-wiki-chronicle-volume-1"],
+  "claimIds": ["black-empire-expansion-claim"],
+  "tags": ["black-empire", "old-gods", "inferred-geography"],
+  "contentStatus": "research"
+}

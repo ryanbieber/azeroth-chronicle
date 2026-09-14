@@ -1,0 +1,13 @@
+{
+  "id": "nraqi",
+  "type": "faction",
+  "name": "N'raqi",
+  "slug": "nraqi",
+  "aliases": ["Faceless Ones"],
+  "shortDescription": "Intelligent servants formed from the Old Gods' organic matter and used as taskmasters within the expanding empire.",
+  "firstEraId": "black-empire",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["nraqi-role-claim"],
+  "tags": ["black-empire", "servants", "nraqi"],
+  "contentStatus": "research"
+}

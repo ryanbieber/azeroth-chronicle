@@ -1,0 +1,8 @@
+{
+  "id": "elemental-resistance-causes-black-empire-dominion",
+  "fromId": "elemental-assault-on-black-empire",
+  "toId": "black-empire-dominion",
+  "type": "causes",
+  "citationIds": ["warcraft-wiki-black-empire-ancient-times"],
+  "confidence": "strongly_supported"
+}

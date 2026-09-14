@@ -1,0 +1,9 @@
+{
+  "id": "black-empire-rise-event-claim",
+  "subjectId": "black-empire-rises",
+  "predicate": "event-summary",
+  "value": "The n'raqi directed aqir labor to raise citadels and temple cities around the Old Gods, forming the Black Empire.",
+  "citationIds": ["chronicle-v1-coming-old-gods"],
+  "confidence": "explicit",
+  "status": "active"
+}

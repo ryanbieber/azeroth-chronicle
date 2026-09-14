@@ -1,0 +1,9 @@
+{
+  "id": "old-gods-arrival-claim",
+  "subjectId": "old-gods",
+  "predicate": "arrival-and-purpose",
+  "value": "They embedded themselves across Azeroth, spread corruption, and extended tendrils toward its world-soul.",
+  "citationIds": ["chronicle-v1-coming-old-gods"],
+  "confidence": "explicit",
+  "status": "active"
+}

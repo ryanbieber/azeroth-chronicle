@@ -1,0 +1,11 @@
+{
+  "id": "elemental-resistance-campaign",
+  "name": "The Elemental Resistance to the Black Empire",
+  "slug": "elemental-resistance-campaign",
+  "eraId": "black-empire",
+  "summary": "A descriptive campaign grouping for the Elemental Lords' united attempt to remove the Old Gods and their growing empire.",
+  "battleIds": ["elemental-assault-on-black-empire"],
+  "routeIds": [],
+  "sourceIds": ["warcraft-chronicle-volume-1", "warcraft-wiki-chronicle-volume-1"],
+  "contentStatus": "research"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "yshaarj",
+  "type": "character",
+  "name": "Y'Shaarj",
+  "slug": "yshaarj",
+  "shortDescription": "The Old God identified by Chronicle as the greatest of the group, surrounded by the Black Empire's largest bastion.",
+  "firstEraId": "black-empire",
+  "lastEraId": "ordering-of-azeroth",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["yshaarj-bastion-claim"],
+  "tags": ["old-god", "black-empire"],
+  "contentStatus": "research"
+}

@@ -1,0 +1,89 @@
+{
+  "id": "elemental-assault-on-black-empire",
+  "kind": "battle",
+  "name": "The Elemental Assault on the Black Empire",
+  "slug": "elemental-assault-on-black-empire",
+  "eraId": "black-empire",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "After the Black Empire began to spread", "relativeToId": "black-empire-rises" },
+  "summary": "For the first time, Azeroth's rival elemental hosts united against the Old Gods and attacked the Black Empire's growing cities.",
+  "description": "This descriptive title groups a broad conflict rather than asserting one localized battle. Chronicle describes firestorms and stone barriers striking Black Empire cities but does not provide mappable routes.",
+  "campaignId": "elemental-resistance-campaign",
+  "participantEntityIds": ["elemental-hosts", "black-empire-civilization", "old-gods", "nraqi", "aqir", "alakir", "ragnaros", "therazane", "neptulon"],
+  "causedByEventIds": ["black-empire-rises"],
+  "causesEventIds": ["black-empire-dominion"],
+  "relationshipIds": ["black-empire-prompts-elemental-resistance", "elemental-resistance-causes-black-empire-dominion"],
+  "combatants": [
+    { "factionId": "elemental-hosts", "role": "attacker", "commanderEntityIds": ["alakir", "ragnaros", "therazane", "neptulon"] },
+    { "factionId": "black-empire-civilization", "role": "defender" }
+  ],
+  "objectives": [
+    { "factionId": "elemental-hosts", "summary": "Remove the Old Gods and their growing civilization from Azeroth." },
+    { "factionId": "black-empire-civilization", "summary": "Preserve and expand the Old Gods' domains through n'raqi and aqir forces." }
+  ],
+  "phases": [
+    {
+      "id": "elemental-unity",
+      "title": "Rivals unite",
+      "summary": "The four elemental powers recognized a common threat.",
+      "durationMs": 21000,
+      "narration": "As the Black Empire widened its shadow, the ancient enemies understood at last that none could stand alone. For the first time, Azeroth's elemental powers gathered against one foe.",
+      "visualActions": [
+        { "type": "highlight_faction", "factionId": "elemental-hosts" },
+        { "type": "show_region", "regionId": "black-empire-influence-research" }
+      ]
+    },
+    {
+      "id": "firestorm-assault",
+      "title": "Firestorms cross the empire",
+      "summary": "Air and fire combined against Black Empire cities.",
+      "durationMs": 19000,
+      "narration": "Wind and flame went forth together. Al'Akir's tempests bore the wrath of Ragnaros across the dark dominion, and immense firestorms descended upon the empire's citadels.",
+      "visualActions": [
+        { "type": "highlight_entity", "entityId": "alakir" },
+        { "type": "highlight_entity", "entityId": "ragnaros" },
+        { "type": "show_region", "regionId": "black-empire-influence-research" }
+      ]
+    },
+    {
+      "id": "stone-counterstroke",
+      "title": "Stone closes around the cities",
+      "summary": "Therazane raised barriers against the empire's settlements.",
+      "durationMs": 21000,
+      "narration": "Then Therazane laid her strength upon the field. Jagged walls rose at her bidding, hemming in the servants of the Old Gods and breaking against their temple cities.",
+      "visualActions": [
+        { "type": "highlight_entity", "entityId": "therazane" },
+        { "type": "show_region", "regionId": "black-empire-influence-research" }
+      ]
+    },
+    {
+      "id": "servant-swarms",
+      "title": "The servant hosts endure",
+      "summary": "The empire answered through the n'raqi and aqir.",
+      "durationMs": 20000,
+      "narration": "Yet from the cities came the n'raqi and the innumerable aqir. Rank after rank endured the elemental fury, until even the joined hosts could not overcome them.",
+      "visualActions": [
+        { "type": "highlight_faction", "factionId": "nraqi" },
+        { "type": "highlight_faction", "factionId": "aqir" }
+      ]
+    },
+    {
+      "id": "elemental-subjugation",
+      "title": "The resistance fails",
+      "summary": "The Old Gods defeated and enslaved the Elemental Lords.",
+      "durationMs": 24000,
+      "narration": "In the end the resistance was broken. The Old Gods bound the Elemental Lords, and with no native power left to bar its way, the Black Empire spread across much of the world.",
+      "visualActions": [
+        { "type": "highlight_faction", "factionId": "black-empire-civilization" },
+        { "type": "show_region", "regionId": "black-empire-influence-research" }
+      ]
+    }
+  ],
+  "outcome": { "summary": "The elemental resistance failed; the Elemental Lords were enslaved and the Black Empire extended its dominion over much of Azeroth.", "winnerFactionId": "black-empire-civilization" },
+  "geographicCertainty": "unknown",
+  "geographicEditorNote": "The conflict covered multiple unnamed sites. No exact marker or route is asserted.",
+  "importance": "era_defining",
+  "sourceIds": ["warcraft-chronicle-volume-1", "warcraft-wiki-chronicle-volume-1"],
+  "claimIds": ["elemental-resistance-claim"],
+  "contentStatus": "research"
+}

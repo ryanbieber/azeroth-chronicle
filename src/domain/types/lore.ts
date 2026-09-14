@@ -66,6 +66,8 @@ export interface MapState {
   name: string;
   worldspaceId: EntityId;
   terrainAsset?: string;
+  terrainTextureAsset?: string;
+  terrainHeightAsset?: string;
   geometryIds: EntityId[];
 }
 
@@ -255,6 +257,7 @@ export interface StoryNode {
   guideId: EntityId;
   title: string;
   narration: string;
+  durationMs?: number;
   eventIds?: EntityId[];
   battleIds?: EntityId[];
   entityIds?: EntityId[];

@@ -2,6 +2,8 @@
 
 Use this checklist before changing a record from `research` to `reviewed`, and repeat it before `published`.
 
+Apply the vocabulary and thresholds in [`content-glossary.md`](./content-glossary.md) and [`editorial-confidence-rules.md`](./editorial-confidence-rules.md).
+
 - [ ] The Source record identifies the work and relevant edition or format.
 - [ ] Every Citation resolves to an existing Source.
 - [ ] Citation locations are specific enough for another reviewer to verify.

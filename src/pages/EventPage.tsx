@@ -2,6 +2,7 @@ import { Link, useParams } from 'react-router-dom';
 import { EventDossier } from '../components/dossier/EventDossier';
 import { staticLoreRepository } from '../domain/repositories/StaticLoreRepository';
 import { NotFound } from './EraPage';
+import { StoryReturnLink } from '../components/story/StoryReturnLink';
 
 export function EventPage() {
   const { slug = '' } = useParams();
@@ -10,6 +11,7 @@ export function EventPage() {
   return (
     <main className="document-page">
       <EventDossier event={event} />
+      <StoryReturnLink eraId={event.eraId} />
       <Link className="primary-link" to={`/map?era=${event.eraId}&selected=event:${event.slug}`}>
         Locate this event in the atlas
       </Link>

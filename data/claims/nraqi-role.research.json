@@ -1,0 +1,9 @@
+{
+  "id": "nraqi-role-claim",
+  "subjectId": "nraqi",
+  "predicate": "black-empire-role",
+  "value": "Acted as intelligent taskmasters directing construction for the Old Gods.",
+  "citationIds": ["chronicle-v1-coming-old-gods"],
+  "confidence": "explicit",
+  "status": "active"
+}

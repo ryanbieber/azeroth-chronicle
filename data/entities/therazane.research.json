@@ -1,0 +1,13 @@
+{
+  "id": "therazane",
+  "type": "character",
+  "name": "Therazane",
+  "slug": "therazane",
+  "aliases": ["The Stonemother"],
+  "shortDescription": "The Elemental Lord of earth, protective of her children and defended by formidable mountain barriers.",
+  "firstEraId": "black-empire",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["therazane-tactics-claim"],
+  "tags": ["elemental-lord", "earth"],
+  "contentStatus": "research"
+}

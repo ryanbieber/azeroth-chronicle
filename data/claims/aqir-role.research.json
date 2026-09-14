@@ -1,0 +1,10 @@
+{
+  "id": "aqir-role-claim",
+  "subjectId": "aqir",
+  "predicate": "black-empire-role",
+  "value": "Served as resilient laborers and soldiers in the construction and defense of Old God cities.",
+  "citationIds": ["chronicle-v1-coming-old-gods"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "The labor role is explicit in the cited passage; the defensive military role follows from the same source's account of the elemental war and should be confirmed against the complete page sequence."
+}

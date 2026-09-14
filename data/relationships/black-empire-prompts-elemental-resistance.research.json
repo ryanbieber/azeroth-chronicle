@@ -1,0 +1,8 @@
+{
+  "id": "black-empire-prompts-elemental-resistance",
+  "fromId": "black-empire-rises",
+  "toId": "elemental-assault-on-black-empire",
+  "type": "causes",
+  "citationIds": ["chronicle-v1-coming-old-gods"],
+  "confidence": "explicit"
+}

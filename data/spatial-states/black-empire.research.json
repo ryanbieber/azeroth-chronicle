@@ -1,0 +1,11 @@
+{
+  "id": "black-empire-spatial-research",
+  "entityId": "black-empire-civilization",
+  "eraId": "black-empire",
+  "worldspaceId": "azeroth",
+  "geometryId": "black-empire-influence-research",
+  "geographicCertainty": "inferred",
+  "sourceIds": ["warcraft-chronicle-volume-1", "warcraft-wiki-chronicle-volume-1"],
+  "editorNote": "Chronicle supports expansion across the world, not a precise surveyed border. The polygon communicates broad influence only.",
+  "labelPriority": 100
+}

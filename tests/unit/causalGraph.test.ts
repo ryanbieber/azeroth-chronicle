@@ -5,9 +5,9 @@ import { buildCausalAdjacency, traverseCausal } from '../../src/lib/graph/causal
 describe('causal graph traversal', () => {
   it('finds immediate source-aware causes and consequences', () => {
     const adjacency = buildCausalAdjacency(loadDataset());
-    expect(traverseCausal('atlas-conflict-placeholder', 'causes', adjacency).map((edge) => edge.id))
-      .toEqual(['archive-approach-causes-conflict-placeholder']);
-    expect(traverseCausal('atlas-conflict-placeholder', 'consequences', adjacency).map((edge) => edge.id))
-      .toEqual(['archive-conflict-causes-aftermath-placeholder']);
+    expect(traverseCausal('elemental-assault-on-black-empire', 'causes', adjacency).map((edge) => edge.id))
+      .toEqual(['black-empire-prompts-elemental-resistance']);
+    expect(traverseCausal('elemental-assault-on-black-empire', 'consequences', adjacency).map((edge) => edge.id))
+      .toEqual(['elemental-resistance-causes-black-empire-dominion']);
   });
 });

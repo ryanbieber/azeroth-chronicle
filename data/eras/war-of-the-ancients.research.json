@@ -1,0 +1,17 @@
+{
+  "id": "war-of-the-ancients",
+  "name": "The War of the Ancients and the Sundering",
+  "slug": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "order": 4,
+  "dateLabel": "Research boundary — dates pending citation review",
+  "summary": "Queen Azshara, the Burning Legion's first invasion, the destruction of the Well of Eternity, and the shattering of primordial Kalimdor.",
+  "mapStateId": "war-of-the-ancients-map-research",
+  "defaultLayerIds": ["regions", "battles", "locations", "routes", "labels"],
+  "featuredEventIds": [],
+  "featuredBattleIds": [],
+  "previousEraId": "ancient-civilizations",
+  "nextEraId": "long-vigil-new-kingdoms",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "contentStatus": "research"
+}

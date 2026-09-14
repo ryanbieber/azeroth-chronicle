@@ -46,6 +46,7 @@ The Black Empire is the first vertical slice, not a special case in the engine.
 - Public summaries must be original paraphrases. Do not ship source scans or bulk copied prose.
 - Keep research notes and publishable content separate.
 - The application must identify itself as an unofficial fan project.
+- Guided-tour narration should use an original mythic, Tolkien-esque chronicle voice: warm, elevated, landscape-conscious, and attentive to age, loss, consequence, and wonder. Never copy or closely imitate Tolkien's sentences, signature phrases, characters, or invented languages; source-backed Warcraft facts and explicit uncertainty remain the backbone of every passage.
 
 ## Data and file conventions
 

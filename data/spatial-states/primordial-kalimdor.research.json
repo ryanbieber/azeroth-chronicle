@@ -1,0 +1,11 @@
+{
+  "id": "primordial-kalimdor-spatial-research",
+  "entityId": "primordial-kalimdor",
+  "eraId": "black-empire",
+  "worldspaceId": "azeroth",
+  "geometryId": "primordial-kalimdor-landmass-research",
+  "geographicCertainty": "inferred",
+  "sourceIds": ["warcraft-chronicle-volume-1", "warcraft-wiki-chronicle-volume-1"],
+  "editorNote": "Original simplified reconstruction guided by Chronicle's map index. It is not a traced or survey-grade canonical coastline.",
+  "labelPriority": 40
+}

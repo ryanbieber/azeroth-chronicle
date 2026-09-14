@@ -1,6 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
-import { MemoryRouter, useLocation } from 'react-router-dom';
+import { MemoryRouter } from 'react-router-dom';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { useLayerStore } from '../../src/app/state/layerStore';
 import { useSelectionStore } from '../../src/app/state/selectionStore';
@@ -11,10 +10,6 @@ vi.mock('../../src/components/map/MapViewport3D', () => ({
   MapViewport3D: () => <div aria-label="Mock 3D map" />,
 }));
 
-function LocationProbe() {
-  return <output data-testid="location">{useLocation().search}</output>;
-}
-
 describe('explorer UI', () => {
   beforeEach(() => {
     useLayerStore.getState().reset();
@@ -22,26 +17,27 @@ describe('explorer UI', () => {
     useSourceFilterStore.getState().setSourceIds([]);
   });
 
-  it('restores controls and selection from the URL and writes layer changes back', async () => {
-    const user = userEvent.setup();
+  it('restores selection while keeping the curated atlas layers visible', async () => {
     render(
-      <MemoryRouter initialEntries={['/map?era=black-empire&selected=battle:atlas-conflict-placeholder&layers=regions,battles']}>
+      <MemoryRouter initialEntries={['/map?era=black-empire&selected=battle:elemental-assault-on-black-empire&layers=regions,battles']}>
         <MapPage />
-        <LocationProbe />
       </MemoryRouter>,
     );
-    expect(await screen.findByRole('heading', { name: 'Atlas Conflict Placeholder' })).toBeVisible();
-    expect(screen.getByLabelText('Locations')).not.toBeChecked();
-    expect(screen.getByLabelText('Routes')).not.toBeChecked();
-    await user.click(screen.getByLabelText('Routes'));
-    expect(await screen.findByTestId('location')).toHaveTextContent('layers=regions%2Cbattles%2Croutes');
+    expect(useSelectionStore.getState().selection).toEqual({ kind: 'battle', id: 'elemental-assault-on-black-empire' });
+    expect(useLayerStore.getState().visible).toEqual({ regions: true, battles: true, locations: true, routes: true, labels: true });
+    expect(screen.queryByText('Visible layers')).not.toBeInTheDocument();
+    expect(screen.queryByText('Source filters')).not.toBeInTheDocument();
+    expect(screen.getByRole('region', { name: 'Map key' })).toBeVisible();
+    expect(screen.queryByRole('complementary')).not.toBeInTheDocument();
   });
 
-  it('searches generated records and opens the selected dossier', async () => {
-    const user = userEvent.setup();
-    render(<MemoryRouter initialEntries={['/map?era=black-empire']}><MapPage /></MemoryRouter>);
-    await user.type(screen.getByRole('searchbox', { name: 'Search archive' }), 'archive site');
-    await user.click(screen.getByRole('button', { name: 'Show' }));
-    expect(await screen.findByRole('heading', { name: 'Archive Site Placeholder' })).toBeVisible();
+  it('keeps archive panels and contextual popups out of the map experience', async () => {
+    render(
+      <MemoryRouter initialEntries={['/map?era=black-empire&selected=entity:yshaarj-central-bastion']}>
+        <MapPage />
+      </MemoryRouter>,
+    );
+    expect(screen.queryByRole('button', { name: /history/i })).not.toBeInTheDocument();
+    expect(screen.queryByRole('complementary')).not.toBeInTheDocument();
   });
 });

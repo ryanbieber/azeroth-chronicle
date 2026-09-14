@@ -1,0 +1,10 @@
+{
+  "id": "alakir-domain-placement-claim",
+  "subjectId": "alakir",
+  "predicate": "domain map placement",
+  "value": "Broadly southwestern on the Black Empire-era map",
+  "citationIds": ["chronicle-v1-black-empire-map"],
+  "confidence": "inferred",
+  "status": "active",
+  "editorNote": "The atlas point is an original approximate focus derived from the published map composition, not a traced or exact coordinate."
+}

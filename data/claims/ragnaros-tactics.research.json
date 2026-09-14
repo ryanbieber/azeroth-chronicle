@@ -1,0 +1,9 @@
+{
+  "id": "ragnaros-tactics-claim",
+  "subjectId": "ragnaros",
+  "predicate": "elemental-war-method",
+  "value": "Favored direct force that manifested through volcanic fire and widespread destruction.",
+  "citationIds": ["chronicle-v1-reign-elements"],
+  "confidence": "explicit",
+  "status": "active"
+}

@@ -6,19 +6,18 @@ Build the Black Empire vertical slice as a static, client-heavy historical atlas
 
 The reusable engine must not contain Black Empire-specific behavior. Black Empire records live in the data layer and exercise generic era, map-state, battle, story, source, and relationship systems.
 
-## Current baseline
+## Current implementation status — 2026-09-13
 
-The repository now contains an executable architecture skeleton:
+The repository contains a complete reusable technical vertical slice and the first source-linked era baseline:
 
-- A responsive application shell and React Three Fiber placeholder scene.
-- Static routes for the atlas, era dossiers, and battle dossiers.
-- Independent stores for era, selection, layers, story progress, and source filters.
-- Stable TypeScript contracts plus Zod runtime schemas.
-- A file-backed repository adapter that can later be replaced by an API adapter.
-- Referential validation, unit tests, CI, and a Render static-site blueprint.
-- Explicitly fictional fixture data marked `contentStatus: placeholder`.
+- Phase 0's parsed GeoJSON, external GLB terrain, coordinate adapter, camera rig, URL restoration, performance profile, and deep-link proof are implemented.
+- Reusable Phase 1–5 systems are implemented: generated manifests and search, typed reference validation, source filtering, permanent dossiers, multi-record map layers, battle playback, guided-story persistence/branch return, causality, and provenance.
+- Phase 6 foundations are implemented: route splitting, responsive states, error/WebGL fallbacks, accessibility affordances, privacy and asset-origin decisions, Render/GitHub Pages deployment configuration, and visual regression coverage.
+- Chronicle Volumes 1–4 are registered as the editorial source backbone, with research templates, vocabulary, confidence rules, and a citation review checklist.
+- The nine approved eras are present in the top-level selector with separate research map states. Their detailed, one-by-one research and production backlog lives in `docs/eras/README.md`.
+- Era 1 now has a source-linked research vertical slice: original generated terrain, inferred/approximate GeoJSON, 13 people/powers/places, four events, two animated conflict dossiers, a causal chain, and a ten-node guided history. The fictional technical fixtures have been removed. Human citation and lore review still gates publication.
 
-This baseline is intentionally small. It proves module boundaries; it does not claim to complete Phase 0 or supply verified Warcraft lore.
+The reusable engine acceptance path and the Era 1 research implementation are complete. The public MVP completion gate is **not** complete: Era 1 still requires human review of its claim-level Chronicle citations, original summaries, inferred cartography, conflicts, story, and causal chain. Later eras remain research scaffolds, and production-scale label density remains a future measurement gate.
 
 ## Architectural decisions
 
@@ -26,17 +25,17 @@ This baseline is intentionally small. It proves module boundaries; it does not c
 
 - Use Vite, React, and strict TypeScript as a single-page application.
 - Use React Router with permanent routes for `/eras/:slug`, `/battles/:slug`, `/events/:slug`, `/locations/:slug`, and `/factions/:slug`.
-- Use `/map` query parameters for restorable explorer state: `era`, selected record, visible layers, and optionally a compact camera bookmark.
+- Use `/map` query parameters for restorable explorer state: `era`, selected record, and optionally a compact camera bookmark. Public layer visibility is curated by era and story state rather than exposed as visitor configuration.
 - Keep the 3D explorer client-rendered. Generate static dossier HTML only after measuring an actual search-indexing or link-preview need. If needed, add a build-time prerender step rather than a server runtime.
 - Configure the static host to rewrite unknown routes to `/index.html` so browser refreshes work.
 
 ### State boundaries
 
 - Keep durable content outside Zustand. The repository adapter owns content reads.
-- Use small stores for `era`, `selection`, `layers`, `story`, `sourceFilter`, and later `mapView`.
+- Use small stores for `era`, `selection`, internal `layers`, `story`, provenance scope, and `mapView`. Layer and source-filter boundaries support the engine and editorial tooling; they are not public explorer controls.
 - Treat the URL as shareable state and synchronize it at route boundaries, not every animation frame.
 - Keep high-frequency camera and pointer state inside Three.js controls/refs. React stores receive only meaningful settled state.
-- Persist story guide ID and node ID in session storage after the story behavior stabilizes. Do not persist transient animation progress.
+- Persist story guide ID and node ID in session storage after the story behavior stabilizes. Do not persist transient timer or animation progress.
 
 ### Scene graph
 
@@ -100,8 +99,10 @@ MapViewport3D
 - A pure interpreter maps each VisualAction to explicit ports such as `setLayer`, `selectBattle`, `showRoute`, and `focusLocation`.
 - Unsupported action types fail validation during development and fail visibly but safely at runtime.
 - Entering a node applies actions idempotently from a known scene state.
+- The public tour card contains only Previous and Next controls plus a visible bottom-edge chapter timer; narration and timed map changes carry the story without archive-control clutter.
 - Branching into a dossier stores the guide/node return point. Returning restores the same node, not a restarted guide.
 - Tests cover every action type, node transitions, skip behavior, and branch-and-return state.
+- Node narration remains the accessible transcript and future voice-over script. Optional audio may enhance a node later, but must never replace the text or its skip/reduced-motion behavior.
 
 ### Battle playback
 
@@ -136,7 +137,7 @@ MapViewport3D
 ### Testing
 
 - Vitest: schemas, date helpers, coordinates, graph traversal, source filtering, and story interpreter.
-- Testing Library: layer controls, dossier accessibility, guide progression, URL synchronization, and error states.
+- Testing Library: curated layer visibility, dossier accessibility, guide progression, URL synchronization, and error states.
 - Playwright in Phase 4: load Black Empire, select a marker, branch to a dossier, return to a guide, skip battle playback, inspect provenance, and finish the guide.
 - Visual regression in Phase 6 for the application shell and key dossier states; avoid pixel-locking the animated canvas.
 - Build validation fails on broken references, duplicate IDs/slugs, invalid bounds, missing required citations, and unintended causal cycles.
@@ -158,6 +159,8 @@ MapViewport3D
 - PostGIS stores source geometry; the build/cache layer can still serve optimized client assets.
 
 ### Content authoring workflow
+
+The initial editorial timeline is grounded in *World of Warcraft: Chronicle* Volumes 1–4. Treat each volume as a source scope, not as an in-world era by itself: era records and boundaries must be derived from the chronology after human citation review. Where the volumes conflict or revise an account, preserve separate claims and label the dispute or supersession.
 
 ```text
 source material
@@ -228,9 +231,9 @@ Acceptance criteria:
 
 Reusable engine work:
 
-- Implement era selection, layer controls, selection state, search, labels, and permanent dossier views.
+- Implement top-level era selection, curated era layers, selection state, labels, and permanent dossier views.
 - Add loading, empty, error, keyboard focus, and WebGL-unavailable states.
-- Implement URL synchronization for era, selection, and layers.
+- Implement URL synchronization for era and selection.
 
 Black Empire content work:
 
@@ -239,7 +242,7 @@ Black Empire content work:
 
 Acceptance criteria:
 
-- A user can enter Black Empire, navigate the map, toggle four core layers, search, and open dossiers.
+- A user can enter Black Empire, navigate the map, see the curated historical layers, and open dossiers.
 - Dossiers remain usable without interacting with the 3D canvas.
 - Shared URLs restore the same era and selection.
 
@@ -288,7 +291,7 @@ Acceptance criteria:
 Reusable engine work:
 
 - Implement cause/consequence traversal and visualization.
-- Add confidence, claim status, citations, and source filtering to dossiers and map selectors.
+- Add confidence, claim status, citations, and curated publication scope to dossiers and map selectors.
 - Add disputed/superseded claim presentation rules.
 
 Black Empire content work:
@@ -300,7 +303,7 @@ Acceptance criteria:
 
 - A user can answer what led to an event and what changed because of it.
 - Every graph edge can open its underlying record and provenance.
-- Source filters remove unsupported records consistently from map, search, and dossiers.
+- Publication scoping excludes unsupported records consistently from the map and dossiers; visitors cannot disable the Chronicle source backbone.
 
 ### Phase 6 Public demo hardening
 
@@ -323,18 +326,27 @@ Acceptance criteria:
 - No important information is available only through color, motion, hover, or the 3D canvas.
 - The public build contains no scans, bulk copied prose, unreviewed claims, or unlabeled inference.
 
-## Immediate backlog
+## Immediate backlog status
 
-1. Add the renderer spike record template at `docs/spikes/renderer.md`.
-2. Replace the inline placeholder region and route with the existing GeoJSON fixture.
-3. Build a geometry adapter with unit tests for Polygon and LineString features.
-4. Add a `CameraRig` and a cancellable story-camera command port.
-5. Add a simple local GLB terrain asset and measure its load path.
-6. Split the map route with `React.lazy` and inspect the production chunks.
-7. Add integration tests for URL-to-selection synchronization.
-8. Add a WebGL fallback that links to permanent dossiers.
-9. Decide and document the first desktop performance test profile and budgets.
-10. Create the human research-note template and citation review checklist before entering canon content.
+1. [x] Add the renderer spike record at `docs/spikes/renderer.md`.
+2. [x] Replace inline geometry with parsed GeoJSON fixtures.
+3. [x] Build and test the Polygon, LineString, and Point geometry adapter.
+4. [x] Add `CameraRig` and a cancellable story-camera command port.
+5. [x] Add and measure a reproducible external GLB terrain fixture.
+6. [x] Lazy-load the map route and inspect production chunks.
+7. [x] Cover URL-to-selection synchronization.
+8. [x] Add a dossier-linked WebGL fallback.
+9. [x] Record the desktop performance profile and budgets.
+10. [x] Create research, glossary, confidence, source-inventory, and citation-review documents.
+
+### Next content-gated work
+
+1. A human researcher records edition details and exact citation locations from Chronicle Volumes 1–4.
+2. A human lore reviewer approves the first small era/entity/location/event/claim sample.
+3. Reviewed records promote the research dataset through the generated manifest path; removed technical fixtures never return as lore.
+4. Reviewed Black Empire geometry, battle dossiers, an 8–15 node guide, and a causal chain are authored only where those citations support them.
+5. Final label-density, terrain, transfer, and visual measurements run against the reviewed content volume.
+6. Deployment switches to `VITE_CONTENT_MODE=published` only when the published dataset passes the MVP completion gate; no placeholder or research records ship in that build.
 
 ## Technical risks and experiments
 

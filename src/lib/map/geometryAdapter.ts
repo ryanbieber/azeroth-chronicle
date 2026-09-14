@@ -1,4 +1,5 @@
 import { atlasToWorld, type AtlasCoordinateSystem } from './coordinates';
+import { z } from 'zod';
 
 export type AtlasPosition = readonly [number, number];
 
@@ -23,6 +24,8 @@ export interface RuntimePolygon {
   name: string;
   kind: 'polygon';
   rings: Array<Array<[number, number, number]>>;
+  styleRole: 'landmass' | 'influence' | 'region';
+  geographicCertainty?: 'exact' | 'approximate' | 'inferred' | 'unknown';
 }
 
 export interface RuntimeLine {
@@ -46,8 +49,38 @@ export interface GeometryIssue {
   message: string;
 }
 
+const atlasPositionSchema = z.tuple([z.number(), z.number()]);
+
+export const geoJsonFeatureCollectionSchema = z.object({
+  type: z.literal('FeatureCollection'),
+  name: z.string().optional(),
+  features: z.array(z.object({
+    type: z.literal('Feature'),
+    id: z.string().min(1),
+    properties: z.record(z.string(), z.unknown()),
+    geometry: z.discriminatedUnion('type', [
+      z.object({ type: z.literal('Polygon'), coordinates: z.array(z.array(atlasPositionSchema)) }),
+      z.object({ type: z.literal('LineString'), coordinates: z.array(atlasPositionSchema) }),
+      z.object({ type: z.literal('Point'), coordinates: atlasPositionSchema }),
+    ]),
+  })),
+});
+
 function featureName(feature: GeoJsonFeature): string {
   return typeof feature.properties.name === 'string' ? feature.properties.name : feature.id;
+}
+
+function polygonStyleRole(feature: GeoJsonFeature): RuntimePolygon['styleRole'] {
+  return feature.properties.styleRole === 'landmass' || feature.properties.styleRole === 'influence'
+    ? feature.properties.styleRole
+    : 'region';
+}
+
+function featureCertainty(feature: GeoJsonFeature): RuntimePolygon['geographicCertainty'] {
+  const value = feature.properties.geographicCertainty;
+  return value === 'exact' || value === 'approximate' || value === 'inferred' || value === 'unknown'
+    ? value
+    : undefined;
 }
 
 function coordinateInBounds(position: AtlasPosition, system: AtlasCoordinateSystem): boolean {
@@ -109,6 +142,7 @@ export function adaptGeometry(
   collection: GeoJsonFeatureCollection,
   system: AtlasCoordinateSystem,
   worldSize = 10,
+  worldDepth = worldSize,
 ): RuntimeGeometry[] {
   const issues = validateGeometry(collection, system);
   if (issues.length > 0) {
@@ -123,22 +157,24 @@ export function adaptGeometry(
           id: feature.id,
           name,
           kind: 'polygon',
+          styleRole: polygonStyleRole(feature),
+          geographicCertainty: featureCertainty(feature),
           rings: feature.geometry.coordinates.map((ring) =>
-            ring.map((coordinate) => atlasToWorld(coordinate, system, worldSize))),
+            ring.map((coordinate) => atlasToWorld(coordinate, system, worldSize, worldDepth))),
         };
       case 'LineString':
         return {
           id: feature.id,
           name,
           kind: 'line',
-          points: feature.geometry.coordinates.map((coordinate) => atlasToWorld(coordinate, system, worldSize)),
+          points: feature.geometry.coordinates.map((coordinate) => atlasToWorld(coordinate, system, worldSize, worldDepth)),
         };
       case 'Point':
         return {
           id: feature.id,
           name,
           kind: 'point',
-          position: atlasToWorld(feature.geometry.coordinates, system, worldSize),
+          position: atlasToWorld(feature.geometry.coordinates, system, worldSize, worldDepth),
         };
     }
   });

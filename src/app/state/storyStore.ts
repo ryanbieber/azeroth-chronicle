@@ -9,10 +9,13 @@ interface StoryReturnPoint {
 interface StoryState {
   guideId: string | null;
   nodeId: string | null;
+  status: 'playing' | 'paused';
   branchReturn: StoryReturnPoint | null;
   start: (guideId: string, nodeId: string) => void;
   goToNode: (nodeId: string) => void;
   stop: () => void;
+  play: () => void;
+  pause: () => void;
   rememberBranch: () => void;
   resumeBranch: () => void;
 }
@@ -21,10 +24,13 @@ export const useStoryStore = create<StoryState>()(persist(
   (set) => ({
     guideId: null,
     nodeId: null,
+    status: 'paused',
     branchReturn: null,
-    start: (guideId, nodeId) => set({ guideId, nodeId, branchReturn: null }),
+    start: (guideId, nodeId) => set({ guideId, nodeId, status: 'playing', branchReturn: null }),
     goToNode: (nodeId) => set({ nodeId }),
-    stop: () => set({ guideId: null, nodeId: null, branchReturn: null }),
+    stop: () => set({ guideId: null, nodeId: null, status: 'paused', branchReturn: null }),
+    play: () => set({ status: 'playing' }),
+    pause: () => set({ status: 'paused' }),
     rememberBranch: () => set((state) => state.guideId && state.nodeId
       ? { branchReturn: { guideId: state.guideId, nodeId: state.nodeId } }
       : state),

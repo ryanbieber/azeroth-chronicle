@@ -1,0 +1,10 @@
+{
+  "id": "black-empire-expansion-claim",
+  "subjectId": "black-empire-civilization",
+  "predicate": "extent",
+  "value": "Old God domains spread across primordial Azeroth; the displayed boundary is only a broad inferred visualization.",
+  "citationIds": ["chronicle-v1-coming-old-gods", "warcraft-wiki-black-empire-ancient-times"],
+  "confidence": "inferred",
+  "status": "active",
+  "editorNote": "The textual extent is supported, but the polygon vertices are not canonical coordinates."
+}

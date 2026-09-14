@@ -1,32 +1,47 @@
 import { staticLoreRepository } from '../../domain/repositories/StaticLoreRepository';
-import { applyVisualActions } from '../../lib/story/interpretVisualAction';
+import { beginStoryGuide, endStoryGuide, enterStoryNode } from '../../lib/story/storyRuntime';
 import { useStoryStore } from '../../app/state/storyStore';
-import { useMapViewStore } from '../../app/state/mapViewStore';
-import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { BattlePlayback } from '../battle/BattlePlayback';
 
-export function StoryGuidePanel({ guideId }: { guideId: string }) {
+function narrationDurationMs(narration: string): number {
+  const words = narration.trim().split(/\s+/).filter(Boolean).length;
+  return Math.min(40_000, Math.max(14_000, Math.round((words / 1.55) * 1000) + 3_000));
+}
+
+export function StoryGuidePanel({ guideId, showLauncher = true }: { guideId: string; showLauncher?: boolean }) {
   const guide = staticLoreRepository.findStoryGuide(guideId);
   const activeNodeId = useStoryStore((state) => state.nodeId);
-  const start = useStoryStore((state) => state.start);
-  const goToNode = useStoryStore((state) => state.goToNode);
-  const stop = useStoryStore((state) => state.stop);
-  const rememberBranch = useStoryStore((state) => state.rememberBranch);
+  const status = useStoryStore((state) => state.status);
+  const play = useStoryStore((state) => state.play);
   const node = activeNodeId ? staticLoreRepository.findStoryNode(activeNodeId) : undefined;
-  const requestCamera = useMapViewStore((state) => state.requestCamera);
-  const skipCamera = useMapViewStore((state) => state.skipCamera);
-  const cancelCamera = useMapViewStore((state) => state.cancelCamera);
+
+  useEffect(() => {
+    if (node && status === 'paused') play();
+  }, [node, play, status]);
+
+  useEffect(() => {
+    if (!node || status !== 'playing') return;
+    const currentIndex = guide?.nodeIds.indexOf(node.id) ?? -1;
+    const nextNodeId = guide?.nodeIds[currentIndex + 1];
+    if (!nextNodeId) return;
+    const timer = window.setTimeout(() => {
+      const nextNode = staticLoreRepository.findStoryNode(nextNodeId);
+      if (nextNode) enterStoryNode(nextNode);
+    }, node.durationMs ?? narrationDurationMs(node.narration));
+    return () => window.clearTimeout(timer);
+  }, [guide, node, status]);
 
   if (!guide) return null;
 
   const activate = (nodeId: string) => {
     const next = staticLoreRepository.findStoryNode(nodeId);
     if (!next) return;
-    goToNode(next.id);
-    applyVisualActions(next.visualActions ?? []);
-    if (next.camera) requestCamera(next.camera);
+    enterStoryNode(next);
   };
 
   if (!node) {
+    if (!showLauncher) return null;
     return (
       <section className="story-card" aria-labelledby="story-title">
         <p className="eyebrow">Guided history</p>
@@ -34,15 +49,7 @@ export function StoryGuidePanel({ guideId }: { guideId: string }) {
         <p>{guide.description}</p>
         <button
           type="button"
-          onClick={() => {
-            const first = guide.nodeIds[0];
-            if (first) {
-              start(guide.id, first);
-              const firstNode = staticLoreRepository.findStoryNode(first);
-              applyVisualActions(firstNode?.visualActions ?? []);
-              if (firstNode?.camera) requestCamera(firstNode.camera);
-            }
-          }}
+          onClick={() => beginStoryGuide(guide.id)}
         >
           Experience the era
         </button>
@@ -53,38 +60,23 @@ export function StoryGuidePanel({ guideId }: { guideId: string }) {
   const currentIndex = guide.nodeIds.indexOf(node.id);
   const previous = currentIndex > 0 ? guide.nodeIds[currentIndex - 1] : undefined;
   const next = currentIndex < guide.nodeIds.length - 1 ? guide.nodeIds[currentIndex + 1] : undefined;
+  const durationMs = node.durationMs ?? narrationDurationMs(node.narration);
+  const battle = node.battleIds?.[0]
+    ? staticLoreRepository.getDataset().battles.find((item) => item.id === node.battleIds?.[0])
+    : undefined;
 
   return (
     <section className="story-card" aria-live="polite">
       <p className="eyebrow">Story {currentIndex + 1} of {guide.nodeIds.length}</p>
       <h2>{node.title}</h2>
       <p>{node.narration}</p>
-      {node.optionalExploreEntityIds && node.optionalExploreEntityIds.length > 0 && (
-        <div className="story-branches">
-          <strong>Optional dossiers</strong>
-          {node.optionalExploreEntityIds.map((id) => {
-            const entity = staticLoreRepository.getDataset().entities.find((item) => item.id === id);
-            if (!entity) return null;
-            return (
-              <Link
-                key={entity.id}
-                to={`/${entity.type === 'faction' ? 'factions' : 'locations'}/${entity.slug}`}
-                onClick={rememberBranch}
-              >
-                Explore {entity.name}
-              </Link>
-            );
-          })}
-        </div>
-      )}
+      {battle && <BattlePlayback battle={battle} autoplay controls={false} />}
       <div className="story-actions">
         <button type="button" disabled={!previous} onClick={() => previous && activate(previous)}>Previous</button>
-        {node.camera && <button type="button" onClick={skipCamera}>Skip motion</button>}
-        {next ? (
-          <button type="button" onClick={() => activate(next)}>Next</button>
-        ) : (
-          <button type="button" onClick={() => { stop(); cancelCamera(); applyVisualActions([]); }}>Finish</button>
-        )}
+        <button type="button" onClick={() => next ? activate(next) : endStoryGuide()}>Next</button>
+      </div>
+      <div className="story-timer" role="progressbar" aria-label="Time until next story point">
+        <span key={node.id} style={{ animationDuration: `${durationMs}ms` }} />
       </div>
     </section>
   );

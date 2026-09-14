@@ -1,0 +1,11 @@
+{
+  "id": "yshaarj-central-bastion-spatial-research",
+  "entityId": "yshaarj-central-bastion",
+  "eraId": "black-empire",
+  "worldspaceId": "azeroth",
+  "geometryId": "yshaarj-central-bastion-research",
+  "geographicCertainty": "approximate",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "The marker represents Chronicle's near-the-center description; it is not an exact canonical coordinate.",
+  "labelPriority": 120
+}

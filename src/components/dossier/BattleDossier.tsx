@@ -82,7 +82,9 @@ export function BattleDossier({ battle, entities, compact = false }: BattleDossi
       <ProvenancePanel subjectId={battle.id} />
 
       <p className="provenance-note">
-        This fixture is deliberately fictional. Replace it only with reviewed, cited source records.
+        {battle.contentStatus === 'placeholder'
+          ? 'This fixture is deliberately fictional. Replace it only with reviewed, cited source records.'
+          : 'This research dossier is source-linked but remains subject to human lore and citation review before publication.'}
       </p>
       {compact && <Link to={`/battles/${battle.slug}`}>Open permanent dossier</Link>}
     </article>

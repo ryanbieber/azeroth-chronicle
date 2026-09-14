@@ -1,0 +1,17 @@
+{
+  "id": "rise-of-the-horde",
+  "name": "The Rise of the Horde and the First Two Wars",
+  "slug": "rise-of-the-horde",
+  "worldspaceId": "azeroth",
+  "order": 6,
+  "dateLabel": "Research boundary — dates pending citation review",
+  "summary": "Draenor's corruption, the orcs' fall to the Legion, opening of the Dark Portal, destruction of Stormwind, and the Alliance victory in the Second War.",
+  "mapStateId": "rise-of-the-horde-map-research",
+  "defaultLayerIds": ["regions", "battles", "locations", "routes", "labels"],
+  "featuredEventIds": [],
+  "featuredBattleIds": [],
+  "previousEraId": "long-vigil-new-kingdoms",
+  "nextEraId": "third-war-frozen-throne",
+  "sourceIds": ["warcraft-chronicle-volume-1", "warcraft-chronicle-volume-2"],
+  "contentStatus": "research"
+}

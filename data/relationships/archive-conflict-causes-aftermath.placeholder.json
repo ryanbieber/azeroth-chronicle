@@ -1,8 +1,0 @@
-{
-  "id": "archive-conflict-causes-aftermath-placeholder",
-  "fromId": "atlas-conflict-placeholder",
-  "toId": "archive-aftermath-placeholder",
-  "type": "causes",
-  "citationIds": ["fixture-interaction-citation-placeholder"],
-  "confidence": "explicit"
-}

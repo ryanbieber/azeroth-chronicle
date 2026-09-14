@@ -1,119 +1,518 @@
 [
   {
+    "id": "age-of-adventurers",
+    "type": "era",
+    "name": "The Age of Adventurers",
+    "slug": "age-of-adventurers",
+    "path": "/eras/age-of-adventurers",
+    "eraId": "age-of-adventurers",
+    "aliases": [],
+    "tags": [],
+    "description": "The period beginning with World of Warcraft: renewed faction conflict, Ahn'Qiraj, campaigns in Outland and Northrend, the Cataclysm, Pandaria, alternate Draenor, and the Legion's final invasion.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "warcraft-chronicle-volume-4"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "ancient-civilizations",
+    "type": "era",
+    "name": "Rise of the Ancient Civilizations",
+    "slug": "ancient-civilizations",
+    "path": "/eras/ancient-civilizations",
+    "eraId": "ancient-civilizations",
+    "aliases": [],
+    "tags": [],
+    "description": "The trolls and their empires, the aqir wars, the mogu, Pandaria, ancient humans, and the ascent of the kaldorei.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "black-empire",
     "type": "era",
-    "name": "The Black Empire",
+    "name": "Cosmic Origins and the Black Empire",
     "slug": "black-empire",
     "path": "/eras/black-empire",
     "eraId": "black-empire",
     "aliases": [],
     "tags": [],
-    "description": "A non-canonical fixture used to prove era loading, layers, stories, and deep links.",
-    "sourceIds": [],
-    "contentStatus": "placeholder"
-  },
-  {
-    "id": "archive-expedition-placeholder",
-    "type": "entity",
-    "name": "Archive Expedition",
-    "slug": "archive-expedition-placeholder",
-    "path": "/factions/archive-expedition-placeholder",
-    "aliases": [],
-    "tags": [
-      "placeholder"
+    "description": "Azeroth's immense nascent world-soul left its native elementals without enough Spirit to balance them. Their long conflict was overtaken by the arrival of the Old Gods and the civilization their servants raised across the primordial world.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
     ],
-    "description": "A fictional UI fixture. Replace it with reviewed source-backed content.",
-    "sourceIds": [],
-    "contentStatus": "placeholder"
+    "contentStatus": "research"
   },
   {
-    "id": "archive-site-placeholder",
+    "id": "long-vigil-new-kingdoms",
+    "type": "era",
+    "name": "The Long Vigil and the New Kingdoms",
+    "slug": "long-vigil-new-kingdoms",
+    "path": "/eras/long-vigil-new-kingdoms",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [],
+    "description": "The night elves guard Kalimdor while Quel'Thalas, Arathor, the Seven Human Kingdoms, Khaz Modan, and other post-Sundering powers develop.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "modern-cosmic-age",
+    "type": "era",
+    "name": "The Modern Cosmic Age",
+    "slug": "modern-cosmic-age",
+    "path": "/eras/modern-cosmic-age",
+    "eraId": "modern-cosmic-age",
+    "aliases": [],
+    "tags": [],
+    "description": "The Fourth War, N'Zoth's return, Shadowlands, the awakening of the Dragon Isles, and Azeroth's increasingly direct role in the Worldsoul Saga.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-4"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "ordering-of-azeroth",
+    "type": "era",
+    "name": "Ordering of Azeroth",
+    "slug": "ordering-of-azeroth",
+    "path": "/eras/ordering-of-azeroth",
+    "eraId": "ordering-of-azeroth",
+    "aliases": [],
+    "tags": [],
+    "description": "The Titan-forged armies defeat and imprison the Old Gods, reshape the planet, create the Well of Eternity, and establish facilities such as Ulduar.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "rise-of-the-horde",
+    "type": "era",
+    "name": "The Rise of the Horde and the First Two Wars",
+    "slug": "rise-of-the-horde",
+    "path": "/eras/rise-of-the-horde",
+    "eraId": "rise-of-the-horde",
+    "aliases": [],
+    "tags": [],
+    "description": "Draenor's corruption, the orcs' fall to the Legion, opening of the Dark Portal, destruction of Stormwind, and the Alliance victory in the Second War.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "warcraft-chronicle-volume-2"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "third-war-frozen-throne",
+    "type": "era",
+    "name": "The Third War and the Frozen Throne",
+    "slug": "third-war-frozen-throne",
+    "path": "/eras/third-war-frozen-throne",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [],
+    "description": "The Scourge, Arthas's downfall, destruction of Lordaeron and Quel'Thalas, the Legion's return, the Battle of Mount Hyjal, and the creation of the Lich King's new order.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "war-of-the-ancients",
+    "type": "era",
+    "name": "The War of the Ancients and the Sundering",
+    "slug": "war-of-the-ancients",
+    "path": "/eras/war-of-the-ancients",
+    "eraId": "war-of-the-ancients",
+    "aliases": [],
+    "tags": [],
+    "description": "Queen Azshara, the Burning Legion's first invasion, the destruction of the Well of Eternity, and the shattering of primordial Kalimdor.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "alakir",
     "type": "entity",
-    "name": "Archive Site Placeholder",
-    "slug": "archive-site-placeholder",
-    "path": "/locations/archive-site-placeholder",
+    "name": "Al'Akir",
+    "slug": "alakir",
+    "path": "/locations/alakir",
+    "eraId": "black-empire",
+    "aliases": [
+      "The Windlord"
+    ],
+    "tags": [
+      "elemental-lord",
+      "air"
+    ],
+    "description": "The cunning Elemental Lord of air, whose forces relied on spying, division, and sudden storms.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "aqir",
+    "type": "entity",
+    "name": "Aqir",
+    "slug": "aqir",
+    "path": "/factions/aqir",
     "eraId": "black-empire",
     "aliases": [],
     "tags": [
-      "placeholder",
-      "location"
+      "black-empire",
+      "servants",
+      "aqir"
     ],
-    "description": "A fictional location used to exercise time-aware spatial focus.",
+    "description": "Resilient insectoid servants formed from the Old Gods' organic matter and set to building the empire's cities and temples.",
     "sourceIds": [
-      "fixture-specification-placeholder"
+      "warcraft-chronicle-volume-1"
     ],
-    "contentStatus": "placeholder"
+    "contentStatus": "research"
   },
   {
-    "id": "unnamed-domain-placeholder",
+    "id": "azeroth-world-soul",
     "type": "entity",
-    "name": "Unnamed Domain",
-    "slug": "unnamed-domain-placeholder",
-    "path": "/factions/unnamed-domain-placeholder",
+    "name": "Azeroth's World-Soul",
+    "slug": "azeroth-world-soul",
+    "path": "/locations/azeroth-world-soul",
+    "eraId": "black-empire",
+    "aliases": [
+      "Nascent Titan Azeroth"
+    ],
+    "tags": [
+      "world-soul",
+      "cosmology",
+      "primordial"
+    ],
+    "description": "A titan spirit developing within the young world's core, whose immense growth drew in much of Azeroth's Spirit.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "black-empire-civilization",
+    "type": "entity",
+    "name": "The Black Empire",
+    "slug": "black-empire-civilization",
+    "path": "/factions/black-empire-civilization",
+    "eraId": "black-empire",
     "aliases": [],
     "tags": [
-      "placeholder"
+      "black-empire",
+      "old-gods",
+      "inferred-geography"
     ],
-    "description": "A fictional opposing-domain fixture for interaction testing only.",
-    "sourceIds": [],
-    "contentStatus": "placeholder"
+    "description": "The civilization of Old God domains, citadels, and temple cities that spread across primordial Azeroth.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "warcraft-wiki-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
   },
   {
-    "id": "archive-aftermath-placeholder",
+    "id": "elemental-hosts",
+    "type": "entity",
+    "name": "The Elemental Hosts",
+    "slug": "elemental-hosts",
+    "path": "/factions/elemental-hosts",
+    "eraId": "black-empire",
+    "aliases": [],
+    "tags": [
+      "elementals",
+      "editorial-grouping",
+      "primordial"
+    ],
+    "description": "The innumerable air, fire, earth, and water spirits led by Azeroth's four Elemental Lords.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "neptulon",
+    "type": "entity",
+    "name": "Neptulon",
+    "slug": "neptulon",
+    "path": "/locations/neptulon",
+    "eraId": "black-empire",
+    "aliases": [
+      "The Tidehunter"
+    ],
+    "tags": [
+      "elemental-lord",
+      "water"
+    ],
+    "description": "The Elemental Lord of water, portrayed as a patient strategist who struck divided rivals.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "nraqi",
+    "type": "entity",
+    "name": "N'raqi",
+    "slug": "nraqi",
+    "path": "/factions/nraqi",
+    "eraId": "black-empire",
+    "aliases": [
+      "Faceless Ones"
+    ],
+    "tags": [
+      "black-empire",
+      "servants",
+      "nraqi"
+    ],
+    "description": "Intelligent servants formed from the Old Gods' organic matter and used as taskmasters within the expanding empire.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "old-gods",
+    "type": "entity",
+    "name": "The Old Gods",
+    "slug": "old-gods",
+    "path": "/factions/old-gods",
+    "eraId": "black-empire",
+    "aliases": [],
+    "tags": [
+      "old-gods",
+      "void",
+      "primordial"
+    ],
+    "description": "Void-linked entities that struck Azeroth, spread corruption through the world, and drove tendrils toward its core.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-dragon-aspects-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "primordial-kalimdor",
+    "type": "entity",
+    "name": "Primordial Kalimdor",
+    "slug": "primordial-kalimdor",
+    "path": "/locations/primordial-kalimdor",
+    "eraId": "black-empire",
+    "aliases": [],
+    "tags": [
+      "location",
+      "inferred-geography",
+      "primordial"
+    ],
+    "description": "The largest continent of primordial Azeroth, shown here with an interpretive rather than surveyed outline.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "warcraft-wiki-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "ragnaros",
+    "type": "entity",
+    "name": "Ragnaros",
+    "slug": "ragnaros",
+    "path": "/locations/ragnaros",
+    "eraId": "black-empire",
+    "aliases": [
+      "The Firelord"
+    ],
+    "tags": [
+      "elemental-lord",
+      "fire"
+    ],
+    "description": "The Elemental Lord of fire, characterized by direct, destructive force against his rivals.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "therazane",
+    "type": "entity",
+    "name": "Therazane",
+    "slug": "therazane",
+    "path": "/locations/therazane",
+    "eraId": "black-empire",
+    "aliases": [
+      "The Stonemother"
+    ],
+    "tags": [
+      "elemental-lord",
+      "earth"
+    ],
+    "description": "The Elemental Lord of earth, protective of her children and defended by formidable mountain barriers.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "yshaarj-central-bastion",
+    "type": "entity",
+    "name": "Y'Shaarj's Central Bastion",
+    "slug": "yshaarj-central-bastion",
+    "path": "/locations/yshaarj-central-bastion",
+    "eraId": "black-empire",
+    "aliases": [],
+    "tags": [
+      "black-empire",
+      "site",
+      "approximate-geography"
+    ],
+    "description": "An editorial label for the greatest Black Empire bastion, built around Y'Shaarj near the center of Azeroth's largest continent.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "yshaarj",
+    "type": "entity",
+    "name": "Y'Shaarj",
+    "slug": "yshaarj",
+    "path": "/locations/yshaarj",
+    "eraId": "black-empire",
+    "aliases": [],
+    "tags": [
+      "old-god",
+      "black-empire"
+    ],
+    "description": "The Old God identified by Chronicle as the greatest of the group, surrounded by the Black Empire's largest bastion.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "black-empire-dominion",
     "type": "event",
-    "name": "Archive Aftermath Placeholder",
-    "slug": "archive-aftermath-placeholder",
-    "path": "/events/archive-aftermath-placeholder",
+    "name": "Black Empire Dominion",
+    "slug": "black-empire-dominion",
+    "path": "/events/black-empire-dominion",
     "eraId": "black-empire",
     "aliases": [],
     "tags": [],
-    "description": "A fictional consequence record used to test consequence traversal.",
+    "description": "The elementals failed to dislodge the Old Gods and were enslaved; without that resistance, Black Empire influence extended over much of the world.",
     "sourceIds": [
-      "fixture-specification-placeholder"
+      "warcraft-wiki-chronicle-volume-1"
     ],
-    "contentStatus": "placeholder"
+    "contentStatus": "research"
   },
   {
-    "id": "archive-approach-placeholder",
+    "id": "black-empire-rises",
     "type": "event",
-    "name": "Archive Approach Placeholder",
-    "slug": "archive-approach-placeholder",
-    "path": "/events/archive-approach-placeholder",
+    "name": "Rise of the Black Empire",
+    "slug": "black-empire-rises",
+    "path": "/events/black-empire-rises",
     "eraId": "black-empire",
     "aliases": [],
     "tags": [],
-    "description": "A fictional precursor record used to test cause traversal.",
+    "description": "The n'raqi directed the aqir in building citadels and temple cities around the Old Gods; Y'Shaarj's central bastion became the greatest of these domains as their holdings spread.",
     "sourceIds": [
-      "fixture-specification-placeholder"
+      "warcraft-chronicle-volume-1"
     ],
-    "contentStatus": "placeholder"
+    "contentStatus": "research"
   },
   {
-    "id": "atlas-conflict-placeholder",
+    "id": "old-gods-arrive",
+    "type": "event",
+    "name": "Arrival of the Old Gods",
+    "slug": "old-gods-arrive",
+    "path": "/events/old-gods-arrive",
+    "eraId": "black-empire",
+    "aliases": [],
+    "tags": [],
+    "description": "A group of Old Gods struck Azeroth from the Great Dark, embedded themselves in different parts of the world, and extended their influence toward its core.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "spirit-imbalance",
+    "type": "event",
+    "name": "The Primordial Imbalance",
+    "slug": "spirit-imbalance",
+    "path": "/events/spirit-imbalance",
+    "eraId": "black-empire",
+    "aliases": [],
+    "tags": [],
+    "description": "As Azeroth's world-soul developed, it consumed much of the fifth element, Spirit, leaving the native elementals without its balancing influence.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "elemental-assault-on-black-empire",
     "type": "battle",
-    "name": "Atlas Conflict Placeholder",
-    "slug": "atlas-conflict-placeholder",
-    "path": "/battles/atlas-conflict-placeholder",
+    "name": "The Elemental Assault on the Black Empire",
+    "slug": "elemental-assault-on-black-empire",
+    "path": "/battles/elemental-assault-on-black-empire",
     "eraId": "black-empire",
     "aliases": [],
     "tags": [],
-    "description": "A fictional conflict used only to exercise battle selection and dossier rendering.",
+    "description": "For the first time, Azeroth's rival elemental hosts united against the Old Gods and attacked the Black Empire's growing cities.",
     "sourceIds": [
-      "fixture-specification-placeholder"
+      "warcraft-chronicle-volume-1",
+      "warcraft-wiki-chronicle-volume-1"
     ],
-    "contentStatus": "placeholder"
+    "contentStatus": "research"
   },
   {
-    "id": "archive-campaign-placeholder",
+    "id": "elemental-wars",
+    "type": "battle",
+    "name": "The Elemental Wars",
+    "slug": "elemental-wars",
+    "path": "/battles/elemental-wars",
+    "eraId": "black-empire",
+    "aliases": [],
+    "tags": [],
+    "description": "The four Elemental Lords and their hosts fought across primordial Azeroth for ages, with dominion shifting continually and no lasting victor.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "elemental-resistance-campaign",
     "type": "campaign",
-    "name": "Archive Campaign Placeholder",
-    "slug": "archive-campaign-placeholder",
+    "name": "The Elemental Resistance to the Black Empire",
+    "slug": "elemental-resistance-campaign",
     "path": "/eras/black-empire",
     "eraId": "black-empire",
     "aliases": [],
     "tags": [],
-    "description": "A fictional campaign record used only to validate reusable campaign relationships.",
-    "sourceIds": [],
-    "contentStatus": "placeholder"
+    "description": "A descriptive campaign grouping for the Elemental Lords' united attempt to remove the Old Gods and their growing empire.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "warcraft-wiki-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "elemental-wars-campaign",
+    "type": "campaign",
+    "name": "The Elemental Wars",
+    "slug": "elemental-wars-campaign",
+    "path": "/eras/black-empire",
+    "eraId": "black-empire",
+    "aliases": [],
+    "tags": [],
+    "description": "A descriptive campaign grouping for the prolonged struggle among Azeroth's four elemental hosts.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
   }
 ]

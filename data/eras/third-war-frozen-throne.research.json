@@ -1,0 +1,17 @@
+{
+  "id": "third-war-frozen-throne",
+  "name": "The Third War and the Frozen Throne",
+  "slug": "third-war-frozen-throne",
+  "worldspaceId": "azeroth",
+  "order": 7,
+  "dateLabel": "Research boundary — dates pending citation review",
+  "summary": "The Scourge, Arthas's downfall, destruction of Lordaeron and Quel'Thalas, the Legion's return, the Battle of Mount Hyjal, and the creation of the Lich King's new order.",
+  "mapStateId": "third-war-frozen-throne-map-research",
+  "defaultLayerIds": ["regions", "battles", "locations", "routes", "labels"],
+  "featuredEventIds": [],
+  "featuredBattleIds": [],
+  "previousEraId": "rise-of-the-horde",
+  "nextEraId": "age-of-adventurers",
+  "sourceIds": ["warcraft-chronicle-volume-3"],
+  "contentStatus": "research"
+}

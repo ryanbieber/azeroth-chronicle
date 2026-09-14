@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Prove the reusable atlas path with deliberately fictional placeholder data before any bulk lore work. The spike covers parsed GeoJSON, an external terrain asset, selection, URL restoration, and scripted camera focus.
+Prove the reusable atlas path with deliberately fictional fixture data before any bulk lore work, then verify that path with the source-linked Black Empire research baseline. The spike covers parsed GeoJSON, an external terrain asset, selection, URL restoration, and scripted camera focus.
 
 ## Coordinate decision
 
@@ -17,12 +17,12 @@ For the bottom-left fixture, `(0, 0)` becomes `(-5, 0, 5)`, `(5000, 5000)` becom
 
 ## Implemented spike path
 
-- The region, campaign route, and marker position are parsed from `data/geometry/black-empire-region.placeholder.geojson`.
+- The primordial landmass, inferred Black Empire influence, and approximate central bastion are parsed from `data/geometry/black-empire.research.geojson`.
 - Polygon rings and LineString paths pass through the same bounds-checked coordinate adapter.
-- A reproducible 868-byte placeholder GLB loads from `public/models/azeroth/black-empire-map-placeholder/`, outside the JavaScript bundle.
+- A reproducible 53,488-byte original research GLB loads from `public/models/azeroth/black-empire-map-research/`, outside the JavaScript bundle.
 - OrbitControls supplies bounded orbit, pan, and zoom.
 - Story nodes issue cancellable camera commands through the separate map-view store. User input cancels interpolation; reduced-motion users land immediately at the final pose.
-- Map URLs restore era, selection, and layer visibility. Legacy `battle=` links remain readable and serialize to the generic `selected=` form.
+- Map URLs restore era and selection. Public layer visibility is curated by the active era; legacy `layers=` values are ignored. Legacy `battle=` links remain readable and serialize to the generic `selected=` form.
 - A WebGL-unavailable state links directly to the permanent battle dossier.
 
 ## Representative desktop profile and budgets
@@ -33,22 +33,26 @@ The first target profile is a 1920×1080 viewport, device-pixel ratio 1, current
 | --- | ---: | --- |
 | Warm orbit median frame time | ≤ 16.7 ms | Browser performance trace |
 | Warm orbit 95th percentile frame time | ≤ 25 ms | Browser performance trace |
-| Draw calls in the placeholder scene | ≤ 25 | `renderer.info.render.calls` |
+| Draw calls in the Era 1 scene | ≤ 25 | `renderer.info.render.calls` |
 | Initial compressed JavaScript | ≤ 450 kB | Vite gzip report, all initially requested chunks |
 | Lazy map compressed JavaScript | ≤ 350 kB | Vite gzip report |
 | Single terrain transfer | ≤ 10 MB | Network transfer size |
 | Useful scene after navigation | ≤ 2.5 s | Performance mark from route entry to first settled frame |
 
-## Production build measurement — 2026-09-12
+The automated profile records the unmasked WebGL renderer after a 30-frame warmup and across 90 measured frames. Frame-time thresholds are enforced only on hardware-accelerated runs; SwiftShader is a software fallback whose host scheduling does not represent the target desktop GPU. Sample count, draw calls, asset transfer, and useful-scene time remain enforced under SwiftShader.
+
+## Production build measurement — 2026-09-13
 
 | Artifact | Raw | Gzip |
 | --- | ---: | ---: |
-| Initial application JavaScript | 364.46 kB | 112.35 kB |
-| Lazy map JavaScript | 1,024.39 kB | 275.67 kB |
-| Application CSS | 6.38 kB | 2.09 kB |
-| Placeholder terrain GLB | 868 B | n/a |
+| Initial application JavaScript | 457.04 kB | 134.53 kB |
+| Lazy map JavaScript | 1,028.75 kB | 276.74 kB |
+| Application CSS | 14.33 kB | 3.78 kB |
+| Era 1 research terrain GLB | 53,488 B | n/a |
+| Era 1 color relief texture | 432,196 B | n/a |
+| Era 1 height texture | 333,450 B | n/a |
 
-The automated Chromium profile at 1920×1080 and DPR 1 sampled 180 warm frames: **16.7 ms median**, **16.9 ms p95**, and **5 draw calls**. The production deep-link test also confirmed an HTTP 200 terrain response and preserved era, selection, and layer state across reload.
+The source-linked Era 1 production profile at 1920×1080 and DPR 1 used Chromium's SwiftShader fallback: **37.8 ms median**, **42.2 ms p95**, **1 draw call**, and **724.5 ms** to the useful scene across 90 measured frames after a 30-frame warmup. Frame-time thresholds are intentionally not applied to software rendering; the draw-call, transfer, useful-scene, and sample-count budgets pass. The deep-link test also confirms HTTP 200 responses for both relief textures, restored era and selection, and curated layers that ignore visitor-supplied legacy overrides.
 
 The initial, lazy-map, terrain-transfer, frame-time, and draw-call budgets pass. Vite reports the map chunk as larger than 500 kB raw because it contains the Three.js renderer; it remains route-split and below the compressed transfer budget.
 

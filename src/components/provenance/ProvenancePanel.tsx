@@ -28,10 +28,14 @@ export function ProvenancePanel({ subjectId }: { subjectId: string }) {
           <ol className="citation-list">
             {citations.map((citation) => {
               const source = dataset.sources.find((item) => item.id === citation.sourceId);
+              const pageLabel = citation.pageStart
+                ? `pp. ${citation.pageStart}${citation.pageEnd && citation.pageEnd !== citation.pageStart ? `–${citation.pageEnd}` : ''}`
+                : undefined;
+              const location = [citation.chapter, citation.section, pageLabel].filter(Boolean).join(' · ');
               return (
                 <li key={citation.id}>
                   <strong>{source?.title ?? citation.sourceId}</strong>
-                  <span>{citation.chapter ?? citation.section ?? citation.questId ?? 'Citation location recorded'}</span>
+                  <span>{location || citation.questId || 'Citation location recorded'}</span>
                   {citation.note && <small>{citation.note}</small>}
                 </li>
               );

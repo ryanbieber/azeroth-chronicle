@@ -1,0 +1,9 @@
+{
+  "id": "alakir-tactics-claim",
+  "subjectId": "alakir",
+  "predicate": "elemental-war-method",
+  "value": "Used reconnaissance, deception, storms, and attacks against already weakened rivals.",
+  "citationIds": ["chronicle-v1-reign-elements"],
+  "confidence": "explicit",
+  "status": "active"
+}

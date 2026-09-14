@@ -1,0 +1,17 @@
+{
+  "id": "spirit-imbalance",
+  "kind": "event",
+  "name": "The Primordial Imbalance",
+  "slug": "spirit-imbalance",
+  "eraId": "black-empire",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "unknown", "label": "Before the arrival of the Old Gods" },
+  "summary": "As Azeroth's world-soul developed, it consumed much of the fifth element, Spirit, leaving the native elementals without its balancing influence.",
+  "description": "This descriptive event record captures Chronicle's causal explanation for the violent state of primordial Azeroth's elementals.",
+  "participantEntityIds": ["azeroth-world-soul", "elemental-hosts"],
+  "causesEventIds": ["elemental-wars"],
+  "relationshipIds": ["spirit-imbalance-causes-elemental-wars"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["spirit-imbalance-claim"],
+  "contentStatus": "research"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "aqir",
+  "type": "faction",
+  "name": "Aqir",
+  "slug": "aqir",
+  "shortDescription": "Resilient insectoid servants formed from the Old Gods' organic matter and set to building the empire's cities and temples.",
+  "firstEraId": "black-empire",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["aqir-role-claim"],
+  "tags": ["black-empire", "servants", "aqir"],
+  "contentStatus": "research"
+}

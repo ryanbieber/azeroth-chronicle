@@ -1,0 +1,103 @@
+{
+  "type": "FeatureCollection",
+  "name": "black-empire-research-cartography",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "primordial-kalimdor-landmass-research",
+      "properties": {
+        "name": "Primordial Kalimdor (interpretive extent)",
+        "contentStatus": "research",
+        "styleRole": "landmass",
+        "geographicCertainty": "inferred"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [900, 1700], [1800, 900], [3500, 1100], [5100, 500],
+          [6900, 1100], [8500, 2300], [9200, 4100], [8300, 5700],
+          [9000, 7400], [7500, 9000], [5700, 8500], [4300, 9500],
+          [2600, 8700], [1200, 7100], [1500, 5200], [700, 3400],
+          [900, 1700]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "black-empire-influence-research",
+      "properties": {
+        "name": "Black Empire influence (broad, inferred)",
+        "contentStatus": "research",
+        "styleRole": "influence",
+        "geographicCertainty": "inferred"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [1500, 2300], [2900, 1500], [4700, 1500], [6300, 1700],
+          [8100, 2900], [8200, 4500], [7500, 5900], [8100, 7100],
+          [6900, 8100], [5200, 7700], [4000, 8500], [2600, 7600],
+          [1900, 6200], [2100, 4700], [1300, 3500], [1500, 2300]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "yshaarj-central-bastion-research",
+      "properties": {
+        "name": "Y'Shaarj's central bastion (approximate)",
+        "contentStatus": "research",
+        "styleRole": "site",
+        "geographicCertainty": "approximate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [5100, 5050]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "alakir-domain-focus-research",
+      "properties": {
+        "name": "Al'Akir's domain focus (inferred)",
+        "contentStatus": "research",
+        "styleRole": "site",
+        "geographicCertainty": "inferred"
+      },
+      "geometry": { "type": "Point", "coordinates": [3250, 1450] }
+    },
+    {
+      "type": "Feature",
+      "id": "ragnaros-domain-focus-research",
+      "properties": {
+        "name": "Ragnaros's domain focus (inferred)",
+        "contentStatus": "research",
+        "styleRole": "site",
+        "geographicCertainty": "inferred"
+      },
+      "geometry": { "type": "Point", "coordinates": [7350, 2350] }
+    },
+    {
+      "type": "Feature",
+      "id": "therazane-domain-focus-research",
+      "properties": {
+        "name": "Therazane's domain focus (inferred)",
+        "contentStatus": "research",
+        "styleRole": "site",
+        "geographicCertainty": "inferred"
+      },
+      "geometry": { "type": "Point", "coordinates": [6500, 6100] }
+    },
+    {
+      "type": "Feature",
+      "id": "neptulon-domain-focus-research",
+      "properties": {
+        "name": "Neptulon's domain focus (inferred)",
+        "contentStatus": "research",
+        "styleRole": "site",
+        "geographicCertainty": "inferred"
+      },
+      "geometry": { "type": "Point", "coordinates": [2050, 7900] }
+    }
+  ]
+}

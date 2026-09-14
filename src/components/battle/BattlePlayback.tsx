@@ -12,7 +12,11 @@ function reducedMotion(): boolean {
     && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 }
 
-export function BattlePlayback({ battle }: { battle: Battle }) {
+export function BattlePlayback({ battle, autoplay = false, controls = true }: {
+  battle: Battle;
+  autoplay?: boolean;
+  controls?: boolean;
+}) {
   const phases = battle.phases ?? noPhases;
   const battleId = useBattlePlaybackStore((state) => state.battleId);
   const phaseIndex = useBattlePlaybackStore((state) => state.phaseIndex);
@@ -26,11 +30,18 @@ export function BattlePlayback({ battle }: { battle: Battle }) {
   const requestCamera = useMapViewStore((state) => state.requestCamera);
   const phase = phases[phaseIndex];
 
-  useEffect(() => load(battle.id), [battle.id, load]);
+  useEffect(() => {
+    load(battle.id);
+    if (autoplay) {
+      restart();
+      if (reducedMotion()) complete(Math.max(0, phases.length - 1));
+      else play();
+    }
+  }, [autoplay, battle.id, complete, load, phases.length, play, restart]);
 
   useEffect(() => {
     if (battleId !== battle.id || !phase || status === 'idle') return;
-    const actions = phases.slice(0, phaseIndex + 1).flatMap((item) => item.visualActions ?? []);
+    const actions = phase.visualActions ?? [];
     applyVisualActions(actions);
     if (phase.camera) requestCamera(phase.camera);
   }, [battle.id, battleId, phase, phaseIndex, phases, requestCamera, status]);
@@ -56,7 +67,7 @@ export function BattlePlayback({ battle }: { battle: Battle }) {
       <p className="eyebrow">Historical cartography · phase {phaseIndex + 1} of {phases.length}</p>
       <h3 id="playback-title">{status === 'complete' ? 'Documented result' : phase.title}</h3>
       <p aria-live="polite">{status === 'complete' ? battle.outcome.summary : phase.narration ?? phase.summary}</p>
-      <div className="playback-controls" aria-label="Battle playback controls">
+      {controls && <div className="playback-controls" aria-label="Battle playback controls">
         {status === 'playing'
           ? <button type="button" onClick={pause}>Pause</button>
           : <button type="button" onClick={startPlayback}>Play</button>}
@@ -64,7 +75,7 @@ export function BattlePlayback({ battle }: { battle: Battle }) {
         <button type="button" disabled={phaseIndex >= phases.length - 1} onClick={() => goToPhase(phaseIndex + 1)}>Next phase</button>
         <button type="button" onClick={restart}>Restart</button>
         <button type="button" onClick={skipToResult}>Skip to result</button>
-      </div>
+      </div>}
     </section>
   );
 }

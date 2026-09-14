@@ -1,0 +1,10 @@
+{
+  "id": "central-bastion-location-claim",
+  "subjectId": "yshaarj-central-bastion",
+  "predicate": "approximate-location",
+  "value": "Near the center of Azeroth's largest primordial continent.",
+  "citationIds": ["chronicle-v1-coming-old-gods"],
+  "confidence": "explicit",
+  "status": "active",
+  "editorNote": "The displayed point is approximate because the source provides a relative description rather than coordinates."
+}

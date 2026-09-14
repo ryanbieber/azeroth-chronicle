@@ -1,0 +1,9 @@
+{
+  "id": "yshaarj-bastion-claim",
+  "subjectId": "yshaarj",
+  "predicate": "black-empire-position",
+  "value": "The greatest Black Empire bastion was built around Y'Shaarj near the center of Azeroth's largest continent.",
+  "citationIds": ["chronicle-v1-coming-old-gods"],
+  "confidence": "explicit",
+  "status": "active"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "azeroth-world-soul",
+  "type": "other",
+  "name": "Azeroth's World-Soul",
+  "slug": "azeroth-world-soul",
+  "aliases": ["Nascent Titan Azeroth"],
+  "shortDescription": "A titan spirit developing within the young world's core, whose immense growth drew in much of Azeroth's Spirit.",
+  "body": "Chronicle presents the world-soul as the reason Azeroth's elementals lacked the balancing fifth element. This record describes the primordial account and does not resolve later perspectives on Azeroth's nature.",
+  "firstEraId": "black-empire",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["azeroth-world-soul-spirit-claim"],
+  "tags": ["world-soul", "cosmology", "primordial"],
+  "contentStatus": "research"
+}

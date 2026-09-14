@@ -1,0 +1,9 @@
+{
+  "id": "azeroth-world-soul-spirit-claim",
+  "subjectId": "azeroth-world-soul",
+  "predicate": "primordial-effect",
+  "value": "Its immense development consumed much of Azeroth's Spirit, reducing elemental balance.",
+  "citationIds": ["chronicle-v1-reign-elements"],
+  "confidence": "explicit",
+  "status": "active"
+}

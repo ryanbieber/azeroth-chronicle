@@ -2,24 +2,19 @@ import { Link, useParams } from 'react-router-dom';
 import { EntityDossier } from '../components/dossier/EntityDossier';
 import { staticLoreRepository } from '../domain/repositories/StaticLoreRepository';
 import { NotFound } from './EraPage';
-import { useStoryStore } from '../app/state/storyStore';
+import { StoryReturnLink } from '../components/story/StoryReturnLink';
 
 export function EntityPage() {
   const { slug = '' } = useParams();
   const entity = staticLoreRepository.findEntityBySlug(slug);
-  const branchReturn = useStoryStore((state) => state.branchReturn);
-  const resumeBranch = useStoryStore((state) => state.resumeBranch);
   if (!entity) return <NotFound />;
+  const hasMapState = staticLoreRepository.getDataset().spatialStates.some((state) => state.entityId === entity.id);
   return (
     <main className="document-page">
       <EntityDossier entity={entity} />
-      {branchReturn && (
-        <Link className="primary-link secondary-link" to={`/map?era=${entity.firstEraId ?? 'black-empire'}`} onClick={resumeBranch}>
-          Return to guided history
-        </Link>
-      )}
+      <StoryReturnLink eraId={entity.firstEraId ?? 'black-empire'} />
       <Link className="primary-link" to={`/map?era=${entity.firstEraId ?? 'black-empire'}&selected=entity:${entity.slug}`}>
-        Locate this record in the atlas
+        {hasMapState ? 'Locate this record in the atlas' : 'Return to this era in the atlas'}
       </Link>
     </main>
   );

@@ -1,0 +1,165 @@
+{
+  "guide": {
+    "id": "black-empire-guided-history",
+    "eraId": "black-empire",
+    "title": "From World-Soul to Black Empire",
+    "description": "A ten-part guided history of primordial Azeroth, its elemental wars, the Old Gods' arrival, and the rise of the Black Empire.",
+    "nodeIds": [
+      "black-empire-story-cosmos",
+      "black-empire-story-world-soul",
+      "black-empire-story-elemental-lords",
+      "black-empire-story-elemental-wars",
+      "black-empire-story-old-gods-arrive",
+      "black-empire-story-servant-races",
+      "black-empire-story-central-bastion",
+      "black-empire-story-empire-spreads",
+      "black-empire-story-elemental-resistance",
+      "black-empire-story-dominion"
+    ],
+    "contentStatus": "research"
+  },
+  "nodes": [
+    {
+      "id": "black-empire-story-cosmos",
+      "guideId": "black-empire-guided-history",
+      "title": "A world inside a larger cosmos",
+      "narration": "Before mountain or sea had received a name, Azeroth's tale had already begun amid powers vaster than the world. Chronicle sets Light against Shadow, Life against Death, and Order against Disorder, while fire, air, earth, water, Spirit, and Decay shaped the mortal realm.",
+      "durationMs": 31000,
+      "camera": { "position": [0, 8.6, 8.2], "target": [0, 0, 0], "durationMs": 1100 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "black-empire-map-research" },
+        { "type": "toggle_layer", "layerId": "regions", "visible": true }
+      ],
+      "nextNodeIds": ["black-empire-story-world-soul"]
+    },
+    {
+      "id": "black-empire-story-world-soul",
+      "guideId": "black-empire-guided-history",
+      "title": "The sleeping titan within",
+      "narration": "Deep within the young world, unseen beneath stone and flame, a mighty titan spirit stirred. As it grew, it drew heavily upon Spirit, the fifth element; and without that gentle balance, the native powers of Azeroth became restless and untamed.",
+      "durationMs": 29000,
+      "eventIds": ["spirit-imbalance"],
+      "entityIds": ["azeroth-world-soul"],
+      "optionalExploreEntityIds": ["azeroth-world-soul"],
+      "camera": { "position": [0, 6.8, 6.4], "target": [0, 0, 0], "durationMs": 900 },
+      "visualActions": [{ "type": "show_relationships", "relationshipIds": ["spirit-imbalance-causes-elemental-wars"] }],
+      "previousNodeId": "black-empire-story-cosmos",
+      "nextNodeIds": ["black-empire-story-elemental-lords"]
+    },
+    {
+      "id": "black-empire-story-elemental-lords",
+      "guideId": "black-empire-guided-history",
+      "title": "Four powers without balance",
+      "narration": "Four great lords arose above the tumult: Al'Akir, master of air; Ragnaros, lord of fire; Therazane, mother of earth; and Neptulon, ruler of water. Each desired dominion, and each carried war according to the nature of their element.",
+      "durationMs": 28000,
+      "entityIds": ["alakir", "ragnaros", "therazane", "neptulon"],
+      "optionalExploreEntityIds": ["alakir", "ragnaros", "therazane", "neptulon"],
+      "camera": { "position": [-3.5, 5.8, 6.2], "target": [-0.8, 0, 0.8], "durationMs": 900 },
+      "previousNodeId": "black-empire-story-world-soul",
+      "nextNodeIds": ["black-empire-story-elemental-wars"]
+    },
+    {
+      "id": "black-empire-story-elemental-wars",
+      "guideId": "black-empire-guided-history",
+      "title": "An age of elemental war",
+      "narration": "Age followed uncounted age beneath storm, flood, fire, and heaving stone. The elemental hosts broke one another's realms and raised them anew, yet no victory endured; strife itself became the rhythm of primordial Azeroth.",
+      "durationMs": 85000,
+      "battleIds": ["elemental-wars"],
+      "entityIds": ["elemental-hosts"],
+      "camera": { "position": [3.8, 5.5, 5.6], "target": [0.5, 0, -0.4], "durationMs": 900 },
+      "visualActions": [{ "type": "show_relationships", "relationshipIds": ["spirit-imbalance-causes-elemental-wars", "elemental-wars-precede-old-gods"] }],
+      "previousNodeId": "black-empire-story-elemental-lords",
+      "nextNodeIds": ["black-empire-story-old-gods-arrive"]
+    },
+    {
+      "id": "black-empire-story-old-gods-arrive",
+      "guideId": "black-empire-guided-history",
+      "title": "The Old Gods descend",
+      "narration": "Then the long contest was broken by a terror from beyond the heavens. The Old Gods fell from the Great Dark and rooted themselves in Azeroth. Around them the land withered, while their deep-reaching tendrils sought the sleeping world-soul below.",
+      "durationMs": 29000,
+      "eventIds": ["old-gods-arrive"],
+      "entityIds": ["old-gods", "azeroth-world-soul"],
+      "optionalExploreEntityIds": ["old-gods"],
+      "camera": { "position": [0, 7.6, 4.6], "target": [0, 0, 0], "durationMs": 1100 },
+      "visualActions": [{ "type": "show_relationships", "relationshipIds": ["old-gods-arrive-causes-black-empire"] }],
+      "previousNodeId": "black-empire-story-elemental-wars",
+      "nextNodeIds": ["black-empire-story-servant-races"]
+    },
+    {
+      "id": "black-empire-story-servant-races",
+      "guideId": "black-empire-guided-history",
+      "title": "The empire's builders",
+      "narration": "From the corrupted substance of the Old Gods arose servants shaped for their dark labor. The cunning n'raqi became taskmasters, and beneath their command the enduring aqir raised vast citadels and temple cities around their terrible masters.",
+      "durationMs": 27000,
+      "entityIds": ["nraqi", "aqir"],
+      "optionalExploreEntityIds": ["nraqi", "aqir"],
+      "camera": { "position": [-2.2, 4.8, 4.2], "target": [0.1, 0, -0.05], "durationMs": 850 },
+      "previousNodeId": "black-empire-story-old-gods-arrive",
+      "nextNodeIds": ["black-empire-story-central-bastion"]
+    },
+    {
+      "id": "black-empire-story-central-bastion",
+      "guideId": "black-empire-guided-history",
+      "title": "A bastion near the world's center",
+      "narration": "Greatest among those strongholds stood the bastion raised about Y'Shaarj, near the heart of Azeroth's largest continent. Its light upon this map is only approximate: Chronicle names its place in relation to the continent, but grants neither exact measure nor a proper city name.",
+      "durationMs": 32000,
+      "eventIds": ["black-empire-rises"],
+      "entityIds": ["yshaarj"],
+      "locationIds": ["yshaarj-central-bastion"],
+      "optionalExploreEntityIds": ["yshaarj", "yshaarj-central-bastion"],
+      "camera": { "position": [1.7, 4.1, 3.2], "target": [0.1, 0, -0.05], "durationMs": 900 },
+      "previousNodeId": "black-empire-story-servant-races",
+      "nextNodeIds": ["black-empire-story-empire-spreads"]
+    },
+    {
+      "id": "black-empire-story-empire-spreads",
+      "guideId": "black-empire-guided-history",
+      "title": "The Black Empire spreads",
+      "narration": "From that dreadful heart, the holdings of Y'Shaarj and the domains of the other Old Gods spread until together they formed the Black Empire. The boundary now revealed is a broad reconstruction of influence, not a surveyed frontier preserved by the source.",
+      "durationMs": 31000,
+      "eventIds": ["black-empire-rises"],
+      "entityIds": ["black-empire-civilization"],
+      "optionalExploreEntityIds": ["black-empire-civilization", "primordial-kalimdor"],
+      "camera": { "position": [0, 7.2, 6.8], "target": [0, 0, 0], "durationMs": 1000 },
+      "visualActions": [
+        { "type": "show_region", "regionId": "black-empire-influence-research" },
+        { "type": "show_relationships", "relationshipIds": ["old-gods-arrive-causes-black-empire", "black-empire-prompts-elemental-resistance"] }
+      ],
+      "previousNodeId": "black-empire-story-central-bastion",
+      "nextNodeIds": ["black-empire-story-elemental-resistance"]
+    },
+    {
+      "id": "black-empire-story-elemental-resistance",
+      "guideId": "black-empire-guided-history",
+      "title": "Old rivals form one resistance",
+      "narration": "At last the ancient rivals beheld an enemy that threatened them all. For the first time the Elemental Lords stood together: wind bore fire against the empire, and earth rose against its cities. Yet even their joined wrath could not win the age.",
+      "durationMs": 108000,
+      "battleIds": ["elemental-assault-on-black-empire"],
+      "entityIds": ["elemental-hosts", "black-empire-civilization"],
+      "camera": { "position": [4.1, 5.6, 4.8], "target": [0.3, 0, -0.2], "durationMs": 950 },
+      "visualActions": [
+        { "type": "show_region", "regionId": "black-empire-influence-research" },
+        { "type": "show_relationships", "relationshipIds": ["black-empire-prompts-elemental-resistance", "elemental-resistance-causes-black-empire-dominion"] }
+      ],
+      "previousNodeId": "black-empire-story-empire-spreads",
+      "nextNodeIds": ["black-empire-story-dominion"]
+    },
+    {
+      "id": "black-empire-story-dominion",
+      "guideId": "black-empire-guided-history",
+      "title": "A world awaiting the Ordering",
+      "narration": "The Elemental Lords were defeated and bound, and the shadow of the Black Empire crept across much of Azeroth. Thus the primordial age darkened toward its end, until the Pantheon perceived the peril and sent titan-forged armies to answer it.",
+      "durationMs": 29000,
+      "eventIds": ["black-empire-dominion"],
+      "entityIds": ["black-empire-civilization", "old-gods"],
+      "camera": { "position": [0, 8.2, 7.4], "target": [0, 0, 0], "durationMs": 1100 },
+      "visualActions": [
+        { "type": "show_region", "regionId": "black-empire-influence-research" },
+        { "type": "show_relationships", "relationshipIds": ["elemental-resistance-causes-black-empire-dominion", "black-empire-precedes-ordering"] },
+        { "type": "toggle_layer", "layerId": "labels", "visible": true }
+      ],
+      "previousNodeId": "black-empire-story-elemental-resistance",
+      "nextNodeIds": []
+    }
+  ]
+}

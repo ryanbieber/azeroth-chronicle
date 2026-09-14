@@ -1,0 +1,13 @@
+{
+  "id": "neptulon",
+  "type": "character",
+  "name": "Neptulon",
+  "slug": "neptulon",
+  "aliases": ["The Tidehunter"],
+  "shortDescription": "The Elemental Lord of water, portrayed as a patient strategist who struck divided rivals.",
+  "firstEraId": "black-empire",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["neptulon-tactics-claim"],
+  "tags": ["elemental-lord", "water"],
+  "contentStatus": "research"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "black-empire-precedes-ordering",
+  "fromId": "black-empire-dominion",
+  "toId": "ordering-of-azeroth",
+  "type": "precedes",
+  "citationIds": ["blizzard-black-empire-handoff"],
+  "confidence": "explicit"
+}

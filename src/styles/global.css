@@ -22,6 +22,7 @@ a:hover { color: #fff1c8; }
 button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid #8dc8ff; outline-offset: 3px; }
 
 .app-shell { min-height: 100vh; display: flex; flex-direction: column; }
+.app-shell:has(.atlas-layout) { height: 100vh; height: 100dvh; min-height: 0; overflow: hidden; }
 .topbar {
   min-height: 70px;
   display: flex;
@@ -50,24 +51,30 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .topbar nav { display: flex; gap: 18px; }
 .topbar nav a { color: var(--muted); font-size: 13px; text-decoration: none; }
 .topbar nav a:hover, .topbar nav a.active { color: var(--ink); }
+.topbar-actions { display: flex; align-items: center; gap: 24px; }
+.top-era-selector { display: flex; align-items: center; gap: 9px; color: var(--gold); font-size: 10px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+.top-era-selector select { min-width: 180px; padding: 8px 30px 8px 10px; border: 1px solid var(--line); border-radius: 3px; color: var(--ink); background: #0c1015; }
+.top-tour-button { min-height: 36px; padding: 7px 11px; border: 1px solid var(--gold); border-radius: 3px; color: #160f07; background: var(--gold); cursor: pointer; font-size: 11px; font-weight: 700; }
 
 .atlas-layout {
   flex: 1;
-  min-height: calc(100vh - 102px);
+  min-height: 0;
+  overflow: hidden;
   display: grid;
-  grid-template-columns: minmax(260px, 320px) minmax(420px, 1fr) minmax(280px, 360px);
-  grid-template-rows: minmax(580px, 1fr) 58px;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr) 58px;
 }
-.archive-panel, .detail-panel { position: relative; z-index: 2; padding: 26px 24px; background: var(--panel); overflow-y: auto; }
+.archive-panel, .detail-panel { position: relative; z-index: 2; grid-row: 1; padding: 26px 24px; background: var(--panel); overflow-y: auto; }
+.archive-panel { grid-column: 1; }
+.detail-panel { grid-column: 2; }
 .archive-panel { border-right: 1px solid var(--line); }
 .detail-panel { border-left: 1px solid var(--line); }
+.panel-close { position: absolute; top: 12px; right: 12px; width: 30px; height: 30px; border: 1px solid var(--line); border-radius: 50%; color: var(--muted); background: #0b0e12; cursor: pointer; font-size: 19px; line-height: 1; }
 .archive-panel h1, .document-page h1 { margin: 4px 0 10px; font: 600 clamp(28px, 3vw, 46px)/1.05 Cinzel, Cambria, Georgia, serif; }
 .archive-panel > p:not(.eyebrow) { color: var(--muted); line-height: 1.6; }
 .eyebrow { margin: 0 0 8px; color: var(--gold); font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
 .search-field { display: grid; gap: 8px; margin: 28px 0; color: var(--muted); font-size: 12px; }
 .search-field input { width: 100%; padding: 11px 12px; border: 1px solid var(--line); border-radius: 4px; color: var(--muted); background: #090c10; }
-.era-selector { display: grid; gap: 5px; margin-bottom: 12px; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; }
-.era-selector select { padding: 7px 8px; border: 1px solid var(--line); color: var(--ink); background: #090c10; }
 .search-empty { margin: -18px 0 20px; color: var(--muted); font-size: 12px; }
 .search-results { display: grid; gap: 1px; margin: -18px 0 24px; padding: 1px; list-style: none; background: var(--line); }
 .search-results li { display: flex; justify-content: space-between; gap: 8px; padding: 9px; background: #0d1116; }
@@ -83,8 +90,12 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .source-filters { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--line); }
 .source-filters h2 { font: 600 15px Cinzel, Cambria, Georgia, serif; }
 .source-filters button { border: 0; padding: 5px 0; color: var(--gold); background: transparent; cursor: pointer; font-size: 11px; }
-.map-viewport { position: relative; min-height: 580px; background: #080b0e; }
-.map-fallback { min-height: 580px; display: grid; place-content: center; padding: 40px; text-align: center; background: #0b0e12; }
+.map-stage { position: relative; z-index: 1; grid-column: 1; grid-row: 1; min-width: 0; min-height: 0; background: #080b0e; }
+.story-overlay { position: absolute; left: 16px; bottom: 16px; z-index: 5; width: min(390px, calc(100% - 32px)); max-height: calc(100% - 82px); overflow-y: auto; }
+.story-overlay:empty { display: none; }
+.story-overlay .story-card { position: relative; margin: 0; padding: 18px 18px 22px; border: 1px solid rgba(208,165,90,.42); border-radius: 4px; background: rgba(10, 13, 17, .94); box-shadow: 0 12px 36px rgba(0, 0, 0, .42); backdrop-filter: blur(8px); }
+.map-viewport { position: relative; min-height: 0; height: 100%; background: #080b0e; }
+.map-fallback { height: 100%; min-height: 0; display: grid; place-content: center; padding: 40px; text-align: center; background: #0b0e12; }
 .map-fallback h2 { margin: 5px 0 10px; font: 600 28px Cinzel, Cambria, Georgia, serif; }
 .map-fallback p:not(.eyebrow) { max-width: 460px; color: var(--muted); line-height: 1.6; }
 .map-viewport canvas { display: block; }
@@ -95,7 +106,22 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .timeline { grid-column: 1 / -1; display: flex; align-items: center; gap: 12px; padding: 0 26px; border-top: 1px solid var(--line); background: #0c0f13; font-size: 12px; }
 .timeline span:last-child { color: var(--muted); }
 .timeline-dot { width: 10px; height: 10px; border: 2px solid var(--gold); border-radius: 50%; box-shadow: 0 0 12px rgba(208,165,90,.55); }
-.selection-prompt { margin-top: 20vh; }
+.selection-prompt { margin-top: 34px; }
+.record-choices { display: grid; gap: 7px; margin-top: 20px; }
+.record-choices > strong { color: var(--gold); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+.record-choices button { display: flex; justify-content: space-between; gap: 12px; width: 100%; padding: 9px 10px; border: 1px solid var(--line); background: rgba(19,23,28,.72); color: var(--ink); text-align: left; }
+.record-choices button:hover, .record-choices button:focus-visible { border-color: var(--gold); }
+.record-choices small { color: var(--muted); white-space: nowrap; }
+.map-legend { position: absolute; z-index: 4; top: 18px; right: 18px; width: 235px; display: grid; gap: 9px; padding: 11px 13px; border: 1px solid rgba(208,165,90,.35); border-radius: 3px; background: rgba(8,11,15,.78); color: var(--muted); font-size: 11px; backdrop-filter: blur(7px); pointer-events: none; }
+.map-legend > strong { color: var(--ink); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+.map-legend span { display: flex; align-items: center; gap: 8px; }
+.legend-swatch { display: inline-block; width: 24px; height: 9px; border: 1px dashed #bc79a7; background: rgba(111,49,92,.68); }
+.legend-marker { display: inline-block; width: 10px; height: 10px; transform: rotate(45deg); border: 2px solid #fff1c8; background: #8ba3a0; }
+.legend-presence { display: inline-block; width: 13px; height: 13px; border: 2px solid #efb451; border-radius: 50%; box-shadow: 0 0 8px rgba(239,180,81,.72); }
+.legend-unknown { display: inline-grid; place-items: center; width: 17px; height: 17px; border: 1px solid var(--muted); border-radius: 50%; color: var(--ink); font-style: normal; }
+.map-research-state { position: absolute; z-index: 4; top: 50%; left: 50%; width: min(520px, calc(100% - 40px)); padding: 22px 24px; transform: translate(-50%, -50%); border: 1px solid rgba(208,165,90,.38); border-radius: 4px; background: rgba(8,11,15,.88); box-shadow: 0 18px 60px rgba(0,0,0,.42); text-align: center; pointer-events: none; backdrop-filter: blur(8px); }
+.map-research-state h2 { margin: 6px 0 10px; font: 600 25px/1.2 Cinzel, Cambria, Georgia, serif; }
+.map-research-state p:last-child { margin: 0; color: var(--muted); line-height: 1.55; }
 .selection-prompt h2, .dossier h2, .story-card h2 { margin: 5px 0 12px; font: 600 24px/1.12 Cinzel, Cambria, Georgia, serif; }
 .selection-prompt p:last-child, .dossier > p:not(.eyebrow):not(.status-chip), .story-card p { color: var(--muted); line-height: 1.6; }
 .status-chip { display: inline-block; padding: 5px 8px; border: 1px solid rgba(208,165,90,.35); border-radius: 999px; color: #d9bf87; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
@@ -133,31 +159,51 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .story-card button, .primary-link { display: inline-block; border: 1px solid var(--gold); border-radius: 3px; padding: 9px 12px; color: #160f07; background: var(--gold); font-weight: 600; text-decoration: none; cursor: pointer; }
 .story-card button:disabled { opacity: .4; cursor: not-allowed; }
 .story-actions { display: flex; gap: 8px; }
-.story-branches { display: grid; gap: 7px; margin: 14px 0; padding: 12px; border-left: 2px solid var(--gold); font-size: 12px; }
-.story-branches strong { color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: .08em; }
+.story-actions { justify-content: space-between; margin-top: 16px; }
 .story-actions button:first-child { color: var(--ink); background: transparent; }
+.story-timer { position: absolute; right: 0; bottom: 0; left: 0; height: 4px; overflow: hidden; border-radius: 0 0 4px 4px; background: rgba(208,165,90,.14); }
+.story-timer span { display: block; width: 100%; height: 100%; transform: scaleX(0); transform-origin: left; background: linear-gradient(90deg, #886534, #f0cb7c); animation-name: story-countdown; animation-timing-function: linear; animation-fill-mode: forwards; }
+@keyframes story-countdown { to { transform: scaleX(1); } }
 .document-page { width: min(880px, calc(100% - 40px)); margin: 0 auto; padding: 72px 0 100px; }
 .loading-state, .empty-state { flex: 1; display: grid; place-content: center; min-height: 60vh; color: var(--muted); }
 .document-page .lede { max-width: 680px; color: var(--muted); font-size: 18px; line-height: 1.7; }
+.era-record-section { margin: 42px 0; }
+.era-record-section h2 { margin: 5px 0 16px; font: 600 24px/1.2 Cinzel, Cambria, Georgia, serif; }
+.era-record-section > p:not(.eyebrow) { max-width: 680px; color: var(--muted); line-height: 1.6; }
+.era-record-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.era-record-grid a { display: grid; gap: 8px; padding: 16px; border: 1px solid var(--line); background: #101419; text-decoration: none; }
+.era-record-grid span { color: var(--muted); font-size: 12px; line-height: 1.5; }
+.era-entity-links { display: flex; flex-wrap: wrap; gap: 8px; }
+.era-entity-links a { padding: 8px 10px; border: 1px solid var(--line); background: #101419; text-decoration: none; }
+.era-entity-links small { margin-left: 5px; color: var(--muted); text-transform: uppercase; }
 .document-page .dossier-grid { grid-template-columns: repeat(2, 1fr); margin-bottom: 28px; }
 .secondary-link { margin-right: 10px; color: var(--ink); background: transparent; }
-.footer { min-height: 32px; display: grid; place-items: center; padding: 8px 20px; border-top: 1px solid var(--line); color: #696960; background: #07090d; font-size: 10px; letter-spacing: .05em; text-align: center; }
+.footer { min-height: 42px; display: block; padding: 10px 20px; border-top: 1px solid var(--line); color: #85857b; background: #07090d; font-size: 10px; line-height: 1.5; letter-spacing: .03em; text-align: center; }
+.footer strong { color: #b5ad9d; }
 
 @media (max-width: 980px) {
-  .atlas-layout { grid-template-columns: 250px 1fr; grid-template-rows: minmax(560px, 70vh) auto 58px; }
-  .detail-panel { grid-column: 1 / -1; border-top: 1px solid var(--line); border-left: 0; }
-  .timeline { grid-row: 3; }
+  .atlas-layout { position: relative; grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) 58px; }
+  .timeline { grid-row: 2; }
   .selection-prompt { margin-top: 0; }
 }
 
 @media (max-width: 680px) {
-  .topbar { align-items: flex-start; }
+  .topbar { align-items: center; padding-inline: 12px; }
+  .brand > span:last-child { display: none; }
+  .topbar-actions { gap: 10px; }
+  .top-era-selector span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .top-era-selector select { min-width: 0; max-width: 46vw; }
+  .top-tour-button { padding-inline: 8px; }
   .topbar nav { display: none; }
-  .atlas-layout { display: block; }
-  .archive-panel, .detail-panel { border: 0; border-bottom: 1px solid var(--line); }
-  .map-viewport { min-height: 60vh; }
-  .timeline { min-height: 58px; }
+  .atlas-layout { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) 58px; }
+  .archive-panel, .detail-panel { position: absolute; top: 0; bottom: 58px; z-index: 6; width: min(88vw, 360px); border: 0; box-shadow: 0 0 34px rgba(0, 0, 0, .52); }
+  .archive-panel { left: 0; }
+  .detail-panel { right: 0; }
+  .map-stage { grid-column: 1; min-height: 0; }
+  .map-viewport { min-height: 0; }
+  .timeline { grid-column: 1; grid-row: 2; min-height: 58px; }
   .document-page .dossier-grid { grid-template-columns: 1fr; }
+  .era-record-grid { grid-template-columns: 1fr; }
   .causal-columns { grid-template-columns: 1fr; }
   .playback-controls button { min-height: 42px; }
 }

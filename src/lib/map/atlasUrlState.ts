@@ -35,13 +35,10 @@ export function parseAtlasUrl(params: URLSearchParams, dataset: LoreDataset): At
     : legacyBattle
       ? findSelection('battle', legacyBattle, dataset)
       : null;
-  const layerParam = params.get('layers');
-  const enabled = new Set(layerParam?.split(',').filter(Boolean) ?? layerIds);
-
   return {
     eraId: era?.id ?? null,
     selection,
-    layers: Object.fromEntries(layerIds.map((id) => [id, enabled.has(id)])) as Record<LayerId, boolean>,
+    layers: Object.fromEntries(layerIds.map((id) => [id, true])) as Record<LayerId, boolean>,
   };
 }
 
@@ -59,7 +56,5 @@ export function serializeAtlasUrl(state: AtlasUrlState, dataset: LoreDataset): U
     const slug = selectionSlug(state.selection, dataset);
     if (slug) params.set('selected', `${state.selection.kind}:${slug}`);
   }
-  const visible = layerIds.filter((id) => state.layers[id]);
-  if (visible.length !== layerIds.length) params.set('layers', visible.join(','));
   return params;
 }

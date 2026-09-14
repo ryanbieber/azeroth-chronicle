@@ -1,9 +1,11 @@
 import { loadDataset } from '../../lib/lore/loadDataset';
 import { loadGeometry } from '../../lib/lore/loadGeometry';
 import { searchLore } from '../../lib/search/searchIndex';
+import { entityVisibleInEra } from '../../lib/lore/eraVisibility';
 import type { LoreRepository } from './LoreRepository';
 
-const dataset = loadDataset({ publishedOnly: import.meta.env.VITE_CONTENT_MODE === 'published' });
+const publishedOnly = import.meta.env.VITE_CONTENT_MODE === 'published';
+const dataset = loadDataset({ publishedOnly });
 
 export const staticLoreRepository: LoreRepository = {
   getDataset: () => dataset,
@@ -16,10 +18,13 @@ export const staticLoreRepository: LoreRepository = {
   findStoryNode: (id) => dataset.storyNodes.find((node) => node.id === id),
   getGeometry: loadGeometry,
   listEntitiesForEra: (eraId, sourceIds = []) => dataset.entities.filter((entity) =>
-    (!entity.firstEraId || entity.firstEraId === eraId)
+    entityVisibleInEra(entity, eraId, dataset.eras)
     && (sourceIds.length === 0 || entity.sourceIds.some((id) => sourceIds.includes(id)))),
   listBattlesForEra: (eraId, sourceIds = []) => dataset.battles.filter((battle) =>
     battle.eraId === eraId
     && (sourceIds.length === 0 || battle.sourceIds.some((id) => sourceIds.includes(id)))),
-  search: searchLore,
+  search: (query, options = {}) => searchLore(query, {
+    ...options,
+    includeUnpublished: publishedOnly ? false : options.includeUnpublished,
+  }),
 };

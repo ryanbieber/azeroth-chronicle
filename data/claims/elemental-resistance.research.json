@@ -1,0 +1,10 @@
+{
+  "id": "elemental-resistance-claim",
+  "subjectId": "elemental-assault-on-black-empire",
+  "predicate": "conflict-outcome",
+  "value": "The Old Gods overcame and enslaved the Elemental Lords after their united resistance.",
+  "citationIds": ["warcraft-wiki-black-empire-ancient-times"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "The wiki attributes this outcome to Chronicle Volume 1; confirm the exact print pages before promotion."
+}

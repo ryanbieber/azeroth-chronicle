@@ -1,0 +1,13 @@
+{
+  "id": "alakir",
+  "type": "character",
+  "name": "Al'Akir",
+  "slug": "alakir",
+  "aliases": ["The Windlord"],
+  "shortDescription": "The cunning Elemental Lord of air, whose forces relied on spying, division, and sudden storms.",
+  "firstEraId": "black-empire",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["alakir-tactics-claim"],
+  "tags": ["elemental-lord", "air"],
+  "contentStatus": "research"
+}

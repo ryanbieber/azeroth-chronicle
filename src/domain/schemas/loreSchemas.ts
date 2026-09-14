@@ -23,7 +23,11 @@ export const mapStateSchema = z.object({
   name: z.string().min(1),
   worldspaceId: id,
   terrainAsset: z.string().optional(),
+  terrainTextureAsset: z.string().optional(),
+  terrainHeightAsset: z.string().optional(),
   geometryIds: z.array(id),
+}).refine((value) => !value.terrainHeightAsset || value.terrainTextureAsset, {
+  message: 'A terrain height map requires a terrain texture.',
 });
 
 export const spatialStateSchema = z.object({
@@ -213,6 +217,7 @@ export const storyNodeSchema = z.object({
   guideId: id,
   title: z.string().min(1),
   narration: z.string().min(1),
+  durationMs: z.number().int().positive().optional(),
   eventIds: z.array(id).optional(),
   battleIds: z.array(id).optional(),
   entityIds: z.array(id).optional(),

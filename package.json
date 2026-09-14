@@ -16,7 +16,7 @@
     "test": "vitest run",
     "test:e2e": "playwright test",
     "test:watch": "vitest",
-    "generate:terrain": "node scripts/generate-placeholder-terrain.mjs",
+    "generate:terrain": "node scripts/generate-research-terrain.mjs",
     "generate:data": "node scripts/generate-lore-manifest.mjs",
     "validate:data": "pnpm generate:data && tsx scripts/validate-lore.ts",
     "check": "pnpm lint && pnpm typecheck && pnpm test && pnpm validate:data"

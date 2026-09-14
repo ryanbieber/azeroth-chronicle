@@ -1,0 +1,18 @@
+{
+  "id": "black-empire-rises",
+  "kind": "event",
+  "name": "Rise of the Black Empire",
+  "slug": "black-empire-rises",
+  "eraId": "black-empire",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "After the Old Gods' arrival", "relativeToId": "old-gods-arrive" },
+  "summary": "The n'raqi directed the aqir in building citadels and temple cities around the Old Gods; Y'Shaarj's central bastion became the greatest of these domains as their holdings spread.",
+  "locationIds": ["yshaarj-central-bastion"],
+  "participantEntityIds": ["old-gods", "yshaarj", "nraqi", "aqir", "black-empire-civilization"],
+  "causedByEventIds": ["old-gods-arrive"],
+  "causesEventIds": ["elemental-assault-on-black-empire"],
+  "relationshipIds": ["old-gods-arrive-causes-black-empire", "black-empire-prompts-elemental-resistance"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["black-empire-rise-event-claim"],
+  "contentStatus": "research"
+}

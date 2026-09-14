@@ -1,0 +1,8 @@
+{
+  "id": "elemental-wars-precede-old-gods",
+  "fromId": "elemental-wars",
+  "toId": "old-gods-arrive",
+  "type": "precedes",
+  "citationIds": ["chronicle-v1-reign-elements", "chronicle-v1-coming-old-gods"],
+  "confidence": "explicit"
+}

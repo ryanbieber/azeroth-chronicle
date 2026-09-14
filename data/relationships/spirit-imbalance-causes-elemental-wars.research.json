@@ -1,0 +1,8 @@
+{
+  "id": "spirit-imbalance-causes-elemental-wars",
+  "fromId": "spirit-imbalance",
+  "toId": "elemental-wars",
+  "type": "causes",
+  "citationIds": ["chronicle-v1-reign-elements"],
+  "confidence": "explicit"
+}

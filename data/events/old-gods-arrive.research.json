@@ -1,0 +1,16 @@
+{
+  "id": "old-gods-arrive",
+  "kind": "event",
+  "name": "Arrival of the Old Gods",
+  "slug": "old-gods-arrive",
+  "eraId": "black-empire",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "After untold ages of elemental conflict", "relativeToId": "elemental-wars" },
+  "summary": "A group of Old Gods struck Azeroth from the Great Dark, embedded themselves in different parts of the world, and extended their influence toward its core.",
+  "participantEntityIds": ["old-gods", "azeroth-world-soul"],
+  "causesEventIds": ["black-empire-rises"],
+  "relationshipIds": ["old-gods-arrive-causes-black-empire"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["old-gods-event-claim"],
+  "contentStatus": "research"
+}

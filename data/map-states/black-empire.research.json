@@ -1,0 +1,17 @@
+{
+  "id": "black-empire-map-research",
+  "name": "Primordial Azeroth during the Black Empire — interpretive research map",
+  "worldspaceId": "azeroth",
+  "terrainAsset": "models/azeroth/black-empire-map-research/terrain.research.glb",
+  "terrainTextureAsset": "textures/azeroth/black-empire-map-research/terrain-atlas.research.webp",
+  "terrainHeightAsset": "textures/azeroth/black-empire-map-research/terrain-height.research.webp",
+  "geometryIds": [
+    "primordial-kalimdor-landmass-research",
+    "black-empire-influence-research",
+    "yshaarj-central-bastion-research",
+    "alakir-domain-focus-research",
+    "ragnaros-domain-focus-research",
+    "therazane-domain-focus-research",
+    "neptulon-domain-focus-research"
+  ]
+}

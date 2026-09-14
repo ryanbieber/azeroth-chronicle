@@ -1,0 +1,10 @@
+{
+  "id": "primordial-kalimdor-geography-claim",
+  "subjectId": "primordial-kalimdor",
+  "predicate": "atlas-geometry",
+  "value": "The source supports a largest primordial continent; this displayed outline is an original reconstruction.",
+  "citationIds": ["chronicle-v1-coming-old-gods", "warcraft-wiki-black-empire-ancient-times"],
+  "confidence": "inferred",
+  "status": "active",
+  "editorNote": "Do not interpret the polygon as a precise canonical coastline."
+}

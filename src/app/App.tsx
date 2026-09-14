@@ -28,6 +28,9 @@ export function App() {
         <Route path="/events/:slug" element={<EventPage />} />
         <Route path="/locations/:slug" element={<EntityPage />} />
         <Route path="/factions/:slug" element={<EntityPage />} />
+        <Route path="/characters/:slug" element={<EntityPage />} />
+        <Route path="/artifacts/:slug" element={<EntityPage />} />
+        <Route path="/records/:slug" element={<EntityPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       </AppErrorBoundary>

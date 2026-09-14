@@ -1,0 +1,9 @@
+{
+  "id": "old-gods-event-claim",
+  "subjectId": "old-gods-arrive",
+  "predicate": "event-summary",
+  "value": "Multiple Old Gods fell from the Great Dark and embedded themselves in different locations across Azeroth.",
+  "citationIds": ["chronicle-v1-coming-old-gods"],
+  "confidence": "explicit",
+  "status": "active"
+}

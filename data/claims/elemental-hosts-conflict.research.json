@@ -1,0 +1,9 @@
+{
+  "id": "elemental-hosts-conflict-claim",
+  "subjectId": "elemental-hosts",
+  "predicate": "primordial-role",
+  "value": "Four rival hosts led by the Elemental Lords kept Azeroth in continuous conflict before uniting against the Old Gods.",
+  "citationIds": ["chronicle-v1-reign-elements", "chronicle-v1-coming-old-gods"],
+  "confidence": "explicit",
+  "status": "active"
+}

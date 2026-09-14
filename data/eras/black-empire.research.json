@@ -1,0 +1,17 @@
+{
+  "id": "black-empire",
+  "name": "Cosmic Origins and the Black Empire",
+  "slug": "black-empire",
+  "worldspaceId": "azeroth",
+  "order": 1,
+  "dateLabel": "Primordial Azeroth · before the Ordering",
+  "summary": "Azeroth's immense nascent world-soul left its native elementals without enough Spirit to balance them. Their long conflict was overtaken by the arrival of the Old Gods and the civilization their servants raised across the primordial world.",
+  "mapStateId": "black-empire-map-research",
+  "defaultLayerIds": ["regions", "battles", "locations", "routes", "labels"],
+  "featuredEventIds": ["spirit-imbalance", "old-gods-arrive", "black-empire-rises", "black-empire-dominion"],
+  "featuredBattleIds": ["elemental-wars", "elemental-assault-on-black-empire"],
+  "storyGuideId": "black-empire-guided-history",
+  "nextEraId": "ordering-of-azeroth",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "contentStatus": "research"
+}

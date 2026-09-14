@@ -27,7 +27,11 @@ export const defaultStoryActionPorts: StoryActionPorts = {
     useLayerStore.getState().setLayer('routes', true);
     useSceneEffectsStore.getState().showRoute(routeId);
   },
-  focusLocation: (locationId) => useSceneEffectsStore.getState().focusLocation(locationId),
+  focusLocation: (locationId) => {
+    useLayerStore.getState().setLayer('locations', true);
+    useLayerStore.getState().setLayer('labels', true);
+    useSceneEffectsStore.getState().focusLocation(locationId);
+  },
   setMapState: (mapStateId) => useMapViewStore.getState().setMapState(mapStateId),
   highlight: (id) => useSceneEffectsStore.getState().highlight(id),
   showRelationships: (relationshipIds) => useSceneEffectsStore.getState().showRelationships(relationshipIds),

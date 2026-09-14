@@ -1,7 +1,7 @@
 import geometryManifest from '../../generated/geometry-manifest.json';
-import type { GeoJsonFeatureCollection } from '../map/geometryAdapter';
+import { geoJsonFeatureCollectionSchema, type GeoJsonFeatureCollection } from '../map/geometryAdapter';
 
-const collections = geometryManifest as unknown as GeoJsonFeatureCollection[];
+const collections = geoJsonFeatureCollectionSchema.array().parse(geometryManifest) as GeoJsonFeatureCollection[];
 const geometryById = new Map<string, GeoJsonFeatureCollection>();
 for (const collection of collections) {
   for (const feature of collection.features) geometryById.set(feature.id, collection);

@@ -1,0 +1,13 @@
+{
+  "id": "ragnaros",
+  "type": "character",
+  "name": "Ragnaros",
+  "slug": "ragnaros",
+  "aliases": ["The Firelord"],
+  "shortDescription": "The Elemental Lord of fire, characterized by direct, destructive force against his rivals.",
+  "firstEraId": "black-empire",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["ragnaros-tactics-claim"],
+  "tags": ["elemental-lord", "fire"],
+  "contentStatus": "research"
+}

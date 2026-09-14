@@ -6,6 +6,6 @@ test('application shell and era dossier visual state', async ({ page }) => {
 });
 
 test('battle dossier visual state', async ({ page }) => {
-  await page.goto('/battles/atlas-conflict-placeholder');
+  await page.goto('/battles/elemental-assault-on-black-empire');
   await expect(page).toHaveScreenshot('battle-dossier.png', { fullPage: true });
 });

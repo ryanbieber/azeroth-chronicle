@@ -1,0 +1,14 @@
+{
+  "id": "primordial-kalimdor",
+  "type": "location",
+  "name": "Primordial Kalimdor",
+  "slug": "primordial-kalimdor",
+  "shortDescription": "The largest continent of primordial Azeroth, shown here with an interpretive rather than surveyed outline.",
+  "body": "The source supports a single great continental setting and describes Y'Shaarj's civilization near its center. The exact coastline in this atlas is a reconstruction and must not be read as a measured canonical boundary.",
+  "firstEraId": "black-empire",
+  "lastEraId": "war-of-the-ancients",
+  "sourceIds": ["warcraft-chronicle-volume-1", "warcraft-wiki-chronicle-volume-1"],
+  "claimIds": ["primordial-kalimdor-geography-claim"],
+  "tags": ["location", "inferred-geography", "primordial"],
+  "contentStatus": "research"
+}

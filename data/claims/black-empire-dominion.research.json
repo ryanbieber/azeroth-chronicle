@@ -1,0 +1,10 @@
+{
+  "id": "black-empire-dominion-claim",
+  "subjectId": "black-empire-dominion",
+  "predicate": "event-summary",
+  "value": "The elemental coalition failed, the Old Gods enslaved the Elemental Lords, and Black Empire influence spread over much of the world.",
+  "citationIds": ["warcraft-wiki-black-empire-ancient-times"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "The wiki attributes this sequence to Chronicle Volume 1; confirm the exact print pages before promotion."
+}

@@ -1,0 +1,9 @@
+{
+  "id": "neptulon-tactics-claim",
+  "subjectId": "neptulon",
+  "predicate": "elemental-war-method",
+  "value": "Avoided fruitless attacks, divided rival forces, and struck them with overwhelming waters.",
+  "citationIds": ["chronicle-v1-reign-elements"],
+  "confidence": "explicit",
+  "status": "active"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "spirit-imbalance-claim",
+  "subjectId": "spirit-imbalance",
+  "predicate": "cause-of-elemental-chaos",
+  "value": "Azeroth's world-soul consumed much Spirit, removing the force that otherwise balanced the elements.",
+  "citationIds": ["chronicle-v1-reign-elements"],
+  "confidence": "explicit",
+  "status": "active"
+}

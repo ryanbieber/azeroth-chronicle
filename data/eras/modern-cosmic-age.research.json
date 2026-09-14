@@ -1,0 +1,16 @@
+{
+  "id": "modern-cosmic-age",
+  "name": "The Modern Cosmic Age",
+  "slug": "modern-cosmic-age",
+  "worldspaceId": "azeroth",
+  "order": 9,
+  "dateLabel": "Research boundary — dates pending citation review",
+  "summary": "The Fourth War, N'Zoth's return, Shadowlands, the awakening of the Dragon Isles, and Azeroth's increasingly direct role in the Worldsoul Saga.",
+  "mapStateId": "modern-cosmic-age-map-research",
+  "defaultLayerIds": ["regions", "battles", "locations", "routes", "labels"],
+  "featuredEventIds": [],
+  "featuredBattleIds": [],
+  "previousEraId": "age-of-adventurers",
+  "sourceIds": ["warcraft-chronicle-volume-4"],
+  "contentStatus": "research"
+}

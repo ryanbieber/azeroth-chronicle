@@ -1,0 +1,9 @@
+{
+  "id": "elemental-wars-claim",
+  "subjectId": "elemental-wars",
+  "predicate": "conflict-outcome",
+  "value": "Dominion shifted among the four elemental forces for untold ages without a permanent victor.",
+  "citationIds": ["chronicle-v1-reign-elements"],
+  "confidence": "explicit",
+  "status": "active"
+}

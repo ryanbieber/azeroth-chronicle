@@ -1,0 +1,17 @@
+{
+  "id": "age-of-adventurers",
+  "name": "The Age of Adventurers",
+  "slug": "age-of-adventurers",
+  "worldspaceId": "azeroth",
+  "order": 8,
+  "dateLabel": "Research boundary — dates pending citation review",
+  "summary": "The period beginning with World of Warcraft: renewed faction conflict, Ahn'Qiraj, campaigns in Outland and Northrend, the Cataclysm, Pandaria, alternate Draenor, and the Legion's final invasion.",
+  "mapStateId": "age-of-adventurers-map-research",
+  "defaultLayerIds": ["regions", "battles", "locations", "routes", "labels"],
+  "featuredEventIds": [],
+  "featuredBattleIds": [],
+  "previousEraId": "third-war-frozen-throne",
+  "nextEraId": "modern-cosmic-age",
+  "sourceIds": ["warcraft-chronicle-volume-3", "warcraft-chronicle-volume-4"],
+  "contentStatus": "research"
+}

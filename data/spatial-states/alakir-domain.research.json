@@ -1,0 +1,11 @@
+{
+  "id": "alakir-domain-black-empire-research",
+  "entityId": "alakir",
+  "eraId": "black-empire",
+  "worldspaceId": "azeroth",
+  "geometryId": "alakir-domain-focus-research",
+  "geographicCertainty": "inferred",
+  "sourceIds": ["warcraft-chronicle-volume-1", "warcraft-wiki-chronicle-volume-1"],
+  "editorNote": "Original map-space reconstruction of the broad southwestern placement shown on the Chronicle Volume 1 pp. 34–35 map; not an exact coordinate or traced point.",
+  "labelPriority": 75
+}

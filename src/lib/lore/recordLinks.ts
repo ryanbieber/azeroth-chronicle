@@ -12,7 +12,19 @@ export function recordPath(id: string, dataset: LoreDataset): string | undefined
   const event = dataset.events.find((item) => item.id === id);
   if (event) return `/events/${event.slug}`;
   const entity = dataset.entities.find((item) => item.id === id);
-  if (entity) return `/${entity.type === 'faction' ? 'factions' : 'locations'}/${entity.slug}`;
+  if (entity) return entityPath(entity);
   const era = dataset.eras.find((item) => item.id === id);
   return era ? `/eras/${era.slug}` : undefined;
+}
+
+export function entityPath(entity: LoreDataset['entities'][number]): string {
+  const segment = {
+    faction: 'factions',
+    character: 'characters',
+    artifact: 'artifacts',
+    location: 'locations',
+    site: 'locations',
+    other: 'records',
+  }[entity.type];
+  return `/${segment}/${entity.slug}`;
 }

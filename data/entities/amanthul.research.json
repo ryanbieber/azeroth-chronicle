@@ -1,0 +1,16 @@
+{
+  "id": "amanthul",
+  "type": "character",
+  "name": "Aman’Thul",
+  "slug": "amanthul",
+  "aliases": ["Highfather of the Pantheon"],
+  "shortDescription": "The first titan to awaken in Chronicle's account, who crossed the Great Dark in search of others of his kind.",
+  "body": "Aman’Thul's search gathered the awakened titans into the Pantheon. His placement here expresses narrative sequence and association, not a canonical position in the cosmos.",
+  "firstEraId": "cosmic-origins",
+  "featuredEraIds": ["cosmic-origins"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["amanthul-first-awakening-claim", "amanthul-search-claim"],
+  "tags": ["titan", "pantheon", "order"],
+  "mapFigure": { "asset": "images/characters/cosmic-origins/amanthul.research.webp", "scale": 0.88 },
+  "contentStatus": "research"
+}

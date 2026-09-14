@@ -1,0 +1,16 @@
+{
+  "id": "old-gods-scattered",
+  "kind": "event",
+  "name": "Scattering of the Old Gods",
+  "slug": "old-gods-scattered",
+  "eraId": "cosmic-origins",
+  "worldspaceId": "cosmos",
+  "date": { "precision": "unknown", "label": "Before the Old Gods struck Azeroth" },
+  "summary": "The Void Lords made the Old Gods and cast them through the Great Dark, hoping that some would find and corrupt a world-soul.",
+  "description": "The event name is an editorial label. The cosmography asserts sequence and purpose but no origin coordinate, route, or measurable number of Old Gods.",
+  "participantEntityIds": ["void-lords", "old-gods", "world-souls"],
+  "relationshipIds": ["pantheon-precedes-old-gods-scattered", "old-gods-scattered-precedes-azeroth-arrival"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["old-gods-scattered-event-claim"],
+  "contentStatus": "research"
+}

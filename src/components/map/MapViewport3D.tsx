@@ -17,6 +17,7 @@ interface MapViewport3DProps {
   terrainAsset?: string;
   terrainTextureAsset?: string;
   terrainHeightAsset?: string;
+  presentation?: 'terrain' | 'relational';
   entities: LoreEntity[];
   routeRecords: Route[];
   spatialStates: SpatialState[];
@@ -150,6 +151,24 @@ function ReliefTerrain({ textureAsset, heightAsset }: {
   );
 }
 
+function RelationalField({ textureAsset }: { textureAsset: string }) {
+  const texture = useTexture(`${import.meta.env.BASE_URL}${textureAsset}`);
+  const colorTexture = useMemo(() => {
+    const copy = texture.clone();
+    copy.colorSpace = SRGBColorSpace;
+    copy.needsUpdate = true;
+    return copy;
+  }, [texture]);
+  useEffect(() => () => colorTexture.dispose(), [colorTexture]);
+
+  return (
+    <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.14, 0]}>
+      <planeGeometry args={[10, 6.67]} />
+      <meshBasicMaterial map={colorTexture} toneMapped={false} />
+    </mesh>
+  );
+}
+
 function ElementalPresence({ entityId }: { entityId: string }) {
   const group = useRef<Group>(null);
   const reducedMotion = useMemo(() => typeof window !== 'undefined'
@@ -224,6 +243,7 @@ function AtlasScene({
   terrainAsset,
   terrainTextureAsset,
   terrainHeightAsset,
+  presentation,
   entities,
   routeRecords,
   spatialStates,
@@ -266,7 +286,9 @@ function AtlasScene({
       <ambientLight intensity={1.1} />
       <directionalLight position={[4, 8, 2]} intensity={2.2} color="#dfbd79" />
 
-      {terrainTextureAsset && terrainHeightAsset ? (
+      {presentation === 'relational' && terrainTextureAsset ? (
+        <RelationalField textureAsset={terrainTextureAsset} />
+      ) : terrainTextureAsset && terrainHeightAsset ? (
         <ReliefTerrain textureAsset={terrainTextureAsset} heightAsset={terrainHeightAsset} />
       ) : terrainAsset ? (
         <Terrain asset={terrainAsset} />

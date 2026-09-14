@@ -11,6 +11,7 @@
   "featuredEventIds": ["spirit-imbalance", "old-gods-arrive", "black-empire-rises", "black-empire-dominion"],
   "featuredBattleIds": ["elemental-wars", "elemental-assault-on-black-empire"],
   "storyGuideId": "black-empire-guided-history",
+  "previousEraId": "cosmic-origins",
   "nextEraId": "ordering-of-azeroth",
   "sourceIds": ["warcraft-chronicle-volume-1"],
   "contentStatus": "research"

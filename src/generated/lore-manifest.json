@@ -10,6 +10,17 @@
         "origin": "bottom-left",
         "units": "atlas-units"
       }
+    },
+    {
+      "id": "cosmos",
+      "name": "The Warcraft Cosmos",
+      "slug": "cosmos",
+      "coordinateSystem": {
+        "width": 10000,
+        "height": 6667,
+        "origin": "bottom-left",
+        "units": "atlas-units"
+      }
     }
   ],
   "mapStates": [
@@ -29,6 +40,9 @@
       "id": "black-empire-map-research",
       "name": "Primordial Azeroth during the Black Empire — interpretive research map",
       "worldspaceId": "azeroth",
+      "presentation": "terrain",
+      "cartographyLabel": "INTERPRETIVE CARTOGRAPHY",
+      "interpretationNote": "The illuminated landmass follows Chronicle's broad published composition. Highlighted domains and influence are research reconstructions, not surveyed borders or exact coordinates; each dossier states its certainty and source basis.",
       "terrainAsset": "models/azeroth/black-empire-map-research/terrain.research.glb",
       "terrainTextureAsset": "textures/azeroth/black-empire-map-research/terrain-atlas.research.webp",
       "terrainHeightAsset": "textures/azeroth/black-empire-map-research/terrain-height.research.webp",
@@ -40,6 +54,27 @@
         "ragnaros-domain-focus-research",
         "therazane-domain-focus-research",
         "neptulon-domain-focus-research"
+      ]
+    },
+    {
+      "id": "cosmic-origins-map-research",
+      "name": "Cosmic Origins — relational research cosmography",
+      "worldspaceId": "cosmos",
+      "presentation": "relational",
+      "cartographyLabel": "RELATIONAL COSMOGRAPHY · NOT TO SPATIAL SCALE",
+      "interpretationNote": "This field arranges subjects to clarify the narrated sequence and their relationships. Position, direction, distance, and size are editorial composition—not canonical cosmic geography.",
+      "terrainTextureAsset": "textures/cosmos/cosmic-origins-map-research/cosmic-field.research.webp",
+      "geometryIds": [
+        "light-and-shadow-relational-research",
+        "great-dark-beyond-relational-research",
+        "twisting-nether-relational-research",
+        "cosmic-forces-relational-research",
+        "world-souls-relational-research",
+        "amanthul-relational-research",
+        "pantheon-of-order-relational-research",
+        "void-lords-relational-research",
+        "old-gods-relational-research",
+        "azeroth-world-soul-relational-research"
       ]
     },
     {
@@ -95,6 +130,34 @@
       "labelPriority": 75
     },
     {
+      "id": "amanthul-cosmic-research",
+      "entityId": "amanthul",
+      "eraId": "cosmic-origins",
+      "worldspaceId": "cosmos",
+      "geometryId": "amanthul-relational-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "The figure is placed at his awakening chapter for story legibility; Chronicle supplies no fixed cosmic coordinate for Aman’Thul.",
+      "labelPriority": 100
+    },
+    {
+      "id": "azeroth-world-soul-cosmic-research",
+      "entityId": "azeroth-world-soul",
+      "eraId": "cosmic-origins",
+      "worldspaceId": "cosmos",
+      "geometryId": "azeroth-world-soul-relational-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "Closing story anchor that narrows the cosmic account toward Azeroth; it does not locate Azeroth within a canonical star map.",
+      "labelPriority": 98
+    },
+    {
       "id": "black-empire-spatial-research",
       "entityId": "black-empire-civilization",
       "eraId": "black-empire",
@@ -109,6 +172,48 @@
       "labelPriority": 100
     },
     {
+      "id": "cosmic-forces-cosmic-research",
+      "entityId": "cosmic-forces",
+      "eraId": "cosmic-origins",
+      "worldspaceId": "cosmos",
+      "geometryId": "cosmic-forces-relational-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "Conceptual index point for the six-force framework. No force is represented as a territory or assigned a coordinate.",
+      "labelPriority": 86
+    },
+    {
+      "id": "great-dark-beyond-cosmic-research",
+      "entityId": "great-dark-beyond",
+      "eraId": "cosmic-origins",
+      "worldspaceId": "cosmos",
+      "geometryId": "great-dark-beyond-relational-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "Narrative anchor for the physical universe; the Great Dark Beyond is not reduced to a point or located relative to other markers.",
+      "labelPriority": 94
+    },
+    {
+      "id": "light-and-shadow-cosmic-research",
+      "entityId": "light-and-shadow",
+      "eraId": "cosmic-origins",
+      "worldspaceId": "cosmos",
+      "geometryId": "light-and-shadow-relational-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "Diagrammatic opening anchor for the narrated opposition of Light and Shadow; it asserts no cosmic coordinate, direction, or scale.",
+      "labelPriority": 96
+    },
+    {
       "id": "neptulon-domain-black-empire-research",
       "entityId": "neptulon",
       "eraId": "black-empire",
@@ -121,6 +226,35 @@
       ],
       "editorNote": "Original map-space reconstruction of the broad northwestern coastal placement shown on the Chronicle Volume 1 pp. 34–35 map; not an exact coordinate or traced point.",
       "labelPriority": 74
+    },
+    {
+      "id": "old-gods-cosmic-research",
+      "entityId": "old-gods",
+      "eraId": "cosmic-origins",
+      "worldspaceId": "cosmos",
+      "geometryId": "old-gods-relational-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "Narrative anchor for the Old Gods being cast into the Great Dark. It represents neither a shared origin point nor a trajectory.",
+      "labelPriority": 93
+    },
+    {
+      "id": "pantheon-of-order-cosmic-research",
+      "entityId": "pantheon-of-order",
+      "eraId": "cosmic-origins",
+      "worldspaceId": "cosmos",
+      "geometryId": "pantheon-of-order-relational-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1",
+        "blizzard-dragon-aspects-history"
+      ],
+      "editorNote": "Relational anchor for the Pantheon's formation and work, not a headquarters or territorial claim.",
+      "labelPriority": 90
     },
     {
       "id": "primordial-kalimdor-spatial-research",
@@ -163,6 +297,48 @@
       ],
       "editorNote": "Original map-space reconstruction of the broad eastern interior placement shown on the Chronicle Volume 1 pp. 34–35 map; not an exact coordinate or traced point.",
       "labelPriority": 76
+    },
+    {
+      "id": "twisting-nether-cosmic-research",
+      "entityId": "twisting-nether",
+      "eraId": "cosmic-origins",
+      "worldspaceId": "cosmos",
+      "geometryId": "twisting-nether-relational-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "Placed near the universe's origin beat to express the source's account of formation, not spatial adjacency or measured distance.",
+      "labelPriority": 88
+    },
+    {
+      "id": "void-lords-cosmic-research",
+      "entityId": "void-lords",
+      "eraId": "cosmic-origins",
+      "worldspaceId": "cosmos",
+      "geometryId": "void-lords-relational-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "Conceptual anchor for the Void Lords' design. It does not locate their realm or imply proximity to the Old Gods.",
+      "labelPriority": 89
+    },
+    {
+      "id": "world-souls-cosmic-research",
+      "entityId": "world-souls",
+      "eraId": "cosmic-origins",
+      "worldspaceId": "cosmos",
+      "geometryId": "world-souls-relational-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "Narrative anchor connecting the physical universe to the awakening of titans; it does not represent one specific world.",
+      "labelPriority": 92
     },
     {
       "id": "yshaarj-central-bastion-spatial-research",
@@ -323,7 +499,35 @@
         "elemental-assault-on-black-empire"
       ],
       "storyGuideId": "black-empire-guided-history",
+      "previousEraId": "cosmic-origins",
       "nextEraId": "ordering-of-azeroth",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "cosmic-origins",
+      "name": "Cosmic Origins",
+      "slug": "cosmic-origins",
+      "worldspaceId": "cosmos",
+      "order": 0,
+      "dateLabel": "Before the ordering of worlds · chronology without measured dates",
+      "summary": "Chronicle's account begins with Light and Shadow, the birth of the physical universe and Twisting Nether, the awakening of world-souls, the gathering of the titan Pantheon, and the Void Lords' attempt to corrupt a nascent titan through the Old Gods.",
+      "mapStateId": "cosmic-origins-map-research",
+      "defaultLayerIds": [
+        "locations",
+        "labels"
+      ],
+      "featuredEventIds": [
+        "physical-universe-emerges",
+        "amanthul-awakens",
+        "pantheon-gathers",
+        "old-gods-scattered"
+      ],
+      "featuredBattleIds": [],
+      "storyGuideId": "cosmic-origins-guided-history",
+      "nextEraId": "black-empire",
       "sourceIds": [
         "warcraft-chronicle-volume-1"
       ],
@@ -508,6 +712,38 @@
       "contentStatus": "research"
     },
     {
+      "id": "amanthul",
+      "type": "character",
+      "name": "Aman’Thul",
+      "slug": "amanthul",
+      "aliases": [
+        "Highfather of the Pantheon"
+      ],
+      "shortDescription": "The first titan to awaken in Chronicle's account, who crossed the Great Dark in search of others of his kind.",
+      "body": "Aman’Thul's search gathered the awakened titans into the Pantheon. His placement here expresses narrative sequence and association, not a canonical position in the cosmos.",
+      "firstEraId": "cosmic-origins",
+      "featuredEraIds": [
+        "cosmic-origins"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "amanthul-first-awakening-claim",
+        "amanthul-search-claim"
+      ],
+      "tags": [
+        "titan",
+        "pantheon",
+        "order"
+      ],
+      "mapFigure": {
+        "asset": "images/characters/cosmic-origins/amanthul.research.webp",
+        "scale": 0.88
+      },
+      "contentStatus": "research"
+    },
+    {
       "id": "aqir",
       "type": "faction",
       "name": "Aqir",
@@ -537,11 +773,12 @@
       ],
       "shortDescription": "A titan spirit developing within the young world's core, whose immense growth drew in much of Azeroth's Spirit.",
       "body": "Chronicle presents the world-soul as the reason Azeroth's elementals lacked the balancing fifth element. This record describes the primordial account and does not resolve later perspectives on Azeroth's nature.",
-      "firstEraId": "black-empire",
+      "firstEraId": "cosmic-origins",
       "sourceIds": [
         "warcraft-chronicle-volume-1"
       ],
       "claimIds": [
+        "azeroth-world-soul-cosmic-context-claim",
         "azeroth-world-soul-spirit-claim"
       ],
       "tags": [
@@ -575,6 +812,34 @@
       "contentStatus": "research"
     },
     {
+      "id": "cosmic-forces",
+      "type": "other",
+      "name": "The Cosmic Forces",
+      "slug": "cosmic-forces",
+      "shortDescription": "Chronicle's cosmology arranges reality through opposed forces: Light and Shadow, Life and Death, and Order and Disorder.",
+      "body": "The familiar cosmology chart is used as a subject index, not copied as artwork. Later accounts may qualify how complete or objective this arrangement is.",
+      "firstEraId": "cosmic-origins",
+      "featuredEraIds": [
+        "cosmic-origins"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "cosmic-forces-framework-claim"
+      ],
+      "tags": [
+        "cosmology",
+        "light",
+        "void",
+        "life",
+        "death",
+        "order",
+        "disorder"
+      ],
+      "contentStatus": "research"
+    },
+    {
       "id": "elemental-hosts",
       "type": "faction",
       "name": "The Elemental Hosts",
@@ -593,6 +858,57 @@
         "elementals",
         "editorial-grouping",
         "primordial"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "great-dark-beyond",
+      "type": "location",
+      "name": "The Great Dark Beyond",
+      "slug": "great-dark-beyond",
+      "shortDescription": "The physical universe of innumerable worlds and stars described in Chronicle's cosmological account.",
+      "body": "Its point on the cosmography is a reading aid only. A universe has not been reduced to a literal map marker.",
+      "firstEraId": "cosmic-origins",
+      "featuredEraIds": [
+        "cosmic-origins"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "great-dark-beyond-origin-claim"
+      ],
+      "tags": [
+        "cosmology",
+        "physical-universe"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "light-and-shadow",
+      "type": "other",
+      "name": "Light and Shadow",
+      "slug": "light-and-shadow",
+      "aliases": [
+        "Light and Void"
+      ],
+      "shortDescription": "Opposed primordial powers at the beginning of Chronicle's account of the Warcraft cosmos.",
+      "body": "This record keeps Chronicle Volume 1's creation account distinct from later cosmological perspectives. It does not claim that the diagram gives either power a physical location.",
+      "firstEraId": "cosmic-origins",
+      "featuredEraIds": [
+        "cosmic-origins"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "light-shadow-tension-claim"
+      ],
+      "tags": [
+        "cosmology",
+        "light",
+        "shadow",
+        "void"
       ],
       "contentStatus": "research"
     },
@@ -652,18 +968,47 @@
       "slug": "old-gods",
       "shortDescription": "Void-linked entities that struck Azeroth, spread corruption through the world, and drove tendrils toward its core.",
       "body": "The Era 1 account treats the Old Gods collectively except where Chronicle specifically identifies Y'Shaarj. Later sources name and distinguish additional Old Gods; those records should be introduced only with their own citations.",
-      "firstEraId": "black-empire",
+      "firstEraId": "cosmic-origins",
       "sourceIds": [
         "warcraft-chronicle-volume-1",
         "blizzard-dragon-aspects-history"
       ],
       "claimIds": [
+        "old-gods-cosmic-origin-claim",
         "old-gods-arrival-claim"
       ],
       "tags": [
         "old-gods",
         "void",
         "primordial"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "pantheon-of-order",
+      "type": "faction",
+      "name": "The Pantheon of Order",
+      "slug": "pantheon-of-order",
+      "aliases": [
+        "The Pantheon"
+      ],
+      "shortDescription": "A company of awakened titans who traveled the Great Dark, ordering worlds and seeking more world-souls.",
+      "body": "This Era 0 record follows Chronicle Volume 1's account and stops before the Pantheon's response to the Black Empire on Azeroth.",
+      "firstEraId": "cosmic-origins",
+      "featuredEraIds": [
+        "cosmic-origins"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1",
+        "blizzard-dragon-aspects-history"
+      ],
+      "claimIds": [
+        "pantheon-purpose-claim"
+      ],
+      "tags": [
+        "titans",
+        "pantheon",
+        "order"
       ],
       "contentStatus": "research"
     },
@@ -743,6 +1088,82 @@
       "contentStatus": "research"
     },
     {
+      "id": "twisting-nether",
+      "type": "location",
+      "name": "The Twisting Nether",
+      "slug": "twisting-nether",
+      "shortDescription": "A volatile astral realm formed from energies released around the creation of the physical universe.",
+      "body": "Chronicle describes the Nether as interwoven with the Great Dark Beyond while remaining distinct from it. The atlas uses no geographic distance between the two.",
+      "firstEraId": "cosmic-origins",
+      "featuredEraIds": [
+        "cosmic-origins"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "twisting-nether-origin-claim"
+      ],
+      "tags": [
+        "cosmology",
+        "astral-realm",
+        "disorder"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "void-lords",
+      "type": "faction",
+      "name": "The Void Lords",
+      "slug": "void-lords",
+      "shortDescription": "Shadow-aligned beings who sought to corrupt a world-soul but could not directly manifest their full power in the physical universe.",
+      "body": "Chronicle presents the Old Gods as instruments of this design. The record does not map the Void Lords to a physical territory.",
+      "firstEraId": "cosmic-origins",
+      "featuredEraIds": [
+        "cosmic-origins"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "void-lords-world-soul-plan-claim"
+      ],
+      "tags": [
+        "void",
+        "shadow",
+        "old-gods",
+        "cosmology"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "world-souls",
+      "type": "other",
+      "name": "World-Souls",
+      "slug": "world-souls",
+      "aliases": [
+        "Nascent Titans"
+      ],
+      "shortDescription": "Mysterious titan spirits that can form within some worlds and awaken after ages of growth.",
+      "body": "The record describes Chronicle Volume 1's titan account. It does not assert that every world contains such a soul.",
+      "firstEraId": "cosmic-origins",
+      "featuredEraIds": [
+        "cosmic-origins"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "world-souls-awakening-claim"
+      ],
+      "tags": [
+        "cosmology",
+        "titans",
+        "world-soul"
+      ],
+      "contentStatus": "research"
+    },
+    {
       "id": "yshaarj-central-bastion",
       "type": "site",
       "name": "Y'Shaarj's Central Bastion",
@@ -791,6 +1212,39 @@
     }
   ],
   "events": [
+    {
+      "id": "amanthul-awakens",
+      "kind": "event",
+      "name": "Awakening of Aman’Thul",
+      "slug": "amanthul-awakens",
+      "eraId": "cosmic-origins",
+      "worldspaceId": "cosmos",
+      "date": {
+        "precision": "relative",
+        "label": "After worlds formed within the Great Dark",
+        "relativeToId": "physical-universe-emerges"
+      },
+      "summary": "Aman’Thul awoke from the world that had nurtured his spirit and began searching the cosmos for other nascent titans.",
+      "description": "The event name is an editorial label for the sequence described in Chronicle Volume 1.",
+      "participantEntityIds": [
+        "amanthul",
+        "world-souls"
+      ],
+      "causesEventIds": [
+        "pantheon-gathers"
+      ],
+      "relationshipIds": [
+        "physical-universe-precedes-amanthul",
+        "amanthul-awakening-causes-pantheon"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "amanthul-awakens-event-claim"
+      ],
+      "contentStatus": "research"
+    },
     {
       "id": "black-empire-dominion",
       "kind": "event",
@@ -893,6 +1347,99 @@
       ],
       "claimIds": [
         "old-gods-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "old-gods-scattered",
+      "kind": "event",
+      "name": "Scattering of the Old Gods",
+      "slug": "old-gods-scattered",
+      "eraId": "cosmic-origins",
+      "worldspaceId": "cosmos",
+      "date": {
+        "precision": "unknown",
+        "label": "Before the Old Gods struck Azeroth"
+      },
+      "summary": "The Void Lords made the Old Gods and cast them through the Great Dark, hoping that some would find and corrupt a world-soul.",
+      "description": "The event name is an editorial label. The cosmography asserts sequence and purpose but no origin coordinate, route, or measurable number of Old Gods.",
+      "participantEntityIds": [
+        "void-lords",
+        "old-gods",
+        "world-souls"
+      ],
+      "relationshipIds": [
+        "pantheon-precedes-old-gods-scattered",
+        "old-gods-scattered-precedes-azeroth-arrival"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "old-gods-scattered-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "pantheon-gathers",
+      "kind": "event",
+      "name": "Gathering of the Pantheon",
+      "slug": "pantheon-gathers",
+      "eraId": "cosmic-origins",
+      "worldspaceId": "cosmos",
+      "date": {
+        "precision": "relative",
+        "label": "During Aman’Thul's search for other titans",
+        "relativeToId": "amanthul-awakens"
+      },
+      "summary": "The awakened titans found one another, formed the Pantheon, and traveled onward to order worlds and seek more of their kind.",
+      "description": "The event name is an editorial label for the Pantheon's formation in Chronicle Volume 1.",
+      "participantEntityIds": [
+        "amanthul",
+        "pantheon-of-order",
+        "world-souls"
+      ],
+      "causedByEventIds": [
+        "amanthul-awakens"
+      ],
+      "relationshipIds": [
+        "amanthul-awakening-causes-pantheon",
+        "pantheon-precedes-old-gods-scattered"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "pantheon-gathers-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "physical-universe-emerges",
+      "kind": "event",
+      "name": "Emergence of the Physical Universe",
+      "slug": "physical-universe-emerges",
+      "eraId": "cosmic-origins",
+      "worldspaceId": "cosmos",
+      "date": {
+        "precision": "unknown",
+        "label": "At the beginning of Chronicle's cosmic account"
+      },
+      "summary": "The conflict between primordial Light and Void gave rise to the physical universe, while released energies formed the Twisting Nether.",
+      "description": "The event name is an editorial label for the creation sequence described in Chronicle Volume 1; it is not presented as a formally named Warcraft event.",
+      "participantEntityIds": [
+        "light-and-shadow",
+        "great-dark-beyond",
+        "twisting-nether"
+      ],
+      "relationshipIds": [
+        "physical-universe-precedes-amanthul"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "physical-universe-emerges-event-claim"
       ],
       "contentStatus": "research"
     },
@@ -1292,6 +1839,15 @@
       "note": "Supports the cosmic frame and the roles of Light, Shadow/Void, Life, Death, Order, Disorder, and the elements."
     },
     {
+      "id": "chronicle-v1-origins-universe",
+      "sourceId": "warcraft-chronicle-volume-1",
+      "chapter": "Chapter I: Mythos",
+      "pageStart": 18,
+      "pageEnd": 18,
+      "section": "Origins of the Universe",
+      "note": "Supports Chronicle's account of primordial Light and Void, the birth of the Great Dark Beyond, and the formation of the Twisting Nether. Pagination requires human confirmation against the selected complete edition."
+    },
+    {
       "id": "chronicle-v1-reign-elements",
       "sourceId": "warcraft-chronicle-volume-1",
       "chapter": "Chapter II: Primordial Azeroth",
@@ -1299,6 +1855,24 @@
       "pageEnd": 29,
       "section": "Reign of the Elements",
       "note": "Supports Azeroth's nascent world-soul, the shortage of Spirit, the four Elemental Lords, and their prolonged shifting conflict."
+    },
+    {
+      "id": "chronicle-v1-titans",
+      "sourceId": "warcraft-chronicle-volume-1",
+      "chapter": "Chapter I: Mythos",
+      "pageStart": 19,
+      "pageEnd": 20,
+      "section": "The Titans",
+      "note": "Supports the world-soul lifecycle, Aman’Thul's awakening and search, and the gathering and world-ordering purpose of the Pantheon. Pagination requires human confirmation against the selected complete edition."
+    },
+    {
+      "id": "chronicle-v1-void-lords-old-gods",
+      "sourceId": "warcraft-chronicle-volume-1",
+      "chapter": "Chapter I: Mythos",
+      "pageStart": 21,
+      "pageEnd": 21,
+      "section": "The Void Lords and the Old Gods",
+      "note": "Supports Chronicle's account of the Void Lords' world-soul objective, their limited manifestation in the physical universe, and the creation and scattering of the Old Gods. Pagination requires human confirmation against the selected complete edition."
     },
     {
       "id": "warcraft-wiki-black-empire-ancient-times",
@@ -1332,6 +1906,39 @@
       "status": "active"
     },
     {
+      "id": "amanthul-awakens-event-claim",
+      "subjectId": "amanthul-awakens",
+      "predicate": "event-summary",
+      "value": "Aman’Thul awoke from his world as the first titan and began seeking others of his kind.",
+      "citationIds": [
+        "chronicle-v1-titans"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "amanthul-first-awakening-claim",
+      "subjectId": "amanthul",
+      "predicate": "awakening-order",
+      "value": "Aman’Thul was the first titan to awaken in Chronicle's account.",
+      "citationIds": [
+        "chronicle-v1-titans"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "amanthul-search-claim",
+      "subjectId": "amanthul",
+      "predicate": "search-for-titans",
+      "value": "After awakening, Aman’Thul traveled the Great Dark and called other nascent titans into wakefulness.",
+      "citationIds": [
+        "chronicle-v1-titans"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
       "id": "aqir-role-claim",
       "subjectId": "aqir",
       "predicate": "black-empire-role",
@@ -1342,6 +1949,18 @@
       "confidence": "strongly_supported",
       "status": "active",
       "editorNote": "The labor role is explicit in the cited passage; the defensive military role follows from the same source's account of the elemental war and should be confirmed against the complete page sequence."
+    },
+    {
+      "id": "azeroth-world-soul-cosmic-context-claim",
+      "subjectId": "azeroth-world-soul",
+      "predicate": "cosmic-context",
+      "value": "Azeroth held an immense nascent titan spirit, making the young world central to the danger posed by the Old Gods.",
+      "citationIds": [
+        "chronicle-v1-titans",
+        "chronicle-v1-coming-old-gods"
+      ],
+      "confidence": "explicit",
+      "status": "active"
     },
     {
       "id": "azeroth-world-soul-spirit-claim",
@@ -1403,6 +2022,18 @@
       "editorNote": "The displayed point is approximate because the source provides a relative description rather than coordinates."
     },
     {
+      "id": "cosmic-forces-framework-claim",
+      "subjectId": "cosmic-forces",
+      "predicate": "cosmological-framework",
+      "value": "Chronicle's chart pairs Light with Shadow, Life with Death, and Order with Disorder as six powers shaping reality.",
+      "citationIds": [
+        "chronicle-v1-cosmology"
+      ],
+      "confidence": "explicit",
+      "status": "active",
+      "editorNote": "The project treats the Volume 1 chart as a sourced framework, not an uncontested omniscient diagram."
+    },
+    {
       "id": "elemental-hosts-conflict-claim",
       "subjectId": "elemental-hosts",
       "predicate": "primordial-role",
@@ -1436,6 +2067,29 @@
       ],
       "confidence": "explicit",
       "status": "active"
+    },
+    {
+      "id": "great-dark-beyond-origin-claim",
+      "subjectId": "great-dark-beyond",
+      "predicate": "origin",
+      "value": "The physical universe called the Great Dark Beyond arose from the cosmic clash described in Chronicle's opening account.",
+      "citationIds": [
+        "chronicle-v1-origins-universe"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "light-shadow-tension-claim",
+      "subjectId": "light-and-shadow",
+      "predicate": "primordial-opposition",
+      "value": "Chronicle begins its creation account with Light and Void as opposed primordial powers whose clash preceded the physical universe.",
+      "citationIds": [
+        "chronicle-v1-origins-universe"
+      ],
+      "confidence": "explicit",
+      "status": "active",
+      "editorNote": "Scoped to Chronicle Volume 1's narrated account; later cosmological perspectives require separate claims rather than silent replacement."
     },
     {
       "id": "neptulon-domain-placement-claim",
@@ -1483,12 +2137,67 @@
       "status": "active"
     },
     {
+      "id": "old-gods-cosmic-origin-claim",
+      "subjectId": "old-gods",
+      "predicate": "cosmic-origin-and-purpose",
+      "value": "The Void Lords created and scattered the Old Gods as instruments for finding and corrupting a world-soul.",
+      "citationIds": [
+        "chronicle-v1-void-lords-old-gods"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
       "id": "old-gods-event-claim",
       "subjectId": "old-gods-arrive",
       "predicate": "event-summary",
       "value": "Multiple Old Gods fell from the Great Dark and embedded themselves in different locations across Azeroth.",
       "citationIds": [
         "chronicle-v1-coming-old-gods"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "old-gods-scattered-event-claim",
+      "subjectId": "old-gods-scattered",
+      "predicate": "event-summary",
+      "value": "The Void Lords cast innumerable Old Gods into the physical universe to seek a world-soul vulnerable to corruption.",
+      "citationIds": [
+        "chronicle-v1-void-lords-old-gods"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "pantheon-gathers-event-claim",
+      "subjectId": "pantheon-gathers",
+      "predicate": "event-summary",
+      "value": "Aman’Thul's search brought awakened titans together as the Pantheon.",
+      "citationIds": [
+        "chronicle-v1-titans"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "pantheon-purpose-claim",
+      "subjectId": "pantheon-of-order",
+      "predicate": "cosmic-work",
+      "value": "The gathered titans ordered worlds they encountered and continued seeking others of their kind.",
+      "citationIds": [
+        "chronicle-v1-titans"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "physical-universe-emerges-event-claim",
+      "subjectId": "physical-universe-emerges",
+      "predicate": "event-summary",
+      "value": "Chronicle links the clash of Light and Void to the emergence of the physical universe and the energies that formed the Twisting Nether.",
+      "citationIds": [
+        "chronicle-v1-origins-universe"
       ],
       "confidence": "explicit",
       "status": "active"
@@ -1564,6 +2273,39 @@
       "status": "active"
     },
     {
+      "id": "twisting-nether-origin-claim",
+      "subjectId": "twisting-nether",
+      "predicate": "origin-and-nature",
+      "value": "Unstable energies released around the universe's birth coalesced into the volatile astral realm called the Twisting Nether.",
+      "citationIds": [
+        "chronicle-v1-origins-universe"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "void-lords-world-soul-plan-claim",
+      "subjectId": "void-lords",
+      "predicate": "world-soul-objective",
+      "value": "Unable to exert their full power directly in the physical universe, the Void Lords made the Old Gods and cast them through the Great Dark in search of a world-soul to corrupt.",
+      "citationIds": [
+        "chronicle-v1-void-lords-old-gods"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "world-souls-awakening-claim",
+      "subjectId": "world-souls",
+      "predicate": "titan-development",
+      "value": "Some worlds contain titan spirits that grow for ages and may awaken as living titans.",
+      "citationIds": [
+        "chronicle-v1-titans"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
       "id": "yshaarj-bastion-claim",
       "subjectId": "yshaarj",
       "predicate": "black-empire-position",
@@ -1576,6 +2318,16 @@
     }
   ],
   "relationships": [
+    {
+      "id": "amanthul-awakening-causes-pantheon",
+      "fromId": "amanthul-awakens",
+      "toId": "pantheon-gathers",
+      "type": "causes",
+      "citationIds": [
+        "chronicle-v1-titans"
+      ],
+      "confidence": "explicit"
+    },
     {
       "id": "black-empire-precedes-ordering",
       "fromId": "black-empire-dominion",
@@ -1628,6 +2380,39 @@
       "confidence": "explicit"
     },
     {
+      "id": "old-gods-scattered-precedes-azeroth-arrival",
+      "fromId": "old-gods-scattered",
+      "toId": "old-gods-arrive",
+      "type": "precedes",
+      "citationIds": [
+        "chronicle-v1-void-lords-old-gods",
+        "chronicle-v1-coming-old-gods"
+      ],
+      "confidence": "explicit"
+    },
+    {
+      "id": "pantheon-precedes-old-gods-scattered",
+      "fromId": "pantheon-gathers",
+      "toId": "old-gods-scattered",
+      "type": "precedes",
+      "citationIds": [
+        "chronicle-v1-titans",
+        "chronicle-v1-void-lords-old-gods"
+      ],
+      "confidence": "explicit"
+    },
+    {
+      "id": "physical-universe-precedes-amanthul",
+      "fromId": "physical-universe-emerges",
+      "toId": "amanthul-awakens",
+      "type": "precedes",
+      "citationIds": [
+        "chronicle-v1-origins-universe",
+        "chronicle-v1-titans"
+      ],
+      "confidence": "explicit"
+    },
+    {
       "id": "spirit-imbalance-causes-elemental-wars",
       "fromId": "spirit-imbalance",
       "toId": "elemental-wars",
@@ -1655,6 +2440,24 @@
         "black-empire-story-empire-spreads",
         "black-empire-story-elemental-resistance",
         "black-empire-story-dominion"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "cosmic-origins-guided-history",
+      "eraId": "cosmic-origins",
+      "title": "Before the First World Was Ordered",
+      "description": "A continuous guided history from Chronicle's primordial cosmic powers through the birth of the universe, the awakening of the titans, and the design that sent the Old Gods toward worlds such as Azeroth.",
+      "nodeIds": [
+        "cosmic-origins-story-light-shadow",
+        "cosmic-origins-story-universe",
+        "cosmic-origins-story-nether",
+        "cosmic-origins-story-forces",
+        "cosmic-origins-story-world-souls",
+        "cosmic-origins-story-amanthul",
+        "cosmic-origins-story-pantheon",
+        "cosmic-origins-story-void-design",
+        "cosmic-origins-story-azeroth"
       ],
       "contentStatus": "research"
     }
@@ -2057,6 +2860,394 @@
         }
       ],
       "previousNodeId": "black-empire-story-elemental-resistance",
+      "nextNodeIds": []
+    },
+    {
+      "id": "cosmic-origins-story-light-shadow",
+      "guideId": "cosmic-origins-guided-history",
+      "title": "Before time could be counted",
+      "narration": "Before any world carried mountain, sea, or name, Chronicle begins with a boundless opposition. Light shone without measure, and beyond its reach gathered Shadow—the Void. They were not kingdoms upon a chart, but primordial powers, divided in nature and bound within the first telling of the cosmos.",
+      "durationMs": 42500,
+      "entityIds": [
+        "light-and-shadow"
+      ],
+      "optionalExploreEntityIds": [
+        "light-and-shadow"
+      ],
+      "camera": {
+        "position": [
+          -3.9,
+          6.4,
+          6.2
+        ],
+        "target": [
+          -3.4,
+          0,
+          -1.7
+        ],
+        "durationMs": 1200
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "cosmic-origins-map-research"
+        },
+        {
+          "type": "highlight_entity",
+          "entityId": "light-and-shadow"
+        }
+      ],
+      "nextNodeIds": [
+        "cosmic-origins-story-universe"
+      ]
+    },
+    {
+      "id": "cosmic-origins-story-universe",
+      "guideId": "cosmic-origins-guided-history",
+      "title": "The Great Dark opens",
+      "narration": "Where Light and Void pressed against one another, their conflict broke the stillness. From that violence came the physical universe: the Great Dark Beyond, immense and cold, kindled with newborn stars. Here at last were distance and matter, though no mortal witness stood beneath those first and ancient fires.",
+      "durationMs": 42500,
+      "eventIds": [
+        "physical-universe-emerges"
+      ],
+      "entityIds": [
+        "great-dark-beyond",
+        "light-and-shadow"
+      ],
+      "optionalExploreEntityIds": [
+        "great-dark-beyond"
+      ],
+      "camera": {
+        "position": [
+          -2.3,
+          6.7,
+          6.5
+        ],
+        "target": [
+          -1.8,
+          0,
+          -0.8
+        ],
+        "durationMs": 1200
+      },
+      "visualActions": [
+        {
+          "type": "highlight_entity",
+          "entityId": "great-dark-beyond"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "physical-universe-precedes-amanthul"
+          ]
+        }
+      ],
+      "previousNodeId": "cosmic-origins-story-light-shadow",
+      "nextNodeIds": [
+        "cosmic-origins-story-nether"
+      ]
+    },
+    {
+      "id": "cosmic-origins-story-nether",
+      "guideId": "cosmic-origins-guided-history",
+      "title": "A storm beside creation",
+      "narration": "Yet creation did not settle into silence. Unstable energies gathered into the Twisting Nether, a volatile astral realm interwoven with the Great Dark and unlike its ordered substance. The nearness shown here is only the nearness of one thought to the next; no source grants these realms a measured border.",
+      "durationMs": 44000,
+      "eventIds": [
+        "physical-universe-emerges"
+      ],
+      "entityIds": [
+        "twisting-nether"
+      ],
+      "optionalExploreEntityIds": [
+        "twisting-nether"
+      ],
+      "camera": {
+        "position": [
+          -2.1,
+          5.6,
+          6
+        ],
+        "target": [
+          -1.7,
+          0,
+          1.4
+        ],
+        "durationMs": 1100
+      },
+      "visualActions": [
+        {
+          "type": "highlight_entity",
+          "entityId": "twisting-nether"
+        }
+      ],
+      "previousNodeId": "cosmic-origins-story-universe",
+      "nextNodeIds": [
+        "cosmic-origins-story-forces"
+      ]
+    },
+    {
+      "id": "cosmic-origins-story-forces",
+      "guideId": "cosmic-origins-guided-history",
+      "title": "Powers that shape reality",
+      "narration": "Across this vast account stand six great forces. Light answers Shadow; Life answers Death; Order answers Disorder. Fire, air, earth, water, Spirit, and Decay move within the mortal realm beneath them. This is Chronicle's framework, offered here as a lantern for the story—not as the last word on every mystery.",
+      "durationMs": 45500,
+      "entityIds": [
+        "cosmic-forces"
+      ],
+      "optionalExploreEntityIds": [
+        "cosmic-forces"
+      ],
+      "camera": {
+        "position": [
+          -0.2,
+          7,
+          6.8
+        ],
+        "target": [
+          -0.2,
+          0,
+          -2.2
+        ],
+        "durationMs": 1200
+      },
+      "visualActions": [
+        {
+          "type": "highlight_entity",
+          "entityId": "cosmic-forces"
+        }
+      ],
+      "previousNodeId": "cosmic-origins-story-nether",
+      "nextNodeIds": [
+        "cosmic-origins-story-world-souls"
+      ]
+    },
+    {
+      "id": "cosmic-origins-story-world-souls",
+      "guideId": "cosmic-origins-guided-history",
+      "title": "Dreamers in the deep",
+      "narration": "Among the countless worlds, some bore a presence hidden far below their crust: a titan spirit, sleeping while ages passed above. Such world-souls grew slowly within their wandering homes. If one endured and awakened, it rose no longer as a world alone, but as a living titan of immeasurable power.",
+      "durationMs": 44500,
+      "entityIds": [
+        "world-souls"
+      ],
+      "optionalExploreEntityIds": [
+        "world-souls"
+      ],
+      "camera": {
+        "position": [
+          0.8,
+          5.7,
+          5.8
+        ],
+        "target": [
+          0.6,
+          0,
+          0.3
+        ],
+        "durationMs": 1100
+      },
+      "visualActions": [
+        {
+          "type": "highlight_entity",
+          "entityId": "world-souls"
+        }
+      ],
+      "previousNodeId": "cosmic-origins-story-forces",
+      "nextNodeIds": [
+        "cosmic-origins-story-amanthul"
+      ]
+    },
+    {
+      "id": "cosmic-origins-story-amanthul",
+      "guideId": "cosmic-origins-guided-history",
+      "title": "The first titan wakes",
+      "narration": "First among them to wake was Aman’Thul. He looked into the lonely reaches of the Great Dark and understood that others of his kind might still dream within distant worlds. So the Highfather began his long search, crossing the newborn heavens and calling to the spirits he found sleeping there.",
+      "durationMs": 43000,
+      "eventIds": [
+        "amanthul-awakens"
+      ],
+      "entityIds": [
+        "amanthul"
+      ],
+      "optionalExploreEntityIds": [
+        "amanthul"
+      ],
+      "camera": {
+        "position": [
+          2.1,
+          5,
+          5.1
+        ],
+        "target": [
+          1.7,
+          0,
+          -2
+        ],
+        "durationMs": 1000
+      },
+      "visualActions": [
+        {
+          "type": "highlight_entity",
+          "entityId": "amanthul"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "amanthul-awakening-causes-pantheon"
+          ]
+        }
+      ],
+      "previousNodeId": "cosmic-origins-story-world-souls",
+      "nextNodeIds": [
+        "cosmic-origins-story-pantheon"
+      ]
+    },
+    {
+      "id": "cosmic-origins-story-pantheon",
+      "guideId": "cosmic-origins-guided-history",
+      "title": "The Pantheon gathers",
+      "narration": "One by one, awakened titans answered, until Aman’Thul no longer walked the cosmos alone. Together they became the Pantheon. Where they found worlds wounded or disordered, they labored to bring stability; and beyond each ordered horizon, they continued the search for brethren who had not yet opened their eyes.",
+      "durationMs": 44000,
+      "eventIds": [
+        "pantheon-gathers"
+      ],
+      "entityIds": [
+        "pantheon-of-order",
+        "amanthul"
+      ],
+      "optionalExploreEntityIds": [
+        "pantheon-of-order",
+        "amanthul"
+      ],
+      "camera": {
+        "position": [
+          3.4,
+          5.8,
+          5.8
+        ],
+        "target": [
+          2.7,
+          0,
+          -1
+        ],
+        "durationMs": 1050
+      },
+      "visualActions": [
+        {
+          "type": "highlight_faction",
+          "factionId": "pantheon-of-order"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "amanthul-awakening-causes-pantheon",
+            "pantheon-precedes-old-gods-scattered"
+          ]
+        }
+      ],
+      "previousNodeId": "cosmic-origins-story-amanthul",
+      "nextNodeIds": [
+        "cosmic-origins-story-void-design"
+      ]
+    },
+    {
+      "id": "cosmic-origins-story-void-design",
+      "guideId": "cosmic-origins-guided-history",
+      "title": "A design cast into darkness",
+      "narration": "The Void Lords also sought the sleeping titans, but could not pour their full strength into the physical universe. In their hunger they shaped the Old Gods and hurled them blindly through the Great Dark. Their hope was dreadful and patient: that one might strike a world-soul and corrupt it before awakening.",
+      "durationMs": 45500,
+      "eventIds": [
+        "old-gods-scattered"
+      ],
+      "entityIds": [
+        "void-lords",
+        "old-gods",
+        "world-souls"
+      ],
+      "optionalExploreEntityIds": [
+        "void-lords",
+        "old-gods"
+      ],
+      "camera": {
+        "position": [
+          3.8,
+          5.4,
+          5
+        ],
+        "target": [
+          3.1,
+          0,
+          1.8
+        ],
+        "durationMs": 1100
+      },
+      "visualActions": [
+        {
+          "type": "highlight_faction",
+          "factionId": "void-lords"
+        },
+        {
+          "type": "highlight_faction",
+          "factionId": "old-gods"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "old-gods-scattered-precedes-azeroth-arrival"
+          ]
+        }
+      ],
+      "previousNodeId": "cosmic-origins-story-pantheon",
+      "nextNodeIds": [
+        "cosmic-origins-story-azeroth"
+      ]
+    },
+    {
+      "id": "cosmic-origins-story-azeroth",
+      "guideId": "cosmic-origins-guided-history",
+      "title": "One world among the stars",
+      "narration": "Across that immeasurable dark turned a young world called Azeroth, bearing within it a titan spirit of extraordinary might. The Old Gods would find this world before the Pantheon understood its peril. There the cosmic design narrowed into earth, flame, storm, and sea—and the long age of the Black Empire drew near.",
+      "durationMs": 45000,
+      "entityIds": [
+        "azeroth-world-soul",
+        "old-gods"
+      ],
+      "optionalExploreEntityIds": [
+        "azeroth-world-soul",
+        "old-gods"
+      ],
+      "camera": {
+        "position": [
+          4.8,
+          5.2,
+          5.4
+        ],
+        "target": [
+          4,
+          0,
+          0
+        ],
+        "durationMs": 1200
+      },
+      "visualActions": [
+        {
+          "type": "highlight_entity",
+          "entityId": "azeroth-world-soul"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "old-gods-scattered-precedes-azeroth-arrival"
+          ]
+        },
+        {
+          "type": "toggle_layer",
+          "layerId": "labels",
+          "visible": true
+        }
+      ],
+      "previousNodeId": "cosmic-origins-story-void-design",
       "nextNodeIds": []
     }
   ]

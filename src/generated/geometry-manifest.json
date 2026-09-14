@@ -255,5 +255,181 @@
         }
       }
     ]
+  },
+  {
+    "type": "FeatureCollection",
+    "name": "cosmic-origins-relational-research",
+    "features": [
+      {
+        "type": "Feature",
+        "id": "light-and-shadow-relational-research",
+        "properties": {
+          "name": "Light and Shadow (relational)",
+          "contentStatus": "research",
+          "styleRole": "site",
+          "geographicCertainty": "unknown"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            1600,
+            5000
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "great-dark-beyond-relational-research",
+        "properties": {
+          "name": "Great Dark Beyond (relational)",
+          "contentStatus": "research",
+          "styleRole": "site",
+          "geographicCertainty": "unknown"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            3300,
+            4200
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "twisting-nether-relational-research",
+        "properties": {
+          "name": "Twisting Nether (relational)",
+          "contentStatus": "research",
+          "styleRole": "site",
+          "geographicCertainty": "unknown"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            3300,
+            1900
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "cosmic-forces-relational-research",
+        "properties": {
+          "name": "Cosmic forces (relational)",
+          "contentStatus": "research",
+          "styleRole": "site",
+          "geographicCertainty": "unknown"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4850,
+            5550
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "world-souls-relational-research",
+        "properties": {
+          "name": "World-souls (relational)",
+          "contentStatus": "research",
+          "styleRole": "site",
+          "geographicCertainty": "unknown"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5600,
+            3550
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "amanthul-relational-research",
+        "properties": {
+          "name": "Aman'Thul (relational)",
+          "contentStatus": "research",
+          "styleRole": "site",
+          "geographicCertainty": "unknown"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            6650,
+            5350
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "pantheon-of-order-relational-research",
+        "properties": {
+          "name": "Pantheon of Order (relational)",
+          "contentStatus": "research",
+          "styleRole": "site",
+          "geographicCertainty": "unknown"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            7700,
+            4300
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "void-lords-relational-research",
+        "properties": {
+          "name": "Void Lords (relational)",
+          "contentStatus": "research",
+          "styleRole": "site",
+          "geographicCertainty": "unknown"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            8050,
+            1450
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "old-gods-relational-research",
+        "properties": {
+          "name": "Old Gods (relational)",
+          "contentStatus": "research",
+          "styleRole": "site",
+          "geographicCertainty": "unknown"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            6900,
+            2250
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "azeroth-world-soul-relational-research",
+        "properties": {
+          "name": "Azeroth's world-soul (relational)",
+          "contentStatus": "research",
+          "styleRole": "site",
+          "geographicCertainty": "unknown"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            9000,
+            3300
+          ]
+        }
+      }
+    ]
   }
 ]

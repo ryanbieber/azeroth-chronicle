@@ -1,0 +1,12 @@
+{
+  "id": "twisting-nether-cosmic-research",
+  "entityId": "twisting-nether",
+  "eraId": "cosmic-origins",
+  "worldspaceId": "cosmos",
+  "geometryId": "twisting-nether-relational-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "Placed near the universe's origin beat to express the source's account of formation, not spatial adjacency or measured distance.",
+  "labelPriority": 88
+}

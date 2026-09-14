@@ -1,0 +1,8 @@
+{
+  "id": "pantheon-precedes-old-gods-scattered",
+  "fromId": "pantheon-gathers",
+  "toId": "old-gods-scattered",
+  "type": "precedes",
+  "citationIds": ["chronicle-v1-titans", "chronicle-v1-void-lords-old-gods"],
+  "confidence": "explicit"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "cosmos",
+  "name": "The Warcraft Cosmos",
+  "slug": "cosmos",
+  "coordinateSystem": {
+    "width": 10000,
+    "height": 6667,
+    "origin": "bottom-left",
+    "units": "atlas-units"
+  }
+}

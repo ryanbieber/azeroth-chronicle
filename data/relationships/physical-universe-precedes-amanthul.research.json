@@ -1,0 +1,8 @@
+{
+  "id": "physical-universe-precedes-amanthul",
+  "fromId": "physical-universe-emerges",
+  "toId": "amanthul-awakens",
+  "type": "precedes",
+  "citationIds": ["chronicle-v1-origins-universe", "chronicle-v1-titans"],
+  "confidence": "explicit"
+}

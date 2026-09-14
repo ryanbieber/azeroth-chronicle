@@ -1,0 +1,9 @@
+{
+  "id": "amanthul-search-claim",
+  "subjectId": "amanthul",
+  "predicate": "search-for-titans",
+  "value": "After awakening, Aman’Thul traveled the Great Dark and called other nascent titans into wakefulness.",
+  "citationIds": ["chronicle-v1-titans"],
+  "confidence": "explicit",
+  "status": "active"
+}

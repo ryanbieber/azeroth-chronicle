@@ -1,0 +1,12 @@
+{
+  "id": "light-and-shadow-cosmic-research",
+  "entityId": "light-and-shadow",
+  "eraId": "cosmic-origins",
+  "worldspaceId": "cosmos",
+  "geometryId": "light-and-shadow-relational-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "Diagrammatic opening anchor for the narrated opposition of Light and Shadow; it asserts no cosmic coordinate, direction, or scale.",
+  "labelPriority": 96
+}

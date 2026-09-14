@@ -1,0 +1,12 @@
+{
+  "id": "old-gods-cosmic-research",
+  "entityId": "old-gods",
+  "eraId": "cosmic-origins",
+  "worldspaceId": "cosmos",
+  "geometryId": "old-gods-relational-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "Narrative anchor for the Old Gods being cast into the Great Dark. It represents neither a shared origin point nor a trajectory.",
+  "labelPriority": 93
+}

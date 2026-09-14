@@ -1,0 +1,9 @@
+{
+  "id": "old-gods-cosmic-origin-claim",
+  "subjectId": "old-gods",
+  "predicate": "cosmic-origin-and-purpose",
+  "value": "The Void Lords created and scattered the Old Gods as instruments for finding and corrupting a world-soul.",
+  "citationIds": ["chronicle-v1-void-lords-old-gods"],
+  "confidence": "explicit",
+  "status": "active"
+}

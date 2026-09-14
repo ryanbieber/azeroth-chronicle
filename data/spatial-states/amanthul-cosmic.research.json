@@ -1,0 +1,12 @@
+{
+  "id": "amanthul-cosmic-research",
+  "entityId": "amanthul",
+  "eraId": "cosmic-origins",
+  "worldspaceId": "cosmos",
+  "geometryId": "amanthul-relational-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "The figure is placed at his awakening chapter for story legibility; Chronicle supplies no fixed cosmic coordinate for Aman’Thul.",
+  "labelPriority": 100
+}

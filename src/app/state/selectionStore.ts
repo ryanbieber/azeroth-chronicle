@@ -6,12 +6,16 @@ export type Selection =
   | { kind: 'event'; id: string }
   | null;
 
+export type SelectionOrigin = 'manual' | 'story';
+
 interface SelectionState {
   selection: Selection;
-  select: (selection: Selection) => void;
+  selectionOrigin: SelectionOrigin;
+  select: (selection: Selection, origin?: SelectionOrigin) => void;
 }
 
 export const useSelectionStore = create<SelectionState>((set) => ({
   selection: null,
-  select: (selection) => set({ selection }),
+  selectionOrigin: 'manual',
+  select: (selection, selectionOrigin = 'manual') => set({ selection, selectionOrigin }),
 }));

@@ -1,0 +1,9 @@
+{
+  "id": "azeroth-world-soul-cosmic-context-claim",
+  "subjectId": "azeroth-world-soul",
+  "predicate": "cosmic-context",
+  "value": "Azeroth held an immense nascent titan spirit, making the young world central to the danger posed by the Old Gods.",
+  "citationIds": ["chronicle-v1-titans", "chronicle-v1-coming-old-gods"],
+  "confidence": "explicit",
+  "status": "active"
+}

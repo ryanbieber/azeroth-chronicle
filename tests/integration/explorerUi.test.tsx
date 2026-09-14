@@ -27,7 +27,7 @@ describe('explorer UI', () => {
     expect(useLayerStore.getState().visible).toEqual({ regions: true, battles: true, locations: true, routes: true, labels: true });
     expect(screen.queryByText('Visible layers')).not.toBeInTheDocument();
     expect(screen.queryByText('Source filters')).not.toBeInTheDocument();
-    expect(screen.getByRole('region', { name: 'Map key' })).toBeVisible();
+    expect(screen.getByRole('region', { name: 'Interpretation note' })).toBeVisible();
     expect(screen.queryByRole('complementary')).not.toBeInTheDocument();
   });
 

@@ -1,0 +1,9 @@
+{
+  "id": "pantheon-gathers-event-claim",
+  "subjectId": "pantheon-gathers",
+  "predicate": "event-summary",
+  "value": "Aman’Thul's search brought awakened titans together as the Pantheon.",
+  "citationIds": ["chronicle-v1-titans"],
+  "confidence": "explicit",
+  "status": "active"
+}

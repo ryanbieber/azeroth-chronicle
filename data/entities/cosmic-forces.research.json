@@ -1,0 +1,14 @@
+{
+  "id": "cosmic-forces",
+  "type": "other",
+  "name": "The Cosmic Forces",
+  "slug": "cosmic-forces",
+  "shortDescription": "Chronicle's cosmology arranges reality through opposed forces: Light and Shadow, Life and Death, and Order and Disorder.",
+  "body": "The familiar cosmology chart is used as a subject index, not copied as artwork. Later accounts may qualify how complete or objective this arrangement is.",
+  "firstEraId": "cosmic-origins",
+  "featuredEraIds": ["cosmic-origins"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["cosmic-forces-framework-claim"],
+  "tags": ["cosmology", "light", "void", "life", "death", "order", "disorder"],
+  "contentStatus": "research"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "cosmic-forces-cosmic-research",
+  "entityId": "cosmic-forces",
+  "eraId": "cosmic-origins",
+  "worldspaceId": "cosmos",
+  "geometryId": "cosmic-forces-relational-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "Conceptual index point for the six-force framework. No force is represented as a territory or assigned a coordinate.",
+  "labelPriority": 86
+}

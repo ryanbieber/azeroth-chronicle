@@ -1,0 +1,8 @@
+{
+  "id": "amanthul-awakening-causes-pantheon",
+  "fromId": "amanthul-awakens",
+  "toId": "pantheon-gathers",
+  "type": "causes",
+  "citationIds": ["chronicle-v1-titans"],
+  "confidence": "explicit"
+}

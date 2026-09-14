@@ -12,6 +12,7 @@ export function useAtlasUrlState(dataset: LoreDataset) {
   const eraId = useEraStore((state) => state.eraId);
   const setEra = useEraStore((state) => state.setEra);
   const selection = useSelectionStore((state) => state.selection);
+  const selectionOrigin = useSelectionStore((state) => state.selectionOrigin);
   const select = useSelectionStore((state) => state.select);
   const applyingUrl = useRef(false);
   const query = params.toString();
@@ -28,7 +29,11 @@ export function useAtlasUrlState(dataset: LoreDataset) {
       applyingUrl.current = false;
       return;
     }
-    const next = serializeAtlasUrl({ eraId, selection, layers: curatedLayers }, dataset);
+    const next = serializeAtlasUrl({
+      eraId,
+      selection: selectionOrigin === 'story' ? null : selection,
+      layers: curatedLayers,
+    }, dataset);
     if (next.toString() !== query) setParams(next, { replace: true });
-  }, [dataset, eraId, query, selection, setParams]);
+  }, [dataset, eraId, query, selection, selectionOrigin, setParams]);
 }

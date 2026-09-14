@@ -1,6 +1,7 @@
 import type { Era, LoreEntity } from '../../domain/types/lore';
 
 export function entityVisibleInEra(entity: LoreEntity, eraId: string, eras: Era[]): boolean {
+  if (entity.featuredEraIds) return entity.featuredEraIds.includes(eraId);
   if (!entity.firstEraId && !entity.lastEraId) return true;
 
   const orderById = new Map(eras.map((era) => [era.id, era.order]));

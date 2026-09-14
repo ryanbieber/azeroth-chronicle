@@ -1,0 +1,9 @@
+{
+  "id": "pantheon-purpose-claim",
+  "subjectId": "pantheon-of-order",
+  "predicate": "cosmic-work",
+  "value": "The gathered titans ordered worlds they encountered and continued seeking others of their kind.",
+  "citationIds": ["chronicle-v1-titans"],
+  "confidence": "explicit",
+  "status": "active"
+}

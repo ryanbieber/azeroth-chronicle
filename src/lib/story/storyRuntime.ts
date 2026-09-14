@@ -25,7 +25,7 @@ export function selectionForStoryNode(node: StoryNode): Selection {
 
 export function enterStoryNode(node: StoryNode): void {
   useStoryStore.getState().goToNode(node.id);
-  useSelectionStore.getState().select(selectionForStoryNode(node));
+  useSelectionStore.getState().select(selectionForStoryNode(node), 'story');
   applyVisualActions(visualActionsForStoryNode(node));
   if (node.camera) useMapViewStore.getState().requestCamera(node.camera);
 }
@@ -35,7 +35,7 @@ export function beginStoryGuide(guideId: string): boolean {
   const firstNode = guide?.nodeIds[0] ? staticLoreRepository.findStoryNode(guide.nodeIds[0]) : undefined;
   if (!guide || !firstNode) return false;
   useStoryStore.getState().start(guide.id, firstNode.id);
-  useSelectionStore.getState().select(selectionForStoryNode(firstNode));
+  useSelectionStore.getState().select(selectionForStoryNode(firstNode), 'story');
   applyVisualActions(visualActionsForStoryNode(firstNode));
   if (firstNode.camera) useMapViewStore.getState().requestCamera(firstNode.camera);
   return true;

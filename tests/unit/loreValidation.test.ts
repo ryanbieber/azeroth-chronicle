@@ -2,6 +2,8 @@ import { describe, expect, it } from 'vitest';
 import { loadDataset } from '../../src/lib/lore/loadDataset';
 import { validateDatasetReferences } from '../../src/lib/lore/validateDataset';
 import { geometryIds } from '../../src/lib/lore/loadGeometry';
+import { entityVisibleInEra } from '../../src/lib/lore/eraVisibility';
+import { mapStateSchema, spatialStateSchema } from '../../src/domain/schemas/loreSchemas';
 
 describe('lore dataset', () => {
   it('parses and has no broken cross-record references', () => {
@@ -20,14 +22,14 @@ describe('lore dataset', () => {
       ...data.storyGuides,
     ];
     expect(records.every((record) => record.contentStatus === 'research')).toBe(true);
-    expect(data.eras).toHaveLength(9);
+    expect(data.eras).toHaveLength(10);
     expect(data.eras.every((era) => era.contentStatus === 'research')).toBe(true);
   });
 
   it('contains the complete source-linked Era 1 research baseline', () => {
     const data = loadDataset();
     const era = data.eras.find((item) => item.id === 'black-empire')!;
-    const entities = data.entities.filter((item) => item.firstEraId === era.id);
+    const entities = data.entities.filter((item) => entityVisibleInEra(item, era.id, data.eras));
     const events = data.events.filter((item) => item.eraId === era.id);
     const battles = data.battles.filter((item) => item.eraId === era.id);
     const guide = data.storyGuides.find((item) => item.id === era.storyGuideId)!;
@@ -62,14 +64,85 @@ describe('lore dataset', () => {
     ))).toBe(true);
   });
 
+  it('contains a complete source-linked Cosmic Origins research slice', () => {
+    const data = loadDataset();
+    const era = data.eras.find((item) => item.id === 'cosmic-origins')!;
+    const mapState = data.mapStates.find((item) => item.id === era.mapStateId)!;
+    const entities = data.entities.filter((item) => entityVisibleInEra(item, era.id, data.eras));
+    const events = data.events.filter((item) => item.eraId === era.id);
+    const guide = data.storyGuides.find((item) => item.id === era.storyGuideId)!;
+    const spatialStates = data.spatialStates.filter((item) => item.eraId === era.id);
+
+    expect(era.order).toBe(0);
+    expect(era.nextEraId).toBe('black-empire');
+    expect(mapState.presentation).toBe('relational');
+    expect(mapState.terrainTextureAsset).toBeTruthy();
+    expect(mapState.terrainHeightAsset).toBeUndefined();
+    expect(mapState.interpretationNote).toMatch(/not canonical cosmic geography/i);
+    expect(entities).toHaveLength(10);
+    expect(events).toHaveLength(4);
+    expect(era.featuredBattleIds).toEqual([]);
+    expect(guide.nodeIds).toHaveLength(9);
+    expect(entities.filter((entity) => entity.type === 'character').every((entity) => Boolean(entity.mapFigure?.asset))).toBe(true);
+    expect(spatialStates).toHaveLength(10);
+    expect(spatialStates.every((state) => state.placementKind === 'relational'
+      && state.geographicCertainty === 'unknown'
+      && Boolean(state.geometryId)
+      && Boolean(state.editorNote))).toBe(true);
+    expect([...entities, ...events].every((subject) =>
+      data.claims.some((claim) => claim.subjectId === subject.id && claim.citationIds.length > 0),
+    )).toBe(true);
+    expect(data.eras.find((item) => item.id === 'black-empire')?.previousEraId).toBe(era.id);
+    expect(data.relationships).toContainEqual(expect.objectContaining({
+      id: 'old-gods-scattered-precedes-azeroth-arrival',
+      type: 'precedes',
+    }));
+  });
+
+  it('enforces the non-geographic relational visualization contract', () => {
+    expect(mapStateSchema.safeParse({
+      id: 'relational-test',
+      name: 'Relational test',
+      worldspaceId: 'cosmos',
+      presentation: 'relational',
+      terrainTextureAsset: 'field.png',
+      terrainHeightAsset: 'height.png',
+      interpretationNote: 'Diagram only.',
+      geometryIds: [],
+    }).success).toBe(false);
+    expect(spatialStateSchema.safeParse({
+      id: 'relational-placement-test',
+      entityId: 'subject',
+      eraId: 'cosmic-origins',
+      worldspaceId: 'cosmos',
+      geometryId: 'subject-point',
+      placementKind: 'relational',
+      geographicCertainty: 'unknown',
+      sourceIds: [],
+    }).success).toBe(false);
+    expect(spatialStateSchema.safeParse({
+      id: 'relational-geography-test',
+      entityId: 'subject',
+      eraId: 'cosmic-origins',
+      worldspaceId: 'cosmos',
+      geometryId: 'subject-point',
+      placementKind: 'relational',
+      geographicCertainty: 'exact',
+      sourceIds: [],
+      editorNote: 'Diagram only.',
+    }).success).toBe(false);
+  });
+
   it('paces each guided-history pane for slow narration', () => {
     const data = loadDataset();
-    const guide = data.storyGuides.find((item) => item.id === 'black-empire-guided-history')!;
-    for (const nodeId of guide.nodeIds) {
-      const node = data.storyNodes.find((item) => item.id === nodeId)!;
-      const words = node.narration.trim().split(/\s+/).length;
-      const narrationMs = Math.round(((words / 82) * 60_000) / 500) * 500 + 5_000;
-      expect(node.durationMs).toBeGreaterThanOrEqual(narrationMs);
+    for (const guideId of ['black-empire-guided-history', 'cosmic-origins-guided-history']) {
+      const guide = data.storyGuides.find((item) => item.id === guideId)!;
+      for (const nodeId of guide.nodeIds) {
+        const node = data.storyNodes.find((item) => item.id === nodeId)!;
+        const words = node.narration.trim().split(/\s+/).length;
+        const narrationMs = Math.round(((words / 82) * 60_000) / 500) * 500 + 5_000;
+        expect(node.durationMs).toBeGreaterThanOrEqual(narrationMs);
+      }
     }
   });
 

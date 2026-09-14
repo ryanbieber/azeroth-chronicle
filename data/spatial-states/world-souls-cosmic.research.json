@@ -1,0 +1,12 @@
+{
+  "id": "world-souls-cosmic-research",
+  "entityId": "world-souls",
+  "eraId": "cosmic-origins",
+  "worldspaceId": "cosmos",
+  "geometryId": "world-souls-relational-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "Narrative anchor connecting the physical universe to the awakening of titans; it does not represent one specific world.",
+  "labelPriority": 92
+}

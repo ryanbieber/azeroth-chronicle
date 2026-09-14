@@ -1,0 +1,9 @@
+{
+  "id": "old-gods-scattered-event-claim",
+  "subjectId": "old-gods-scattered",
+  "predicate": "event-summary",
+  "value": "The Void Lords cast innumerable Old Gods into the physical universe to seek a world-soul vulnerable to corruption.",
+  "citationIds": ["chronicle-v1-void-lords-old-gods"],
+  "confidence": "explicit",
+  "status": "active"
+}

@@ -130,6 +130,7 @@ export function validateDatasetReferences(
   for (const entity of dataset.entities) {
     requireFrom(entity.firstEraId, eraIds, `entities.${entity.id}.firstEraId`, 'era');
     requireFrom(entity.lastEraId, eraIds, `entities.${entity.id}.lastEraId`, 'era');
+    requireAllFrom(entity.featuredEraIds, eraIds, `entities.${entity.id}.featuredEraIds`, 'era');
     requireSources(entity.sourceIds, `entities.${entity.id}.sourceIds`);
     requireAllFrom(entity.claimIds, claimIds, `entities.${entity.id}.claimIds`, 'claim');
     requireFrom(entity.mapFigure?.anchorEntityId, entityIds, `entities.${entity.id}.mapFigure.anchorEntityId`, 'entity');

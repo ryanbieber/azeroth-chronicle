@@ -1,0 +1,8 @@
+{
+  "id": "old-gods-scattered-precedes-azeroth-arrival",
+  "fromId": "old-gods-scattered",
+  "toId": "old-gods-arrive",
+  "type": "precedes",
+  "citationIds": ["chronicle-v1-void-lords-old-gods", "chronicle-v1-coming-old-gods"],
+  "confidence": "explicit"
+}

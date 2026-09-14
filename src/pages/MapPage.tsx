@@ -6,7 +6,6 @@ import { adaptGeometry } from '../lib/map/geometryAdapter';
 import { useAtlasUrlState } from '../lib/map/useAtlasUrlState';
 import { useMapViewStore } from '../app/state/mapViewStore';
 import { useSelectionStore } from '../app/state/selectionStore';
-import { useStoryStore } from '../app/state/storyStore';
 import { EntityDossier } from '../components/dossier/EntityDossier';
 
 export function MapPage() {
@@ -16,8 +15,8 @@ export function MapPage() {
   const era = dataset.eras.find((item) => item.id === eraId) ?? dataset.eras[0];
   const requestedMapStateId = useMapViewStore((state) => state.mapStateId);
   const selection = useSelectionStore((state) => state.selection);
+  const selectionOrigin = useSelectionStore((state) => state.selectionOrigin);
   const select = useSelectionStore((state) => state.select);
-  const activeGuideId = useStoryStore((state) => state.guideId);
   const mapState = dataset.mapStates.find((item) => item.id === requestedMapStateId && item.worldspaceId === era?.worldspaceId)
     ?? dataset.mapStates.find((item) => item.id === era?.mapStateId);
   const worldspace = dataset.worldspaces.find((item) => item.id === era?.worldspaceId);
@@ -67,19 +66,14 @@ export function MapPage() {
           terrainAsset={mapState.terrainAsset}
           terrainTextureAsset={mapState.terrainTextureAsset}
           terrainHeightAsset={mapState.terrainHeightAsset}
-          cartographyLabel={era.id === 'black-empire' ? 'INTERPRETIVE CARTOGRAPHY' : 'ATLAS CARTOGRAPHY'}
+          presentation={mapState.presentation}
+          cartographyLabel={mapState.cartographyLabel}
         />
-        {era.id === 'black-empire' && (
-          <section className="map-legend" aria-label="Map key">
+        {mapState.interpretationNote && (
+          <section className="map-legend" aria-label="Interpretation note">
             <details>
-              <summary>Cartographer’s notes</summary>
-              <div className="map-legend-entries">
-                <span><i className="legend-swatch influence" /> Reconstructed influence</span>
-                <span><i className="legend-presence" /> Narrated power</span>
-                <span><i className="legend-marker" /> Source-located site</span>
-                <span><i className="legend-unknown">?</i> Unplaced conflict</span>
-              </div>
-              <p>Dashed forms are interpretive. Open a dossier for the source and certainty note.</p>
+              <summary>{mapState.presentation === 'relational' ? 'How to read this cosmography' : 'Cartographer’s note'}</summary>
+              <p>{mapState.interpretationNote}</p>
             </details>
           </section>
         )}
@@ -97,7 +91,7 @@ export function MapPage() {
             <StoryGuidePanel guideId={era.storyGuideId} showLauncher={false} />
           </div>
         )}
-        {selectedEntity && !activeGuideId && (
+        {selectedEntity && selectionOrigin !== 'story' && (
           <aside className="selection-overlay" aria-label="Selected atlas record">
             <button className="selection-close" type="button" onClick={() => select(null)} aria-label="Close dossier">×</button>
             <EntityDossier entity={selectedEntity} compact />

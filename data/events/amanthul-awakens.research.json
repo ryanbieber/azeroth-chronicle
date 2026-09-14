@@ -1,0 +1,17 @@
+{
+  "id": "amanthul-awakens",
+  "kind": "event",
+  "name": "Awakening of Aman’Thul",
+  "slug": "amanthul-awakens",
+  "eraId": "cosmic-origins",
+  "worldspaceId": "cosmos",
+  "date": { "precision": "relative", "label": "After worlds formed within the Great Dark", "relativeToId": "physical-universe-emerges" },
+  "summary": "Aman’Thul awoke from the world that had nurtured his spirit and began searching the cosmos for other nascent titans.",
+  "description": "The event name is an editorial label for the sequence described in Chronicle Volume 1.",
+  "participantEntityIds": ["amanthul", "world-souls"],
+  "causesEventIds": ["pantheon-gathers"],
+  "relationshipIds": ["physical-universe-precedes-amanthul", "amanthul-awakening-causes-pantheon"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["amanthul-awakens-event-claim"],
+  "contentStatus": "research"
+}

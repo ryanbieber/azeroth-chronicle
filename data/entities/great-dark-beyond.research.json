@@ -1,0 +1,14 @@
+{
+  "id": "great-dark-beyond",
+  "type": "location",
+  "name": "The Great Dark Beyond",
+  "slug": "great-dark-beyond",
+  "shortDescription": "The physical universe of innumerable worlds and stars described in Chronicle's cosmological account.",
+  "body": "Its point on the cosmography is a reading aid only. A universe has not been reduced to a literal map marker.",
+  "firstEraId": "cosmic-origins",
+  "featuredEraIds": ["cosmic-origins"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["great-dark-beyond-origin-claim"],
+  "tags": ["cosmology", "physical-universe"],
+  "contentStatus": "research"
+}

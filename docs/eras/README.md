@@ -2,7 +2,7 @@
 
 ## Purpose and editorial status
 
-This is the implementation and research backlog for the nine current navigation eras and the planned Cosmic Origins prologue. The era names and summaries are approved product taxonomy; every person, place, boundary, date, battle, route, outcome, and causal link listed below remains a **research candidate** until it has claim-level citations and human lore review.
+This is the implementation and research backlog for the ten current navigation eras, beginning with the Cosmic Origins prologue. The era names and summaries are approved product taxonomy; every person, place, boundary, date, battle, route, outcome, and causal link listed below remains a **research candidate** until it has claim-level citations and human lore review.
 
 Application records live in `data/eras`. Each era owns a separate record in `data/map-states`, because the atlas must not imply that Azeroth had one permanent geography. Reviewed people and factions will live in `data/entities`; events and battles in `data/events` and `data/battles`; time-aware placements in `data/spatial-states`; routes and source geometry in `data/routes` and `data/geometry`; narrated sequences in `data/stories`.
 
@@ -10,7 +10,7 @@ Application records live in `data/eras`. Each era owns a separate record in `dat
 
 | Order | Era ID | Primary atlas problem | Current state |
 | --- | --- | --- | --- |
-| 0 | `cosmic-origins` | Non-geographic cosmic forces and the formation of Azeroth | Planned; intentionally absent from navigation until its visualization and reviewed content exist |
+| 0 | `cosmic-origins` | Non-geographic cosmic forces and the formation of Azeroth | Public research-preview vertical slice implemented; human review pending |
 | 1 | `black-empire` | Primordial Azeroth, elemental domains, and Black Empire influence | Public research-preview vertical slice implemented; human review pending |
 | 2 | `ordering-of-azeroth` | Titan-forged campaigns and planetary reordering | Era shell and empty map state |
 | 3 | `ancient-civilizations` | Changing empires across primordial Kalimdor | Era shell and empty map state |
@@ -21,7 +21,7 @@ Application records live in `data/eras`. Each era owns a separate record in `dat
 | 8 | `age-of-adventurers` | Many campaigns and repeated map-state changes | Era shell and empty map state |
 | 9 | `modern-cosmic-age` | Fourth War through the evolving Worldsoul Saga | Era shell and empty map state |
 
-Build the eras in this order, but do not expose an empty Cosmic Origins shell ahead of the completed Black Empire preview. Finish the publication gate for one era before beginning production terrain for the next; reusable engine improvements may continue across eras.
+Build the eras in this order. Cosmic Origins and Black Empire now establish the reference patterns for relational and terrain eras respectively. Finish the publication gate for one era before beginning production terrain for the next; reusable engine improvements may continue across eras.
 
 ## Definition of done for every era
 
@@ -39,15 +39,17 @@ Chronicle Volumes 1–4 are the backbone, but volume boundaries are not era boun
 
 Era 9 extends beyond Chronicle Volume 4. Dragonflight and Worldsoul Saga material therefore requires first-party Blizzard sources and in-game citations rather than being attributed to Chronicle. Useful first-party research entry points include Blizzard's [Dragonflight overview](https://worldofwarcraft.blizzard.com/en-us/news/23785116), [Dragon Aspects history](https://worldofwarcraft.blizzard.com/en-us/news/23876527), [Visions of N'Zoth overview](https://worldofwarcraft.blizzard.com/en-us/news/23237904), and [Worldsoul Saga announcement](https://worldofwarcraft.blizzard.com/en-us/news/24025826). These links seed research only; they are not substitutes for claim-level citations.
 
-## Planned Era 0 — Cosmic Origins
+## Era 0 — Cosmic Origins
 
 **Historical question:** What powers and processes shaped the Warcraft cosmos, world-souls, and the conditions from which Azeroth emerged?
 
-**Release boundary:** this prologue is documented but intentionally omitted from `data/eras` and the public selector until it has a reviewed source boundary, a coherent guided sequence, and a purpose-built visualization. The published Black Empire preview must not open on an empty era shell.
+**Release boundary:** the prologue is present as a complete public research preview with a sourced boundary, coherent guided sequence, and purpose-built relational visualization. Human citation and perspective review still gates promotion beyond `research`.
 
 **Visualization direction:** use a non-geographic cosmic field and relationship-driven composition rather than painting Light, Shadow, Life, Death, Order, or Disorder onto Azeroth as territorial regions. The sequence should narrow from cosmic forces to the physical universe, world-souls, and finally Azeroth, handing off at the elemental imbalance. Do not force cosmic subjects into planetary coordinates.
 
 **Voice-over sequencing:** write and stabilize the transcript with the other eras, but defer recording and audio synchronization until every slice is complete.
+
+**Implemented research baseline:** ten indexed subjects, four events, four relationship edges, original cosmography and Aman’Thul figure, claim-level provenance, and a nine-pane tour. The detailed audit is in `docs/research/era-0-cosmic-origins.md`.
 
 ## Era 1 — Primordial Azeroth and the Black Empire
 
@@ -143,7 +145,7 @@ Era 9 extends beyond Chronicle Volume 4. Dragonflight and Worldsoul Saga materia
 
 **Animated tour spine:** launch-era world → Ahn'Qiraj → Outland → Northrend → Cataclysm state change → Pandaria → alternate Draenor → Legion invasion and resolution → wounded-world handoff to Era 9.
 
-**Completion emphasis:** define a sub-era data pattern before content production. The top selector remains nine eras; a secondary chapter control handles expansion-scale stories inside this era.
+**Completion emphasis:** define a sub-era data pattern before content production. The top selector remains ten eras; a secondary chapter control handles expansion-scale stories inside this era.
 
 ## Era 9 — The Modern Cosmic Age
 

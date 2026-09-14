@@ -14,6 +14,7 @@ export function EntityDossier({ entity, compact = false }: { entity: LoreEntity;
     && !/(map|geograph|placement|coordinate)/i.test(claim.predicate),
   );
   const relatedBattles = dataset.battles.filter((battle) => battle.participantEntityIds?.includes(entity.id));
+  const relationalStates = spatialStates.filter((state) => state.placementKind === 'relational');
 
   if (compact) {
     return (
@@ -59,12 +60,16 @@ export function EntityDossier({ entity, compact = false }: { entity: LoreEntity;
         <div><dt>Aliases</dt><dd>{entity.aliases?.join(', ') || 'None recorded'}</dd></div>
         <div><dt>Sources</dt><dd>{entity.sourceIds.length || 'None — placeholder only'}</dd></div>
         <div>
-          <dt>Mapped geography</dt>
-          <dd>{spatialStates.length > 0 ? spatialStates.map((state) => state.geographicCertainty).join(', ') : 'No exact map placement asserted'}</dd>
+          <dt>Atlas placement</dt>
+          <dd>{relationalStates.length > 0
+            ? 'Relational — not a geographic coordinate'
+            : spatialStates.length > 0
+              ? spatialStates.map((state) => state.geographicCertainty).join(', ')
+              : 'No exact map placement asserted'}</dd>
         </div>
       </dl>
       {spatialStates.map((state) => state.editorNote && (
-        <p key={state.id} className="provenance-note">Cartography note: {state.editorNote}</p>
+        <p key={state.id} className="provenance-note">{state.placementKind === 'relational' ? 'Cosmography note' : 'Cartography note'}: {state.editorNote}</p>
       ))}
       <ProvenancePanel subjectId={entity.id} />
     </article>

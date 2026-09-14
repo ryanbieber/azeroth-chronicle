@@ -10,7 +10,7 @@ test('production deep link restores the era and selection with curated layers an
   await expect(page.getByRole('combobox', { name: 'Choose era' })).toHaveValue('black-empire');
   await expect(page.getByText('Visible layers')).toHaveCount(0);
   await expect(page.getByText('Source filters')).toHaveCount(0);
-  await expect(page.getByRole('region', { name: 'Map key' })).toBeVisible();
+  await expect(page.getByRole('region', { name: 'Interpretation note' })).toBeVisible();
   await expect(page.getByRole('complementary')).toHaveCount(0);
   expect((await terrainResponses).every((response) => response.status() === 200)).toBe(true);
   const viewport = await page.evaluate(() => ({ pageHeight: document.documentElement.scrollHeight, viewportHeight: window.innerHeight }));
@@ -92,4 +92,25 @@ test('the curated Chronicle scope cannot be disabled by visitors', async ({ page
   await expect(dossier.getByText(/Favored direct force/)).toBeVisible();
   await expect(dossier.getByRole('link', { name: 'Read full dossier' })).toHaveCount(0);
   await expect(dossier.getByText('Claims and provenance')).toHaveCount(0);
+});
+
+test('Cosmic Origins uses relational cosmography and reader-opened character context', async ({ page }) => {
+  const fieldResponse = page.waitForResponse((response) => response.url().endsWith('/cosmic-field.research.webp'));
+  await page.goto('/map?era=cosmic-origins');
+
+  await expect(page.getByRole('combobox', { name: 'Choose era' })).toHaveValue('cosmic-origins');
+  await expect(page.locator('.map-caption')).toContainText('RELATIONAL COSMOGRAPHY · NOT TO SPATIAL SCALE');
+  await expect(page.getByRole('button', { name: 'Aman’Thul', exact: true })).toBeVisible();
+  expect((await fieldResponse).status()).toBe(200);
+
+  await page.getByRole('button', { name: 'Guided tour' }).click();
+  await expect(page.getByRole('heading', { name: 'Before time could be counted' })).toBeVisible();
+  await expect(page.getByRole('complementary', { name: 'Selected atlas record' })).toHaveCount(0);
+  await expect(page.getByText(/Story \d+ of \d+/)).toHaveCount(0);
+  await expect(page.locator('.battle-playback')).toHaveCount(0);
+
+  await page.getByRole('button', { name: 'Aman’Thul', exact: true }).click();
+  const dossier = page.getByRole('complementary', { name: 'Selected atlas record' });
+  await expect(dossier.getByRole('heading', { name: 'Aman’Thul' })).toBeVisible();
+  await expect(dossier.locator('.entity-overview-lede')).toContainText(/first titan to awaken/i);
 });

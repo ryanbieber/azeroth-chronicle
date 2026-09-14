@@ -1,0 +1,9 @@
+{
+  "id": "amanthul-awakens-event-claim",
+  "subjectId": "amanthul-awakens",
+  "predicate": "event-summary",
+  "value": "Aman’Thul awoke from his world as the first titan and began seeking others of his kind.",
+  "citationIds": ["chronicle-v1-titans"],
+  "confidence": "explicit",
+  "status": "active"
+}

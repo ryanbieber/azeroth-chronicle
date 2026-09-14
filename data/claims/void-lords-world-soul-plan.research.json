@@ -1,0 +1,9 @@
+{
+  "id": "void-lords-world-soul-plan-claim",
+  "subjectId": "void-lords",
+  "predicate": "world-soul-objective",
+  "value": "Unable to exert their full power directly in the physical universe, the Void Lords made the Old Gods and cast them through the Great Dark in search of a world-soul to corrupt.",
+  "citationIds": ["chronicle-v1-void-lords-old-gods"],
+  "confidence": "explicit",
+  "status": "active"
+}

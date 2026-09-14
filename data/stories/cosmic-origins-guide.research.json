@@ -1,0 +1,163 @@
+{
+  "guide": {
+    "id": "cosmic-origins-guided-history",
+    "eraId": "cosmic-origins",
+    "title": "Before the First World Was Ordered",
+    "description": "A continuous guided history from Chronicle's primordial cosmic powers through the birth of the universe, the awakening of the titans, and the design that sent the Old Gods toward worlds such as Azeroth.",
+    "nodeIds": [
+      "cosmic-origins-story-light-shadow",
+      "cosmic-origins-story-universe",
+      "cosmic-origins-story-nether",
+      "cosmic-origins-story-forces",
+      "cosmic-origins-story-world-souls",
+      "cosmic-origins-story-amanthul",
+      "cosmic-origins-story-pantheon",
+      "cosmic-origins-story-void-design",
+      "cosmic-origins-story-azeroth"
+    ],
+    "contentStatus": "research"
+  },
+  "nodes": [
+    {
+      "id": "cosmic-origins-story-light-shadow",
+      "guideId": "cosmic-origins-guided-history",
+      "title": "Before time could be counted",
+      "narration": "Before any world carried mountain, sea, or name, Chronicle begins with a boundless opposition. Light shone without measure, and beyond its reach gathered Shadow—the Void. They were not kingdoms upon a chart, but primordial powers, divided in nature and bound within the first telling of the cosmos.",
+      "durationMs": 42500,
+      "entityIds": ["light-and-shadow"],
+      "optionalExploreEntityIds": ["light-and-shadow"],
+      "camera": { "position": [-3.9, 6.4, 6.2], "target": [-3.4, 0, -1.7], "durationMs": 1200 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "cosmic-origins-map-research" },
+        { "type": "highlight_entity", "entityId": "light-and-shadow" }
+      ],
+      "nextNodeIds": ["cosmic-origins-story-universe"]
+    },
+    {
+      "id": "cosmic-origins-story-universe",
+      "guideId": "cosmic-origins-guided-history",
+      "title": "The Great Dark opens",
+      "narration": "Where Light and Void pressed against one another, their conflict broke the stillness. From that violence came the physical universe: the Great Dark Beyond, immense and cold, kindled with newborn stars. Here at last were distance and matter, though no mortal witness stood beneath those first and ancient fires.",
+      "durationMs": 42500,
+      "eventIds": ["physical-universe-emerges"],
+      "entityIds": ["great-dark-beyond", "light-and-shadow"],
+      "optionalExploreEntityIds": ["great-dark-beyond"],
+      "camera": { "position": [-2.3, 6.7, 6.5], "target": [-1.8, 0, -0.8], "durationMs": 1200 },
+      "visualActions": [
+        { "type": "highlight_entity", "entityId": "great-dark-beyond" },
+        { "type": "show_relationships", "relationshipIds": ["physical-universe-precedes-amanthul"] }
+      ],
+      "previousNodeId": "cosmic-origins-story-light-shadow",
+      "nextNodeIds": ["cosmic-origins-story-nether"]
+    },
+    {
+      "id": "cosmic-origins-story-nether",
+      "guideId": "cosmic-origins-guided-history",
+      "title": "A storm beside creation",
+      "narration": "Yet creation did not settle into silence. Unstable energies gathered into the Twisting Nether, a volatile astral realm interwoven with the Great Dark and unlike its ordered substance. The nearness shown here is only the nearness of one thought to the next; no source grants these realms a measured border.",
+      "durationMs": 44000,
+      "eventIds": ["physical-universe-emerges"],
+      "entityIds": ["twisting-nether"],
+      "optionalExploreEntityIds": ["twisting-nether"],
+      "camera": { "position": [-2.1, 5.6, 6.0], "target": [-1.7, 0, 1.4], "durationMs": 1100 },
+      "visualActions": [{ "type": "highlight_entity", "entityId": "twisting-nether" }],
+      "previousNodeId": "cosmic-origins-story-universe",
+      "nextNodeIds": ["cosmic-origins-story-forces"]
+    },
+    {
+      "id": "cosmic-origins-story-forces",
+      "guideId": "cosmic-origins-guided-history",
+      "title": "Powers that shape reality",
+      "narration": "Across this vast account stand six great forces. Light answers Shadow; Life answers Death; Order answers Disorder. Fire, air, earth, water, Spirit, and Decay move within the mortal realm beneath them. This is Chronicle's framework, offered here as a lantern for the story—not as the last word on every mystery.",
+      "durationMs": 45500,
+      "entityIds": ["cosmic-forces"],
+      "optionalExploreEntityIds": ["cosmic-forces"],
+      "camera": { "position": [-0.2, 7.0, 6.8], "target": [-0.2, 0, -2.2], "durationMs": 1200 },
+      "visualActions": [{ "type": "highlight_entity", "entityId": "cosmic-forces" }],
+      "previousNodeId": "cosmic-origins-story-nether",
+      "nextNodeIds": ["cosmic-origins-story-world-souls"]
+    },
+    {
+      "id": "cosmic-origins-story-world-souls",
+      "guideId": "cosmic-origins-guided-history",
+      "title": "Dreamers in the deep",
+      "narration": "Among the countless worlds, some bore a presence hidden far below their crust: a titan spirit, sleeping while ages passed above. Such world-souls grew slowly within their wandering homes. If one endured and awakened, it rose no longer as a world alone, but as a living titan of immeasurable power.",
+      "durationMs": 44500,
+      "entityIds": ["world-souls"],
+      "optionalExploreEntityIds": ["world-souls"],
+      "camera": { "position": [0.8, 5.7, 5.8], "target": [0.6, 0, 0.3], "durationMs": 1100 },
+      "visualActions": [{ "type": "highlight_entity", "entityId": "world-souls" }],
+      "previousNodeId": "cosmic-origins-story-forces",
+      "nextNodeIds": ["cosmic-origins-story-amanthul"]
+    },
+    {
+      "id": "cosmic-origins-story-amanthul",
+      "guideId": "cosmic-origins-guided-history",
+      "title": "The first titan wakes",
+      "narration": "First among them to wake was Aman’Thul. He looked into the lonely reaches of the Great Dark and understood that others of his kind might still dream within distant worlds. So the Highfather began his long search, crossing the newborn heavens and calling to the spirits he found sleeping there.",
+      "durationMs": 43000,
+      "eventIds": ["amanthul-awakens"],
+      "entityIds": ["amanthul"],
+      "optionalExploreEntityIds": ["amanthul"],
+      "camera": { "position": [2.1, 5.0, 5.1], "target": [1.7, 0, -2.0], "durationMs": 1000 },
+      "visualActions": [
+        { "type": "highlight_entity", "entityId": "amanthul" },
+        { "type": "show_relationships", "relationshipIds": ["amanthul-awakening-causes-pantheon"] }
+      ],
+      "previousNodeId": "cosmic-origins-story-world-souls",
+      "nextNodeIds": ["cosmic-origins-story-pantheon"]
+    },
+    {
+      "id": "cosmic-origins-story-pantheon",
+      "guideId": "cosmic-origins-guided-history",
+      "title": "The Pantheon gathers",
+      "narration": "One by one, awakened titans answered, until Aman’Thul no longer walked the cosmos alone. Together they became the Pantheon. Where they found worlds wounded or disordered, they labored to bring stability; and beyond each ordered horizon, they continued the search for brethren who had not yet opened their eyes.",
+      "durationMs": 44000,
+      "eventIds": ["pantheon-gathers"],
+      "entityIds": ["pantheon-of-order", "amanthul"],
+      "optionalExploreEntityIds": ["pantheon-of-order", "amanthul"],
+      "camera": { "position": [3.4, 5.8, 5.8], "target": [2.7, 0, -1.0], "durationMs": 1050 },
+      "visualActions": [
+        { "type": "highlight_faction", "factionId": "pantheon-of-order" },
+        { "type": "show_relationships", "relationshipIds": ["amanthul-awakening-causes-pantheon", "pantheon-precedes-old-gods-scattered"] }
+      ],
+      "previousNodeId": "cosmic-origins-story-amanthul",
+      "nextNodeIds": ["cosmic-origins-story-void-design"]
+    },
+    {
+      "id": "cosmic-origins-story-void-design",
+      "guideId": "cosmic-origins-guided-history",
+      "title": "A design cast into darkness",
+      "narration": "The Void Lords also sought the sleeping titans, but could not pour their full strength into the physical universe. In their hunger they shaped the Old Gods and hurled them blindly through the Great Dark. Their hope was dreadful and patient: that one might strike a world-soul and corrupt it before awakening.",
+      "durationMs": 45500,
+      "eventIds": ["old-gods-scattered"],
+      "entityIds": ["void-lords", "old-gods", "world-souls"],
+      "optionalExploreEntityIds": ["void-lords", "old-gods"],
+      "camera": { "position": [3.8, 5.4, 5.0], "target": [3.1, 0, 1.8], "durationMs": 1100 },
+      "visualActions": [
+        { "type": "highlight_faction", "factionId": "void-lords" },
+        { "type": "highlight_faction", "factionId": "old-gods" },
+        { "type": "show_relationships", "relationshipIds": ["old-gods-scattered-precedes-azeroth-arrival"] }
+      ],
+      "previousNodeId": "cosmic-origins-story-pantheon",
+      "nextNodeIds": ["cosmic-origins-story-azeroth"]
+    },
+    {
+      "id": "cosmic-origins-story-azeroth",
+      "guideId": "cosmic-origins-guided-history",
+      "title": "One world among the stars",
+      "narration": "Across that immeasurable dark turned a young world called Azeroth, bearing within it a titan spirit of extraordinary might. The Old Gods would find this world before the Pantheon understood its peril. There the cosmic design narrowed into earth, flame, storm, and sea—and the long age of the Black Empire drew near.",
+      "durationMs": 45000,
+      "entityIds": ["azeroth-world-soul", "old-gods"],
+      "optionalExploreEntityIds": ["azeroth-world-soul", "old-gods"],
+      "camera": { "position": [4.8, 5.2, 5.4], "target": [4.0, 0, 0.0], "durationMs": 1200 },
+      "visualActions": [
+        { "type": "highlight_entity", "entityId": "azeroth-world-soul" },
+        { "type": "show_relationships", "relationshipIds": ["old-gods-scattered-precedes-azeroth-arrival"] },
+        { "type": "toggle_layer", "layerId": "labels", "visible": true }
+      ],
+      "previousNodeId": "cosmic-origins-story-void-design",
+      "nextNodeIds": []
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "azeroth-world-soul-cosmic-research",
+  "entityId": "azeroth-world-soul",
+  "eraId": "cosmic-origins",
+  "worldspaceId": "cosmos",
+  "geometryId": "azeroth-world-soul-relational-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "Closing story anchor that narrows the cosmic account toward Azeroth; it does not locate Azeroth within a canonical star map.",
+  "labelPriority": 98
+}

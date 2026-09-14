@@ -46,6 +46,21 @@
     "contentStatus": "research"
   },
   {
+    "id": "cosmic-origins",
+    "type": "era",
+    "name": "Cosmic Origins",
+    "slug": "cosmic-origins",
+    "path": "/eras/cosmic-origins",
+    "eraId": "cosmic-origins",
+    "aliases": [],
+    "tags": [],
+    "description": "Chronicle's account begins with Light and Shadow, the birth of the physical universe and Twisting Nether, the awakening of world-souls, the gathering of the titan Pantheon, and the Void Lords' attempt to corrupt a nascent titan through the Old Gods.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "long-vigil-new-kingdoms",
     "type": "era",
     "name": "The Long Vigil and the New Kingdoms",
@@ -157,6 +172,27 @@
     "contentStatus": "research"
   },
   {
+    "id": "amanthul",
+    "type": "entity",
+    "name": "Aman’Thul",
+    "slug": "amanthul",
+    "path": "/locations/amanthul",
+    "eraId": "cosmic-origins",
+    "aliases": [
+      "Highfather of the Pantheon"
+    ],
+    "tags": [
+      "titan",
+      "pantheon",
+      "order"
+    ],
+    "description": "The first titan to awaken in Chronicle's account, who crossed the Great Dark in search of others of his kind.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "aqir",
     "type": "entity",
     "name": "Aqir",
@@ -181,7 +217,7 @@
     "name": "Azeroth's World-Soul",
     "slug": "azeroth-world-soul",
     "path": "/locations/azeroth-world-soul",
-    "eraId": "black-empire",
+    "eraId": "cosmic-origins",
     "aliases": [
       "Nascent Titan Azeroth"
     ],
@@ -217,6 +253,29 @@
     "contentStatus": "research"
   },
   {
+    "id": "cosmic-forces",
+    "type": "entity",
+    "name": "The Cosmic Forces",
+    "slug": "cosmic-forces",
+    "path": "/locations/cosmic-forces",
+    "eraId": "cosmic-origins",
+    "aliases": [],
+    "tags": [
+      "cosmology",
+      "light",
+      "void",
+      "life",
+      "death",
+      "order",
+      "disorder"
+    ],
+    "description": "Chronicle's cosmology arranges reality through opposed forces: Light and Shadow, Life and Death, and Order and Disorder.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "elemental-hosts",
     "type": "entity",
     "name": "The Elemental Hosts",
@@ -230,6 +289,46 @@
       "primordial"
     ],
     "description": "The innumerable air, fire, earth, and water spirits led by Azeroth's four Elemental Lords.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "great-dark-beyond",
+    "type": "entity",
+    "name": "The Great Dark Beyond",
+    "slug": "great-dark-beyond",
+    "path": "/locations/great-dark-beyond",
+    "eraId": "cosmic-origins",
+    "aliases": [],
+    "tags": [
+      "cosmology",
+      "physical-universe"
+    ],
+    "description": "The physical universe of innumerable worlds and stars described in Chronicle's cosmological account.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "light-and-shadow",
+    "type": "entity",
+    "name": "Light and Shadow",
+    "slug": "light-and-shadow",
+    "path": "/locations/light-and-shadow",
+    "eraId": "cosmic-origins",
+    "aliases": [
+      "Light and Void"
+    ],
+    "tags": [
+      "cosmology",
+      "light",
+      "shadow",
+      "void"
+    ],
+    "description": "Opposed primordial powers at the beginning of Chronicle's account of the Warcraft cosmos.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
     ],
@@ -282,7 +381,7 @@
     "name": "The Old Gods",
     "slug": "old-gods",
     "path": "/factions/old-gods",
-    "eraId": "black-empire",
+    "eraId": "cosmic-origins",
     "aliases": [],
     "tags": [
       "old-gods",
@@ -290,6 +389,28 @@
       "primordial"
     ],
     "description": "Void-linked entities that struck Azeroth, spread corruption through the world, and drove tendrils toward its core.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-dragon-aspects-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "pantheon-of-order",
+    "type": "entity",
+    "name": "The Pantheon of Order",
+    "slug": "pantheon-of-order",
+    "path": "/factions/pantheon-of-order",
+    "eraId": "cosmic-origins",
+    "aliases": [
+      "The Pantheon"
+    ],
+    "tags": [
+      "titans",
+      "pantheon",
+      "order"
+    ],
+    "description": "A company of awakened titans who traveled the Great Dark, ordering worlds and seeking more world-souls.",
     "sourceIds": [
       "warcraft-chronicle-volume-1",
       "blizzard-dragon-aspects-history"
@@ -357,6 +478,66 @@
     "contentStatus": "research"
   },
   {
+    "id": "twisting-nether",
+    "type": "entity",
+    "name": "The Twisting Nether",
+    "slug": "twisting-nether",
+    "path": "/locations/twisting-nether",
+    "eraId": "cosmic-origins",
+    "aliases": [],
+    "tags": [
+      "cosmology",
+      "astral-realm",
+      "disorder"
+    ],
+    "description": "A volatile astral realm formed from energies released around the creation of the physical universe.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "void-lords",
+    "type": "entity",
+    "name": "The Void Lords",
+    "slug": "void-lords",
+    "path": "/factions/void-lords",
+    "eraId": "cosmic-origins",
+    "aliases": [],
+    "tags": [
+      "void",
+      "shadow",
+      "old-gods",
+      "cosmology"
+    ],
+    "description": "Shadow-aligned beings who sought to corrupt a world-soul but could not directly manifest their full power in the physical universe.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "world-souls",
+    "type": "entity",
+    "name": "World-Souls",
+    "slug": "world-souls",
+    "path": "/locations/world-souls",
+    "eraId": "cosmic-origins",
+    "aliases": [
+      "Nascent Titans"
+    ],
+    "tags": [
+      "cosmology",
+      "titans",
+      "world-soul"
+    ],
+    "description": "Mysterious titan spirits that can form within some worlds and awaken after ages of growth.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "yshaarj-central-bastion",
     "type": "entity",
     "name": "Y'Shaarj's Central Bastion",
@@ -388,6 +569,21 @@
       "black-empire"
     ],
     "description": "The Old God identified by Chronicle as the greatest of the group, surrounded by the Black Empire's largest bastion.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "amanthul-awakens",
+    "type": "event",
+    "name": "Awakening of Aman’Thul",
+    "slug": "amanthul-awakens",
+    "path": "/events/amanthul-awakens",
+    "eraId": "cosmic-origins",
+    "aliases": [],
+    "tags": [],
+    "description": "Aman’Thul awoke from the world that had nurtured his spirit and began searching the cosmos for other nascent titans.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
     ],
@@ -433,6 +629,51 @@
     "aliases": [],
     "tags": [],
     "description": "A group of Old Gods struck Azeroth from the Great Dark, embedded themselves in different parts of the world, and extended their influence toward its core.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "old-gods-scattered",
+    "type": "event",
+    "name": "Scattering of the Old Gods",
+    "slug": "old-gods-scattered",
+    "path": "/events/old-gods-scattered",
+    "eraId": "cosmic-origins",
+    "aliases": [],
+    "tags": [],
+    "description": "The Void Lords made the Old Gods and cast them through the Great Dark, hoping that some would find and corrupt a world-soul.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "pantheon-gathers",
+    "type": "event",
+    "name": "Gathering of the Pantheon",
+    "slug": "pantheon-gathers",
+    "path": "/events/pantheon-gathers",
+    "eraId": "cosmic-origins",
+    "aliases": [],
+    "tags": [],
+    "description": "The awakened titans found one another, formed the Pantheon, and traveled onward to order worlds and seek more of their kind.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "physical-universe-emerges",
+    "type": "event",
+    "name": "Emergence of the Physical Universe",
+    "slug": "physical-universe-emerges",
+    "path": "/events/physical-universe-emerges",
+    "eraId": "cosmic-origins",
+    "aliases": [],
+    "tags": [],
+    "description": "The conflict between primordial Light and Void gave rise to the physical universe, while released energies formed the Twisting Nether.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
     ],

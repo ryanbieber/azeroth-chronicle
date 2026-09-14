@@ -1,0 +1,17 @@
+{
+  "id": "pantheon-gathers",
+  "kind": "event",
+  "name": "Gathering of the Pantheon",
+  "slug": "pantheon-gathers",
+  "eraId": "cosmic-origins",
+  "worldspaceId": "cosmos",
+  "date": { "precision": "relative", "label": "During Aman’Thul's search for other titans", "relativeToId": "amanthul-awakens" },
+  "summary": "The awakened titans found one another, formed the Pantheon, and traveled onward to order worlds and seek more of their kind.",
+  "description": "The event name is an editorial label for the Pantheon's formation in Chronicle Volume 1.",
+  "participantEntityIds": ["amanthul", "pantheon-of-order", "world-souls"],
+  "causedByEventIds": ["amanthul-awakens"],
+  "relationshipIds": ["amanthul-awakening-causes-pantheon", "pantheon-precedes-old-gods-scattered"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["pantheon-gathers-event-claim"],
+  "contentStatus": "research"
+}

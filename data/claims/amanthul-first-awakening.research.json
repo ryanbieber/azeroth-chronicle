@@ -1,0 +1,9 @@
+{
+  "id": "amanthul-first-awakening-claim",
+  "subjectId": "amanthul",
+  "predicate": "awakening-order",
+  "value": "Aman’Thul was the first titan to awaken in Chronicle's account.",
+  "citationIds": ["chronicle-v1-titans"],
+  "confidence": "explicit",
+  "status": "active"
+}

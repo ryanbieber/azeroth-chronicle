@@ -65,6 +65,9 @@ export interface MapState {
   id: EntityId;
   name: string;
   worldspaceId: EntityId;
+  presentation?: 'terrain' | 'relational';
+  cartographyLabel?: string;
+  interpretationNote?: string;
   terrainAsset?: string;
   terrainTextureAsset?: string;
   terrainHeightAsset?: string;
@@ -110,6 +113,7 @@ export interface LoreEntity {
   body?: string;
   firstEraId?: EntityId;
   lastEraId?: EntityId;
+  featuredEraIds?: EntityId[];
   sourceIds: EntityId[];
   claimIds?: EntityId[];
   tags?: string[];
@@ -128,6 +132,7 @@ export interface SpatialState {
   worldspaceId: EntityId;
   geometryId?: EntityId;
   position?: [number, number, number];
+  placementKind?: 'geographic' | 'relational';
   geographicCertainty: GeographicCertainty;
   sourceIds: EntityId[];
   editorNote?: string;

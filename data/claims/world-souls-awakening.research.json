@@ -1,0 +1,9 @@
+{
+  "id": "world-souls-awakening-claim",
+  "subjectId": "world-souls",
+  "predicate": "titan-development",
+  "value": "Some worlds contain titan spirits that grow for ages and may awaken as living titans.",
+  "citationIds": ["chronicle-v1-titans"],
+  "confidence": "explicit",
+  "status": "active"
+}

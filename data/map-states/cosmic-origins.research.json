@@ -1,0 +1,21 @@
+{
+  "id": "cosmic-origins-map-research",
+  "name": "Cosmic Origins — relational research cosmography",
+  "worldspaceId": "cosmos",
+  "presentation": "relational",
+  "cartographyLabel": "RELATIONAL COSMOGRAPHY · NOT TO SPATIAL SCALE",
+  "interpretationNote": "This field arranges subjects to clarify the narrated sequence and their relationships. Position, direction, distance, and size are editorial composition—not canonical cosmic geography.",
+  "terrainTextureAsset": "textures/cosmos/cosmic-origins-map-research/cosmic-field.research.webp",
+  "geometryIds": [
+    "light-and-shadow-relational-research",
+    "great-dark-beyond-relational-research",
+    "twisting-nether-relational-research",
+    "cosmic-forces-relational-research",
+    "world-souls-relational-research",
+    "amanthul-relational-research",
+    "pantheon-of-order-relational-research",
+    "void-lords-relational-research",
+    "old-gods-relational-research",
+    "azeroth-world-soul-relational-research"
+  ]
+}

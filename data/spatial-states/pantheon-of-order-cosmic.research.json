@@ -1,0 +1,12 @@
+{
+  "id": "pantheon-of-order-cosmic-research",
+  "entityId": "pantheon-of-order",
+  "eraId": "cosmic-origins",
+  "worldspaceId": "cosmos",
+  "geometryId": "pantheon-of-order-relational-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-dragon-aspects-history"],
+  "editorNote": "Relational anchor for the Pantheon's formation and work, not a headquarters or territorial claim.",
+  "labelPriority": 90
+}

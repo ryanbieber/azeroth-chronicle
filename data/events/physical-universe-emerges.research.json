@@ -1,0 +1,16 @@
+{
+  "id": "physical-universe-emerges",
+  "kind": "event",
+  "name": "Emergence of the Physical Universe",
+  "slug": "physical-universe-emerges",
+  "eraId": "cosmic-origins",
+  "worldspaceId": "cosmos",
+  "date": { "precision": "unknown", "label": "At the beginning of Chronicle's cosmic account" },
+  "summary": "The conflict between primordial Light and Void gave rise to the physical universe, while released energies formed the Twisting Nether.",
+  "description": "The event name is an editorial label for the creation sequence described in Chronicle Volume 1; it is not presented as a formally named Warcraft event.",
+  "participantEntityIds": ["light-and-shadow", "great-dark-beyond", "twisting-nether"],
+  "relationshipIds": ["physical-universe-precedes-amanthul"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["physical-universe-emerges-event-claim"],
+  "contentStatus": "research"
+}

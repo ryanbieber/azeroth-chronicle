@@ -1,0 +1,12 @@
+{
+  "id": "void-lords-cosmic-research",
+  "entityId": "void-lords",
+  "eraId": "cosmic-origins",
+  "worldspaceId": "cosmos",
+  "geometryId": "void-lords-relational-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "Conceptual anchor for the Void Lords' design. It does not locate their realm or imply proximity to the Old Gods.",
+  "labelPriority": 89
+}

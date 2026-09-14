@@ -5,9 +5,9 @@
   "slug": "old-gods",
   "shortDescription": "Void-linked entities that struck Azeroth, spread corruption through the world, and drove tendrils toward its core.",
   "body": "The Era 1 account treats the Old Gods collectively except where Chronicle specifically identifies Y'Shaarj. Later sources name and distinguish additional Old Gods; those records should be introduced only with their own citations.",
-  "firstEraId": "black-empire",
+  "firstEraId": "cosmic-origins",
   "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-dragon-aspects-history"],
-  "claimIds": ["old-gods-arrival-claim"],
+  "claimIds": ["old-gods-cosmic-origin-claim", "old-gods-arrival-claim"],
   "tags": ["old-gods", "void", "primordial"],
   "contentStatus": "research"
 }

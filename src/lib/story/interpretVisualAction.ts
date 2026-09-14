@@ -22,7 +22,7 @@ export const defaultStoryActionPorts: StoryActionPorts = {
     useMapViewStore.getState().setMapState(null);
   },
   setLayer: (layerId, visible) => useLayerStore.getState().setLayer(layerId, visible),
-  selectBattle: (battleId) => useSelectionStore.getState().select({ kind: 'battle', id: battleId }),
+  selectBattle: (battleId) => useSelectionStore.getState().select({ kind: 'battle', id: battleId }, 'story'),
   showRoute: (routeId) => {
     useLayerStore.getState().setLayer('routes', true);
     useSceneEffectsStore.getState().showRoute(routeId);

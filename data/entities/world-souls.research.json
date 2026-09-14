@@ -1,0 +1,15 @@
+{
+  "id": "world-souls",
+  "type": "other",
+  "name": "World-Souls",
+  "slug": "world-souls",
+  "aliases": ["Nascent Titans"],
+  "shortDescription": "Mysterious titan spirits that can form within some worlds and awaken after ages of growth.",
+  "body": "The record describes Chronicle Volume 1's titan account. It does not assert that every world contains such a soul.",
+  "firstEraId": "cosmic-origins",
+  "featuredEraIds": ["cosmic-origins"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["world-souls-awakening-claim"],
+  "tags": ["cosmology", "titans", "world-soul"],
+  "contentStatus": "research"
+}

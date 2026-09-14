@@ -1,0 +1,15 @@
+{
+  "id": "light-and-shadow",
+  "type": "other",
+  "name": "Light and Shadow",
+  "slug": "light-and-shadow",
+  "aliases": ["Light and Void"],
+  "shortDescription": "Opposed primordial powers at the beginning of Chronicle's account of the Warcraft cosmos.",
+  "body": "This record keeps Chronicle Volume 1's creation account distinct from later cosmological perspectives. It does not claim that the diagram gives either power a physical location.",
+  "firstEraId": "cosmic-origins",
+  "featuredEraIds": ["cosmic-origins"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["light-shadow-tension-claim"],
+  "tags": ["cosmology", "light", "shadow", "void"],
+  "contentStatus": "research"
+}

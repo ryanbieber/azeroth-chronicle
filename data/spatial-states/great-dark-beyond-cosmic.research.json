@@ -1,0 +1,12 @@
+{
+  "id": "great-dark-beyond-cosmic-research",
+  "entityId": "great-dark-beyond",
+  "eraId": "cosmic-origins",
+  "worldspaceId": "cosmos",
+  "geometryId": "great-dark-beyond-relational-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "Narrative anchor for the physical universe; the Great Dark Beyond is not reduced to a point or located relative to other markers.",
+  "labelPriority": 94
+}

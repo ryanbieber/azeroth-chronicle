@@ -1,0 +1,9 @@
+{
+  "id": "great-dark-beyond-origin-claim",
+  "subjectId": "great-dark-beyond",
+  "predicate": "origin",
+  "value": "The physical universe called the Great Dark Beyond arose from the cosmic clash described in Chronicle's opening account.",
+  "citationIds": ["chronicle-v1-origins-universe"],
+  "confidence": "explicit",
+  "status": "active"
+}

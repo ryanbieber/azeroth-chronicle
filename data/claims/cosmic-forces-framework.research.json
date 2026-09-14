@@ -1,0 +1,10 @@
+{
+  "id": "cosmic-forces-framework-claim",
+  "subjectId": "cosmic-forces",
+  "predicate": "cosmological-framework",
+  "value": "Chronicle's chart pairs Light with Shadow, Life with Death, and Order with Disorder as six powers shaping reality.",
+  "citationIds": ["chronicle-v1-cosmology"],
+  "confidence": "explicit",
+  "status": "active",
+  "editorNote": "The project treats the Volume 1 chart as a sourced framework, not an uncontested omniscient diagram."
+}

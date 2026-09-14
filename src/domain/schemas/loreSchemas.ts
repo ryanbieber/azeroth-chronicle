@@ -22,12 +22,29 @@ export const mapStateSchema = z.object({
   id,
   name: z.string().min(1),
   worldspaceId: id,
+  presentation: z.enum(['terrain', 'relational']).optional(),
+  cartographyLabel: z.string().min(1).optional(),
+  interpretationNote: z.string().min(1).optional(),
   terrainAsset: z.string().optional(),
   terrainTextureAsset: z.string().optional(),
   terrainHeightAsset: z.string().optional(),
   geometryIds: z.array(id),
-}).refine((value) => !value.terrainHeightAsset || value.terrainTextureAsset, {
-  message: 'A terrain height map requires a terrain texture.',
+}).superRefine((value, context) => {
+  if (value.terrainHeightAsset && !value.terrainTextureAsset) {
+    context.addIssue({ code: 'custom', message: 'A terrain height map requires a terrain texture.' });
+  }
+  if (value.presentation === 'relational' && !value.terrainTextureAsset) {
+    context.addIssue({ code: 'custom', message: 'A relational map state requires an illustrated field texture.' });
+  }
+  if (value.presentation === 'relational' && value.terrainHeightAsset) {
+    context.addIssue({ code: 'custom', message: 'A relational map state cannot imply terrain with a height map.' });
+  }
+  if (value.presentation === 'relational' && value.terrainAsset) {
+    context.addIssue({ code: 'custom', message: 'A relational map state cannot use a terrain model.' });
+  }
+  if (value.presentation === 'relational' && !value.interpretationNote) {
+    context.addIssue({ code: 'custom', message: 'A relational map state requires an interpretation note.' });
+  }
 });
 
 export const spatialStateSchema = z.object({
@@ -37,19 +54,27 @@ export const spatialStateSchema = z.object({
   worldspaceId: id,
   geometryId: id.optional(),
   position: vec3.optional(),
+  placementKind: z.enum(['geographic', 'relational']).optional(),
   geographicCertainty,
   sourceIds: z.array(id),
   editorNote: z.string().optional(),
   labelPriority: z.number().int().min(0).optional(),
 }).superRefine((value, context) => {
-  if (value.geographicCertainty === 'unknown' && (value.geometryId || value.position)) {
+  const relational = value.placementKind === 'relational';
+  if (!relational && value.geographicCertainty === 'unknown' && (value.geometryId || value.position)) {
     context.addIssue({ code: 'custom', message: 'Unknown geography cannot have exact geometry or a position.' });
   }
-  if (value.geographicCertainty !== 'unknown' && !value.geometryId && !value.position) {
+  if (!relational && value.geographicCertainty !== 'unknown' && !value.geometryId && !value.position) {
     context.addIssue({ code: 'custom', message: 'Known or inferred geography requires geometry or a position.' });
   }
-  if (value.geographicCertainty === 'inferred' && !value.editorNote) {
+  if (!relational && value.geographicCertainty === 'inferred' && !value.editorNote) {
     context.addIssue({ code: 'custom', message: 'Inferred geography requires an editor note.' });
+  }
+  if (relational && !value.editorNote) {
+    context.addIssue({ code: 'custom', message: 'Relational placement requires an interpretation editor note.' });
+  }
+  if (relational && value.geographicCertainty !== 'unknown') {
+    context.addIssue({ code: 'custom', message: 'Relational placement must not assert geographic certainty.' });
   }
 });
 
@@ -132,6 +157,7 @@ export const loreEntitySchema = z.object({
   body: z.string().optional(),
   firstEraId: id.optional(),
   lastEraId: id.optional(),
+  featuredEraIds: z.array(id).optional(),
   sourceIds: z.array(id),
   claimIds: z.array(id).optional(),
   tags: z.array(z.string()).optional(),

@@ -1,0 +1,11 @@
+{
+  "id": "ragnaros-reemerges-at-blackrock", "kind": "event", "name": "Ragnaros Re-emerges at Blackrock", "slug": "ragnaros-reemerges-at-blackrock",
+  "eraId": "long-vigil-new-kingdoms", "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "At the end of the War of the Three Hammers", "relativeToId": "dwarven-succession-crisis" },
+  "summary": "A desperate Dark Iron summoning brought Ragnaros back into the world, devastated the southern mountains, and ended the dwarven war beneath a new volcanic power.",
+  "locationIds": ["thaurissan-city-ancient"], "participantEntityIds": ["dwarven-clans", "ragnaros"],
+  "causedByEventIds": ["war-of-the-three-hammers"],
+  "relationshipIds": ["three-hammers-causes-ragnaros-return", "ragnaros-participates-in-three-hammers-outcome"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-grim-batol-history"],
+  "claimIds": ["ragnaros-reemerges-event-claim"], "contentStatus": "research"
+}

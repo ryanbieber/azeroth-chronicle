@@ -1,0 +1,10 @@
+{
+  "id": "amani-defeated-troll-wars-event-claim",
+  "subjectId": "amani-defeated-in-troll-wars",
+  "predicate": "ended_the_war_with_a_decisive_allied_victory_and_reduced_amani_power",
+  "value": true,
+  "citationIds": ["chronicle-v1-arathor-troll-wars", "blizzard-thoradin-arathor-history", "blizzard-quelthalas-founding-history"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "The public summary avoids totalizing language that would erase the Amani's continued existence and agency."
+}

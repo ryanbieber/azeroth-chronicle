@@ -1,0 +1,11 @@
+{
+  "id": "rise-of-the-horde-draenor-corrupted-map-research",
+  "name": "Draenor during the Horde's rise — interpretive research state",
+  "worldspaceId": "draenor",
+  "presentation": "terrain",
+  "cartographyLabel": "INTERPRETIVE DRAENOR WAR AND CORRUPTION STATE",
+  "interpretationNote": "This state preserves intact Draenor while showing restrained environmental decline and broad campaign pressure. The routes are directional narrative reconstructions; no exact war front, clan border, or troop path is asserted.",
+  "terrainTextureAsset": "textures/draenor/rise-of-the-horde-draenor-corrupted-map-research/terrain-atlas.research.webp",
+  "terrainHeightAsset": "textures/draenor/rise-of-the-horde-draenor-before-map-research/terrain-height.research.webp",
+  "geometryIds": ["orc-clans-draenor-region-research", "draenei-draenor-region-research", "nerzhul-draenor-focus-research", "guldan-draenor-focus-research", "mannoroth-draenor-focus-research", "shadow-council-draenor-focus-research", "old-horde-draenor-focus-research", "shattrath-draenor-focus-research", "dark-portal-draenor-focus-research", "horde-draenor-campaign-route-research"]
+}

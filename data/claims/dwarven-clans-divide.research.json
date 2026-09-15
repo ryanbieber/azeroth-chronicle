@@ -1,0 +1,10 @@
+{
+  "id": "dwarven-clans-divide-claim",
+  "subjectId": "dwarven-clans",
+  "predicate": "fought_for_ironforge_and_separated_into_distinct_political_centers",
+  "value": true,
+  "citationIds": ["chronicle-v1-three-hammers", "blizzard-three-hammers-history"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "The generated visual balances the three clans and does not reconstruct named leaders."
+}

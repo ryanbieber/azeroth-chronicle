@@ -1,0 +1,15 @@
+{
+  "id": "amani-empire",
+  "type": "faction",
+  "name": "The Amani Empire",
+  "slug": "amani-empire",
+  "shortDescription": "The forest-troll power whose ancestral northern lands came into conflict with Quel'Thalas and later Arathor.",
+  "body": "This record presents the Amani as an organized people defending and contesting lands, not as anonymous obstacles in another kingdom's founding story. The influence area and generated group representation are interpretive.",
+  "firstEraId": "long-vigil-new-kingdoms",
+  "featuredEraIds": ["long-vigil-new-kingdoms"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-burning-crusade-story-so-far"],
+  "claimIds": ["amani-opposes-quelthalas-claim"],
+  "tags": ["amani", "forest-trolls", "zulaman"],
+  "mapVisual": { "asset": "images/subjects/long-vigil-new-kingdoms/amani-empire.research.webp", "scale": 0.9 },
+  "contentStatus": "research"
+}

@@ -71,9 +71,12 @@
     "eraId": "long-vigil-new-kingdoms",
     "aliases": [],
     "tags": [],
-    "description": "The night elves guard Kalimdor while Quel'Thalas, Arathor, the Seven Human Kingdoms, Khaz Modan, and other post-Sundering powers develop.",
+    "description": "The kaldorei begin the Long Vigil while migrations, alliances, wars, and political fragmentation establish Quel'Thalas, Arathor's successor kingdoms, and the divided powers of Khaz Modan.",
     "sourceIds": [
-      "warcraft-chronicle-volume-1"
+      "warcraft-chronicle-volume-1",
+      "blizzard-burning-crusade-story-so-far",
+      "blizzard-stromkar-thoradin",
+      "blizzard-grim-batol-history"
     ],
     "contentStatus": "research"
   },
@@ -148,9 +151,12 @@
     "eraId": "war-of-the-ancients",
     "aliases": [],
     "tags": [],
-    "description": "Queen Azshara, the Burning Legion's first invasion, the destruction of the Well of Eternity, and the shattering of primordial Kalimdor.",
+    "description": "Political choices around the Well enabled the Burning Legion's first invasion, drew defenders from across ancient Kalimdor, and ended with the Great Sundering.",
     "sourceIds": [
-      "warcraft-chronicle-volume-1"
+      "warcraft-chronicle-volume-1",
+      "blizzard-well-of-eternity-preview",
+      "blizzard-warbringers-azshara",
+      "blizzard-dragon-aspects-history"
     ],
     "contentStatus": "research"
   },
@@ -195,6 +201,26 @@
     "contentStatus": "research"
   },
   {
+    "id": "amani-empire",
+    "type": "entity",
+    "name": "The Amani Empire",
+    "slug": "amani-empire",
+    "path": "/factions/amani-empire",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [
+      "amani",
+      "forest-trolls",
+      "zulaman"
+    ],
+    "description": "The forest-troll power whose ancestral northern lands came into conflict with Quel'Thalas and later Arathor.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-burning-crusade-story-so-far"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "amanthul",
     "type": "entity",
     "name": "Aman’Thul",
@@ -233,6 +259,26 @@
     "description": "Resilient insectoid servants formed from the Old Gods' organic matter, first set to building the Black Empire and later drawn into a world-spanning war with the ancient troll powers.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "arathor",
+    "type": "entity",
+    "name": "Arathor",
+    "slug": "arathor",
+    "path": "/factions/arathor",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [
+      "humans",
+      "arathor",
+      "kingdom"
+    ],
+    "description": "The first great human nation, united under Thoradin and centered at Strom.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-stromkar-thoradin"
     ],
     "contentStatus": "research"
   },
@@ -297,6 +343,45 @@
     "contentStatus": "research"
   },
   {
+    "id": "burning-legion",
+    "type": "entity",
+    "name": "The Burning Legion",
+    "slug": "burning-legion",
+    "path": "/factions/burning-legion",
+    "eraId": "war-of-the-ancients",
+    "aliases": [],
+    "tags": [
+      "legion",
+      "demons",
+      "invasion"
+    ],
+    "description": "The demonic army that entered ancient Kalimdor through the Highborne portal and devastated the kaldorei empire.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-well-of-eternity-preview"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "cenarius",
+    "type": "entity",
+    "name": "Cenarius",
+    "slug": "cenarius",
+    "path": "/locations/cenarius",
+    "eraId": "war-of-the-ancients",
+    "aliases": [],
+    "tags": [
+      "wild-god",
+      "druidism",
+      "resistance"
+    ],
+    "description": "An ancient guardian of the wilds and Malfurion's teacher who joined the defense of Kalimdor against the Legion.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "cosmic-forces",
     "type": "entity",
     "name": "The Cosmic Forces",
@@ -335,6 +420,69 @@
     "description": "A reclusive nocturnal troll people whose migration toward the Well of Eternity became the beginning of the kaldorei story.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "dathremar-sunstrider",
+    "type": "entity",
+    "name": "Dath'Remar Sunstrider",
+    "slug": "dathremar-sunstrider",
+    "path": "/locations/dathremar-sunstrider",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [
+      "highborne",
+      "founder",
+      "quelthalas"
+    ],
+    "description": "The Highborne leader associated with the exile from Kalimdor and the founding of Quel'Thalas.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "dragon-soul",
+    "type": "entity",
+    "name": "The Dragon Soul",
+    "slug": "dragon-soul",
+    "path": "/locations/dragon-soul",
+    "eraId": "war-of-the-ancients",
+    "aliases": [
+      "Demon Soul"
+    ],
+    "tags": [
+      "artifact",
+      "dragons",
+      "betrayal"
+    ],
+    "description": "An artifact empowered by the Dragon Aspects and then turned by Neltharion against their alliance during the war.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-dragon-aspects-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "dwarven-clans",
+    "type": "entity",
+    "name": "The Dwarven Clans",
+    "slug": "dwarven-clans",
+    "path": "/factions/dwarven-clans",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [
+      "Bronzebeard, Wildhammer, and Dark Iron clans"
+    ],
+    "tags": [
+      "dwarves",
+      "ironforge",
+      "three-hammers"
+    ],
+    "description": "The three great dwarven clans whose succession struggle divided Ironforge and reshaped Khaz Modan.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-grim-batol-history"
     ],
     "contentStatus": "research"
   },
@@ -411,6 +559,126 @@
     "description": "The physical universe of innumerable worlds and stars described in Chronicle's cosmological account.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "grim-batol-ancient",
+    "type": "entity",
+    "name": "Grim Batol",
+    "slug": "grim-batol-ancient",
+    "path": "/locations/grim-batol-ancient",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [
+      "grim-batol",
+      "wildhammer",
+      "dwarves"
+    ],
+    "description": "The northern mountain stronghold established by the Wildhammers after their expulsion from Ironforge.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-grim-batol-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "highborne-exiles",
+    "type": "entity",
+    "name": "The Highborne Exiles",
+    "slug": "highborne-exiles",
+    "path": "/factions/highborne-exiles",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [
+      "highborne",
+      "exile",
+      "migration"
+    ],
+    "description": "The arcane-practicing Highborne who left Kalimdor and eventually established a new homeland in the east.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-burning-crusade-story-so-far"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "highborne",
+    "type": "entity",
+    "name": "The Highborne",
+    "slug": "highborne",
+    "path": "/factions/highborne",
+    "eraId": "ancient-civilizations",
+    "aliases": [],
+    "tags": [
+      "kaldorei",
+      "court",
+      "arcane",
+      "well-of-eternity"
+    ],
+    "description": "The privileged kaldorei arcanists around Azshara whose ritual at the Well opened the way for the Burning Legion.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-well-of-eternity-preview"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "hyjal-well-of-eternity",
+    "type": "entity",
+    "name": "The Second Well of Eternity",
+    "slug": "hyjal-well-of-eternity",
+    "path": "/locations/hyjal-well-of-eternity",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [
+      "hyjal",
+      "arcane",
+      "aftermath"
+    ],
+    "description": "The new arcane well created by Illidan upon Mount Hyjal after the Sundering.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "illidan-stormrage",
+    "type": "entity",
+    "name": "Illidan Stormrage",
+    "slug": "illidan-stormrage",
+    "path": "/locations/illidan-stormrage",
+    "eraId": "war-of-the-ancients",
+    "aliases": [],
+    "tags": [
+      "kaldorei",
+      "sorcerer",
+      "resistance"
+    ],
+    "description": "A gifted kaldorei sorcerer whose dangerous choices and knowledge of the Legion became part of the struggle at the Well.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-well-of-eternity-preview"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "ironforge-ancient",
+    "type": "entity",
+    "name": "Ironforge",
+    "slug": "ironforge-ancient",
+    "path": "/locations/ironforge-ancient",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [
+      "ironforge",
+      "dwarves",
+      "khaz-modan"
+    ],
+    "description": "The mountain city contested by the three dwarven clans during their succession war.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-grim-batol-history"
     ],
     "contentStatus": "research"
   },
@@ -517,6 +785,64 @@
     "contentStatus": "research"
   },
   {
+    "id": "long-vigil-kaldorei",
+    "type": "entity",
+    "name": "The Kaldorei of the Long Vigil",
+    "slug": "long-vigil-kaldorei",
+    "path": "/factions/long-vigil-kaldorei",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [
+      "kaldorei",
+      "long-vigil",
+      "kalimdor"
+    ],
+    "description": "The post-Sundering night-elven society that guarded Kalimdor and watched for the Legion's return.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "maelstrom",
+    "type": "entity",
+    "name": "The Maelstrom",
+    "slug": "maelstrom",
+    "path": "/locations/maelstrom",
+    "eraId": "war-of-the-ancients",
+    "aliases": [],
+    "tags": [
+      "sundering",
+      "ocean",
+      "well-of-eternity"
+    ],
+    "description": "The immense oceanic vortex left at the center of the world after the Well collapsed and the continents broke apart.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-well-of-eternity-preview"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "malfurion-stormrage",
+    "type": "entity",
+    "name": "Malfurion Stormrage",
+    "slug": "malfurion-stormrage",
+    "path": "/locations/malfurion-stormrage",
+    "eraId": "war-of-the-ancients",
+    "aliases": [],
+    "tags": [
+      "kaldorei",
+      "druid",
+      "resistance"
+    ],
+    "description": "A young druid whose bond with the natural world became central to opposing the Legion and closing the way through the Well.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "mogu-empire",
     "type": "entity",
     "name": "The Mogu Empire",
@@ -537,6 +863,48 @@
     "contentStatus": "research"
   },
   {
+    "id": "mount-hyjal-ancient",
+    "type": "entity",
+    "name": "Mount Hyjal",
+    "slug": "mount-hyjal-ancient",
+    "path": "/locations/mount-hyjal-ancient",
+    "eraId": "war-of-the-ancients",
+    "aliases": [],
+    "tags": [
+      "mount-hyjal",
+      "survivors",
+      "refuge"
+    ],
+    "description": "The mountain refuge reached by many survivors after the Sundering and a threshold into the Long Vigil.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "neltharion",
+    "type": "entity",
+    "name": "Neltharion the Earth-Warder",
+    "slug": "neltharion",
+    "path": "/locations/neltharion",
+    "eraId": "war-of-the-ancients",
+    "aliases": [
+      "The Earth-Warder"
+    ],
+    "tags": [
+      "dragon",
+      "aspect",
+      "dragon-soul",
+      "betrayal"
+    ],
+    "description": "The Dragon Aspect who turned the newly forged Dragon Soul against the allies gathered to defend Azeroth.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-dragon-aspects-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "neptulon",
     "type": "entity",
     "name": "Neptulon",
@@ -551,6 +919,46 @@
       "water"
     ],
     "description": "The Elemental Lord of water, portrayed as a patient strategist who struck divided rivals.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "night-elf-resistance",
+    "type": "entity",
+    "name": "The Night Elf Resistance",
+    "slug": "night-elf-resistance",
+    "path": "/factions/night-elf-resistance",
+    "eraId": "war-of-the-ancients",
+    "aliases": [],
+    "tags": [
+      "kaldorei",
+      "resistance",
+      "coalition"
+    ],
+    "description": "Kaldorei defenders and allied peoples who opposed Azshara's court and the Burning Legion during the War of the Ancients.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "nordrassil",
+    "type": "entity",
+    "name": "Nordrassil",
+    "slug": "nordrassil",
+    "path": "/locations/nordrassil",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [
+      "The World Tree"
+    ],
+    "tags": [
+      "world-tree",
+      "hyjal",
+      "long-vigil"
+    ],
+    "description": "The World Tree planted over the second Well of Eternity on Mount Hyjal.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
     ],
@@ -659,6 +1067,26 @@
     "contentStatus": "research"
   },
   {
+    "id": "quelthalas-ancient",
+    "type": "entity",
+    "name": "Quel'Thalas",
+    "slug": "quelthalas-ancient",
+    "path": "/factions/quelthalas-ancient",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [
+      "high-elves",
+      "kingdom",
+      "eastern-kingdoms"
+    ],
+    "description": "The high-elven kingdom founded in the northern Eastern Kingdoms around the Sunwell.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-burning-crusade-story-so-far"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "ragnaros",
     "type": "entity",
     "name": "Ragnaros",
@@ -679,6 +1107,104 @@
     "contentStatus": "research"
   },
   {
+    "id": "sargeras",
+    "type": "entity",
+    "name": "Sargeras",
+    "slug": "sargeras",
+    "path": "/locations/sargeras",
+    "eraId": "cosmic-origins",
+    "aliases": [],
+    "tags": [
+      "titan",
+      "burning-legion",
+      "portal"
+    ],
+    "description": "The distant master of the Burning Legion whom Azshara's Highborne sought to bring bodily into Azeroth through the Well.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-well-of-eternity-preview"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "seven-human-kingdoms",
+    "type": "entity",
+    "name": "The Seven Human Kingdoms",
+    "slug": "seven-human-kingdoms",
+    "path": "/factions/seven-human-kingdoms",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [
+      "humans",
+      "kingdoms",
+      "political-fragmentation"
+    ],
+    "description": "The sovereign human states that emerged from Arathor's long political fragmentation.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "strom",
+    "type": "entity",
+    "name": "Strom",
+    "slug": "strom",
+    "path": "/locations/strom",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [
+      "strom",
+      "arathor",
+      "human"
+    ],
+    "description": "The fortified center of Arathor and the seat associated with Thoradin's unified nation.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "sunwell-ancient",
+    "type": "entity",
+    "name": "The Sunwell",
+    "slug": "sunwell-ancient",
+    "path": "/locations/sunwell-ancient",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [
+      "sunwell",
+      "arcane",
+      "quelthalas"
+    ],
+    "description": "The arcane fount created by the high elves at a convergence of ley energies in their new homeland.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-burning-crusade-story-so-far"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "thaurissan-city-ancient",
+    "type": "entity",
+    "name": "Thaurissan",
+    "slug": "thaurissan-city-ancient",
+    "path": "/locations/thaurissan-city-ancient",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [
+      "thaurissan",
+      "dark-iron",
+      "dwarves"
+    ],
+    "description": "The Dark Iron city established in the Redridge Mountains after the clan's expulsion from Ironforge.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-grim-batol-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "therazane",
     "type": "entity",
     "name": "Therazane",
@@ -695,6 +1221,26 @@
     "description": "The Elemental Lord of earth, protective of her children and defended by formidable mountain barriers.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "thoradin",
+    "type": "entity",
+    "name": "King Thoradin",
+    "slug": "thoradin",
+    "path": "/locations/thoradin",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [
+      "human",
+      "king",
+      "arathor"
+    ],
+    "description": "The human warlord who united tribes into Arathor and played a central role in the Troll Wars.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-stromkar-thoradin"
     ],
     "contentStatus": "research"
   },
@@ -734,6 +1280,26 @@
     "description": "A volatile astral realm formed from energies released around the creation of the physical universe.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "tyrande-whisperwind",
+    "type": "entity",
+    "name": "Tyrande Whisperwind",
+    "slug": "tyrande-whisperwind",
+    "path": "/locations/tyrande-whisperwind",
+    "eraId": "war-of-the-ancients",
+    "aliases": [],
+    "tags": [
+      "kaldorei",
+      "priestess",
+      "resistance"
+    ],
+    "description": "A priestess of Elune who fought with and sustained the resistance during the War of the Ancients.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-well-of-eternity-preview"
     ],
     "contentStatus": "research"
   },
@@ -854,6 +1420,26 @@
     "contentStatus": "research"
   },
   {
+    "id": "zin-azshari",
+    "type": "entity",
+    "name": "Zin-Azshari",
+    "slug": "zin-azshari",
+    "path": "/locations/zin-azshari",
+    "eraId": "ancient-civilizations",
+    "aliases": [],
+    "tags": [
+      "capital",
+      "kaldorei",
+      "well-of-eternity"
+    ],
+    "description": "Azshara's capital at the shores of the Well of Eternity and the center of the Highborne portal ritual.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-well-of-eternity-preview"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "zuldazar-ancient",
     "type": "entity",
     "name": "Ancient Zuldazar",
@@ -869,6 +1455,23 @@
     "description": "The highland center of the Zandalar tribe and a political heart of the earliest troll civilization represented in this era.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "amani-defeated-in-troll-wars",
+    "type": "event",
+    "name": "The Allied Powers Defeat the Amani",
+    "slug": "amani-defeated-in-troll-wars",
+    "path": "/events/amani-defeated-in-troll-wars",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [],
+    "description": "The combined high-elven and human campaign broke the immediate Amani offensive and sharply reduced the empire's regional power without ending the Amani people.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-burning-crusade-story-so-far",
+      "blizzard-stromkar-thoradin"
     ],
     "contentStatus": "research"
   },
@@ -912,6 +1515,21 @@
     "aliases": [],
     "tags": [],
     "description": "Separated aqir populations entrenched themselves in distant refuges, producing new northern and southern powers rather than restoring one united dominion.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "arathor-fragments-into-seven-kingdoms",
+    "type": "event",
+    "name": "Arathor Fragments into the Seven Kingdoms",
+    "slug": "arathor-fragments-into-seven-kingdoms",
+    "path": "/events/arathor-fragments-into-seven-kingdoms",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [],
+    "description": "Over generations, Arathor's distant city-states became sovereign powers and the unified human empire gave way to seven kingdoms.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
     ],
@@ -993,6 +1611,22 @@
     "contentStatus": "research"
   },
   {
+    "id": "dwarven-succession-crisis",
+    "type": "event",
+    "name": "The Dwarven Succession Crisis Opens",
+    "slug": "dwarven-succession-crisis",
+    "path": "/events/dwarven-succession-crisis",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [],
+    "description": "The death of Ironforge's high king broke a tense balance among the Bronzebeard, Wildhammer, and Dark Iron clans and opened a war for the mountain city.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-grim-batol-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "early-troll-powers-rise",
     "type": "event",
     "name": "The Early Troll Powers Rise",
@@ -1009,6 +1643,69 @@
     "contentStatus": "research"
   },
   {
+    "id": "great-sundering",
+    "type": "event",
+    "name": "The Great Sundering",
+    "slug": "great-sundering",
+    "path": "/events/great-sundering",
+    "eraId": "war-of-the-ancients",
+    "aliases": [],
+    "tags": [],
+    "description": "The Well's destruction tore primordial Kalimdor apart, drowned great reaches of land, and left the Maelstrom at the center of a new ocean.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-well-of-eternity-preview",
+      "blizzard-warbringers-azshara"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "highborne-exiled-from-kalimdor",
+    "type": "event",
+    "name": "The Highborne Are Exiled",
+    "slug": "highborne-exiled-from-kalimdor",
+    "path": "/events/highborne-exiled-from-kalimdor",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [],
+    "description": "Conflict over arcane practice ended with a Highborne population leaving Kalimdor under Dath'Remar's leadership.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "highborne-open-legion-way",
+    "type": "event",
+    "name": "The Highborne Open the Way",
+    "slug": "highborne-open-legion-way",
+    "path": "/events/highborne-open-legion-way",
+    "eraId": "war-of-the-ancients",
+    "aliases": [],
+    "tags": [],
+    "description": "Azshara's favored Highborne used the Well to establish a portal through which the Burning Legion could enter Azeroth.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-well-of-eternity-preview"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "illidan-creates-second-well",
+    "type": "event",
+    "name": "Illidan Creates a Second Well",
+    "slug": "illidan-creates-second-well",
+    "path": "/events/illidan-creates-second-well",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [],
+    "description": "Illidan used preserved water from the original Well to create a new arcane well upon Mount Hyjal and was imprisoned after the act was discovered.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "kaldorei-ascendance",
     "type": "event",
     "name": "The Kaldorei Ascend",
@@ -1020,6 +1717,22 @@
     "description": "Changed by long proximity to the Well, the emerging kaldorei mastered arcane power, built cities, and expanded across Kalimdor.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "legion-invasion-begins",
+    "type": "event",
+    "name": "The Burning Legion Enters Azeroth",
+    "slug": "legion-invasion-begins",
+    "path": "/events/legion-invasion-begins",
+    "eraId": "war-of-the-ancients",
+    "aliases": [],
+    "tags": [],
+    "description": "Demonic forces poured through the portal at Zin-Azshari and began destroying the empire whose court had admitted them.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-well-of-eternity-preview"
     ],
     "contentStatus": "research"
   },
@@ -1040,6 +1753,21 @@
     "contentStatus": "research"
   },
   {
+    "id": "long-vigil-begins",
+    "type": "event",
+    "name": "The Long Vigil Begins",
+    "slug": "long-vigil-begins",
+    "path": "/events/long-vigil-begins",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [],
+    "description": "Post-Sundering kaldorei society took up a long watch over Kalimdor and against the return of the Burning Legion.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "mogu-conquests",
     "type": "event",
     "name": "The Mogu Empire Expands",
@@ -1052,6 +1780,52 @@
     "sourceIds": [
       "warcraft-chronicle-volume-1",
       "blizzard-thunder-king-portrait"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "neltharion-betrays-allies",
+    "type": "event",
+    "name": "Neltharion Turns the Dragon Soul on His Allies",
+    "slug": "neltharion-betrays-allies",
+    "path": "/events/neltharion-betrays-allies",
+    "eraId": "war-of-the-ancients",
+    "aliases": [],
+    "tags": [],
+    "description": "After using the Dragon Soul against the Legion, Neltharion revealed his betrayal and shattered the unity of the dragonflights.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-dragon-aspects-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "night-elf-resistance-forms",
+    "type": "event",
+    "name": "Resistance Forms Against the Invasion",
+    "slug": "night-elf-resistance-forms",
+    "path": "/events/night-elf-resistance-forms",
+    "eraId": "war-of-the-ancients",
+    "aliases": [],
+    "tags": [],
+    "description": "Kaldorei who rejected Azshara's course organized a resistance in which Malfurion, Tyrande, and Illidan each played consequential roles.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "nordrassil-planted",
+    "type": "event",
+    "name": "Nordrassil Is Planted",
+    "slug": "nordrassil-planted",
+    "path": "/events/nordrassil-planted",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [],
+    "description": "A World Tree was planted over the new Well at Hyjal, binding the postwar refuge to a new charge of protection.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
     ],
     "contentStatus": "research"
   },
@@ -1176,6 +1950,71 @@
     "contentStatus": "research"
   },
   {
+    "id": "portal-at-well-collapses",
+    "type": "event",
+    "name": "The Portal at the Well Collapses",
+    "slug": "portal-at-well-collapses",
+    "path": "/events/portal-at-well-collapses",
+    "eraId": "war-of-the-ancients",
+    "aliases": [],
+    "tags": [],
+    "description": "The defenders disrupted the Legion's gateway before Sargeras could enter, and the unstable Well collapsed around the broken portal.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-well-of-eternity-preview"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "quelthalas-and-sunwell-founded",
+    "type": "event",
+    "name": "Quel'Thalas and the Sunwell Are Founded",
+    "slug": "quelthalas-and-sunwell-founded",
+    "path": "/events/quelthalas-and-sunwell-founded",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [],
+    "description": "The exiles established Quel'Thalas in the northern Eastern Kingdoms and created the Sunwell as the heart of their new civilization.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-burning-crusade-story-so-far"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "quelthalas-arathor-alliance-forms",
+    "type": "event",
+    "name": "Quel'Thalas and Arathor Form a Wartime Alliance",
+    "slug": "quelthalas-arathor-alliance-forms",
+    "path": "/events/quelthalas-arathor-alliance-forms",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [],
+    "description": "Facing an overwhelming Amani assault, Quel'Thalas allied with Arathor and shared limited arcane instruction in exchange for military aid.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-burning-crusade-story-so-far",
+      "blizzard-stromkar-thoradin"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "ragnaros-reemerges-at-blackrock",
+    "type": "event",
+    "name": "Ragnaros Re-emerges at Blackrock",
+    "slug": "ragnaros-reemerges-at-blackrock",
+    "path": "/events/ragnaros-reemerges-at-blackrock",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [],
+    "description": "A desperate Dark Iron summoning brought Ragnaros back into the world, devastated the southern mountains, and ended the dwarven war beneath a new volcanic power.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-grim-batol-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "spirit-imbalance",
     "type": "event",
     "name": "The Primordial Imbalance",
@@ -1187,6 +2026,37 @@
     "description": "As Azeroth's world-soul developed, it consumed much of the fifth element, Spirit, leaving the native elementals without its balancing influence.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "survivors-reach-hyjal",
+    "type": "event",
+    "name": "Survivors Reach Mount Hyjal",
+    "slug": "survivors-reach-hyjal",
+    "path": "/events/survivors-reach-hyjal",
+    "eraId": "war-of-the-ancients",
+    "aliases": [],
+    "tags": [],
+    "description": "Many surviving defenders reached the lands around Mount Hyjal, carrying the memory of the lost world into the beginning of the Long Vigil.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "thoradin-unites-arathor",
+    "type": "event",
+    "name": "Thoradin Unites Arathor",
+    "slug": "thoradin-unites-arathor",
+    "path": "/events/thoradin-unites-arathor",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [],
+    "description": "Thoradin brought scattered human tribes beneath one banner and established Arathor around the fortified center of Strom.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-stromkar-thoradin"
     ],
     "contentStatus": "research"
   },
@@ -1218,6 +2088,22 @@
     "description": "The keepers raised wards around Azeroth's bleeding wound until its arcane energies settled into the Well of Eternity.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "wild-gods-and-dragons-join",
+    "type": "event",
+    "name": "Ancient Allies Join the Defense",
+    "slug": "wild-gods-and-dragons-join",
+    "path": "/events/wild-gods-and-dragons-join",
+    "eraId": "war-of-the-ancients",
+    "aliases": [],
+    "tags": [],
+    "description": "Cenarius and other powers of ancient Kalimdor joined the defense, while the Dragon Aspects prepared a weapon intended to drive back the Legion.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-dragon-aspects-history"
     ],
     "contentStatus": "research"
   },
@@ -1314,6 +2200,56 @@
     "contentStatus": "research"
   },
   {
+    "id": "troll-wars",
+    "type": "battle",
+    "name": "The Troll Wars",
+    "slug": "troll-wars",
+    "path": "/battles/troll-wars",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [],
+    "description": "A multi-stage war in which the Amani offensive against Quel'Thalas drew the high elves and Arathor into a decisive alliance.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-burning-crusade-story-so-far",
+      "blizzard-stromkar-thoradin"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "war-of-the-ancients-conflict",
+    "type": "battle",
+    "name": "The War of the Ancients",
+    "slug": "war-of-the-ancients-conflict",
+    "path": "/battles/war-of-the-ancients-conflict",
+    "eraId": "war-of-the-ancients",
+    "aliases": [],
+    "tags": [],
+    "description": "A continent-spanning war in which the Burning Legion devastated ancient Kalimdor before a changing alliance disrupted the gateway at the Well.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-well-of-eternity-preview",
+      "blizzard-dragon-aspects-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "war-of-the-three-hammers",
+    "type": "battle",
+    "name": "The War of the Three Hammers",
+    "slug": "war-of-the-three-hammers",
+    "path": "/battles/war-of-the-three-hammers",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [],
+    "description": "A dwarven succession war drove the Wildhammer and Dark Iron clans from Ironforge, opened new centers, and ended when Ragnaros's return devastated the southern mountains.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-grim-batol-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "ancient-kalimdor-conflicts",
     "type": "campaign",
     "name": "Ancient Kalimdor Conflicts",
@@ -1360,6 +2296,24 @@
     "contentStatus": "research"
   },
   {
+    "id": "post-sundering-kingdom-conflicts",
+    "type": "campaign",
+    "name": "Conflicts of the Post-Sundering Kingdoms",
+    "slug": "post-sundering-kingdom-conflicts",
+    "path": "/eras/long-vigil-new-kingdoms",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [],
+    "description": "An atlas-scale grouping for the two best-supported conflicts that materially redistributed power during Era 5: the Troll Wars and the War of the Three Hammers.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-burning-crusade-story-so-far",
+      "blizzard-stromkar-thoradin",
+      "blizzard-grim-batol-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "titan-forged-ordering-campaign",
     "type": "campaign",
     "name": "The Titan-forged War for Azeroth",
@@ -1371,6 +2325,23 @@
     "description": "An editorial campaign grouping for the keeper-led war that broke the Black Empire and made containment and planetary repair possible.",
     "sourceIds": [
       "warcraft-chronicle-volume-1",
+      "blizzard-dragon-aspects-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "war-of-the-ancients-campaign",
+    "type": "campaign",
+    "name": "The War of the Ancients Campaign",
+    "slug": "war-of-the-ancients-campaign",
+    "path": "/eras/war-of-the-ancients",
+    "eraId": "war-of-the-ancients",
+    "aliases": [],
+    "tags": [],
+    "description": "A strategic grouping of the Legion invasion, the widening defense of Kalimdor, the betrayal of Neltharion, and the final convergence at the Well.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-well-of-eternity-preview",
       "blizzard-dragon-aspects-history"
     ],
     "contentStatus": "research"

@@ -1,0 +1,15 @@
+{
+  "id": "highborne-exiles",
+  "type": "faction",
+  "name": "The Highborne Exiles",
+  "slug": "highborne-exiles",
+  "shortDescription": "The arcane-practicing Highborne who left Kalimdor and eventually established a new homeland in the east.",
+  "body": "The record follows a migrating population across a long and incompletely measured journey. Its route is deliberately simplified, and the generated family-and-scholar group avoids presenting the migration as only a military expedition.",
+  "firstEraId": "long-vigil-new-kingdoms",
+  "featuredEraIds": ["long-vigil-new-kingdoms"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-burning-crusade-story-so-far"],
+  "claimIds": ["highborne-exile-claim"],
+  "tags": ["highborne", "exile", "migration"],
+  "mapVisual": { "asset": "images/subjects/long-vigil-new-kingdoms/highborne-exiles.research.webp", "scale": 0.9 },
+  "contentStatus": "research"
+}

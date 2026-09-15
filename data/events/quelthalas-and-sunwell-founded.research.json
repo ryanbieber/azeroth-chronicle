@@ -1,0 +1,12 @@
+{
+  "id": "quelthalas-and-sunwell-founded", "kind": "event", "name": "Quel'Thalas and the Sunwell Are Founded", "slug": "quelthalas-and-sunwell-founded",
+  "eraId": "long-vigil-new-kingdoms", "worldspaceId": "azeroth",
+  "date": { "precision": "approximate", "year": -6800, "label": "Approximately 6,800 years before the Dark Portal; working chronology" },
+  "summary": "The exiles established Quel'Thalas in the northern Eastern Kingdoms and created the Sunwell as the heart of their new civilization.",
+  "locationIds": ["sunwell-ancient"],
+  "participantEntityIds": ["highborne-exiles", "dathremar-sunstrider", "quelthalas-ancient", "amani-empire"],
+  "causedByEventIds": ["highborne-exiled-from-kalimdor"],
+  "relationshipIds": ["highborne-exile-causes-quelthalas", "quelthalas-controls-sunwell", "amani-opposes-quelthalas"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-burning-crusade-story-so-far"],
+  "claimIds": ["quelthalas-sunwell-founded-event-claim"], "contentStatus": "research"
+}

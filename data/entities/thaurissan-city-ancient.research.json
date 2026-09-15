@@ -1,0 +1,15 @@
+{
+  "id": "thaurissan-city-ancient",
+  "type": "location",
+  "name": "Thaurissan",
+  "slug": "thaurissan-city-ancient",
+  "shortDescription": "The Dark Iron city established in the Redridge Mountains after the clan's expulsion from Ironforge.",
+  "body": "This is the pre-volcanic city associated with the War of the Three Hammers, not a dossier for the later Blackrock Depths capital. Its point is approximate at world scale.",
+  "firstEraId": "long-vigil-new-kingdoms",
+  "lastEraId": "long-vigil-new-kingdoms",
+  "featuredEraIds": ["long-vigil-new-kingdoms"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-grim-batol-history"],
+  "claimIds": ["thaurissan-dark-iron-claim"],
+  "tags": ["thaurissan", "dark-iron", "dwarves"],
+  "contentStatus": "research"
+}

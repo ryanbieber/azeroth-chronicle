@@ -1,0 +1,10 @@
+{
+  "id": "thoradin-unites-arathor", "kind": "event", "name": "Thoradin Unites Arathor", "slug": "thoradin-unites-arathor",
+  "eraId": "long-vigil-new-kingdoms", "worldspaceId": "azeroth",
+  "date": { "precision": "approximate", "year": -2800, "label": "Approximately 2,800 years before the Dark Portal; working chronology" },
+  "summary": "Thoradin brought scattered human tribes beneath one banner and established Arathor around the fortified center of Strom.",
+  "locationIds": ["strom"], "participantEntityIds": ["thoradin", "arathor"],
+  "relationshipIds": ["thoradin-controls-arathor", "arathor-located-at-strom", "arathor-unification-precedes-troll-alliance"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-stromkar-thoradin"],
+  "claimIds": ["thoradin-unites-arathor-event-claim"], "contentStatus": "research"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "long-vigil-new-kingdoms-early-map-research",
+  "name": "The first Long Vigil — interpretive early state",
+  "worldspaceId": "azeroth",
+  "presentation": "terrain",
+  "cartographyLabel": "INTERPRETIVE EARLY POST-SUNDERING STATE",
+  "interpretationNote": "This state inherits the separate post-Sundering terrain from Era 4 and concentrates on Hyjal. Character points are narrative anchors; the map does not imply that the postwar kaldorei or their leaders remained at one permanent coordinate.",
+  "terrainTextureAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-atlas.research.webp",
+  "terrainHeightAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-height.research.webp",
+  "geometryIds": [
+    "maelstrom-aftermath-focus-research",
+    "hyjal-era-five-focus-research", "hyjal-second-well-focus-research", "nordrassil-focus-research",
+    "long-vigil-kaldorei-focus-research", "malfurion-long-vigil-focus-research",
+    "tyrande-long-vigil-focus-research", "illidan-long-vigil-focus-research"
+  ]
+}

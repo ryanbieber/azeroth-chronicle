@@ -1,0 +1,11 @@
+{
+  "id": "draenor",
+  "name": "Draenor",
+  "slug": "draenor",
+  "coordinateSystem": {
+    "width": 10000,
+    "height": 10000,
+    "origin": "bottom-left",
+    "units": "atlas-units"
+  }
+}

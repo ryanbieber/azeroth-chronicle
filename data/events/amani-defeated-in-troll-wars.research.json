@@ -1,0 +1,11 @@
+{
+  "id": "amani-defeated-in-troll-wars", "kind": "event", "name": "The Allied Powers Defeat the Amani", "slug": "amani-defeated-in-troll-wars",
+  "eraId": "long-vigil-new-kingdoms", "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "At the conclusion of the Troll Wars", "relativeToId": "quelthalas-arathor-alliance-forms" },
+  "summary": "The combined high-elven and human campaign broke the immediate Amani offensive and sharply reduced the empire's regional power without ending the Amani people.",
+  "participantEntityIds": ["amani-empire", "quelthalas-ancient", "arathor", "thoradin"],
+  "causedByEventIds": ["quelthalas-arathor-alliance-forms", "troll-wars"],
+  "relationshipIds": ["troll-wars-causes-amani-defeat", "troll-victory-precedes-arathor-fragmentation"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-burning-crusade-story-so-far", "blizzard-stromkar-thoradin"],
+  "claimIds": ["amani-defeated-troll-wars-event-claim"], "contentStatus": "research"
+}

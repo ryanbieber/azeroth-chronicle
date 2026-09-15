@@ -1,0 +1,64 @@
+{
+  "id": "war-of-the-three-hammers",
+  "kind": "battle",
+  "name": "The War of the Three Hammers",
+  "slug": "war-of-the-three-hammers",
+  "eraId": "long-vigil-new-kingdoms",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "approximate", "year": -230, "label": "Approximately 230 years before the Dark Portal; working chronology" },
+  "summary": "A dwarven succession war drove the Wildhammer and Dark Iron clans from Ironforge, opened new centers, and ended when Ragnaros's return devastated the southern mountains.",
+  "description": "The dossier joins two connected phases of civil conflict at strategic scale. It does not treat Ironforge, Grim Batol, the Redridge front, and the volcanic aftermath as one exact battlefield.",
+  "locationIds": ["ironforge-ancient", "grim-batol-ancient", "thaurissan-city-ancient"],
+  "participantEntityIds": ["dwarven-clans", "ragnaros"],
+  "causedByEventIds": ["dwarven-succession-crisis"],
+  "causesEventIds": ["ragnaros-reemerges-at-blackrock"],
+  "relationshipIds": ["succession-crisis-causes-three-hammers", "three-hammers-precedes-clan-dispersal", "three-hammers-causes-ragnaros-return"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-grim-batol-history"],
+  "claimIds": ["three-hammers-battle-claim"],
+  "campaignId": "post-sundering-kingdom-conflicts",
+  "combatants": [{ "factionId": "dwarven-clans", "role": "participant" }],
+  "objectives": [{ "factionId": "dwarven-clans", "summary": "Competing clans sought control, survival, or revenge across Ironforge and the strongholds founded after the first expulsion." }],
+  "phases": [
+    {
+      "id": "ironforge-succession", "title": "One mountain loses its center",
+      "summary": "The high king's death breaks the balance among the three clans.", "durationMs": 6800,
+      "narration": "A mountain that had contained many loyalties could not contain their claims once its old center failed. Kinship became a line of battle beneath the stone.",
+      "camera": { "position": [2.5, 5.4, 4.8], "target": [2.6, 0, 0.9], "durationMs": 1000 },
+      "visualActions": [{ "type": "show_relationships", "relationshipIds": ["dwarven-clans-located-at-ironforge", "succession-crisis-causes-three-hammers"] }]
+    },
+    {
+      "id": "bronzebeard-holds-ironforge", "title": "Ironforge chooses a victor",
+      "summary": "The Bronzebeards retain the city while the Wildhammer and Dark Iron clans are expelled.", "durationMs": 7000,
+      "narration": "Victory kept one clan beneath the mountain and sent two others into landscapes where grievance would harden into new identities.",
+      "camera": { "position": [2.4, 5.8, 5.1], "target": [2.5, 0, 0.7], "durationMs": 1050 },
+      "visualActions": [{ "type": "show_route", "routeId": "dwarven-clan-dispersal" }]
+    },
+    {
+      "id": "separate-strongholds", "title": "Defeat becomes new kingdoms",
+      "summary": "The Wildhammers establish Grim Batol while the Dark Irons establish Thaurissan farther south.",
+      "routeId": "dwarven-clan-dispersal", "durationMs": 7100,
+      "narration": "Exile did not end either people. New halls rose north and south, and the old quarrel acquired distance without acquiring peace.",
+      "camera": { "position": [2.6, 6.5, 5.8], "target": [2.6, 0, 0.4], "durationMs": 1100 },
+      "visualActions": [{ "type": "show_relationships", "relationshipIds": ["three-hammers-precedes-clan-dispersal"] }]
+    },
+    {
+      "id": "dark-iron-return", "title": "Revenge opens two fronts",
+      "summary": "Dark Iron armies strike toward both Ironforge and Grim Batol and are driven back.", "durationMs": 7200,
+      "narration": "The war returned along two roads. Former rivals answered the same danger, and the armies of the deep were broken between the powers they had meant to defeat apart.",
+      "camera": { "position": [2.7, 6.4, 5.7], "target": [2.7, 0, 0.5], "durationMs": 1100 },
+      "visualActions": [{ "type": "show_route", "routeId": "dwarven-clan-dispersal" }]
+    },
+    {
+      "id": "firelord-return", "title": "The earth answers the last summons",
+      "summary": "A desperate summoning brings Ragnaros into the world and transforms the southern mountains.", "durationMs": 7600,
+      "narration": "At the edge of defeat, a call went downward into powers older than every dwarven throne. The answer ended the war by making the land itself more terrible than victory.",
+      "camera": { "position": [2.0, 5.1, 4.6], "target": [2.0, 0, 2.2], "durationMs": 1050 },
+      "visualActions": [{ "type": "show_relationships", "relationshipIds": ["three-hammers-causes-ragnaros-return", "ragnaros-participates-in-three-hammers-outcome"] }]
+    }
+  ],
+  "outcome": { "summary": "The Bronzebeards retained Ironforge, the Wildhammers and Dark Irons formed separate centers, and Ragnaros's return devastated the southern mountains and subjected surviving Dark Irons to a new power." },
+  "geographicCertainty": "unknown",
+  "geographicEditorNote": "This was a dispersed civil war across multiple strongholds and later fronts; the atlas therefore uses only an inferred dispersal route and approximate place markers.",
+  "importance": "major",
+  "contentStatus": "research"
+}

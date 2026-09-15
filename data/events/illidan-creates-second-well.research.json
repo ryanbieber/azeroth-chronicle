@@ -1,0 +1,11 @@
+{
+  "id": "illidan-creates-second-well", "kind": "event", "name": "Illidan Creates a Second Well", "slug": "illidan-creates-second-well",
+  "eraId": "long-vigil-new-kingdoms", "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "In the immediate aftermath of the Sundering", "relativeToId": "survivors-reach-hyjal" },
+  "summary": "Illidan used preserved water from the original Well to create a new arcane well upon Mount Hyjal and was imprisoned after the act was discovered.",
+  "locationIds": ["mount-hyjal-ancient", "hyjal-well-of-eternity"],
+  "participantEntityIds": ["illidan-stormrage", "malfurion-stormrage"],
+  "causedByEventIds": ["survivors-reach-hyjal"], "causesEventIds": ["nordrassil-planted"],
+  "relationshipIds": ["survivors-precede-second-well", "second-well-causes-nordrassil"],
+  "sourceIds": ["warcraft-chronicle-volume-1"], "claimIds": ["illidan-creates-second-well-event-claim"], "contentStatus": "research"
+}

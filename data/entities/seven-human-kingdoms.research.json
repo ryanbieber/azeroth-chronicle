@@ -1,0 +1,15 @@
+{
+  "id": "seven-human-kingdoms",
+  "type": "faction",
+  "name": "The Seven Human Kingdoms",
+  "slug": "seven-human-kingdoms",
+  "shortDescription": "The sovereign human states that emerged from Arathor's long political fragmentation.",
+  "body": "This aggregate record preserves the atlas-scale transition from one empire to several states without pretending that all seven separated on one date or shared one culture. Individual kingdom dossiers belong to later era production where they become causal actors.",
+  "firstEraId": "long-vigil-new-kingdoms",
+  "featuredEraIds": ["long-vigil-new-kingdoms", "rise-of-the-horde"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["seven-kingdoms-emerge-claim"],
+  "tags": ["humans", "kingdoms", "political-fragmentation"],
+  "mapVisual": { "asset": "images/subjects/long-vigil-new-kingdoms/arathor.research.webp", "scale": 0.82 },
+  "contentStatus": "research"
+}

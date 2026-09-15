@@ -1,0 +1,11 @@
+{
+  "id": "rise-of-the-horde-first-war-map-research",
+  "name": "Azeroth during the First War — interpretive campaign state",
+  "worldspaceId": "azeroth",
+  "presentation": "terrain",
+  "cartographyLabel": "INTERPRETIVE FIRST WAR CAMPAIGN STATE",
+  "interpretationNote": "The state uses inherited post-Sundering terrain and broad, phase-aware pressure rather than treating game missions as a surveyed campaign. The portal changes worldspace; it is not rendered as a geographic line between planets.",
+  "terrainTextureAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-atlas.research.webp",
+  "terrainHeightAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-height.research.webp",
+  "geometryIds": ["dark-portal-azeroth-focus-research", "stormwind-city-era-six-focus-research", "stormwind-kingdom-region-research", "old-horde-first-war-focus-research", "blackhand-first-war-focus-research", "medivh-first-war-focus-research", "lothar-first-war-focus-research", "first-war-advance-route-research"]
+}

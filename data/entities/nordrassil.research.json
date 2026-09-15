@@ -1,0 +1,15 @@
+{
+  "id": "nordrassil",
+  "type": "location",
+  "name": "Nordrassil",
+  "slug": "nordrassil",
+  "aliases": ["The World Tree"],
+  "shortDescription": "The World Tree planted over the second Well of Eternity on Mount Hyjal.",
+  "body": "Nordrassil marks the postwar answer to the danger beneath Hyjal and the beginning of a very different kaldorei order. The tree is represented by its terrain focus and accessible label rather than a generic troop marker.",
+  "firstEraId": "long-vigil-new-kingdoms",
+  "featuredEraIds": ["long-vigil-new-kingdoms"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["nordrassil-long-vigil-claim"],
+  "tags": ["world-tree", "hyjal", "long-vigil"],
+  "contentStatus": "research"
+}

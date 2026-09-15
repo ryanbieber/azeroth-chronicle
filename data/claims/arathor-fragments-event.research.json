@@ -1,0 +1,10 @@
+{
+  "id": "arathor-fragments-event-claim",
+  "subjectId": "arathor-fragments-into-seven-kingdoms",
+  "predicate": "transformed_one_human_empire_into_several_sovereign_kingdoms",
+  "value": true,
+  "citationIds": ["chronicle-v1-human-kingdoms"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "This is a prolonged political transition shown as a late time slice."
+}

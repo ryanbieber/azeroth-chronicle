@@ -10,6 +10,6 @@
   "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-well-of-eternity-preview"],
   "claimIds": ["highborne-open-portal-claim"],
   "tags": ["kaldorei", "court", "arcane", "well-of-eternity"],
-  "mapVisual": { "asset": "images/subjects/war-of-the-ancients/highborne.research.webp", "scale": 0.96 },
+  "mapVisual": { "asset": "images/subjects/war-of-the-ancients/highborne.research.webp", "scale": 0.84 },
   "contentStatus": "research"
 }

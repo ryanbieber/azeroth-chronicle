@@ -1,0 +1,9 @@
+{
+  "id": "arathor-fragments-into-seven-kingdoms", "kind": "event", "name": "Arathor Fragments into the Seven Kingdoms", "slug": "arathor-fragments-into-seven-kingdoms",
+  "eraId": "long-vigil-new-kingdoms", "worldspaceId": "azeroth",
+  "date": { "precision": "approximate", "year": -1200, "label": "By approximately 1,200 years before the Dark Portal; working chronology" },
+  "summary": "Over generations, Arathor's distant city-states became sovereign powers and the unified human empire gave way to seven kingdoms.",
+  "locationIds": ["strom"], "participantEntityIds": ["arathor", "seven-human-kingdoms"],
+  "relationshipIds": ["troll-victory-precedes-arathor-fragmentation", "arathor-transforms-into-seven-kingdoms"],
+  "sourceIds": ["warcraft-chronicle-volume-1"], "claimIds": ["arathor-fragments-event-claim"], "contentStatus": "research"
+}

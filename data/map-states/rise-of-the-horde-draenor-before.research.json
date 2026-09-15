@@ -1,0 +1,11 @@
+{
+  "id": "rise-of-the-horde-draenor-before-map-research",
+  "name": "Draenor before the Horde — interpretive research state",
+  "worldspaceId": "draenor",
+  "presentation": "terrain",
+  "cartographyLabel": "INTERPRETIVE DRAENOR BEFORE THE HORDE",
+  "interpretationNote": "This original world plate communicates an intact Draenor and broad coexistence of orc clans and draenei communities. Its coastline, ecology, influence areas, and story figures are reconstruction, not reproduced official cartography or exact borders.",
+  "terrainTextureAsset": "textures/draenor/rise-of-the-horde-draenor-before-map-research/terrain-atlas.research.webp",
+  "terrainHeightAsset": "textures/draenor/rise-of-the-horde-draenor-before-map-research/terrain-height.research.webp",
+  "geometryIds": ["orc-clans-draenor-region-research", "orc-clans-draenor-focus-research", "draenei-draenor-region-research", "draenei-draenor-focus-research", "shattrath-draenor-focus-research", "durotan-draenor-focus-research", "kiljaeden-draenor-focus-research"]
+}

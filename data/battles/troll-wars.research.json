@@ -1,0 +1,82 @@
+{
+  "id": "troll-wars",
+  "kind": "battle",
+  "name": "The Troll Wars",
+  "slug": "troll-wars",
+  "eraId": "long-vigil-new-kingdoms",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "approximate", "year": -2800, "label": "Approximately 2,800 years before the Dark Portal; working chronology" },
+  "summary": "A multi-stage war in which the Amani offensive against Quel'Thalas drew the high elves and Arathor into a decisive alliance.",
+  "description": "This dossier presents the political and strategic sequence rather than exact troop movements. The sources support an assault, alliance, transfer of arcane knowledge, and allied victory, but not a surveyed front line suitable for a single battle marker.",
+  "participantEntityIds": ["amani-empire", "quelthalas-ancient", "arathor", "thoradin"],
+  "causesEventIds": ["amani-defeated-in-troll-wars"],
+  "relationshipIds": ["amani-opposes-quelthalas", "arathor-allied-with-quelthalas", "troll-alliance-part-of-troll-wars", "troll-wars-causes-amani-defeat"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-burning-crusade-story-so-far", "blizzard-stromkar-thoradin"],
+  "claimIds": ["troll-wars-battle-claim"],
+  "campaignId": "post-sundering-kingdom-conflicts",
+  "combatants": [
+    { "factionId": "amani-empire", "role": "attacker" },
+    { "factionId": "quelthalas-ancient", "role": "defender" },
+    { "factionId": "arathor", "role": "participant", "commanderEntityIds": ["thoradin"] }
+  ],
+  "objectives": [
+    { "factionId": "amani-empire", "summary": "Break the high-elven occupation and recover control over contested ancestral lands." },
+    { "factionId": "quelthalas-ancient", "summary": "Preserve the kingdom and Sunwell against an overwhelming offensive." },
+    { "factionId": "arathor", "summary": "Honor the wartime compact and prevent Amani power from threatening the united human nation." }
+  ],
+  "phases": [
+    {
+      "id": "amani-offensive",
+      "title": "The northern war widens",
+      "summary": "Amani pressure grows into an assault that Quel'Thalas cannot safely contain alone.",
+      "durationMs": 7000,
+      "narration": "The forest war was not born upon an empty map. Two peoples claimed memory in the same northern lands, and the old contest returned with strength enough to threaten the kingdom around the Sunwell.",
+      "camera": { "position": [2.7, 5.8, 5.0], "target": [2.7, 0, -1.7], "durationMs": 1050 },
+      "visualActions": [{ "type": "show_relationships", "relationshipIds": ["amani-opposes-quelthalas"] }]
+    },
+    {
+      "id": "arathor-compact",
+      "title": "Need makes an alliance",
+      "summary": "Quel'Thalas seeks Arathor's aid and offers limited arcane instruction in return.",
+      "durationMs": 7200,
+      "narration": "Distance and distrust yielded to necessity. The high elves opened a guarded portion of their learning; Arathor committed the weight of a nation that had only recently learned to stand as one.",
+      "camera": { "position": [2.3, 6.3, 5.6], "target": [2.2, 0, -0.7], "durationMs": 1100 },
+      "visualActions": [{ "type": "show_relationships", "relationshipIds": ["arathor-allied-with-quelthalas", "amani-pressure-causes-alliance"] }]
+    },
+    {
+      "id": "human-magi-enter-war",
+      "title": "A new art enters human history",
+      "summary": "A limited company of humans trained in arcane magic joins the allied campaign.",
+      "durationMs": 7000,
+      "narration": "The exchange outlived the emergency that created it. Fire answered the forest host, and human history acquired a power whose consequences would reach far beyond this war.",
+      "camera": { "position": [2.5, 5.4, 4.8], "target": [2.4, 0, -1.1], "durationMs": 1000 },
+      "visualActions": [{ "type": "show_relationships", "relationshipIds": ["troll-alliance-part-of-troll-wars"] }]
+    },
+    {
+      "id": "allied-convergence",
+      "title": "Two powers converge",
+      "summary": "High-elven and Arathorian forces combine their strengths against the Amani campaign.",
+      "durationMs": 7300,
+      "narration": "Neither ally fought as an ornament to the other. One brought knowledge of the northern land and arcane war; the other brought numbers, cohesion, and Thoradin's command.",
+      "camera": { "position": [2.4, 6.6, 5.9], "target": [2.4, 0, -1.0], "durationMs": 1150 },
+      "visualActions": [{ "type": "show_relationships", "relationshipIds": ["arathor-allied-with-quelthalas"] }]
+    },
+    {
+      "id": "amani-power-broken",
+      "title": "Victory changes the north",
+      "summary": "The allies win decisively and Amani regional power is reduced, though the Amani endure.",
+      "durationMs": 7200,
+      "narration": "The offensive ended in defeat, but not in the disappearance of a people. The Amani endured with memory sharpened by loss, while their victors entered a season of expansion.",
+      "camera": { "position": [2.5, 6.8, 6.1], "target": [2.3, 0, -0.8], "durationMs": 1150 },
+      "visualActions": [{ "type": "show_relationships", "relationshipIds": ["troll-wars-causes-amani-defeat"] }]
+    }
+  ],
+  "outcome": {
+    "summary": "Quel'Thalas and Arathor defeated the immediate Amani campaign; Amani power was greatly reduced, the high-elven kingdom survived, and arcane practice took root among humans.",
+    "winnerFactionId": "arathor"
+  },
+  "geographicCertainty": "unknown",
+  "geographicEditorNote": "The war contained several movements and engagements. No single exact battlefield point or tactical route is asserted.",
+  "importance": "era_defining",
+  "contentStatus": "research"
+}

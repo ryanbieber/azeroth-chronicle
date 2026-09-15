@@ -1,0 +1,10 @@
+{
+  "id": "thaurissan-dark-iron-claim",
+  "subjectId": "thaurissan-city-ancient",
+  "predicate": "was_founded_by_the_dark_irons_after_expulsion_from_ironforge",
+  "value": true,
+  "citationIds": ["chronicle-v1-three-hammers", "blizzard-three-hammers-history"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "This record refers to the pre-eruption city and not later Blackrock Depths."
+}

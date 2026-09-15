@@ -1,0 +1,11 @@
+{
+  "id": "long-vigil-begins", "kind": "event", "name": "The Long Vigil Begins", "slug": "long-vigil-begins",
+  "eraId": "long-vigil-new-kingdoms", "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "After Nordrassil was established", "relativeToId": "nordrassil-planted" },
+  "summary": "Post-Sundering kaldorei society took up a long watch over Kalimdor and against the return of the Burning Legion.",
+  "locationIds": ["mount-hyjal-ancient", "nordrassil"],
+  "participantEntityIds": ["long-vigil-kaldorei", "malfurion-stormrage", "tyrande-whisperwind"],
+  "causedByEventIds": ["nordrassil-planted"],
+  "relationshipIds": ["nordrassil-precedes-long-vigil", "long-vigil-precedes-highborne-exile"],
+  "sourceIds": ["warcraft-chronicle-volume-1"], "claimIds": ["long-vigil-begins-event-claim"], "contentStatus": "research"
+}

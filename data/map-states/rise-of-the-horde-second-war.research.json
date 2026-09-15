@@ -1,0 +1,11 @@
+{
+  "id": "rise-of-the-horde-second-war-map-research",
+  "name": "Azeroth during the Second War — interpretive campaign state",
+  "worldspaceId": "azeroth",
+  "presentation": "terrain",
+  "cartographyLabel": "INTERPRETIVE SECOND WAR CAMPAIGN STATE",
+  "interpretationNote": "This late state shows the Alliance coalition, the Horde's broad northern offensive, Blackrock, and the return to the Dark Portal. Its regions and routes are interpretive strategic summaries, not exact national borders, fleet tracks, or troop movements.",
+  "terrainTextureAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-atlas.research.webp",
+  "terrainHeightAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-height.research.webp",
+  "geometryIds": ["dark-portal-azeroth-focus-research", "stormwind-city-era-six-focus-research", "lordaeron-era-six-focus-research", "blackrock-spire-era-six-focus-research", "alliance-lordaeron-region-research", "alliance-lordaeron-focus-research", "old-horde-second-war-focus-research", "orgrim-second-war-focus-research", "lothar-second-war-focus-research", "turalyon-second-war-focus-research", "second-war-horde-offensive-route-research", "second-war-alliance-counteroffensive-route-research"]
+}

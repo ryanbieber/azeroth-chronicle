@@ -239,6 +239,158 @@ describe('lore dataset', () => {
     }));
   });
 
+  it('contains a source-linked War of the Ancients slice with an irreversible world-state transition', () => {
+    const data = loadDataset();
+    const era = data.eras.find((item) => item.id === 'war-of-the-ancients')!;
+    const events = data.events.filter((item) => item.eraId === era.id);
+    const battles = data.battles.filter((item) => item.eraId === era.id);
+    const spatialStates = data.spatialStates.filter((item) => item.eraId === era.id);
+    const guide = data.storyGuides.find((item) => item.id === era.storyGuideId)!;
+    const nodes = guide.nodeIds.map((nodeId) => data.storyNodes.find((item) => item.id === nodeId)!);
+    const mapStateIds = [
+      'war-of-the-ancients-prewar-map-research',
+      'war-of-the-ancients-invasion-map-research',
+      'war-of-the-ancients-map-research',
+    ];
+    const mapStates = mapStateIds.map((id) => data.mapStates.find((item) => item.id === id)!);
+
+    expect(era.order).toBe(4);
+    expect(era.previousEraId).toBe('ancient-civilizations');
+    expect(era.nextEraId).toBe('long-vigil-new-kingdoms');
+    expect(events).toHaveLength(8);
+    expect(battles).toHaveLength(1);
+    expect(spatialStates).toHaveLength(15);
+    expect(guide.nodeIds).toHaveLength(12);
+    expect(mapStates.every((state) => state.presentation === 'terrain'
+      && Boolean(state.terrainTextureAsset)
+      && Boolean(state.terrainHeightAsset)
+      && Boolean(state.interpretationNote))).toBe(true);
+    expect(new Set(mapStates.map((state) => state.terrainTextureAsset))).toEqual(new Set([
+      'textures/azeroth/ancient-civilizations-map-research/terrain-atlas.research.webp',
+      'textures/azeroth/war-of-the-ancients-invasion-map-research/terrain-atlas.research.webp',
+      'textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-atlas.research.webp',
+    ]));
+    expect(mapStates.every((state) => {
+      const texture = state.terrainTextureAsset;
+      const height = state.terrainHeightAsset;
+      return Boolean(texture && height
+        && existsSync(resolve('public', texture))
+        && existsSync(resolve('public', height)));
+    })).toBe(true);
+    expect(nodes.slice(0, 3).every((node) => node.visualActions?.some((action) =>
+      action.type === 'set_map_state' && action.mapStateId === mapStateIds[0]))).toBe(true);
+    expect(nodes.slice(3, 9).every((node) => node.visualActions?.some((action) =>
+      action.type === 'set_map_state' && action.mapStateId === mapStateIds[1]))).toBe(true);
+    expect(nodes.slice(9).every((node) => node.visualActions?.some((action) =>
+      action.type === 'set_map_state' && action.mapStateId === mapStateIds[2]))).toBe(true);
+
+    const keyActorIds = [
+      'azshara', 'highborne', 'sargeras', 'burning-legion', 'night-elf-resistance',
+      'malfurion-stormrage', 'tyrande-whisperwind', 'illidan-stormrage', 'cenarius', 'neltharion',
+    ];
+    expect(keyActorIds.every((entityId) => {
+      const entity = data.entities.find((item) => item.id === entityId);
+      const asset = entity?.mapFigure?.asset ?? entity?.mapVisual?.asset;
+      return Boolean(asset && existsSync(resolve('public', asset)));
+    })).toBe(true);
+    expect(keyActorIds.every((entityId) => spatialStates.some((state) =>
+      state.entityId === entityId && Boolean(state.editorNote),
+    ))).toBe(true);
+    expect(battles[0]).toMatchObject({
+      id: 'war-of-the-ancients-conflict',
+      geographicCertainty: 'unknown',
+      campaignId: 'war-of-the-ancients-campaign',
+    });
+    expect(battles[0]?.geometryId).toBeUndefined();
+    expect([...events, ...battles].every((subject) =>
+      data.claims.some((claim) => claim.subjectId === subject.id && claim.citationIds.length > 0),
+    )).toBe(true);
+    expect(data.relationships).toContainEqual(expect.objectContaining({
+      id: 'portal-collapse-causes-sundering',
+      type: 'causes',
+    }));
+    expect(data.relationships).toContainEqual(expect.objectContaining({
+      id: 'survivors-precede-long-vigil',
+      type: 'precedes',
+    }));
+  });
+
+  it('contains a time-sliced Long Vigil and New Kingdoms research preview', () => {
+    const data = loadDataset();
+    const era = data.eras.find((item) => item.id === 'long-vigil-new-kingdoms')!;
+    const events = data.events.filter((item) => item.eraId === era.id);
+    const battles = data.battles.filter((item) => item.eraId === era.id);
+    const spatialStates = data.spatialStates.filter((item) => item.eraId === era.id);
+    const featuredEntities = data.entities.filter((item) => item.featuredEraIds?.includes(era.id));
+    const guide = data.storyGuides.find((item) => item.id === era.storyGuideId)!;
+    const nodes = guide.nodeIds.map((nodeId) => data.storyNodes.find((item) => item.id === nodeId)!);
+    const mapStateIds = [
+      'long-vigil-new-kingdoms-early-map-research',
+      'long-vigil-new-kingdoms-founding-map-research',
+      'long-vigil-new-kingdoms-map-research',
+    ];
+    const mapStates = mapStateIds.map((id) => data.mapStates.find((item) => item.id === id)!);
+
+    expect(era.order).toBe(5);
+    expect(era.previousEraId).toBe('war-of-the-ancients');
+    expect(era.nextEraId).toBe('rise-of-the-horde');
+    expect(featuredEntities).toHaveLength(21);
+    expect(events).toHaveLength(11);
+    expect(battles).toHaveLength(2);
+    expect(spatialStates).toHaveLength(22);
+    expect(guide.nodeIds).toHaveLength(14);
+    expect(mapStates.every((state) => state.presentation === 'terrain'
+      && Boolean(state.terrainTextureAsset)
+      && Boolean(state.terrainHeightAsset)
+      && Boolean(state.cartographyLabel)
+      && Boolean(state.interpretationNote))).toBe(true);
+    expect(new Set(mapStates.map((state) => state.terrainTextureAsset))).toEqual(new Set([
+      'textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-atlas.research.webp',
+    ]));
+    expect(mapStates.every((state) => {
+      const texture = state.terrainTextureAsset;
+      const height = state.terrainHeightAsset;
+      return Boolean(texture && height
+        && existsSync(resolve('public', texture))
+        && existsSync(resolve('public', height)));
+    })).toBe(true);
+    expect(nodes.slice(0, 4).every((node) => node.visualActions?.some((action) =>
+      action.type === 'set_map_state' && action.mapStateId === mapStateIds[0]))).toBe(true);
+    expect(nodes.slice(4, 10).every((node) => node.visualActions?.some((action) =>
+      action.type === 'set_map_state' && action.mapStateId === mapStateIds[1]))).toBe(true);
+    expect(nodes.slice(10).every((node) => node.visualActions?.some((action) =>
+      action.type === 'set_map_state' && action.mapStateId === mapStateIds[2]))).toBe(true);
+
+    const keyActorIds = [
+      'long-vigil-kaldorei', 'highborne-exiles', 'dathremar-sunstrider',
+      'quelthalas-ancient', 'amani-empire', 'arathor', 'thoradin',
+      'seven-human-kingdoms', 'dwarven-clans', 'ragnaros',
+    ];
+    expect(keyActorIds.every((entityId) => {
+      const entity = data.entities.find((item) => item.id === entityId);
+      const asset = entity?.mapFigure?.asset ?? entity?.mapVisual?.asset;
+      return Boolean(asset && existsSync(resolve('public', asset)));
+    })).toBe(true);
+    expect(keyActorIds.every((entityId) => spatialStates.some((state) =>
+      state.entityId === entityId
+      && state.placementKind === 'relational'
+      && state.geographicCertainty === 'unknown'
+      && Boolean(state.editorNote),
+    ))).toBe(true);
+    expect(battles.every((battle) => battle.geographicCertainty === 'unknown'
+      && battle.geometryId === undefined
+      && battle.campaignId === 'post-sundering-kingdom-conflicts')).toBe(true);
+    expect(data.routes.filter((route) => ['highborne-eastward-migration', 'dwarven-clan-dispersal'].includes(route.id))
+      .every((route) => route.geographicCertainty === 'inferred' && Boolean(route.editorNote))).toBe(true);
+    expect([...events, ...battles].every((subject) =>
+      data.claims.some((claim) => claim.subjectId === subject.id && claim.citationIds.length > 0),
+    )).toBe(true);
+    expect(data.relationships).toContainEqual(expect.objectContaining({
+      id: 'era-five-precedes-horde-rise',
+      type: 'precedes',
+    }));
+  });
+
   it('enforces the non-geographic relational visualization contract', () => {
     expect(mapStateSchema.safeParse({
       id: 'relational-test',
@@ -275,7 +427,14 @@ describe('lore dataset', () => {
 
   it('paces each guided-history pane for slow narration', () => {
     const data = loadDataset();
-    for (const guideId of ['black-empire-guided-history', 'cosmic-origins-guided-history', 'ordering-of-azeroth-guided-history']) {
+    for (const guideId of [
+      'black-empire-guided-history',
+      'cosmic-origins-guided-history',
+      'ordering-of-azeroth-guided-history',
+      'ancient-civilizations-guided-history',
+      'war-of-the-ancients-guided-history',
+      'long-vigil-new-kingdoms-guided-history',
+    ]) {
       const guide = data.storyGuides.find((item) => item.id === guideId)!;
       for (const nodeId of guide.nodeIds) {
         const node = data.storyNodes.find((item) => item.id === nodeId)!;

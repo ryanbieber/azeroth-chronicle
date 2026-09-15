@@ -1,0 +1,16 @@
+{
+  "id": "dwarven-clans",
+  "type": "faction",
+  "name": "The Dwarven Clans",
+  "slug": "dwarven-clans",
+  "aliases": ["Bronzebeard, Wildhammer, and Dark Iron clans"],
+  "shortDescription": "The three great dwarven clans whose succession struggle divided Ironforge and reshaped Khaz Modan.",
+  "body": "The collective record keeps the related clans visible together before showing their political dispersal. Its generated figure uses three balanced delegations and is symbolic rather than a literal battlefield formation.",
+  "firstEraId": "long-vigil-new-kingdoms",
+  "featuredEraIds": ["long-vigil-new-kingdoms"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-grim-batol-history"],
+  "claimIds": ["dwarven-clans-divide-claim"],
+  "tags": ["dwarves", "ironforge", "three-hammers"],
+  "mapVisual": { "asset": "images/subjects/long-vigil-new-kingdoms/dwarven-clans.research.webp", "scale": 0.9 },
+  "contentStatus": "research"
+}

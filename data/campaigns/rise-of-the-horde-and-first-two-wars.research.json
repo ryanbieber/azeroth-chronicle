@@ -1,0 +1,11 @@
+{
+  "id": "rise-of-the-horde-and-first-two-wars",
+  "name": "The Rise of the Horde and the First Two Wars",
+  "slug": "rise-of-the-horde-and-first-two-wars",
+  "eraId": "rise-of-the-horde",
+  "summary": "A cross-world strategic grouping from the Horde's formation and draenei war through the First and Second Wars, ending with the Old Horde's defeat and destruction of the original Dark Portal.",
+  "battleIds": ["first-war", "second-war"],
+  "routeIds": ["horde-draenor-campaign", "first-war-advance", "second-war-horde-offensive", "second-war-alliance-counteroffensive"],
+  "sourceIds": ["warcraft-chronicle-volume-2", "blizzard-rise-of-the-horde-library", "blizzard-burning-crusade-draenor-history", "blizzard-tides-of-darkness-library"],
+  "contentStatus": "research"
+}

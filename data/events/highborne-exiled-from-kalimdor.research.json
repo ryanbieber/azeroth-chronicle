@@ -1,0 +1,11 @@
+{
+  "id": "highborne-exiled-from-kalimdor", "kind": "event", "name": "The Highborne Are Exiled", "slug": "highborne-exiled-from-kalimdor",
+  "eraId": "long-vigil-new-kingdoms", "worldspaceId": "azeroth",
+  "date": { "precision": "approximate", "year": -7300, "label": "Approximately 7,300 years before the Dark Portal; working chronology" },
+  "summary": "Conflict over arcane practice ended with a Highborne population leaving Kalimdor under Dath'Remar's leadership.",
+  "locationIds": ["mount-hyjal-ancient"],
+  "participantEntityIds": ["highborne-exiles", "dathremar-sunstrider", "long-vigil-kaldorei"],
+  "causesEventIds": ["quelthalas-and-sunwell-founded"],
+  "relationshipIds": ["long-vigil-precedes-highborne-exile", "dathremar-participates-in-exile", "highborne-exile-causes-quelthalas"],
+  "sourceIds": ["warcraft-chronicle-volume-1"], "claimIds": ["highborne-exiled-event-claim"], "contentStatus": "research"
+}

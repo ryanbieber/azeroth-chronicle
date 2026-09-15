@@ -1,0 +1,10 @@
+{
+  "id": "troll-wars-alliance-event-claim",
+  "subjectId": "quelthalas-arathor-alliance-forms",
+  "predicate": "joined_quelthalas_and_arathor_against_the_amani_and_transferred_arcane_teaching",
+  "value": true,
+  "citationIds": ["chronicle-v1-arathor-troll-wars", "blizzard-quelthalas-founding-history"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "The atlas does not quantify the human magi beyond the source-backed limited teaching."
+}

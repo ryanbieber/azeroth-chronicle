@@ -1,0 +1,11 @@
+{
+  "id": "dwarven-succession-crisis", "kind": "event", "name": "The Dwarven Succession Crisis Opens", "slug": "dwarven-succession-crisis",
+  "eraId": "long-vigil-new-kingdoms", "worldspaceId": "azeroth",
+  "date": { "precision": "approximate", "year": -230, "label": "Approximately 230 years before the Dark Portal; working chronology" },
+  "summary": "The death of Ironforge's high king broke a tense balance among the Bronzebeard, Wildhammer, and Dark Iron clans and opened a war for the mountain city.",
+  "locationIds": ["ironforge-ancient"], "participantEntityIds": ["dwarven-clans"],
+  "causesEventIds": ["war-of-the-three-hammers"],
+  "relationshipIds": ["dwarven-clans-located-at-ironforge", "succession-crisis-causes-three-hammers"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-grim-batol-history"],
+  "claimIds": ["dwarven-succession-crisis-event-claim"], "contentStatus": "research"
+}

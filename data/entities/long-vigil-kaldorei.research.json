@@ -1,0 +1,15 @@
+{
+  "id": "long-vigil-kaldorei",
+  "type": "faction",
+  "name": "The Kaldorei of the Long Vigil",
+  "slug": "long-vigil-kaldorei",
+  "shortDescription": "The post-Sundering night-elven society that guarded Kalimdor and watched for the Legion's return.",
+  "body": "This collective record represents a long-lived society containing priestly, sentinel, druidic, and other responsibilities; it does not reduce ten thousand years to one permanent army. The generated group image is symbolic and interpretive.",
+  "firstEraId": "long-vigil-new-kingdoms",
+  "featuredEraIds": ["long-vigil-new-kingdoms"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["long-vigil-kaldorei-claim"],
+  "tags": ["kaldorei", "long-vigil", "kalimdor"],
+  "mapVisual": { "asset": "images/subjects/long-vigil-new-kingdoms/long-vigil-kaldorei.research.webp", "scale": 0.92 },
+  "contentStatus": "research"
+}

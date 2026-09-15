@@ -1,0 +1,10 @@
+{
+  "id": "strom-arathor-center-claim",
+  "subjectId": "strom",
+  "predicate": "served_as_the_fortified_center_of_arathor",
+  "value": true,
+  "citationIds": ["chronicle-v1-arathor-troll-wars"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "Its point is approximate at full-world scale."
+}

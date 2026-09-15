@@ -1,0 +1,15 @@
+{
+  "id": "dathremar-sunstrider",
+  "type": "character",
+  "name": "Dath'Remar Sunstrider",
+  "slug": "dathremar-sunstrider",
+  "shortDescription": "The Highborne leader associated with the exile from Kalimdor and the founding of Quel'Thalas.",
+  "body": "Dath'Remar is shown as a navigator-founder during the migration rather than through later royal iconography. The portrait is an original interpretive likeness and not licensed character art.",
+  "firstEraId": "long-vigil-new-kingdoms",
+  "featuredEraIds": ["long-vigil-new-kingdoms"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["dathremar-leads-exiles-claim"],
+  "tags": ["highborne", "founder", "quelthalas"],
+  "mapFigure": { "asset": "images/characters/long-vigil-new-kingdoms/dathremar-sunstrider.research.webp", "scale": 0.76 },
+  "contentStatus": "research"
+}

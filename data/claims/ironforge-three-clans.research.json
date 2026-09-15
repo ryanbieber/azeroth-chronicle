@@ -1,0 +1,10 @@
+{
+  "id": "ironforge-three-clans-claim",
+  "subjectId": "ironforge-ancient",
+  "predicate": "was_contested_by_three_dwarven_clans_during_the_succession_war",
+  "value": true,
+  "citationIds": ["chronicle-v1-three-hammers", "blizzard-three-hammers-history"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "The world-scale point does not imply an exact city footprint."
+}

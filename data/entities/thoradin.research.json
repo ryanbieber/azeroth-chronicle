@@ -1,0 +1,15 @@
+{
+  "id": "thoradin",
+  "type": "character",
+  "name": "King Thoradin",
+  "slug": "thoradin",
+  "shortDescription": "The human warlord who united tribes into Arathor and played a central role in the Troll Wars.",
+  "body": "Thoradin's generated portrait is a restrained original interpretation of an early coalition-builder, not a reconstruction of a licensed artifact illustration or later human heraldry.",
+  "firstEraId": "long-vigil-new-kingdoms",
+  "featuredEraIds": ["long-vigil-new-kingdoms"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-stromkar-thoradin"],
+  "claimIds": ["thoradin-founds-arathor-claim"],
+  "tags": ["human", "king", "arathor"],
+  "mapFigure": { "asset": "images/characters/long-vigil-new-kingdoms/thoradin.research.webp", "scale": 0.77 },
+  "contentStatus": "research"
+}

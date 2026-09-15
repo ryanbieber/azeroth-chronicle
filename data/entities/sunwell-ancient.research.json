@@ -1,0 +1,14 @@
+{
+  "id": "sunwell-ancient",
+  "type": "location",
+  "name": "The Sunwell",
+  "slug": "sunwell-ancient",
+  "shortDescription": "The arcane fount created by the high elves at a convergence of ley energies in their new homeland.",
+  "body": "The atlas treats the Sunwell as a founding center and does not bring its later corruption or restoration backward into Era 5.",
+  "firstEraId": "long-vigil-new-kingdoms",
+  "featuredEraIds": ["long-vigil-new-kingdoms"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-burning-crusade-story-so-far"],
+  "claimIds": ["sunwell-founded-claim"],
+  "tags": ["sunwell", "arcane", "quelthalas"],
+  "contentStatus": "research"
+}

@@ -14,14 +14,14 @@ Application records live in `data/eras`. Each era owns a separate record in `dat
 | 1 | `black-empire` | Primordial Azeroth, elemental domains, and Black Empire influence | Public research-preview vertical slice implemented; human review pending |
 | 2 | `ordering-of-azeroth` | Titan-forged campaigns and planetary reordering | Public research-preview vertical slice implemented; human review pending |
 | 3 | `ancient-civilizations` | Changing empires across primordial Kalimdor | Public research-preview vertical slice implemented; human review pending |
-| 4 | `war-of-the-ancients` | A campaign ending in a world-changing rupture | Era shell and empty map state |
-| 5 | `long-vigil-new-kingdoms` | Post-Sundering states, migrations, and borders | Era shell and empty map state |
+| 4 | `war-of-the-ancients` | A campaign ending in a world-changing rupture | Public research-preview vertical slice implemented; human review pending |
+| 5 | `long-vigil-new-kingdoms` | Post-Sundering states, migrations, and borders | Public research-preview vertical slice implemented; human review pending |
 | 6 | `rise-of-the-horde` | Two worlds, the Dark Portal, and two wars | Era shell and empty map state |
 | 7 | `third-war-frozen-throne` | Multi-front collapse and the path to Icecrown | Era shell and empty map state |
 | 8 | `age-of-adventurers` | Many campaigns and repeated map-state changes | Era shell and empty map state |
 | 9 | `modern-cosmic-age` | Fourth War through the evolving Worldsoul Saga | Era shell and empty map state |
 
-Build the eras in this order. Cosmic Origins, Black Empire, Ordering of Azeroth, and Ancient Civilizations now establish the reference patterns for relational cosmography, terrain eras, explicit before/after storytelling, and long eras represented through political time slices. Finish the publication gate for one era before beginning production terrain for the next; reusable engine improvements may continue across eras.
+Build the eras in this order. Cosmic Origins through the Long Vigil and New Kingdoms now establish the reference patterns for relational cosmography, terrain eras, explicit before/after storytelling, long eras represented through political time slices, irreversible world-state transitions, inferred migrations, and concurrent regional histories. Finish the publication gate for one era before beginning production terrain for the next; reusable engine improvements may continue across eras.
 
 ## Definition of done for every era
 
@@ -107,6 +107,8 @@ Era 9 extends beyond Chronicle Volume 4. Dragonflight and Worldsoul Saga materia
 
 **Completion emphasis:** this era is the reference implementation for major world change and must prove that stories can switch map states without losing transcript, selection, or tour progress.
 
+**Implemented research baseline:** 13 new indexed subjects, eight events, one five-phase strategic conflict dossier, three terrain states, two inferred routes, 18 source-aware relationship edges, 15 time-aware spatial states, original terrain and actor visuals, and a twelve-pane guided history. The detailed source, geography, interaction, and visual audit is in `docs/research/era-4-war-of-the-ancients.md`. Human review remains required before promotion.
+
 ## Era 5 — The Long Vigil and the New Kingdoms
 
 **Historical question:** How did peoples resettle, establish kingdoms, and change control across the post-Sundering world?
@@ -118,6 +120,8 @@ Era 9 extends beyond Chronicle Volume 4. Dragonflight and Worldsoul Saga materia
 **Animated tour spine:** immediate post-Sundering world → Long Vigil → major migrations → founding centers → consolidation of kingdoms → fragmentation and new powers → geopolitical world inherited by the Horde's rise.
 
 **Completion emphasis:** prove that one era can contain sub-period navigation while remaining one understandable top-level selection.
+
+**Implemented research baseline:** 16 new indexed subjects plus returning figures and places, 11 events, two five-phase strategic conflict dossiers, three political map states, two inferred routes, 22 time-aware spatial states, original actor visuals, and a fourteen-pane guided history. The map carries the Long Vigil, Highborne exile and eastward migration, overlapping Amani and Quel'Thalas claims, Arathor and the Troll Wars, seven successor kingdoms, and the War of the Three Hammers without inventing precise battlefields or surveyed borders. The detailed source, causality, cartography, interaction, and visual audit is in `docs/research/era-5-long-vigil-new-kingdoms.md`. Human review remains required before promotion.
 
 ## Era 6 — The Rise of the Horde and the First Two Wars
 

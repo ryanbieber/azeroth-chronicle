@@ -1,0 +1,10 @@
+{
+  "id": "highborne-exiled-event-claim",
+  "subjectId": "highborne-exiled-from-kalimdor",
+  "predicate": "sent_arcane_practitioners_away_from_kalimdor",
+  "value": true,
+  "citationIds": ["chronicle-v1-highborne-exile"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "The approximate date and the simplification of internal kaldorei politics require review."
+}

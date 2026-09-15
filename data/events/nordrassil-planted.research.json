@@ -1,0 +1,11 @@
+{
+  "id": "nordrassil-planted", "kind": "event", "name": "Nordrassil Is Planted", "slug": "nordrassil-planted",
+  "eraId": "long-vigil-new-kingdoms", "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "After the second Well was discovered", "relativeToId": "illidan-creates-second-well" },
+  "summary": "A World Tree was planted over the new Well at Hyjal, binding the postwar refuge to a new charge of protection.",
+  "locationIds": ["mount-hyjal-ancient", "hyjal-well-of-eternity", "nordrassil"],
+  "participantEntityIds": ["malfurion-stormrage", "tyrande-whisperwind"],
+  "causedByEventIds": ["illidan-creates-second-well"], "causesEventIds": ["long-vigil-begins"],
+  "relationshipIds": ["second-well-causes-nordrassil", "nordrassil-precedes-long-vigil"],
+  "sourceIds": ["warcraft-chronicle-volume-1"], "claimIds": ["nordrassil-planted-event-claim"], "contentStatus": "research"
+}

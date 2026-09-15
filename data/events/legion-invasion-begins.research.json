@@ -10,7 +10,7 @@
   "locationIds": ["well-of-eternity", "zin-azshari"],
   "participantEntityIds": ["burning-legion", "highborne", "azshara"],
   "causedByEventIds": ["highborne-open-legion-way"],
-  "causesEventIds": ["war-of-the-ancients", "night-elf-resistance-forms"],
+  "causesEventIds": ["war-of-the-ancients-conflict", "night-elf-resistance-forms"],
   "relationshipIds": ["highborne-ritual-causes-legion-invasion", "legion-invasion-causes-war", "invasion-prompts-resistance"],
   "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-well-of-eternity-preview"],
   "claimIds": ["legion-invasion-begins-event-claim"],

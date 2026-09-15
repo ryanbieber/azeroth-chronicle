@@ -1,0 +1,10 @@
+{
+  "id": "long-vigil-begins-event-claim",
+  "subjectId": "long-vigil-begins",
+  "predicate": "established_the_kaldorei_watch_for_the_legions_return",
+  "value": true,
+  "citationIds": ["chronicle-v1-long-vigil-begins"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "The beginning is a historical threshold rather than one precisely dated ceremony."
+}

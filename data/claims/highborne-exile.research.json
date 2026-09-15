@@ -1,0 +1,10 @@
+{
+  "id": "highborne-exile-claim",
+  "subjectId": "highborne-exiles",
+  "predicate": "left_kalimdor_after_rejecting_the_arcane_ban",
+  "value": true,
+  "citationIds": ["chronicle-v1-highborne-exile", "blizzard-quelthalas-founding-history"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "The route is an atlas-scale directional reconstruction, not a claim about one fleet, one path, or uninterrupted travel."
+}

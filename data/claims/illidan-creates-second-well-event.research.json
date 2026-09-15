@@ -1,0 +1,10 @@
+{
+  "id": "illidan-creates-second-well-event-claim",
+  "subjectId": "illidan-creates-second-well",
+  "predicate": "created_a_second_well_at_hyjal_and_was_imprisoned",
+  "value": true,
+  "citationIds": ["chronicle-v1-long-vigil-begins"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "Human review must verify the exact ordering of judgment, imprisonment, and the tree's planting."
+}

@@ -1,0 +1,10 @@
+{
+  "id": "troll-wars-battle-claim",
+  "subjectId": "troll-wars",
+  "predicate": "was_a_multi_stage_war_won_by_quelthalas_and_arathor_against_the_amani",
+  "value": true,
+  "citationIds": ["chronicle-v1-arathor-troll-wars", "blizzard-quelthalas-founding-history", "blizzard-thoradin-arathor-history"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "Strategic phases are paraphrased and exact fronts remain unplaced."
+}

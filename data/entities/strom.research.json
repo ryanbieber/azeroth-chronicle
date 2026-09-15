@@ -1,0 +1,14 @@
+{
+  "id": "strom",
+  "type": "location",
+  "name": "Strom",
+  "slug": "strom",
+  "shortDescription": "The fortified center of Arathor and the seat associated with Thoradin's unified nation.",
+  "body": "The atlas point is approximate at world scale and supports the political narrative rather than reconstructing an exact ancient city footprint.",
+  "firstEraId": "long-vigil-new-kingdoms",
+  "featuredEraIds": ["long-vigil-new-kingdoms"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["strom-arathor-center-claim"],
+  "tags": ["strom", "arathor", "human"],
+  "contentStatus": "research"
+}

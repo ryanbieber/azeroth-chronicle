@@ -1,0 +1,14 @@
+{
+  "id": "grim-batol-ancient",
+  "type": "location",
+  "name": "Grim Batol",
+  "slug": "grim-batol-ancient",
+  "shortDescription": "The northern mountain stronghold established by the Wildhammers after their expulsion from Ironforge.",
+  "body": "The point is approximate at atlas scale and belongs to the post-dispersal political state.",
+  "firstEraId": "long-vigil-new-kingdoms",
+  "featuredEraIds": ["long-vigil-new-kingdoms"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-grim-batol-history"],
+  "claimIds": ["grim-batol-wildhammer-claim"],
+  "tags": ["grim-batol", "wildhammer", "dwarves"],
+  "contentStatus": "research"
+}

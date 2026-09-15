@@ -1,0 +1,10 @@
+{
+  "id": "thoradin-founds-arathor-claim",
+  "subjectId": "thoradin",
+  "predicate": "united_humanity_founded_arathor_and_helped_end_the_troll_wars",
+  "value": true,
+  "citationIds": ["chronicle-v1-arathor-troll-wars", "blizzard-thoradin-arathor-history"],
+  "confidence": "explicit",
+  "status": "active",
+  "editorNote": "The portrait is original interpretation; the source supports the role, not this appearance."
+}

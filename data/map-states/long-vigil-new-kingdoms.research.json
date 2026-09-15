@@ -1,6 +1,19 @@
 {
   "id": "long-vigil-new-kingdoms-map-research",
-  "name": "Long Vigil and new kingdoms — cartography research",
+  "name": "The later kingdoms — interpretive political state",
   "worldspaceId": "azeroth",
-  "geometryIds": []
+  "presentation": "terrain",
+  "cartographyLabel": "INTERPRETIVE LATE KINGDOM STATE",
+  "interpretationNote": "This late time slice makes the geopolitical plurality inherited by the Horde's rise readable at world scale. Its broad influence areas are not surveyed borders, do not imply simultaneous founding dates, and preserve overlapping claims where the sources require them.",
+  "terrainTextureAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-atlas.research.webp",
+  "terrainHeightAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-height.research.webp",
+  "geometryIds": [
+    "maelstrom-aftermath-focus-research",
+    "hyjal-era-five-focus-research", "nordrassil-focus-research", "long-vigil-kaldorei-focus-research",
+    "quelthalas-influence-region-research", "quelthalas-focus-research", "sunwell-focus-research",
+    "amani-influence-region-research", "amani-focus-research", "seven-kingdoms-influence-region-research",
+    "seven-kingdoms-focus-research", "ironforge-focus-research", "grim-batol-focus-research",
+    "thaurissan-city-focus-research", "dwarven-clans-focus-research", "dwarven-clan-dispersal-route-research",
+    "ragnaros-era-five-focus-research"
+  ]
 }

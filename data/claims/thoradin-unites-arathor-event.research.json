@@ -1,0 +1,10 @@
+{
+  "id": "thoradin-unites-arathor-event-claim",
+  "subjectId": "thoradin-unites-arathor",
+  "predicate": "united_human_tribes_into_arathor",
+  "value": true,
+  "citationIds": ["chronicle-v1-arathor-troll-wars", "blizzard-thoradin-arathor-history"],
+  "confidence": "explicit",
+  "status": "active",
+  "editorNote": "The broad influence region is interpretive and not an exact boundary."
+}

@@ -10,6 +10,6 @@
   "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-well-of-eternity-preview"],
   "claimIds": ["burning-legion-invasion-claim"],
   "tags": ["legion", "demons", "invasion"],
-  "mapVisual": { "asset": "images/subjects/war-of-the-ancients/burning-legion.research.webp", "scale": 1.02 },
+  "mapVisual": { "asset": "images/subjects/war-of-the-ancients/burning-legion.research.webp", "scale": 0.9 },
   "contentStatus": "research"
 }

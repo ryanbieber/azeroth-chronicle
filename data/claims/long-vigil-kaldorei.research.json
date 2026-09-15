@@ -1,0 +1,10 @@
+{
+  "id": "long-vigil-kaldorei-claim",
+  "subjectId": "long-vigil-kaldorei",
+  "predicate": "guarded_kalimdor_and_watched_for_the_legions_return",
+  "value": true,
+  "citationIds": ["chronicle-v1-long-vigil-begins"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "The collective visual is symbolic and does not assert one permanent command structure across the whole vigil."
+}

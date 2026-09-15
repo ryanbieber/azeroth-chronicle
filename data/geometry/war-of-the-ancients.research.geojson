@@ -6,25 +6,25 @@
       "type": "Feature",
       "id": "zin-azshari-focus-research",
       "properties": { "name": "Zin-Azshari (approximate focus)", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "approximate" },
-      "geometry": { "type": "Point", "coordinates": [5350, 5150] }
+      "geometry": { "type": "Point", "coordinates": [5850, 5550] }
     },
     {
       "type": "Feature",
       "id": "azshara-war-focus-research",
       "properties": { "name": "Azshara narrative focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
-      "geometry": { "type": "Point", "coordinates": [4550, 4700] }
+      "geometry": { "type": "Point", "coordinates": [3300, 6500] }
     },
     {
       "type": "Feature",
       "id": "highborne-court-focus-research",
       "properties": { "name": "Highborne court narrative focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
-      "geometry": { "type": "Point", "coordinates": [5700, 4550] }
+      "geometry": { "type": "Point", "coordinates": [5200, 4000] }
     },
     {
       "type": "Feature",
       "id": "kaldorei-empire-war-focus-research",
       "properties": { "name": "Kaldorei empire narrative focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
-      "geometry": { "type": "Point", "coordinates": [6500, 6500] }
+      "geometry": { "type": "Point", "coordinates": [7000, 7000] }
     },
     {
       "type": "Feature",
@@ -42,7 +42,7 @@
       "type": "Feature",
       "id": "burning-legion-focus-research",
       "properties": { "name": "Burning Legion narrative focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
-      "geometry": { "type": "Point", "coordinates": [6000, 5450] }
+      "geometry": { "type": "Point", "coordinates": [7300, 5600] }
     },
     {
       "type": "Feature",
@@ -84,7 +84,7 @@
       "type": "Feature",
       "id": "sargeras-portal-focus-research",
       "properties": { "name": "Sargeras relational portal focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
-      "geometry": { "type": "Point", "coordinates": [5200, 6600] }
+      "geometry": { "type": "Point", "coordinates": [5300, 7500] }
     },
     {
       "type": "Feature",

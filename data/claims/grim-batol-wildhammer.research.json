@@ -1,0 +1,10 @@
+{
+  "id": "grim-batol-wildhammer-claim",
+  "subjectId": "grim-batol-ancient",
+  "predicate": "was_established_as_a_wildhammer_stronghold_after_expulsion_from_ironforge",
+  "value": true,
+  "citationIds": ["chronicle-v1-three-hammers", "blizzard-three-hammers-history"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "The point is approximate at atlas scale."
+}

@@ -1,0 +1,10 @@
+{
+  "id": "quelthalas-sunwell-founded-event-claim",
+  "subjectId": "quelthalas-and-sunwell-founded",
+  "predicate": "established_the_high_elven_kingdom_and_arcane_fount",
+  "value": true,
+  "citationIds": ["chronicle-v1-highborne-exile", "blizzard-quelthalas-founding-history"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "Founding is compressed into one atlas beat; human review should preserve intermediate settlement chronology."
+}

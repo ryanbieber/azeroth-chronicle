@@ -1,0 +1,14 @@
+{
+  "id": "hyjal-well-of-eternity",
+  "type": "location",
+  "name": "The Second Well of Eternity",
+  "slug": "hyjal-well-of-eternity",
+  "shortDescription": "The new arcane well created by Illidan upon Mount Hyjal after the Sundering.",
+  "body": "This record distinguishes the Hyjal well from the destroyed central Well of ancient Kalimdor. Its marker is approximate within the atlas interpretation of Mount Hyjal and should not be read as surveyed terrain.",
+  "firstEraId": "long-vigil-new-kingdoms",
+  "featuredEraIds": ["long-vigil-new-kingdoms"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["hyjal-second-well-claim"],
+  "tags": ["hyjal", "arcane", "aftermath"],
+  "contentStatus": "research"
+}

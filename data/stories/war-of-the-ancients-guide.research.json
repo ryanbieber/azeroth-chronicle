@@ -1,0 +1,240 @@
+{
+  "guide": {
+    "id": "war-of-the-ancients-guided-history",
+    "eraId": "war-of-the-ancients",
+    "title": "When the World Was Broken",
+    "description": "A continuous history of Azshara's court, the Legion invasion, the defenders of ancient Kalimdor, the betrayal of Neltharion, and the Sundering that remade the world.",
+    "nodeIds": [
+      "ancients-war-story-last-bright-court",
+      "ancients-war-story-circle-at-well",
+      "ancients-war-story-shadow-beyond-gate",
+      "ancients-war-story-invasion-enters",
+      "ancients-war-story-resistance-rises",
+      "ancients-war-story-three-different-paths",
+      "ancients-war-story-living-world-answers",
+      "ancients-war-story-dragon-soul-betrayal",
+      "ancients-war-story-return-to-well",
+      "ancients-war-story-world-breaks",
+      "ancients-war-story-queen-beneath-sea",
+      "ancients-war-story-road-to-hyjal"
+    ],
+    "contentStatus": "research"
+  },
+  "nodes": [
+    {
+      "id": "ancients-war-story-last-bright-court",
+      "guideId": "war-of-the-ancients-guided-history",
+      "title": "The empire stands beneath its last unbroken sky",
+      "narration": "Ancient Kalimdor entered this age beneath the splendor of the kaldorei empire. Roads and cities answered to Queen Azshara, and the Well of Eternity shone beside her capital like a promise without limit. Few could see that the same concentration of power which made the court magnificent had also made the whole world vulnerable to one circle's choice.",
+      "durationMs": 50000,
+      "eventIds": ["azshara-crowned"],
+      "entityIds": ["azshara", "kaldorei-empire", "well-of-eternity"],
+      "locationIds": ["well-of-eternity", "zin-azshari"],
+      "optionalExploreEntityIds": ["azshara", "kaldorei-empire", "well-of-eternity", "zin-azshari"],
+      "camera": { "position": [0, 6.4, 5.9], "target": [0, 0, 0], "durationMs": 1200 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "war-of-the-ancients-prewar-map-research" },
+        { "type": "show_relationships", "relationshipIds": ["azshara-precedes-war-ancients", "zin-azshari-located-at-well"] }
+      ],
+      "nextNodeIds": ["ancients-war-story-circle-at-well"]
+    },
+    {
+      "id": "ancients-war-story-circle-at-well",
+      "guideId": "war-of-the-ancients-guided-history",
+      "title": "A chosen circle turns the Well into a door",
+      "narration": "Azshara's favored Highborne drew ever more deeply upon the Well. Their work ceased to be only the art of their own civilization: it became a doorway offered to a power beyond the world. The decision belonged to a privileged court, but every forest, city, and people of Kalimdor would be made to bear its consequence.",
+      "durationMs": 49000,
+      "eventIds": ["highborne-open-legion-way"],
+      "entityIds": ["azshara", "highborne", "well-of-eternity"],
+      "locationIds": ["zin-azshari", "well-of-eternity"],
+      "optionalExploreEntityIds": ["azshara", "highborne", "well-of-eternity", "zin-azshari"],
+      "camera": { "position": [0.4, 4.9, 4.5], "target": [0.2, 0, 0], "durationMs": 1050 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "war-of-the-ancients-prewar-map-research" },
+        { "type": "show_relationships", "relationshipIds": ["azshara-authorizes-highborne-ritual", "highborne-ritual-causes-legion-invasion"] }
+      ],
+      "previousNodeId": "ancients-war-story-last-bright-court",
+      "nextNodeIds": ["ancients-war-story-shadow-beyond-gate"]
+    },
+    {
+      "id": "ancients-war-story-shadow-beyond-gate",
+      "guideId": "war-of-the-ancients-guided-history",
+      "title": "Beyond the gate waits a will vast as ruin",
+      "narration": "The force answering the Highborne was the Burning Legion, and beyond its first hosts stood Sargeras. The portal was meant to become wide enough for that fallen titan to enter Azeroth. He never stood upon this ground; the figure shown here belongs to the threshold, a warning of the presence the ritual sought to make real.",
+      "durationMs": 49000,
+      "eventIds": ["highborne-open-legion-way"],
+      "entityIds": ["sargeras", "burning-legion", "highborne"],
+      "optionalExploreEntityIds": ["sargeras", "burning-legion", "highborne"],
+      "camera": { "position": [0.3, 5.3, 4.8], "target": [0.1, 0, -0.5], "durationMs": 1050 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "war-of-the-ancients-prewar-map-research" },
+        { "type": "show_relationships", "relationshipIds": ["sargeras-controls-burning-legion", "highborne-ritual-causes-legion-invasion"] }
+      ],
+      "previousNodeId": "ancients-war-story-circle-at-well",
+      "nextNodeIds": ["ancients-war-story-invasion-enters"]
+    },
+    {
+      "id": "ancients-war-story-invasion-enters",
+      "guideId": "war-of-the-ancients-guided-history",
+      "title": "The invasion enters through the heart of empire",
+      "narration": "Demonic hosts came through Zin-Azshari, and the bright center of the empire became the source of its burning. The Legion's destruction spread beyond any single road or battlefield. This wartime map therefore shows pressure and devastation in broad form, not a false wall of exact fronts across a continent whose campaigns are imperfectly measured.",
+      "durationMs": 50000,
+      "eventIds": ["legion-invasion-begins"],
+      "battleIds": ["war-of-the-ancients-conflict"],
+      "entityIds": ["burning-legion", "highborne", "azshara"],
+      "locationIds": ["zin-azshari"],
+      "optionalExploreEntityIds": ["burning-legion", "highborne", "azshara", "zin-azshari"],
+      "camera": { "position": [0, 6.5, 6.0], "target": [0, 0, 0], "durationMs": 1250 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "war-of-the-ancients-invasion-map-research" },
+        { "type": "show_region", "regionId": "legion-pressure-region-research" },
+        { "type": "show_relationships", "relationshipIds": ["highborne-ritual-causes-legion-invasion", "legion-invasion-causes-war"] }
+      ],
+      "previousNodeId": "ancients-war-story-shadow-beyond-gate",
+      "nextNodeIds": ["ancients-war-story-resistance-rises"]
+    },
+    {
+      "id": "ancients-war-story-resistance-rises",
+      "guideId": "war-of-the-ancients-guided-history",
+      "title": "A divided people chooses resistance",
+      "narration": "Not all kaldorei followed the queen into catastrophe. Soldiers, priests, common defenders, and those who had questioned the court gathered against enemies both foreign and familiar. Their coalition was never one unchanging host. It grew while cities fell, drew strength from many kinds of loyalty, and learned that preserving the world might require opposing the order that had ruled it.",
+      "durationMs": 51000,
+      "eventIds": ["night-elf-resistance-forms"],
+      "entityIds": ["night-elf-resistance"],
+      "optionalExploreEntityIds": ["night-elf-resistance"],
+      "camera": { "position": [-1.4, 5.7, 5.0], "target": [-1.3, 0, -0.4], "durationMs": 1050 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "war-of-the-ancients-invasion-map-research" },
+        { "type": "show_route", "routeId": "resistance-convergence" },
+        { "type": "show_relationships", "relationshipIds": ["invasion-prompts-resistance"] }
+      ],
+      "previousNodeId": "ancients-war-story-invasion-enters",
+      "nextNodeIds": ["ancients-war-story-three-different-paths"]
+    },
+    {
+      "id": "ancients-war-story-three-different-paths",
+      "guideId": "war-of-the-ancients-guided-history",
+      "title": "Three paths meet within one desperate war",
+      "narration": "Malfurion listened for powers older than the court. Tyrande carried devotion into the struggle and held others together beneath fear. Illidan trusted dangerous knowledge and his own fierce judgment. Their purposes crossed, parted, and crossed again. None of them alone was the resistance, yet each choice would outlive the world in which it was made.",
+      "durationMs": 50000,
+      "eventIds": ["night-elf-resistance-forms"],
+      "entityIds": ["malfurion-stormrage", "tyrande-whisperwind", "illidan-stormrage"],
+      "optionalExploreEntityIds": ["malfurion-stormrage", "tyrande-whisperwind", "illidan-stormrage"],
+      "camera": { "position": [-0.7, 5.2, 4.7], "target": [-0.8, 0, 0.3], "durationMs": 1050 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "war-of-the-ancients-invasion-map-research" },
+        { "type": "show_relationships", "relationshipIds": ["malfurion-participates-in-war", "tyrande-participates-in-war", "illidan-participates-in-war"] }
+      ],
+      "previousNodeId": "ancients-war-story-resistance-rises",
+      "nextNodeIds": ["ancients-war-story-living-world-answers"]
+    },
+    {
+      "id": "ancients-war-story-living-world-answers",
+      "guideId": "war-of-the-ancients-guided-history",
+      "title": "The living world answers the invaders",
+      "narration": "The war could no longer be contained within kaldorei politics. Cenarius and other ancient powers joined the defense of the land itself, and the dragons entered the struggle from the sky. For a brief hour, beings divided by nature and history acted upon one truth: if the Legion prevailed, there would be no separate refuge left to guard.",
+      "durationMs": 50000,
+      "eventIds": ["wild-gods-and-dragons-join"],
+      "entityIds": ["cenarius", "neltharion", "dragon-soul", "night-elf-resistance"],
+      "optionalExploreEntityIds": ["cenarius", "neltharion", "dragon-soul", "night-elf-resistance"],
+      "camera": { "position": [0.6, 5.8, 5.3], "target": [0.6, 0, -0.2], "durationMs": 1100 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "war-of-the-ancients-invasion-map-research" },
+        { "type": "show_relationships", "relationshipIds": ["cenarius-allied-with-resistance", "dragon-soul-part-of-war"] }
+      ],
+      "previousNodeId": "ancients-war-story-three-different-paths",
+      "nextNodeIds": ["ancients-war-story-dragon-soul-betrayal"]
+    },
+    {
+      "id": "ancients-war-story-dragon-soul-betrayal",
+      "guideId": "war-of-the-ancients-guided-history",
+      "title": "The weapon of many answers to one will",
+      "narration": "The Dragon Aspects gave their strength to an artifact meant to break the Legion's advance. Neltharion wielded it, then turned its power upon those who had trusted him. The betrayal wounded the alliance at the moment of greatest need. Victory could no longer depend upon one perfect weapon or upon the unity of the dragons.",
+      "durationMs": 49000,
+      "eventIds": ["neltharion-betrays-allies"],
+      "entityIds": ["neltharion", "dragon-soul"],
+      "optionalExploreEntityIds": ["neltharion", "dragon-soul"],
+      "camera": { "position": [2.0, 4.9, 4.4], "target": [2.0, 0, -0.1], "durationMs": 1000 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "war-of-the-ancients-invasion-map-research" },
+        { "type": "show_relationships", "relationshipIds": ["neltharion-controls-dragon-soul", "neltharion-betrayal-precedes-final-convergence"] }
+      ],
+      "previousNodeId": "ancients-war-story-living-world-answers",
+      "nextNodeIds": ["ancients-war-story-return-to-well"]
+    },
+    {
+      "id": "ancients-war-story-return-to-well",
+      "guideId": "war-of-the-ancients-guided-history",
+      "title": "The war returns to the water at its beginning",
+      "narration": "Every surviving purpose narrowed again toward the Well. The defenders reached the gateway before Sargeras could cross, and the ritual was broken. Yet the portal had been joined too deeply to the power beneath it. Stopping the invasion did not restore the old world. It set loose a collapse no army, queen, dragon, or demigod could command.",
+      "durationMs": 51000,
+      "eventIds": ["portal-at-well-collapses"],
+      "battleIds": ["war-of-the-ancients-conflict"],
+      "entityIds": ["malfurion-stormrage", "tyrande-whisperwind", "illidan-stormrage", "burning-legion", "sargeras"],
+      "locationIds": ["well-of-eternity"],
+      "optionalExploreEntityIds": ["malfurion-stormrage", "tyrande-whisperwind", "illidan-stormrage", "burning-legion", "sargeras", "well-of-eternity"],
+      "camera": { "position": [0, 4.8, 4.3], "target": [0, 0, 0], "durationMs": 1050 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "war-of-the-ancients-invasion-map-research" },
+        { "type": "show_route", "routeId": "resistance-convergence" },
+        { "type": "show_relationships", "relationshipIds": ["war-convergence-causes-portal-collapse", "portal-collapse-causes-sundering"] }
+      ],
+      "previousNodeId": "ancients-war-story-dragon-soul-betrayal",
+      "nextNodeIds": ["ancients-war-story-world-breaks"]
+    },
+    {
+      "id": "ancients-war-story-world-breaks",
+      "guideId": "war-of-the-ancients-guided-history",
+      "title": "One continent becomes a memory",
+      "narration": "The Well collapsed. Seas rushed into the wound, the old land broke, and distances that had been crossed by road became oceans. At the center remained the Maelstrom, turning above the place where power and pride had drawn ruin together. This is a separate world state, not an ornament laid over the old one: ancient Kalimdor was gone.",
+      "durationMs": 51000,
+      "eventIds": ["great-sundering"],
+      "entityIds": ["maelstrom"],
+      "locationIds": ["maelstrom"],
+      "optionalExploreEntityIds": ["maelstrom", "well-of-eternity"],
+      "camera": { "position": [0, 7.2, 6.8], "target": [0, 0, 0], "durationMs": 1300 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "war-of-the-ancients-map-research" },
+        { "type": "show_relationships", "relationshipIds": ["portal-collapse-causes-sundering", "sundering-creates-maelstrom"] }
+      ],
+      "previousNodeId": "ancients-war-story-return-to-well",
+      "nextNodeIds": ["ancients-war-story-queen-beneath-sea"]
+    },
+    {
+      "id": "ancients-war-story-queen-beneath-sea",
+      "guideId": "war-of-the-ancients-guided-history",
+      "title": "The sea closes over the queen's old world",
+      "narration": "Azshara and Highborne followers were taken beneath the waters, yet the depths did not end their history. They survived through transformation, while the cities that had proclaimed their permanence vanished below the new sea. The tour marks this fate without placing an exact underwater court upon a map whose drowned geography remains uncertain.",
+      "durationMs": 49000,
+      "eventIds": ["great-sundering"],
+      "entityIds": ["azshara"],
+      "optionalExploreEntityIds": ["azshara", "highborne"],
+      "camera": { "position": [0.5, 5.5, 5.0], "target": [0.5, 0, 0.4], "durationMs": 1050 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "war-of-the-ancients-map-research" },
+        { "type": "show_relationships", "relationshipIds": ["sundering-creates-maelstrom"] }
+      ],
+      "previousNodeId": "ancients-war-story-world-breaks",
+      "nextNodeIds": ["ancients-war-story-road-to-hyjal"]
+    },
+    {
+      "id": "ancients-war-story-road-to-hyjal",
+      "guideId": "war-of-the-ancients-guided-history",
+      "title": "Survivors carry the old world toward Hyjal",
+      "narration": "Across broken shores, many survivors came at last toward Mount Hyjal. They brought grief, memory, old divisions, and powers that the war had not resolved. The map's single route is only a broad direction, for they did not all travel as one company. Here the age of invasion ends, and the long keeping of the sundered world begins.",
+      "durationMs": 51000,
+      "eventIds": ["survivors-reach-hyjal"],
+      "entityIds": ["night-elf-resistance", "mount-hyjal-ancient"],
+      "locationIds": ["mount-hyjal-ancient"],
+      "optionalExploreEntityIds": ["night-elf-resistance", "mount-hyjal-ancient", "malfurion-stormrage", "tyrande-whisperwind", "illidan-stormrage"],
+      "camera": { "position": [-2.7, 5.2, 4.7], "target": [-2.7, 0, -1.2], "durationMs": 1100 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "war-of-the-ancients-map-research" },
+        { "type": "show_route", "routeId": "survivor-migration-hyjal" },
+        { "type": "show_relationships", "relationshipIds": ["sundering-causes-survivor-migrations", "survivors-precede-long-vigil"] }
+      ],
+      "previousNodeId": "ancients-war-story-queen-beneath-sea",
+      "nextNodeIds": []
+    }
+  ]
+}

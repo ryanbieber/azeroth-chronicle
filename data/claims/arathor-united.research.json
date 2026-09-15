@@ -1,0 +1,10 @@
+{
+  "id": "arathor-united-claim",
+  "subjectId": "arathor",
+  "predicate": "united_scattered_human_tribes_under_one_nation",
+  "value": true,
+  "citationIds": ["chronicle-v1-arathor-troll-wars", "blizzard-thoradin-arathor-history"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "The political region is a broad time-slice reconstruction rather than a permanent exact border."
+}

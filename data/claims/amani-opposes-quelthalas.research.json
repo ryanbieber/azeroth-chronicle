@@ -1,0 +1,10 @@
+{
+  "id": "amani-opposes-quelthalas-claim",
+  "subjectId": "amani-empire",
+  "predicate": "contested_quelthalas_in_ancestral_northern_lands",
+  "value": true,
+  "citationIds": ["chronicle-v1-highborne-exile", "chronicle-v1-arathor-troll-wars", "blizzard-quelthalas-founding-history"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "Public narration preserves the Amani as historical actors with their own territorial relationship to the region."
+}

@@ -1,0 +1,10 @@
+{
+  "id": "dathremar-leads-exiles-claim",
+  "subjectId": "dathremar-sunstrider",
+  "predicate": "led_highborne_exiles_and_became_associated_with_quelthalas_founding",
+  "value": true,
+  "citationIds": ["chronicle-v1-highborne-exile"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "The generated portrait is interpretive and must not be reviewed as a costume reconstruction."
+}

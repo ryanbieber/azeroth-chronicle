@@ -207,6 +207,99 @@ test('Ancient Civilizations advances through distinct political time slices and 
   await expect(page.locator('.map-subject-visual').filter({ hasText: 'The Kaldorei Empire' })).toBeVisible();
 });
 
+test('War of the Ancients preserves its guided story across the Sundering state change', async ({ page }) => {
+  await page.goto('/map?era=war-of-the-ancients');
+  await expect(page.getByRole('combobox', { name: 'Choose era' })).toHaveValue('war-of-the-ancients');
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE POST-SUNDERING STATE');
+
+  await page.getByRole('button', { name: 'Guided tour' }).click();
+  await expect(page.getByRole('heading', { name: 'The empire stands beneath its last unbroken sky' })).toBeVisible();
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE PRE-INVASION STATE');
+  await expect(page.getByRole('button', { name: 'Queen Azshara', exact: true })).toBeVisible();
+  await expect(page.locator('.map-subject-visual').filter({ hasText: 'The Kaldorei Empire' })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'A chosen circle turns the Well into a door' })).toBeVisible();
+  await expect(page.locator('.map-subject-visual').filter({ hasText: 'The Highborne' })).toBeVisible();
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Beyond the gate waits a will vast as ruin' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Sargeras', exact: true })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'The invasion enters through the heart of empire' })).toBeVisible();
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE WARTIME STATE');
+  await expect(page.locator('.map-subject-visual').filter({ hasText: 'The Burning Legion' })).toBeVisible();
+  await expect(page.locator('.battle-playback')).toHaveCount(0);
+
+  for (let index = 0; index < 5; index += 1) {
+    await page.getByRole('button', { name: 'Next', exact: true }).click();
+  }
+  await expect(page.getByRole('heading', { name: 'The war returns to the water at its beginning' })).toBeVisible();
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+
+  await expect(page.getByRole('heading', { name: 'One continent becomes a memory' })).toBeVisible();
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE POST-SUNDERING STATE');
+  await expect(page.getByRole('progressbar', { name: 'Time until next story point' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Previous', exact: true })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'The Maelstrom', exact: true })).toBeVisible();
+  await expect.poll(() => page.evaluate(() => sessionStorage.getItem('azeroth-chronicle-story'))).toContain('ancients-war-story-world-breaks');
+
+  await page.getByRole('button', { name: 'Previous', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'The war returns to the water at its beginning' })).toBeVisible();
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE WARTIME STATE');
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'One continent becomes a memory' })).toBeVisible();
+});
+
+test('Long Vigil and New Kingdoms moves from Hyjal to a plural post-Sundering world', async ({ page }) => {
+  await page.goto('/map?era=long-vigil-new-kingdoms');
+  await expect(page.getByRole('combobox', { name: 'Choose era' })).toHaveValue('long-vigil-new-kingdoms');
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE LATE KINGDOM STATE');
+
+  await page.getByRole('button', { name: 'Guided tour' }).click();
+  await expect(page.getByRole('heading', { name: 'The broken world waits for new promises' })).toBeVisible();
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE EARLY POST-SUNDERING STATE');
+
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'One vial restores the danger beneath Hyjal' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Illidan Stormrage', exact: true })).toBeVisible();
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'A tree is set above the forbidden water' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Malfurion Stormrage', exact: true })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Tyrande Whisperwind', exact: true })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'A forbidden art divides the survivors' })).toBeVisible();
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE MIGRATION AND FOUNDING STATE');
+  await expect(page.locator('.map-subject-visual').filter({ hasText: 'The Highborne Exiles' })).toBeVisible();
+  await expect(page.getByRole('button', { name: "Dath'Remar Sunstrider", exact: true })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'A new sun rises upon contested land' })).toBeVisible();
+  await expect(page.locator('.map-subject-visual').filter({ hasText: "Quel'Thalas" })).toBeVisible();
+  await expect(page.locator('.map-subject-visual').filter({ hasText: 'The Amani Empire' })).toBeVisible();
+
+  for (let index = 0; index < 3; index += 1) {
+    await page.getByRole('button', { name: 'Next', exact: true }).click();
+  }
+  await expect(page.getByRole('heading', { name: 'Fire changes the forest and human history' })).toBeVisible();
+  await expect(page.locator('.battle-playback')).toHaveCount(0);
+
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'One human empire becomes seven kingdoms' })).toBeVisible();
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE LATE KINGDOM STATE');
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Three hammers break one mountain realm' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'The Dwarven Clans', exact: true })).toBeVisible();
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'An ancient fire answers a dying war' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Ragnaros', exact: true })).toBeVisible();
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Many realms stand before an unopened gate' })).toBeVisible();
+});
+
 test('landing page full tour chains every completed guided era', async ({ page }) => {
   await page.goto('/');
   await expect(page.getByRole('heading', { name: /the full history/i })).toBeVisible();
@@ -243,6 +336,22 @@ test('landing page full tour chains every completed guided era', async ({ page }
     await page.getByRole('button', { name: 'Next', exact: true }).click();
   }
   await expect(page.getByRole('heading', { name: 'A queen at the edge of ruin' })).toBeVisible();
+  await page.getByRole('button', { name: 'Continue the chronicle' }).click();
+
+  await expect(page).toHaveURL(/map\?era=war-of-the-ancients&tour=full/);
+  await expect(page.getByRole('heading', { name: 'The empire stands beneath its last unbroken sky' })).toBeVisible();
+  for (let index = 0; index < 11; index += 1) {
+    await page.getByRole('button', { name: 'Next', exact: true }).click();
+  }
+  await expect(page.getByRole('heading', { name: 'Survivors carry the old world toward Hyjal' })).toBeVisible();
+  await page.getByRole('button', { name: 'Continue the chronicle' }).click();
+
+  await expect(page).toHaveURL(/map\?era=long-vigil-new-kingdoms&tour=full/);
+  await expect(page.getByRole('heading', { name: 'The broken world waits for new promises' })).toBeVisible();
+  for (let index = 0; index < 13; index += 1) {
+    await page.getByRole('button', { name: 'Next', exact: true }).click();
+  }
+  await expect(page.getByRole('heading', { name: 'Many realms stand before an unopened gate' })).toBeVisible();
   await page.getByRole('button', { name: 'Continue the chronicle' }).click();
 
   await expect(page).toHaveURL(/\?tour=complete$/);

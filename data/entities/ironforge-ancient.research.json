@@ -1,0 +1,14 @@
+{
+  "id": "ironforge-ancient",
+  "type": "location",
+  "name": "Ironforge",
+  "slug": "ironforge-ancient",
+  "shortDescription": "The mountain city contested by the three dwarven clans during their succession war.",
+  "body": "The world-scale point locates the mountain-city tradition approximately; no internal city plan or exact ancient perimeter is asserted.",
+  "firstEraId": "long-vigil-new-kingdoms",
+  "featuredEraIds": ["long-vigil-new-kingdoms"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-grim-batol-history"],
+  "claimIds": ["ironforge-three-clans-claim"],
+  "tags": ["ironforge", "dwarves", "khaz-modan"],
+  "contentStatus": "research"
+}

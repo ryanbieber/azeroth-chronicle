@@ -1,0 +1,10 @@
+{
+  "id": "nordrassil-planted-event-claim",
+  "subjectId": "nordrassil-planted",
+  "predicate": "placed_a_world_tree_over_the_second_well",
+  "value": true,
+  "citationIds": ["chronicle-v1-long-vigil-begins"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "Each draconic blessing requires separate human-reviewed claim records before publication."
+}

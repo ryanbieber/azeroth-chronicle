@@ -1,6 +1,6 @@
 {
   "id": "war-of-the-ancients-event-claim",
-  "subjectId": "war-of-the-ancients",
+  "subjectId": "war-of-the-ancients-conflict",
   "predicate": "ended_the_first_legion_invasion_at_the_cost_of_the_sundering",
   "value": true,
   "citationIds": ["chronicle-v1-war-ancients-opening", "chronicle-v1-war-ancients-resistance", "chronicle-v1-dragon-soul-betrayal", "chronicle-v1-great-sundering"],

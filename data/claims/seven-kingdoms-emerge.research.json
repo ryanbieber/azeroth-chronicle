@@ -1,0 +1,10 @@
+{
+  "id": "seven-kingdoms-emerge-claim",
+  "subjectId": "seven-human-kingdoms",
+  "predicate": "emerged_as_arathors_city_states_became_sovereign",
+  "value": true,
+  "citationIds": ["chronicle-v1-human-kingdoms"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "The event is a long fragmentation threshold, not a simultaneous declaration by seven states."
+}

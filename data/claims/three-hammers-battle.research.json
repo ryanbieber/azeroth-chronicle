@@ -1,0 +1,10 @@
+{
+  "id": "three-hammers-battle-claim",
+  "subjectId": "war-of-the-three-hammers",
+  "predicate": "divided_the_dwarven_clans_and_ended_with_ragnaros_reemerging",
+  "value": true,
+  "citationIds": ["chronicle-v1-three-hammers", "blizzard-three-hammers-history"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "The dossier uses strategic sequence and deliberately omits an exact battlefield marker."
+}

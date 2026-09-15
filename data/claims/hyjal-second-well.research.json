@@ -1,0 +1,10 @@
+{
+  "id": "hyjal-second-well-claim",
+  "subjectId": "hyjal-well-of-eternity",
+  "predicate": "was_created_by_illidan_after_the_sundering",
+  "value": true,
+  "citationIds": ["chronicle-v1-long-vigil-begins"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "The approximate Hyjal marker requires cartographic review and is not a measured lake position."
+}

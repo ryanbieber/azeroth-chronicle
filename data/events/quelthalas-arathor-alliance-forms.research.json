@@ -1,0 +1,12 @@
+{
+  "id": "quelthalas-arathor-alliance-forms", "kind": "event", "name": "Quel'Thalas and Arathor Form a Wartime Alliance", "slug": "quelthalas-arathor-alliance-forms",
+  "eraId": "long-vigil-new-kingdoms", "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "During the Troll Wars", "relativeToId": "thoradin-unites-arathor" },
+  "summary": "Facing an overwhelming Amani assault, Quel'Thalas allied with Arathor and shared limited arcane instruction in exchange for military aid.",
+  "locationIds": ["sunwell-ancient", "strom"],
+  "participantEntityIds": ["quelthalas-ancient", "arathor", "amani-empire", "thoradin"],
+  "causesEventIds": ["amani-defeated-in-troll-wars"],
+  "relationshipIds": ["arathor-allied-with-quelthalas", "amani-pressure-causes-alliance", "troll-alliance-part-of-troll-wars"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-burning-crusade-story-so-far", "blizzard-stromkar-thoradin"],
+  "claimIds": ["troll-wars-alliance-event-claim"], "contentStatus": "research"
+}

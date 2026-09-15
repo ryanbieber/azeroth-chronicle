@@ -1,0 +1,10 @@
+{
+  "id": "ragnaros-reemerges-event-claim",
+  "subjectId": "ragnaros-reemerges-at-blackrock",
+  "predicate": "ended_the_three_hammers_war_with_a_catastrophic_volcanic_world_change",
+  "value": true,
+  "citationIds": ["chronicle-v1-three-hammers"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "The terrain does not attempt a measurable before-and-after geological reconstruction."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "highborne-eastward-migration", "name": "Highborne migration from Kalimdor to the northern east (interpretive)",
+  "worldspaceId": "azeroth", "geometryId": "highborne-eastward-migration-route-research", "geographicCertainty": "inferred",
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-burning-crusade-story-so-far"],
+  "editorNote": "The route communicates origin and destination across the sundered world. It is not a traced voyage, a claim that all exiles traveled together, or an exact reconstruction of stops and storms.",
+  "contentStatus": "research"
+}

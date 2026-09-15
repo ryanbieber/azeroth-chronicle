@@ -1,0 +1,10 @@
+{
+  "id": "sunwell-founded-claim",
+  "subjectId": "sunwell-ancient",
+  "predicate": "was_created_from_well_water_at_a_ley_convergence",
+  "value": true,
+  "citationIds": ["chronicle-v1-highborne-exile", "blizzard-quelthalas-founding-history"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "Later destruction, corruption, and restoration are outside Era 5."
+}

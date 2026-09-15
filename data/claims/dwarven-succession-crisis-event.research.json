@@ -1,0 +1,10 @@
+{
+  "id": "dwarven-succession-crisis-event-claim",
+  "subjectId": "dwarven-succession-crisis",
+  "predicate": "opened_a_three_clan_struggle_for_ironforge",
+  "value": true,
+  "citationIds": ["chronicle-v1-three-hammers", "blizzard-three-hammers-history"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "Named leader and coup detail remain in the research packet until claim-level review."
+}

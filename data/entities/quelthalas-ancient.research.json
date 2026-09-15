@@ -1,0 +1,15 @@
+{
+  "id": "quelthalas-ancient",
+  "type": "faction",
+  "name": "Quel'Thalas",
+  "slug": "quelthalas-ancient",
+  "shortDescription": "The high-elven kingdom founded in the northern Eastern Kingdoms around the Sunwell.",
+  "body": "The political region is intentionally broad and changes meaning across the founding and later-kingdom map states. It does not claim a surveyed ancient border or erase the Amani relationship to the same lands.",
+  "firstEraId": "long-vigil-new-kingdoms",
+  "featuredEraIds": ["long-vigil-new-kingdoms"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-burning-crusade-story-so-far"],
+  "claimIds": ["quelthalas-founded-claim"],
+  "tags": ["high-elves", "kingdom", "eastern-kingdoms"],
+  "mapVisual": { "asset": "images/subjects/long-vigil-new-kingdoms/highborne-exiles.research.webp", "scale": 0.82 },
+  "contentStatus": "research"
+}

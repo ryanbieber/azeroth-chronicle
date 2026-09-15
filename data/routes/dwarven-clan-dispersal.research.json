@@ -1,0 +1,7 @@
+{
+  "id": "dwarven-clan-dispersal", "name": "Dwarven dispersal from Ironforge (interpretive)",
+  "worldspaceId": "azeroth", "geometryId": "dwarven-clan-dispersal-route-research", "geographicCertainty": "inferred",
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-grim-batol-history"],
+  "editorNote": "One bent line links Ironforge, Grim Batol, and Thaurissan only to explain the political dispersal. It is not one march, one chronology, or an exact road followed by either clan.",
+  "contentStatus": "research"
+}

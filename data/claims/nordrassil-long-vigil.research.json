@@ -1,0 +1,10 @@
+{
+  "id": "nordrassil-long-vigil-claim",
+  "subjectId": "nordrassil",
+  "predicate": "was_planted_over_the_second_well_and_became_central_to_the_long_vigil",
+  "value": true,
+  "citationIds": ["chronicle-v1-long-vigil-begins"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "Human review must separate each Aspect's blessing and the institutional consequences into claim-level records before publication."
+}

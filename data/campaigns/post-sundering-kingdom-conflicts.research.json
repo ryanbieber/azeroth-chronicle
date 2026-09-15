@@ -1,0 +1,9 @@
+{
+  "id": "post-sundering-kingdom-conflicts", "name": "Conflicts of the Post-Sundering Kingdoms", "slug": "post-sundering-kingdom-conflicts",
+  "eraId": "long-vigil-new-kingdoms",
+  "summary": "An atlas-scale grouping for the two best-supported conflicts that materially redistributed power during Era 5: the Troll Wars and the War of the Three Hammers.",
+  "battleIds": ["troll-wars", "war-of-the-three-hammers"],
+  "routeIds": ["highborne-eastward-migration", "dwarven-clan-dispersal"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-burning-crusade-story-so-far", "blizzard-stromkar-thoradin", "blizzard-grim-batol-history"],
+  "contentStatus": "research"
+}

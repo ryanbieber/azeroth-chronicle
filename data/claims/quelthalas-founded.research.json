@@ -1,0 +1,10 @@
+{
+  "id": "quelthalas-founded-claim",
+  "subjectId": "quelthalas-ancient",
+  "predicate": "was_founded_by_the_exiled_high_elves_in_the_northern_eastern_kingdoms",
+  "value": true,
+  "citationIds": ["chronicle-v1-highborne-exile", "blizzard-quelthalas-founding-history"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "The influence polygon is inferred and does not erase overlapping Amani claims or present a surveyed border."
+}

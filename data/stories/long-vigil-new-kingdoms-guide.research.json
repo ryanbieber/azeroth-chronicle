@@ -1,0 +1,187 @@
+{
+  "guide": {
+    "id": "long-vigil-new-kingdoms-guided-history",
+    "eraId": "long-vigil-new-kingdoms",
+    "title": "The Shores That Learned New Names",
+    "description": "A continuous history of the Long Vigil, the Highborne exile, Quel'Thalas, Arathor and the Troll Wars, the Seven Kingdoms, and the dwarven war that remade the southern mountains.",
+    "nodeIds": [
+      "long-vigil-story-broken-shores",
+      "long-vigil-story-second-well",
+      "long-vigil-story-world-tree",
+      "long-vigil-story-watch-begins",
+      "long-vigil-story-exile-decreed",
+      "long-vigil-story-crossing-east",
+      "long-vigil-story-new-sun",
+      "long-vigil-story-thoradin-unites",
+      "long-vigil-story-alliance-of-need",
+      "long-vigil-story-fire-in-forest",
+      "long-vigil-story-seven-crowns",
+      "long-vigil-story-three-hammers",
+      "long-vigil-story-firelord-returns",
+      "long-vigil-story-world-before-gate"
+    ],
+    "contentStatus": "research"
+  },
+  "nodes": [
+    {
+      "id": "long-vigil-story-broken-shores", "guideId": "long-vigil-new-kingdoms-guided-history",
+      "title": "The broken world waits for new promises",
+      "narration": "The survivors at Hyjal looked upon a world whose distances had become seas. At the center, the Maelstrom kept the wound of the Sundering open to every horizon. Around the mountain there was safety enough to endure, but no return to the old empire. Whatever order followed would have to be made among separated shores, scattered peoples, and memories too heavy to become a single law.",
+      "durationMs": 54000,
+      "eventIds": ["survivors-reach-hyjal"], "entityIds": ["maelstrom", "mount-hyjal-ancient"],
+      "locationIds": ["maelstrom", "mount-hyjal-ancient"], "optionalExploreEntityIds": ["maelstrom", "mount-hyjal-ancient"],
+      "camera": { "position": [0, 7.4, 7.0], "target": [0, 0, 0], "durationMs": 1300 },
+      "visualActions": [{ "type": "set_map_state", "mapStateId": "long-vigil-new-kingdoms-early-map-research" }, { "type": "show_relationships", "relationshipIds": ["survivors-precede-long-vigil", "survivors-precede-second-well"] }],
+      "nextNodeIds": ["long-vigil-story-second-well"]
+    },
+    {
+      "id": "long-vigil-story-second-well", "guideId": "long-vigil-new-kingdoms-guided-history",
+      "title": "One vial restores the danger beneath Hyjal",
+      "narration": "Illidan had carried water away from the first Well before it died. Upon Hyjal he poured that preserved power into a mountain lake, and another Well came into being beneath a world still grieving the first. To him it was a weapon against the Legion's return. To those who discovered it, the act reopened the very danger for which a continent had paid. Judgment followed, and Illidan was taken from the daylight of the new age.",
+      "durationMs": 61000,
+      "eventIds": ["illidan-creates-second-well"], "entityIds": ["illidan-stormrage", "hyjal-well-of-eternity", "malfurion-stormrage"],
+      "locationIds": ["mount-hyjal-ancient", "hyjal-well-of-eternity"],
+      "optionalExploreEntityIds": ["illidan-stormrage", "hyjal-well-of-eternity", "malfurion-stormrage"],
+      "camera": { "position": [-2.0, 5.1, 4.6], "target": [-2.2, 0, -1.4], "durationMs": 1050 },
+      "visualActions": [{ "type": "set_map_state", "mapStateId": "long-vigil-new-kingdoms-early-map-research" }, { "type": "show_relationships", "relationshipIds": ["survivors-precede-second-well", "second-well-causes-nordrassil"] }],
+      "previousNodeId": "long-vigil-story-broken-shores", "nextNodeIds": ["long-vigil-story-world-tree"]
+    },
+    {
+      "id": "long-vigil-story-world-tree", "guideId": "long-vigil-new-kingdoms-guided-history",
+      "title": "A tree is set above the forbidden water",
+      "narration": "The answer was not to spill another sea across the earth. Nordrassil was planted over the new Well, and the great powers of the dragons bound gifts and safeguards to the living tree. Malfurion and Tyrande stood at the beginning of a people remade by duty: one path turning toward the deep dream of the world, another remaining wakeful beneath moon and leaf. The refuge became a charge that would endure beyond kingdoms.",
+      "durationMs": 59000,
+      "eventIds": ["nordrassil-planted"], "entityIds": ["nordrassil", "malfurion-stormrage", "tyrande-whisperwind"],
+      "locationIds": ["nordrassil", "hyjal-well-of-eternity"],
+      "optionalExploreEntityIds": ["nordrassil", "malfurion-stormrage", "tyrande-whisperwind"],
+      "camera": { "position": [-2.4, 5.0, 4.4], "target": [-2.4, 0, -2.1], "durationMs": 1050 },
+      "visualActions": [{ "type": "set_map_state", "mapStateId": "long-vigil-new-kingdoms-early-map-research" }, { "type": "show_relationships", "relationshipIds": ["second-well-causes-nordrassil", "nordrassil-controls-second-well", "nordrassil-precedes-long-vigil"] }],
+      "previousNodeId": "long-vigil-story-second-well", "nextNodeIds": ["long-vigil-story-watch-begins"]
+    },
+    {
+      "id": "long-vigil-story-watch-begins", "guideId": "long-vigil-new-kingdoms-guided-history",
+      "title": "The long watch gathers beneath the boughs",
+      "narration": "Thus began the Long Vigil. The kaldorei guarded Kalimdor and prepared for an enemy that might not return within any mortal lifetime. Yet the watch was not one unchanging army. Priests, sentinels, druids, wardens, and many quiet keepers bore different parts of the burden while forests grew over the scars of war. Their strength was patience; their danger was believing that one people's answer must bind every survivor.",
+      "durationMs": 56000,
+      "eventIds": ["long-vigil-begins"], "entityIds": ["long-vigil-kaldorei", "nordrassil"],
+      "locationIds": ["nordrassil", "mount-hyjal-ancient"], "optionalExploreEntityIds": ["long-vigil-kaldorei", "nordrassil"],
+      "camera": { "position": [-1.7, 5.8, 5.2], "target": [-1.8, 0, -1.8], "durationMs": 1100 },
+      "visualActions": [{ "type": "set_map_state", "mapStateId": "long-vigil-new-kingdoms-early-map-research" }, { "type": "show_relationships", "relationshipIds": ["nordrassil-precedes-long-vigil", "long-vigil-precedes-highborne-exile"] }],
+      "previousNodeId": "long-vigil-story-world-tree", "nextNodeIds": ["long-vigil-story-exile-decreed"]
+    },
+    {
+      "id": "long-vigil-story-exile-decreed", "guideId": "long-vigil-new-kingdoms-guided-history",
+      "title": "A forbidden art divides the survivors",
+      "narration": "Not every Highborne accepted the ban upon arcane practice. To them, magic was not only the queen's ruin; it was knowledge, inheritance, and the means by which their people had once shaped the world. Conflict answered prohibition, and exile answered conflict. Under Dath'Remar, they departed the forests of Kalimdor. The decision protected one new order by sending another people away to seek a shore where their art might live.",
+      "durationMs": 56000,
+      "eventIds": ["highborne-exiled-from-kalimdor"], "entityIds": ["highborne-exiles", "dathremar-sunstrider", "long-vigil-kaldorei"],
+      "optionalExploreEntityIds": ["highborne-exiles", "dathremar-sunstrider", "long-vigil-kaldorei"],
+      "camera": { "position": [-1.2, 6.2, 5.6], "target": [-1.1, 0, -1.0], "durationMs": 1150 },
+      "visualActions": [{ "type": "set_map_state", "mapStateId": "long-vigil-new-kingdoms-founding-map-research" }, { "type": "show_route", "routeId": "highborne-eastward-migration" }, { "type": "show_relationships", "relationshipIds": ["long-vigil-precedes-highborne-exile", "dathremar-participates-in-exile"] }],
+      "previousNodeId": "long-vigil-story-watch-begins", "nextNodeIds": ["long-vigil-story-crossing-east"]
+    },
+    {
+      "id": "long-vigil-story-crossing-east", "guideId": "long-vigil-new-kingdoms-guided-history",
+      "title": "The exiles cross a sea made by yesterday",
+      "narration": "Their road crossed the waters that the Sundering had made. No surviving atlas measures every storm, landing, or generation of that passage, and the line shown here is only a direction between loss and settlement. Dath'Remar's company carried families as well as scholars, memory as well as ambition. By the time they reached the northern east, exile had begun to transform a courtly caste into a people seeking a homeland.",
+      "durationMs": 56500,
+      "eventIds": ["highborne-exiled-from-kalimdor"], "entityIds": ["highborne-exiles", "dathremar-sunstrider"],
+      "optionalExploreEntityIds": ["highborne-exiles", "dathremar-sunstrider"],
+      "camera": { "position": [0, 7.0, 6.5], "target": [0, 0, -0.6], "durationMs": 1250 },
+      "visualActions": [{ "type": "set_map_state", "mapStateId": "long-vigil-new-kingdoms-founding-map-research" }, { "type": "show_route", "routeId": "highborne-eastward-migration" }, { "type": "show_relationships", "relationshipIds": ["highborne-exile-causes-quelthalas"] }],
+      "previousNodeId": "long-vigil-story-exile-decreed", "nextNodeIds": ["long-vigil-story-new-sun"]
+    },
+    {
+      "id": "long-vigil-story-new-sun", "guideId": "long-vigil-new-kingdoms-guided-history",
+      "title": "A new sun rises upon contested land",
+      "narration": "In the northern Eastern Kingdoms the exiles founded Quel'Thalas and kindled the Sunwell from power carried out of the old world. But the land was not empty, and founding was not the first history written there. The Amani held ancestral claims to the same northern forests. The bright new kingdom and the enduring troll power therefore grew beside one another in a peace burdened from its beginning by incompatible memories of home.",
+      "durationMs": 58000,
+      "eventIds": ["quelthalas-and-sunwell-founded"], "entityIds": ["quelthalas-ancient", "sunwell-ancient", "amani-empire", "dathremar-sunstrider"],
+      "locationIds": ["sunwell-ancient"], "optionalExploreEntityIds": ["quelthalas-ancient", "sunwell-ancient", "amani-empire", "dathremar-sunstrider"],
+      "camera": { "position": [2.8, 5.2, 4.6], "target": [3.0, 0, -2.4], "durationMs": 1050 },
+      "visualActions": [{ "type": "set_map_state", "mapStateId": "long-vigil-new-kingdoms-founding-map-research" }, { "type": "show_region", "regionId": "quelthalas-influence-region-research" }, { "type": "show_region", "regionId": "amani-influence-region-research" }, { "type": "show_relationships", "relationshipIds": ["quelthalas-controls-sunwell", "amani-opposes-quelthalas"] }],
+      "previousNodeId": "long-vigil-story-crossing-east", "nextNodeIds": ["long-vigil-story-thoradin-unites"]
+    },
+    {
+      "id": "long-vigil-story-thoradin-unites", "guideId": "long-vigil-new-kingdoms-guided-history",
+      "title": "Scattered tribes answer one human king",
+      "narration": "Farther south, human communities had multiplied without yet becoming one nation. Thoradin gathered them beneath a common banner and raised Arathor around the fortress of Strom. The new unity did not erase every tribe or custom; it made their strength answer together when danger crossed old boundaries. Humanity had gained a political center at the same hour that the northern conflict was growing too great for Quel'Thalas to bear alone.",
+      "durationMs": 56500,
+      "eventIds": ["thoradin-unites-arathor"], "entityIds": ["thoradin", "arathor"], "locationIds": ["strom"],
+      "optionalExploreEntityIds": ["thoradin", "arathor", "strom"],
+      "camera": { "position": [2.0, 5.1, 4.6], "target": [1.8, 0, -0.5], "durationMs": 1050 },
+      "visualActions": [{ "type": "set_map_state", "mapStateId": "long-vigil-new-kingdoms-founding-map-research" }, { "type": "show_region", "regionId": "arathor-influence-region-research" }, { "type": "show_relationships", "relationshipIds": ["thoradin-controls-arathor", "arathor-located-at-strom", "arathor-unification-precedes-troll-alliance"] }],
+      "previousNodeId": "long-vigil-story-new-sun", "nextNodeIds": ["long-vigil-story-alliance-of-need"]
+    },
+    {
+      "id": "long-vigil-story-alliance-of-need", "guideId": "long-vigil-new-kingdoms-guided-history",
+      "title": "Need joins two young powers",
+      "narration": "When the Amani offensive threatened to overwhelm Quel'Thalas, the high elves turned to Arathor. Neither people offered aid without consequence. A chosen company of humans received arcane teaching, and Thoradin committed his nation's strength to the northern war. The compact joined realms separated by custom and lifespan because each could provide what the other lacked. It also placed magic within human history, where it would never again remain a foreign wonder.",
+      "durationMs": 57500,
+      "eventIds": ["quelthalas-arathor-alliance-forms"], "battleIds": ["troll-wars"],
+      "entityIds": ["amani-empire", "quelthalas-ancient", "arathor", "thoradin"],
+      "optionalExploreEntityIds": ["amani-empire", "quelthalas-ancient", "arathor", "thoradin"],
+      "camera": { "position": [2.4, 6.1, 5.5], "target": [2.3, 0, -1.1], "durationMs": 1100 },
+      "visualActions": [{ "type": "set_map_state", "mapStateId": "long-vigil-new-kingdoms-founding-map-research" }, { "type": "show_region", "regionId": "amani-influence-region-research" }, { "type": "show_relationships", "relationshipIds": ["amani-pressure-causes-alliance", "arathor-allied-with-quelthalas", "troll-alliance-part-of-troll-wars"] }],
+      "previousNodeId": "long-vigil-story-thoradin-unites", "nextNodeIds": ["long-vigil-story-fire-in-forest"]
+    },
+    {
+      "id": "long-vigil-story-fire-in-forest", "guideId": "long-vigil-new-kingdoms-guided-history",
+      "title": "Fire changes the forest and human history",
+      "narration": "The allied campaign ended the immediate Amani assault and broke much of the empire's regional power. Yet defeat did not erase the Amani, their memory, or their claim to the north. Quel'Thalas survived, and Arathor emerged with its unity proven in war. More quietly, the arcane art taught for one emergency took root among humans. A military victory had altered three futures: the victors', the defeated people's, and magic's place in the mortal world.",
+      "durationMs": 59500,
+      "eventIds": ["amani-defeated-in-troll-wars"], "battleIds": ["troll-wars"],
+      "entityIds": ["amani-empire", "quelthalas-ancient", "arathor"],
+      "optionalExploreEntityIds": ["amani-empire", "quelthalas-ancient", "arathor"],
+      "camera": { "position": [2.5, 6.7, 6.0], "target": [2.4, 0, -1.0], "durationMs": 1150 },
+      "visualActions": [{ "type": "set_map_state", "mapStateId": "long-vigil-new-kingdoms-founding-map-research" }, { "type": "show_relationships", "relationshipIds": ["troll-wars-causes-amani-defeat", "troll-victory-precedes-arathor-fragmentation"] }],
+      "previousNodeId": "long-vigil-story-alliance-of-need", "nextNodeIds": ["long-vigil-story-seven-crowns"]
+    },
+    {
+      "id": "long-vigil-story-seven-crowns", "guideId": "long-vigil-new-kingdoms-guided-history",
+      "title": "One human empire becomes seven kingdoms",
+      "narration": "Arathor's victory did not preserve its center forever. Roads lengthened, ports prospered, city-states acquired customs and interests of their own, and Strom's authority weakened across generations. No single morning raised seven crowns at once. The change was slower: one common realm becoming several sovereign powers until the old unity survived chiefly as ancestry and memory. The late map therefore shows a broad plurality, not borders frozen upon one date.",
+      "durationMs": 56000,
+      "eventIds": ["arathor-fragments-into-seven-kingdoms"], "entityIds": ["arathor", "seven-human-kingdoms"], "locationIds": ["strom"],
+      "optionalExploreEntityIds": ["arathor", "seven-human-kingdoms", "strom"],
+      "camera": { "position": [2.2, 7.0, 6.4], "target": [2.2, 0, 0], "durationMs": 1200 },
+      "visualActions": [{ "type": "set_map_state", "mapStateId": "long-vigil-new-kingdoms-map-research" }, { "type": "show_region", "regionId": "seven-kingdoms-influence-region-research" }, { "type": "show_relationships", "relationshipIds": ["arathor-transforms-into-seven-kingdoms"] }],
+      "previousNodeId": "long-vigil-story-fire-in-forest", "nextNodeIds": ["long-vigil-story-three-hammers"]
+    },
+    {
+      "id": "long-vigil-story-three-hammers", "guideId": "long-vigil-new-kingdoms-guided-history",
+      "title": "Three hammers break one mountain realm",
+      "narration": "Within Ironforge, the death of an old high king released rival claims among Bronzebeard, Wildhammer, and Dark Iron. War left the Bronzebeards beneath the mountain and sent the others toward new strongholds: Grim Batol in the north and Thaurissan in the south. The route shown is not one march. It is the shape of a people dividing, carrying kinship and grievance into separate halls where neither distance nor time was enough to settle the first defeat.",
+      "durationMs": 61000,
+      "eventIds": ["dwarven-succession-crisis"], "battleIds": ["war-of-the-three-hammers"],
+      "entityIds": ["dwarven-clans"], "locationIds": ["ironforge-ancient", "grim-batol-ancient", "thaurissan-city-ancient"],
+      "optionalExploreEntityIds": ["dwarven-clans", "ironforge-ancient", "grim-batol-ancient", "thaurissan-city-ancient"],
+      "camera": { "position": [2.5, 5.8, 5.1], "target": [2.5, 0, 0.9], "durationMs": 1080 },
+      "visualActions": [{ "type": "set_map_state", "mapStateId": "long-vigil-new-kingdoms-map-research" }, { "type": "show_route", "routeId": "dwarven-clan-dispersal" }, { "type": "show_relationships", "relationshipIds": ["dwarven-clans-located-at-ironforge", "succession-crisis-causes-three-hammers", "three-hammers-precedes-clan-dispersal"] }],
+      "previousNodeId": "long-vigil-story-seven-crowns", "nextNodeIds": ["long-vigil-story-firelord-returns"]
+    },
+    {
+      "id": "long-vigil-story-firelord-returns", "guideId": "long-vigil-new-kingdoms-guided-history",
+      "title": "An ancient fire answers a dying war",
+      "narration": "The Dark Irons returned against both rival realms, and their armies were driven toward ruin. In desperation, a summons reached powers sleeping far below every dwarven quarrel. Ragnaros answered. The Firelord's return shattered the southern mountains, destroyed the hand that had called him, and placed the surviving Dark Irons beneath a more terrible dominion. The civil war ended not by restoring unity, but by awakening the primordial world inside the new one.",
+      "durationMs": 58000,
+      "eventIds": ["ragnaros-reemerges-at-blackrock"], "battleIds": ["war-of-the-three-hammers"],
+      "entityIds": ["ragnaros", "dwarven-clans"], "locationIds": ["thaurissan-city-ancient"],
+      "optionalExploreEntityIds": ["ragnaros", "dwarven-clans"],
+      "camera": { "position": [1.7, 5.0, 4.4], "target": [1.7, 0, 2.5], "durationMs": 1050 },
+      "visualActions": [{ "type": "set_map_state", "mapStateId": "long-vigil-new-kingdoms-map-research" }, { "type": "show_relationships", "relationshipIds": ["three-hammers-causes-ragnaros-return", "ragnaros-participates-in-three-hammers-outcome"] }],
+      "previousNodeId": "long-vigil-story-three-hammers", "nextNodeIds": ["long-vigil-story-world-before-gate"]
+    },
+    {
+      "id": "long-vigil-story-world-before-gate", "guideId": "long-vigil-new-kingdoms-guided-history",
+      "title": "Many realms stand before an unopened gate",
+      "narration": "At the close of this long age, no single power held the world that the Sundering had divided. The kaldorei kept their vigil in Kalimdor. Quel'Thalas guarded its northern light beside an undefeated memory of Amani loss. Human kingdoms inherited Arathor without its unity, and the dwarven clans carried one ancestry into separate halls. Beyond their knowledge, another history was gathering on Draenor. Soon a gate would join the worlds, and every settled border would be tested.",
+      "durationMs": 62000,
+      "entityIds": ["long-vigil-kaldorei", "quelthalas-ancient", "amani-empire", "seven-human-kingdoms", "dwarven-clans"],
+      "optionalExploreEntityIds": ["long-vigil-kaldorei", "quelthalas-ancient", "amani-empire", "seven-human-kingdoms", "dwarven-clans"],
+      "camera": { "position": [0, 7.6, 7.2], "target": [0, 0, 0], "durationMs": 1300 },
+      "visualActions": [{ "type": "set_map_state", "mapStateId": "long-vigil-new-kingdoms-map-research" }, { "type": "show_region", "regionId": "seven-kingdoms-influence-region-research" }, { "type": "show_relationships", "relationshipIds": ["era-five-precedes-horde-rise"] }],
+      "previousNodeId": "long-vigil-story-firelord-returns"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "first-war",
+  "kind": "battle",
+  "name": "The First War",
+  "slug": "first-war",
+  "eraId": "rise-of-the-horde",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "From the opening of the Dark Portal through the fall of Stormwind", "relativeToId": "dark-portal-opens" },
+  "summary": "A multi-year invasion in which the Old Horde crossed from Draenor, fought the Kingdom of Stormwind, changed leadership, and ultimately captured the southern capital.",
+  "description": "This dossier presents an atlas-scale strategic sequence. The source chapter supports repeated offensives, political upheaval, and Stormwind's fall, but not one exact battlefield or a complete surveyed route assembled from game missions.",
+  "locationIds": ["dark-portal", "stormwind-city-ancient"],
+  "participantEntityIds": ["old-horde", "kingdom-of-stormwind", "blackhand", "orgrim-doomhammer", "medivh", "anduin-lothar"],
+  "causedByEventIds": ["dark-portal-opens"],
+  "causesEventIds": ["stormwind-falls"],
+  "relationshipIds": ["dark-portal-causes-first-war", "old-horde-opposes-stormwind", "first-war-causes-stormwind-fall"],
+  "sourceIds": ["warcraft-chronicle-volume-2", "blizzard-tides-of-darkness-library"],
+  "claimIds": ["first-war-battle-claim"],
+  "campaignId": "rise-of-the-horde-and-first-two-wars",
+  "combatants": [
+    { "factionId": "old-horde", "role": "attacker", "commanderEntityIds": ["blackhand", "orgrim-doomhammer"] },
+    { "factionId": "kingdom-of-stormwind", "role": "defender", "commanderEntityIds": ["anduin-lothar"] }
+  ],
+  "objectives": [
+    { "factionId": "old-horde", "summary": "Establish the invasion on Azeroth and break the Kingdom of Stormwind." },
+    { "factionId": "kingdom-of-stormwind", "summary": "Contain the invaders, preserve the kingdom, and uncover the power enabling the portal." }
+  ],
+  "phases": [
+    {
+      "id": "portal-incursions",
+      "title": "A new enemy crosses the threshold",
+      "summary": "Horde forces emerge from the Dark Portal and begin probing the southern kingdom.",
+      "routeId": "first-war-advance", "durationMs": 7200,
+      "narration": "The first crossings did not reveal the full weight waiting beyond the gate. They were enough to turn a hidden act of sorcery into war and to teach Stormwind that the enemy had no homeland upon its maps.",
+      "camera": { "position": [2.2, 5.0, 4.4], "target": [2.0, 0, 2.7], "durationMs": 1050 },
+      "visualActions": [{ "type": "show_route", "routeId": "first-war-advance" }, { "type": "show_relationships", "relationshipIds": ["dark-portal-causes-first-war"] }]
+    },
+    {
+      "id": "stormwind-resists",
+      "title": "Stormwind survives the first blows",
+      "summary": "The defenders resist early attacks while the Horde learns the land and gathers greater strength.",
+      "routeId": "first-war-advance", "durationMs": 7200,
+      "narration": "The kingdom did not fall at the first alarm. Resistance bought time, but each return carried greater confidence, while fear and uncertainty divided those who still believed the war could be contained.",
+      "camera": { "position": [2.4, 5.1, 4.6], "target": [2.35, 0, 1.8], "durationMs": 1050 },
+      "visualActions": [{ "type": "show_relationships", "relationshipIds": ["old-horde-opposes-stormwind"] }]
+    },
+    {
+      "id": "guardian-unmasked",
+      "title": "The hand behind the gate is uncovered",
+      "summary": "Stormwind's defenders discover Medivh's role, severing the Azeroth-side will that had enabled the invasion.",
+      "durationMs": 7400,
+      "narration": "The road of the invasion led inward as well as east. The Guardian who should have watched the world had helped open it, and stopping him ended one design without recalling the armies already across the threshold.",
+      "camera": { "position": [3.0, 5.2, 4.5], "target": [2.8, 0, 2.1], "durationMs": 1080 },
+      "visualActions": [{ "type": "show_relationships", "relationshipIds": ["medivh-participates-in-dark-portal"] }]
+    },
+    {
+      "id": "orgrim-takes-command",
+      "title": "The Horde changes masters",
+      "summary": "Orgrim kills Blackhand, attacks the Shadow Council's power, and assumes command.",
+      "durationMs": 7200,
+      "narration": "The invaders' unity concealed another war. Orgrim struck down Blackhand and tore at the council behind him. The Horde changed masters, yet its armies remained upon Azeroth and its hunger for victory did not depart with the old warchief.",
+      "camera": { "position": [2.0, 5.5, 4.9], "target": [2.0, 0, 1.9], "durationMs": 1100 },
+      "visualActions": [{ "type": "show_relationships", "relationshipIds": ["orgrim-replaces-blackhand"] }]
+    },
+    {
+      "id": "stormwind-falls-phase",
+      "title": "The southern kingdom is broken",
+      "summary": "The Horde captures Stormwind and surviving leaders carry warning north.",
+      "routeId": "first-war-advance", "durationMs": 7600,
+      "narration": "At last the southern walls failed. Victory gave the Horde a ruined capital, while the sea carried survivors and a warning toward kingdoms that had not yet understood that Stormwind's war would soon become their own.",
+      "camera": { "position": [2.7, 4.8, 4.2], "target": [2.35, 0, 1.8], "durationMs": 1080 },
+      "visualActions": [{ "type": "show_route", "routeId": "first-war-advance" }, { "type": "show_relationships", "relationshipIds": ["first-war-causes-stormwind-fall"] }]
+    }
+  ],
+  "outcome": { "summary": "Stormwind was captured and devastated, the First War ended in Horde victory, and survivors escaped north to seek a wider alliance.", "winnerFactionId": "old-horde" },
+  "geographicCertainty": "unknown",
+  "geographicEditorNote": "The First War comprised many movements and engagements. No single exact battlefield point is asserted; the displayed route is explicitly inferred.",
+  "importance": "era_defining",
+  "contentStatus": "research"
+}

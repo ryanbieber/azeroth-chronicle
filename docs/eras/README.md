@@ -16,12 +16,12 @@ Application records live in `data/eras`. Each era owns a separate record in `dat
 | 3 | `ancient-civilizations` | Changing empires across primordial Kalimdor | Public research-preview vertical slice implemented; human review pending |
 | 4 | `war-of-the-ancients` | A campaign ending in a world-changing rupture | Public research-preview vertical slice implemented; human review pending |
 | 5 | `long-vigil-new-kingdoms` | Post-Sundering states, migrations, and borders | Public research-preview vertical slice implemented; human review pending |
-| 6 | `rise-of-the-horde` | Two worlds, the Dark Portal, and two wars | Era shell and empty map state |
+| 6 | `rise-of-the-horde` | Two worlds, the Dark Portal, and two wars | Public research-preview vertical slice implemented; human review pending |
 | 7 | `third-war-frozen-throne` | Multi-front collapse and the path to Icecrown | Era shell and empty map state |
 | 8 | `age-of-adventurers` | Many campaigns and repeated map-state changes | Era shell and empty map state |
 | 9 | `modern-cosmic-age` | Fourth War through the evolving Worldsoul Saga | Era shell and empty map state |
 
-Build the eras in this order. Cosmic Origins through the Long Vigil and New Kingdoms now establish the reference patterns for relational cosmography, terrain eras, explicit before/after storytelling, long eras represented through political time slices, irreversible world-state transitions, inferred migrations, and concurrent regional histories. Finish the publication gate for one era before beginning production terrain for the next; reusable engine improvements may continue across eras.
+Build the eras in this order. Cosmic Origins through the First Two Wars now establish the reference patterns for relational cosmography, terrain eras, explicit before/after storytelling, long eras represented through political time slices, irreversible world-state transitions, inferred migrations, concurrent regional histories, and cross-world transitions without shared coordinates. Finish the publication gate for one era before beginning production terrain for the next; reusable engine improvements may continue across eras.
 
 ## Definition of done for every era
 
@@ -134,6 +134,8 @@ Era 9 extends beyond Chronicle Volume 4. Dragonflight and Worldsoul Saga materia
 **Animated tour spine:** Draenor baseline → corruption and consolidation → portal opens → First War routes → Stormwind outcome → Alliance formation/response → Second War fronts → Alliance victory and consequences.
 
 **Completion emphasis:** prove cross-world storytelling while preserving local atlas coordinates and meaningful back/forward navigation.
+
+**Implemented research baseline:** a new Draenor worldspace; original intact and war-scarred terrain; separate First and Second War states on inherited Azeroth terrain; 22 new indexed subjects plus the returning seven kingdoms; 15 events; two strategic war dossiers with five and seven phases; four inferred intra-world routes; 23 time-aware spatial states; and a fifteen-pane guided history. The Dark Portal is shown through local anchors and a map-state transition, never as a line between planetary coordinate systems. The detailed source, causality, cartography, interaction, and visual audit is in `docs/research/era-6-rise-of-the-horde.md`. Human review remains required before promotion.
 
 ## Era 7 — The Third War and the Frozen Throne
 

@@ -300,10 +300,75 @@ test('Long Vigil and New Kingdoms moves from Hyjal to a plural post-Sundering wo
   await expect(page.getByRole('heading', { name: 'Many realms stand before an unopened gate' })).toBeVisible();
 });
 
+test('Rise of the Horde crosses from Draenor into the First and Second Wars without inventing a spatial bridge', async ({ page }) => {
+  await page.goto('/map?era=rise-of-the-horde');
+  await expect(page.getByRole('combobox', { name: 'Choose era' })).toHaveValue('rise-of-the-horde');
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE SECOND WAR CAMPAIGN STATE');
+
+  await page.getByRole('button', { name: 'Guided tour' }).click();
+  await expect(page.getByRole('heading', { name: 'Draenor holds more than one remembered home' })).toBeVisible();
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE DRAENOR BEFORE THE HORDE');
+  await expect(page.locator('.map-subject-visual').filter({ hasText: 'The Orc Clans of Draenor' })).toBeVisible();
+  await expect(page.locator('.map-subject-visual').filter({ hasText: 'The Draenei of Draenor' })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'An old vengeance finds a younger world' })).toBeVisible();
+  await expect(page.getByRole('button', { name: "Kil'jaeden", exact: true })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Trust becomes the first weapon' })).toBeVisible();
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE DRAENOR WAR AND CORRUPTION STATE');
+  await expect(page.getByRole('button', { name: "Ner'zhul", exact: true })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: "A council grows behind the warchief's chair" })).toBeVisible();
+  await expect(page.getByRole('button', { name: "Gul'dan", exact: true })).toBeVisible();
+  await expect(page.locator('.map-subject-visual').filter({ hasText: 'The Shadow Council' })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Power is offered in a cup that remembers' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Durotan', exact: true })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Mannoroth', exact: true })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'A bright city falls beneath a wounded sky' })).toBeVisible();
+  await expect(page.locator('.battle-playback')).toHaveCount(0);
+
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'The road does not cross a map—it leaves a world' })).toBeVisible();
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE FIRST WAR CAMPAIGN STATE');
+  await expect(page.getByRole('button', { name: 'Medivh', exact: true })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'The Dark Portal', exact: true })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Previous', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'A bright city falls beneath a wounded sky' })).toBeVisible();
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE DRAENOR WAR AND CORRUPTION STATE');
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE FIRST WAR CAMPAIGN STATE');
+
+  for (let index = 0; index < 4; index += 1) {
+    await page.getByRole('button', { name: 'Next', exact: true }).click();
+  }
+  await expect(page.getByRole('heading', { name: 'Seven inheritances become one wartime promise' })).toBeVisible();
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE SECOND WAR CAMPAIGN STATE');
+  await expect(page.locator('.map-subject-visual').filter({ hasText: 'The Alliance of Lordaeron' })).toBeVisible();
+
+  for (let index = 0; index < 3; index += 1) {
+    await page.getByRole('button', { name: 'Next', exact: true }).click();
+  }
+  await expect(page.getByRole('heading', { name: 'At Blackrock, loss becomes a summons' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Anduin Lothar', exact: true })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Turalyon', exact: true })).toBeVisible();
+  await expect(page.locator('.battle-playback')).toHaveCount(0);
+
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'The gate falls, but the road remains in memory' })).toBeVisible();
+});
+
 test('landing page full tour chains every completed guided era', async ({ page }) => {
   await page.goto('/');
   await expect(page.getByRole('heading', { name: /the full history/i })).toBeVisible();
-  await expect(page.locator('.landing-still')).toHaveCount(6);
+  await expect(page.locator('.landing-still')).toHaveCount(7);
   await page.getByRole('button', { name: /full tour of the history/i }).click();
 
   await expect(page).toHaveURL(/map\?era=cosmic-origins&tour=full/);
@@ -352,6 +417,14 @@ test('landing page full tour chains every completed guided era', async ({ page }
     await page.getByRole('button', { name: 'Next', exact: true }).click();
   }
   await expect(page.getByRole('heading', { name: 'Many realms stand before an unopened gate' })).toBeVisible();
+  await page.getByRole('button', { name: 'Continue the chronicle' }).click();
+
+  await expect(page).toHaveURL(/map\?era=rise-of-the-horde&tour=full/);
+  await expect(page.getByRole('heading', { name: 'Draenor holds more than one remembered home' })).toBeVisible();
+  for (let index = 0; index < 14; index += 1) {
+    await page.getByRole('button', { name: 'Next', exact: true }).click();
+  }
+  await expect(page.getByRole('heading', { name: 'The gate falls, but the road remains in memory' })).toBeVisible();
   await page.getByRole('button', { name: 'Continue the chronicle' }).click();
 
   await expect(page).toHaveURL(/\?tour=complete$/);

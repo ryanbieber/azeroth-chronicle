@@ -1,0 +1,133 @@
+{
+  "guide": {
+    "id": "rise-of-the-horde-guided-history",
+    "eraId": "rise-of-the-horde",
+    "title": "The Road That Crossed the Stars",
+    "description": "A continuous cross-world history of Draenor's manipulation, the Old Horde, the Dark Portal, Stormwind's fall, the Alliance of Lordaeron, and the Second War's reversal.",
+    "nodeIds": [
+      "horde-rise-story-two-peoples",
+      "horde-rise-story-deceiver-finds-draenor",
+      "horde-rise-story-nerzhul-deceived",
+      "horde-rise-story-shadow-council",
+      "horde-rise-story-blood-pact",
+      "horde-rise-story-shattrath-falls",
+      "horde-rise-story-gate-between-worlds",
+      "horde-rise-story-first-war",
+      "horde-rise-story-orgrim-rises",
+      "horde-rise-story-stormwind-falls",
+      "horde-rise-story-alliance-forms",
+      "horde-rise-story-second-war",
+      "horde-rise-story-broken-purpose",
+      "horde-rise-story-blackrock-rally",
+      "horde-rise-story-gate-broken"
+    ],
+    "contentStatus": "research"
+  },
+  "nodes": [
+    {
+      "id":"horde-rise-story-two-peoples","guideId":"rise-of-the-horde-guided-history","title":"Draenor holds more than one remembered home",
+      "narration":"Before there was a Horde, the orcs lived as many clans beneath Draenor's sky, bound by ancestry, rivalry, and the voices of the elements. The draenei also called this world home after a long exile among the stars. Their cities and the clans' hunting grounds did not make a perfect peace, yet neither people was born for the war that would consume them. The first map therefore shows coexistence before conspiracy.",
+      "durationMs":62000,"entityIds":["draenor-ancient","orc-clans-draenor","draenei-draenor"],"optionalExploreEntityIds":["draenor-ancient","orc-clans-draenor","draenei-draenor"],
+      "camera":{"position":[0,7.6,7.0],"target":[0,0,0],"durationMs":1300},
+      "visualActions":[{"type":"set_map_state","mapStateId":"rise-of-the-horde-draenor-before-map-research"},{"type":"show_region","regionId":"orc-clans-draenor-region-research"},{"type":"show_region","regionId":"draenei-draenor-region-research"}],"nextNodeIds":["horde-rise-story-deceiver-finds-draenor"]
+    },
+    {
+      "id":"horde-rise-story-deceiver-finds-draenor","guideId":"rise-of-the-horde-guided-history","title":"An old vengeance finds a younger world",
+      "narration":"Kil'jaeden had not forgotten the exiles who escaped him. When he found the draenei upon Draenor, he did not begin with an army descending openly from the heavens. He looked instead toward their neighbors. Orcish strength, clan loyalty, and reverence for ancestral counsel could all be turned if the warning appeared to come from a trusted voice. Thus a private hatred reached for an entire people as its instrument.",
+      "durationMs":62000,"eventIds":["kiljaeden-targets-draenei-on-draenor"],"entityIds":["kiljaeden","draenei-draenor","orc-clans-draenor"],"optionalExploreEntityIds":["kiljaeden","draenei-draenor","orc-clans-draenor"],
+      "camera":{"position":[2.4,5.8,5.2],"target":[2.4,0,-3.2],"durationMs":1150},
+      "visualActions":[{"type":"set_map_state","mapStateId":"rise-of-the-horde-draenor-before-map-research"},{"type":"show_relationships","relationshipIds":["kiljaeden-opposes-draenei","kiljaeden-causes-nerzhul-deception"]}],"previousNodeId":"horde-rise-story-two-peoples","nextNodeIds":["horde-rise-story-nerzhul-deceived"]
+    },
+    {
+      "id":"horde-rise-story-nerzhul-deceived","guideId":"rise-of-the-horde-guided-history","title":"Trust becomes the first weapon",
+      "narration":"Ner'zhul was heard because he had earned the clans' respect. Kil'jaeden preyed upon grief and presented deception in the likeness of ancestral counsel. Suspicion hardened into raids, and raids made the next accusation easier to believe. When Ner'zhul understood that the path before him did not lead where the ancestors had promised, he resisted—but by then fear already had its own momentum, and another apprentice was willing to continue.",
+      "durationMs":63500,"eventIds":["nerzhul-deceived-against-draenei"],"entityIds":["nerzhul","kiljaeden","orc-clans-draenor"],"optionalExploreEntityIds":["nerzhul","kiljaeden","orc-clans-draenor"],
+      "camera":{"position":[0.1,5.7,5.0],"target":[-0.6,0,-1.2],"durationMs":1100},
+      "visualActions":[{"type":"set_map_state","mapStateId":"rise-of-the-horde-draenor-corrupted-map-research"},{"type":"show_relationships","relationshipIds":["kiljaeden-causes-nerzhul-deception","nerzhul-deception-precedes-shadow-council"]}],"previousNodeId":"horde-rise-story-deceiver-finds-draenor","nextNodeIds":["horde-rise-story-shadow-council"]
+    },
+    {
+      "id":"horde-rise-story-shadow-council","guideId":"rise-of-the-horde-guided-history","title":"A council grows behind the warchief's chair",
+      "narration":"Gul'dan accepted what Ner'zhul would not. Around him gathered warlocks and agents whose authority was strongest when unseen. The Shadow Council helped turn many clans toward a single war while Blackhand stood before them as warchief. Unity came, but not as freely chosen kinship: command, fear, new magic, and concealed bargains bound the structure together. Draenor's political map had begun to narrow beneath a hand most warriors could not see.",
+      "durationMs":63500,"eventIds":["guldan-forms-shadow-council"],"entityIds":["guldan","shadow-council","old-horde"],"optionalExploreEntityIds":["guldan","shadow-council","old-horde"],
+      "camera":{"position":[0.6,5.5,4.8],"target":[0.2,0,0.5],"durationMs":1100},
+      "visualActions":[{"type":"set_map_state","mapStateId":"rise-of-the-horde-draenor-corrupted-map-research"},{"type":"show_relationships","relationshipIds":["guldan-controls-shadow-council","shadow-council-controls-old-horde"]}],"previousNodeId":"horde-rise-story-nerzhul-deceived","nextNodeIds":["horde-rise-story-blood-pact"]
+    },
+    {
+      "id":"horde-rise-story-blood-pact","guideId":"rise-of-the-horde-guided-history","title":"Power is offered in a cup that remembers",
+      "narration":"Before the last great assault, Mannoroth's blood was offered as strength. Many accepted, and the bargain deepened the Legion's hold upon the Horde. Yet the choice was not universal. Durotan refused it for the Frostwolves, preserving a witness that coercion had not erased every will. The distinction matters: the Horde was transformed by manipulation and decision, but no single cup can stand for every orc who lived beneath Draenor's darkening sky.",
+      "durationMs":65000,"eventIds":["orc-clans-drink-mannoroths-blood"],"entityIds":["mannoroth","durotan","old-horde","orc-clans-draenor"],"optionalExploreEntityIds":["mannoroth","durotan","old-horde","orc-clans-draenor"],
+      "camera":{"position":[0.8,5.0,4.3],"target":[0.6,0,1.8],"durationMs":1080},
+      "visualActions":[{"type":"set_map_state","mapStateId":"rise-of-the-horde-draenor-corrupted-map-research"},{"type":"show_relationships","relationshipIds":["mannoroth-blood-transforms-clans","durotan-opposes-blood-pact","shadow-council-causes-blood-pact"]}],"previousNodeId":"horde-rise-story-shadow-council","nextNodeIds":["horde-rise-story-shattrath-falls"]
+    },
+    {
+      "id":"horde-rise-story-shattrath-falls","guideId":"rise-of-the-horde-guided-history","title":"A bright city falls beneath a wounded sky",
+      "narration":"The Horde's war broke upon Shattrath with terrible force. The city fell, organized resistance was shattered, and the draenei were reduced to scattered survivors—but they were not erased. Victory also failed to heal the conquerors' world. Fel practice and war had sickened the land, and the host built for one enemy now faced emptiness after conquest. A machine taught to hunger would soon be shown another world through another man's dream.",
+      "durationMs":65000,"eventIds":["shattrath-falls-to-horde"],"entityIds":["old-horde","draenei-draenor","shattrath-draenor"],"locationIds":["shattrath-draenor"],"optionalExploreEntityIds":["old-horde","draenei-draenor","shattrath-draenor"],
+      "camera":{"position":[3.0,5.3,4.8],"target":[2.6,0,-0.1],"durationMs":1100},
+      "visualActions":[{"type":"set_map_state","mapStateId":"rise-of-the-horde-draenor-corrupted-map-research"},{"type":"show_route","routeId":"horde-draenor-campaign"},{"type":"show_relationships","relationshipIds":["old-horde-opposes-draenei","blood-pact-precedes-shattrath-fall","shattrath-fall-precedes-dark-portal"]}],"previousNodeId":"horde-rise-story-blood-pact","nextNodeIds":["horde-rise-story-gate-between-worlds"]
+    },
+    {
+      "id":"horde-rise-story-gate-between-worlds","guideId":"rise-of-the-horde-guided-history","title":"The road does not cross a map—it leaves a world",
+      "narration":"Across the gulf between worlds, Medivh's corrupted will answered Gul'dan. Together their workings opened the Dark Portal. The atlas does not draw that passage as a road across oceans, for no shared geography joins these skies. It changes worldspace. Draenor falls away; Azeroth appears, and the same threshold stands in another land. Through it came scouts, warriors, and at last the weight of the Horde. The calendar of the modern wars begins here.",
+      "durationMs":66000,"eventIds":["dark-portal-opens"],"entityIds":["dark-portal","guldan","medivh","old-horde"],"locationIds":["dark-portal"],"optionalExploreEntityIds":["dark-portal","guldan","medivh","old-horde"],
+      "camera":{"position":[2.3,4.8,4.2],"target":[2.0,0,2.7],"durationMs":1200},
+      "visualActions":[{"type":"set_map_state","mapStateId":"rise-of-the-horde-first-war-map-research"},{"type":"show_relationships","relationshipIds":["guldan-participates-in-dark-portal","medivh-participates-in-dark-portal","dark-portal-causes-first-war"]}],"previousNodeId":"horde-rise-story-shattrath-falls","nextNodeIds":["horde-rise-story-first-war"]
+    },
+    {
+      "id":"horde-rise-story-first-war","guideId":"rise-of-the-horde-guided-history","title":"Stormwind discovers that the enemy has another sky",
+      "narration":"The first war widened by returns. Early assaults could be resisted, but the Horde learned the southern kingdom while greater forces crossed behind them. Stormwind fought an enemy whose reserves lay beyond the edge of its world, even as Medivh's betrayal divided trust within its own defense. The line shown is only strategic direction from portal to kingdom. It does not turn many campaigns into one neat march, or game missions into surveyed history.",
+      "durationMs":65000,"eventIds":["first-war-begins"],"battleIds":["first-war"],"entityIds":["old-horde","kingdom-of-stormwind","blackhand","anduin-lothar"],"locationIds":["dark-portal","stormwind-city-ancient"],"optionalExploreEntityIds":["old-horde","kingdom-of-stormwind","blackhand","anduin-lothar"],
+      "camera":{"position":[2.5,6.0,5.4],"target":[2.2,0,2.0],"durationMs":1150},
+      "visualActions":[{"type":"set_map_state","mapStateId":"rise-of-the-horde-first-war-map-research"},{"type":"show_route","routeId":"first-war-advance"},{"type":"show_relationships","relationshipIds":["dark-portal-causes-first-war","old-horde-opposes-stormwind"]}],"previousNodeId":"horde-rise-story-gate-between-worlds","nextNodeIds":["horde-rise-story-orgrim-rises"]
+    },
+    {
+      "id":"horde-rise-story-orgrim-rises","guideId":"rise-of-the-horde-guided-history","title":"The hand behind the throne is struck",
+      "narration":"The Horde's visible and hidden commands turned against one another during the war. Orgrim killed Blackhand, shattered much of the Shadow Council, and took the warchief's mantle himself. He opposed Gul'dan's private mastery, but he did not abandon the invasion. The war therefore changed leadership without changing its immediate direction. Stormwind still faced the army at its gates, now commanded by a leader who sought to make the Horde answer openly to him.",
+      "durationMs":65000,"eventIds":["orgrim-becomes-warchief"],"battleIds":["first-war"],"entityIds":["orgrim-doomhammer","blackhand","shadow-council","old-horde"],"optionalExploreEntityIds":["orgrim-doomhammer","blackhand","shadow-council","old-horde"],
+      "camera":{"position":[2.0,5.4,4.8],"target":[2.0,0,1.9],"durationMs":1100},
+      "visualActions":[{"type":"set_map_state","mapStateId":"rise-of-the-horde-first-war-map-research"},{"type":"show_relationships","relationshipIds":["orgrim-replaces-blackhand","orgrim-succession-precedes-stormwind-fall"]}],"previousNodeId":"horde-rise-story-first-war","nextNodeIds":["horde-rise-story-stormwind-falls"]
+    },
+    {
+      "id":"horde-rise-story-stormwind-falls","guideId":"rise-of-the-horde-guided-history","title":"One kingdom falls, and its warning sails north",
+      "narration":"Stormwind was taken and left in ruin. For the Horde, the First War ended in victory. For the survivors, defeat became a voyage: Lothar and those who escaped carried more than grief toward the northern kingdoms. They carried proof that isolation was no defense against a gate between worlds. The southern realm had fallen alone; whether its neighbors would remain separate became the next question upon which all their histories turned.",
+      "durationMs":64000,"eventIds":["stormwind-falls"],"battleIds":["first-war"],"entityIds":["anduin-lothar","kingdom-of-stormwind","old-horde"],"locationIds":["stormwind-city-ancient"],"optionalExploreEntityIds":["anduin-lothar","kingdom-of-stormwind","old-horde","stormwind-city-ancient"],
+      "camera":{"position":[2.8,4.9,4.3],"target":[2.35,0,1.8],"durationMs":1080},
+      "visualActions":[{"type":"set_map_state","mapStateId":"rise-of-the-horde-first-war-map-research"},{"type":"show_relationships","relationshipIds":["first-war-causes-stormwind-fall","stormwind-fall-causes-alliance"]}],"previousNodeId":"horde-rise-story-orgrim-rises","nextNodeIds":["horde-rise-story-alliance-forms"]
+    },
+    {
+      "id":"horde-rise-story-alliance-forms","guideId":"rise-of-the-horde-guided-history","title":"Seven inheritances become one wartime promise",
+      "narration":"In Lordaeron, the warning met old rivalries, different interests, and the understandable hope that the danger might stop in the south. Yet the evidence of Stormwind's fall prevailed. Human kingdoms and allied peoples formed the Alliance of Lordaeron, with Lothar commanding its armies. This coalition did not erase its members. It asked them to act together long enough to prevent the fate of one kingdom from becoming the fate of every hall and harbor.",
+      "durationMs":65000,"eventIds":["alliance-of-lordaeron-forms"],"entityIds":["alliance-of-lordaeron","anduin-lothar","seven-human-kingdoms","lordaeron-ancient"],"locationIds":["lordaeron-ancient"],"optionalExploreEntityIds":["alliance-of-lordaeron","anduin-lothar","seven-human-kingdoms","lordaeron-ancient"],
+      "camera":{"position":[2.6,5.5,5.0],"target":[2.2,0,-1.9],"durationMs":1100},
+      "visualActions":[{"type":"set_map_state","mapStateId":"rise-of-the-horde-second-war-map-research"},{"type":"show_region","regionId":"alliance-lordaeron-region-research"},{"type":"show_relationships","relationshipIds":["stormwind-fall-causes-alliance","lothar-controls-alliance-armies","alliance-located-at-lordaeron"]}],"previousNodeId":"horde-rise-story-stormwind-falls","nextNodeIds":["horde-rise-story-second-war"]
+    },
+    {
+      "id":"horde-rise-story-second-war","guideId":"rise-of-the-horde-guided-history","title":"The Second War spreads across many roads",
+      "narration":"Orgrim drove the Horde north against a coalition still learning how to endure. The struggle crossed land and water, threatened several realms, and drew peoples beyond humanity into its widening account. No single line can contain such a war. The route shown is a strategic summary: pressure rising from the conquered south toward the Alliance heartlands, answered by forces whose shared purpose grew under the strain meant to break it.",
+      "durationMs":64000,"eventIds":["second-war-begins"],"battleIds":["second-war"],"entityIds":["old-horde","alliance-of-lordaeron","orgrim-doomhammer","anduin-lothar"],"optionalExploreEntityIds":["old-horde","alliance-of-lordaeron","orgrim-doomhammer","anduin-lothar"],
+      "camera":{"position":[2.2,7.0,6.2],"target":[2.0,0,0],"durationMs":1200},
+      "visualActions":[{"type":"set_map_state","mapStateId":"rise-of-the-horde-second-war-map-research"},{"type":"show_route","routeId":"second-war-horde-offensive"},{"type":"show_relationships","relationshipIds":["old-horde-opposes-alliance","alliance-formation-precedes-second-war"]}],"previousNodeId":"horde-rise-story-alliance-forms","nextNodeIds":["horde-rise-story-broken-purpose"]
+    },
+    {
+      "id":"horde-rise-story-broken-purpose","guideId":"rise-of-the-horde-guided-history","title":"The oldest bargain fractures the Horde",
+      "narration":"At the height of the northern campaign, Gul'dan withdrew warriors for an ambition that was his alone. The choice exposed what conquest had hidden: the Horde had never been united by one memory or one purpose. Orgrim turned fury upon the deserters, but lost strength and time that could not be recalled. The Alliance survived the pressure, and the offensive began to give way. A betrayal within the invaders opened room for resistance before them.",
+      "durationMs":65000,"eventIds":["guldan-abandons-second-war"],"battleIds":["second-war"],"entityIds":["guldan","orgrim-doomhammer","old-horde"],"optionalExploreEntityIds":["guldan","orgrim-doomhammer","old-horde"],
+      "camera":{"position":[2.1,6.0,5.4],"target":[2.0,0,-0.2],"durationMs":1100},
+      "visualActions":[{"type":"set_map_state","mapStateId":"rise-of-the-horde-second-war-map-research"},{"type":"show_relationships","relationshipIds":["second-war-precedes-guldan-defection","guldan-defection-causes-horde-defeat"]}],"previousNodeId":"horde-rise-story-second-war","nextNodeIds":["horde-rise-story-blackrock-rally"]
+    },
+    {
+      "id":"horde-rise-story-blackrock-rally","guideId":"rise-of-the-horde-guided-history","title":"At Blackrock, loss becomes a summons",
+      "narration":"Near Blackrock Spire, Lothar fell in the struggle with Orgrim. The death of Stormwind's champion might have broken the army he had gathered. Turalyon instead raised the fallen commander's memory before them and called the Alliance forward. Grief became momentum. From that turning, the counteroffensive pressed south—not one perfect march, but a succession of victories carrying the war back toward the threshold through which it had entered.",
+      "durationMs":64000,"eventIds":["lothar-falls-at-blackrock","turalyon-rallies-alliance"],"battleIds":["second-war"],"entityIds":["anduin-lothar","turalyon","orgrim-doomhammer","alliance-of-lordaeron"],"locationIds":["blackrock-spire-ancient"],"optionalExploreEntityIds":["anduin-lothar","turalyon","orgrim-doomhammer","blackrock-spire-ancient"],
+      "camera":{"position":[2.0,5.0,4.5],"target":[1.6,0,0.5],"durationMs":1100},
+      "visualActions":[{"type":"set_map_state","mapStateId":"rise-of-the-horde-second-war-map-research"},{"type":"show_route","routeId":"second-war-alliance-counteroffensive"},{"type":"show_relationships","relationshipIds":["lothar-fall-causes-turalyon-rally","turalyon-rally-causes-horde-defeat"]}],"previousNodeId":"horde-rise-story-broken-purpose","nextNodeIds":["horde-rise-story-gate-broken"]
+    },
+    {
+      "id":"horde-rise-story-gate-broken","guideId":"rise-of-the-horde-guided-history","title":"The gate falls, but the road remains in memory",
+      "narration":"The Alliance drove the Horde back to the Dark Portal and destroyed the original gateway. Many orcs were captured; others remained beyond reach, and Draenor still waited on the far side of a severed road. Victory ended the Second War, not the histories it had entangled. Camps, displaced peoples, wounded kingdoms, and a generation shaped by invasion now stood before the next crisis. From these consequences, the age of the Third War would one day rise.",
+      "durationMs":65000,"eventIds":["horde-defeated-dark-portal-destroyed"],"battleIds":["second-war"],"entityIds":["alliance-of-lordaeron","old-horde","turalyon","dark-portal"],"locationIds":["dark-portal"],"optionalExploreEntityIds":["alliance-of-lordaeron","old-horde","turalyon","dark-portal"],
+      "camera":{"position":[2.3,5.5,5.0],"target":[2.0,0,2.6],"durationMs":1150},
+      "visualActions":[{"type":"set_map_state","mapStateId":"rise-of-the-horde-second-war-map-research"},{"type":"show_route","routeId":"second-war-alliance-counteroffensive"},{"type":"show_relationships","relationshipIds":["second-war-causes-horde-defeat","guldan-defection-causes-horde-defeat","turalyon-rally-causes-horde-defeat","second-war-aftermath-precedes-third-war"]}],"previousNodeId":"horde-rise-story-blackrock-rally"
+    }
+  ]
+}

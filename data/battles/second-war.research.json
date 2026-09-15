@@ -1,0 +1,97 @@
+{
+  "id": "second-war",
+  "kind": "battle",
+  "name": "The Second War",
+  "slug": "second-war",
+  "eraId": "rise-of-the-horde",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "After Stormwind's fall through the destruction of the original Dark Portal", "relativeToId": "alliance-of-lordaeron-forms" },
+  "summary": "A multi-theater war in which the Horde drove north against the Alliance of Lordaeron before internal fracture and an Alliance counteroffensive reversed the campaign.",
+  "description": "The dossier describes strategic direction and leadership changes rather than replaying missions or simulating units. Land, sea, and aerial theaters are condensed into two explicitly inferred atlas routes.",
+  "locationIds": ["lordaeron-ancient", "blackrock-spire-ancient", "dark-portal"],
+  "participantEntityIds": ["old-horde", "alliance-of-lordaeron", "orgrim-doomhammer", "guldan", "anduin-lothar", "turalyon"],
+  "causedByEventIds": ["second-war-begins"],
+  "causesEventIds": ["guldan-abandons-second-war", "lothar-falls-at-blackrock", "horde-defeated-dark-portal-destroyed"],
+  "relationshipIds": ["old-horde-opposes-alliance", "second-war-causes-horde-defeat", "guldan-defection-causes-horde-defeat", "lothar-fall-causes-turalyon-rally", "turalyon-rally-causes-horde-defeat"],
+  "sourceIds": ["warcraft-chronicle-volume-2", "blizzard-tides-of-darkness-library"],
+  "claimIds": ["second-war-battle-claim"],
+  "campaignId": "rise-of-the-horde-and-first-two-wars",
+  "combatants": [
+    { "factionId": "old-horde", "role": "attacker", "commanderEntityIds": ["orgrim-doomhammer"] },
+    { "factionId": "alliance-of-lordaeron", "role": "defender", "commanderEntityIds": ["anduin-lothar", "turalyon"] }
+  ],
+  "objectives": [
+    { "factionId": "old-horde", "summary": "Break the northern coalition and secure lasting Horde dominion on Azeroth." },
+    { "factionId": "alliance-of-lordaeron", "summary": "Stop the northern offensive, liberate occupied lands, and close the gateway that sustains the invasion." }
+  ],
+  "phases": [
+    {
+      "id": "northern-offensive",
+      "title": "The Horde drives north",
+      "summary": "Orgrim leads a broad offensive from the conquered south toward the Alliance kingdoms.",
+      "routeId": "second-war-horde-offensive", "durationMs": 7400,
+      "narration": "Stormwind's fall had opened the road but not ended resistance. The Horde drove north across many theaters, while a coalition still new to itself learned to answer as more than seven separate fears.",
+      "camera": { "position": [2.2, 7.0, 6.2], "target": [2.0, 0, 0], "durationMs": 1150 },
+      "visualActions": [{ "type": "show_route", "routeId": "second-war-horde-offensive" }, { "type": "show_relationships", "relationshipIds": ["old-horde-opposes-alliance"] }]
+    },
+    {
+      "id": "alliance-holds",
+      "title": "The coalition becomes an army",
+      "summary": "Lothar coordinates the Alliance while its members defend several threatened realms.",
+      "durationMs": 7200,
+      "narration": "Alliance was first a promise spoken under approaching danger. Campaign made it practice. Different peoples, commanders, and interests held together because none could afford the loneliness in which Stormwind had fallen.",
+      "camera": { "position": [2.6, 5.7, 5.1], "target": [2.2, 0, -1.6], "durationMs": 1100 },
+      "visualActions": [{ "type": "show_relationships", "relationshipIds": ["lothar-controls-alliance-armies", "alliance-located-at-lordaeron"] }]
+    },
+    {
+      "id": "horde-reaches-north",
+      "title": "The northern kingdoms face the invasion",
+      "summary": "The Horde campaign threatens the Alliance heartlands but does not secure a final victory.",
+      "routeId": "second-war-horde-offensive", "durationMs": 7300,
+      "narration": "The war reached lands that had once heard Stormwind's ruin as distant news. Yet breadth became a burden as well as strength: every new front lengthened the purpose holding the Horde together.",
+      "camera": { "position": [2.5, 5.0, 4.6], "target": [2.1, 0, -2.0], "durationMs": 1050 },
+      "visualActions": [{ "type": "show_route", "routeId": "second-war-horde-offensive" }]
+    },
+    {
+      "id": "guldan-breaks-away",
+      "title": "Ambition divides the offensive",
+      "summary": "Gul'dan removes forces from the campaign for his own purpose, weakening the Horde.",
+      "durationMs": 7200,
+      "narration": "The hidden bargain at the Horde's birth had never produced one purpose. Gul'dan turned away at the hour of greatest need, and the strength taken from the main host opened a fracture no command could simply close.",
+      "camera": { "position": [2.0, 6.1, 5.5], "target": [2.0, 0, -0.3], "durationMs": 1100 },
+      "visualActions": [{ "type": "show_relationships", "relationshipIds": ["guldan-defection-causes-horde-defeat"] }]
+    },
+    {
+      "id": "blackrock-turning",
+      "title": "A commander falls and an army rises",
+      "summary": "Lothar dies near Blackrock Spire; Turalyon rallies the Alliance rather than allowing it to break.",
+      "routeId": "second-war-alliance-counteroffensive", "durationMs": 7600,
+      "narration": "Near Blackrock, the Alliance lost the man who had carried Stormwind's warning north. Grief might have ended the advance. Turalyon made it a summons, and the army moved again with its memory before it.",
+      "camera": { "position": [2.0, 5.0, 4.5], "target": [1.6, 0, 0.5], "durationMs": 1080 },
+      "visualActions": [{ "type": "show_route", "routeId": "second-war-alliance-counteroffensive" }, { "type": "show_relationships", "relationshipIds": ["lothar-fall-causes-turalyon-rally"] }]
+    },
+    {
+      "id": "counteroffensive-south",
+      "title": "The tide returns toward the gate",
+      "summary": "The Alliance drives the weakened Horde south from Blackrock toward the Dark Portal.",
+      "routeId": "second-war-alliance-counteroffensive", "durationMs": 7300,
+      "narration": "The road of invasion reversed. The coalition that had formed from one kingdom's ruin passed through Blackrock and pressed south, while the Horde's remaining order narrowed around retreat and survival.",
+      "camera": { "position": [2.2, 7.0, 6.3], "target": [2.0, 0, 0.7], "durationMs": 1150 },
+      "visualActions": [{ "type": "show_route", "routeId": "second-war-alliance-counteroffensive" }, { "type": "show_relationships", "relationshipIds": ["turalyon-rally-causes-horde-defeat"] }]
+    },
+    {
+      "id": "portal-destroyed-phase",
+      "title": "The gateway is broken",
+      "summary": "The Alliance defeats the Horde at the threshold and destroys the original Dark Portal.",
+      "durationMs": 7400,
+      "narration": "At the threshold between worlds, victory closed the road but not its consequences. The portal fell, many orcs entered captivity, and two peoples inherited a rivalry whose causes reached back to choices made beneath another sky.",
+      "camera": { "position": [2.2, 4.8, 4.2], "target": [2.0, 0, 2.7], "durationMs": 1080 },
+      "visualActions": [{ "type": "show_relationships", "relationshipIds": ["second-war-causes-horde-defeat", "second-war-aftermath-precedes-third-war"] }]
+    }
+  ],
+  "outcome": { "summary": "The Alliance defeated the Old Horde, destroyed the original Dark Portal, and imprisoned many surviving orcs; the political and human consequences carried forward toward the Third War.", "winnerFactionId": "alliance-of-lordaeron" },
+  "geographicCertainty": "unknown",
+  "geographicEditorNote": "The Second War spanned land, sea, air, and many engagements. No single battlefield marker or complete exact route is asserted.",
+  "importance": "era_defining",
+  "contentStatus": "research"
+}

@@ -39,8 +39,14 @@ export function filterPublishedDataset(dataset: LoreDataset): LoreDataset {
     ...eras, ...entities, ...events, ...battles, ...routes, ...campaigns,
   ].flatMap((record) => record.sourceIds);
   const sourceIds = new Set([...directlyReferencedSourceIds, ...citations.map((citation) => citation.sourceId)]);
-  const mapStateIds = new Set(eras.map((era) => era.mapStateId));
-  const worldspaceIds = new Set(eras.map((era) => era.worldspaceId));
+  const mapStateIds = new Set([
+    ...eras.map((era) => era.mapStateId),
+    ...storyNodes.flatMap((node) => (node.visualActions ?? []).flatMap((action) =>
+      action.type === 'set_map_state' ? [action.mapStateId] : [])),
+  ]);
+  const worldspaceIds = new Set(dataset.mapStates
+    .filter((item) => mapStateIds.has(item.id))
+    .map((item) => item.worldspaceId));
   const layerIds = new Set(eras.flatMap((era) => era.defaultLayerIds));
 
   return {

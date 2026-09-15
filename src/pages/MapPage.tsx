@@ -7,6 +7,7 @@ import { useAtlasUrlState } from '../lib/map/useAtlasUrlState';
 import { useMapViewStore } from '../app/state/mapViewStore';
 import { useSelectionStore } from '../app/state/selectionStore';
 import { EntityDossier } from '../components/dossier/EntityDossier';
+import { resolveEraMapState } from '../lib/map/resolveEraMapState';
 
 export function MapPage() {
   const dataset = staticLoreRepository.getDataset();
@@ -17,18 +18,20 @@ export function MapPage() {
   const selection = useSelectionStore((state) => state.selection);
   const selectionOrigin = useSelectionStore((state) => state.selectionOrigin);
   const select = useSelectionStore((state) => state.select);
-  const mapState = dataset.mapStates.find((item) => item.id === requestedMapStateId && item.worldspaceId === era?.worldspaceId)
-    ?? dataset.mapStates.find((item) => item.id === era?.mapStateId);
-  const worldspace = dataset.worldspaces.find((item) => item.id === era?.worldspaceId);
-  const visibleBattles = staticLoreRepository.listBattlesForEra(era?.id ?? '');
+  const mapState = era ? resolveEraMapState(dataset, era, requestedMapStateId) : undefined;
+  const worldspace = dataset.worldspaces.find((item) => item.id === mapState?.worldspaceId);
+  const visibleBattles = staticLoreRepository.listBattlesForEra(era?.id ?? '')
+    .filter((battle) => battle.worldspaceId === worldspace?.id);
   const visibleEntities = staticLoreRepository.listEntitiesForEra(era?.id ?? '');
   const visibleEntityIds = new Set(visibleEntities.map((item) => item.id));
   const visibleRouteIds = new Set(dataset.campaigns
     .filter((campaign) => campaign.eraId === era?.id)
     .flatMap((campaign) => campaign.routeIds ?? []));
-  const visibleRoutes = dataset.routes.filter((route) => visibleRouteIds.has(route.id));
+  const visibleRoutes = dataset.routes.filter((route) => visibleRouteIds.has(route.id)
+    && route.worldspaceId === worldspace?.id);
   const visibleSpatialStates = dataset.spatialStates.filter((state) => state.eraId === era?.id
-    && visibleEntityIds.has(state.entityId));
+    && visibleEntityIds.has(state.entityId)
+    && state.worldspaceId === worldspace?.id);
   const selectedEntity = selection?.kind === 'entity'
     ? visibleEntities.find((entity) => entity.id === selection.id)
     : undefined;

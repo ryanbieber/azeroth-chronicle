@@ -391,6 +391,86 @@ describe('lore dataset', () => {
     }));
   });
 
+  it('contains a cross-world Rise of the Horde and First Two Wars research preview', () => {
+    const data = loadDataset();
+    const era = data.eras.find((item) => item.id === 'rise-of-the-horde')!;
+    const events = data.events.filter((item) => item.eraId === era.id);
+    const battles = data.battles.filter((item) => item.eraId === era.id);
+    const spatialStates = data.spatialStates.filter((item) => item.eraId === era.id);
+    const featuredEntities = data.entities.filter((item) => item.featuredEraIds?.includes(era.id));
+    const guide = data.storyGuides.find((item) => item.id === era.storyGuideId)!;
+    const nodes = guide.nodeIds.map((nodeId) => data.storyNodes.find((item) => item.id === nodeId)!);
+    const mapStateIds = [
+      'rise-of-the-horde-draenor-before-map-research',
+      'rise-of-the-horde-draenor-corrupted-map-research',
+      'rise-of-the-horde-first-war-map-research',
+      'rise-of-the-horde-second-war-map-research',
+    ];
+    const mapStates = mapStateIds.map((id) => data.mapStates.find((item) => item.id === id)!);
+
+    expect(era.order).toBe(6);
+    expect(era.previousEraId).toBe('long-vigil-new-kingdoms');
+    expect(era.nextEraId).toBe('third-war-frozen-throne');
+    expect(featuredEntities).toHaveLength(23);
+    expect(events).toHaveLength(15);
+    expect(battles).toHaveLength(2);
+    expect(spatialStates).toHaveLength(23);
+    expect(guide.nodeIds).toHaveLength(15);
+    expect(mapStates.map((state) => state.worldspaceId)).toEqual(['draenor', 'draenor', 'azeroth', 'azeroth']);
+    expect(mapStates.every((state) => state.presentation === 'terrain'
+      && Boolean(state.terrainTextureAsset)
+      && Boolean(state.terrainHeightAsset)
+      && Boolean(state.cartographyLabel)
+      && Boolean(state.interpretationNote))).toBe(true);
+    expect(mapStates.every((state) => {
+      const texture = state.terrainTextureAsset;
+      const height = state.terrainHeightAsset;
+      return Boolean(texture && height
+        && existsSync(resolve('public', texture))
+        && existsSync(resolve('public', height)));
+    })).toBe(true);
+    expect(nodes.slice(0, 2).every((node) => node.visualActions?.some((action) =>
+      action.type === 'set_map_state' && action.mapStateId === mapStateIds[0]))).toBe(true);
+    expect(nodes.slice(2, 6).every((node) => node.visualActions?.some((action) =>
+      action.type === 'set_map_state' && action.mapStateId === mapStateIds[1]))).toBe(true);
+    expect(nodes.slice(6, 10).every((node) => node.visualActions?.some((action) =>
+      action.type === 'set_map_state' && action.mapStateId === mapStateIds[2]))).toBe(true);
+    expect(nodes.slice(10).every((node) => node.visualActions?.some((action) =>
+      action.type === 'set_map_state' && action.mapStateId === mapStateIds[3]))).toBe(true);
+
+    const keyActorIds = [
+      'orc-clans-draenor', 'draenei-draenor', 'kiljaeden', 'nerzhul', 'guldan',
+      'durotan', 'mannoroth', 'shadow-council', 'old-horde', 'blackhand',
+      'orgrim-doomhammer', 'medivh', 'anduin-lothar', 'alliance-of-lordaeron', 'turalyon',
+    ];
+    expect(keyActorIds.every((entityId) => {
+      const entity = data.entities.find((item) => item.id === entityId);
+      const asset = entity?.mapFigure?.asset ?? entity?.mapVisual?.asset;
+      return Boolean(asset && existsSync(resolve('public', asset)));
+    })).toBe(true);
+    expect(keyActorIds.every((entityId) => spatialStates.some((state) =>
+      state.entityId === entityId
+      && state.placementKind === 'relational'
+      && state.geographicCertainty === 'unknown'
+      && Boolean(state.editorNote),
+    ))).toBe(true);
+    expect(battles.every((battle) => battle.geographicCertainty === 'unknown'
+      && battle.geometryId === undefined
+      && battle.campaignId === 'rise-of-the-horde-and-first-two-wars')).toBe(true);
+    expect(data.routes.filter((route) => [
+      'horde-draenor-campaign', 'first-war-advance',
+      'second-war-horde-offensive', 'second-war-alliance-counteroffensive',
+    ].includes(route.id)).every((route) => route.geographicCertainty === 'inferred'
+      && Boolean(route.editorNote))).toBe(true);
+    expect(data.relationships).toContainEqual(expect.objectContaining({
+      id: 'second-war-aftermath-precedes-third-war',
+      type: 'precedes',
+    }));
+    expect([...events, ...battles].every((subject) =>
+      data.claims.some((claim) => claim.subjectId === subject.id && claim.citationIds.length > 0),
+    )).toBe(true);
+  });
+
   it('enforces the non-geographic relational visualization contract', () => {
     expect(mapStateSchema.safeParse({
       id: 'relational-test',
@@ -434,6 +514,7 @@ describe('lore dataset', () => {
       'ancient-civilizations-guided-history',
       'war-of-the-ancients-guided-history',
       'long-vigil-new-kingdoms-guided-history',
+      'rise-of-the-horde-guided-history',
     ]) {
       const guide = data.storyGuides.find((item) => item.id === guideId)!;
       for (const nodeId of guide.nodeIds) {

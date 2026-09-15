@@ -24,7 +24,7 @@ describe('landing page', () => {
     expect(screen.getByRole('heading', { name: /the full history/i })).toBeVisible();
     expect(screen.getByRole('button', { name: /full tour of the history/i })).toBeVisible();
     expect(screen.getByRole('link', { name: /explore the atlas freely/i })).toBeVisible();
-    expect(container.querySelectorAll('.landing-still')).toHaveLength(6);
+    expect(container.querySelectorAll('.landing-still')).toHaveLength(7);
 
     await user.click(screen.getByRole('button', { name: /full tour of the history/i }));
     expect(useEraStore.getState().eraId).toBe('cosmic-origins');

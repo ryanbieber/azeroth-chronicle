@@ -66,6 +66,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .landing-still-cosmos { inset: -10%; animation: landing-cosmos-drift 42s ease-in-out infinite alternate; }
 .landing-still-empire { right: -7%; bottom: -17%; width: 58%; height: 61%; transform: rotate(-4deg); border: 1px solid rgba(226,194,128,.13); border-radius: 48% 8% 0 0; opacity: .2; animation: landing-empire-drift 36s ease-in-out infinite alternate; }
 .landing-still-ordering { bottom: -20%; left: -10%; width: 54%; height: 58%; transform: rotate(4deg); border: 1px solid rgba(139,187,180,.12); border-radius: 8% 48% 0 0; opacity: .13; animation: landing-empire-drift 40s ease-in-out infinite alternate-reverse; }
+.landing-still-draenor { top: -13%; right: 23%; width: 42%; height: 44%; transform: rotate(-2deg); border: 1px solid rgba(156,181,137,.1); border-radius: 0 0 42% 42%; opacity: .1; animation: landing-cosmos-drift 46s ease-in-out infinite alternate-reverse; }
 .landing-still-amanthul, .landing-still-ragnaros, .landing-still-yshaarj { overflow: visible; filter: saturate(.62) contrast(1.05) blur(.65px) drop-shadow(0 28px 32px rgba(0,0,0,.82)); }
 .landing-still-amanthul { top: 13%; left: 5%; width: 24%; height: 77%; opacity: .17; animation: landing-figure-left 29s ease-in-out infinite alternate; }
 .landing-still-ragnaros { right: 4%; bottom: 0; width: 27%; height: 72%; opacity: .19; animation: landing-figure-right 32s ease-in-out infinite alternate; }
@@ -273,7 +274,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   .landing-page { padding: 112px 20px 108px; }
   .landing-still-amanthul { left: -13%; width: 47%; opacity: .14; }
   .landing-still-ragnaros { right: -13%; width: 48%; opacity: .15; }
-  .landing-still-yshaarj, .landing-still-empire, .landing-still-ordering { display: none; }
+  .landing-still-yshaarj, .landing-still-empire, .landing-still-ordering, .landing-still-draenor { display: none; }
   .landing-era-thread { right: 14px; bottom: 14px; left: 14px; flex-wrap: wrap; gap: 8px 15px; }
 }
 

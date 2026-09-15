@@ -21,6 +21,17 @@
         "origin": "bottom-left",
         "units": "atlas-units"
       }
+    },
+    {
+      "id": "draenor",
+      "name": "Draenor",
+      "slug": "draenor",
+      "coordinateSystem": {
+        "width": 10000,
+        "height": 10000,
+        "origin": "bottom-left",
+        "units": "atlas-units"
+      }
     }
   ],
   "mapStates": [
@@ -234,10 +245,89 @@
       ]
     },
     {
-      "id": "rise-of-the-horde-map-research",
-      "name": "Rise of the Horde — cartography research",
+      "id": "rise-of-the-horde-draenor-before-map-research",
+      "name": "Draenor before the Horde — interpretive research state",
+      "worldspaceId": "draenor",
+      "presentation": "terrain",
+      "cartographyLabel": "INTERPRETIVE DRAENOR BEFORE THE HORDE",
+      "interpretationNote": "This original world plate communicates an intact Draenor and broad coexistence of orc clans and draenei communities. Its coastline, ecology, influence areas, and story figures are reconstruction, not reproduced official cartography or exact borders.",
+      "terrainTextureAsset": "textures/draenor/rise-of-the-horde-draenor-before-map-research/terrain-atlas.research.webp",
+      "terrainHeightAsset": "textures/draenor/rise-of-the-horde-draenor-before-map-research/terrain-height.research.webp",
+      "geometryIds": [
+        "orc-clans-draenor-region-research",
+        "orc-clans-draenor-focus-research",
+        "draenei-draenor-region-research",
+        "draenei-draenor-focus-research",
+        "shattrath-draenor-focus-research",
+        "durotan-draenor-focus-research",
+        "kiljaeden-draenor-focus-research"
+      ]
+    },
+    {
+      "id": "rise-of-the-horde-draenor-corrupted-map-research",
+      "name": "Draenor during the Horde's rise — interpretive research state",
+      "worldspaceId": "draenor",
+      "presentation": "terrain",
+      "cartographyLabel": "INTERPRETIVE DRAENOR WAR AND CORRUPTION STATE",
+      "interpretationNote": "This state preserves intact Draenor while showing restrained environmental decline and broad campaign pressure. The routes are directional narrative reconstructions; no exact war front, clan border, or troop path is asserted.",
+      "terrainTextureAsset": "textures/draenor/rise-of-the-horde-draenor-corrupted-map-research/terrain-atlas.research.webp",
+      "terrainHeightAsset": "textures/draenor/rise-of-the-horde-draenor-before-map-research/terrain-height.research.webp",
+      "geometryIds": [
+        "orc-clans-draenor-region-research",
+        "draenei-draenor-region-research",
+        "nerzhul-draenor-focus-research",
+        "guldan-draenor-focus-research",
+        "mannoroth-draenor-focus-research",
+        "shadow-council-draenor-focus-research",
+        "old-horde-draenor-focus-research",
+        "shattrath-draenor-focus-research",
+        "dark-portal-draenor-focus-research",
+        "horde-draenor-campaign-route-research"
+      ]
+    },
+    {
+      "id": "rise-of-the-horde-first-war-map-research",
+      "name": "Azeroth during the First War — interpretive campaign state",
       "worldspaceId": "azeroth",
-      "geometryIds": []
+      "presentation": "terrain",
+      "cartographyLabel": "INTERPRETIVE FIRST WAR CAMPAIGN STATE",
+      "interpretationNote": "The state uses inherited post-Sundering terrain and broad, phase-aware pressure rather than treating game missions as a surveyed campaign. The portal changes worldspace; it is not rendered as a geographic line between planets.",
+      "terrainTextureAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-atlas.research.webp",
+      "terrainHeightAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-height.research.webp",
+      "geometryIds": [
+        "dark-portal-azeroth-focus-research",
+        "stormwind-city-era-six-focus-research",
+        "stormwind-kingdom-region-research",
+        "old-horde-first-war-focus-research",
+        "blackhand-first-war-focus-research",
+        "medivh-first-war-focus-research",
+        "lothar-first-war-focus-research",
+        "first-war-advance-route-research"
+      ]
+    },
+    {
+      "id": "rise-of-the-horde-second-war-map-research",
+      "name": "Azeroth during the Second War — interpretive campaign state",
+      "worldspaceId": "azeroth",
+      "presentation": "terrain",
+      "cartographyLabel": "INTERPRETIVE SECOND WAR CAMPAIGN STATE",
+      "interpretationNote": "This late state shows the Alliance coalition, the Horde's broad northern offensive, Blackrock, and the return to the Dark Portal. Its regions and routes are interpretive strategic summaries, not exact national borders, fleet tracks, or troop movements.",
+      "terrainTextureAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-atlas.research.webp",
+      "terrainHeightAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-height.research.webp",
+      "geometryIds": [
+        "dark-portal-azeroth-focus-research",
+        "stormwind-city-era-six-focus-research",
+        "lordaeron-era-six-focus-research",
+        "blackrock-spire-era-six-focus-research",
+        "alliance-lordaeron-region-research",
+        "alliance-lordaeron-focus-research",
+        "old-horde-second-war-focus-research",
+        "orgrim-second-war-focus-research",
+        "lothar-second-war-focus-research",
+        "turalyon-second-war-focus-research",
+        "second-war-horde-offensive-route-research",
+        "second-war-alliance-counteroffensive-route-research"
+      ]
     },
     {
       "id": "third-war-frozen-throne-map-research",
@@ -341,6 +431,22 @@
       ],
       "editorNote": "Original map-space reconstruction of the broad southwestern placement shown on the Chronicle Volume 1 pp. 34–35 map; not an exact coordinate or traced point.",
       "labelPriority": 75
+    },
+    {
+      "id": "alliance-lordaeron-era-six-spatial-research",
+      "entityId": "alliance-of-lordaeron",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "azeroth",
+      "geometryId": "alliance-lordaeron-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-tides-of-darkness-library"
+      ],
+      "editorNote": "A coalition story anchor, not a capital shared by every member or exact army location.",
+      "labelPriority": 159,
+      "visualPresence": "contextual"
     },
     {
       "id": "amani-era-five-spatial-research",
@@ -492,6 +598,36 @@
       "labelPriority": 100
     },
     {
+      "id": "blackhand-era-six-spatial-research",
+      "entityId": "blackhand",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "azeroth",
+      "geometryId": "blackhand-first-war-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-tides-of-darkness-library"
+      ],
+      "editorNote": "A First War command focus, not an asserted battlefield coordinate.",
+      "labelPriority": 164,
+      "visualPresence": "contextual"
+    },
+    {
+      "id": "blackrock-spire-era-six-spatial-research",
+      "entityId": "blackrock-spire-ancient",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "azeroth",
+      "geometryId": "blackrock-spire-era-six-focus-research",
+      "placementKind": "geographic",
+      "geographicCertainty": "approximate",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "editorNote": "Approximate atlas focus; no exact battle point for Lothar's death is claimed.",
+      "labelPriority": 157
+    },
+    {
       "id": "burning-legion-war-spatial-research",
       "entityId": "burning-legion",
       "eraId": "war-of-the-ancients",
@@ -537,6 +673,34 @@
       "labelPriority": 86
     },
     {
+      "id": "dark-portal-azeroth-era-six-spatial-research",
+      "entityId": "dark-portal",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "azeroth",
+      "geometryId": "dark-portal-azeroth-focus-research",
+      "placementKind": "geographic",
+      "geographicCertainty": "approximate",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "editorNote": "Approximate Azeroth-side anchor; it corresponds to but is not geographically connected with the Draenor anchor.",
+      "labelPriority": 170
+    },
+    {
+      "id": "dark-portal-draenor-era-six-spatial-research",
+      "entityId": "dark-portal",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "draenor",
+      "geometryId": "dark-portal-draenor-focus-research",
+      "placementKind": "geographic",
+      "geographicCertainty": "approximate",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "editorNote": "Approximate Draenor-side anchor; the portal is not a line between coordinate systems.",
+      "labelPriority": 169
+    },
+    {
       "id": "dark-trolls-ancient-spatial-research",
       "entityId": "dark-trolls",
       "eraId": "ancient-civilizations",
@@ -563,6 +727,38 @@
       ],
       "editorNote": "A story-only leader anchor on an inferred migration; it is not an exact voyage position.",
       "labelPriority": 153,
+      "visualPresence": "contextual"
+    },
+    {
+      "id": "draenei-draenor-era-six-spatial-research",
+      "entityId": "draenei-draenor",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "draenor",
+      "geometryId": "draenei-draenor-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-burning-crusade-draenor-history"
+      ],
+      "editorNote": "A collective story composition representing dispersed draenei communities, not one population coordinate.",
+      "labelPriority": 157,
+      "visualPresence": "contextual"
+    },
+    {
+      "id": "durotan-era-six-spatial-research",
+      "entityId": "durotan",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "draenor",
+      "geometryId": "durotan-draenor-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-rise-of-the-horde-library"
+      ],
+      "editorNote": "A symbolic Frostwolf-side story anchor, not an exact camp or movement record.",
+      "labelPriority": 161,
       "visualPresence": "contextual"
     },
     {
@@ -638,6 +834,22 @@
       ],
       "editorNote": "Approximate world-scale focus in the northern mountain region.",
       "labelPriority": 136
+    },
+    {
+      "id": "guldan-era-six-spatial-research",
+      "entityId": "guldan",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "draenor",
+      "geometryId": "guldan-draenor-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-burning-crusade-draenor-history"
+      ],
+      "editorNote": "A story-only focus for Gul'dan's political and magical influence, not a permanent location.",
+      "labelPriority": 165,
+      "visualPresence": "contextual"
     },
     {
       "id": "highborne-exiles-era-five-spatial-research",
@@ -792,6 +1004,22 @@
       "labelPriority": 124
     },
     {
+      "id": "kiljaeden-era-six-spatial-research",
+      "entityId": "kiljaeden",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "draenor",
+      "geometryId": "kiljaeden-draenor-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-burning-crusade-draenor-history"
+      ],
+      "editorNote": "A non-geographic presence above the world used only while narrating Kil'jaeden's remote manipulation.",
+      "labelPriority": 166,
+      "visualPresence": "contextual"
+    },
+    {
       "id": "lei-shen-ancient-spatial-research",
       "entityId": "lei-shen",
       "eraId": "ancient-civilizations",
@@ -834,6 +1062,36 @@
       ],
       "editorNote": "The society is represented by a narrative anchor near its Kalimdor context, not assigned to one coordinate across ten millennia.",
       "labelPriority": 137,
+      "visualPresence": "contextual"
+    },
+    {
+      "id": "lordaeron-era-six-spatial-research",
+      "entityId": "lordaeron-ancient",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "azeroth",
+      "geometryId": "lordaeron-era-six-focus-research",
+      "placementKind": "geographic",
+      "geographicCertainty": "approximate",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "editorNote": "Atlas-scale kingdom center only, not an exact capital footprint.",
+      "labelPriority": 154
+    },
+    {
+      "id": "lothar-era-six-spatial-research",
+      "entityId": "anduin-lothar",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "azeroth",
+      "geometryId": "lothar-second-war-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-tides-of-darkness-library"
+      ],
+      "editorNote": "A changing command-role focus used across First and Second War beats, not an exact position.",
+      "labelPriority": 166,
       "visualPresence": "contextual"
     },
     {
@@ -893,6 +1151,37 @@
       ],
       "editorNote": "The figure marks Malfurion's role in the current story beat, not a permanent wartime coordinate.",
       "labelPriority": 134,
+      "visualPresence": "contextual"
+    },
+    {
+      "id": "mannoroth-era-six-spatial-research",
+      "entityId": "mannoroth",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "draenor",
+      "geometryId": "mannoroth-draenor-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-rise-of-the-horde-library"
+      ],
+      "editorNote": "A symbolic focus for the blood pact; it is not an asserted exact meeting site.",
+      "labelPriority": 164,
+      "visualPresence": "contextual"
+    },
+    {
+      "id": "medivh-era-six-spatial-research",
+      "entityId": "medivh",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "azeroth",
+      "geometryId": "medivh-first-war-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "editorNote": "A story focus for Medivh's portal role, not a permanent or exact position.",
+      "labelPriority": 165,
       "visualPresence": "contextual"
     },
     {
@@ -969,6 +1258,22 @@
       "labelPriority": 74
     },
     {
+      "id": "nerzhul-era-six-spatial-research",
+      "entityId": "nerzhul",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "draenor",
+      "geometryId": "nerzhul-draenor-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-burning-crusade-draenor-history"
+      ],
+      "editorNote": "A story-only focus for deception and resistance, not an asserted physical position.",
+      "labelPriority": 164,
+      "visualPresence": "contextual"
+    },
+    {
       "id": "night-elf-resistance-war-spatial-research",
       "entityId": "night-elf-resistance",
       "eraId": "war-of-the-ancients",
@@ -1026,6 +1331,53 @@
       "labelPriority": 93
     },
     {
+      "id": "old-horde-azeroth-era-six-spatial-research",
+      "entityId": "old-horde",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "azeroth",
+      "geometryId": "old-horde-first-war-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "editorNote": "A contextual invasion-force anchor, not one permanent army position across either war.",
+      "labelPriority": 160,
+      "visualPresence": "contextual"
+    },
+    {
+      "id": "old-horde-draenor-era-six-spatial-research",
+      "entityId": "old-horde",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "draenor",
+      "geometryId": "old-horde-draenor-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-rise-of-the-horde-library"
+      ],
+      "editorNote": "A collective story anchor for a coalition spread across Draenor, not a capital or single army position.",
+      "labelPriority": 159,
+      "visualPresence": "contextual"
+    },
+    {
+      "id": "orc-clans-draenor-era-six-spatial-research",
+      "entityId": "orc-clans-draenor",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "draenor",
+      "geometryId": "orc-clans-draenor-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-rise-of-the-horde-library"
+      ],
+      "editorNote": "A collective story anchor among several homelands, not a permanent clan capital or exact gathering.",
+      "labelPriority": 158,
+      "visualPresence": "contextual"
+    },
+    {
       "id": "ordered-kalimdor-spatial-research",
       "entityId": "primordial-kalimdor",
       "eraId": "ordering-of-azeroth",
@@ -1037,6 +1389,21 @@
       ],
       "editorNote": "The coastline preserves the atlas's Era 1 research silhouette for before-and-after continuity. It is an original reconstruction, not a traced or surveyed canonical boundary.",
       "labelPriority": 40
+    },
+    {
+      "id": "orgrim-era-six-spatial-research",
+      "entityId": "orgrim-doomhammer",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "azeroth",
+      "geometryId": "orgrim-second-war-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "editorNote": "A command-role focus spanning campaigns, not an exact position.",
+      "labelPriority": 166,
+      "visualPresence": "contextual"
     },
     {
       "id": "pandaren-ancient-spatial-research",
@@ -1173,6 +1540,63 @@
       "visualPresence": "contextual"
     },
     {
+      "id": "shadow-council-era-six-spatial-research",
+      "entityId": "shadow-council",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "draenor",
+      "geometryId": "shadow-council-draenor-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "editorNote": "A concealed political-network composition, not a claim that every member occupied one site.",
+      "labelPriority": 154,
+      "visualPresence": "contextual"
+    },
+    {
+      "id": "shattrath-era-six-spatial-research",
+      "entityId": "shattrath-draenor",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "draenor",
+      "geometryId": "shattrath-draenor-focus-research",
+      "placementKind": "geographic",
+      "geographicCertainty": "approximate",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "editorNote": "Atlas-scale placement only; it does not reproduce official coordinates or city footprint.",
+      "labelPriority": 150
+    },
+    {
+      "id": "stormwind-city-era-six-spatial-research",
+      "entityId": "stormwind-city-ancient",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "azeroth",
+      "geometryId": "stormwind-city-era-six-focus-research",
+      "placementKind": "geographic",
+      "geographicCertainty": "approximate",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "editorNote": "Atlas-scale city focus, not an exact historical footprint.",
+      "labelPriority": 160
+    },
+    {
+      "id": "stormwind-kingdom-era-six-spatial-research",
+      "entityId": "kingdom-of-stormwind",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "azeroth",
+      "geometryId": "stormwind-kingdom-region-research",
+      "placementKind": "geographic",
+      "geographicCertainty": "inferred",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "editorNote": "Broad political influence only, not a surveyed border frozen to one First War date.",
+      "labelPriority": 145
+    },
+    {
       "id": "strom-era-five-spatial-research",
       "entityId": "strom",
       "eraId": "long-vigil-new-kingdoms",
@@ -1260,6 +1684,21 @@
       ],
       "editorNote": "The army visual represents a world-spanning campaign with no mapped front. Its point is a story composition anchor, not a concentration of forces.",
       "labelPriority": 120
+    },
+    {
+      "id": "turalyon-era-six-spatial-research",
+      "entityId": "turalyon",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "azeroth",
+      "geometryId": "turalyon-second-war-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "editorNote": "A story focus for Turalyon's rally and counteroffensive, not an exact battlefield coordinate.",
+      "labelPriority": 166,
+      "visualPresence": "contextual"
     },
     {
       "id": "twisting-nether-cosmic-research",
@@ -1494,6 +1933,18 @@
       "contentStatus": "research"
     },
     {
+      "id": "first-war-advance",
+      "name": "First War advance from the Dark Portal toward Stormwind (interpretive)",
+      "worldspaceId": "azeroth",
+      "geometryId": "first-war-advance-route-research",
+      "geographicCertainty": "inferred",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "editorNote": "The route summarizes the invasion's broad southland direction. It does not reproduce mission paths or assert exact camps, roads, battles, or chronology between every engagement.",
+      "contentStatus": "research"
+    },
+    {
       "id": "highborne-eastward-migration",
       "name": "Highborne migration from Kalimdor to the northern east (interpretive)",
       "worldspaceId": "azeroth",
@@ -1507,6 +1958,20 @@
       "contentStatus": "research"
     },
     {
+      "id": "horde-draenor-campaign",
+      "name": "Old Horde campaign against the draenei (interpretive)",
+      "worldspaceId": "draenor",
+      "geometryId": "horde-draenor-campaign-route-research",
+      "geographicCertainty": "inferred",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-rise-of-the-horde-library",
+        "blizzard-burning-crusade-draenor-history"
+      ],
+      "editorNote": "The line links broad campaign pressure to Shattrath for narrative readability. It is not a surveyed order of march, complete front, or claim that all clans followed one path.",
+      "contentStatus": "research"
+    },
+    {
       "id": "resistance-convergence",
       "name": "Resistance convergence toward the Well (interpretive)",
       "worldspaceId": "azeroth",
@@ -1516,6 +1981,30 @@
         "warcraft-chronicle-volume-1"
       ],
       "editorNote": "The line communicates strategic convergence on the Well, not a traced march, a single army path, or the order of every engagement.",
+      "contentStatus": "research"
+    },
+    {
+      "id": "second-war-alliance-counteroffensive",
+      "name": "Second War Alliance counteroffensive toward the Dark Portal (interpretive)",
+      "worldspaceId": "azeroth",
+      "geometryId": "second-war-alliance-counteroffensive-route-research",
+      "geographicCertainty": "inferred",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "editorNote": "The route shows strategic reversal through Blackrock toward the portal. It does not assert the exact path of every army or engagement.",
+      "contentStatus": "research"
+    },
+    {
+      "id": "second-war-horde-offensive",
+      "name": "Second War Horde northern offensive (interpretive)",
+      "worldspaceId": "azeroth",
+      "geometryId": "second-war-horde-offensive-route-research",
+      "geographicCertainty": "inferred",
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "editorNote": "The route expresses a multi-theater strategic movement north. It is not an exact land march, naval track, complete campaign chronology, or surveyed front.",
       "contentStatus": "research"
     },
     {
@@ -1596,6 +2085,30 @@
         "blizzard-burning-crusade-story-so-far",
         "blizzard-stromkar-thoradin",
         "blizzard-grim-batol-history"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "rise-of-the-horde-and-first-two-wars",
+      "name": "The Rise of the Horde and the First Two Wars",
+      "slug": "rise-of-the-horde-and-first-two-wars",
+      "eraId": "rise-of-the-horde",
+      "summary": "A cross-world strategic grouping from the Horde's formation and draenei war through the First and Second Wars, ending with the Old Horde's defeat and destruction of the original Dark Portal.",
+      "battleIds": [
+        "first-war",
+        "second-war"
+      ],
+      "routeIds": [
+        "horde-draenor-campaign",
+        "first-war-advance",
+        "second-war-horde-offensive",
+        "second-war-alliance-counteroffensive"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-rise-of-the-horde-library",
+        "blizzard-burning-crusade-draenor-history",
+        "blizzard-tides-of-darkness-library"
       ],
       "contentStatus": "research"
     },
@@ -1892,11 +2405,21 @@
       "id": "rise-of-the-horde",
       "name": "The Rise of the Horde and the First Two Wars",
       "slug": "rise-of-the-horde",
-      "worldspaceId": "azeroth",
+      "worldspaceId": "draenor",
       "order": 6,
-      "dateLabel": "Research boundary — dates pending citation review",
+      "startDate": {
+        "precision": "approximate",
+        "year": -13,
+        "label": "Approximately thirteen years before the opening of the Dark Portal; working chronology"
+      },
+      "endDate": {
+        "precision": "approximate",
+        "year": 6,
+        "label": "At the end of the Second War; working chronology"
+      },
+      "dateLabel": "c. 13 years before the Dark Portal through the end of the Second War · research chronology",
       "summary": "Draenor's corruption, the orcs' fall to the Legion, opening of the Dark Portal, destruction of Stormwind, and the Alliance victory in the Second War.",
-      "mapStateId": "rise-of-the-horde-map-research",
+      "mapStateId": "rise-of-the-horde-second-war-map-research",
       "defaultLayerIds": [
         "regions",
         "battles",
@@ -1904,13 +2427,36 @@
         "routes",
         "labels"
       ],
-      "featuredEventIds": [],
-      "featuredBattleIds": [],
+      "featuredEventIds": [
+        "kiljaeden-targets-draenei-on-draenor",
+        "nerzhul-deceived-against-draenei",
+        "guldan-forms-shadow-council",
+        "orc-clans-drink-mannoroths-blood",
+        "shattrath-falls-to-horde",
+        "dark-portal-opens",
+        "first-war-begins",
+        "orgrim-becomes-warchief",
+        "stormwind-falls",
+        "alliance-of-lordaeron-forms",
+        "second-war-begins",
+        "guldan-abandons-second-war",
+        "lothar-falls-at-blackrock",
+        "turalyon-rallies-alliance",
+        "horde-defeated-dark-portal-destroyed"
+      ],
+      "featuredBattleIds": [
+        "first-war",
+        "second-war"
+      ],
+      "storyGuideId": "rise-of-the-horde-guided-history",
       "previousEraId": "long-vigil-new-kingdoms",
       "nextEraId": "third-war-frozen-throne",
       "sourceIds": [
-        "warcraft-chronicle-volume-1",
-        "warcraft-chronicle-volume-2"
+        "warcraft-chronicle-volume-2",
+        "blizzard-chronicle-volume-2-overview",
+        "blizzard-rise-of-the-horde-library",
+        "blizzard-burning-crusade-draenor-history",
+        "blizzard-tides-of-darkness-library"
       ],
       "contentStatus": "research"
     },
@@ -2048,6 +2594,34 @@
       "contentStatus": "research"
     },
     {
+      "id": "alliance-of-lordaeron",
+      "type": "faction",
+      "name": "The Alliance of Lordaeron",
+      "slug": "alliance-of-lordaeron",
+      "shortDescription": "A coalition of human kingdoms and allied peoples formed in response to the Horde after Stormwind's fall.",
+      "firstEraId": "rise-of-the-horde",
+      "featuredEraIds": [
+        "rise-of-the-horde"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-tides-of-darkness-library"
+      ],
+      "claimIds": [
+        "alliance-lordaeron-forms-claim"
+      ],
+      "tags": [
+        "alliance",
+        "lordaeron",
+        "second-war"
+      ],
+      "mapVisual": {
+        "asset": "images/subjects/rise-of-the-horde/alliance-of-lordaeron.research.webp",
+        "scale": 0.94
+      },
+      "contentStatus": "research"
+    },
+    {
       "id": "amani-empire",
       "type": "faction",
       "name": "The Amani Empire",
@@ -2107,6 +2681,35 @@
       "mapFigure": {
         "asset": "images/characters/cosmic-origins/amanthul.research.webp",
         "scale": 0.88
+      },
+      "contentStatus": "research"
+    },
+    {
+      "id": "anduin-lothar",
+      "type": "character",
+      "name": "Anduin Lothar",
+      "slug": "anduin-lothar",
+      "shortDescription": "Stormwind's champion who led its survivors north and became supreme commander of the Alliance of Lordaeron.",
+      "firstEraId": "rise-of-the-horde",
+      "lastEraId": "rise-of-the-horde",
+      "featuredEraIds": [
+        "rise-of-the-horde"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-tides-of-darkness-library"
+      ],
+      "claimIds": [
+        "lothar-leads-alliance-claim"
+      ],
+      "tags": [
+        "human",
+        "alliance",
+        "commander"
+      ],
+      "mapFigure": {
+        "asset": "images/characters/rise-of-the-horde/anduin-lothar.research.webp",
+        "scale": 0.96
       },
       "contentStatus": "research"
     },
@@ -2247,6 +2850,61 @@
       "contentStatus": "research"
     },
     {
+      "id": "blackhand",
+      "type": "character",
+      "name": "Blackhand",
+      "slug": "blackhand",
+      "aliases": [
+        "Blackhand the Destroyer"
+      ],
+      "shortDescription": "The visible first warchief of the Old Horde, elevated while the Shadow Council exercised concealed influence.",
+      "firstEraId": "rise-of-the-horde",
+      "lastEraId": "rise-of-the-horde",
+      "featuredEraIds": [
+        "rise-of-the-horde"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-tides-of-darkness-library"
+      ],
+      "claimIds": [
+        "blackhand-first-warchief-claim"
+      ],
+      "tags": [
+        "orc",
+        "warchief",
+        "old-horde"
+      ],
+      "mapFigure": {
+        "asset": "images/characters/rise-of-the-horde/blackhand.research.webp",
+        "scale": 0.98
+      },
+      "contentStatus": "research"
+    },
+    {
+      "id": "blackrock-spire-ancient",
+      "type": "location",
+      "name": "Blackrock Spire",
+      "slug": "blackrock-spire-ancient",
+      "shortDescription": "The mountain stronghold near which the Second War's leadership and momentum changed decisively.",
+      "firstEraId": "rise-of-the-horde",
+      "featuredEraIds": [
+        "rise-of-the-horde"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "claimIds": [
+        "blackrock-second-war-turning-point-claim"
+      ],
+      "tags": [
+        "blackrock",
+        "second-war",
+        "stronghold"
+      ],
+      "contentStatus": "research"
+    },
+    {
       "id": "burning-legion",
       "type": "faction",
       "name": "The Burning Legion",
@@ -2332,6 +2990,31 @@
       "contentStatus": "research"
     },
     {
+      "id": "dark-portal",
+      "type": "site",
+      "name": "The Dark Portal",
+      "slug": "dark-portal",
+      "shortDescription": "The constructed gateway that joined Draenor and Azeroth and made the First War a conflict between worlds.",
+      "body": "The atlas represents the portal as corresponding anchors in two local worldspaces. It is never drawn as an ordinary geographic line between their coordinate systems.",
+      "firstEraId": "rise-of-the-horde",
+      "featuredEraIds": [
+        "rise-of-the-horde"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-burning-crusade-draenor-history"
+      ],
+      "claimIds": [
+        "dark-portal-connects-worlds-claim"
+      ],
+      "tags": [
+        "portal",
+        "draenor",
+        "azeroth"
+      ],
+      "contentStatus": "research"
+    },
+    {
       "id": "dark-trolls",
       "type": "faction",
       "name": "The Dark Trolls",
@@ -2388,6 +3071,59 @@
       "contentStatus": "research"
     },
     {
+      "id": "draenei-draenor",
+      "type": "faction",
+      "name": "The Draenei of Draenor",
+      "slug": "draenei-draenor",
+      "shortDescription": "The exiled people led by Velen who made a refuge on Draenor before Kil'jaeden turned the orcs against them.",
+      "body": "The preview centers their communities as inhabitants with their own history, not merely as an obstacle in the Horde's formation.",
+      "firstEraId": "rise-of-the-horde",
+      "featuredEraIds": [
+        "rise-of-the-horde"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-burning-crusade-draenor-history"
+      ],
+      "claimIds": [
+        "draenei-settle-draenor-claim"
+      ],
+      "tags": [
+        "draenei",
+        "draenor",
+        "exiles"
+      ],
+      "mapVisual": {
+        "asset": "images/subjects/rise-of-the-horde/draenei-draenor.research.webp",
+        "scale": 0.9
+      },
+      "contentStatus": "research"
+    },
+    {
+      "id": "draenor-ancient",
+      "type": "location",
+      "name": "Draenor",
+      "slug": "draenor-ancient",
+      "shortDescription": "The intact world inhabited by orc clans and draenei before its later destruction and transformation into Outland.",
+      "body": "This record represents Draenor during Era 6 only. Its atlas plate is an original reconstruction and does not reproduce official geography.",
+      "firstEraId": "rise-of-the-horde",
+      "featuredEraIds": [
+        "rise-of-the-horde"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-burning-crusade-draenor-history"
+      ],
+      "claimIds": [
+        "draenor-intact-era-six-claim"
+      ],
+      "tags": [
+        "draenor",
+        "worldspace"
+      ],
+      "contentStatus": "research"
+    },
+    {
       "id": "dragon-soul",
       "type": "artifact",
       "name": "The Dragon Soul",
@@ -2413,6 +3149,34 @@
         "dragons",
         "betrayal"
       ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "durotan",
+      "type": "character",
+      "name": "Durotan",
+      "slug": "durotan",
+      "shortDescription": "Frostwolf chieftain who recognized the corruption surrounding the Horde and refused Mannoroth's blood for his clan.",
+      "firstEraId": "rise-of-the-horde",
+      "featuredEraIds": [
+        "rise-of-the-horde"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-rise-of-the-horde-library"
+      ],
+      "claimIds": [
+        "durotan-refuses-blood-claim"
+      ],
+      "tags": [
+        "orc",
+        "frostwolf",
+        "chieftain"
+      ],
+      "mapFigure": {
+        "asset": "images/characters/rise-of-the-horde/durotan.research.webp",
+        "scale": 0.96
+      },
       "contentStatus": "research"
     },
     {
@@ -2568,6 +3332,35 @@
         "wildhammer",
         "dwarves"
       ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "guldan",
+      "type": "character",
+      "name": "Gul'dan",
+      "slug": "guldan",
+      "shortDescription": "Ner'zhul's apprentice, empowered by the Legion, who built the Shadow Council and deepened the Horde's dependence on fel power.",
+      "firstEraId": "rise-of-the-horde",
+      "featuredEraIds": [
+        "rise-of-the-horde"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-burning-crusade-draenor-history",
+        "blizzard-rise-of-the-horde-library"
+      ],
+      "claimIds": [
+        "guldan-builds-shadow-council-claim"
+      ],
+      "tags": [
+        "orc",
+        "warlock",
+        "shadow-council"
+      ],
+      "mapFigure": {
+        "asset": "images/characters/rise-of-the-horde/guldan.research.webp",
+        "scale": 0.95
+      },
       "contentStatus": "research"
     },
     {
@@ -2796,6 +3589,62 @@
       "contentStatus": "research"
     },
     {
+      "id": "kiljaeden",
+      "type": "character",
+      "name": "Kil'jaeden",
+      "slug": "kiljaeden",
+      "aliases": [
+        "The Deceiver"
+      ],
+      "shortDescription": "A Burning Legion lord whose pursuit of Velen's exiles drove the manipulation of Draenor's orcs.",
+      "firstEraId": "rise-of-the-horde",
+      "featuredEraIds": [
+        "rise-of-the-horde"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-burning-crusade-draenor-history",
+        "blizzard-rise-of-the-horde-library"
+      ],
+      "claimIds": [
+        "kiljaeden-targets-draenei-claim"
+      ],
+      "tags": [
+        "burning-legion",
+        "draenor",
+        "deception"
+      ],
+      "mapFigure": {
+        "asset": "images/characters/rise-of-the-horde/kiljaeden.research.webp",
+        "scale": 1.02
+      },
+      "contentStatus": "research"
+    },
+    {
+      "id": "kingdom-of-stormwind",
+      "type": "faction",
+      "name": "The Kingdom of Stormwind",
+      "slug": "kingdom-of-stormwind",
+      "shortDescription": "The southern human kingdom that faced the first invasion through the Dark Portal and fell at the end of the First War.",
+      "firstEraId": "rise-of-the-horde",
+      "featuredEraIds": [
+        "rise-of-the-horde"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-tides-of-darkness-library"
+      ],
+      "claimIds": [
+        "stormwind-falls-first-war-claim"
+      ],
+      "tags": [
+        "human",
+        "stormwind",
+        "first-war"
+      ],
+      "contentStatus": "research"
+    },
+    {
       "id": "lei-shen",
       "type": "character",
       "name": "Lei Shen",
@@ -2884,6 +3733,30 @@
       "contentStatus": "research"
     },
     {
+      "id": "lordaeron-ancient",
+      "type": "location",
+      "name": "Lordaeron",
+      "slug": "lordaeron-ancient",
+      "shortDescription": "The northern human kingdom around which the wartime Alliance formed after refugees arrived from Stormwind.",
+      "firstEraId": "rise-of-the-horde",
+      "featuredEraIds": [
+        "rise-of-the-horde"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-tides-of-darkness-library"
+      ],
+      "claimIds": [
+        "lordaeron-alliance-center-claim"
+      ],
+      "tags": [
+        "kingdom",
+        "lordaeron",
+        "second-war"
+      ],
+      "contentStatus": "research"
+    },
+    {
       "id": "maelstrom",
       "type": "site",
       "name": "The Maelstrom",
@@ -2935,6 +3808,65 @@
       "mapFigure": {
         "asset": "images/characters/war-of-the-ancients/malfurion.research.webp",
         "scale": 0.84
+      },
+      "contentStatus": "research"
+    },
+    {
+      "id": "mannoroth",
+      "type": "character",
+      "name": "Mannoroth",
+      "slug": "mannoroth",
+      "shortDescription": "A pit lord whose blood bound much of the forming Horde more tightly to the Burning Legion's design.",
+      "firstEraId": "rise-of-the-horde",
+      "featuredEraIds": [
+        "rise-of-the-horde"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-rise-of-the-horde-library"
+      ],
+      "claimIds": [
+        "mannoroth-blood-binds-horde-claim"
+      ],
+      "tags": [
+        "burning-legion",
+        "pit-lord",
+        "blood-pact"
+      ],
+      "mapFigure": {
+        "asset": "images/characters/rise-of-the-horde/mannoroth.research.webp",
+        "scale": 1.04
+      },
+      "contentStatus": "research"
+    },
+    {
+      "id": "medivh",
+      "type": "character",
+      "name": "Medivh",
+      "slug": "medivh",
+      "aliases": [
+        "The Last Guardian"
+      ],
+      "shortDescription": "The Guardian of Tirisfal whose corruption and contact with Gul'dan enabled the Dark Portal and the invasion of Azeroth.",
+      "firstEraId": "rise-of-the-horde",
+      "lastEraId": "rise-of-the-horde",
+      "featuredEraIds": [
+        "rise-of-the-horde"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "claimIds": [
+        "medivh-enables-dark-portal-claim"
+      ],
+      "tags": [
+        "guardian",
+        "dark-portal",
+        "first-war"
+      ],
+      "mapFigure": {
+        "asset": "images/characters/rise-of-the-horde/medivh.research.webp",
+        "scale": 0.94
       },
       "contentStatus": "research"
     },
@@ -3048,6 +3980,34 @@
       "contentStatus": "research"
     },
     {
+      "id": "nerzhul",
+      "type": "character",
+      "name": "Ner'zhul",
+      "slug": "nerzhul",
+      "shortDescription": "A respected orc shaman whom Kil'jaeden deceived into directing the clans against the draenei before he rejected the Legion's course.",
+      "firstEraId": "rise-of-the-horde",
+      "featuredEraIds": [
+        "rise-of-the-horde"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-burning-crusade-draenor-history"
+      ],
+      "claimIds": [
+        "nerzhul-deceived-claim"
+      ],
+      "tags": [
+        "orc",
+        "shaman",
+        "draenor"
+      ],
+      "mapFigure": {
+        "asset": "images/characters/rise-of-the-horde/nerzhul.research.webp",
+        "scale": 0.95
+      },
+      "contentStatus": "research"
+    },
+    {
       "id": "night-elf-resistance",
       "type": "faction",
       "name": "The Night Elf Resistance",
@@ -3149,6 +4109,93 @@
       "mapVisual": {
         "asset": "images/subjects/cosmic-origins/old-gods.research.webp",
         "scale": 1.08
+      },
+      "contentStatus": "research"
+    },
+    {
+      "id": "old-horde",
+      "type": "faction",
+      "name": "The Old Horde",
+      "slug": "old-horde",
+      "shortDescription": "The militarized coalition of orc clans formed on Draenor and sent through the Dark Portal into Azeroth.",
+      "body": "This era-specific name distinguishes the first Horde from later political communities that inherited, rejected, or transformed its memory.",
+      "firstEraId": "rise-of-the-horde",
+      "lastEraId": "rise-of-the-horde",
+      "featuredEraIds": [
+        "rise-of-the-horde"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-rise-of-the-horde-library",
+        "blizzard-tides-of-darkness-library"
+      ],
+      "claimIds": [
+        "old-horde-formed-on-draenor-claim"
+      ],
+      "tags": [
+        "horde",
+        "orcs",
+        "draenor"
+      ],
+      "mapVisual": {
+        "asset": "images/subjects/rise-of-the-horde/old-horde.research.webp",
+        "scale": 0.94
+      },
+      "contentStatus": "research"
+    },
+    {
+      "id": "orc-clans-draenor",
+      "type": "faction",
+      "name": "The Orc Clans of Draenor",
+      "slug": "orc-clans-draenor",
+      "shortDescription": "Independent orc communities whose ancestral and shamanic traditions preceded their coercive consolidation into the Old Horde.",
+      "body": "The collective record keeps the clans visible as distinct peoples before political and demonic manipulation gathered many of them into a war machine.",
+      "firstEraId": "rise-of-the-horde",
+      "featuredEraIds": [
+        "rise-of-the-horde"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-rise-of-the-horde-library"
+      ],
+      "claimIds": [
+        "orc-clans-precede-horde-claim"
+      ],
+      "tags": [
+        "orcs",
+        "draenor",
+        "clans"
+      ],
+      "mapVisual": {
+        "asset": "images/subjects/rise-of-the-horde/orc-clans-draenor.research.webp",
+        "scale": 0.92
+      },
+      "contentStatus": "research"
+    },
+    {
+      "id": "orgrim-doomhammer",
+      "type": "character",
+      "name": "Orgrim Doomhammer",
+      "slug": "orgrim-doomhammer",
+      "shortDescription": "The orc warrior who killed Blackhand, exposed the Shadow Council, and led the Horde through the later First War and the Second War.",
+      "firstEraId": "rise-of-the-horde",
+      "featuredEraIds": [
+        "rise-of-the-horde"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "claimIds": [
+        "orgrim-succeeds-blackhand-claim"
+      ],
+      "tags": [
+        "orc",
+        "warchief",
+        "second-war"
+      ],
+      "mapFigure": {
+        "asset": "images/characters/rise-of-the-horde/orgrim-doomhammer.research.webp",
+        "scale": 0.98
       },
       "contentStatus": "research"
     },
@@ -3351,6 +4398,81 @@
       "contentStatus": "research"
     },
     {
+      "id": "shadow-council",
+      "type": "faction",
+      "name": "The Shadow Council",
+      "slug": "shadow-council",
+      "shortDescription": "Gul'dan's concealed circle of warlocks and agents, created to steer the Horde behind its visible warchief.",
+      "firstEraId": "rise-of-the-horde",
+      "featuredEraIds": [
+        "rise-of-the-horde"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "claimIds": [
+        "shadow-council-steers-horde-claim"
+      ],
+      "tags": [
+        "warlocks",
+        "old-horde",
+        "guldan"
+      ],
+      "mapVisual": {
+        "asset": "images/subjects/rise-of-the-horde/shadow-council.research.webp",
+        "scale": 0.86
+      },
+      "contentStatus": "research"
+    },
+    {
+      "id": "shattrath-draenor",
+      "type": "location",
+      "name": "Shattrath",
+      "slug": "shattrath-draenor",
+      "shortDescription": "The principal draenei city on Draenor, devastated during the Horde's campaign against the draenei.",
+      "firstEraId": "rise-of-the-horde",
+      "featuredEraIds": [
+        "rise-of-the-horde"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-rise-of-the-horde-library"
+      ],
+      "claimIds": [
+        "shattrath-falls-claim"
+      ],
+      "tags": [
+        "draenor",
+        "draenei",
+        "city"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "stormwind-city-ancient",
+      "type": "location",
+      "name": "Stormwind City",
+      "slug": "stormwind-city-ancient",
+      "shortDescription": "The capital attacked and destroyed at the close of the First War before its later reconstruction.",
+      "firstEraId": "rise-of-the-horde",
+      "featuredEraIds": [
+        "rise-of-the-horde"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-tides-of-darkness-library"
+      ],
+      "claimIds": [
+        "stormwind-city-destroyed-claim"
+      ],
+      "tags": [
+        "city",
+        "stormwind",
+        "first-war"
+      ],
+      "contentStatus": "research"
+    },
+    {
       "id": "strom",
       "type": "location",
       "name": "Strom",
@@ -3507,6 +4629,33 @@
       "mapVisual": {
         "asset": "images/subjects/ordering-of-azeroth/titan-forged.research.webp",
         "scale": 1.1
+      },
+      "contentStatus": "research"
+    },
+    {
+      "id": "turalyon",
+      "type": "character",
+      "name": "Turalyon",
+      "slug": "turalyon",
+      "shortDescription": "An Alliance paladin who rallied the army after Lothar's death and helped drive the Horde back to the Dark Portal.",
+      "firstEraId": "rise-of-the-horde",
+      "featuredEraIds": [
+        "rise-of-the-horde"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "claimIds": [
+        "turalyon-rallies-alliance-claim"
+      ],
+      "tags": [
+        "human",
+        "paladin",
+        "second-war"
+      ],
+      "mapFigure": {
+        "asset": "images/characters/rise-of-the-horde/turalyon.research.webp",
+        "scale": 0.96
       },
       "contentStatus": "research"
     },
@@ -3771,6 +4920,45 @@
     }
   ],
   "events": [
+    {
+      "id": "alliance-of-lordaeron-forms",
+      "kind": "event",
+      "name": "The Alliance of Lordaeron Forms",
+      "slug": "alliance-of-lordaeron-forms",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "After Stormwind's fall and before the Second War",
+        "relativeToId": "stormwind-falls"
+      },
+      "summary": "Stormwind's warning and the approaching Horde threat drew human kingdoms and allied peoples into a military coalition centered on Lordaeron.",
+      "locationIds": [
+        "lordaeron-ancient"
+      ],
+      "participantEntityIds": [
+        "alliance-of-lordaeron",
+        "anduin-lothar",
+        "seven-human-kingdoms"
+      ],
+      "causedByEventIds": [
+        "stormwind-falls"
+      ],
+      "relationshipIds": [
+        "stormwind-fall-causes-alliance",
+        "lothar-controls-alliance-armies",
+        "alliance-located-at-lordaeron",
+        "alliance-formation-precedes-second-war"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-tides-of-darkness-library"
+      ],
+      "claimIds": [
+        "alliance-forms-event-claim"
+      ],
+      "contentStatus": "research"
+    },
     {
       "id": "amani-defeated-in-troll-wars",
       "kind": "event",
@@ -4087,6 +5275,45 @@
       "contentStatus": "research"
     },
     {
+      "id": "dark-portal-opens",
+      "kind": "event",
+      "name": "The Dark Portal Opens",
+      "slug": "dark-portal-opens",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "draenor",
+      "date": {
+        "precision": "exact",
+        "year": 0,
+        "label": "The opening of the Dark Portal"
+      },
+      "summary": "Gul'dan and the corrupted Guardian Medivh completed a gateway between Draenor and Azeroth, allowing the Horde to cross between worlds.",
+      "locationIds": [
+        "dark-portal"
+      ],
+      "participantEntityIds": [
+        "guldan",
+        "medivh",
+        "old-horde"
+      ],
+      "causesEventIds": [
+        "first-war-begins"
+      ],
+      "relationshipIds": [
+        "guldan-participates-in-dark-portal",
+        "medivh-participates-in-dark-portal",
+        "dark-portal-causes-first-war",
+        "shattrath-fall-precedes-dark-portal"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-burning-crusade-draenor-history"
+      ],
+      "claimIds": [
+        "dark-portal-opens-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
       "id": "dark-trolls-settle-near-well",
       "kind": "event",
       "name": "The Dark Trolls Settle Near the Well",
@@ -4190,6 +5417,45 @@
       "contentStatus": "research"
     },
     {
+      "id": "first-war-begins",
+      "kind": "event",
+      "name": "The First War Begins",
+      "slug": "first-war-begins",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "exact",
+        "year": 0,
+        "label": "After the Dark Portal opens"
+      },
+      "summary": "Horde forces entered Azeroth and began the war against the Kingdom of Stormwind.",
+      "locationIds": [
+        "dark-portal",
+        "stormwind-city-ancient"
+      ],
+      "participantEntityIds": [
+        "old-horde",
+        "kingdom-of-stormwind",
+        "blackhand",
+        "anduin-lothar"
+      ],
+      "causedByEventIds": [
+        "dark-portal-opens"
+      ],
+      "relationshipIds": [
+        "dark-portal-causes-first-war",
+        "old-horde-opposes-stormwind",
+        "first-war-precedes-orgrim-succession"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "claimIds": [
+        "first-war-begins-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
       "id": "great-sundering",
       "kind": "event",
       "name": "The Great Sundering",
@@ -4228,6 +5494,76 @@
       ],
       "claimIds": [
         "great-sundering-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "guldan-abandons-second-war",
+      "kind": "event",
+      "name": "Gul'dan Abandons the Second War",
+      "slug": "guldan-abandons-second-war",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "During the Horde's northern campaign",
+        "relativeToId": "second-war-begins"
+      },
+      "summary": "Gul'dan withdrew forces from the Horde's campaign for his own expedition, weakening Orgrim's offensive at a critical time.",
+      "participantEntityIds": [
+        "guldan",
+        "old-horde",
+        "orgrim-doomhammer"
+      ],
+      "causesEventIds": [
+        "horde-defeated-dark-portal-destroyed"
+      ],
+      "relationshipIds": [
+        "second-war-precedes-guldan-defection",
+        "guldan-defection-causes-horde-defeat"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "claimIds": [
+        "guldan-abandons-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "guldan-forms-shadow-council",
+      "kind": "event",
+      "name": "Gul'dan Forms the Shadow Council",
+      "slug": "guldan-forms-shadow-council",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "draenor",
+      "date": {
+        "precision": "relative",
+        "label": "During the political consolidation of the clans",
+        "relativeToId": "nerzhul-deceived-against-draenei"
+      },
+      "summary": "After Ner'zhul resisted the Legion's course, Gul'dan organized a concealed warlock council and tightened hidden control around the forming Horde.",
+      "participantEntityIds": [
+        "guldan",
+        "shadow-council",
+        "kiljaeden",
+        "old-horde"
+      ],
+      "causesEventIds": [
+        "orc-clans-drink-mannoroths-blood"
+      ],
+      "relationshipIds": [
+        "guldan-controls-shadow-council",
+        "shadow-council-controls-old-horde",
+        "nerzhul-deception-precedes-shadow-council",
+        "shadow-council-causes-blood-pact"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-burning-crusade-draenor-history"
+      ],
+      "claimIds": [
+        "guldan-shadow-council-event-claim"
       ],
       "contentStatus": "research"
     },
@@ -4311,6 +5647,47 @@
       "contentStatus": "research"
     },
     {
+      "id": "horde-defeated-dark-portal-destroyed",
+      "kind": "event",
+      "name": "The Horde Is Defeated and the Dark Portal Is Destroyed",
+      "slug": "horde-defeated-dark-portal-destroyed",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "approximate",
+        "year": 6,
+        "label": "At the end of the Second War; working chronology"
+      },
+      "summary": "The Alliance drove the Horde back to the gateway, destroyed the original Dark Portal, and captured many of the defeated orcs.",
+      "locationIds": [
+        "dark-portal"
+      ],
+      "participantEntityIds": [
+        "alliance-of-lordaeron",
+        "old-horde",
+        "turalyon",
+        "orgrim-doomhammer"
+      ],
+      "causedByEventIds": [
+        "second-war",
+        "guldan-abandons-second-war",
+        "turalyon-rallies-alliance"
+      ],
+      "relationshipIds": [
+        "second-war-causes-horde-defeat",
+        "guldan-defection-causes-horde-defeat",
+        "turalyon-rally-causes-horde-defeat",
+        "second-war-aftermath-precedes-third-war"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "claimIds": [
+        "horde-defeated-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
       "id": "illidan-creates-second-well",
       "kind": "event",
       "name": "Illidan Creates a Second Well",
@@ -4383,6 +5760,41 @@
       ],
       "claimIds": [
         "kaldorei-ascendance-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "kiljaeden-targets-draenei-on-draenor",
+      "kind": "event",
+      "name": "Kil'jaeden Finds the Draenei on Draenor",
+      "slug": "kiljaeden-targets-draenei-on-draenor",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "draenor",
+      "date": {
+        "precision": "approximate",
+        "year": -13,
+        "label": "Approximately thirteen years before the Dark Portal; working chronology"
+      },
+      "summary": "Kil'jaeden discovered Velen's exiles on Draenor and chose the orc clans as the instrument of his revenge.",
+      "participantEntityIds": [
+        "kiljaeden",
+        "draenei-draenor",
+        "orc-clans-draenor"
+      ],
+      "causesEventIds": [
+        "nerzhul-deceived-against-draenei"
+      ],
+      "relationshipIds": [
+        "kiljaeden-opposes-draenei",
+        "kiljaeden-causes-nerzhul-deception"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-burning-crusade-draenor-history",
+        "blizzard-rise-of-the-horde-library"
+      ],
+      "claimIds": [
+        "kiljaeden-targets-draenei-event-claim"
       ],
       "contentStatus": "research"
     },
@@ -4499,6 +5911,42 @@
       "contentStatus": "research"
     },
     {
+      "id": "lothar-falls-at-blackrock",
+      "kind": "event",
+      "name": "Anduin Lothar Falls Near Blackrock Spire",
+      "slug": "lothar-falls-at-blackrock",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "During the Alliance counteroffensive in the Second War",
+        "relativeToId": "second-war-begins"
+      },
+      "summary": "Lothar died during the confrontation near Blackrock Spire, creating a moment of shock that Turalyon turned into resolve.",
+      "locationIds": [
+        "blackrock-spire-ancient"
+      ],
+      "participantEntityIds": [
+        "anduin-lothar",
+        "orgrim-doomhammer",
+        "alliance-of-lordaeron",
+        "old-horde"
+      ],
+      "causesEventIds": [
+        "turalyon-rallies-alliance"
+      ],
+      "relationshipIds": [
+        "lothar-fall-causes-turalyon-rally"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "claimIds": [
+        "lothar-falls-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
       "id": "mogu-conquests",
       "kind": "event",
       "name": "The Mogu Empire Expands",
@@ -4562,6 +6010,41 @@
       ],
       "claimIds": [
         "neltharion-betrays-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "nerzhul-deceived-against-draenei",
+      "kind": "event",
+      "name": "Ner'zhul Is Deceived Against the Draenei",
+      "slug": "nerzhul-deceived-against-draenei",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "draenor",
+      "date": {
+        "precision": "relative",
+        "label": "Before Gul'dan assumes the Legion's work",
+        "relativeToId": "kiljaeden-targets-draenei-on-draenor"
+      },
+      "summary": "Kil'jaeden exploited Ner'zhul's authority and grief to turn orc suspicion and violence toward the draenei.",
+      "participantEntityIds": [
+        "kiljaeden",
+        "nerzhul",
+        "orc-clans-draenor",
+        "draenei-draenor"
+      ],
+      "causedByEventIds": [
+        "kiljaeden-targets-draenei-on-draenor"
+      ],
+      "relationshipIds": [
+        "kiljaeden-causes-nerzhul-deception",
+        "nerzhul-deception-precedes-shadow-council"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-burning-crusade-draenor-history"
+      ],
+      "claimIds": [
+        "nerzhul-deceived-event-claim"
       ],
       "contentStatus": "research"
     },
@@ -4738,6 +6221,79 @@
       ],
       "claimIds": [
         "old-gods-scattered-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "orc-clans-drink-mannoroths-blood",
+      "kind": "event",
+      "name": "Orc Clans Drink Mannoroth's Blood",
+      "slug": "orc-clans-drink-mannoroths-blood",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "draenor",
+      "date": {
+        "precision": "relative",
+        "label": "Before the final assault on Shattrath",
+        "relativeToId": "guldan-forms-shadow-council"
+      },
+      "summary": "Many orc leaders accepted Mannoroth's blood and its power, binding the Horde more deeply to the Legion; Durotan kept the Frostwolves from drinking.",
+      "participantEntityIds": [
+        "mannoroth",
+        "guldan",
+        "durotan",
+        "orc-clans-draenor",
+        "old-horde"
+      ],
+      "causedByEventIds": [
+        "guldan-forms-shadow-council"
+      ],
+      "causesEventIds": [
+        "shattrath-falls-to-horde"
+      ],
+      "relationshipIds": [
+        "mannoroth-blood-transforms-clans",
+        "durotan-opposes-blood-pact",
+        "shadow-council-causes-blood-pact",
+        "blood-pact-precedes-shattrath-fall"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-rise-of-the-horde-library"
+      ],
+      "claimIds": [
+        "mannoroth-blood-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "orgrim-becomes-warchief",
+      "kind": "event",
+      "name": "Orgrim Doomhammer Becomes Warchief",
+      "slug": "orgrim-becomes-warchief",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "During the First War",
+        "relativeToId": "first-war-begins"
+      },
+      "summary": "Orgrim killed Blackhand, broke much of the Shadow Council's concealed power, and assumed leadership of the Horde.",
+      "participantEntityIds": [
+        "orgrim-doomhammer",
+        "blackhand",
+        "shadow-council",
+        "old-horde"
+      ],
+      "relationshipIds": [
+        "orgrim-replaces-blackhand",
+        "first-war-precedes-orgrim-succession",
+        "orgrim-succession-precedes-stormwind-fall"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "claimIds": [
+        "orgrim-warchief-event-claim"
       ],
       "contentStatus": "research"
     },
@@ -5068,6 +6624,77 @@
       "contentStatus": "research"
     },
     {
+      "id": "second-war-begins",
+      "kind": "event",
+      "name": "The Second War Begins",
+      "slug": "second-war-begins",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "After the formation of the Alliance of Lordaeron",
+        "relativeToId": "alliance-of-lordaeron-forms"
+      },
+      "summary": "The Horde drove north while the newly formed Alliance organized a defense across several kingdoms and theaters.",
+      "participantEntityIds": [
+        "old-horde",
+        "alliance-of-lordaeron",
+        "orgrim-doomhammer",
+        "anduin-lothar"
+      ],
+      "relationshipIds": [
+        "alliance-formation-precedes-second-war",
+        "old-horde-opposes-alliance",
+        "second-war-precedes-guldan-defection"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-tides-of-darkness-library"
+      ],
+      "claimIds": [
+        "second-war-begins-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "shattrath-falls-to-horde",
+      "kind": "event",
+      "name": "Shattrath Falls to the Horde",
+      "slug": "shattrath-falls-to-horde",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "draenor",
+      "date": {
+        "precision": "relative",
+        "label": "Near the culmination of the Horde's war against the draenei",
+        "relativeToId": "orc-clans-drink-mannoroths-blood"
+      },
+      "summary": "The Horde's assault devastated Shattrath and broke the principal center of organized draenei resistance, though draenei survivors endured.",
+      "locationIds": [
+        "shattrath-draenor"
+      ],
+      "participantEntityIds": [
+        "old-horde",
+        "draenei-draenor"
+      ],
+      "causedByEventIds": [
+        "orc-clans-drink-mannoroths-blood"
+      ],
+      "relationshipIds": [
+        "old-horde-opposes-draenei",
+        "blood-pact-precedes-shattrath-fall",
+        "shattrath-fall-precedes-dark-portal"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-rise-of-the-horde-library",
+        "blizzard-burning-crusade-draenor-history"
+      ],
+      "claimIds": [
+        "shattrath-falls-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
       "id": "spirit-imbalance",
       "kind": "event",
       "name": "The Primordial Imbalance",
@@ -5095,6 +6722,47 @@
       ],
       "claimIds": [
         "spirit-imbalance-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "stormwind-falls",
+      "kind": "event",
+      "name": "Stormwind Falls",
+      "slug": "stormwind-falls",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "At the end of the First War",
+        "relativeToId": "first-war-begins"
+      },
+      "summary": "The Horde captured and devastated Stormwind, forcing surviving leaders and refugees to flee north.",
+      "locationIds": [
+        "stormwind-city-ancient"
+      ],
+      "participantEntityIds": [
+        "old-horde",
+        "kingdom-of-stormwind",
+        "anduin-lothar"
+      ],
+      "causedByEventIds": [
+        "first-war"
+      ],
+      "causesEventIds": [
+        "alliance-of-lordaeron-forms"
+      ],
+      "relationshipIds": [
+        "first-war-causes-stormwind-fall",
+        "orgrim-succession-precedes-stormwind-fall",
+        "stormwind-fall-causes-alliance"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-tides-of-darkness-library"
+      ],
+      "claimIds": [
+        "stormwind-falls-event-claim"
       ],
       "contentStatus": "research"
     },
@@ -5204,6 +6872,45 @@
       ],
       "claimIds": [
         "titan-forged-mustered-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "turalyon-rallies-alliance",
+      "kind": "event",
+      "name": "Turalyon Rallies the Alliance",
+      "slug": "turalyon-rallies-alliance",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "Immediately after Lothar's death",
+        "relativeToId": "lothar-falls-at-blackrock"
+      },
+      "summary": "Turalyon rallied the shaken Alliance and sustained the counteroffensive that drove the Horde south.",
+      "locationIds": [
+        "blackrock-spire-ancient"
+      ],
+      "participantEntityIds": [
+        "turalyon",
+        "alliance-of-lordaeron",
+        "anduin-lothar"
+      ],
+      "causedByEventIds": [
+        "lothar-falls-at-blackrock"
+      ],
+      "causesEventIds": [
+        "horde-defeated-dark-portal-destroyed"
+      ],
+      "relationshipIds": [
+        "lothar-fall-causes-turalyon-rally",
+        "turalyon-rally-causes-horde-defeat"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2"
+      ],
+      "claimIds": [
+        "turalyon-rallies-event-claim"
       ],
       "contentStatus": "research"
     },
@@ -5645,6 +7352,540 @@
       "claimIds": [
         "elemental-wars-claim"
       ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "first-war",
+      "kind": "battle",
+      "name": "The First War",
+      "slug": "first-war",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "From the opening of the Dark Portal through the fall of Stormwind",
+        "relativeToId": "dark-portal-opens"
+      },
+      "summary": "A multi-year invasion in which the Old Horde crossed from Draenor, fought the Kingdom of Stormwind, changed leadership, and ultimately captured the southern capital.",
+      "description": "This dossier presents an atlas-scale strategic sequence. The source chapter supports repeated offensives, political upheaval, and Stormwind's fall, but not one exact battlefield or a complete surveyed route assembled from game missions.",
+      "locationIds": [
+        "dark-portal",
+        "stormwind-city-ancient"
+      ],
+      "participantEntityIds": [
+        "old-horde",
+        "kingdom-of-stormwind",
+        "blackhand",
+        "orgrim-doomhammer",
+        "medivh",
+        "anduin-lothar"
+      ],
+      "causedByEventIds": [
+        "dark-portal-opens"
+      ],
+      "causesEventIds": [
+        "stormwind-falls"
+      ],
+      "relationshipIds": [
+        "dark-portal-causes-first-war",
+        "old-horde-opposes-stormwind",
+        "first-war-causes-stormwind-fall"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-tides-of-darkness-library"
+      ],
+      "claimIds": [
+        "first-war-battle-claim"
+      ],
+      "campaignId": "rise-of-the-horde-and-first-two-wars",
+      "combatants": [
+        {
+          "factionId": "old-horde",
+          "role": "attacker",
+          "commanderEntityIds": [
+            "blackhand",
+            "orgrim-doomhammer"
+          ]
+        },
+        {
+          "factionId": "kingdom-of-stormwind",
+          "role": "defender",
+          "commanderEntityIds": [
+            "anduin-lothar"
+          ]
+        }
+      ],
+      "objectives": [
+        {
+          "factionId": "old-horde",
+          "summary": "Establish the invasion on Azeroth and break the Kingdom of Stormwind."
+        },
+        {
+          "factionId": "kingdom-of-stormwind",
+          "summary": "Contain the invaders, preserve the kingdom, and uncover the power enabling the portal."
+        }
+      ],
+      "phases": [
+        {
+          "id": "portal-incursions",
+          "title": "A new enemy crosses the threshold",
+          "summary": "Horde forces emerge from the Dark Portal and begin probing the southern kingdom.",
+          "routeId": "first-war-advance",
+          "durationMs": 7200,
+          "narration": "The first crossings did not reveal the full weight waiting beyond the gate. They were enough to turn a hidden act of sorcery into war and to teach Stormwind that the enemy had no homeland upon its maps.",
+          "camera": {
+            "position": [
+              2.2,
+              5,
+              4.4
+            ],
+            "target": [
+              2,
+              0,
+              2.7
+            ],
+            "durationMs": 1050
+          },
+          "visualActions": [
+            {
+              "type": "show_route",
+              "routeId": "first-war-advance"
+            },
+            {
+              "type": "show_relationships",
+              "relationshipIds": [
+                "dark-portal-causes-first-war"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "stormwind-resists",
+          "title": "Stormwind survives the first blows",
+          "summary": "The defenders resist early attacks while the Horde learns the land and gathers greater strength.",
+          "routeId": "first-war-advance",
+          "durationMs": 7200,
+          "narration": "The kingdom did not fall at the first alarm. Resistance bought time, but each return carried greater confidence, while fear and uncertainty divided those who still believed the war could be contained.",
+          "camera": {
+            "position": [
+              2.4,
+              5.1,
+              4.6
+            ],
+            "target": [
+              2.35,
+              0,
+              1.8
+            ],
+            "durationMs": 1050
+          },
+          "visualActions": [
+            {
+              "type": "show_relationships",
+              "relationshipIds": [
+                "old-horde-opposes-stormwind"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "guardian-unmasked",
+          "title": "The hand behind the gate is uncovered",
+          "summary": "Stormwind's defenders discover Medivh's role, severing the Azeroth-side will that had enabled the invasion.",
+          "durationMs": 7400,
+          "narration": "The road of the invasion led inward as well as east. The Guardian who should have watched the world had helped open it, and stopping him ended one design without recalling the armies already across the threshold.",
+          "camera": {
+            "position": [
+              3,
+              5.2,
+              4.5
+            ],
+            "target": [
+              2.8,
+              0,
+              2.1
+            ],
+            "durationMs": 1080
+          },
+          "visualActions": [
+            {
+              "type": "show_relationships",
+              "relationshipIds": [
+                "medivh-participates-in-dark-portal"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "orgrim-takes-command",
+          "title": "The Horde changes masters",
+          "summary": "Orgrim kills Blackhand, attacks the Shadow Council's power, and assumes command.",
+          "durationMs": 7200,
+          "narration": "The invaders' unity concealed another war. Orgrim struck down Blackhand and tore at the council behind him. The Horde changed masters, yet its armies remained upon Azeroth and its hunger for victory did not depart with the old warchief.",
+          "camera": {
+            "position": [
+              2,
+              5.5,
+              4.9
+            ],
+            "target": [
+              2,
+              0,
+              1.9
+            ],
+            "durationMs": 1100
+          },
+          "visualActions": [
+            {
+              "type": "show_relationships",
+              "relationshipIds": [
+                "orgrim-replaces-blackhand"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "stormwind-falls-phase",
+          "title": "The southern kingdom is broken",
+          "summary": "The Horde captures Stormwind and surviving leaders carry warning north.",
+          "routeId": "first-war-advance",
+          "durationMs": 7600,
+          "narration": "At last the southern walls failed. Victory gave the Horde a ruined capital, while the sea carried survivors and a warning toward kingdoms that had not yet understood that Stormwind's war would soon become their own.",
+          "camera": {
+            "position": [
+              2.7,
+              4.8,
+              4.2
+            ],
+            "target": [
+              2.35,
+              0,
+              1.8
+            ],
+            "durationMs": 1080
+          },
+          "visualActions": [
+            {
+              "type": "show_route",
+              "routeId": "first-war-advance"
+            },
+            {
+              "type": "show_relationships",
+              "relationshipIds": [
+                "first-war-causes-stormwind-fall"
+              ]
+            }
+          ]
+        }
+      ],
+      "outcome": {
+        "summary": "Stormwind was captured and devastated, the First War ended in Horde victory, and survivors escaped north to seek a wider alliance.",
+        "winnerFactionId": "old-horde"
+      },
+      "geographicCertainty": "unknown",
+      "geographicEditorNote": "The First War comprised many movements and engagements. No single exact battlefield point is asserted; the displayed route is explicitly inferred.",
+      "importance": "era_defining",
+      "contentStatus": "research"
+    },
+    {
+      "id": "second-war",
+      "kind": "battle",
+      "name": "The Second War",
+      "slug": "second-war",
+      "eraId": "rise-of-the-horde",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "After Stormwind's fall through the destruction of the original Dark Portal",
+        "relativeToId": "alliance-of-lordaeron-forms"
+      },
+      "summary": "A multi-theater war in which the Horde drove north against the Alliance of Lordaeron before internal fracture and an Alliance counteroffensive reversed the campaign.",
+      "description": "The dossier describes strategic direction and leadership changes rather than replaying missions or simulating units. Land, sea, and aerial theaters are condensed into two explicitly inferred atlas routes.",
+      "locationIds": [
+        "lordaeron-ancient",
+        "blackrock-spire-ancient",
+        "dark-portal"
+      ],
+      "participantEntityIds": [
+        "old-horde",
+        "alliance-of-lordaeron",
+        "orgrim-doomhammer",
+        "guldan",
+        "anduin-lothar",
+        "turalyon"
+      ],
+      "causedByEventIds": [
+        "second-war-begins"
+      ],
+      "causesEventIds": [
+        "guldan-abandons-second-war",
+        "lothar-falls-at-blackrock",
+        "horde-defeated-dark-portal-destroyed"
+      ],
+      "relationshipIds": [
+        "old-horde-opposes-alliance",
+        "second-war-causes-horde-defeat",
+        "guldan-defection-causes-horde-defeat",
+        "lothar-fall-causes-turalyon-rally",
+        "turalyon-rally-causes-horde-defeat"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-2",
+        "blizzard-tides-of-darkness-library"
+      ],
+      "claimIds": [
+        "second-war-battle-claim"
+      ],
+      "campaignId": "rise-of-the-horde-and-first-two-wars",
+      "combatants": [
+        {
+          "factionId": "old-horde",
+          "role": "attacker",
+          "commanderEntityIds": [
+            "orgrim-doomhammer"
+          ]
+        },
+        {
+          "factionId": "alliance-of-lordaeron",
+          "role": "defender",
+          "commanderEntityIds": [
+            "anduin-lothar",
+            "turalyon"
+          ]
+        }
+      ],
+      "objectives": [
+        {
+          "factionId": "old-horde",
+          "summary": "Break the northern coalition and secure lasting Horde dominion on Azeroth."
+        },
+        {
+          "factionId": "alliance-of-lordaeron",
+          "summary": "Stop the northern offensive, liberate occupied lands, and close the gateway that sustains the invasion."
+        }
+      ],
+      "phases": [
+        {
+          "id": "northern-offensive",
+          "title": "The Horde drives north",
+          "summary": "Orgrim leads a broad offensive from the conquered south toward the Alliance kingdoms.",
+          "routeId": "second-war-horde-offensive",
+          "durationMs": 7400,
+          "narration": "Stormwind's fall had opened the road but not ended resistance. The Horde drove north across many theaters, while a coalition still new to itself learned to answer as more than seven separate fears.",
+          "camera": {
+            "position": [
+              2.2,
+              7,
+              6.2
+            ],
+            "target": [
+              2,
+              0,
+              0
+            ],
+            "durationMs": 1150
+          },
+          "visualActions": [
+            {
+              "type": "show_route",
+              "routeId": "second-war-horde-offensive"
+            },
+            {
+              "type": "show_relationships",
+              "relationshipIds": [
+                "old-horde-opposes-alliance"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "alliance-holds",
+          "title": "The coalition becomes an army",
+          "summary": "Lothar coordinates the Alliance while its members defend several threatened realms.",
+          "durationMs": 7200,
+          "narration": "Alliance was first a promise spoken under approaching danger. Campaign made it practice. Different peoples, commanders, and interests held together because none could afford the loneliness in which Stormwind had fallen.",
+          "camera": {
+            "position": [
+              2.6,
+              5.7,
+              5.1
+            ],
+            "target": [
+              2.2,
+              0,
+              -1.6
+            ],
+            "durationMs": 1100
+          },
+          "visualActions": [
+            {
+              "type": "show_relationships",
+              "relationshipIds": [
+                "lothar-controls-alliance-armies",
+                "alliance-located-at-lordaeron"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "horde-reaches-north",
+          "title": "The northern kingdoms face the invasion",
+          "summary": "The Horde campaign threatens the Alliance heartlands but does not secure a final victory.",
+          "routeId": "second-war-horde-offensive",
+          "durationMs": 7300,
+          "narration": "The war reached lands that had once heard Stormwind's ruin as distant news. Yet breadth became a burden as well as strength: every new front lengthened the purpose holding the Horde together.",
+          "camera": {
+            "position": [
+              2.5,
+              5,
+              4.6
+            ],
+            "target": [
+              2.1,
+              0,
+              -2
+            ],
+            "durationMs": 1050
+          },
+          "visualActions": [
+            {
+              "type": "show_route",
+              "routeId": "second-war-horde-offensive"
+            }
+          ]
+        },
+        {
+          "id": "guldan-breaks-away",
+          "title": "Ambition divides the offensive",
+          "summary": "Gul'dan removes forces from the campaign for his own purpose, weakening the Horde.",
+          "durationMs": 7200,
+          "narration": "The hidden bargain at the Horde's birth had never produced one purpose. Gul'dan turned away at the hour of greatest need, and the strength taken from the main host opened a fracture no command could simply close.",
+          "camera": {
+            "position": [
+              2,
+              6.1,
+              5.5
+            ],
+            "target": [
+              2,
+              0,
+              -0.3
+            ],
+            "durationMs": 1100
+          },
+          "visualActions": [
+            {
+              "type": "show_relationships",
+              "relationshipIds": [
+                "guldan-defection-causes-horde-defeat"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "blackrock-turning",
+          "title": "A commander falls and an army rises",
+          "summary": "Lothar dies near Blackrock Spire; Turalyon rallies the Alliance rather than allowing it to break.",
+          "routeId": "second-war-alliance-counteroffensive",
+          "durationMs": 7600,
+          "narration": "Near Blackrock, the Alliance lost the man who had carried Stormwind's warning north. Grief might have ended the advance. Turalyon made it a summons, and the army moved again with its memory before it.",
+          "camera": {
+            "position": [
+              2,
+              5,
+              4.5
+            ],
+            "target": [
+              1.6,
+              0,
+              0.5
+            ],
+            "durationMs": 1080
+          },
+          "visualActions": [
+            {
+              "type": "show_route",
+              "routeId": "second-war-alliance-counteroffensive"
+            },
+            {
+              "type": "show_relationships",
+              "relationshipIds": [
+                "lothar-fall-causes-turalyon-rally"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "counteroffensive-south",
+          "title": "The tide returns toward the gate",
+          "summary": "The Alliance drives the weakened Horde south from Blackrock toward the Dark Portal.",
+          "routeId": "second-war-alliance-counteroffensive",
+          "durationMs": 7300,
+          "narration": "The road of invasion reversed. The coalition that had formed from one kingdom's ruin passed through Blackrock and pressed south, while the Horde's remaining order narrowed around retreat and survival.",
+          "camera": {
+            "position": [
+              2.2,
+              7,
+              6.3
+            ],
+            "target": [
+              2,
+              0,
+              0.7
+            ],
+            "durationMs": 1150
+          },
+          "visualActions": [
+            {
+              "type": "show_route",
+              "routeId": "second-war-alliance-counteroffensive"
+            },
+            {
+              "type": "show_relationships",
+              "relationshipIds": [
+                "turalyon-rally-causes-horde-defeat"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "portal-destroyed-phase",
+          "title": "The gateway is broken",
+          "summary": "The Alliance defeats the Horde at the threshold and destroys the original Dark Portal.",
+          "durationMs": 7400,
+          "narration": "At the threshold between worlds, victory closed the road but not its consequences. The portal fell, many orcs entered captivity, and two peoples inherited a rivalry whose causes reached back to choices made beneath another sky.",
+          "camera": {
+            "position": [
+              2.2,
+              4.8,
+              4.2
+            ],
+            "target": [
+              2,
+              0,
+              2.7
+            ],
+            "durationMs": 1080
+          },
+          "visualActions": [
+            {
+              "type": "show_relationships",
+              "relationshipIds": [
+                "second-war-causes-horde-defeat",
+                "second-war-aftermath-precedes-third-war"
+              ]
+            }
+          ]
+        }
+      ],
+      "outcome": {
+        "summary": "The Alliance defeated the Old Horde, destroyed the original Dark Portal, and imprisoned many surviving orcs; the political and human consequences carried forward toward the Third War.",
+        "winnerFactionId": "alliance-of-lordaeron"
+      },
+      "geographicCertainty": "unknown",
+      "geographicEditorNote": "The Second War spanned land, sea, air, and many engagements. No single battlefield marker or complete exact route is asserted.",
+      "importance": "era_defining",
       "contentStatus": "research"
     },
     {
@@ -6699,11 +8940,25 @@
   ],
   "sources": [
     {
+      "id": "blizzard-burning-crusade-draenor-history",
+      "title": "Burning Crusade Classic — The Story So Far",
+      "sourceType": "website",
+      "publicationDate": "2021-05-04",
+      "notes": "First-party Blizzard overview: https://worldofwarcraft.blizzard.com/en-us/news/23679744/burning-crusade-classic-the-story-so-far. It supports the draenei settlement on Draenor, Kil'jaeden's pursuit, manipulation through Ner'zhul and Gul'dan, the war against the draenei, and the orc invasion through Medivh's Dark Portal."
+    },
+    {
       "id": "blizzard-burning-crusade-story-so-far",
       "title": "Burning Crusade Classic: The Story So Far",
       "sourceType": "website",
       "publicationDate": "2021-05-04",
       "notes": "First-party Blizzard overview: https://worldofwarcraft.blizzard.com/en-us/news/23679744/burning-crusade-classic-the-story-so-far. Its Legacy of the Blood Elves section corroborates the exiles' arrival, the founding of Quel'Thalas and the Sunwell, the Amani assault, the alliance with Arathor, and the teaching of magic to human allies. Later Third War material remains outside Era 5."
+    },
+    {
+      "id": "blizzard-chronicle-volume-2-overview",
+      "title": "World of Warcraft Chronicle Vol. II — Official Overview",
+      "sourceType": "website",
+      "publicationDate": "2017-03-14",
+      "notes": "First-party Blizzard book overview: https://worldofwarcraft.blizzard.com/en-us/media/book/world-of-warcraft-chronicle-vol-2. It establishes the volume as an official history source but does not replace claim-level book citations."
     },
     {
       "id": "blizzard-dragon-aspects-history",
@@ -6718,6 +8973,12 @@
       "sourceType": "website",
       "publicationDate": "2010-06-17",
       "notes": "First-party Blizzard overview: https://worldofwarcraft.blizzard.com/en-gb/news/10002188. It summarizes the dwarven civil war, the Bronzebeard victory in Ironforge, the Wildhammer settlement at Grim Batol, the Dark Iron city of Thaurissan, and the later Bronzebeard-Wildhammer response to the Dark Iron assault."
+    },
+    {
+      "id": "blizzard-rise-of-the-horde-library",
+      "title": "The Library — Rise of the Horde",
+      "sourceType": "website",
+      "notes": "First-party Blizzard overview: https://worldofwarcraft.blizzard.com/en-gb/news/10001380/the-library-rise-of-the-horde. It supports the broad arc from peaceful orc clans through Legion manipulation, Mannoroth's blood, the Horde, and devastation of the draenei and Draenor."
     },
     {
       "id": "blizzard-rise-zandalari",
@@ -6739,6 +9000,12 @@
       "sourceType": "website",
       "publicationDate": "2013-02-20",
       "notes": "First-party Blizzard overview of Lei Shen's unification of the mogu and conquest of ancient Pandaria: https://worldofwarcraft.blizzard.com/en-gb/news/10038737/know-thy-enemy-portrait-of-a-thunder-king"
+    },
+    {
+      "id": "blizzard-tides-of-darkness-library",
+      "title": "The Library — Tides of Darkness",
+      "sourceType": "website",
+      "notes": "First-party Blizzard overview: https://worldofwarcraft.blizzard.com/en-gb/news/9979033/the-library-tides-of-darkness. It supports Stormwind's fall, formation of the Alliance of Lordaeron, the Second War, and the enduring Horde–Alliance rivalry."
     },
     {
       "id": "blizzard-warbringers-azshara",
@@ -6767,7 +9034,8 @@
       "title": "World of Warcraft: Chronicle Volume 2",
       "sourceType": "chronicle",
       "volume": "2",
-      "notes": "Research inventory entry only. Edition details and claim-level citation locations require human review before use."
+      "publicationDate": "2017-03-14",
+      "notes": "Research uses the English-language 2017 hardcover chapter boundaries: Rise of the Horde begins on page 62, the First War on page 104, and the Second War on page 146. Every narrower working page span requires confirmation against the selected edition before publication. Official overview: https://worldofwarcraft.blizzard.com/en-us/media/book/world-of-warcraft-chronicle-vol-2"
     },
     {
       "id": "warcraft-chronicle-volume-3",
@@ -6810,6 +9078,24 @@
       "note": "Supports the transition into the Ordering: Titan-forged armies were created and led against the Black Empire while protecting Azeroth's world-soul."
     },
     {
+      "id": "blizzard-chronicle-v2-source-overview",
+      "sourceId": "blizzard-chronicle-volume-2-overview",
+      "section": "World of Warcraft Chronicle Vol. II",
+      "note": "First-party registration of Chronicle Volume II as an official historical source."
+    },
+    {
+      "id": "blizzard-draenor-exiles-history",
+      "sourceId": "blizzard-burning-crusade-draenor-history",
+      "section": "The Flight of the Draenei",
+      "note": "First-party summary of the draenei on Draenor, Kil'jaeden's pursuit, manipulation of Ner'zhul and Gul'dan, the draenei war, and the invasion through Medivh's Dark Portal."
+    },
+    {
+      "id": "blizzard-first-second-war-overview",
+      "sourceId": "blizzard-tides-of-darkness-library",
+      "section": "The Library — Tides of Darkness",
+      "note": "First-party summary of Stormwind's fall, the Alliance of Lordaeron's formation, and its stand in the Second War."
+    },
+    {
       "id": "blizzard-lei-shen-empire",
       "sourceId": "blizzard-thunder-king-portrait",
       "section": "The First Emperor: Lei Shen",
@@ -6826,6 +9112,12 @@
       "sourceId": "blizzard-burning-crusade-story-so-far",
       "section": "Legacy of the Blood Elves",
       "note": "First-party web corroboration for the exiled high elves' arrival, Quel'Thalas, the Sunwell, the Amani assault, the Arathor alliance, and the exchange of magical teaching for military aid."
+    },
+    {
+      "id": "blizzard-rise-of-horde-overview",
+      "sourceId": "blizzard-rise-of-the-horde-library",
+      "section": "The Library — Rise of the Horde",
+      "note": "First-party summary of Legion manipulation, Mannoroth's blood, formation of the Horde, and the devastation of the draenei and Draenor."
     },
     {
       "id": "blizzard-thoradin-arathor-history",
@@ -7086,6 +9378,30 @@
       "note": "Supports the stone-and-metal titan-forged, the empowered keepers, and their campaign against the Black Empire and its elemental servants. Pagination requires human review."
     },
     {
+      "id": "chronicle-v2-first-war",
+      "sourceId": "warcraft-chronicle-volume-2",
+      "chapter": "The First War",
+      "pageStart": 104,
+      "pageEnd": 145,
+      "note": "Working chapter span for the Dark Portal, Medivh, the First War, and Stormwind's fall. Exact claim pages require human edition review."
+    },
+    {
+      "id": "chronicle-v2-rise-of-horde",
+      "sourceId": "warcraft-chronicle-volume-2",
+      "chapter": "Rise of the Horde",
+      "pageStart": 62,
+      "pageEnd": 103,
+      "note": "Working chapter span for Draenor's manipulation, the Horde's formation, and the draenei war. Exact claim pages require human edition review."
+    },
+    {
+      "id": "chronicle-v2-second-war",
+      "sourceId": "warcraft-chronicle-volume-2",
+      "chapter": "The Second War",
+      "pageStart": 146,
+      "pageEnd": 181,
+      "note": "Working chapter span for the Alliance of Lordaeron, the Second War, Blackrock Spire, and destruction of the original Dark Portal. Exact claim pages require human edition review."
+    },
+    {
       "id": "warcraft-wiki-black-empire-ancient-times",
       "sourceId": "warcraft-wiki-chronicle-volume-1",
       "section": "Black Empire — History — Ancient times",
@@ -7134,6 +9450,30 @@
       "value": "Used reconnaissance, deception, storms, and attacks against already weakened rivals.",
       "citationIds": [
         "chronicle-v1-reign-elements"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "alliance-forms-event-claim",
+      "subjectId": "alliance-of-lordaeron-forms",
+      "predicate": "formed_after_stormwind_warned_northern_kingdoms",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-second-war",
+        "blizzard-first-second-war-overview"
+      ],
+      "confidence": "strongly_supported",
+      "status": "active"
+    },
+    {
+      "id": "alliance-lordaeron-forms-claim",
+      "subjectId": "alliance-of-lordaeron",
+      "predicate": "formed_in_response_to_horde_after_stormwind_fell",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-second-war",
+        "blizzard-first-second-war-overview"
       ],
       "confidence": "explicit",
       "status": "active"
@@ -7397,6 +9737,32 @@
       "status": "active"
     },
     {
+      "id": "blackhand-first-warchief-claim",
+      "subjectId": "blackhand",
+      "predicate": "served_as_visible_first_warchief",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-rise-of-horde",
+        "chronicle-v2-first-war",
+        "blizzard-first-second-war-overview"
+      ],
+      "confidence": "strongly_supported",
+      "status": "active",
+      "editorNote": "The public Blizzard overview compresses First War command; the atlas defers the succession sequence to Chronicle review."
+    },
+    {
+      "id": "blackrock-second-war-turning-point-claim",
+      "subjectId": "blackrock-spire-ancient",
+      "predicate": "site_of_lothars_fall_and_alliance_rally",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-second-war"
+      ],
+      "confidence": "strongly_supported",
+      "status": "active",
+      "editorNote": "The marker is approximate; no exact battlefield geometry is asserted."
+    },
+    {
       "id": "burning-legion-invasion-claim",
       "subjectId": "burning-legion",
       "predicate": "invaded_azeroth_during_the_war_of_the_ancients",
@@ -7444,6 +9810,32 @@
       "editorNote": "The project treats the Volume 1 chart as a sourced framework, not an uncontested omniscient diagram."
     },
     {
+      "id": "dark-portal-connects-worlds-claim",
+      "subjectId": "dark-portal",
+      "predicate": "connected_draenor_and_azeroth",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-first-war",
+        "blizzard-draenor-exiles-history"
+      ],
+      "confidence": "explicit",
+      "status": "active",
+      "editorNote": "Corresponding anchors are shown in two local worldspaces; no inter-world geographic line is authored."
+    },
+    {
+      "id": "dark-portal-opens-event-claim",
+      "subjectId": "dark-portal-opens",
+      "predicate": "opened_gateway_from_draenor_to_azeroth",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-first-war",
+        "blizzard-draenor-exiles-history"
+      ],
+      "confidence": "explicit",
+      "status": "active",
+      "editorNote": "The atlas switches worldspaces and does not draw an inter-world line."
+    },
+    {
       "id": "dark-trolls-near-well-claim",
       "subjectId": "dark-trolls",
       "predicate": "migration-and-transformation",
@@ -7478,6 +9870,32 @@
       "editorNote": "The generated portrait is interpretive and must not be reviewed as a costume reconstruction."
     },
     {
+      "id": "draenei-settle-draenor-claim",
+      "subjectId": "draenei-draenor",
+      "predicate": "settled_on_draenor_before_orcish_war",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-rise-of-horde",
+        "blizzard-draenor-exiles-history"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "draenor-intact-era-six-claim",
+      "subjectId": "draenor-ancient",
+      "predicate": "remained_intact_during_first_two_wars",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-rise-of-horde",
+        "chronicle-v2-second-war",
+        "blizzard-draenor-exiles-history"
+      ],
+      "confidence": "strongly_supported",
+      "status": "active",
+      "editorNote": "The later portal catastrophe and shattering are outside this era boundary."
+    },
+    {
       "id": "dragon-soul-role-claim",
       "subjectId": "dragon-soul",
       "predicate": "was_empowered_by_the_aspects_and_weaponized_by_neltharion",
@@ -7488,6 +9906,18 @@
       ],
       "confidence": "explicit",
       "status": "active"
+    },
+    {
+      "id": "durotan-refuses-blood-claim",
+      "subjectId": "durotan",
+      "predicate": "kept_frostwolf_clan_from_mannoroths_blood",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-rise-of-horde"
+      ],
+      "confidence": "strongly_supported",
+      "status": "active",
+      "editorNote": "Exact Chronicle page location remains subject to human edition verification."
     },
     {
       "id": "dwarven-clans-divide-claim",
@@ -7574,6 +10004,30 @@
       "status": "active"
     },
     {
+      "id": "first-war-battle-claim",
+      "subjectId": "first-war",
+      "predicate": "ended_with_stormwind_fall_and_horde_victory",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-first-war",
+        "blizzard-first-second-war-overview"
+      ],
+      "confidence": "explicit",
+      "status": "active",
+      "editorNote": "The five phases are strategic synthesis; no single exact battlefield or exhaustive mission sequence is claimed."
+    },
+    {
+      "id": "first-war-begins-event-claim",
+      "subjectId": "first-war-begins",
+      "predicate": "began_after_horde_crossed_dark_portal",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-first-war"
+      ],
+      "confidence": "strongly_supported",
+      "status": "active"
+    },
+    {
       "id": "forge-of-origination-purpose-claim",
       "subjectId": "forge-of-origination",
       "predicate": "world-forge-purpose",
@@ -7620,6 +10074,42 @@
       "confidence": "strongly_supported",
       "status": "active",
       "editorNote": "The point is approximate at atlas scale."
+    },
+    {
+      "id": "guldan-abandons-event-claim",
+      "subjectId": "guldan-abandons-second-war",
+      "predicate": "withdrew_forces_and_weakened_horde_campaign",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-second-war"
+      ],
+      "confidence": "strongly_supported",
+      "status": "active",
+      "editorNote": "Exact page verification remains required."
+    },
+    {
+      "id": "guldan-builds-shadow-council-claim",
+      "subjectId": "guldan",
+      "predicate": "formed_shadow_council_and_advanced_legion_plan",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-rise-of-horde"
+      ],
+      "confidence": "strongly_supported",
+      "status": "active",
+      "editorNote": "Exact Chronicle page location remains subject to human edition verification."
+    },
+    {
+      "id": "guldan-shadow-council-event-claim",
+      "subjectId": "guldan-forms-shadow-council",
+      "predicate": "created_secret_council_to_steer_horde",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-rise-of-horde"
+      ],
+      "confidence": "strongly_supported",
+      "status": "active",
+      "editorNote": "Exact page verification remains required."
     },
     {
       "id": "highborne-exile-claim",
@@ -7669,6 +10159,18 @@
       ],
       "confidence": "explicit",
       "status": "active"
+    },
+    {
+      "id": "horde-defeated-event-claim",
+      "subjectId": "horde-defeated-dark-portal-destroyed",
+      "predicate": "ended_second_war_with_horde_defeat_and_portal_destruction",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-second-war"
+      ],
+      "confidence": "strongly_supported",
+      "status": "active",
+      "editorNote": "The scope ends before the later Draenor expedition and portal catastrophe."
     },
     {
       "id": "hyjal-second-well-claim",
@@ -7790,6 +10292,32 @@
       "status": "active"
     },
     {
+      "id": "kiljaeden-targets-draenei-event-claim",
+      "subjectId": "kiljaeden-targets-draenei-on-draenor",
+      "predicate": "initiated_manipulation_of_orcs_against_draenei",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-rise-of-horde",
+        "blizzard-draenor-exiles-history",
+        "blizzard-rise-of-horde-overview"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "kiljaeden-targets-draenei-claim",
+      "subjectId": "kiljaeden",
+      "predicate": "pursued_velens_draenei_and_manipulated_orcs",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-rise-of-horde",
+        "blizzard-draenor-exiles-history",
+        "blizzard-rise-of-horde-overview"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
       "id": "legion-invasion-begins-event-claim",
       "subjectId": "legion-invasion-begins",
       "predicate": "began_the_first_legion_invasion_of_azeroth",
@@ -7862,6 +10390,43 @@
       "editorNote": "The collective visual is symbolic and does not assert one permanent command structure across the whole vigil."
     },
     {
+      "id": "lordaeron-alliance-center-claim",
+      "subjectId": "lordaeron-ancient",
+      "predicate": "served_as_center_of_wartime_alliance",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-second-war",
+        "blizzard-first-second-war-overview"
+      ],
+      "confidence": "strongly_supported",
+      "status": "active"
+    },
+    {
+      "id": "lothar-falls-event-claim",
+      "subjectId": "lothar-falls-at-blackrock",
+      "predicate": "died_near_blackrock_during_second_war",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-second-war"
+      ],
+      "confidence": "strongly_supported",
+      "status": "active",
+      "editorNote": "The site focus is approximate; no exact battlefield marker is asserted."
+    },
+    {
+      "id": "lothar-leads-alliance-claim",
+      "subjectId": "anduin-lothar",
+      "predicate": "led_stormwind_survivors_and_alliance_armies",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-first-war",
+        "chronicle-v2-second-war",
+        "blizzard-first-second-war-overview"
+      ],
+      "confidence": "strongly_supported",
+      "status": "active"
+    },
+    {
       "id": "maelstrom-sundering-claim",
       "subjectId": "maelstrom",
       "predicate": "formed_at_the_center_of_the_sundered_world",
@@ -7884,6 +10449,43 @@
       ],
       "confidence": "strongly_supported",
       "status": "active"
+    },
+    {
+      "id": "mannoroth-blood-binds-horde-claim",
+      "subjectId": "mannoroth",
+      "predicate": "blood_bound_participating_orcs_to_legion_influence",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-rise-of-horde",
+        "blizzard-rise-of-horde-overview"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "mannoroth-blood-event-claim",
+      "subjectId": "orc-clans-drink-mannoroths-blood",
+      "predicate": "bound_participating_orcs_more_deeply_to_legion",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-rise-of-horde",
+        "blizzard-rise-of-horde-overview"
+      ],
+      "confidence": "explicit",
+      "status": "active",
+      "editorNote": "The event does not claim that every orc or clan drank."
+    },
+    {
+      "id": "medivh-enables-dark-portal-claim",
+      "subjectId": "medivh",
+      "predicate": "cooperated_with_guldan_to_enable_dark_portal",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-first-war"
+      ],
+      "confidence": "strongly_supported",
+      "status": "active",
+      "editorNote": "Exact Chronicle page location remains subject to human edition verification."
     },
     {
       "id": "mogu-conquests-event-claim",
@@ -7952,6 +10554,30 @@
       "value": "Avoided fruitless attacks, divided rival forces, and struck them with overwhelming waters.",
       "citationIds": [
         "chronicle-v1-reign-elements"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "nerzhul-deceived-event-claim",
+      "subjectId": "nerzhul-deceived-against-draenei",
+      "predicate": "turned_orc_clans_against_draenei_through_deception",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-rise-of-horde",
+        "blizzard-draenor-exiles-history"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "nerzhul-deceived-claim",
+      "subjectId": "nerzhul",
+      "predicate": "was_deceived_into_directing_clans_against_draenei",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-rise-of-horde",
+        "blizzard-draenor-exiles-history"
       ],
       "confidence": "explicit",
       "status": "active"
@@ -8057,6 +10683,54 @@
       ],
       "confidence": "explicit",
       "status": "active"
+    },
+    {
+      "id": "old-horde-formed-on-draenor-claim",
+      "subjectId": "old-horde",
+      "predicate": "formed_from_orc_clans_on_draenor",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-rise-of-horde",
+        "blizzard-rise-of-horde-overview"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "orc-clans-precede-horde-claim",
+      "subjectId": "orc-clans-draenor",
+      "predicate": "preceded_old_horde_as_independent_clans",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-rise-of-horde",
+        "blizzard-rise-of-horde-overview"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "orgrim-succeeds-blackhand-claim",
+      "subjectId": "orgrim-doomhammer",
+      "predicate": "killed_blackhand_and_became_warchief",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-first-war"
+      ],
+      "confidence": "strongly_supported",
+      "status": "active",
+      "editorNote": "Exact Chronicle page and sequencing relative to Stormwind's final fall require human edition review."
+    },
+    {
+      "id": "orgrim-warchief-event-claim",
+      "subjectId": "orgrim-becomes-warchief",
+      "predicate": "replaced_blackhand_during_first_war",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-first-war"
+      ],
+      "confidence": "strongly_supported",
+      "status": "active",
+      "editorNote": "Exact sequencing relative to the final attack on Stormwind requires human review."
     },
     {
       "id": "pandaren-revolution-event-claim",
@@ -8259,6 +10933,31 @@
       "status": "active"
     },
     {
+      "id": "second-war-battle-claim",
+      "subjectId": "second-war",
+      "predicate": "ended_with_horde_defeat_and_dark_portal_destruction",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-second-war",
+        "blizzard-first-second-war-overview"
+      ],
+      "confidence": "strongly_supported",
+      "status": "active",
+      "editorNote": "The seven phases and two routes are strategic synthesis, not exact tactical or naval reconstruction."
+    },
+    {
+      "id": "second-war-begins-event-claim",
+      "subjectId": "second-war-begins",
+      "predicate": "pitted_old_horde_against_alliance_of_lordaeron",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-second-war",
+        "blizzard-first-second-war-overview"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
       "id": "seven-kingdoms-emerge-claim",
       "subjectId": "seven-human-kingdoms",
       "predicate": "emerged_as_arathors_city_states_became_sovereign",
@@ -8271,12 +10970,86 @@
       "editorNote": "The event is a long fragmentation threshold, not a simultaneous declaration by seven states."
     },
     {
+      "id": "shadow-council-steers-horde-claim",
+      "subjectId": "shadow-council",
+      "predicate": "secretly_influenced_old_horde",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-rise-of-horde"
+      ],
+      "confidence": "strongly_supported",
+      "status": "active",
+      "editorNote": "Exact Chronicle page location remains subject to human edition verification."
+    },
+    {
+      "id": "shattrath-falls-event-claim",
+      "subjectId": "shattrath-falls-to-horde",
+      "predicate": "devastated_draenei_center_without_erasing_all_survivors",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-rise-of-horde",
+        "blizzard-rise-of-horde-overview",
+        "blizzard-draenor-exiles-history"
+      ],
+      "confidence": "strongly_supported",
+      "status": "active"
+    },
+    {
+      "id": "shattrath-falls-claim",
+      "subjectId": "shattrath-draenor",
+      "predicate": "was_devastated_during_horde_campaign",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-rise-of-horde",
+        "blizzard-rise-of-horde-overview",
+        "blizzard-draenor-exiles-history"
+      ],
+      "confidence": "strongly_supported",
+      "status": "active"
+    },
+    {
       "id": "spirit-imbalance-claim",
       "subjectId": "spirit-imbalance",
       "predicate": "cause-of-elemental-chaos",
       "value": "Azeroth's world-soul consumed much Spirit, removing the force that otherwise balanced the elements.",
       "citationIds": [
         "chronicle-v1-reign-elements"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "stormwind-city-destroyed-claim",
+      "subjectId": "stormwind-city-ancient",
+      "predicate": "was_destroyed_during_first_war",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-first-war",
+        "blizzard-first-second-war-overview"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "stormwind-falls-event-claim",
+      "subjectId": "stormwind-falls",
+      "predicate": "ended_first_war_in_horde_victory",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-first-war",
+        "blizzard-first-second-war-overview"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "stormwind-falls-first-war-claim",
+      "subjectId": "kingdom-of-stormwind",
+      "predicate": "fell_at_end_of_first_war",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-first-war",
+        "blizzard-first-second-war-overview"
       ],
       "confidence": "explicit",
       "status": "active"
@@ -8482,6 +11255,29 @@
       "editorNote": "Strategic phases are paraphrased and exact fronts remain unplaced."
     },
     {
+      "id": "turalyon-rallies-alliance-claim",
+      "subjectId": "turalyon",
+      "predicate": "rallied_alliance_after_lothars_death",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-second-war"
+      ],
+      "confidence": "strongly_supported",
+      "status": "active",
+      "editorNote": "Exact Chronicle page location remains subject to human edition verification."
+    },
+    {
+      "id": "turalyon-rallies-event-claim",
+      "subjectId": "turalyon-rallies-alliance",
+      "predicate": "rallied_alliance_after_lothars_death",
+      "value": true,
+      "citationIds": [
+        "chronicle-v2-second-war"
+      ],
+      "confidence": "strongly_supported",
+      "status": "active"
+    },
+    {
       "id": "twisting-nether-origin-claim",
       "subjectId": "twisting-nether",
       "predicate": "origin-and-nature",
@@ -8670,6 +11466,28 @@
   ],
   "relationships": [
     {
+      "id": "alliance-formation-precedes-second-war",
+      "fromId": "alliance-of-lordaeron-forms",
+      "toId": "second-war",
+      "type": "precedes",
+      "citationIds": [
+        "chronicle-v2-second-war",
+        "blizzard-first-second-war-overview"
+      ],
+      "confidence": "explicit"
+    },
+    {
+      "id": "alliance-located-at-lordaeron",
+      "fromId": "alliance-of-lordaeron",
+      "toId": "lordaeron-ancient",
+      "type": "located_at",
+      "citationIds": [
+        "chronicle-v2-second-war",
+        "blizzard-first-second-war-overview"
+      ],
+      "confidence": "strongly_supported"
+    },
+    {
       "id": "amani-opposes-quelthalas",
       "fromId": "amani-empire",
       "toId": "quelthalas-ancient",
@@ -8815,6 +11633,17 @@
       "confidence": "explicit"
     },
     {
+      "id": "blood-pact-precedes-shattrath-fall",
+      "fromId": "orc-clans-drink-mannoroths-blood",
+      "toId": "shattrath-falls-to-horde",
+      "type": "precedes",
+      "citationIds": [
+        "chronicle-v2-rise-of-horde",
+        "blizzard-rise-of-horde-overview"
+      ],
+      "confidence": "explicit"
+    },
+    {
       "id": "cenarius-allied-with-resistance",
       "fromId": "cenarius",
       "toId": "night-elf-resistance",
@@ -8833,6 +11662,16 @@
         "chronicle-v1-well-world-forges"
       ],
       "confidence": "strongly_supported"
+    },
+    {
+      "id": "dark-portal-causes-first-war",
+      "fromId": "dark-portal-opens",
+      "toId": "first-war",
+      "type": "causes",
+      "citationIds": [
+        "chronicle-v2-first-war"
+      ],
+      "confidence": "explicit"
     },
     {
       "id": "dathremar-participates-in-exile",
@@ -8854,6 +11693,16 @@
         "blizzard-aspects-neltharion"
       ],
       "confidence": "explicit"
+    },
+    {
+      "id": "durotan-opposes-blood-pact",
+      "fromId": "durotan",
+      "toId": "orc-clans-drink-mannoroths-blood",
+      "type": "opposes",
+      "citationIds": [
+        "chronicle-v2-rise-of-horde"
+      ],
+      "confidence": "strongly_supported"
     },
     {
       "id": "dwarven-clans-located-at-ironforge",
@@ -8897,6 +11746,57 @@
         "chronicle-v1-three-hammers"
       ],
       "confidence": "strongly_supported"
+    },
+    {
+      "id": "first-war-causes-stormwind-fall",
+      "fromId": "first-war",
+      "toId": "stormwind-falls",
+      "type": "causes",
+      "citationIds": [
+        "chronicle-v2-first-war",
+        "blizzard-first-second-war-overview"
+      ],
+      "confidence": "explicit"
+    },
+    {
+      "id": "first-war-precedes-orgrim-succession",
+      "fromId": "first-war-begins",
+      "toId": "orgrim-becomes-warchief",
+      "type": "precedes",
+      "citationIds": [
+        "chronicle-v2-first-war"
+      ],
+      "confidence": "strongly_supported"
+    },
+    {
+      "id": "guldan-controls-shadow-council",
+      "fromId": "guldan",
+      "toId": "shadow-council",
+      "type": "controls",
+      "citationIds": [
+        "chronicle-v2-rise-of-horde"
+      ],
+      "confidence": "strongly_supported"
+    },
+    {
+      "id": "guldan-defection-causes-horde-defeat",
+      "fromId": "guldan-abandons-second-war",
+      "toId": "horde-defeated-dark-portal-destroyed",
+      "type": "causes",
+      "citationIds": [
+        "chronicle-v2-second-war"
+      ],
+      "confidence": "strongly_supported"
+    },
+    {
+      "id": "guldan-participates-in-dark-portal",
+      "fromId": "guldan",
+      "toId": "dark-portal-opens",
+      "type": "participant_in",
+      "citationIds": [
+        "chronicle-v2-first-war"
+      ],
+      "confidence": "explicit"
     },
     {
       "id": "highborne-exile-causes-quelthalas",
@@ -8972,6 +11872,28 @@
       "confidence": "explicit"
     },
     {
+      "id": "kiljaeden-causes-nerzhul-deception",
+      "fromId": "kiljaeden-targets-draenei-on-draenor",
+      "toId": "nerzhul-deceived-against-draenei",
+      "type": "causes",
+      "citationIds": [
+        "chronicle-v2-rise-of-horde",
+        "blizzard-draenor-exiles-history"
+      ],
+      "confidence": "explicit"
+    },
+    {
+      "id": "kiljaeden-opposes-draenei",
+      "fromId": "kiljaeden",
+      "toId": "draenei-draenor",
+      "type": "opposes",
+      "citationIds": [
+        "chronicle-v2-rise-of-horde",
+        "blizzard-draenor-exiles-history"
+      ],
+      "confidence": "explicit"
+    },
+    {
       "id": "legion-invasion-causes-war",
       "fromId": "legion-invasion-begins",
       "toId": "war-of-the-ancients-conflict",
@@ -9003,6 +11925,26 @@
       "confidence": "strongly_supported"
     },
     {
+      "id": "lothar-controls-alliance-armies",
+      "fromId": "anduin-lothar",
+      "toId": "alliance-of-lordaeron",
+      "type": "controls",
+      "citationIds": [
+        "chronicle-v2-second-war"
+      ],
+      "confidence": "strongly_supported"
+    },
+    {
+      "id": "lothar-fall-causes-turalyon-rally",
+      "fromId": "lothar-falls-at-blackrock",
+      "toId": "turalyon-rallies-alliance",
+      "type": "causes",
+      "citationIds": [
+        "chronicle-v2-second-war"
+      ],
+      "confidence": "strongly_supported"
+    },
+    {
       "id": "malfurion-participates-in-war",
       "fromId": "malfurion-stormrage",
       "toId": "war-of-the-ancients-conflict",
@@ -9010,6 +11952,27 @@
       "citationIds": [
         "chronicle-v1-war-ancients-resistance",
         "chronicle-v1-great-sundering"
+      ],
+      "confidence": "explicit"
+    },
+    {
+      "id": "mannoroth-blood-transforms-clans",
+      "fromId": "orc-clans-draenor",
+      "toId": "old-horde",
+      "type": "transforms_into",
+      "citationIds": [
+        "chronicle-v2-rise-of-horde",
+        "blizzard-rise-of-horde-overview"
+      ],
+      "confidence": "strongly_supported"
+    },
+    {
+      "id": "medivh-participates-in-dark-portal",
+      "fromId": "medivh",
+      "toId": "dark-portal-opens",
+      "type": "participant_in",
+      "citationIds": [
+        "chronicle-v2-first-war"
       ],
       "confidence": "explicit"
     },
@@ -9044,6 +12007,16 @@
         "blizzard-aspects-neltharion"
       ],
       "confidence": "explicit"
+    },
+    {
+      "id": "nerzhul-deception-precedes-shadow-council",
+      "fromId": "nerzhul-deceived-against-draenei",
+      "toId": "guldan-forms-shadow-council",
+      "type": "precedes",
+      "citationIds": [
+        "chronicle-v2-rise-of-horde"
+      ],
+      "confidence": "strongly_supported"
     },
     {
       "id": "nordrassil-controls-second-well",
@@ -9087,6 +12060,39 @@
       "confidence": "explicit"
     },
     {
+      "id": "old-horde-opposes-alliance",
+      "fromId": "old-horde",
+      "toId": "alliance-of-lordaeron",
+      "type": "opposes",
+      "citationIds": [
+        "chronicle-v2-second-war",
+        "blizzard-first-second-war-overview"
+      ],
+      "confidence": "explicit"
+    },
+    {
+      "id": "old-horde-opposes-draenei",
+      "fromId": "old-horde",
+      "toId": "draenei-draenor",
+      "type": "opposes",
+      "citationIds": [
+        "chronicle-v2-rise-of-horde",
+        "blizzard-draenor-exiles-history"
+      ],
+      "confidence": "explicit"
+    },
+    {
+      "id": "old-horde-opposes-stormwind",
+      "fromId": "old-horde",
+      "toId": "kingdom-of-stormwind",
+      "type": "opposes",
+      "citationIds": [
+        "chronicle-v2-first-war",
+        "blizzard-first-second-war-overview"
+      ],
+      "confidence": "explicit"
+    },
+    {
       "id": "ordering-leads-to-pantheon-departure",
       "fromId": "azeroth-ordered",
       "toId": "pantheon-departs-azeroth",
@@ -9117,6 +12123,26 @@
         "chronicle-v1-empire-zul-aqir"
       ],
       "confidence": "strongly_supported"
+    },
+    {
+      "id": "orgrim-replaces-blackhand",
+      "fromId": "orgrim-doomhammer",
+      "toId": "blackhand",
+      "type": "replaces",
+      "citationIds": [
+        "chronicle-v2-first-war"
+      ],
+      "confidence": "strongly_supported"
+    },
+    {
+      "id": "orgrim-succession-precedes-stormwind-fall",
+      "fromId": "orgrim-becomes-warchief",
+      "toId": "stormwind-falls",
+      "type": "precedes",
+      "citationIds": [
+        "chronicle-v2-first-war"
+      ],
+      "confidence": "inferred"
     },
     {
       "id": "pantheon-discovery-causes-yshaarj-removal",
@@ -9205,12 +12231,73 @@
       "confidence": "explicit"
     },
     {
+      "id": "second-war-aftermath-precedes-third-war",
+      "fromId": "horde-defeated-dark-portal-destroyed",
+      "toId": "third-war-frozen-throne",
+      "type": "precedes",
+      "citationIds": [
+        "chronicle-v2-second-war"
+      ],
+      "confidence": "explicit"
+    },
+    {
+      "id": "second-war-causes-horde-defeat",
+      "fromId": "second-war",
+      "toId": "horde-defeated-dark-portal-destroyed",
+      "type": "causes",
+      "citationIds": [
+        "chronicle-v2-second-war"
+      ],
+      "confidence": "explicit"
+    },
+    {
+      "id": "second-war-precedes-guldan-defection",
+      "fromId": "second-war-begins",
+      "toId": "guldan-abandons-second-war",
+      "type": "precedes",
+      "citationIds": [
+        "chronicle-v2-second-war"
+      ],
+      "confidence": "strongly_supported"
+    },
+    {
       "id": "second-well-causes-nordrassil",
       "fromId": "illidan-creates-second-well",
       "toId": "nordrassil-planted",
       "type": "causes",
       "citationIds": [
         "chronicle-v1-long-vigil-begins"
+      ],
+      "confidence": "strongly_supported"
+    },
+    {
+      "id": "shadow-council-causes-blood-pact",
+      "fromId": "guldan-forms-shadow-council",
+      "toId": "orc-clans-drink-mannoroths-blood",
+      "type": "causes",
+      "citationIds": [
+        "chronicle-v2-rise-of-horde"
+      ],
+      "confidence": "strongly_supported"
+    },
+    {
+      "id": "shadow-council-controls-old-horde",
+      "fromId": "shadow-council",
+      "toId": "old-horde",
+      "type": "controls",
+      "citationIds": [
+        "chronicle-v2-rise-of-horde"
+      ],
+      "confidence": "strongly_supported"
+    },
+    {
+      "id": "shattrath-fall-precedes-dark-portal",
+      "fromId": "shattrath-falls-to-horde",
+      "toId": "dark-portal-opens",
+      "type": "precedes",
+      "citationIds": [
+        "chronicle-v2-rise-of-horde",
+        "chronicle-v2-first-war"
       ],
       "confidence": "strongly_supported"
     },
@@ -9234,6 +12321,17 @@
         "chronicle-v1-reign-elements"
       ],
       "confidence": "explicit"
+    },
+    {
+      "id": "stormwind-fall-causes-alliance",
+      "fromId": "stormwind-falls",
+      "toId": "alliance-of-lordaeron-forms",
+      "type": "causes",
+      "citationIds": [
+        "chronicle-v2-second-war",
+        "blizzard-first-second-war-overview"
+      ],
+      "confidence": "strongly_supported"
     },
     {
       "id": "succession-crisis-causes-three-hammers",
@@ -9389,6 +12487,16 @@
       "citationIds": [
         "chronicle-v1-arathor-troll-wars",
         "blizzard-thoradin-arathor-history"
+      ],
+      "confidence": "strongly_supported"
+    },
+    {
+      "id": "turalyon-rally-causes-horde-defeat",
+      "fromId": "turalyon-rallies-alliance",
+      "toId": "horde-defeated-dark-portal-destroyed",
+      "type": "causes",
+      "citationIds": [
+        "chronicle-v2-second-war"
       ],
       "confidence": "strongly_supported"
     },
@@ -9578,6 +12686,30 @@
         "ordering-story-world-forges",
         "ordering-story-world-shaped",
         "ordering-story-pantheon-departs"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "rise-of-the-horde-guided-history",
+      "eraId": "rise-of-the-horde",
+      "title": "The Road That Crossed the Stars",
+      "description": "A continuous cross-world history of Draenor's manipulation, the Old Horde, the Dark Portal, Stormwind's fall, the Alliance of Lordaeron, and the Second War's reversal.",
+      "nodeIds": [
+        "horde-rise-story-two-peoples",
+        "horde-rise-story-deceiver-finds-draenor",
+        "horde-rise-story-nerzhul-deceived",
+        "horde-rise-story-shadow-council",
+        "horde-rise-story-blood-pact",
+        "horde-rise-story-shattrath-falls",
+        "horde-rise-story-gate-between-worlds",
+        "horde-rise-story-first-war",
+        "horde-rise-story-orgrim-rises",
+        "horde-rise-story-stormwind-falls",
+        "horde-rise-story-alliance-forms",
+        "horde-rise-story-second-war",
+        "horde-rise-story-broken-purpose",
+        "horde-rise-story-blackrock-rally",
+        "horde-rise-story-gate-broken"
       ],
       "contentStatus": "research"
     },
@@ -12312,6 +15444,841 @@
       ],
       "previousNodeId": "ordering-story-world-shaped",
       "nextNodeIds": []
+    },
+    {
+      "id": "horde-rise-story-two-peoples",
+      "guideId": "rise-of-the-horde-guided-history",
+      "title": "Draenor holds more than one remembered home",
+      "narration": "Before there was a Horde, the orcs lived as many clans beneath Draenor's sky, bound by ancestry, rivalry, and the voices of the elements. The draenei also called this world home after a long exile among the stars. Their cities and the clans' hunting grounds did not make a perfect peace, yet neither people was born for the war that would consume them. The first map therefore shows coexistence before conspiracy.",
+      "durationMs": 62000,
+      "entityIds": [
+        "draenor-ancient",
+        "orc-clans-draenor",
+        "draenei-draenor"
+      ],
+      "optionalExploreEntityIds": [
+        "draenor-ancient",
+        "orc-clans-draenor",
+        "draenei-draenor"
+      ],
+      "camera": {
+        "position": [
+          0,
+          7.6,
+          7
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "durationMs": 1300
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "rise-of-the-horde-draenor-before-map-research"
+        },
+        {
+          "type": "show_region",
+          "regionId": "orc-clans-draenor-region-research"
+        },
+        {
+          "type": "show_region",
+          "regionId": "draenei-draenor-region-research"
+        }
+      ],
+      "nextNodeIds": [
+        "horde-rise-story-deceiver-finds-draenor"
+      ]
+    },
+    {
+      "id": "horde-rise-story-deceiver-finds-draenor",
+      "guideId": "rise-of-the-horde-guided-history",
+      "title": "An old vengeance finds a younger world",
+      "narration": "Kil'jaeden had not forgotten the exiles who escaped him. When he found the draenei upon Draenor, he did not begin with an army descending openly from the heavens. He looked instead toward their neighbors. Orcish strength, clan loyalty, and reverence for ancestral counsel could all be turned if the warning appeared to come from a trusted voice. Thus a private hatred reached for an entire people as its instrument.",
+      "durationMs": 62000,
+      "eventIds": [
+        "kiljaeden-targets-draenei-on-draenor"
+      ],
+      "entityIds": [
+        "kiljaeden",
+        "draenei-draenor",
+        "orc-clans-draenor"
+      ],
+      "optionalExploreEntityIds": [
+        "kiljaeden",
+        "draenei-draenor",
+        "orc-clans-draenor"
+      ],
+      "camera": {
+        "position": [
+          2.4,
+          5.8,
+          5.2
+        ],
+        "target": [
+          2.4,
+          0,
+          -3.2
+        ],
+        "durationMs": 1150
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "rise-of-the-horde-draenor-before-map-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "kiljaeden-opposes-draenei",
+            "kiljaeden-causes-nerzhul-deception"
+          ]
+        }
+      ],
+      "previousNodeId": "horde-rise-story-two-peoples",
+      "nextNodeIds": [
+        "horde-rise-story-nerzhul-deceived"
+      ]
+    },
+    {
+      "id": "horde-rise-story-nerzhul-deceived",
+      "guideId": "rise-of-the-horde-guided-history",
+      "title": "Trust becomes the first weapon",
+      "narration": "Ner'zhul was heard because he had earned the clans' respect. Kil'jaeden preyed upon grief and presented deception in the likeness of ancestral counsel. Suspicion hardened into raids, and raids made the next accusation easier to believe. When Ner'zhul understood that the path before him did not lead where the ancestors had promised, he resisted—but by then fear already had its own momentum, and another apprentice was willing to continue.",
+      "durationMs": 63500,
+      "eventIds": [
+        "nerzhul-deceived-against-draenei"
+      ],
+      "entityIds": [
+        "nerzhul",
+        "kiljaeden",
+        "orc-clans-draenor"
+      ],
+      "optionalExploreEntityIds": [
+        "nerzhul",
+        "kiljaeden",
+        "orc-clans-draenor"
+      ],
+      "camera": {
+        "position": [
+          0.1,
+          5.7,
+          5
+        ],
+        "target": [
+          -0.6,
+          0,
+          -1.2
+        ],
+        "durationMs": 1100
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "rise-of-the-horde-draenor-corrupted-map-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "kiljaeden-causes-nerzhul-deception",
+            "nerzhul-deception-precedes-shadow-council"
+          ]
+        }
+      ],
+      "previousNodeId": "horde-rise-story-deceiver-finds-draenor",
+      "nextNodeIds": [
+        "horde-rise-story-shadow-council"
+      ]
+    },
+    {
+      "id": "horde-rise-story-shadow-council",
+      "guideId": "rise-of-the-horde-guided-history",
+      "title": "A council grows behind the warchief's chair",
+      "narration": "Gul'dan accepted what Ner'zhul would not. Around him gathered warlocks and agents whose authority was strongest when unseen. The Shadow Council helped turn many clans toward a single war while Blackhand stood before them as warchief. Unity came, but not as freely chosen kinship: command, fear, new magic, and concealed bargains bound the structure together. Draenor's political map had begun to narrow beneath a hand most warriors could not see.",
+      "durationMs": 63500,
+      "eventIds": [
+        "guldan-forms-shadow-council"
+      ],
+      "entityIds": [
+        "guldan",
+        "shadow-council",
+        "old-horde"
+      ],
+      "optionalExploreEntityIds": [
+        "guldan",
+        "shadow-council",
+        "old-horde"
+      ],
+      "camera": {
+        "position": [
+          0.6,
+          5.5,
+          4.8
+        ],
+        "target": [
+          0.2,
+          0,
+          0.5
+        ],
+        "durationMs": 1100
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "rise-of-the-horde-draenor-corrupted-map-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "guldan-controls-shadow-council",
+            "shadow-council-controls-old-horde"
+          ]
+        }
+      ],
+      "previousNodeId": "horde-rise-story-nerzhul-deceived",
+      "nextNodeIds": [
+        "horde-rise-story-blood-pact"
+      ]
+    },
+    {
+      "id": "horde-rise-story-blood-pact",
+      "guideId": "rise-of-the-horde-guided-history",
+      "title": "Power is offered in a cup that remembers",
+      "narration": "Before the last great assault, Mannoroth's blood was offered as strength. Many accepted, and the bargain deepened the Legion's hold upon the Horde. Yet the choice was not universal. Durotan refused it for the Frostwolves, preserving a witness that coercion had not erased every will. The distinction matters: the Horde was transformed by manipulation and decision, but no single cup can stand for every orc who lived beneath Draenor's darkening sky.",
+      "durationMs": 65000,
+      "eventIds": [
+        "orc-clans-drink-mannoroths-blood"
+      ],
+      "entityIds": [
+        "mannoroth",
+        "durotan",
+        "old-horde",
+        "orc-clans-draenor"
+      ],
+      "optionalExploreEntityIds": [
+        "mannoroth",
+        "durotan",
+        "old-horde",
+        "orc-clans-draenor"
+      ],
+      "camera": {
+        "position": [
+          0.8,
+          5,
+          4.3
+        ],
+        "target": [
+          0.6,
+          0,
+          1.8
+        ],
+        "durationMs": 1080
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "rise-of-the-horde-draenor-corrupted-map-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "mannoroth-blood-transforms-clans",
+            "durotan-opposes-blood-pact",
+            "shadow-council-causes-blood-pact"
+          ]
+        }
+      ],
+      "previousNodeId": "horde-rise-story-shadow-council",
+      "nextNodeIds": [
+        "horde-rise-story-shattrath-falls"
+      ]
+    },
+    {
+      "id": "horde-rise-story-shattrath-falls",
+      "guideId": "rise-of-the-horde-guided-history",
+      "title": "A bright city falls beneath a wounded sky",
+      "narration": "The Horde's war broke upon Shattrath with terrible force. The city fell, organized resistance was shattered, and the draenei were reduced to scattered survivors—but they were not erased. Victory also failed to heal the conquerors' world. Fel practice and war had sickened the land, and the host built for one enemy now faced emptiness after conquest. A machine taught to hunger would soon be shown another world through another man's dream.",
+      "durationMs": 65000,
+      "eventIds": [
+        "shattrath-falls-to-horde"
+      ],
+      "entityIds": [
+        "old-horde",
+        "draenei-draenor",
+        "shattrath-draenor"
+      ],
+      "locationIds": [
+        "shattrath-draenor"
+      ],
+      "optionalExploreEntityIds": [
+        "old-horde",
+        "draenei-draenor",
+        "shattrath-draenor"
+      ],
+      "camera": {
+        "position": [
+          3,
+          5.3,
+          4.8
+        ],
+        "target": [
+          2.6,
+          0,
+          -0.1
+        ],
+        "durationMs": 1100
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "rise-of-the-horde-draenor-corrupted-map-research"
+        },
+        {
+          "type": "show_route",
+          "routeId": "horde-draenor-campaign"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "old-horde-opposes-draenei",
+            "blood-pact-precedes-shattrath-fall",
+            "shattrath-fall-precedes-dark-portal"
+          ]
+        }
+      ],
+      "previousNodeId": "horde-rise-story-blood-pact",
+      "nextNodeIds": [
+        "horde-rise-story-gate-between-worlds"
+      ]
+    },
+    {
+      "id": "horde-rise-story-gate-between-worlds",
+      "guideId": "rise-of-the-horde-guided-history",
+      "title": "The road does not cross a map—it leaves a world",
+      "narration": "Across the gulf between worlds, Medivh's corrupted will answered Gul'dan. Together their workings opened the Dark Portal. The atlas does not draw that passage as a road across oceans, for no shared geography joins these skies. It changes worldspace. Draenor falls away; Azeroth appears, and the same threshold stands in another land. Through it came scouts, warriors, and at last the weight of the Horde. The calendar of the modern wars begins here.",
+      "durationMs": 66000,
+      "eventIds": [
+        "dark-portal-opens"
+      ],
+      "entityIds": [
+        "dark-portal",
+        "guldan",
+        "medivh",
+        "old-horde"
+      ],
+      "locationIds": [
+        "dark-portal"
+      ],
+      "optionalExploreEntityIds": [
+        "dark-portal",
+        "guldan",
+        "medivh",
+        "old-horde"
+      ],
+      "camera": {
+        "position": [
+          2.3,
+          4.8,
+          4.2
+        ],
+        "target": [
+          2,
+          0,
+          2.7
+        ],
+        "durationMs": 1200
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "rise-of-the-horde-first-war-map-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "guldan-participates-in-dark-portal",
+            "medivh-participates-in-dark-portal",
+            "dark-portal-causes-first-war"
+          ]
+        }
+      ],
+      "previousNodeId": "horde-rise-story-shattrath-falls",
+      "nextNodeIds": [
+        "horde-rise-story-first-war"
+      ]
+    },
+    {
+      "id": "horde-rise-story-first-war",
+      "guideId": "rise-of-the-horde-guided-history",
+      "title": "Stormwind discovers that the enemy has another sky",
+      "narration": "The first war widened by returns. Early assaults could be resisted, but the Horde learned the southern kingdom while greater forces crossed behind them. Stormwind fought an enemy whose reserves lay beyond the edge of its world, even as Medivh's betrayal divided trust within its own defense. The line shown is only strategic direction from portal to kingdom. It does not turn many campaigns into one neat march, or game missions into surveyed history.",
+      "durationMs": 65000,
+      "eventIds": [
+        "first-war-begins"
+      ],
+      "battleIds": [
+        "first-war"
+      ],
+      "entityIds": [
+        "old-horde",
+        "kingdom-of-stormwind",
+        "blackhand",
+        "anduin-lothar"
+      ],
+      "locationIds": [
+        "dark-portal",
+        "stormwind-city-ancient"
+      ],
+      "optionalExploreEntityIds": [
+        "old-horde",
+        "kingdom-of-stormwind",
+        "blackhand",
+        "anduin-lothar"
+      ],
+      "camera": {
+        "position": [
+          2.5,
+          6,
+          5.4
+        ],
+        "target": [
+          2.2,
+          0,
+          2
+        ],
+        "durationMs": 1150
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "rise-of-the-horde-first-war-map-research"
+        },
+        {
+          "type": "show_route",
+          "routeId": "first-war-advance"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "dark-portal-causes-first-war",
+            "old-horde-opposes-stormwind"
+          ]
+        }
+      ],
+      "previousNodeId": "horde-rise-story-gate-between-worlds",
+      "nextNodeIds": [
+        "horde-rise-story-orgrim-rises"
+      ]
+    },
+    {
+      "id": "horde-rise-story-orgrim-rises",
+      "guideId": "rise-of-the-horde-guided-history",
+      "title": "The hand behind the throne is struck",
+      "narration": "The Horde's visible and hidden commands turned against one another during the war. Orgrim killed Blackhand, shattered much of the Shadow Council, and took the warchief's mantle himself. He opposed Gul'dan's private mastery, but he did not abandon the invasion. The war therefore changed leadership without changing its immediate direction. Stormwind still faced the army at its gates, now commanded by a leader who sought to make the Horde answer openly to him.",
+      "durationMs": 65000,
+      "eventIds": [
+        "orgrim-becomes-warchief"
+      ],
+      "battleIds": [
+        "first-war"
+      ],
+      "entityIds": [
+        "orgrim-doomhammer",
+        "blackhand",
+        "shadow-council",
+        "old-horde"
+      ],
+      "optionalExploreEntityIds": [
+        "orgrim-doomhammer",
+        "blackhand",
+        "shadow-council",
+        "old-horde"
+      ],
+      "camera": {
+        "position": [
+          2,
+          5.4,
+          4.8
+        ],
+        "target": [
+          2,
+          0,
+          1.9
+        ],
+        "durationMs": 1100
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "rise-of-the-horde-first-war-map-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "orgrim-replaces-blackhand",
+            "orgrim-succession-precedes-stormwind-fall"
+          ]
+        }
+      ],
+      "previousNodeId": "horde-rise-story-first-war",
+      "nextNodeIds": [
+        "horde-rise-story-stormwind-falls"
+      ]
+    },
+    {
+      "id": "horde-rise-story-stormwind-falls",
+      "guideId": "rise-of-the-horde-guided-history",
+      "title": "One kingdom falls, and its warning sails north",
+      "narration": "Stormwind was taken and left in ruin. For the Horde, the First War ended in victory. For the survivors, defeat became a voyage: Lothar and those who escaped carried more than grief toward the northern kingdoms. They carried proof that isolation was no defense against a gate between worlds. The southern realm had fallen alone; whether its neighbors would remain separate became the next question upon which all their histories turned.",
+      "durationMs": 64000,
+      "eventIds": [
+        "stormwind-falls"
+      ],
+      "battleIds": [
+        "first-war"
+      ],
+      "entityIds": [
+        "anduin-lothar",
+        "kingdom-of-stormwind",
+        "old-horde"
+      ],
+      "locationIds": [
+        "stormwind-city-ancient"
+      ],
+      "optionalExploreEntityIds": [
+        "anduin-lothar",
+        "kingdom-of-stormwind",
+        "old-horde",
+        "stormwind-city-ancient"
+      ],
+      "camera": {
+        "position": [
+          2.8,
+          4.9,
+          4.3
+        ],
+        "target": [
+          2.35,
+          0,
+          1.8
+        ],
+        "durationMs": 1080
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "rise-of-the-horde-first-war-map-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "first-war-causes-stormwind-fall",
+            "stormwind-fall-causes-alliance"
+          ]
+        }
+      ],
+      "previousNodeId": "horde-rise-story-orgrim-rises",
+      "nextNodeIds": [
+        "horde-rise-story-alliance-forms"
+      ]
+    },
+    {
+      "id": "horde-rise-story-alliance-forms",
+      "guideId": "rise-of-the-horde-guided-history",
+      "title": "Seven inheritances become one wartime promise",
+      "narration": "In Lordaeron, the warning met old rivalries, different interests, and the understandable hope that the danger might stop in the south. Yet the evidence of Stormwind's fall prevailed. Human kingdoms and allied peoples formed the Alliance of Lordaeron, with Lothar commanding its armies. This coalition did not erase its members. It asked them to act together long enough to prevent the fate of one kingdom from becoming the fate of every hall and harbor.",
+      "durationMs": 65000,
+      "eventIds": [
+        "alliance-of-lordaeron-forms"
+      ],
+      "entityIds": [
+        "alliance-of-lordaeron",
+        "anduin-lothar",
+        "seven-human-kingdoms",
+        "lordaeron-ancient"
+      ],
+      "locationIds": [
+        "lordaeron-ancient"
+      ],
+      "optionalExploreEntityIds": [
+        "alliance-of-lordaeron",
+        "anduin-lothar",
+        "seven-human-kingdoms",
+        "lordaeron-ancient"
+      ],
+      "camera": {
+        "position": [
+          2.6,
+          5.5,
+          5
+        ],
+        "target": [
+          2.2,
+          0,
+          -1.9
+        ],
+        "durationMs": 1100
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "rise-of-the-horde-second-war-map-research"
+        },
+        {
+          "type": "show_region",
+          "regionId": "alliance-lordaeron-region-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "stormwind-fall-causes-alliance",
+            "lothar-controls-alliance-armies",
+            "alliance-located-at-lordaeron"
+          ]
+        }
+      ],
+      "previousNodeId": "horde-rise-story-stormwind-falls",
+      "nextNodeIds": [
+        "horde-rise-story-second-war"
+      ]
+    },
+    {
+      "id": "horde-rise-story-second-war",
+      "guideId": "rise-of-the-horde-guided-history",
+      "title": "The Second War spreads across many roads",
+      "narration": "Orgrim drove the Horde north against a coalition still learning how to endure. The struggle crossed land and water, threatened several realms, and drew peoples beyond humanity into its widening account. No single line can contain such a war. The route shown is a strategic summary: pressure rising from the conquered south toward the Alliance heartlands, answered by forces whose shared purpose grew under the strain meant to break it.",
+      "durationMs": 64000,
+      "eventIds": [
+        "second-war-begins"
+      ],
+      "battleIds": [
+        "second-war"
+      ],
+      "entityIds": [
+        "old-horde",
+        "alliance-of-lordaeron",
+        "orgrim-doomhammer",
+        "anduin-lothar"
+      ],
+      "optionalExploreEntityIds": [
+        "old-horde",
+        "alliance-of-lordaeron",
+        "orgrim-doomhammer",
+        "anduin-lothar"
+      ],
+      "camera": {
+        "position": [
+          2.2,
+          7,
+          6.2
+        ],
+        "target": [
+          2,
+          0,
+          0
+        ],
+        "durationMs": 1200
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "rise-of-the-horde-second-war-map-research"
+        },
+        {
+          "type": "show_route",
+          "routeId": "second-war-horde-offensive"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "old-horde-opposes-alliance",
+            "alliance-formation-precedes-second-war"
+          ]
+        }
+      ],
+      "previousNodeId": "horde-rise-story-alliance-forms",
+      "nextNodeIds": [
+        "horde-rise-story-broken-purpose"
+      ]
+    },
+    {
+      "id": "horde-rise-story-broken-purpose",
+      "guideId": "rise-of-the-horde-guided-history",
+      "title": "The oldest bargain fractures the Horde",
+      "narration": "At the height of the northern campaign, Gul'dan withdrew warriors for an ambition that was his alone. The choice exposed what conquest had hidden: the Horde had never been united by one memory or one purpose. Orgrim turned fury upon the deserters, but lost strength and time that could not be recalled. The Alliance survived the pressure, and the offensive began to give way. A betrayal within the invaders opened room for resistance before them.",
+      "durationMs": 65000,
+      "eventIds": [
+        "guldan-abandons-second-war"
+      ],
+      "battleIds": [
+        "second-war"
+      ],
+      "entityIds": [
+        "guldan",
+        "orgrim-doomhammer",
+        "old-horde"
+      ],
+      "optionalExploreEntityIds": [
+        "guldan",
+        "orgrim-doomhammer",
+        "old-horde"
+      ],
+      "camera": {
+        "position": [
+          2.1,
+          6,
+          5.4
+        ],
+        "target": [
+          2,
+          0,
+          -0.2
+        ],
+        "durationMs": 1100
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "rise-of-the-horde-second-war-map-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "second-war-precedes-guldan-defection",
+            "guldan-defection-causes-horde-defeat"
+          ]
+        }
+      ],
+      "previousNodeId": "horde-rise-story-second-war",
+      "nextNodeIds": [
+        "horde-rise-story-blackrock-rally"
+      ]
+    },
+    {
+      "id": "horde-rise-story-blackrock-rally",
+      "guideId": "rise-of-the-horde-guided-history",
+      "title": "At Blackrock, loss becomes a summons",
+      "narration": "Near Blackrock Spire, Lothar fell in the struggle with Orgrim. The death of Stormwind's champion might have broken the army he had gathered. Turalyon instead raised the fallen commander's memory before them and called the Alliance forward. Grief became momentum. From that turning, the counteroffensive pressed south—not one perfect march, but a succession of victories carrying the war back toward the threshold through which it had entered.",
+      "durationMs": 64000,
+      "eventIds": [
+        "lothar-falls-at-blackrock",
+        "turalyon-rallies-alliance"
+      ],
+      "battleIds": [
+        "second-war"
+      ],
+      "entityIds": [
+        "anduin-lothar",
+        "turalyon",
+        "orgrim-doomhammer",
+        "alliance-of-lordaeron"
+      ],
+      "locationIds": [
+        "blackrock-spire-ancient"
+      ],
+      "optionalExploreEntityIds": [
+        "anduin-lothar",
+        "turalyon",
+        "orgrim-doomhammer",
+        "blackrock-spire-ancient"
+      ],
+      "camera": {
+        "position": [
+          2,
+          5,
+          4.5
+        ],
+        "target": [
+          1.6,
+          0,
+          0.5
+        ],
+        "durationMs": 1100
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "rise-of-the-horde-second-war-map-research"
+        },
+        {
+          "type": "show_route",
+          "routeId": "second-war-alliance-counteroffensive"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "lothar-fall-causes-turalyon-rally",
+            "turalyon-rally-causes-horde-defeat"
+          ]
+        }
+      ],
+      "previousNodeId": "horde-rise-story-broken-purpose",
+      "nextNodeIds": [
+        "horde-rise-story-gate-broken"
+      ]
+    },
+    {
+      "id": "horde-rise-story-gate-broken",
+      "guideId": "rise-of-the-horde-guided-history",
+      "title": "The gate falls, but the road remains in memory",
+      "narration": "The Alliance drove the Horde back to the Dark Portal and destroyed the original gateway. Many orcs were captured; others remained beyond reach, and Draenor still waited on the far side of a severed road. Victory ended the Second War, not the histories it had entangled. Camps, displaced peoples, wounded kingdoms, and a generation shaped by invasion now stood before the next crisis. From these consequences, the age of the Third War would one day rise.",
+      "durationMs": 65000,
+      "eventIds": [
+        "horde-defeated-dark-portal-destroyed"
+      ],
+      "battleIds": [
+        "second-war"
+      ],
+      "entityIds": [
+        "alliance-of-lordaeron",
+        "old-horde",
+        "turalyon",
+        "dark-portal"
+      ],
+      "locationIds": [
+        "dark-portal"
+      ],
+      "optionalExploreEntityIds": [
+        "alliance-of-lordaeron",
+        "old-horde",
+        "turalyon",
+        "dark-portal"
+      ],
+      "camera": {
+        "position": [
+          2.3,
+          5.5,
+          5
+        ],
+        "target": [
+          2,
+          0,
+          2.6
+        ],
+        "durationMs": 1150
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "rise-of-the-horde-second-war-map-research"
+        },
+        {
+          "type": "show_route",
+          "routeId": "second-war-alliance-counteroffensive"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "second-war-causes-horde-defeat",
+            "guldan-defection-causes-horde-defeat",
+            "turalyon-rally-causes-horde-defeat",
+            "second-war-aftermath-precedes-third-war"
+          ]
+        }
+      ],
+      "previousNodeId": "horde-rise-story-blackrock-rally"
     },
     {
       "id": "ancients-war-story-last-bright-court",

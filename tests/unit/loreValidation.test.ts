@@ -173,6 +173,72 @@ describe('lore dataset', () => {
     }));
   });
 
+  it('contains a time-sliced source-linked Ancient Civilizations research preview', () => {
+    const data = loadDataset();
+    const era = data.eras.find((item) => item.id === 'ancient-civilizations')!;
+    const entities = data.entities.filter((item) => entityVisibleInEra(item, era.id, data.eras));
+    const events = data.events.filter((item) => item.eraId === era.id);
+    const battles = data.battles.filter((item) => item.eraId === era.id);
+    const spatialStates = data.spatialStates.filter((item) => item.eraId === era.id);
+    const guide = data.storyGuides.find((item) => item.id === era.storyGuideId)!;
+    const nodes = guide.nodeIds.map((nodeId) => data.storyNodes.find((item) => item.id === nodeId)!);
+    const mapStateIds = [
+      'ancient-civilizations-early-map-research',
+      'ancient-civilizations-southern-map-research',
+      'ancient-civilizations-map-research',
+    ];
+    const mapStates = mapStateIds.map((id) => data.mapStates.find((item) => item.id === id)!);
+
+    expect(era.order).toBe(3);
+    expect(era.previousEraId).toBe('ordering-of-azeroth');
+    expect(era.nextEraId).toBe('war-of-the-ancients');
+    expect(entities).toHaveLength(19);
+    expect(events).toHaveLength(9);
+    expect(battles).toHaveLength(1);
+    expect(spatialStates).toHaveLength(11);
+    expect(guide.nodeIds).toHaveLength(12);
+    expect(mapStates.every((state) => state.presentation === 'terrain'
+      && Boolean(state.terrainTextureAsset)
+      && Boolean(state.terrainHeightAsset)
+      && /time slice/i.test(state.cartographyLabel ?? '')
+      && Boolean(state.interpretationNote))).toBe(true);
+    expect(new Set(mapStates.map((state) => state.terrainTextureAsset))).toEqual(new Set([
+      'textures/azeroth/ancient-civilizations-map-research/terrain-atlas.research.webp',
+    ]));
+    expect(nodes.slice(0, 5).every((node) => node.visualActions?.some((action) =>
+      action.type === 'set_map_state' && action.mapStateId === mapStateIds[0]))).toBe(true);
+    expect(nodes.slice(5, 9).every((node) => node.visualActions?.some((action) =>
+      action.type === 'set_map_state' && action.mapStateId === mapStateIds[1]))).toBe(true);
+    expect(nodes.slice(9).every((node) => node.visualActions?.some((action) =>
+      action.type === 'set_map_state' && action.mapStateId === mapStateIds[2]))).toBe(true);
+
+    const keyActorIds = [
+      'empire-of-zul', 'aqir', 'lei-shen', 'pandaren-ancient', 'kang',
+      'dark-trolls', 'kaldorei-empire', 'azshara',
+    ];
+    expect(keyActorIds.every((entityId) => {
+      const entity = entities.find((item) => item.id === entityId);
+      const asset = entity?.mapFigure?.asset ?? entity?.mapVisual?.asset;
+      return Boolean(asset && existsSync(resolve('public', asset)));
+    })).toBe(true);
+    expect(keyActorIds.every((entityId) => spatialStates.some((state) =>
+      state.entityId === entityId && Boolean(state.editorNote),
+    ))).toBe(true);
+    expect(battles[0]).toMatchObject({
+      id: 'troll-aqir-war',
+      geographicCertainty: 'unknown',
+      campaignId: 'ancient-kalimdor-conflicts',
+    });
+    expect(battles[0]?.geometryId).toBeUndefined();
+    expect([...events, ...battles].every((subject) =>
+      data.claims.some((claim) => claim.subjectId === subject.id && claim.citationIds.length > 0),
+    )).toBe(true);
+    expect(data.relationships).toContainEqual(expect.objectContaining({
+      id: 'azshara-precedes-war-ancients',
+      type: 'precedes',
+    }));
+  });
+
   it('enforces the non-geographic relational visualization contract', () => {
     expect(mapStateSchema.safeParse({
       id: 'relational-test',

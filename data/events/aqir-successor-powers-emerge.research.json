@@ -1,0 +1,16 @@
+{
+  "id": "aqir-successor-powers-emerge",
+  "kind": "event",
+  "name": "The Aqir Successor Powers Emerge",
+  "slug": "aqir-successor-powers-emerge",
+  "eraId": "ancient-civilizations",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "After the long troll pursuit", "relativeToId": "troll-aqir-war" },
+  "summary": "Separated aqir populations entrenched themselves in distant refuges, producing new northern and southern powers rather than restoring one united dominion.",
+  "participantEntityIds": ["aqir", "empire-of-zul"],
+  "causedByEventIds": ["troll-aqir-war"],
+  "relationshipIds": ["troll-aqir-war-causes-aqir-division", "aqir-division-precedes-southern-empires"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["aqir-successors-event-claim"],
+  "contentStatus": "research"
+}

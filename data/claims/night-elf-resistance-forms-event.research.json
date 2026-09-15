@@ -1,0 +1,9 @@
+{
+  "id": "night-elf-resistance-forms-event-claim",
+  "subjectId": "night-elf-resistance-forms",
+  "predicate": "organized_opposition_to_the_invasion",
+  "value": true,
+  "citationIds": ["chronicle-v1-war-ancients-resistance"],
+  "confidence": "strongly_supported",
+  "status": "active"
+}

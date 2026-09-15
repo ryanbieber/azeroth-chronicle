@@ -1,0 +1,15 @@
+{
+  "id": "highborne",
+  "type": "faction",
+  "name": "The Highborne",
+  "slug": "highborne",
+  "shortDescription": "The privileged kaldorei arcanists around Azshara whose ritual at the Well opened the way for the Burning Legion.",
+  "body": "This dossier treats the court collectively so the tour can explain institutional choice without inventing a complete roster. The figure and its placement are original interpretive representations, not a palace plan or licensed art.",
+  "firstEraId": "ancient-civilizations",
+  "featuredEraIds": ["war-of-the-ancients"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-well-of-eternity-preview"],
+  "claimIds": ["highborne-open-portal-claim"],
+  "tags": ["kaldorei", "court", "arcane", "well-of-eternity"],
+  "mapVisual": { "asset": "images/subjects/war-of-the-ancients/highborne.research.webp", "scale": 0.96 },
+  "contentStatus": "research"
+}

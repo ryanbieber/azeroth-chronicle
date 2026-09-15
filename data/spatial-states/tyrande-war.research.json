@@ -1,0 +1,13 @@
+{
+  "id": "tyrande-war-spatial-research",
+  "entityId": "tyrande-whisperwind",
+  "eraId": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "geometryId": "tyrande-war-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-well-of-eternity-preview"],
+  "editorNote": "The figure marks Tyrande's role in the current story beat, not a permanent wartime coordinate.",
+  "labelPriority": 133,
+  "visualPresence": "contextual"
+}

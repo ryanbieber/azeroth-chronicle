@@ -1,0 +1,13 @@
+{
+  "id": "sargeras-war-spatial-research",
+  "entityId": "sargeras",
+  "eraId": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "geometryId": "sargeras-portal-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-well-of-eternity-preview"],
+  "editorNote": "Sargeras remained beyond the gateway. This figure visualizes the portal's intended entrant and must not be read as his physical arrival on Azeroth.",
+  "labelPriority": 130,
+  "visualPresence": "contextual"
+}

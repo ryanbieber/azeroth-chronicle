@@ -1,0 +1,9 @@
+{
+  "id": "aqir-awakening-event-claim",
+  "subjectId": "aqir-awakening",
+  "predicate": "event-summary",
+  "value": "The renewed aqir threat drove the previously divided troll peoples toward a common military response.",
+  "citationIds": ["chronicle-v1-empire-zul-aqir"],
+  "confidence": "explicit",
+  "status": "active"
+}

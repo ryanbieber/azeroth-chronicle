@@ -1,0 +1,19 @@
+{
+  "id": "ancient-civilizations-early-map-research",
+  "name": "Empire of Zul and the aqir — interpretive research map",
+  "worldspaceId": "azeroth",
+  "presentation": "terrain",
+  "cartographyLabel": "INTERPRETIVE POLITICAL TIME SLICE",
+  "interpretationNote": "This early-era state uses broad influence areas and relational figure anchors to explain the troll–aqir struggle. The exact fronts and migration paths are unknown, so no tactical route or hard political border is asserted.",
+  "terrainTextureAsset": "textures/azeroth/ancient-civilizations-map-research/terrain-atlas.research.webp",
+  "terrainHeightAsset": "textures/azeroth/ancient-civilizations-map-research/terrain-height.research.webp",
+  "geometryIds": [
+    "ordered-kalimdor-landmass-research",
+    "well-of-eternity-focus-research",
+    "zuldazar-ancient-focus-research",
+    "empire-of-zul-influence-research",
+    "aqir-pressure-influence-research",
+    "empire-of-zul-ancient-focus-research",
+    "aqir-ancient-focus-research"
+  ]
+}

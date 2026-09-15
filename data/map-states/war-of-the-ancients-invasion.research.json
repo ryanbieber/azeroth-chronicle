@@ -1,0 +1,28 @@
+{
+  "id": "war-of-the-ancients-invasion-map-research",
+  "name": "The Legion invasion — interpretive campaign map",
+  "worldspaceId": "azeroth",
+  "presentation": "terrain",
+  "cartographyLabel": "INTERPRETIVE WARTIME STATE",
+  "interpretationNote": "The scorched terrain and broad pressure area explain a continent-spanning invasion without asserting tactical front lines. Actor points are narrative anchors; the resistance convergence route is a simplified directional reading rather than a traced march.",
+  "terrainTextureAsset": "textures/azeroth/war-of-the-ancients-invasion-map-research/terrain-atlas.research.webp",
+  "terrainHeightAsset": "textures/azeroth/war-of-the-ancients-invasion-map-research/terrain-height.research.webp",
+  "geometryIds": [
+    "ordered-kalimdor-landmass-research",
+    "well-of-eternity-focus-research",
+    "zin-azshari-focus-research",
+    "legion-pressure-region-research",
+    "resistance-convergence-route-research",
+    "azshara-war-focus-research",
+    "highborne-court-focus-research",
+    "kaldorei-empire-war-focus-research",
+    "sargeras-portal-focus-research",
+    "burning-legion-focus-research",
+    "night-elf-resistance-focus-research",
+    "malfurion-war-focus-research",
+    "tyrande-war-focus-research",
+    "illidan-war-focus-research",
+    "cenarius-war-focus-research",
+    "neltharion-war-focus-research"
+  ]
+}

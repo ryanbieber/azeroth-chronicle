@@ -1,0 +1,15 @@
+{
+  "id": "illidan-stormrage",
+  "type": "character",
+  "name": "Illidan Stormrage",
+  "slug": "illidan-stormrage",
+  "shortDescription": "A gifted kaldorei sorcerer whose dangerous choices and knowledge of the Legion became part of the struggle at the Well.",
+  "body": "This research record stays within the war itself and does not import Illidan's later appearance or identity into the ancient map. The portrait therefore omits the signs of his later demonic transformation.",
+  "firstEraId": "war-of-the-ancients",
+  "featuredEraIds": ["war-of-the-ancients"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-well-of-eternity-preview"],
+  "claimIds": ["illidan-role-claim"],
+  "tags": ["kaldorei", "sorcerer", "resistance"],
+  "mapFigure": { "asset": "images/characters/war-of-the-ancients/illidan.research.webp", "scale": 0.82 },
+  "contentStatus": "research"
+}

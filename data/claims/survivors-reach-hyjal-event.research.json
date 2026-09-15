@@ -1,0 +1,10 @@
+{
+  "id": "survivors-reach-hyjal-event-claim",
+  "subjectId": "survivors-reach-hyjal",
+  "predicate": "established_the_handoff_to_the_long_vigil",
+  "value": true,
+  "citationIds": ["chronicle-v1-great-sundering"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "This causal handoff ends at refuge and does not pre-author the institutions of Era 5."
+}

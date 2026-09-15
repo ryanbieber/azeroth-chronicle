@@ -1,0 +1,15 @@
+{
+  "id": "dragon-soul",
+  "type": "artifact",
+  "name": "The Dragon Soul",
+  "slug": "dragon-soul",
+  "aliases": ["Demon Soul"],
+  "shortDescription": "An artifact empowered by the Dragon Aspects and then turned by Neltharion against their alliance during the war.",
+  "body": "The atlas uses the contemporary name Dragon Soul for the event. Its location is not asserted as a permanent point; the artifact is visually carried in Neltharion's contextual representation.",
+  "firstEraId": "war-of-the-ancients",
+  "featuredEraIds": ["war-of-the-ancients"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-dragon-aspects-history"],
+  "claimIds": ["dragon-soul-role-claim"],
+  "tags": ["artifact", "dragons", "betrayal"],
+  "contentStatus": "research"
+}

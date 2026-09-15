@@ -1,0 +1,15 @@
+{
+  "id": "night-elf-resistance",
+  "type": "faction",
+  "name": "The Night Elf Resistance",
+  "slug": "night-elf-resistance",
+  "shortDescription": "Kaldorei defenders and allied peoples who opposed Azshara's court and the Burning Legion during the War of the Ancients.",
+  "body": "The coalition changed as the war widened. This collective record avoids presenting one leader or one body of troops as the whole resistance; the generated group figure is a symbolic, accessible overview.",
+  "firstEraId": "war-of-the-ancients",
+  "featuredEraIds": ["war-of-the-ancients"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["resistance-formation-claim"],
+  "tags": ["kaldorei", "resistance", "coalition"],
+  "mapVisual": { "asset": "images/subjects/war-of-the-ancients/night-elf-resistance.research.webp", "scale": 1.04 },
+  "contentStatus": "research"
+}

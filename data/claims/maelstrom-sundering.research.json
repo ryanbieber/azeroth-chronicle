@@ -1,0 +1,9 @@
+{
+  "id": "maelstrom-sundering-claim",
+  "subjectId": "maelstrom",
+  "predicate": "formed_at_the_center_of_the_sundered_world",
+  "value": true,
+  "citationIds": ["chronicle-v1-great-sundering", "blizzard-well-of-eternity-history"],
+  "confidence": "explicit",
+  "status": "active"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "azshara-crowned-claim",
+  "subjectId": "azshara",
+  "predicate": "accession",
+  "value": "Azshara rose to rule the kaldorei at the height of their growing civilization and concentrated exceptional magical and political power around her court.",
+  "citationIds": ["chronicle-v1-night-elves-rise"],
+  "confidence": "explicit",
+  "status": "active"
+}

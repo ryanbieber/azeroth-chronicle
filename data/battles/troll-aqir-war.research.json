@@ -1,0 +1,72 @@
+{
+  "id": "troll-aqir-war",
+  "kind": "battle",
+  "name": "The Troll–Aqir War",
+  "slug": "troll-aqir-war",
+  "eraId": "ancient-civilizations",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "After the aqir awakening", "relativeToId": "aqir-awakening" },
+  "summary": "A long, multi-front struggle in which the Empire of Zul resisted the aqir and pursued their retreating forces toward the distant reaches of Kalimdor.",
+  "description": "This dossier presents strategic phases rather than a tactical simulation. The surviving account supports broad directions and consequences, not a single battlefield path or exact front line.",
+  "participantEntityIds": ["empire-of-zul", "aqir"],
+  "causedByEventIds": ["aqir-awakening"],
+  "causesEventIds": ["aqir-successor-powers-emerge"],
+  "relationshipIds": ["aqir-awakening-causes-war", "troll-aqir-war-causes-aqir-division"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["troll-aqir-war-event-claim"],
+  "campaignId": "ancient-kalimdor-conflicts",
+  "combatants": [
+    { "factionId": "empire-of-zul", "role": "defender" },
+    { "factionId": "aqir", "role": "attacker" }
+  ],
+  "objectives": [
+    { "factionId": "empire-of-zul", "summary": "Unite the threatened troll peoples, survive the first assault, and drive the aqir away from their centers." },
+    { "factionId": "aqir", "summary": "Break the emerging troll powers and spread through their territories." }
+  ],
+  "phases": [
+    {
+      "id": "aqir-pressure",
+      "title": "The buried danger returns",
+      "summary": "Aqir forces emerge and press into the divided lands of the troll peoples.",
+      "durationMs": 6500,
+      "narration": "The first change was not a border but a pressure felt across many lands: an ancient enemy rising beneath a world that had begun to forget it.",
+      "camera": { "position": [1.6, 6.6, 6.2], "target": [1.2, 0, 0.8], "durationMs": 1100 },
+      "visualActions": [{ "type": "show_relationships", "relationshipIds": ["troll-powers-precede-aqir-awakening"] }]
+    },
+    {
+      "id": "zul-coalition",
+      "title": "The trolls unite",
+      "summary": "Zandalari leadership draws several troll peoples into the Empire of Zul.",
+      "durationMs": 7000,
+      "narration": "Old rivalries did not vanish, yet the threat made alliance possible. The coalition carried many peoples without making them one people.",
+      "camera": { "position": [-2.8, 5.8, 5.1], "target": [-2.4, 0, -0.4], "durationMs": 1050 },
+      "visualActions": [{ "type": "show_relationships", "relationshipIds": ["aqir-awakening-causes-war"] }]
+    },
+    {
+      "id": "long-pursuit",
+      "title": "The pursuit crosses Kalimdor",
+      "summary": "Troll forces pursue the retreating aqir toward northern and southern refuges over generations of war.",
+      "durationMs": 7500,
+      "narration": "The struggle widened beyond any single field. Its roads are represented only in broad direction, for no surviving account measures every march.",
+      "camera": { "position": [0, 7.4, 7.1], "target": [0, 0, 0], "durationMs": 1250 },
+      "visualActions": [{ "type": "show_relationships", "relationshipIds": ["troll-aqir-war-causes-aqir-division"] }]
+    },
+    {
+      "id": "divided-refuges",
+      "title": "One enemy becomes several powers",
+      "summary": "The aqir threat is broken apart, leaving separated successor populations entrenched at opposite reaches of the continent.",
+      "durationMs": 7000,
+      "narration": "Victory did not empty the earth. It divided an enemy, leaving distant powers whose descendants would trouble later ages.",
+      "camera": { "position": [0.7, 6.8, 6.3], "target": [0.4, 0, 0.2], "durationMs": 1100 },
+      "visualActions": [{ "type": "show_relationships", "relationshipIds": ["troll-aqir-war-causes-aqir-division"] }]
+    }
+  ],
+  "outcome": {
+    "summary": "The Empire of Zul survived and the aqir were driven into separated refuges; the troll coalition then loosened as its members occupied distant regions.",
+    "winnerFactionId": "empire-of-zul"
+  },
+  "geographicCertainty": "unknown",
+  "geographicEditorNote": "The conflict was world-spanning and its exact fronts are not reconstructed as a battlefield marker or route.",
+  "importance": "era_defining",
+  "contentStatus": "research"
+}

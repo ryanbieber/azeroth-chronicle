@@ -1,0 +1,8 @@
+{
+  "id": "lei-shen-causes-mogu-empire",
+  "fromId": "lei-shen-unites-mogu",
+  "toId": "mogu-conquests",
+  "type": "causes",
+  "citationIds": ["chronicle-v1-mogu-empire", "blizzard-lei-shen-empire"],
+  "confidence": "explicit"
+}

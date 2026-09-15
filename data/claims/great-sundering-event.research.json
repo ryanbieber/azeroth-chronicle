@@ -1,0 +1,9 @@
+{
+  "id": "great-sundering-event-claim",
+  "subjectId": "great-sundering",
+  "predicate": "shattered_primordial_kalimdor_into_separate_landmasses",
+  "value": true,
+  "citationIds": ["chronicle-v1-great-sundering", "blizzard-warbringers-sundering", "blizzard-well-of-eternity-history"],
+  "confidence": "explicit",
+  "status": "active"
+}

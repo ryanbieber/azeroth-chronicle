@@ -1,0 +1,239 @@
+{
+  "guide": {
+    "id": "ancient-civilizations-guided-history",
+    "eraId": "ancient-civilizations",
+    "title": "Crowns Before the Sundering",
+    "description": "A continuous history of the first troll powers, the war with the aqir, the southern empire and its fall, and the kaldorei ascent that placed ancient Kalimdor on the threshold of catastrophe.",
+    "nodeIds": [
+      "ancient-story-ordered-dawn",
+      "ancient-story-first-troll-powers",
+      "ancient-story-aqir-awaken",
+      "ancient-story-empire-zul",
+      "ancient-story-aqir-divided",
+      "ancient-story-southern-kingdoms",
+      "ancient-story-thunder-king",
+      "ancient-story-mogu-dominion",
+      "ancient-story-kang-revolution",
+      "ancient-story-people-apart",
+      "ancient-story-well-changes-them",
+      "ancient-story-azshara-dawn"
+    ],
+    "contentStatus": "research"
+  },
+  "nodes": [
+    {
+      "id": "ancient-story-ordered-dawn",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "The ordered world begins to remember",
+      "narration": "When the distant makers had gone, the world did not fall silent. Rivers carried soil from the new mountains, forests gathered beneath the rain, and living things multiplied around the power of the Well. The keepers had shaped a place where history could begin. Now its peoples would give the land memory, rivalry, law, and names of their own.",
+      "durationMs": 48000,
+      "eventIds": ["early-troll-powers-rise"],
+      "entityIds": ["primordial-kalimdor", "well-of-eternity"],
+      "optionalExploreEntityIds": ["primordial-kalimdor", "well-of-eternity"],
+      "camera": { "position": [0, 7.4, 6.9], "target": [0, 0, 0], "durationMs": 1300 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "ancient-civilizations-early-map-research" },
+        { "type": "show_relationships", "relationshipIds": ["ordering-precedes-troll-powers"] }
+      ],
+      "nextNodeIds": ["ancient-story-first-troll-powers"]
+    },
+    {
+      "id": "ancient-story-first-troll-powers",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "Many peoples beneath one sky",
+      "narration": "Across forest, jungle, and high country, troll peoples flourished. The Zandalar raised their center among the mountains, while other great tribes gathered strength in lands of their own. They shared old devotions, yet no single throne bound them. Their rivalries were real, but so was the knowledge that each belonged to a world older and wider than any one hunting ground.",
+      "durationMs": 49000,
+      "eventIds": ["early-troll-powers-rise"],
+      "entityIds": ["empire-of-zul", "zuldazar-ancient"],
+      "locationIds": ["zuldazar-ancient"],
+      "optionalExploreEntityIds": ["empire-of-zul", "zuldazar-ancient"],
+      "camera": { "position": [-2.9, 5.7, 5.2], "target": [-3.0, 0, -1.2], "durationMs": 1100 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "ancient-civilizations-early-map-research" },
+        { "type": "show_region", "regionId": "empire-of-zul-influence-research" },
+        { "type": "focus_location", "locationId": "zuldazar-ancient" }
+      ],
+      "previousNodeId": "ancient-story-ordered-dawn",
+      "nextNodeIds": ["ancient-story-aqir-awaken"]
+    },
+    {
+      "id": "ancient-story-aqir-awaken",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "The earth gives back an ancient enemy",
+      "narration": "Then the old darkness moved again. The aqir, heirs of a buried and terrible age, surged against the growing troll lands. This danger was not another quarrel over a valley or river. It threatened every separate power at once, and taught the scattered tribes that survival might demand a name greater than any of their own.",
+      "durationMs": 45000,
+      "eventIds": ["aqir-awakening"],
+      "entityIds": ["aqir", "empire-of-zul"],
+      "optionalExploreEntityIds": ["aqir", "empire-of-zul"],
+      "camera": { "position": [2.4, 5.9, 5.3], "target": [2.1, 0, -0.8], "durationMs": 1050 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "ancient-civilizations-early-map-research" },
+        { "type": "show_region", "regionId": "aqir-pressure-influence-research" },
+        { "type": "show_relationships", "relationshipIds": ["troll-powers-precede-aqir-awakening", "aqir-awakening-causes-war"] }
+      ],
+      "previousNodeId": "ancient-story-first-troll-powers",
+      "nextNodeIds": ["ancient-story-empire-zul"]
+    },
+    {
+      "id": "ancient-story-empire-zul",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "The Empire of Zul stands together",
+      "narration": "Under Zandalari leadership, the tribes entered a wartime union remembered as the Empire of Zul. It was alliance, not sameness: forest, jungle, ice, and highland peoples carried their own customs into the struggle. Together they survived the first pressure, then followed the retreating aqir across distances too great for any honest map to draw as a single road.",
+      "durationMs": 49000,
+      "battleIds": ["troll-aqir-war"],
+      "entityIds": ["empire-of-zul", "aqir"],
+      "optionalExploreEntityIds": ["empire-of-zul", "aqir"],
+      "camera": { "position": [0, 7.2, 6.8], "target": [0, 0, 0], "durationMs": 1250 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "ancient-civilizations-early-map-research" },
+        { "type": "show_region", "regionId": "empire-of-zul-influence-research" },
+        { "type": "show_region", "regionId": "aqir-pressure-influence-research" },
+        { "type": "show_relationships", "relationshipIds": ["aqir-awakening-causes-war", "troll-aqir-war-causes-aqir-division"] }
+      ],
+      "previousNodeId": "ancient-story-aqir-awaken",
+      "nextNodeIds": ["ancient-story-aqir-divided"]
+    },
+    {
+      "id": "ancient-story-aqir-divided",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "Victory scatters both enemy and ally",
+      "narration": "At last the aqir withdrew into far northern and southern refuges. There, separation remade them into powers with futures of their own. The troll armies likewise remained in the lands they had won. With the common danger broken, the old coalition loosened, and distance began to turn fellow victors into distinct empires with separate memories.",
+      "durationMs": 45500,
+      "eventIds": ["aqir-successor-powers-emerge"],
+      "entityIds": ["aqir", "empire-of-zul"],
+      "optionalExploreEntityIds": ["aqir", "empire-of-zul"],
+      "camera": { "position": [0.8, 7.0, 6.5], "target": [0.4, 0, 0], "durationMs": 1200 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "ancient-civilizations-early-map-research" },
+        { "type": "show_relationships", "relationshipIds": ["troll-aqir-war-causes-aqir-division", "aqir-division-precedes-southern-empires"] }
+      ],
+      "previousNodeId": "ancient-story-empire-zul",
+      "nextNodeIds": ["ancient-story-southern-kingdoms"]
+    },
+    {
+      "id": "ancient-story-southern-kingdoms",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "The south becomes a world of kings",
+      "narration": "In the south, another inheritance was unraveling. The keepers' servants had once worked toward appointed purposes, but silence and long ages divided the mogu into rival kingdoms. They contended across the lands that would one day be called Pandaria, each ruler seeking mastery while the older order receded into half-remembered command.",
+      "durationMs": 44000,
+      "eventIds": ["lei-shen-unites-mogu"],
+      "entityIds": ["mogu-empire"],
+      "optionalExploreEntityIds": ["mogu-empire"],
+      "camera": { "position": [1.9, 5.8, 5.4], "target": [1.7, 0, 2.0], "durationMs": 1100 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "ancient-civilizations-southern-map-research" },
+        { "type": "show_region", "regionId": "mogu-influence-research" },
+        { "type": "show_relationships", "relationshipIds": ["aqir-division-precedes-southern-empires"] }
+      ],
+      "previousNodeId": "ancient-story-aqir-divided",
+      "nextNodeIds": ["ancient-story-thunder-king"]
+    },
+    {
+      "id": "ancient-story-thunder-king",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "One king takes the storm",
+      "narration": "From that age of divided kings rose Lei Shen. Through power, calculation, and conquest, he broke his rivals and made the mogu kneel to one emperor. The unity he forged was not the keepers' stewardship restored. It was a new dominion, centered on his will and armed with powers taken from an older world.",
+      "durationMs": 44000,
+      "eventIds": ["lei-shen-unites-mogu"],
+      "entityIds": ["lei-shen", "mogu-empire"],
+      "optionalExploreEntityIds": ["lei-shen", "mogu-empire"],
+      "camera": { "position": [2.1, 4.8, 4.2], "target": [1.9, 0, 1.5], "durationMs": 1000 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "ancient-civilizations-southern-map-research" },
+        { "type": "show_relationships", "relationshipIds": ["lei-shen-causes-mogu-empire"] }
+      ],
+      "previousNodeId": "ancient-story-southern-kingdoms",
+      "nextNodeIds": ["ancient-story-mogu-dominion"]
+    },
+    {
+      "id": "ancient-story-mogu-dominion",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "An empire is built upon obedience",
+      "narration": "The mogu empire spread across the southern lands. Peoples who had kept languages, crafts, and histories of their own were made to serve its monuments and wars. Among them were the pandaren. The empire's roads and walls declared permanence, yet every generation forced into silence carried another memory of life before the throne.",
+      "durationMs": 44000,
+      "eventIds": ["mogu-conquests"],
+      "entityIds": ["mogu-empire", "pandaren-ancient", "lei-shen"],
+      "optionalExploreEntityIds": ["mogu-empire", "pandaren-ancient", "lei-shen"],
+      "camera": { "position": [1.3, 5.5, 4.8], "target": [1.2, 0, 2.0], "durationMs": 1050 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "ancient-civilizations-southern-map-research" },
+        { "type": "show_region", "regionId": "mogu-influence-research" },
+        { "type": "show_relationships", "relationshipIds": ["lei-shen-causes-mogu-empire", "mogu-rule-causes-revolution"] }
+      ],
+      "previousNodeId": "ancient-story-thunder-king",
+      "nextNodeIds": ["ancient-story-kang-revolution"]
+    },
+    {
+      "id": "ancient-story-kang-revolution",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "Empty hands become a promise",
+      "narration": "Kang looked upon a people denied weapons and found strength the empire had overlooked. An unarmed discipline could be practiced, taught, and carried where blades could not. Resistance spread from lesson to fellowship, and from one subjected people to many. The mogu order, made vast by obedience, broke when those beneath it learned to stand together.",
+      "durationMs": 45500,
+      "eventIds": ["pandaren-revolution"],
+      "entityIds": ["kang", "pandaren-ancient", "mogu-empire"],
+      "optionalExploreEntityIds": ["kang", "pandaren-ancient", "mogu-empire"],
+      "camera": { "position": [0.9, 4.9, 4.4], "target": [0.9, 0, 1.8], "durationMs": 1000 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "ancient-civilizations-southern-map-research" },
+        { "type": "show_relationships", "relationshipIds": ["kang-enables-pandaren-revolution", "revolution-ends-mogu-dominion"] }
+      ],
+      "previousNodeId": "ancient-story-mogu-dominion",
+      "nextNodeIds": ["ancient-story-people-apart"]
+    },
+    {
+      "id": "ancient-story-people-apart",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "A people apart follows the water",
+      "narration": "Far from empire and coalition, a nocturnal troll people kept to hidden places and their own company. In time they came toward the heart of Kalimdor, where the Well shone like a fallen heaven upon the earth. They did not know that dwelling beside its waters would change more than their home. It would change the shape of history itself.",
+      "durationMs": 46500,
+      "eventIds": ["dark-trolls-settle-near-well"],
+      "entityIds": ["dark-trolls", "well-of-eternity"],
+      "locationIds": ["well-of-eternity"],
+      "optionalExploreEntityIds": ["dark-trolls", "well-of-eternity"],
+      "camera": { "position": [-0.7, 4.8, 4.1], "target": [-0.4, 0, 0], "durationMs": 1000 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "ancient-civilizations-map-research" },
+        { "type": "focus_location", "locationId": "well-of-eternity" },
+        { "type": "show_relationships", "relationshipIds": ["southern-revolution-precedes-kaldorei-rise", "well-transforms-dark-trolls"] }
+      ],
+      "previousNodeId": "ancient-story-kang-revolution",
+      "nextNodeIds": ["ancient-story-well-changes-them"]
+    },
+    {
+      "id": "ancient-story-well-changes-them",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "Around the Well, the kaldorei arise",
+      "narration": "Generations passed beneath the Well's radiance. The people changed, and called themselves kaldorei. Curiosity became study; study became sorcery, cities, and roads. Their power carried them outward with astonishing speed. Older troll dominions yielded before them, until a civilization born beside one lake stood over much of the continent that had once seemed beyond measure.",
+      "durationMs": 47000,
+      "eventIds": ["kaldorei-ascendance"],
+      "entityIds": ["dark-trolls", "kaldorei-empire", "well-of-eternity"],
+      "optionalExploreEntityIds": ["dark-trolls", "kaldorei-empire", "well-of-eternity"],
+      "camera": { "position": [0, 6.3, 5.6], "target": [0, 0, 0], "durationMs": 1150 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "ancient-civilizations-map-research" },
+        { "type": "show_region", "regionId": "kaldorei-influence-research" },
+        { "type": "show_relationships", "relationshipIds": ["well-transforms-dark-trolls", "kaldorei-rise-causes-troll-decline"] }
+      ],
+      "previousNodeId": "ancient-story-people-apart",
+      "nextNodeIds": ["ancient-story-azshara-dawn"]
+    },
+    {
+      "id": "ancient-story-azshara-dawn",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "A queen at the edge of ruin",
+      "narration": "At the height of this rising world, Azshara took the throne. Admiration gathered around her like light upon still water, and the most gifted of the kaldorei drew close to her court and to the Well. Ancient Kalimdor appeared united beneath splendor. Yet power had narrowed toward one queen, one circle, and one inexhaustible source. Beyond that bright horizon waited war and sundering.",
+      "durationMs": 50000,
+      "eventIds": ["azshara-crowned"],
+      "entityIds": ["azshara", "kaldorei-empire", "well-of-eternity"],
+      "optionalExploreEntityIds": ["azshara", "kaldorei-empire", "well-of-eternity"],
+      "camera": { "position": [-0.3, 5.2, 4.8], "target": [0, 0, 0.2], "durationMs": 1050 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "ancient-civilizations-map-research" },
+        { "type": "show_region", "regionId": "kaldorei-influence-research" },
+        { "type": "show_relationships", "relationshipIds": ["kaldorei-rise-precedes-azshara", "azshara-precedes-war-ancients"] }
+      ],
+      "previousNodeId": "ancient-story-well-changes-them",
+      "nextNodeIds": []
+    }
+  ]
+}

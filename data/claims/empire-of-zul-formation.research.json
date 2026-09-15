@@ -1,0 +1,9 @@
+{
+  "id": "empire-of-zul-formation-claim",
+  "subjectId": "empire-of-zul",
+  "predicate": "formation",
+  "value": "Zandalari leadership brought several troll peoples into the Empire of Zul in response to the awakened aqir threat.",
+  "citationIds": ["chronicle-v1-empire-zul-aqir"],
+  "confidence": "explicit",
+  "status": "active"
+}

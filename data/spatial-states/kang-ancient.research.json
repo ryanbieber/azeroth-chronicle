@@ -1,0 +1,13 @@
+{
+  "id": "kang-ancient-spatial-research",
+  "entityId": "kang",
+  "eraId": "ancient-civilizations",
+  "worldspaceId": "azeroth",
+  "geometryId": "kang-ancient-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "Kang is placed beside the narrated revolution as a relational figure because the research packet does not establish one exact battlefield position.",
+  "labelPriority": 128,
+  "visualPresence": "contextual"
+}

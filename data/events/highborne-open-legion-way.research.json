@@ -1,0 +1,18 @@
+{
+  "id": "highborne-open-legion-way",
+  "kind": "event",
+  "name": "The Highborne Open the Way",
+  "slug": "highborne-open-legion-way",
+  "eraId": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "approximate", "year": -10000, "label": "At the opening of the War of the Ancients" },
+  "summary": "Azshara's favored Highborne used the Well to establish a portal through which the Burning Legion could enter Azeroth.",
+  "locationIds": ["well-of-eternity", "zin-azshari"],
+  "participantEntityIds": ["azshara", "highborne", "sargeras", "burning-legion"],
+  "causedByEventIds": ["azshara-crowned"],
+  "causesEventIds": ["legion-invasion-begins"],
+  "relationshipIds": ["azshara-authorizes-highborne-ritual", "highborne-ritual-causes-legion-invasion"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-well-of-eternity-preview"],
+  "claimIds": ["highborne-open-legion-way-event-claim"],
+  "contentStatus": "research"
+}

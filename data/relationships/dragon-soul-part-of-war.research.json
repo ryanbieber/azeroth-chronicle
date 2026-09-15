@@ -1,0 +1,8 @@
+{
+  "id": "dragon-soul-part-of-war",
+  "fromId": "dragon-soul",
+  "toId": "war-of-the-ancients",
+  "type": "part_of",
+  "citationIds": ["chronicle-v1-dragon-soul-betrayal", "blizzard-aspects-neltharion"],
+  "confidence": "explicit"
+}

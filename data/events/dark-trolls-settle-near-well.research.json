@@ -1,0 +1,17 @@
+{
+  "id": "dark-trolls-settle-near-well",
+  "kind": "event",
+  "name": "The Dark Trolls Settle Near the Well",
+  "slug": "dark-trolls-settle-near-well",
+  "eraId": "ancient-civilizations",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "approximate", "year": -15000, "label": "Beginning around 15,000 years before the Dark Portal" },
+  "summary": "A reclusive dark troll people moved toward the center of Kalimdor and made their home near the Well of Eternity.",
+  "locationIds": ["well-of-eternity", "primordial-kalimdor"],
+  "participantEntityIds": ["dark-trolls"],
+  "causesEventIds": ["kaldorei-ascendance"],
+  "relationshipIds": ["southern-revolution-precedes-kaldorei-rise", "well-transforms-dark-trolls"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["dark-trolls-settle-event-claim"],
+  "contentStatus": "research"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "neltharion-controls-dragon-soul",
+  "fromId": "neltharion",
+  "toId": "dragon-soul",
+  "type": "controls",
+  "citationIds": ["chronicle-v1-dragon-soul-betrayal", "blizzard-aspects-neltharion"],
+  "confidence": "explicit"
+}

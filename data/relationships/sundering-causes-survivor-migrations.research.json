@@ -1,0 +1,8 @@
+{
+  "id": "sundering-causes-survivor-migrations",
+  "fromId": "great-sundering",
+  "toId": "survivors-reach-hyjal",
+  "type": "causes",
+  "citationIds": ["chronicle-v1-great-sundering"],
+  "confidence": "strongly_supported"
+}

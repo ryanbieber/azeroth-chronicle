@@ -1,0 +1,8 @@
+{
+  "id": "kaldorei-rise-causes-troll-decline",
+  "fromId": "kaldorei-ascendance",
+  "toId": "empire-of-zul",
+  "type": "replaces",
+  "citationIds": ["chronicle-v1-night-elves-rise"],
+  "confidence": "strongly_supported"
+}

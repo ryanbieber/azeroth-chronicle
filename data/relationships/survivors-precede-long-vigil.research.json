@@ -1,0 +1,8 @@
+{
+  "id": "survivors-precede-long-vigil",
+  "fromId": "survivors-reach-hyjal",
+  "toId": "long-vigil-new-kingdoms",
+  "type": "precedes",
+  "citationIds": ["chronicle-v1-great-sundering"],
+  "confidence": "strongly_supported"
+}

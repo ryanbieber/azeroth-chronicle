@@ -1,0 +1,9 @@
+{
+  "id": "dark-trolls-settle-event-claim",
+  "subjectId": "dark-trolls-settle-near-well",
+  "predicate": "event-summary",
+  "value": "A reclusive dark troll people settled near the Well of Eternity, beginning a long transformation into the kaldorei.",
+  "citationIds": ["chronicle-v1-night-elves-rise"],
+  "confidence": "explicit",
+  "status": "active"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "empire-of-zul",
+  "type": "faction",
+  "name": "The Empire of Zul",
+  "slug": "empire-of-zul",
+  "shortDescription": "A coalition of ancient troll peoples assembled under Zandalari leadership when the awakened aqir threatened them across Kalimdor.",
+  "body": "The name describes the wartime union rather than a single permanent territorial state. Its member peoples retained distinct lands and identities, and the coalition loosened after the long pursuit of the aqir ended.",
+  "firstEraId": "ancient-civilizations",
+  "featuredEraIds": ["ancient-civilizations"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-rise-zandalari"],
+  "claimIds": ["empire-of-zul-formation-claim"],
+  "tags": ["troll", "coalition", "ancient-kalimdor"],
+  "mapVisual": {
+    "asset": "images/subjects/ancient-civilizations/empire-of-zul.research.webp",
+    "scale": 1.05
+  },
+  "contentStatus": "research"
+}

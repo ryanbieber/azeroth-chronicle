@@ -1,0 +1,8 @@
+{
+  "id": "zin-azshari-located-at-well",
+  "fromId": "zin-azshari",
+  "toId": "well-of-eternity",
+  "type": "located_at",
+  "citationIds": ["chronicle-v1-war-ancients-opening", "blizzard-well-of-eternity-history"],
+  "confidence": "explicit"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "kaldorei-empire",
+  "type": "faction",
+  "name": "The Kaldorei Empire",
+  "slug": "kaldorei-empire",
+  "shortDescription": "The civilization that arose around the Well of Eternity, mastered its arcane energies, and expanded swiftly across ancient Kalimdor.",
+  "body": "Its rise changed the political balance inherited from the trolls and southern empires. The broad influence shown by the atlas is a research visualization, not a claim that ancient rule followed a precise modern-style frontier.",
+  "firstEraId": "ancient-civilizations",
+  "featuredEraIds": ["ancient-civilizations", "war-of-the-ancients"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["kaldorei-rise-claim"],
+  "tags": ["kaldorei", "empire", "well-of-eternity"],
+  "mapVisual": {
+    "asset": "images/subjects/ancient-civilizations/kaldorei.research.webp",
+    "scale": 1.02
+  },
+  "contentStatus": "research"
+}

@@ -1,6 +1,17 @@
 {
   "id": "war-of-the-ancients-map-research",
-  "name": "War of the Ancients — cartography research",
+  "name": "The sundered world — interpretive research map",
   "worldspaceId": "azeroth",
-  "geometryIds": []
+  "presentation": "terrain",
+  "cartographyLabel": "INTERPRETIVE POST-SUNDERING STATE",
+  "interpretationNote": "This state communicates the irreversible breakup of primordial Kalimdor and the central oceanic wound. It is original, simplified cartography and does not claim exact ancient coastlines, island counts, survivor routes, or the surveyed position of every later continent.",
+  "terrainTextureAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-atlas.research.webp",
+  "terrainHeightAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-height.research.webp",
+  "geometryIds": [
+    "maelstrom-aftermath-focus-research",
+    "mount-hyjal-survivor-focus-research",
+    "survivor-migration-route-research",
+    "night-elf-resistance-focus-research",
+    "azshara-sunken-aftermath-focus-research"
+  ]
 }

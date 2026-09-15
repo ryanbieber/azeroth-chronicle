@@ -1,0 +1,9 @@
+{
+  "id": "pandaren-revolution-event-claim",
+  "subjectId": "pandaren-revolution",
+  "predicate": "event-summary",
+  "value": "The uprising associated with Kang spread beyond the pandaren, broke the mogu empire's control, and opened a new political order in the southern lands.",
+  "citationIds": ["chronicle-v1-pandaren-revolution"],
+  "confidence": "explicit",
+  "status": "active"
+}

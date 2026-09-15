@@ -1,0 +1,13 @@
+{
+  "id": "kaldorei-empire-war-spatial-research",
+  "entityId": "kaldorei-empire",
+  "eraId": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "geometryId": "kaldorei-empire-war-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "The collective figure represents a continent-wide civilization at war, not a territorial center or exact army position.",
+  "labelPriority": 141,
+  "visualPresence": "contextual"
+}

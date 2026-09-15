@@ -1,0 +1,13 @@
+{
+  "id": "neltharion-war-spatial-research",
+  "entityId": "neltharion",
+  "eraId": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "geometryId": "neltharion-war-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-dragon-aspects-history"],
+  "editorNote": "The dragon and artifact form a contextual betrayal vignette rather than a fixed aerial coordinate.",
+  "labelPriority": 135,
+  "visualPresence": "contextual"
+}

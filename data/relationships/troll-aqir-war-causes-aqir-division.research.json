@@ -1,0 +1,8 @@
+{
+  "id": "troll-aqir-war-causes-aqir-division",
+  "fromId": "troll-aqir-war",
+  "toId": "aqir-successor-powers-emerge",
+  "type": "causes",
+  "citationIds": ["chronicle-v1-empire-zul-aqir"],
+  "confidence": "explicit"
+}

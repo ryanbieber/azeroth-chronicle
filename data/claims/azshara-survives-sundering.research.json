@@ -1,0 +1,9 @@
+{
+  "id": "azshara-survives-sundering-claim",
+  "subjectId": "azshara",
+  "predicate": "survived_beneath_the_sea_through_transformation",
+  "value": true,
+  "citationIds": ["blizzard-warbringers-sundering"],
+  "confidence": "explicit",
+  "status": "active"
+}

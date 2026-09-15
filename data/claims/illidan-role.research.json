@@ -1,0 +1,10 @@
+{
+  "id": "illidan-role-claim",
+  "subjectId": "illidan-stormrage",
+  "predicate": "used_dangerous_arcane_and_legion_knowledge_in_the_war",
+  "value": true,
+  "citationIds": ["chronicle-v1-war-ancients-resistance", "blizzard-well-of-eternity-history"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "This summary deliberately avoids importing Illidan's later demon-hunter form into the ancient period."
+}

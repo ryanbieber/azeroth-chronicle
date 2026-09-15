@@ -1,0 +1,9 @@
+{
+  "id": "portal-at-well-collapses-event-claim",
+  "subjectId": "portal-at-well-collapses",
+  "predicate": "prevented_sargeras_entry_and_destabilized_the_well",
+  "value": true,
+  "citationIds": ["chronicle-v1-great-sundering", "blizzard-well-of-eternity-history"],
+  "confidence": "strongly_supported",
+  "status": "active"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "mogu-empire",
+  "type": "faction",
+  "name": "The Mogu Empire",
+  "slug": "mogu-empire",
+  "shortDescription": "The southern empire forged by Lei Shen from divided mogu kingdoms and expanded through the conquest and subjugation of neighboring peoples.",
+  "body": "This dossier distinguishes Lei Shen's imperial project from the earlier keeper-directed role of the mogu. Its map extent is interpretive and deliberately avoids a hard frontier unsupported by the research sources.",
+  "firstEraId": "ancient-civilizations",
+  "featuredEraIds": ["ancient-civilizations"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-thunder-king-portrait"],
+  "claimIds": ["mogu-empire-established-claim"],
+  "tags": ["mogu", "empire", "pandaria"],
+  "contentStatus": "research"
+}

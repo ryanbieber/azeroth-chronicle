@@ -1,0 +1,17 @@
+{
+  "id": "mogu-conquests",
+  "kind": "event",
+  "name": "The Mogu Empire Expands",
+  "slug": "mogu-conquests",
+  "eraId": "ancient-civilizations",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "After Lei Shen's unification", "relativeToId": "lei-shen-unites-mogu" },
+  "summary": "The new empire subdued neighboring peoples and imposed its rule across much of the southern lands later known as Pandaria.",
+  "participantEntityIds": ["lei-shen", "mogu-empire", "pandaren-ancient"],
+  "causedByEventIds": ["lei-shen-unites-mogu"],
+  "causesEventIds": ["pandaren-revolution"],
+  "relationshipIds": ["lei-shen-causes-mogu-empire", "mogu-rule-causes-revolution"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-thunder-king-portrait"],
+  "claimIds": ["mogu-conquests-event-claim"],
+  "contentStatus": "research"
+}

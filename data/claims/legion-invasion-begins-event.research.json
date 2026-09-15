@@ -1,0 +1,9 @@
+{
+  "id": "legion-invasion-begins-event-claim",
+  "subjectId": "legion-invasion-begins",
+  "predicate": "began_the_first_legion_invasion_of_azeroth",
+  "value": true,
+  "citationIds": ["chronicle-v1-war-ancients-opening", "blizzard-well-of-eternity-history"],
+  "confidence": "explicit",
+  "status": "active"
+}

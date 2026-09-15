@@ -1,0 +1,9 @@
+{
+  "id": "lei-shen-unites-mogu-claim",
+  "subjectId": "lei-shen",
+  "predicate": "imperial-unification",
+  "value": "Lei Shen overcame rival mogu kings, declared himself emperor, and gave the mogu a single imperial purpose.",
+  "citationIds": ["chronicle-v1-mogu-empire", "blizzard-lei-shen-empire"],
+  "confidence": "explicit",
+  "status": "active"
+}

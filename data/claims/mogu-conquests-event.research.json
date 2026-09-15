@@ -1,0 +1,9 @@
+{
+  "id": "mogu-conquests-event-claim",
+  "subjectId": "mogu-conquests",
+  "predicate": "event-summary",
+  "value": "The unified mogu empire expanded across the southern lands and subjected several neighboring peoples.",
+  "citationIds": ["chronicle-v1-mogu-empire", "blizzard-lei-shen-empire"],
+  "confidence": "explicit",
+  "status": "active"
+}

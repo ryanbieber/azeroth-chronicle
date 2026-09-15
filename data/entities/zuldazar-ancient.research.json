@@ -1,0 +1,14 @@
+{
+  "id": "zuldazar-ancient",
+  "type": "location",
+  "name": "Ancient Zuldazar",
+  "slug": "zuldazar-ancient",
+  "shortDescription": "The highland center of the Zandalar tribe and a political heart of the earliest troll civilization represented in this era.",
+  "body": "Its placement on primordial Kalimdor is shown only as an inferred regional focus. The research map does not claim a surveyed ancient coastline, city footprint, or political boundary.",
+  "firstEraId": "ancient-civilizations",
+  "featuredEraIds": ["ancient-civilizations"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["zuldazar-ancient-center-claim"],
+  "tags": ["zuldazar", "zandalari", "troll"],
+  "contentStatus": "research"
+}

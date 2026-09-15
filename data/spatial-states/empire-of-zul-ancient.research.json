@@ -1,0 +1,13 @@
+{
+  "id": "empire-of-zul-ancient-spatial-research",
+  "entityId": "empire-of-zul",
+  "eraId": "ancient-civilizations",
+  "worldspaceId": "azeroth",
+  "geometryId": "empire-of-zul-ancient-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-rise-zandalari"],
+  "editorNote": "The collective figure is a narrative anchor for a coalition spread across many lands, not an assertion that its peoples gathered at one coordinate.",
+  "labelPriority": 126,
+  "visualPresence": "contextual"
+}

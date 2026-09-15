@@ -1,0 +1,17 @@
+{
+  "id": "night-elf-resistance-forms",
+  "kind": "event",
+  "name": "Resistance Forms Against the Invasion",
+  "slug": "night-elf-resistance-forms",
+  "eraId": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "As the Legion spread beyond Zin-Azshari", "relativeToId": "legion-invasion-begins" },
+  "summary": "Kaldorei who rejected Azshara's course organized a resistance in which Malfurion, Tyrande, and Illidan each played consequential roles.",
+  "participantEntityIds": ["night-elf-resistance", "malfurion-stormrage", "tyrande-whisperwind", "illidan-stormrage"],
+  "causedByEventIds": ["legion-invasion-begins"],
+  "causesEventIds": ["wild-gods-and-dragons-join"],
+  "relationshipIds": ["invasion-prompts-resistance", "malfurion-participates-in-war", "tyrande-participates-in-war", "illidan-participates-in-war"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["night-elf-resistance-forms-event-claim"],
+  "contentStatus": "research"
+}

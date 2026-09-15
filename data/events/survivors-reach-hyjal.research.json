@@ -1,0 +1,17 @@
+{
+  "id": "survivors-reach-hyjal",
+  "kind": "event",
+  "name": "Survivors Reach Mount Hyjal",
+  "slug": "survivors-reach-hyjal",
+  "eraId": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "Immediately after the Great Sundering", "relativeToId": "great-sundering" },
+  "summary": "Many surviving defenders reached the lands around Mount Hyjal, carrying the memory of the lost world into the beginning of the Long Vigil.",
+  "locationIds": ["mount-hyjal-ancient"],
+  "participantEntityIds": ["night-elf-resistance", "malfurion-stormrage", "tyrande-whisperwind", "illidan-stormrage"],
+  "causedByEventIds": ["great-sundering"],
+  "relationshipIds": ["sundering-causes-survivor-migrations", "survivors-precede-long-vigil"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["survivors-reach-hyjal-event-claim"],
+  "contentStatus": "research"
+}

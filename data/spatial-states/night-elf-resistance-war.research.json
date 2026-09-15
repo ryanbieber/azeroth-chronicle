@@ -1,0 +1,13 @@
+{
+  "id": "night-elf-resistance-war-spatial-research",
+  "entityId": "night-elf-resistance",
+  "eraId": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "geometryId": "night-elf-resistance-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "The coalition is represented at a narrative anchor; its members and fronts changed throughout the war.",
+  "labelPriority": 137,
+  "visualPresence": "contextual"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "aqir-division-precedes-southern-empires",
+  "fromId": "aqir-successor-powers-emerge",
+  "toId": "lei-shen-unites-mogu",
+  "type": "precedes",
+  "citationIds": ["chronicle-v1-empire-zul-aqir", "chronicle-v1-mogu-empire"],
+  "confidence": "strongly_supported"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "kaldorei-ascendance",
+  "kind": "event",
+  "name": "The Kaldorei Ascend",
+  "slug": "kaldorei-ascendance",
+  "eraId": "ancient-civilizations",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "Across generations beside the Well", "relativeToId": "dark-trolls-settle-near-well" },
+  "summary": "Changed by long proximity to the Well, the emerging kaldorei mastered arcane power, built cities, and expanded across Kalimdor.",
+  "locationIds": ["well-of-eternity", "primordial-kalimdor"],
+  "participantEntityIds": ["dark-trolls", "kaldorei-empire"],
+  "causedByEventIds": ["dark-trolls-settle-near-well"],
+  "relationshipIds": ["well-transforms-dark-trolls", "kaldorei-rise-causes-troll-decline", "kaldorei-rise-precedes-azshara"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["kaldorei-ascendance-event-claim"],
+  "contentStatus": "research"
+}

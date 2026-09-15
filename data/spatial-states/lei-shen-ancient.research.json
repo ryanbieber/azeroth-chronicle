@@ -1,0 +1,13 @@
+{
+  "id": "lei-shen-ancient-spatial-research",
+  "entityId": "lei-shen",
+  "eraId": "ancient-civilizations",
+  "worldspaceId": "azeroth",
+  "geometryId": "lei-shen-ancient-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-thunder-king-portrait"],
+  "editorNote": "The figure represents Lei Shen's imperial role across the southern theater, not his location at a single narrated moment.",
+  "labelPriority": 130,
+  "visualPresence": "contextual"
+}

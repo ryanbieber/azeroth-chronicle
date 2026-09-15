@@ -1,0 +1,13 @@
+{
+  "id": "cenarius-war-spatial-research",
+  "entityId": "cenarius",
+  "eraId": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "geometryId": "cenarius-war-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "The figure symbolizes the wild powers joining the defense rather than an exact engagement location.",
+  "labelPriority": 131,
+  "visualPresence": "contextual"
+}

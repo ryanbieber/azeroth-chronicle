@@ -1,0 +1,10 @@
+{
+  "id": "resistance-formation-claim",
+  "subjectId": "night-elf-resistance",
+  "predicate": "opposed_azsharas_court_and_the_legion",
+  "value": true,
+  "citationIds": ["chronicle-v1-war-ancients-resistance"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "The collective faction label is an editorial convenience for a changing coalition, not a quoted institutional name."
+}

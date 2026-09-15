@@ -4,11 +4,11 @@
   "name": "The Well of Eternity",
   "slug": "well-of-eternity",
   "shortDescription": "The immense arcane lake formed when the keepers stabilized the wound left by Y'Shaarj's removal.",
-  "body": "The Well was not created as an ornamental monument. It was Azeroth's exposed lifeblood brought into balance by wards, and its power would nourish life while shaping every era that followed.",
+  "body": "The Well was Azeroth's exposed lifeblood brought into balance by wards. It nourished life, empowered kaldorei civilization, became the gateway contested during the War of the Ancients, and collapsed in the catastrophe remembered as the Great Sundering.",
   "firstEraId": "ordering-of-azeroth",
-  "featuredEraIds": ["ordering-of-azeroth"],
+  "featuredEraIds": ["ordering-of-azeroth", "ancient-civilizations", "war-of-the-ancients"],
   "sourceIds": ["warcraft-chronicle-volume-1"],
-  "claimIds": ["well-of-eternity-origin-claim", "well-of-eternity-consequence-claim"],
+  "claimIds": ["well-of-eternity-origin-claim", "well-of-eternity-consequence-claim", "well-collapse-causes-sundering-claim"],
   "tags": ["well-of-eternity", "arcane", "world-wound"],
   "contentStatus": "research"
 }

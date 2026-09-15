@@ -1,0 +1,15 @@
+{
+  "id": "sargeras",
+  "type": "character",
+  "name": "Sargeras",
+  "slug": "sargeras",
+  "shortDescription": "The distant master of the Burning Legion whom Azshara's Highborne sought to bring bodily into Azeroth through the Well.",
+  "body": "Sargeras does not arrive on the physical map in this era. His contextual figure represents the will and intended destination of the portal ritual, and its placement is relational rather than geographic.",
+  "firstEraId": "cosmic-origins",
+  "featuredEraIds": ["war-of-the-ancients"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-well-of-eternity-preview"],
+  "claimIds": ["sargeras-entry-goal-claim"],
+  "tags": ["titan", "burning-legion", "portal"],
+  "mapFigure": { "asset": "images/characters/war-of-the-ancients/sargeras.research.webp", "scale": 0.98 },
+  "contentStatus": "research"
+}

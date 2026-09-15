@@ -1,0 +1,15 @@
+{
+  "id": "cenarius",
+  "type": "character",
+  "name": "Cenarius",
+  "slug": "cenarius",
+  "shortDescription": "An ancient guardian of the wilds and Malfurion's teacher who joined the defense of Kalimdor against the Legion.",
+  "body": "Cenarius stands for the living world's entrance into the war, not for a precisely mapped battlefield deployment. His generated figure is an original interpretive representation.",
+  "firstEraId": "war-of-the-ancients",
+  "featuredEraIds": ["war-of-the-ancients"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["cenarius-role-claim"],
+  "tags": ["wild-god", "druidism", "resistance"],
+  "mapFigure": { "asset": "images/characters/war-of-the-ancients/cenarius.research.webp", "scale": 0.92 },
+  "contentStatus": "research"
+}

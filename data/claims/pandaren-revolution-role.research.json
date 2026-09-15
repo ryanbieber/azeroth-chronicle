@@ -1,0 +1,9 @@
+{
+  "id": "pandaren-revolution-role-claim",
+  "subjectId": "pandaren-ancient",
+  "predicate": "revolution-role",
+  "value": "Pandaren resistance became central to a wider uprising of peoples subjected by the mogu empire.",
+  "citationIds": ["chronicle-v1-pandaren-revolution"],
+  "confidence": "explicit",
+  "status": "active"
+}

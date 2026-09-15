@@ -1,0 +1,9 @@
+{
+  "id": "malfurion-role-claim",
+  "subjectId": "malfurion-stormrage",
+  "predicate": "helped_resist_the_legion_and_close_the_portal",
+  "value": true,
+  "citationIds": ["chronicle-v1-war-ancients-resistance", "chronicle-v1-great-sundering"],
+  "confidence": "strongly_supported",
+  "status": "active"
+}

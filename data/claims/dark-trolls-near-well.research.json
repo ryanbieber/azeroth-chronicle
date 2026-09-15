@@ -1,0 +1,9 @@
+{
+  "id": "dark-trolls-near-well-claim",
+  "subjectId": "dark-trolls",
+  "predicate": "migration-and-transformation",
+  "value": "A reclusive dark troll people settled near the Well of Eternity and changed over generations into the people later known as the kaldorei.",
+  "citationIds": ["chronicle-v1-night-elves-rise"],
+  "confidence": "explicit",
+  "status": "active"
+}

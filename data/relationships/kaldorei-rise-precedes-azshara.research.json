@@ -1,0 +1,8 @@
+{
+  "id": "kaldorei-rise-precedes-azshara",
+  "fromId": "kaldorei-ascendance",
+  "toId": "azshara-crowned",
+  "type": "precedes",
+  "citationIds": ["chronicle-v1-night-elves-rise"],
+  "confidence": "explicit"
+}

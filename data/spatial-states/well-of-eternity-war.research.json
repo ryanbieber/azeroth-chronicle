@@ -1,0 +1,12 @@
+{
+  "id": "well-of-eternity-war-spatial-research",
+  "entityId": "well-of-eternity",
+  "eraId": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "geometryId": "well-of-eternity-focus-research",
+  "geographicCertainty": "approximate",
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-well-of-eternity-preview"],
+  "editorNote": "The central focus preserves narrative continuity from Eras 2 and 3 rather than claiming surveyed coordinates.",
+  "labelPriority": 145,
+  "visualPresence": "persistent"
+}

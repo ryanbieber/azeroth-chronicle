@@ -1,0 +1,10 @@
+{
+  "id": "survivor-migration-hyjal",
+  "name": "Survivor movement toward Mount Hyjal (interpretive)",
+  "worldspaceId": "azeroth",
+  "geometryId": "survivor-migration-route-research",
+  "geographicCertainty": "inferred",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "The post-Sundering line explains a broad survivor destination. It is not an exact coastline, vessel route, chronology, or claim that all survivors traveled together.",
+  "contentStatus": "research"
+}

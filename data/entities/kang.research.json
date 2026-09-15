@@ -1,0 +1,18 @@
+{
+  "id": "kang",
+  "type": "character",
+  "name": "Kang",
+  "slug": "kang",
+  "shortDescription": "The pandaren teacher associated with the unarmed discipline that helped turn resistance to the mogu into a wider revolution.",
+  "body": "Kang's importance lies not in a single mapped duel but in a method that could spread among a disarmed people. The figure is therefore placed relationally beside the southern uprising rather than assigned an exact battlefield.",
+  "firstEraId": "ancient-civilizations",
+  "featuredEraIds": ["ancient-civilizations"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["kang-resistance-method-claim"],
+  "tags": ["pandaren", "teacher", "revolution"],
+  "mapFigure": {
+    "asset": "images/characters/ancient-civilizations/kang.research.webp",
+    "scale": 0.82
+  },
+  "contentStatus": "research"
+}

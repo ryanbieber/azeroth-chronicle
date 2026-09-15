@@ -1,0 +1,16 @@
+{
+  "id": "early-troll-powers-rise",
+  "kind": "event",
+  "name": "The Early Troll Powers Rise",
+  "slug": "early-troll-powers-rise",
+  "eraId": "ancient-civilizations",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "approximate", "year": -16000, "label": "About 16,000 years before the Dark Portal" },
+  "summary": "Troll peoples flourished across the forests and jungles of ordered Kalimdor, with the Zandalar, Amani, Gurubashi, and Drakkari among the powers that took shape.",
+  "locationIds": ["primordial-kalimdor", "zuldazar-ancient"],
+  "participantEntityIds": ["empire-of-zul"],
+  "relationshipIds": ["ordering-precedes-troll-powers", "troll-powers-precede-aqir-awakening"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-rise-zandalari"],
+  "claimIds": ["early-troll-powers-rise-event-claim"],
+  "contentStatus": "research"
+}

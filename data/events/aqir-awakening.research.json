@@ -1,0 +1,16 @@
+{
+  "id": "aqir-awakening",
+  "kind": "event",
+  "name": "The Aqir Awaken",
+  "slug": "aqir-awakening",
+  "eraId": "ancient-civilizations",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "After the early troll powers had spread", "relativeToId": "early-troll-powers-rise" },
+  "summary": "Ancient aqir forces emerged again and pressed into troll-held lands, turning scattered rivalry into a shared existential danger.",
+  "participantEntityIds": ["aqir", "empire-of-zul"],
+  "causesEventIds": ["troll-aqir-war"],
+  "relationshipIds": ["troll-powers-precede-aqir-awakening", "aqir-awakening-causes-war"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["aqir-awakening-event-claim"],
+  "contentStatus": "research"
+}

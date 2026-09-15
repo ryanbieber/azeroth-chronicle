@@ -1,0 +1,13 @@
+{
+  "id": "aqir-ancient-spatial-research",
+  "entityId": "aqir",
+  "eraId": "ancient-civilizations",
+  "worldspaceId": "azeroth",
+  "geometryId": "aqir-ancient-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "The aqir group marks a narrated pressure across the continent. It is not an exact hive, army, or battlefield coordinate.",
+  "labelPriority": 125,
+  "visualPresence": "contextual"
+}

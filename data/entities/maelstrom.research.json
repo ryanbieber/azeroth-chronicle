@@ -1,0 +1,14 @@
+{
+  "id": "maelstrom",
+  "type": "site",
+  "name": "The Maelstrom",
+  "slug": "maelstrom",
+  "shortDescription": "The immense oceanic vortex left at the center of the world after the Well collapsed and the continents broke apart.",
+  "body": "The post-Sundering terrain makes the central wound unmistakable. Its geometry is an interpretive atlas focus, not an exact ancient survey or a claim that the modern coastline appeared fully formed in one instant.",
+  "firstEraId": "war-of-the-ancients",
+  "featuredEraIds": ["war-of-the-ancients", "long-vigil-new-kingdoms"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-well-of-eternity-preview"],
+  "claimIds": ["maelstrom-sundering-claim"],
+  "tags": ["sundering", "ocean", "well-of-eternity"],
+  "contentStatus": "research"
+}

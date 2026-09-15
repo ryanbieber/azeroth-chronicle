@@ -1,0 +1,9 @@
+{
+  "id": "early-troll-powers-rise-event-claim",
+  "subjectId": "early-troll-powers-rise",
+  "predicate": "event-summary",
+  "value": "By about sixteen thousand years before the Dark Portal, several troll peoples had established powerful societies across ancient Kalimdor.",
+  "citationIds": ["chronicle-v1-empire-zul-aqir", "blizzard-ancient-troll-empires"],
+  "confidence": "explicit",
+  "status": "active"
+}

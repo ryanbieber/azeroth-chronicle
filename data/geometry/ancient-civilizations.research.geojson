@@ -1,0 +1,90 @@
+{
+  "type": "FeatureCollection",
+  "name": "ancient-civilizations-research-cartography",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "zuldazar-ancient-focus-research",
+      "properties": { "name": "Ancient Zuldazar (inferred regional focus)", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "inferred" },
+      "geometry": { "type": "Point", "coordinates": [1650, 6900] }
+    },
+    {
+      "type": "Feature",
+      "id": "empire-of-zul-influence-research",
+      "properties": { "name": "Empire of Zul coalition influence (broad reconstruction)", "contentStatus": "research", "styleRole": "region", "geographicCertainty": "inferred" },
+      "geometry": { "type": "Polygon", "coordinates": [[[900, 6900], [2050, 8600], [4200, 8400], [5350, 6900], [4300, 5200], [2250, 4800], [900, 6900]]] }
+    },
+    {
+      "type": "Feature",
+      "id": "aqir-pressure-influence-research",
+      "properties": { "name": "Aqir pressure and retreat (broad reconstruction)", "contentStatus": "research", "styleRole": "influence", "geographicCertainty": "inferred" },
+      "geometry": { "type": "Polygon", "coordinates": [[[4150, 7500], [6900, 8600], [8450, 7000], [7600, 5000], [8450, 2500], [6150, 1450], [4700, 3600], [4150, 7500]]] }
+    },
+    {
+      "type": "Feature",
+      "id": "empire-of-zul-ancient-focus-research",
+      "properties": { "name": "Empire of Zul narrative focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
+      "geometry": { "type": "Point", "coordinates": [2700, 6650] }
+    },
+    {
+      "type": "Feature",
+      "id": "aqir-ancient-focus-research",
+      "properties": { "name": "Aqir narrative focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
+      "geometry": { "type": "Point", "coordinates": [6900, 6200] }
+    },
+    {
+      "type": "Feature",
+      "id": "mogu-influence-research",
+      "properties": { "name": "Mogu imperial influence (approximate southern theater)", "contentStatus": "research", "styleRole": "region", "geographicCertainty": "inferred" },
+      "geometry": { "type": "Polygon", "coordinates": [[[5200, 800], [7900, 1050], [8650, 3000], [7700, 4300], [5450, 3900], [4500, 2150], [5200, 800]]] }
+    },
+    {
+      "type": "Feature",
+      "id": "mogu-empire-ancient-focus-research",
+      "properties": { "name": "Mogu Empire southern focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "inferred" },
+      "geometry": { "type": "Point", "coordinates": [6600, 2300] }
+    },
+    {
+      "type": "Feature",
+      "id": "lei-shen-ancient-focus-research",
+      "properties": { "name": "Lei Shen narrative focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
+      "geometry": { "type": "Point", "coordinates": [6900, 3050] }
+    },
+    {
+      "type": "Feature",
+      "id": "pandaren-ancient-focus-research",
+      "properties": { "name": "Ancient pandaren narrative focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
+      "geometry": { "type": "Point", "coordinates": [5750, 2200] }
+    },
+    {
+      "type": "Feature",
+      "id": "kang-ancient-focus-research",
+      "properties": { "name": "Kang and the uprising narrative focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
+      "geometry": { "type": "Point", "coordinates": [6000, 2850] }
+    },
+    {
+      "type": "Feature",
+      "id": "kaldorei-influence-research",
+      "properties": { "name": "Kaldorei ascendance (broad reconstruction)", "contentStatus": "research", "styleRole": "region", "geographicCertainty": "inferred" },
+      "geometry": { "type": "Polygon", "coordinates": [[[2850, 6400], [4250, 8100], [6900, 7950], [8250, 5900], [7350, 3600], [5600, 2800], [3600, 3600], [2850, 6400]]] }
+    },
+    {
+      "type": "Feature",
+      "id": "dark-trolls-ancient-focus-research",
+      "properties": { "name": "Dark troll transition near the Well", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "inferred" },
+      "geometry": { "type": "Point", "coordinates": [4500, 5650] }
+    },
+    {
+      "type": "Feature",
+      "id": "kaldorei-ancient-focus-research",
+      "properties": { "name": "Kaldorei civilization narrative focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
+      "geometry": { "type": "Point", "coordinates": [6500, 6100] }
+    },
+    {
+      "type": "Feature",
+      "id": "azshara-ancient-focus-research",
+      "properties": { "name": "Azshara's court narrative focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
+      "geometry": { "type": "Point", "coordinates": [4200, 4250] }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "azshara-crowned",
+  "kind": "event",
+  "name": "Azshara Rises to the Throne",
+  "slug": "azshara-crowned",
+  "eraId": "ancient-civilizations",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "Near the height of prewar kaldorei power", "relativeToId": "kaldorei-ascendance" },
+  "summary": "Azshara became queen of a powerful kaldorei civilization whose court and arcane ambitions stood at the threshold of the next catastrophe.",
+  "locationIds": ["well-of-eternity"],
+  "participantEntityIds": ["azshara", "kaldorei-empire"],
+  "relationshipIds": ["kaldorei-rise-precedes-azshara", "azshara-precedes-war-ancients"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["azshara-crowned-event-claim"],
+  "contentStatus": "research"
+}

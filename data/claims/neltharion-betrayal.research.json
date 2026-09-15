@@ -1,0 +1,9 @@
+{
+  "id": "neltharion-betrayal-claim",
+  "subjectId": "neltharion",
+  "predicate": "turned_the_dragon_soul_against_his_allies",
+  "value": true,
+  "citationIds": ["chronicle-v1-dragon-soul-betrayal", "blizzard-aspects-neltharion"],
+  "confidence": "explicit",
+  "status": "active"
+}

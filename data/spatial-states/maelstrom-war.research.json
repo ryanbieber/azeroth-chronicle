@@ -1,0 +1,12 @@
+{
+  "id": "maelstrom-war-spatial-research",
+  "entityId": "maelstrom",
+  "eraId": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "geometryId": "maelstrom-aftermath-focus-research",
+  "geographicCertainty": "inferred",
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-well-of-eternity-preview"],
+  "editorNote": "The central location is narratively supported, while its size and coordinate follow the original interpretive after-state art.",
+  "labelPriority": 146,
+  "visualPresence": "persistent"
+}

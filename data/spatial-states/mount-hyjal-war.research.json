@@ -1,0 +1,12 @@
+{
+  "id": "mount-hyjal-war-spatial-research",
+  "entityId": "mount-hyjal-ancient",
+  "eraId": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "geometryId": "mount-hyjal-survivor-focus-research",
+  "geographicCertainty": "inferred",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "The focus is positioned for a readable post-Sundering handoff and requires comparison with reviewed cartography before promotion.",
+  "labelPriority": 143,
+  "visualPresence": "persistent"
+}

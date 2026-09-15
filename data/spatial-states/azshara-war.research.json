@@ -1,0 +1,13 @@
+{
+  "id": "azshara-war-spatial-research",
+  "entityId": "azshara",
+  "eraId": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "geometryId": "azshara-war-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-well-of-eternity-preview", "blizzard-warbringers-azshara"],
+  "editorNote": "The figure represents Azshara's court-centered role, not a fixed palace coordinate or her later position beneath the sea.",
+  "labelPriority": 138,
+  "visualPresence": "contextual"
+}

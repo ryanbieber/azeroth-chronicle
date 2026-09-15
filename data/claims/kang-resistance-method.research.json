@@ -1,0 +1,9 @@
+{
+  "id": "kang-resistance-method-claim",
+  "subjectId": "kang",
+  "predicate": "resistance-method",
+  "value": "Kang developed and taught an unarmed discipline that could spread among pandaren denied conventional weapons.",
+  "citationIds": ["chronicle-v1-pandaren-revolution"],
+  "confidence": "explicit",
+  "status": "active"
+}

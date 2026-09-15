@@ -1,0 +1,8 @@
+{
+  "id": "azshara-precedes-war-ancients",
+  "fromId": "azshara-crowned",
+  "toId": "war-of-the-ancients",
+  "type": "precedes",
+  "citationIds": ["chronicle-v1-night-elves-rise"],
+  "confidence": "strongly_supported"
+}

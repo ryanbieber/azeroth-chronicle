@@ -1,0 +1,12 @@
+{
+  "id": "mogu-empire-ancient-spatial-research",
+  "entityId": "mogu-empire",
+  "eraId": "ancient-civilizations",
+  "worldspaceId": "azeroth",
+  "geometryId": "mogu-empire-ancient-focus-research",
+  "geographicCertainty": "inferred",
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-thunder-king-portrait"],
+  "editorNote": "The marker identifies the broad southern theater later associated with Pandaria, not an exact pre-Sundering capital or boundary.",
+  "labelPriority": 118,
+  "visualPresence": "persistent"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "mount-hyjal-ancient",
+  "type": "location",
+  "name": "Mount Hyjal",
+  "slug": "mount-hyjal-ancient",
+  "shortDescription": "The mountain refuge reached by many survivors after the Sundering and a threshold into the Long Vigil.",
+  "body": "Era 4 ends at arrival and refuge. The second Well, Nordrassil, and the institutions of the Long Vigil belong to Era 5 so that consequences are not narrated before their own sourced slice.",
+  "firstEraId": "war-of-the-ancients",
+  "featuredEraIds": ["war-of-the-ancients", "long-vigil-new-kingdoms"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["hyjal-survivors-claim"],
+  "tags": ["mount-hyjal", "survivors", "refuge"],
+  "contentStatus": "research"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "legion-invasion-begins",
+  "kind": "event",
+  "name": "The Burning Legion Enters Azeroth",
+  "slug": "legion-invasion-begins",
+  "eraId": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "After the Highborne portal opened", "relativeToId": "highborne-open-legion-way" },
+  "summary": "Demonic forces poured through the portal at Zin-Azshari and began destroying the empire whose court had admitted them.",
+  "locationIds": ["well-of-eternity", "zin-azshari"],
+  "participantEntityIds": ["burning-legion", "highborne", "azshara"],
+  "causedByEventIds": ["highborne-open-legion-way"],
+  "causesEventIds": ["war-of-the-ancients", "night-elf-resistance-forms"],
+  "relationshipIds": ["highborne-ritual-causes-legion-invasion", "legion-invasion-causes-war", "invasion-prompts-resistance"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-well-of-eternity-preview"],
+  "claimIds": ["legion-invasion-begins-event-claim"],
+  "contentStatus": "research"
+}

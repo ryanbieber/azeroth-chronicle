@@ -1,0 +1,8 @@
+{
+  "id": "war-convergence-causes-portal-collapse",
+  "fromId": "war-of-the-ancients",
+  "toId": "portal-at-well-collapses",
+  "type": "causes",
+  "citationIds": ["chronicle-v1-great-sundering", "blizzard-well-of-eternity-history"],
+  "confidence": "strongly_supported"
+}

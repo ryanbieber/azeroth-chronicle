@@ -1,0 +1,19 @@
+{
+  "id": "lei-shen",
+  "type": "character",
+  "name": "Lei Shen",
+  "slug": "lei-shen",
+  "aliases": ["The Thunder King"],
+  "shortDescription": "The first mogu emperor, who united rival kings and established a far-reaching imperial order in the southern lands.",
+  "body": "Lei Shen's rise gave the divided mogu a new unity of purpose and brought other peoples under their rule. This portrait is an original interpretive visualization and does not claim an exact historical appearance.",
+  "firstEraId": "ancient-civilizations",
+  "featuredEraIds": ["ancient-civilizations"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-thunder-king-portrait"],
+  "claimIds": ["lei-shen-unites-mogu-claim"],
+  "tags": ["mogu", "emperor", "thunder-king"],
+  "mapFigure": {
+    "asset": "images/characters/ancient-civilizations/lei-shen.research.webp",
+    "scale": 0.85
+  },
+  "contentStatus": "research"
+}

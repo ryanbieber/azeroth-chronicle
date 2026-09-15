@@ -1,0 +1,8 @@
+{
+  "id": "sargeras-controls-burning-legion",
+  "fromId": "sargeras",
+  "toId": "burning-legion",
+  "type": "controls",
+  "citationIds": ["chronicle-v1-war-ancients-opening", "blizzard-well-of-eternity-history"],
+  "confidence": "explicit"
+}

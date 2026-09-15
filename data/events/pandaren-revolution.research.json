@@ -1,0 +1,16 @@
+{
+  "id": "pandaren-revolution",
+  "kind": "event",
+  "name": "The Pandaren Revolution",
+  "slug": "pandaren-revolution",
+  "eraId": "ancient-civilizations",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "After generations of mogu rule", "relativeToId": "mogu-conquests" },
+  "summary": "Resistance associated with Kang spread among the mogu's subject peoples until the imperial order broke and the southern lands entered a new age.",
+  "participantEntityIds": ["kang", "pandaren-ancient", "mogu-empire"],
+  "causedByEventIds": ["mogu-conquests"],
+  "relationshipIds": ["mogu-rule-causes-revolution", "kang-enables-pandaren-revolution", "revolution-ends-mogu-dominion"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["pandaren-revolution-event-claim"],
+  "contentStatus": "research"
+}

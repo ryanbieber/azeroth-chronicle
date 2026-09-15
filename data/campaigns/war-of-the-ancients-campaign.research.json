@@ -1,0 +1,11 @@
+{
+  "id": "war-of-the-ancients-campaign",
+  "name": "The War of the Ancients Campaign",
+  "slug": "war-of-the-ancients-campaign",
+  "eraId": "war-of-the-ancients",
+  "summary": "A strategic grouping of the Legion invasion, the widening defense of Kalimdor, the betrayal of Neltharion, and the final convergence at the Well.",
+  "battleIds": ["war-of-the-ancients"],
+  "routeIds": ["resistance-convergence"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-well-of-eternity-preview", "blizzard-dragon-aspects-history"],
+  "contentStatus": "research"
+}

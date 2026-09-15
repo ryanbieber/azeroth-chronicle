@@ -173,6 +173,40 @@ test('Ordering of Azeroth moves from inherited empire to a contextual ordered wo
   await expect(dossier.locator('.entity-overview-lede')).toContainText(/arcane lake/i);
 });
 
+test('Ancient Civilizations advances through distinct political time slices and contextual actors', async ({ page }) => {
+  await page.goto('/map?era=ancient-civilizations');
+  await expect(page.getByRole('combobox', { name: 'Choose era' })).toHaveValue('ancient-civilizations');
+  await page.getByRole('button', { name: 'Guided tour' }).click();
+
+  await expect(page.getByRole('heading', { name: 'The ordered world begins to remember' })).toBeVisible();
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE POLITICAL TIME SLICE');
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Many peoples beneath one sky' })).toBeVisible();
+  await expect(page.locator('.map-subject-visual').filter({ hasText: 'The Empire of Zul' })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'The earth gives back an ancient enemy' })).toBeVisible();
+  await expect(page.locator('.map-subject-visual').filter({ hasText: 'Aqir' })).toBeVisible();
+
+  for (let index = 0; index < 4; index += 1) {
+    await page.getByRole('button', { name: 'Next', exact: true }).click();
+  }
+  await expect(page.getByRole('heading', { name: 'One king takes the storm' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Lei Shen', exact: true })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Empty hands become a promise' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Kang', exact: true })).toBeVisible();
+
+  for (let index = 0; index < 3; index += 1) {
+    await page.getByRole('button', { name: 'Next', exact: true }).click();
+  }
+  await expect(page.getByRole('heading', { name: 'A queen at the edge of ruin' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Queen Azshara', exact: true })).toBeVisible();
+  await expect(page.locator('.map-subject-visual').filter({ hasText: 'The Kaldorei Empire' })).toBeVisible();
+});
+
 test('landing page full tour chains every completed guided era', async ({ page }) => {
   await page.goto('/');
   await expect(page.getByRole('heading', { name: /the full history/i })).toBeVisible();
@@ -201,6 +235,14 @@ test('landing page full tour chains every completed guided era', async ({ page }
     await page.getByRole('button', { name: 'Next', exact: true }).click();
   }
   await expect(page.getByRole('heading', { name: 'The makers pass beyond the sky' })).toBeVisible();
+  await page.getByRole('button', { name: 'Continue the chronicle' }).click();
+
+  await expect(page).toHaveURL(/map\?era=ancient-civilizations&tour=full/);
+  await expect(page.getByRole('heading', { name: 'The ordered world begins to remember' })).toBeVisible();
+  for (let index = 0; index < 11; index += 1) {
+    await page.getByRole('button', { name: 'Next', exact: true }).click();
+  }
+  await expect(page.getByRole('heading', { name: 'A queen at the edge of ruin' })).toBeVisible();
   await page.getByRole('button', { name: 'Continue the chronicle' }).click();
 
   await expect(page).toHaveURL(/\?tour=complete$/);

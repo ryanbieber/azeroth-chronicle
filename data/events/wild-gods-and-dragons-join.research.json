@@ -1,0 +1,16 @@
+{
+  "id": "wild-gods-and-dragons-join",
+  "kind": "event",
+  "name": "Ancient Allies Join the Defense",
+  "slug": "wild-gods-and-dragons-join",
+  "eraId": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "During the widening War of the Ancients", "relativeToId": "night-elf-resistance-forms" },
+  "summary": "Cenarius and other powers of ancient Kalimdor joined the defense, while the Dragon Aspects prepared a weapon intended to drive back the Legion.",
+  "participantEntityIds": ["night-elf-resistance", "cenarius", "neltharion", "dragon-soul"],
+  "causedByEventIds": ["night-elf-resistance-forms"],
+  "relationshipIds": ["cenarius-allied-with-resistance", "dragon-soul-part-of-war"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-dragon-aspects-history"],
+  "claimIds": ["wild-gods-dragons-join-event-claim"],
+  "contentStatus": "research"
+}

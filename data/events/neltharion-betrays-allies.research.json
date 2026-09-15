@@ -1,0 +1,15 @@
+{
+  "id": "neltharion-betrays-allies",
+  "kind": "event",
+  "name": "Neltharion Turns the Dragon Soul on His Allies",
+  "slug": "neltharion-betrays-allies",
+  "eraId": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "During the War of the Ancients", "relativeToId": "wild-gods-and-dragons-join" },
+  "summary": "After using the Dragon Soul against the Legion, Neltharion revealed his betrayal and shattered the unity of the dragonflights.",
+  "participantEntityIds": ["neltharion", "dragon-soul"],
+  "relationshipIds": ["neltharion-controls-dragon-soul", "neltharion-betrayal-precedes-final-convergence"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-dragon-aspects-history"],
+  "claimIds": ["neltharion-betrays-event-claim"],
+  "contentStatus": "research"
+}

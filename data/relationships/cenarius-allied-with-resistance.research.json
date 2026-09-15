@@ -1,0 +1,8 @@
+{
+  "id": "cenarius-allied-with-resistance",
+  "fromId": "cenarius",
+  "toId": "night-elf-resistance",
+  "type": "allied_with",
+  "citationIds": ["chronicle-v1-war-ancients-resistance"],
+  "confidence": "strongly_supported"
+}

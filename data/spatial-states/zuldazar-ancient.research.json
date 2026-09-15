@@ -1,0 +1,12 @@
+{
+  "id": "zuldazar-ancient-spatial-research",
+  "entityId": "zuldazar-ancient",
+  "eraId": "ancient-civilizations",
+  "worldspaceId": "azeroth",
+  "geometryId": "zuldazar-ancient-focus-research",
+  "geographicCertainty": "inferred",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "The atlas places Zuldazar only as a broad highland focus on its original reconstructed landmass. It is not a surveyed pre-Sundering city coordinate.",
+  "labelPriority": 122,
+  "visualPresence": "persistent"
+}

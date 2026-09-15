@@ -1,0 +1,18 @@
+{
+  "id": "portal-at-well-collapses",
+  "kind": "event",
+  "name": "The Portal at the Well Collapses",
+  "slug": "portal-at-well-collapses",
+  "eraId": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "At the end of the War of the Ancients", "relativeToId": "war-of-the-ancients" },
+  "summary": "The defenders disrupted the Legion's gateway before Sargeras could enter, and the unstable Well collapsed around the broken portal.",
+  "locationIds": ["well-of-eternity", "zin-azshari"],
+  "participantEntityIds": ["malfurion-stormrage", "tyrande-whisperwind", "illidan-stormrage", "night-elf-resistance", "burning-legion", "sargeras"],
+  "causedByEventIds": ["war-of-the-ancients"],
+  "causesEventIds": ["great-sundering"],
+  "relationshipIds": ["war-convergence-causes-portal-collapse", "portal-collapse-causes-sundering"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-well-of-eternity-preview"],
+  "claimIds": ["portal-at-well-collapses-event-claim"],
+  "contentStatus": "research"
+}

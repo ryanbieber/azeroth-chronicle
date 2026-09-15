@@ -1,0 +1,8 @@
+{
+  "id": "invasion-prompts-resistance",
+  "fromId": "legion-invasion-begins",
+  "toId": "night-elf-resistance-forms",
+  "type": "causes",
+  "citationIds": ["chronicle-v1-war-ancients-resistance"],
+  "confidence": "strongly_supported"
+}

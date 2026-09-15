@@ -1,0 +1,8 @@
+{
+  "id": "legion-invasion-causes-war",
+  "fromId": "legion-invasion-begins",
+  "toId": "war-of-the-ancients",
+  "type": "causes",
+  "citationIds": ["chronicle-v1-war-ancients-opening"],
+  "confidence": "explicit"
+}

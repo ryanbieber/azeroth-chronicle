@@ -1,0 +1,8 @@
+{
+  "id": "southern-revolution-precedes-kaldorei-rise",
+  "fromId": "pandaren-revolution",
+  "toId": "dark-trolls-settle-near-well",
+  "type": "precedes",
+  "citationIds": ["chronicle-v1-pandaren-revolution", "chronicle-v1-night-elves-rise"],
+  "confidence": "strongly_supported"
+}

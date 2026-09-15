@@ -1,0 +1,16 @@
+{
+  "id": "neltharion",
+  "type": "character",
+  "name": "Neltharion the Earth-Warder",
+  "slug": "neltharion",
+  "aliases": ["The Earth-Warder"],
+  "shortDescription": "The Dragon Aspect who turned the newly forged Dragon Soul against the allies gathered to defend Azeroth.",
+  "body": "Later ages know him by another name, but this record uses his identity at the time of the betrayal. The figure and disk are interpretive representations; they do not reproduce licensed creature or artifact designs.",
+  "firstEraId": "war-of-the-ancients",
+  "featuredEraIds": ["war-of-the-ancients"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-dragon-aspects-history"],
+  "claimIds": ["neltharion-betrayal-claim"],
+  "tags": ["dragon", "aspect", "dragon-soul", "betrayal"],
+  "mapFigure": { "asset": "images/characters/war-of-the-ancients/neltharion.research.webp", "scale": 1.06 },
+  "contentStatus": "research"
+}

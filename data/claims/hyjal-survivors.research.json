@@ -1,0 +1,10 @@
+{
+  "id": "hyjal-survivors-claim",
+  "subjectId": "mount-hyjal-ancient",
+  "predicate": "became_a_refuge_for_survivors_after_the_sundering",
+  "value": true,
+  "citationIds": ["chronicle-v1-great-sundering"],
+  "confidence": "strongly_supported",
+  "status": "active",
+  "editorNote": "The directional route shown by the atlas is simplified and requires cartographic review."
+}

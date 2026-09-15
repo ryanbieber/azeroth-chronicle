@@ -1,0 +1,13 @@
+{
+  "id": "malfurion-war-spatial-research",
+  "entityId": "malfurion-stormrage",
+  "eraId": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "geometryId": "malfurion-war-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "The figure marks Malfurion's role in the current story beat, not a permanent wartime coordinate.",
+  "labelPriority": 134,
+  "visualPresence": "contextual"
+}

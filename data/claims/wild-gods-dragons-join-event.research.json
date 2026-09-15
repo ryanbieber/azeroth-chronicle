@@ -1,0 +1,9 @@
+{
+  "id": "wild-gods-dragons-join-event-claim",
+  "subjectId": "wild-gods-and-dragons-join",
+  "predicate": "expanded_the_defense_beyond_the_kaldorei",
+  "value": true,
+  "citationIds": ["chronicle-v1-war-ancients-resistance"],
+  "confidence": "strongly_supported",
+  "status": "active"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "burning-legion-invasion-claim",
+  "subjectId": "burning-legion",
+  "predicate": "invaded_azeroth_during_the_war_of_the_ancients",
+  "value": true,
+  "citationIds": ["chronicle-v1-war-ancients-opening", "blizzard-well-of-eternity-history"],
+  "confidence": "explicit",
+  "status": "active"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "zin-azshari-war-spatial-research",
+  "entityId": "zin-azshari",
+  "eraId": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "geometryId": "zin-azshari-focus-research",
+  "geographicCertainty": "approximate",
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-well-of-eternity-preview"],
+  "editorNote": "The capital is placed approximately beside the interpretive Well; no street or palace plan is asserted.",
+  "labelPriority": 140,
+  "visualPresence": "persistent"
+}

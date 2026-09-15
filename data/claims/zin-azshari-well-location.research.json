@@ -1,0 +1,10 @@
+{
+  "id": "zin-azshari-well-location-claim",
+  "subjectId": "zin-azshari",
+  "predicate": "stood_on_the_shores_of_the_well_of_eternity",
+  "value": true,
+  "citationIds": ["chronicle-v1-war-ancients-opening", "blizzard-well-of-eternity-history"],
+  "confidence": "explicit",
+  "status": "active",
+  "editorNote": "The relationship is supported; the atlas coordinate is only approximate."
+}

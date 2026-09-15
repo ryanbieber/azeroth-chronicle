@@ -1,0 +1,9 @@
+{
+  "id": "highborne-open-legion-way-event-claim",
+  "subjectId": "highborne-open-legion-way",
+  "predicate": "opened_the_way_for_the_legion",
+  "value": true,
+  "citationIds": ["chronicle-v1-war-ancients-opening", "blizzard-well-of-eternity-history"],
+  "confidence": "explicit",
+  "status": "active"
+}

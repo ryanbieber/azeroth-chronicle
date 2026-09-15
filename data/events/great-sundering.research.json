@@ -1,0 +1,18 @@
+{
+  "id": "great-sundering",
+  "kind": "event",
+  "name": "The Great Sundering",
+  "slug": "great-sundering",
+  "eraId": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "approximate", "year": -10000, "label": "c. 10,000 years before the Dark Portal" },
+  "summary": "The Well's destruction tore primordial Kalimdor apart, drowned great reaches of land, and left the Maelstrom at the center of a new ocean.",
+  "locationIds": ["well-of-eternity", "maelstrom"],
+  "participantEntityIds": ["azshara", "highborne"],
+  "causedByEventIds": ["portal-at-well-collapses"],
+  "causesEventIds": ["survivors-reach-hyjal"],
+  "relationshipIds": ["portal-collapse-causes-sundering", "sundering-creates-maelstrom", "sundering-causes-survivor-migrations"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-well-of-eternity-preview", "blizzard-warbringers-azshara"],
+  "claimIds": ["great-sundering-event-claim"],
+  "contentStatus": "research"
+}

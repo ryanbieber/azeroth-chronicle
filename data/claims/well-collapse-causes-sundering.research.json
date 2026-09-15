@@ -1,0 +1,9 @@
+{
+  "id": "well-collapse-causes-sundering-claim",
+  "subjectId": "well-of-eternity",
+  "predicate": "collapse_produced_the_great_sundering",
+  "value": true,
+  "citationIds": ["chronicle-v1-great-sundering", "blizzard-well-of-eternity-history"],
+  "confidence": "explicit",
+  "status": "active"
+}

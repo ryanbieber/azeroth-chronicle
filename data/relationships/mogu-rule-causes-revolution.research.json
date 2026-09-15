@@ -1,0 +1,8 @@
+{
+  "id": "mogu-rule-causes-revolution",
+  "fromId": "mogu-conquests",
+  "toId": "pandaren-revolution",
+  "type": "causes",
+  "citationIds": ["chronicle-v1-pandaren-revolution"],
+  "confidence": "strongly_supported"
+}

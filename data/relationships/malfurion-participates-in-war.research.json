@@ -1,0 +1,8 @@
+{
+  "id": "malfurion-participates-in-war",
+  "fromId": "malfurion-stormrage",
+  "toId": "war-of-the-ancients",
+  "type": "participant_in",
+  "citationIds": ["chronicle-v1-war-ancients-resistance", "chronicle-v1-great-sundering"],
+  "confidence": "explicit"
+}

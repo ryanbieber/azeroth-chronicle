@@ -1,0 +1,114 @@
+{
+  "type": "FeatureCollection",
+  "name": "war-of-the-ancients-research-cartography",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "zin-azshari-focus-research",
+      "properties": { "name": "Zin-Azshari (approximate focus)", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "approximate" },
+      "geometry": { "type": "Point", "coordinates": [5350, 5150] }
+    },
+    {
+      "type": "Feature",
+      "id": "azshara-war-focus-research",
+      "properties": { "name": "Azshara narrative focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
+      "geometry": { "type": "Point", "coordinates": [4550, 4700] }
+    },
+    {
+      "type": "Feature",
+      "id": "highborne-court-focus-research",
+      "properties": { "name": "Highborne court narrative focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
+      "geometry": { "type": "Point", "coordinates": [5700, 4550] }
+    },
+    {
+      "type": "Feature",
+      "id": "kaldorei-empire-war-focus-research",
+      "properties": { "name": "Kaldorei empire narrative focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
+      "geometry": { "type": "Point", "coordinates": [6500, 6500] }
+    },
+    {
+      "type": "Feature",
+      "id": "legion-pressure-region-research",
+      "properties": { "name": "Burning Legion pressure (broad reconstruction)", "contentStatus": "research", "styleRole": "influence", "geographicCertainty": "inferred" },
+      "geometry": { "type": "Polygon", "coordinates": [[[3600, 3600], [4400, 7000], [6100, 7900], [7900, 6100], [7600, 3300], [5900, 2100], [3600, 3600]]] }
+    },
+    {
+      "type": "Feature",
+      "id": "resistance-convergence-route-research",
+      "properties": { "name": "Resistance convergence toward the Well", "contentStatus": "research", "styleRole": "route", "geographicCertainty": "inferred" },
+      "geometry": { "type": "LineString", "coordinates": [[2100, 6900], [3400, 6200], [4500, 5400], [5100, 5050]] }
+    },
+    {
+      "type": "Feature",
+      "id": "burning-legion-focus-research",
+      "properties": { "name": "Burning Legion narrative focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
+      "geometry": { "type": "Point", "coordinates": [6000, 5450] }
+    },
+    {
+      "type": "Feature",
+      "id": "night-elf-resistance-focus-research",
+      "properties": { "name": "Night elf resistance narrative focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
+      "geometry": { "type": "Point", "coordinates": [3500, 5850] }
+    },
+    {
+      "type": "Feature",
+      "id": "malfurion-war-focus-research",
+      "properties": { "name": "Malfurion narrative focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
+      "geometry": { "type": "Point", "coordinates": [4150, 6250] }
+    },
+    {
+      "type": "Feature",
+      "id": "tyrande-war-focus-research",
+      "properties": { "name": "Tyrande narrative focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
+      "geometry": { "type": "Point", "coordinates": [3300, 4700] }
+    },
+    {
+      "type": "Feature",
+      "id": "illidan-war-focus-research",
+      "properties": { "name": "Illidan narrative focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
+      "geometry": { "type": "Point", "coordinates": [4300, 4000] }
+    },
+    {
+      "type": "Feature",
+      "id": "cenarius-war-focus-research",
+      "properties": { "name": "Cenarius narrative focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
+      "geometry": { "type": "Point", "coordinates": [2600, 5900] }
+    },
+    {
+      "type": "Feature",
+      "id": "neltharion-war-focus-research",
+      "properties": { "name": "Neltharion narrative focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
+      "geometry": { "type": "Point", "coordinates": [7200, 5200] }
+    },
+    {
+      "type": "Feature",
+      "id": "sargeras-portal-focus-research",
+      "properties": { "name": "Sargeras relational portal focus", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
+      "geometry": { "type": "Point", "coordinates": [5200, 6600] }
+    },
+    {
+      "type": "Feature",
+      "id": "maelstrom-aftermath-focus-research",
+      "properties": { "name": "Maelstrom (interpretive central focus)", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "inferred" },
+      "geometry": { "type": "Point", "coordinates": [5000, 5000] }
+    },
+    {
+      "type": "Feature",
+      "id": "mount-hyjal-survivor-focus-research",
+      "properties": { "name": "Mount Hyjal survivor refuge (inferred atlas focus)", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "inferred" },
+      "geometry": { "type": "Point", "coordinates": [2350, 6900] }
+    },
+    {
+      "type": "Feature",
+      "id": "survivor-migration-route-research",
+      "properties": { "name": "Survivor movement toward Mount Hyjal", "contentStatus": "research", "styleRole": "route", "geographicCertainty": "inferred" },
+      "geometry": { "type": "LineString", "coordinates": [[4700, 5200], [3900, 5850], [3100, 6400], [2350, 6900]] }
+    },
+    {
+      "type": "Feature",
+      "id": "azshara-sunken-aftermath-focus-research",
+      "properties": { "name": "Azshara beneath the Sundering (relational focus)", "contentStatus": "research", "styleRole": "site", "geographicCertainty": "unknown" },
+      "geometry": { "type": "Point", "coordinates": [5600, 4200] }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "azshara-crowned-event-claim",
+  "subjectId": "azshara-crowned",
+  "predicate": "event-summary",
+  "value": "Azshara's accession gathered kaldorei political and magical power around a widely admired queen and her court.",
+  "citationIds": ["chronicle-v1-night-elves-rise"],
+  "confidence": "explicit",
+  "status": "active"
+}

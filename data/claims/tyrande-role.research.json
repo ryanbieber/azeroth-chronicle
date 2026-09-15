@@ -1,0 +1,9 @@
+{
+  "id": "tyrande-role-claim",
+  "subjectId": "tyrande-whisperwind",
+  "predicate": "fought_with_and_sustained_the_resistance",
+  "value": true,
+  "citationIds": ["chronicle-v1-war-ancients-resistance", "blizzard-well-of-eternity-history"],
+  "confidence": "strongly_supported",
+  "status": "active"
+}

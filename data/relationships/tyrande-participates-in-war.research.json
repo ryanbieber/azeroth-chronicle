@@ -1,0 +1,8 @@
+{
+  "id": "tyrande-participates-in-war",
+  "fromId": "tyrande-whisperwind",
+  "toId": "war-of-the-ancients",
+  "type": "participant_in",
+  "citationIds": ["chronicle-v1-war-ancients-resistance", "blizzard-well-of-eternity-history"],
+  "confidence": "explicit"
+}

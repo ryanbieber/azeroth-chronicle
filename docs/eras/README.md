@@ -13,7 +13,7 @@ Application records live in `data/eras`. Each era owns a separate record in `dat
 | 0 | `cosmic-origins` | Non-geographic cosmic forces and the formation of Azeroth | Public research-preview vertical slice implemented; human review pending |
 | 1 | `black-empire` | Primordial Azeroth, elemental domains, and Black Empire influence | Public research-preview vertical slice implemented; human review pending |
 | 2 | `ordering-of-azeroth` | Titan-forged campaigns and planetary reordering | Public research-preview vertical slice implemented; human review pending |
-| 3 | `ancient-civilizations` | Changing empires across primordial Kalimdor | Era shell and empty map state |
+| 3 | `ancient-civilizations` | Changing empires across primordial Kalimdor | Public research-preview vertical slice implemented; human review pending |
 | 4 | `war-of-the-ancients` | A campaign ending in a world-changing rupture | Era shell and empty map state |
 | 5 | `long-vigil-new-kingdoms` | Post-Sundering states, migrations, and borders | Era shell and empty map state |
 | 6 | `rise-of-the-horde` | Two worlds, the Dark Portal, and two wars | Era shell and empty map state |
@@ -21,7 +21,7 @@ Application records live in `data/eras`. Each era owns a separate record in `dat
 | 8 | `age-of-adventurers` | Many campaigns and repeated map-state changes | Era shell and empty map state |
 | 9 | `modern-cosmic-age` | Fourth War through the evolving Worldsoul Saga | Era shell and empty map state |
 
-Build the eras in this order. Cosmic Origins, Black Empire, and Ordering of Azeroth now establish the reference patterns for relational cosmography, terrain eras, and explicit before/after map-state storytelling. Finish the publication gate for one era before beginning production terrain for the next; reusable engine improvements may continue across eras.
+Build the eras in this order. Cosmic Origins, Black Empire, Ordering of Azeroth, and Ancient Civilizations now establish the reference patterns for relational cosmography, terrain eras, explicit before/after storytelling, and long eras represented through political time slices. Finish the publication gate for one era before beginning production terrain for the next; reusable engine improvements may continue across eras.
 
 ## Definition of done for every era
 
@@ -92,6 +92,8 @@ Era 9 extends beyond Chronicle Volume 4. Dragonflight and Worldsoul Saga materia
 **Animated tour spine:** ordered world → first centers of power → troll expansion → aqir conflict fronts → southern/eastern civilizations → kaldorei ascent → concentration around the Well → tensions that lead into Era 4.
 
 **Completion emphasis:** favor a small number of defensible map snapshots over one visually busy composite of thousands of years.
+
+**Implemented research baseline:** nine new indexed subjects plus an expanded aqir record, nine events, one four-phase strategic conflict dossier, three political map states, 14 source-aware relationship edges, 11 time-aware spatial states, original terrain and actor visuals, and a twelve-pane guided history. The detailed source, geography, scope, and visual audit is in `docs/research/era-3-ancient-civilizations.md`. Human review remains required before promotion.
 
 ## Era 4 — The War of the Ancients and the Sundering
 

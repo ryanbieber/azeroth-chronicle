@@ -1,0 +1,10 @@
+{
+  "id": "resistance-convergence",
+  "name": "Resistance convergence toward the Well (interpretive)",
+  "worldspaceId": "azeroth",
+  "geometryId": "resistance-convergence-route-research",
+  "geographicCertainty": "inferred",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "The line communicates strategic convergence on the Well, not a traced march, a single army path, or the order of every engagement.",
+  "contentStatus": "research"
+}

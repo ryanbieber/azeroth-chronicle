@@ -1,0 +1,13 @@
+{
+  "id": "highborne-war-spatial-research",
+  "entityId": "highborne",
+  "eraId": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "geometryId": "highborne-court-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-well-of-eternity-preview"],
+  "editorNote": "The group is a narrative court anchor, not a complete roster or precise ritual formation.",
+  "labelPriority": 136,
+  "visualPresence": "contextual"
+}

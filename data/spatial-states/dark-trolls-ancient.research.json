@@ -1,0 +1,12 @@
+{
+  "id": "dark-trolls-ancient-spatial-research",
+  "entityId": "dark-trolls",
+  "eraId": "ancient-civilizations",
+  "worldspaceId": "azeroth",
+  "geometryId": "dark-trolls-ancient-focus-research",
+  "geographicCertainty": "inferred",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "The point makes the source-backed relationship to the central Well legible without claiming a precise settlement or migration track.",
+  "labelPriority": 124,
+  "visualPresence": "contextual"
+}

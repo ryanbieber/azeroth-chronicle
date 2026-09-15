@@ -1,0 +1,13 @@
+{
+  "id": "azshara-ancient-spatial-research",
+  "entityId": "azshara",
+  "eraId": "ancient-civilizations",
+  "worldspaceId": "azeroth",
+  "geometryId": "azshara-ancient-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "The figure represents Azshara's court and influence at the era boundary, not a precise palace coordinate.",
+  "labelPriority": 132,
+  "visualPresence": "contextual"
+}

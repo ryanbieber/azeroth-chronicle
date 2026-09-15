@@ -1,0 +1,10 @@
+{
+  "id": "ancient-kalimdor-conflicts",
+  "name": "Ancient Kalimdor Conflicts",
+  "slug": "ancient-kalimdor-conflicts",
+  "eraId": "ancient-civilizations",
+  "summary": "A research grouping for the long wars that redistributed peoples and power before kaldorei ascendance, beginning with the supported troll–aqir campaign.",
+  "battleIds": ["troll-aqir-war"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "contentStatus": "research"
+}

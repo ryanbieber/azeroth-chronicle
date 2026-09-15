@@ -1,0 +1,8 @@
+{
+  "id": "revolution-ends-mogu-dominion",
+  "fromId": "pandaren-revolution",
+  "toId": "mogu-empire",
+  "type": "replaces",
+  "citationIds": ["chronicle-v1-pandaren-revolution"],
+  "confidence": "explicit"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "sundering-creates-maelstrom",
+  "fromId": "great-sundering",
+  "toId": "maelstrom",
+  "type": "causes",
+  "citationIds": ["chronicle-v1-great-sundering", "blizzard-well-of-eternity-history"],
+  "confidence": "explicit"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "neltharion-betrays-event-claim",
+  "subjectId": "neltharion-betrays-allies",
+  "predicate": "fractured_the_dragon_alliance",
+  "value": true,
+  "citationIds": ["chronicle-v1-dragon-soul-betrayal", "blizzard-aspects-neltharion"],
+  "confidence": "explicit",
+  "status": "active"
+}

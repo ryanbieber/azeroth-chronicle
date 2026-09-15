@@ -1,0 +1,19 @@
+{
+  "id": "war-of-the-ancients-prewar-map-research",
+  "name": "Zin-Azshari before the invasion — interpretive research map",
+  "worldspaceId": "azeroth",
+  "presentation": "terrain",
+  "cartographyLabel": "INTERPRETIVE PRE-INVASION STATE",
+  "interpretationNote": "This state deliberately inherits Era 3's intact primordial Kalimdor and frames the Well, Zin-Azshari, Azshara, and the Highborne as the political center of the approaching crisis. Court figures are relational anchors, not palace coordinates.",
+  "terrainTextureAsset": "textures/azeroth/ancient-civilizations-map-research/terrain-atlas.research.webp",
+  "terrainHeightAsset": "textures/azeroth/ancient-civilizations-map-research/terrain-height.research.webp",
+  "geometryIds": [
+    "ordered-kalimdor-landmass-research",
+    "well-of-eternity-focus-research",
+    "zin-azshari-focus-research",
+    "azshara-war-focus-research",
+    "highborne-court-focus-research",
+    "kaldorei-empire-war-focus-research",
+    "sargeras-portal-focus-research"
+  ]
+}

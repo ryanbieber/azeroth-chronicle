@@ -1,0 +1,18 @@
+{
+  "id": "azshara",
+  "type": "character",
+  "name": "Queen Azshara",
+  "slug": "azshara",
+  "shortDescription": "The exceptionally gifted and widely admired queen under whom the kaldorei empire reached extraordinary power before the War of the Ancients.",
+  "body": "Era 3 ends with Azshara's ascent and the concentration of power around her court. In Era 4, the research account follows her court's decision to admit the Burning Legion through the Well and her survival beneath the sea after the Sundering. The generated figure is an original interpretive portrait rather than licensed character art.",
+  "firstEraId": "ancient-civilizations",
+  "featuredEraIds": ["ancient-civilizations", "war-of-the-ancients"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["azshara-crowned-claim", "azshara-allows-legion-claim", "azshara-survives-sundering-claim"],
+  "tags": ["kaldorei", "queen", "highborne"],
+  "mapFigure": {
+    "asset": "images/characters/ancient-civilizations/azshara.research.webp",
+    "scale": 0.82
+  },
+  "contentStatus": "research"
+}

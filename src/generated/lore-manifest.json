@@ -31,10 +31,60 @@
       "geometryIds": []
     },
     {
-      "id": "ancient-civilizations-map-research",
-      "name": "Ancient civilizations — cartography research",
+      "id": "ancient-civilizations-early-map-research",
+      "name": "Empire of Zul and the aqir — interpretive research map",
       "worldspaceId": "azeroth",
-      "geometryIds": []
+      "presentation": "terrain",
+      "cartographyLabel": "INTERPRETIVE POLITICAL TIME SLICE",
+      "interpretationNote": "This early-era state uses broad influence areas and relational figure anchors to explain the troll–aqir struggle. The exact fronts and migration paths are unknown, so no tactical route or hard political border is asserted.",
+      "terrainTextureAsset": "textures/azeroth/ancient-civilizations-map-research/terrain-atlas.research.webp",
+      "terrainHeightAsset": "textures/azeroth/ancient-civilizations-map-research/terrain-height.research.webp",
+      "geometryIds": [
+        "ordered-kalimdor-landmass-research",
+        "well-of-eternity-focus-research",
+        "zuldazar-ancient-focus-research",
+        "empire-of-zul-influence-research",
+        "aqir-pressure-influence-research",
+        "empire-of-zul-ancient-focus-research",
+        "aqir-ancient-focus-research"
+      ]
+    },
+    {
+      "id": "ancient-civilizations-southern-map-research",
+      "name": "Southern empires and revolution — interpretive research map",
+      "worldspaceId": "azeroth",
+      "presentation": "terrain",
+      "cartographyLabel": "INTERPRETIVE POLITICAL TIME SLICE",
+      "interpretationNote": "This middle-era state frames the mogu empire and the peoples later associated with Pandaria as a southern theater. The region is deliberately approximate; it is not a traced pre-Sundering coastline or exact imperial boundary.",
+      "terrainTextureAsset": "textures/azeroth/ancient-civilizations-map-research/terrain-atlas.research.webp",
+      "terrainHeightAsset": "textures/azeroth/ancient-civilizations-map-research/terrain-height.research.webp",
+      "geometryIds": [
+        "ordered-kalimdor-landmass-research",
+        "well-of-eternity-focus-research",
+        "mogu-influence-research",
+        "mogu-empire-ancient-focus-research",
+        "lei-shen-ancient-focus-research",
+        "pandaren-ancient-focus-research",
+        "kang-ancient-focus-research"
+      ]
+    },
+    {
+      "id": "ancient-civilizations-map-research",
+      "name": "Kaldorei ascendance — interpretive research map",
+      "worldspaceId": "azeroth",
+      "presentation": "terrain",
+      "cartographyLabel": "INTERPRETIVE POLITICAL TIME SLICE",
+      "interpretationNote": "This late-era state preserves the ordered primordial landmass while showing only broad, source-guided kaldorei influence around the Well. It does not assert a surveyed imperial frontier or a permanent map valid for the era's entire five-thousand-year span.",
+      "terrainTextureAsset": "textures/azeroth/ancient-civilizations-map-research/terrain-atlas.research.webp",
+      "terrainHeightAsset": "textures/azeroth/ancient-civilizations-map-research/terrain-height.research.webp",
+      "geometryIds": [
+        "ordered-kalimdor-landmass-research",
+        "well-of-eternity-focus-research",
+        "kaldorei-influence-research",
+        "dark-trolls-ancient-focus-research",
+        "kaldorei-ancient-focus-research",
+        "azshara-ancient-focus-research"
+      ]
     },
     {
       "id": "black-empire-map-research",
@@ -192,6 +242,21 @@
       "visualPresence": "contextual"
     },
     {
+      "id": "aqir-ancient-spatial-research",
+      "entityId": "aqir",
+      "eraId": "ancient-civilizations",
+      "worldspaceId": "azeroth",
+      "geometryId": "aqir-ancient-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "The aqir group marks a narrated pressure across the continent. It is not an exact hive, army, or battlefield coordinate.",
+      "labelPriority": 125,
+      "visualPresence": "contextual"
+    },
+    {
       "id": "azeroth-world-soul-cosmic-research",
       "entityId": "azeroth-world-soul",
       "eraId": "cosmic-origins",
@@ -204,6 +269,21 @@
       ],
       "editorNote": "Closing story anchor that narrows the cosmic account toward Azeroth; it does not locate Azeroth within a canonical star map.",
       "labelPriority": 98
+    },
+    {
+      "id": "azshara-ancient-spatial-research",
+      "entityId": "azshara",
+      "eraId": "ancient-civilizations",
+      "worldspaceId": "azeroth",
+      "geometryId": "azshara-ancient-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "The figure represents Azshara's court and influence at the era boundary, not a precise palace coordinate.",
+      "labelPriority": 132,
+      "visualPresence": "contextual"
     },
     {
       "id": "black-empire-ordering-spatial-research",
@@ -247,6 +327,36 @@
       "labelPriority": 86
     },
     {
+      "id": "dark-trolls-ancient-spatial-research",
+      "entityId": "dark-trolls",
+      "eraId": "ancient-civilizations",
+      "worldspaceId": "azeroth",
+      "geometryId": "dark-trolls-ancient-focus-research",
+      "geographicCertainty": "inferred",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "The point makes the source-backed relationship to the central Well legible without claiming a precise settlement or migration track.",
+      "labelPriority": 124,
+      "visualPresence": "contextual"
+    },
+    {
+      "id": "empire-of-zul-ancient-spatial-research",
+      "entityId": "empire-of-zul",
+      "eraId": "ancient-civilizations",
+      "worldspaceId": "azeroth",
+      "geometryId": "empire-of-zul-ancient-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1",
+        "blizzard-rise-zandalari"
+      ],
+      "editorNote": "The collective figure is a narrative anchor for a coalition spread across many lands, not an assertion that its peoples gathered at one coordinate.",
+      "labelPriority": 126,
+      "visualPresence": "contextual"
+    },
+    {
       "id": "forge-of-origination-ordering-spatial-research",
       "entityId": "forge-of-origination",
       "eraId": "ordering-of-azeroth",
@@ -274,6 +384,36 @@
       "labelPriority": 94
     },
     {
+      "id": "kaldorei-ancient-spatial-research",
+      "entityId": "kaldorei-empire",
+      "eraId": "ancient-civilizations",
+      "worldspaceId": "azeroth",
+      "geometryId": "kaldorei-ancient-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "The collective figure is a narrative representation of a civilization distributed across many cities; it does not assign the entire empire to one point.",
+      "labelPriority": 129,
+      "visualPresence": "contextual"
+    },
+    {
+      "id": "kang-ancient-spatial-research",
+      "entityId": "kang",
+      "eraId": "ancient-civilizations",
+      "worldspaceId": "azeroth",
+      "geometryId": "kang-ancient-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "Kang is placed beside the narrated revolution as a relational figure because the research packet does not establish one exact battlefield position.",
+      "labelPriority": 128,
+      "visualPresence": "contextual"
+    },
+    {
       "id": "keepers-ordering-spatial-research",
       "entityId": "keepers",
       "eraId": "ordering-of-azeroth",
@@ -289,6 +429,22 @@
       "labelPriority": 124
     },
     {
+      "id": "lei-shen-ancient-spatial-research",
+      "entityId": "lei-shen",
+      "eraId": "ancient-civilizations",
+      "worldspaceId": "azeroth",
+      "geometryId": "lei-shen-ancient-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1",
+        "blizzard-thunder-king-portrait"
+      ],
+      "editorNote": "The figure represents Lei Shen's imperial role across the southern theater, not his location at a single narrated moment.",
+      "labelPriority": 130,
+      "visualPresence": "contextual"
+    },
+    {
       "id": "light-and-shadow-cosmic-research",
       "entityId": "light-and-shadow",
       "eraId": "cosmic-origins",
@@ -301,6 +457,21 @@
       ],
       "editorNote": "Diagrammatic opening anchor for the narrated opposition of Light and Shadow; it asserts no cosmic coordinate, direction, or scale.",
       "labelPriority": 96
+    },
+    {
+      "id": "mogu-empire-ancient-spatial-research",
+      "entityId": "mogu-empire",
+      "eraId": "ancient-civilizations",
+      "worldspaceId": "azeroth",
+      "geometryId": "mogu-empire-ancient-focus-research",
+      "geographicCertainty": "inferred",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1",
+        "blizzard-thunder-king-portrait"
+      ],
+      "editorNote": "The marker identifies the broad southern theater later associated with Pandaria, not an exact pre-Sundering capital or boundary.",
+      "labelPriority": 118,
+      "visualPresence": "persistent"
     },
     {
       "id": "neptulon-domain-black-empire-research",
@@ -356,6 +527,21 @@
       ],
       "editorNote": "The coastline preserves the atlas's Era 1 research silhouette for before-and-after continuity. It is an original reconstruction, not a traced or surveyed canonical boundary.",
       "labelPriority": 40
+    },
+    {
+      "id": "pandaren-ancient-spatial-research",
+      "entityId": "pandaren-ancient",
+      "eraId": "ancient-civilizations",
+      "worldspaceId": "azeroth",
+      "geometryId": "pandaren-ancient-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "The shared Kang artwork serves as a deliberate visual for the people central to this story beat; the point is not an exact settlement or uprising location.",
+      "labelPriority": 120,
+      "visualPresence": "contextual"
     },
     {
       "id": "pantheon-of-order-cosmic-research",
@@ -485,6 +671,20 @@
       "labelPriority": 89
     },
     {
+      "id": "well-of-eternity-ancient-spatial-research",
+      "entityId": "well-of-eternity",
+      "eraId": "ancient-civilizations",
+      "worldspaceId": "azeroth",
+      "geometryId": "well-of-eternity-focus-research",
+      "geographicCertainty": "approximate",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "The Well remains a central approximate focus inherited from Era 2; the coordinate preserves narrative continuity rather than surveyed geography.",
+      "labelPriority": 136,
+      "visualPresence": "persistent"
+    },
+    {
       "id": "well-of-eternity-ordering-spatial-research",
       "entityId": "well-of-eternity",
       "eraId": "ordering-of-azeroth",
@@ -538,6 +738,20 @@
       ],
       "editorNote": "The marker represents Chronicle's near-the-center description; it is not an exact canonical coordinate.",
       "labelPriority": 120
+    },
+    {
+      "id": "zuldazar-ancient-spatial-research",
+      "entityId": "zuldazar-ancient",
+      "eraId": "ancient-civilizations",
+      "worldspaceId": "azeroth",
+      "geometryId": "zuldazar-ancient-focus-research",
+      "geographicCertainty": "inferred",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "The atlas places Zuldazar only as a broad highland focus on its original reconstructed landmass. It is not a surveyed pre-Sundering city coordinate.",
+      "labelPriority": 122,
+      "visualPresence": "persistent"
     }
   ],
   "layers": [
@@ -574,6 +788,20 @@
   ],
   "routes": [],
   "campaigns": [
+    {
+      "id": "ancient-kalimdor-conflicts",
+      "name": "Ancient Kalimdor Conflicts",
+      "slug": "ancient-kalimdor-conflicts",
+      "eraId": "ancient-civilizations",
+      "summary": "A research grouping for the long wars that redistributed peoples and power before kaldorei ascendance, beginning with the supported troll–aqir campaign.",
+      "battleIds": [
+        "troll-aqir-war"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "contentStatus": "research"
+    },
     {
       "id": "elemental-resistance-campaign",
       "name": "The Elemental Resistance to the Black Empire",
@@ -655,8 +883,18 @@
       "slug": "ancient-civilizations",
       "worldspaceId": "azeroth",
       "order": 3,
-      "dateLabel": "Research boundary — dates pending citation review",
-      "summary": "The trolls and their empires, the aqir wars, the mogu, Pandaria, ancient humans, and the ascent of the kaldorei.",
+      "startDate": {
+        "precision": "approximate",
+        "year": -16000,
+        "label": "About 16,000 years before the Dark Portal"
+      },
+      "endDate": {
+        "precision": "approximate",
+        "year": -10000,
+        "label": "Before the War of the Ancients"
+      },
+      "dateLabel": "c. 16,000–10,000 years before the Dark Portal · research chronology",
+      "summary": "The first troll powers, the war with the aqir, the rise and fall of the mogu empire, and the ascent of the kaldorei around the Well of Eternity.",
       "mapStateId": "ancient-civilizations-map-research",
       "defaultLayerIds": [
         "regions",
@@ -665,12 +903,27 @@
         "routes",
         "labels"
       ],
-      "featuredEventIds": [],
-      "featuredBattleIds": [],
+      "featuredEventIds": [
+        "early-troll-powers-rise",
+        "aqir-awakening",
+        "aqir-successor-powers-emerge",
+        "lei-shen-unites-mogu",
+        "mogu-conquests",
+        "pandaren-revolution",
+        "dark-trolls-settle-near-well",
+        "kaldorei-ascendance",
+        "azshara-crowned"
+      ],
+      "featuredBattleIds": [
+        "troll-aqir-war"
+      ],
+      "storyGuideId": "ancient-civilizations-guided-history",
       "previousEraId": "ordering-of-azeroth",
       "nextEraId": "war-of-the-ancients",
       "sourceIds": [
-        "warcraft-chronicle-volume-1"
+        "warcraft-chronicle-volume-1",
+        "blizzard-rise-zandalari",
+        "blizzard-thunder-king-portrait"
       ],
       "contentStatus": "research"
     },
@@ -995,19 +1248,27 @@
       "type": "faction",
       "name": "Aqir",
       "slug": "aqir",
-      "shortDescription": "Resilient insectoid servants formed from the Old Gods' organic matter and set to building the empire's cities and temples.",
+      "shortDescription": "Resilient insectoid servants formed from the Old Gods' organic matter, first set to building the Black Empire and later drawn into a world-spanning war with the ancient troll powers.",
+      "body": "The atlas treats the aqir as a changing ancient people rather than a single timeless empire. The northern and southern successor societies that emerged from their retreat belong to later map states and should not be collapsed into one precise border.",
       "firstEraId": "black-empire",
       "sourceIds": [
         "warcraft-chronicle-volume-1"
       ],
       "claimIds": [
-        "aqir-role-claim"
+        "aqir-role-claim",
+        "aqir-war-and-retreat-claim"
       ],
       "tags": [
         "black-empire",
         "servants",
-        "aqir"
+        "aqir",
+        "ancient-kalimdor",
+        "old-god-servants"
       ],
+      "mapVisual": {
+        "asset": "images/subjects/ancient-civilizations/aqir.research.webp",
+        "scale": 1
+      },
       "contentStatus": "research"
     },
     {
@@ -1033,6 +1294,35 @@
         "cosmology",
         "primordial"
       ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "azshara",
+      "type": "character",
+      "name": "Queen Azshara",
+      "slug": "azshara",
+      "shortDescription": "The exceptionally gifted and widely admired queen under whom the kaldorei empire reached extraordinary power before the War of the Ancients.",
+      "body": "This era ends with Azshara's ascent and the concentration of power around her court. The invasion and choices that follow are reserved for Era 4 so that the historical boundary remains legible.",
+      "firstEraId": "ancient-civilizations",
+      "featuredEraIds": [
+        "ancient-civilizations",
+        "war-of-the-ancients"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "azshara-crowned-claim"
+      ],
+      "tags": [
+        "kaldorei",
+        "queen",
+        "highborne"
+      ],
+      "mapFigure": {
+        "asset": "images/characters/ancient-civilizations/azshara.research.webp",
+        "scale": 0.82
+      },
       "contentStatus": "research"
     },
     {
@@ -1087,6 +1377,34 @@
       "contentStatus": "research"
     },
     {
+      "id": "dark-trolls",
+      "type": "faction",
+      "name": "The Dark Trolls",
+      "slug": "dark-trolls",
+      "shortDescription": "A reclusive nocturnal troll people whose migration toward the Well of Eternity became the beginning of the kaldorei story.",
+      "body": "Chronicle places this community apart from the greater troll struggles. The atlas shows movement toward the Well as an interpretive transition, not as an exact migration route preserved by a contemporary record.",
+      "firstEraId": "ancient-civilizations",
+      "featuredEraIds": [
+        "ancient-civilizations"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "dark-trolls-near-well-claim"
+      ],
+      "tags": [
+        "troll",
+        "well-of-eternity",
+        "kaldorei-origins"
+      ],
+      "mapVisual": {
+        "asset": "images/subjects/ancient-civilizations/dark-trolls.research.webp",
+        "scale": 0.98
+      },
+      "contentStatus": "research"
+    },
+    {
       "id": "elemental-hosts",
       "type": "faction",
       "name": "The Elemental Hosts",
@@ -1106,6 +1424,35 @@
         "editorial-grouping",
         "primordial"
       ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "empire-of-zul",
+      "type": "faction",
+      "name": "The Empire of Zul",
+      "slug": "empire-of-zul",
+      "shortDescription": "A coalition of ancient troll peoples assembled under Zandalari leadership when the awakened aqir threatened them across Kalimdor.",
+      "body": "The name describes the wartime union rather than a single permanent territorial state. Its member peoples retained distinct lands and identities, and the coalition loosened after the long pursuit of the aqir ended.",
+      "firstEraId": "ancient-civilizations",
+      "featuredEraIds": [
+        "ancient-civilizations"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1",
+        "blizzard-rise-zandalari"
+      ],
+      "claimIds": [
+        "empire-of-zul-formation-claim"
+      ],
+      "tags": [
+        "troll",
+        "coalition",
+        "ancient-kalimdor"
+      ],
+      "mapVisual": {
+        "asset": "images/subjects/ancient-civilizations/empire-of-zul.research.webp",
+        "scale": 1.05
+      },
       "contentStatus": "research"
     },
     {
@@ -1156,6 +1503,62 @@
       "contentStatus": "research"
     },
     {
+      "id": "kaldorei-empire",
+      "type": "faction",
+      "name": "The Kaldorei Empire",
+      "slug": "kaldorei-empire",
+      "shortDescription": "The civilization that arose around the Well of Eternity, mastered its arcane energies, and expanded swiftly across ancient Kalimdor.",
+      "body": "Its rise changed the political balance inherited from the trolls and southern empires. The broad influence shown by the atlas is a research visualization, not a claim that ancient rule followed a precise modern-style frontier.",
+      "firstEraId": "ancient-civilizations",
+      "featuredEraIds": [
+        "ancient-civilizations"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "kaldorei-rise-claim"
+      ],
+      "tags": [
+        "kaldorei",
+        "empire",
+        "well-of-eternity"
+      ],
+      "mapVisual": {
+        "asset": "images/subjects/ancient-civilizations/kaldorei.research.webp",
+        "scale": 1.02
+      },
+      "contentStatus": "research"
+    },
+    {
+      "id": "kang",
+      "type": "character",
+      "name": "Kang",
+      "slug": "kang",
+      "shortDescription": "The pandaren teacher associated with the unarmed discipline that helped turn resistance to the mogu into a wider revolution.",
+      "body": "Kang's importance lies not in a single mapped duel but in a method that could spread among a disarmed people. The figure is therefore placed relationally beside the southern uprising rather than assigned an exact battlefield.",
+      "firstEraId": "ancient-civilizations",
+      "featuredEraIds": [
+        "ancient-civilizations"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "kang-resistance-method-claim"
+      ],
+      "tags": [
+        "pandaren",
+        "teacher",
+        "revolution"
+      ],
+      "mapFigure": {
+        "asset": "images/characters/ancient-civilizations/kang.research.webp",
+        "scale": 0.82
+      },
+      "contentStatus": "research"
+    },
+    {
       "id": "keepers",
       "type": "faction",
       "name": "The Keepers",
@@ -1186,6 +1589,38 @@
       "contentStatus": "research"
     },
     {
+      "id": "lei-shen",
+      "type": "character",
+      "name": "Lei Shen",
+      "slug": "lei-shen",
+      "aliases": [
+        "The Thunder King"
+      ],
+      "shortDescription": "The first mogu emperor, who united rival kings and established a far-reaching imperial order in the southern lands.",
+      "body": "Lei Shen's rise gave the divided mogu a new unity of purpose and brought other peoples under their rule. This portrait is an original interpretive visualization and does not claim an exact historical appearance.",
+      "firstEraId": "ancient-civilizations",
+      "featuredEraIds": [
+        "ancient-civilizations"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1",
+        "blizzard-thunder-king-portrait"
+      ],
+      "claimIds": [
+        "lei-shen-unites-mogu-claim"
+      ],
+      "tags": [
+        "mogu",
+        "emperor",
+        "thunder-king"
+      ],
+      "mapFigure": {
+        "asset": "images/characters/ancient-civilizations/lei-shen.research.webp",
+        "scale": 0.85
+      },
+      "contentStatus": "research"
+    },
+    {
       "id": "light-and-shadow",
       "type": "other",
       "name": "Light and Shadow",
@@ -1210,6 +1645,31 @@
         "light",
         "shadow",
         "void"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "mogu-empire",
+      "type": "faction",
+      "name": "The Mogu Empire",
+      "slug": "mogu-empire",
+      "shortDescription": "The southern empire forged by Lei Shen from divided mogu kingdoms and expanded through the conquest and subjugation of neighboring peoples.",
+      "body": "This dossier distinguishes Lei Shen's imperial project from the earlier keeper-directed role of the mogu. Its map extent is interpretive and deliberately avoids a hard frontier unsupported by the research sources.",
+      "firstEraId": "ancient-civilizations",
+      "featuredEraIds": [
+        "ancient-civilizations"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1",
+        "blizzard-thunder-king-portrait"
+      ],
+      "claimIds": [
+        "mogu-empire-established-claim"
+      ],
+      "tags": [
+        "mogu",
+        "empire",
+        "pandaria"
       ],
       "contentStatus": "research"
     },
@@ -1286,6 +1746,34 @@
       "mapVisual": {
         "asset": "images/subjects/cosmic-origins/old-gods.research.webp",
         "scale": 1.08
+      },
+      "contentStatus": "research"
+    },
+    {
+      "id": "pandaren-ancient",
+      "type": "faction",
+      "name": "The Ancient Pandaren",
+      "slug": "pandaren-ancient",
+      "shortDescription": "One of the peoples subjected by the mogu empire and central to the uprising that ended its rule.",
+      "body": "The public summary stays at the level supported by the current research packet: a people denied weapons and written learning who developed other means of preserving discipline and resisting imperial rule.",
+      "firstEraId": "ancient-civilizations",
+      "featuredEraIds": [
+        "ancient-civilizations"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "pandaren-revolution-role-claim"
+      ],
+      "tags": [
+        "pandaren",
+        "pandaria",
+        "revolution"
+      ],
+      "mapVisual": {
+        "asset": "images/characters/ancient-civilizations/kang.research.webp",
+        "scale": 0.92
       },
       "contentStatus": "research"
     },
@@ -1514,7 +2002,8 @@
       "body": "The Well was not created as an ornamental monument. It was Azeroth's exposed lifeblood brought into balance by wards, and its power would nourish life while shaping every era that followed.",
       "firstEraId": "ordering-of-azeroth",
       "featuredEraIds": [
-        "ordering-of-azeroth"
+        "ordering-of-azeroth",
+        "ancient-civilizations"
       ],
       "sourceIds": [
         "warcraft-chronicle-volume-1"
@@ -1603,6 +2092,30 @@
         "scale": 1.08
       },
       "contentStatus": "research"
+    },
+    {
+      "id": "zuldazar-ancient",
+      "type": "location",
+      "name": "Ancient Zuldazar",
+      "slug": "zuldazar-ancient",
+      "shortDescription": "The highland center of the Zandalar tribe and a political heart of the earliest troll civilization represented in this era.",
+      "body": "Its placement on primordial Kalimdor is shown only as an inferred regional focus. The research map does not claim a surveyed ancient coastline, city footprint, or political boundary.",
+      "firstEraId": "ancient-civilizations",
+      "featuredEraIds": [
+        "ancient-civilizations"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "zuldazar-ancient-center-claim"
+      ],
+      "tags": [
+        "zuldazar",
+        "zandalari",
+        "troll"
+      ],
+      "contentStatus": "research"
     }
   ],
   "events": [
@@ -1636,6 +2149,70 @@
       ],
       "claimIds": [
         "amanthul-awakens-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "aqir-awakening",
+      "kind": "event",
+      "name": "The Aqir Awaken",
+      "slug": "aqir-awakening",
+      "eraId": "ancient-civilizations",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "After the early troll powers had spread",
+        "relativeToId": "early-troll-powers-rise"
+      },
+      "summary": "Ancient aqir forces emerged again and pressed into troll-held lands, turning scattered rivalry into a shared existential danger.",
+      "participantEntityIds": [
+        "aqir",
+        "empire-of-zul"
+      ],
+      "causesEventIds": [
+        "troll-aqir-war"
+      ],
+      "relationshipIds": [
+        "troll-powers-precede-aqir-awakening",
+        "aqir-awakening-causes-war"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "aqir-awakening-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "aqir-successor-powers-emerge",
+      "kind": "event",
+      "name": "The Aqir Successor Powers Emerge",
+      "slug": "aqir-successor-powers-emerge",
+      "eraId": "ancient-civilizations",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "After the long troll pursuit",
+        "relativeToId": "troll-aqir-war"
+      },
+      "summary": "Separated aqir populations entrenched themselves in distant refuges, producing new northern and southern powers rather than restoring one united dominion.",
+      "participantEntityIds": [
+        "aqir",
+        "empire-of-zul"
+      ],
+      "causedByEventIds": [
+        "troll-aqir-war"
+      ],
+      "relationshipIds": [
+        "troll-aqir-war-causes-aqir-division",
+        "aqir-division-precedes-southern-empires"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "aqir-successors-event-claim"
       ],
       "contentStatus": "research"
     },
@@ -1679,6 +2256,38 @@
       ],
       "claimIds": [
         "azeroth-ordered-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "azshara-crowned",
+      "kind": "event",
+      "name": "Azshara Rises to the Throne",
+      "slug": "azshara-crowned",
+      "eraId": "ancient-civilizations",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "Near the height of prewar kaldorei power",
+        "relativeToId": "kaldorei-ascendance"
+      },
+      "summary": "Azshara became queen of a powerful kaldorei civilization whose court and arcane ambitions stood at the threshold of the next catastrophe.",
+      "locationIds": [
+        "well-of-eternity"
+      ],
+      "participantEntityIds": [
+        "azshara",
+        "kaldorei-empire"
+      ],
+      "relationshipIds": [
+        "kaldorei-rise-precedes-azshara",
+        "azshara-precedes-war-ancients"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "azshara-crowned-event-claim"
       ],
       "contentStatus": "research"
     },
@@ -1753,6 +2362,180 @@
       ],
       "claimIds": [
         "black-empire-rise-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "dark-trolls-settle-near-well",
+      "kind": "event",
+      "name": "The Dark Trolls Settle Near the Well",
+      "slug": "dark-trolls-settle-near-well",
+      "eraId": "ancient-civilizations",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "approximate",
+        "year": -15000,
+        "label": "Beginning around 15,000 years before the Dark Portal"
+      },
+      "summary": "A reclusive dark troll people moved toward the center of Kalimdor and made their home near the Well of Eternity.",
+      "locationIds": [
+        "well-of-eternity",
+        "primordial-kalimdor"
+      ],
+      "participantEntityIds": [
+        "dark-trolls"
+      ],
+      "causesEventIds": [
+        "kaldorei-ascendance"
+      ],
+      "relationshipIds": [
+        "southern-revolution-precedes-kaldorei-rise",
+        "well-transforms-dark-trolls"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "dark-trolls-settle-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "early-troll-powers-rise",
+      "kind": "event",
+      "name": "The Early Troll Powers Rise",
+      "slug": "early-troll-powers-rise",
+      "eraId": "ancient-civilizations",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "approximate",
+        "year": -16000,
+        "label": "About 16,000 years before the Dark Portal"
+      },
+      "summary": "Troll peoples flourished across the forests and jungles of ordered Kalimdor, with the Zandalar, Amani, Gurubashi, and Drakkari among the powers that took shape.",
+      "locationIds": [
+        "primordial-kalimdor",
+        "zuldazar-ancient"
+      ],
+      "participantEntityIds": [
+        "empire-of-zul"
+      ],
+      "relationshipIds": [
+        "ordering-precedes-troll-powers",
+        "troll-powers-precede-aqir-awakening"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1",
+        "blizzard-rise-zandalari"
+      ],
+      "claimIds": [
+        "early-troll-powers-rise-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "kaldorei-ascendance",
+      "kind": "event",
+      "name": "The Kaldorei Ascend",
+      "slug": "kaldorei-ascendance",
+      "eraId": "ancient-civilizations",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "Across generations beside the Well",
+        "relativeToId": "dark-trolls-settle-near-well"
+      },
+      "summary": "Changed by long proximity to the Well, the emerging kaldorei mastered arcane power, built cities, and expanded across Kalimdor.",
+      "locationIds": [
+        "well-of-eternity",
+        "primordial-kalimdor"
+      ],
+      "participantEntityIds": [
+        "dark-trolls",
+        "kaldorei-empire"
+      ],
+      "causedByEventIds": [
+        "dark-trolls-settle-near-well"
+      ],
+      "relationshipIds": [
+        "well-transforms-dark-trolls",
+        "kaldorei-rise-causes-troll-decline",
+        "kaldorei-rise-precedes-azshara"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "kaldorei-ascendance-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "lei-shen-unites-mogu",
+      "kind": "event",
+      "name": "Lei Shen Unites the Mogu",
+      "slug": "lei-shen-unites-mogu",
+      "eraId": "ancient-civilizations",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "During the age of divided southern kingdoms"
+      },
+      "summary": "Lei Shen overcame rival mogu kings and gathered their competing realms into a single imperial power.",
+      "participantEntityIds": [
+        "lei-shen",
+        "mogu-empire"
+      ],
+      "causesEventIds": [
+        "mogu-conquests"
+      ],
+      "relationshipIds": [
+        "aqir-division-precedes-southern-empires",
+        "lei-shen-causes-mogu-empire"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1",
+        "blizzard-thunder-king-portrait"
+      ],
+      "claimIds": [
+        "lei-shen-unites-mogu-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "mogu-conquests",
+      "kind": "event",
+      "name": "The Mogu Empire Expands",
+      "slug": "mogu-conquests",
+      "eraId": "ancient-civilizations",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "After Lei Shen's unification",
+        "relativeToId": "lei-shen-unites-mogu"
+      },
+      "summary": "The new empire subdued neighboring peoples and imposed its rule across much of the southern lands later known as Pandaria.",
+      "participantEntityIds": [
+        "lei-shen",
+        "mogu-empire",
+        "pandaren-ancient"
+      ],
+      "causedByEventIds": [
+        "lei-shen-unites-mogu"
+      ],
+      "causesEventIds": [
+        "pandaren-revolution"
+      ],
+      "relationshipIds": [
+        "lei-shen-causes-mogu-empire",
+        "mogu-rule-causes-revolution"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1",
+        "blizzard-thunder-king-portrait"
+      ],
+      "claimIds": [
+        "mogu-conquests-event-claim"
       ],
       "contentStatus": "research"
     },
@@ -1850,6 +2633,40 @@
       ],
       "claimIds": [
         "old-gods-scattered-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "pandaren-revolution",
+      "kind": "event",
+      "name": "The Pandaren Revolution",
+      "slug": "pandaren-revolution",
+      "eraId": "ancient-civilizations",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "After generations of mogu rule",
+        "relativeToId": "mogu-conquests"
+      },
+      "summary": "Resistance associated with Kang spread among the mogu's subject peoples until the imperial order broke and the southern lands entered a new age.",
+      "participantEntityIds": [
+        "kang",
+        "pandaren-ancient",
+        "mogu-empire"
+      ],
+      "causedByEventIds": [
+        "mogu-conquests"
+      ],
+      "relationshipIds": [
+        "mogu-rule-causes-revolution",
+        "kang-enables-pandaren-revolution",
+        "revolution-ends-mogu-dominion"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "pandaren-revolution-event-claim"
       ],
       "contentStatus": "research"
     },
@@ -2639,6 +3456,184 @@
         "titan-forged-war-event-claim"
       ],
       "contentStatus": "research"
+    },
+    {
+      "id": "troll-aqir-war",
+      "kind": "battle",
+      "name": "The Troll–Aqir War",
+      "slug": "troll-aqir-war",
+      "eraId": "ancient-civilizations",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "After the aqir awakening",
+        "relativeToId": "aqir-awakening"
+      },
+      "summary": "A long, multi-front struggle in which the Empire of Zul resisted the aqir and pursued their retreating forces toward the distant reaches of Kalimdor.",
+      "description": "This dossier presents strategic phases rather than a tactical simulation. The surviving account supports broad directions and consequences, not a single battlefield path or exact front line.",
+      "participantEntityIds": [
+        "empire-of-zul",
+        "aqir"
+      ],
+      "causedByEventIds": [
+        "aqir-awakening"
+      ],
+      "causesEventIds": [
+        "aqir-successor-powers-emerge"
+      ],
+      "relationshipIds": [
+        "aqir-awakening-causes-war",
+        "troll-aqir-war-causes-aqir-division"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "troll-aqir-war-event-claim"
+      ],
+      "campaignId": "ancient-kalimdor-conflicts",
+      "combatants": [
+        {
+          "factionId": "empire-of-zul",
+          "role": "defender"
+        },
+        {
+          "factionId": "aqir",
+          "role": "attacker"
+        }
+      ],
+      "objectives": [
+        {
+          "factionId": "empire-of-zul",
+          "summary": "Unite the threatened troll peoples, survive the first assault, and drive the aqir away from their centers."
+        },
+        {
+          "factionId": "aqir",
+          "summary": "Break the emerging troll powers and spread through their territories."
+        }
+      ],
+      "phases": [
+        {
+          "id": "aqir-pressure",
+          "title": "The buried danger returns",
+          "summary": "Aqir forces emerge and press into the divided lands of the troll peoples.",
+          "durationMs": 6500,
+          "narration": "The first change was not a border but a pressure felt across many lands: an ancient enemy rising beneath a world that had begun to forget it.",
+          "camera": {
+            "position": [
+              1.6,
+              6.6,
+              6.2
+            ],
+            "target": [
+              1.2,
+              0,
+              0.8
+            ],
+            "durationMs": 1100
+          },
+          "visualActions": [
+            {
+              "type": "show_relationships",
+              "relationshipIds": [
+                "troll-powers-precede-aqir-awakening"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "zul-coalition",
+          "title": "The trolls unite",
+          "summary": "Zandalari leadership draws several troll peoples into the Empire of Zul.",
+          "durationMs": 7000,
+          "narration": "Old rivalries did not vanish, yet the threat made alliance possible. The coalition carried many peoples without making them one people.",
+          "camera": {
+            "position": [
+              -2.8,
+              5.8,
+              5.1
+            ],
+            "target": [
+              -2.4,
+              0,
+              -0.4
+            ],
+            "durationMs": 1050
+          },
+          "visualActions": [
+            {
+              "type": "show_relationships",
+              "relationshipIds": [
+                "aqir-awakening-causes-war"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "long-pursuit",
+          "title": "The pursuit crosses Kalimdor",
+          "summary": "Troll forces pursue the retreating aqir toward northern and southern refuges over generations of war.",
+          "durationMs": 7500,
+          "narration": "The struggle widened beyond any single field. Its roads are represented only in broad direction, for no surviving account measures every march.",
+          "camera": {
+            "position": [
+              0,
+              7.4,
+              7.1
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "durationMs": 1250
+          },
+          "visualActions": [
+            {
+              "type": "show_relationships",
+              "relationshipIds": [
+                "troll-aqir-war-causes-aqir-division"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "divided-refuges",
+          "title": "One enemy becomes several powers",
+          "summary": "The aqir threat is broken apart, leaving separated successor populations entrenched at opposite reaches of the continent.",
+          "durationMs": 7000,
+          "narration": "Victory did not empty the earth. It divided an enemy, leaving distant powers whose descendants would trouble later ages.",
+          "camera": {
+            "position": [
+              0.7,
+              6.8,
+              6.3
+            ],
+            "target": [
+              0.4,
+              0,
+              0.2
+            ],
+            "durationMs": 1100
+          },
+          "visualActions": [
+            {
+              "type": "show_relationships",
+              "relationshipIds": [
+                "troll-aqir-war-causes-aqir-division"
+              ]
+            }
+          ]
+        }
+      ],
+      "outcome": {
+        "summary": "The Empire of Zul survived and the aqir were driven into separated refuges; the troll coalition then loosened as its members occupied distant regions.",
+        "winnerFactionId": "empire-of-zul"
+      },
+      "geographicCertainty": "unknown",
+      "geographicEditorNote": "The conflict was world-spanning and its exact fronts are not reconstructed as a battlefield marker or route.",
+      "importance": "era_defining",
+      "contentStatus": "research"
     }
   ],
   "sources": [
@@ -2648,6 +3643,20 @@
       "sourceType": "website",
       "publicationDate": "2022-11-22",
       "notes": "First-party Blizzard historical overview: https://worldofwarcraft.blizzard.com/en-us/news/23876527"
+    },
+    {
+      "id": "blizzard-rise-zandalari",
+      "title": "Patch 4.1: Rise of the Zandalari Trailer Revealed",
+      "sourceType": "website",
+      "publicationDate": "2011-04-26",
+      "notes": "First-party Blizzard overview describing the former reach of ancient troll empires and the Zandalari relationship to the wider troll peoples: https://worldofwarcraft.blizzard.com/en-us/news/2657805/patch-41-rise-of-the-zandalari-trailer-revealed"
+    },
+    {
+      "id": "blizzard-thunder-king-portrait",
+      "title": "Know Thy Enemy: Portrait of a Thunder King",
+      "sourceType": "website",
+      "publicationDate": "2013-02-20",
+      "notes": "First-party Blizzard overview of Lei Shen's unification of the mogu and conquest of ancient Pandaria: https://worldofwarcraft.blizzard.com/en-gb/news/10038737/know-thy-enemy-portrait-of-a-thunder-king"
     },
     {
       "id": "warcraft-chronicle-volume-1",
@@ -2687,10 +3696,22 @@
   ],
   "citations": [
     {
+      "id": "blizzard-ancient-troll-empires",
+      "sourceId": "blizzard-rise-zandalari",
+      "section": "Patch 4.1 historical introduction",
+      "note": "First-party corroboration that troll empires once extended broadly across ancient Kalimdor; it does not establish precise borders for this atlas."
+    },
+    {
       "id": "blizzard-black-empire-handoff",
       "sourceId": "blizzard-dragon-aspects-history",
       "section": "The Rise of the Aspects",
       "note": "Supports the transition into the Ordering: Titan-forged armies were created and led against the Black Empire while protecting Azeroth's world-soul."
+    },
+    {
+      "id": "blizzard-lei-shen-empire",
+      "sourceId": "blizzard-thunder-king-portrait",
+      "section": "The First Emperor: Lei Shen",
+      "note": "First-party corroboration that Lei Shen united the mogu kings and led the conquest and subjugation of other peoples in ancient Pandaria."
     },
     {
       "id": "blizzard-ordering-titan-forged",
@@ -2735,6 +3756,15 @@
       "note": "Supports Aggramar's discovery of Azeroth, the Pantheon's recognition of the threatened world-soul, and the decision to intervene. Pagination is indexed for research and requires human confirmation against the selected complete edition."
     },
     {
+      "id": "chronicle-v1-empire-zul-aqir",
+      "sourceId": "warcraft-chronicle-volume-1",
+      "chapter": "Chapter III: Ancient Kalimdor",
+      "pageStart": 70,
+      "pageEnd": 76,
+      "section": "The Empire of Zul and the Awakening of the Aqir",
+      "note": "Supports the early troll polities, the Empire of Zul, Kith'ix's awakening, the troll-aqir war, and the aqir retreat toward separate northern and southern strongholds. The official Dark Horse preview supplies this research range; pagination and interpretation require human confirmation."
+    },
+    {
       "id": "chronicle-v1-fall-black-empire",
       "sourceId": "warcraft-chronicle-volume-1",
       "chapter": "Chapter II: Primordial Azeroth",
@@ -2742,6 +3772,24 @@
       "pageEnd": 35,
       "section": "Fall of the Black Empire",
       "note": "Supports Y'Shaarj's destruction by Aman'Thul, the catastrophic wound left in Azeroth, and the defeat of the Black Empire. Exact wording and pagination require human review."
+    },
+    {
+      "id": "chronicle-v1-mogu-empire",
+      "sourceId": "warcraft-chronicle-volume-1",
+      "chapter": "Chapter III: Ancient Kalimdor",
+      "pageStart": 77,
+      "pageEnd": 84,
+      "section": "The Mogu Empire",
+      "note": "Supports the mogu's division after Ra's disappearance, Lei Shen's rise, the empire he established in the southern lands, and its systems of conquest. The exact range requires human confirmation against the selected edition."
+    },
+    {
+      "id": "chronicle-v1-night-elves-rise",
+      "sourceId": "warcraft-chronicle-volume-1",
+      "chapter": "Chapter III: Ancient Kalimdor",
+      "pageStart": 93,
+      "pageEnd": 99,
+      "section": "The Well of Eternity and the Rise of the Night Elves; Queen Azshara",
+      "note": "Supports Chronicle's account of dark trolls settling near the Well, their transformation into the kaldorei, the rapid expansion of their civilization, and Azshara's ascent. Exact section boundary and pagination require human confirmation."
     },
     {
       "id": "chronicle-v1-ordering-azeroth",
@@ -2760,6 +3808,15 @@
       "pageEnd": 18,
       "section": "Origins of the Universe",
       "note": "Supports Chronicle's account of primordial Light and Void, the birth of the Great Dark Beyond, and the formation of the Twisting Nether. Pagination requires human confirmation against the selected complete edition."
+    },
+    {
+      "id": "chronicle-v1-pandaren-revolution",
+      "sourceId": "warcraft-chronicle-volume-1",
+      "chapter": "Chapter III: Ancient Kalimdor",
+      "pageStart": 85,
+      "pageEnd": 90,
+      "section": "The Pandaren Revolution",
+      "note": "Working research range for Kang's resistance, the wider slave uprising, and the fall of the mogu empire. Exact pagination, named participants, and sequence require human review before promotion."
     },
     {
       "id": "chronicle-v1-pantheon-departure",
@@ -2913,6 +3970,17 @@
       "status": "active"
     },
     {
+      "id": "aqir-awakening-event-claim",
+      "subjectId": "aqir-awakening",
+      "predicate": "event-summary",
+      "value": "The renewed aqir threat drove the previously divided troll peoples toward a common military response.",
+      "citationIds": [
+        "chronicle-v1-empire-zul-aqir"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
       "id": "aqir-role-claim",
       "subjectId": "aqir",
       "predicate": "black-empire-role",
@@ -2923,6 +3991,29 @@
       "confidence": "strongly_supported",
       "status": "active",
       "editorNote": "The labor role is explicit in the cited passage; the defensive military role follows from the same source's account of the elemental war and should be confirmed against the complete page sequence."
+    },
+    {
+      "id": "aqir-successors-event-claim",
+      "subjectId": "aqir-successor-powers-emerge",
+      "predicate": "event-summary",
+      "value": "The troll pursuit divided surviving aqir populations between distant refuges where separate successor powers emerged.",
+      "citationIds": [
+        "chronicle-v1-empire-zul-aqir"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "aqir-war-and-retreat-claim",
+      "subjectId": "aqir",
+      "predicate": "war-outcome",
+      "value": "The united troll campaign forced the aqir toward distant northern and southern refuges from which distinct successor powers later emerged.",
+      "citationIds": [
+        "chronicle-v1-empire-zul-aqir"
+      ],
+      "confidence": "explicit",
+      "status": "active",
+      "editorNote": "The broad direction is supported; the atlas routes and refuge extents remain interpretive."
     },
     {
       "id": "azeroth-ordered-event-claim",
@@ -2954,6 +4045,28 @@
       "value": "Its immense development consumed much of Azeroth's Spirit, reducing elemental balance.",
       "citationIds": [
         "chronicle-v1-reign-elements"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "azshara-crowned-event-claim",
+      "subjectId": "azshara-crowned",
+      "predicate": "event-summary",
+      "value": "Azshara's accession gathered kaldorei political and magical power around a widely admired queen and her court.",
+      "citationIds": [
+        "chronicle-v1-night-elves-rise"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "azshara-crowned-claim",
+      "subjectId": "azshara",
+      "predicate": "accession",
+      "value": "Azshara rose to rule the kaldorei at the height of their growing civilization and concentrated exceptional magical and political power around her court.",
+      "citationIds": [
+        "chronicle-v1-night-elves-rise"
       ],
       "confidence": "explicit",
       "status": "active"
@@ -3019,6 +4132,40 @@
       "editorNote": "The project treats the Volume 1 chart as a sourced framework, not an uncontested omniscient diagram."
     },
     {
+      "id": "dark-trolls-near-well-claim",
+      "subjectId": "dark-trolls",
+      "predicate": "migration-and-transformation",
+      "value": "A reclusive dark troll people settled near the Well of Eternity and changed over generations into the people later known as the kaldorei.",
+      "citationIds": [
+        "chronicle-v1-night-elves-rise"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "dark-trolls-settle-event-claim",
+      "subjectId": "dark-trolls-settle-near-well",
+      "predicate": "event-summary",
+      "value": "A reclusive dark troll people settled near the Well of Eternity, beginning a long transformation into the kaldorei.",
+      "citationIds": [
+        "chronicle-v1-night-elves-rise"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "early-troll-powers-rise-event-claim",
+      "subjectId": "early-troll-powers-rise",
+      "predicate": "event-summary",
+      "value": "By about sixteen thousand years before the Dark Portal, several troll peoples had established powerful societies across ancient Kalimdor.",
+      "citationIds": [
+        "chronicle-v1-empire-zul-aqir",
+        "blizzard-ancient-troll-empires"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
       "id": "elemental-hosts-conflict-claim",
       "subjectId": "elemental-hosts",
       "predicate": "primordial-role",
@@ -3054,6 +4201,17 @@
       "status": "active"
     },
     {
+      "id": "empire-of-zul-formation-claim",
+      "subjectId": "empire-of-zul",
+      "predicate": "formation",
+      "value": "Zandalari leadership brought several troll peoples into the Empire of Zul in response to the awakened aqir threat.",
+      "citationIds": [
+        "chronicle-v1-empire-zul-aqir"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
       "id": "forge-of-origination-purpose-claim",
       "subjectId": "forge-of-origination",
       "predicate": "world-forge-purpose",
@@ -3071,6 +4229,39 @@
       "value": "The physical universe called the Great Dark Beyond arose from the cosmic clash described in Chronicle's opening account.",
       "citationIds": [
         "chronicle-v1-origins-universe"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "kaldorei-ascendance-event-claim",
+      "subjectId": "kaldorei-ascendance",
+      "predicate": "event-summary",
+      "value": "The civilization arising around the Well expanded until kaldorei power became the dominant political force on ancient Kalimdor.",
+      "citationIds": [
+        "chronicle-v1-night-elves-rise"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "kaldorei-rise-claim",
+      "subjectId": "kaldorei-empire",
+      "predicate": "rise-and-expansion",
+      "value": "The kaldorei developed around the Well, became powerful arcane practitioners, and expanded rapidly across ancient Kalimdor.",
+      "citationIds": [
+        "chronicle-v1-night-elves-rise"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "kang-resistance-method-claim",
+      "subjectId": "kang",
+      "predicate": "resistance-method",
+      "value": "Kang developed and taught an unarmed discipline that could spread among pandaren denied conventional weapons.",
+      "citationIds": [
+        "chronicle-v1-pandaren-revolution"
       ],
       "confidence": "explicit",
       "status": "active"
@@ -3100,6 +4291,30 @@
       "status": "active"
     },
     {
+      "id": "lei-shen-unites-mogu-event-claim",
+      "subjectId": "lei-shen-unites-mogu",
+      "predicate": "event-summary",
+      "value": "Lei Shen ended the age of rival mogu kingdoms by defeating their rulers and establishing himself as emperor.",
+      "citationIds": [
+        "chronicle-v1-mogu-empire",
+        "blizzard-lei-shen-empire"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "lei-shen-unites-mogu-claim",
+      "subjectId": "lei-shen",
+      "predicate": "imperial-unification",
+      "value": "Lei Shen overcame rival mogu kings, declared himself emperor, and gave the mogu a single imperial purpose.",
+      "citationIds": [
+        "chronicle-v1-mogu-empire",
+        "blizzard-lei-shen-empire"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
       "id": "light-shadow-tension-claim",
       "subjectId": "light-and-shadow",
       "predicate": "primordial-opposition",
@@ -3110,6 +4325,30 @@
       "confidence": "explicit",
       "status": "active",
       "editorNote": "Scoped to Chronicle Volume 1's narrated account; later cosmological perspectives require separate claims rather than silent replacement."
+    },
+    {
+      "id": "mogu-conquests-event-claim",
+      "subjectId": "mogu-conquests",
+      "predicate": "event-summary",
+      "value": "The unified mogu empire expanded across the southern lands and subjected several neighboring peoples.",
+      "citationIds": [
+        "chronicle-v1-mogu-empire",
+        "blizzard-lei-shen-empire"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "mogu-empire-established-claim",
+      "subjectId": "mogu-empire",
+      "predicate": "establishment",
+      "value": "Lei Shen united divided mogu kingdoms and established an empire that conquered and subjected neighboring peoples in the southern lands.",
+      "citationIds": [
+        "chronicle-v1-mogu-empire",
+        "blizzard-lei-shen-empire"
+      ],
+      "confidence": "explicit",
+      "status": "active"
     },
     {
       "id": "neptulon-domain-placement-claim",
@@ -3197,6 +4436,28 @@
       "value": "The Void Lords cast innumerable Old Gods into the physical universe to seek a world-soul vulnerable to corruption.",
       "citationIds": [
         "chronicle-v1-void-lords-old-gods"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "pandaren-revolution-event-claim",
+      "subjectId": "pandaren-revolution",
+      "predicate": "event-summary",
+      "value": "The uprising associated with Kang spread beyond the pandaren, broke the mogu empire's control, and opened a new political order in the southern lands.",
+      "citationIds": [
+        "chronicle-v1-pandaren-revolution"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "pandaren-revolution-role-claim",
+      "subjectId": "pandaren-ancient",
+      "predicate": "revolution-role",
+      "value": "Pandaren resistance became central to a wider uprising of peoples subjected by the mogu empire.",
+      "citationIds": [
+        "chronicle-v1-pandaren-revolution"
       ],
       "confidence": "explicit",
       "status": "active"
@@ -3389,6 +4650,18 @@
       "status": "active"
     },
     {
+      "id": "troll-aqir-war-event-claim",
+      "subjectId": "troll-aqir-war",
+      "predicate": "conflict-outcome",
+      "value": "The Empire of Zul survived the aqir assault and pursued the retreating aqir across ancient Kalimdor until the immediate threat was broken.",
+      "citationIds": [
+        "chronicle-v1-empire-zul-aqir"
+      ],
+      "confidence": "explicit",
+      "status": "active",
+      "editorNote": "This dossier groups a long, multi-front war and does not claim one localized battle."
+    },
+    {
       "id": "twisting-nether-origin-claim",
       "subjectId": "twisting-nether",
       "predicate": "origin-and-nature",
@@ -3499,6 +4772,18 @@
       ],
       "confidence": "explicit",
       "status": "active"
+    },
+    {
+      "id": "zuldazar-ancient-center-claim",
+      "subjectId": "zuldazar-ancient",
+      "predicate": "political-center",
+      "value": "Zuldazar was the highland center of the Zandalar tribe during the formation of the early troll powers.",
+      "citationIds": [
+        "chronicle-v1-empire-zul-aqir"
+      ],
+      "confidence": "explicit",
+      "status": "active",
+      "editorNote": "The city relationship is explicit; its primordial atlas coordinate is inferred."
     }
   ],
   "relationships": [
@@ -3511,6 +4796,37 @@
         "chronicle-v1-titans"
       ],
       "confidence": "explicit"
+    },
+    {
+      "id": "aqir-awakening-causes-war",
+      "fromId": "aqir-awakening",
+      "toId": "troll-aqir-war",
+      "type": "causes",
+      "citationIds": [
+        "chronicle-v1-empire-zul-aqir"
+      ],
+      "confidence": "explicit"
+    },
+    {
+      "id": "aqir-division-precedes-southern-empires",
+      "fromId": "aqir-successor-powers-emerge",
+      "toId": "lei-shen-unites-mogu",
+      "type": "precedes",
+      "citationIds": [
+        "chronicle-v1-empire-zul-aqir",
+        "chronicle-v1-mogu-empire"
+      ],
+      "confidence": "strongly_supported"
+    },
+    {
+      "id": "azshara-precedes-war-ancients",
+      "fromId": "azshara-crowned",
+      "toId": "war-of-the-ancients",
+      "type": "precedes",
+      "citationIds": [
+        "chronicle-v1-night-elves-rise"
+      ],
+      "confidence": "strongly_supported"
     },
     {
       "id": "black-empire-precedes-ordering",
@@ -3574,6 +4890,57 @@
       "confidence": "explicit"
     },
     {
+      "id": "kaldorei-rise-causes-troll-decline",
+      "fromId": "kaldorei-ascendance",
+      "toId": "empire-of-zul",
+      "type": "replaces",
+      "citationIds": [
+        "chronicle-v1-night-elves-rise"
+      ],
+      "confidence": "strongly_supported"
+    },
+    {
+      "id": "kaldorei-rise-precedes-azshara",
+      "fromId": "kaldorei-ascendance",
+      "toId": "azshara-crowned",
+      "type": "precedes",
+      "citationIds": [
+        "chronicle-v1-night-elves-rise"
+      ],
+      "confidence": "explicit"
+    },
+    {
+      "id": "kang-enables-pandaren-revolution",
+      "fromId": "kang",
+      "toId": "pandaren-revolution",
+      "type": "participant_in",
+      "citationIds": [
+        "chronicle-v1-pandaren-revolution"
+      ],
+      "confidence": "explicit"
+    },
+    {
+      "id": "lei-shen-causes-mogu-empire",
+      "fromId": "lei-shen-unites-mogu",
+      "toId": "mogu-conquests",
+      "type": "causes",
+      "citationIds": [
+        "chronicle-v1-mogu-empire",
+        "blizzard-lei-shen-empire"
+      ],
+      "confidence": "explicit"
+    },
+    {
+      "id": "mogu-rule-causes-revolution",
+      "fromId": "mogu-conquests",
+      "toId": "pandaren-revolution",
+      "type": "causes",
+      "citationIds": [
+        "chronicle-v1-pandaren-revolution"
+      ],
+      "confidence": "strongly_supported"
+    },
+    {
       "id": "old-gods-arrive-causes-black-empire",
       "fromId": "old-gods-arrive",
       "toId": "black-empire-rises",
@@ -3616,6 +4983,17 @@
       "confidence": "explicit"
     },
     {
+      "id": "ordering-precedes-troll-powers",
+      "fromId": "azeroth-ordered",
+      "toId": "early-troll-powers-rise",
+      "type": "precedes",
+      "citationIds": [
+        "chronicle-v1-ordering-azeroth",
+        "chronicle-v1-empire-zul-aqir"
+      ],
+      "confidence": "strongly_supported"
+    },
+    {
       "id": "pantheon-discovery-causes-yshaarj-removal",
       "fromId": "pantheon-discovers-azeroth",
       "toId": "yshaarj-removed",
@@ -3647,6 +5025,27 @@
         "chronicle-v1-titans"
       ],
       "confidence": "explicit"
+    },
+    {
+      "id": "revolution-ends-mogu-dominion",
+      "fromId": "pandaren-revolution",
+      "toId": "mogu-empire",
+      "type": "replaces",
+      "citationIds": [
+        "chronicle-v1-pandaren-revolution"
+      ],
+      "confidence": "explicit"
+    },
+    {
+      "id": "southern-revolution-precedes-kaldorei-rise",
+      "fromId": "pandaren-revolution",
+      "toId": "dark-trolls-settle-near-well",
+      "type": "precedes",
+      "citationIds": [
+        "chronicle-v1-pandaren-revolution",
+        "chronicle-v1-night-elves-rise"
+      ],
+      "confidence": "strongly_supported"
     },
     {
       "id": "spirit-imbalance-causes-elemental-wars",
@@ -3681,12 +5080,42 @@
       "confidence": "explicit"
     },
     {
+      "id": "troll-aqir-war-causes-aqir-division",
+      "fromId": "troll-aqir-war",
+      "toId": "aqir-successor-powers-emerge",
+      "type": "causes",
+      "citationIds": [
+        "chronicle-v1-empire-zul-aqir"
+      ],
+      "confidence": "explicit"
+    },
+    {
+      "id": "troll-powers-precede-aqir-awakening",
+      "fromId": "early-troll-powers-rise",
+      "toId": "aqir-awakening",
+      "type": "precedes",
+      "citationIds": [
+        "chronicle-v1-empire-zul-aqir"
+      ],
+      "confidence": "explicit"
+    },
+    {
       "id": "well-stabilization-precedes-world-forges",
       "fromId": "well-eternity-stabilized",
       "toId": "world-forges-activated",
       "type": "precedes",
       "citationIds": [
         "chronicle-v1-well-world-forges"
+      ],
+      "confidence": "explicit"
+    },
+    {
+      "id": "well-transforms-dark-trolls",
+      "fromId": "dark-trolls",
+      "toId": "kaldorei-empire",
+      "type": "transforms_into",
+      "citationIds": [
+        "chronicle-v1-night-elves-rise"
       ],
       "confidence": "explicit"
     },
@@ -3725,6 +5154,27 @@
     }
   ],
   "storyGuides": [
+    {
+      "id": "ancient-civilizations-guided-history",
+      "eraId": "ancient-civilizations",
+      "title": "Crowns Before the Sundering",
+      "description": "A continuous history of the first troll powers, the war with the aqir, the southern empire and its fall, and the kaldorei ascent that placed ancient Kalimdor on the threshold of catastrophe.",
+      "nodeIds": [
+        "ancient-story-ordered-dawn",
+        "ancient-story-first-troll-powers",
+        "ancient-story-aqir-awaken",
+        "ancient-story-empire-zul",
+        "ancient-story-aqir-divided",
+        "ancient-story-southern-kingdoms",
+        "ancient-story-thunder-king",
+        "ancient-story-mogu-dominion",
+        "ancient-story-kang-revolution",
+        "ancient-story-people-apart",
+        "ancient-story-well-changes-them",
+        "ancient-story-azshara-dawn"
+      ],
+      "contentStatus": "research"
+    },
     {
       "id": "black-empire-guided-history",
       "eraId": "black-empire",
@@ -3784,6 +5234,621 @@
     }
   ],
   "storyNodes": [
+    {
+      "id": "ancient-story-ordered-dawn",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "The ordered world begins to remember",
+      "narration": "When the distant makers had gone, the world did not fall silent. Rivers carried soil from the new mountains, forests gathered beneath the rain, and living things multiplied around the power of the Well. The keepers had shaped a place where history could begin. Now its peoples would give the land memory, rivalry, law, and names of their own.",
+      "durationMs": 48000,
+      "eventIds": [
+        "early-troll-powers-rise"
+      ],
+      "entityIds": [
+        "primordial-kalimdor",
+        "well-of-eternity"
+      ],
+      "optionalExploreEntityIds": [
+        "primordial-kalimdor",
+        "well-of-eternity"
+      ],
+      "camera": {
+        "position": [
+          0,
+          7.4,
+          6.9
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "durationMs": 1300
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "ancient-civilizations-early-map-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "ordering-precedes-troll-powers"
+          ]
+        }
+      ],
+      "nextNodeIds": [
+        "ancient-story-first-troll-powers"
+      ]
+    },
+    {
+      "id": "ancient-story-first-troll-powers",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "Many peoples beneath one sky",
+      "narration": "Across forest, jungle, and high country, troll peoples flourished. The Zandalar raised their center among the mountains, while other great tribes gathered strength in lands of their own. They shared old devotions, yet no single throne bound them. Their rivalries were real, but so was the knowledge that each belonged to a world older and wider than any one hunting ground.",
+      "durationMs": 49000,
+      "eventIds": [
+        "early-troll-powers-rise"
+      ],
+      "entityIds": [
+        "empire-of-zul",
+        "zuldazar-ancient"
+      ],
+      "locationIds": [
+        "zuldazar-ancient"
+      ],
+      "optionalExploreEntityIds": [
+        "empire-of-zul",
+        "zuldazar-ancient"
+      ],
+      "camera": {
+        "position": [
+          -2.9,
+          5.7,
+          5.2
+        ],
+        "target": [
+          -3,
+          0,
+          -1.2
+        ],
+        "durationMs": 1100
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "ancient-civilizations-early-map-research"
+        },
+        {
+          "type": "show_region",
+          "regionId": "empire-of-zul-influence-research"
+        },
+        {
+          "type": "focus_location",
+          "locationId": "zuldazar-ancient"
+        }
+      ],
+      "previousNodeId": "ancient-story-ordered-dawn",
+      "nextNodeIds": [
+        "ancient-story-aqir-awaken"
+      ]
+    },
+    {
+      "id": "ancient-story-aqir-awaken",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "The earth gives back an ancient enemy",
+      "narration": "Then the old darkness moved again. The aqir, heirs of a buried and terrible age, surged against the growing troll lands. This danger was not another quarrel over a valley or river. It threatened every separate power at once, and taught the scattered tribes that survival might demand a name greater than any of their own.",
+      "durationMs": 45000,
+      "eventIds": [
+        "aqir-awakening"
+      ],
+      "entityIds": [
+        "aqir",
+        "empire-of-zul"
+      ],
+      "optionalExploreEntityIds": [
+        "aqir",
+        "empire-of-zul"
+      ],
+      "camera": {
+        "position": [
+          2.4,
+          5.9,
+          5.3
+        ],
+        "target": [
+          2.1,
+          0,
+          -0.8
+        ],
+        "durationMs": 1050
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "ancient-civilizations-early-map-research"
+        },
+        {
+          "type": "show_region",
+          "regionId": "aqir-pressure-influence-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "troll-powers-precede-aqir-awakening",
+            "aqir-awakening-causes-war"
+          ]
+        }
+      ],
+      "previousNodeId": "ancient-story-first-troll-powers",
+      "nextNodeIds": [
+        "ancient-story-empire-zul"
+      ]
+    },
+    {
+      "id": "ancient-story-empire-zul",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "The Empire of Zul stands together",
+      "narration": "Under Zandalari leadership, the tribes entered a wartime union remembered as the Empire of Zul. It was alliance, not sameness: forest, jungle, ice, and highland peoples carried their own customs into the struggle. Together they survived the first pressure, then followed the retreating aqir across distances too great for any honest map to draw as a single road.",
+      "durationMs": 49000,
+      "battleIds": [
+        "troll-aqir-war"
+      ],
+      "entityIds": [
+        "empire-of-zul",
+        "aqir"
+      ],
+      "optionalExploreEntityIds": [
+        "empire-of-zul",
+        "aqir"
+      ],
+      "camera": {
+        "position": [
+          0,
+          7.2,
+          6.8
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "durationMs": 1250
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "ancient-civilizations-early-map-research"
+        },
+        {
+          "type": "show_region",
+          "regionId": "empire-of-zul-influence-research"
+        },
+        {
+          "type": "show_region",
+          "regionId": "aqir-pressure-influence-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "aqir-awakening-causes-war",
+            "troll-aqir-war-causes-aqir-division"
+          ]
+        }
+      ],
+      "previousNodeId": "ancient-story-aqir-awaken",
+      "nextNodeIds": [
+        "ancient-story-aqir-divided"
+      ]
+    },
+    {
+      "id": "ancient-story-aqir-divided",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "Victory scatters both enemy and ally",
+      "narration": "At last the aqir withdrew into far northern and southern refuges. There, separation remade them into powers with futures of their own. The troll armies likewise remained in the lands they had won. With the common danger broken, the old coalition loosened, and distance began to turn fellow victors into distinct empires with separate memories.",
+      "durationMs": 45500,
+      "eventIds": [
+        "aqir-successor-powers-emerge"
+      ],
+      "entityIds": [
+        "aqir",
+        "empire-of-zul"
+      ],
+      "optionalExploreEntityIds": [
+        "aqir",
+        "empire-of-zul"
+      ],
+      "camera": {
+        "position": [
+          0.8,
+          7,
+          6.5
+        ],
+        "target": [
+          0.4,
+          0,
+          0
+        ],
+        "durationMs": 1200
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "ancient-civilizations-early-map-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "troll-aqir-war-causes-aqir-division",
+            "aqir-division-precedes-southern-empires"
+          ]
+        }
+      ],
+      "previousNodeId": "ancient-story-empire-zul",
+      "nextNodeIds": [
+        "ancient-story-southern-kingdoms"
+      ]
+    },
+    {
+      "id": "ancient-story-southern-kingdoms",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "The south becomes a world of kings",
+      "narration": "In the south, another inheritance was unraveling. The keepers' servants had once worked toward appointed purposes, but silence and long ages divided the mogu into rival kingdoms. They contended across the lands that would one day be called Pandaria, each ruler seeking mastery while the older order receded into half-remembered command.",
+      "durationMs": 44000,
+      "eventIds": [
+        "lei-shen-unites-mogu"
+      ],
+      "entityIds": [
+        "mogu-empire"
+      ],
+      "optionalExploreEntityIds": [
+        "mogu-empire"
+      ],
+      "camera": {
+        "position": [
+          1.9,
+          5.8,
+          5.4
+        ],
+        "target": [
+          1.7,
+          0,
+          2
+        ],
+        "durationMs": 1100
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "ancient-civilizations-southern-map-research"
+        },
+        {
+          "type": "show_region",
+          "regionId": "mogu-influence-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "aqir-division-precedes-southern-empires"
+          ]
+        }
+      ],
+      "previousNodeId": "ancient-story-aqir-divided",
+      "nextNodeIds": [
+        "ancient-story-thunder-king"
+      ]
+    },
+    {
+      "id": "ancient-story-thunder-king",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "One king takes the storm",
+      "narration": "From that age of divided kings rose Lei Shen. Through power, calculation, and conquest, he broke his rivals and made the mogu kneel to one emperor. The unity he forged was not the keepers' stewardship restored. It was a new dominion, centered on his will and armed with powers taken from an older world.",
+      "durationMs": 44000,
+      "eventIds": [
+        "lei-shen-unites-mogu"
+      ],
+      "entityIds": [
+        "lei-shen",
+        "mogu-empire"
+      ],
+      "optionalExploreEntityIds": [
+        "lei-shen",
+        "mogu-empire"
+      ],
+      "camera": {
+        "position": [
+          2.1,
+          4.8,
+          4.2
+        ],
+        "target": [
+          1.9,
+          0,
+          1.5
+        ],
+        "durationMs": 1000
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "ancient-civilizations-southern-map-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "lei-shen-causes-mogu-empire"
+          ]
+        }
+      ],
+      "previousNodeId": "ancient-story-southern-kingdoms",
+      "nextNodeIds": [
+        "ancient-story-mogu-dominion"
+      ]
+    },
+    {
+      "id": "ancient-story-mogu-dominion",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "An empire is built upon obedience",
+      "narration": "The mogu empire spread across the southern lands. Peoples who had kept languages, crafts, and histories of their own were made to serve its monuments and wars. Among them were the pandaren. The empire's roads and walls declared permanence, yet every generation forced into silence carried another memory of life before the throne.",
+      "durationMs": 44000,
+      "eventIds": [
+        "mogu-conquests"
+      ],
+      "entityIds": [
+        "mogu-empire",
+        "pandaren-ancient",
+        "lei-shen"
+      ],
+      "optionalExploreEntityIds": [
+        "mogu-empire",
+        "pandaren-ancient",
+        "lei-shen"
+      ],
+      "camera": {
+        "position": [
+          1.3,
+          5.5,
+          4.8
+        ],
+        "target": [
+          1.2,
+          0,
+          2
+        ],
+        "durationMs": 1050
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "ancient-civilizations-southern-map-research"
+        },
+        {
+          "type": "show_region",
+          "regionId": "mogu-influence-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "lei-shen-causes-mogu-empire",
+            "mogu-rule-causes-revolution"
+          ]
+        }
+      ],
+      "previousNodeId": "ancient-story-thunder-king",
+      "nextNodeIds": [
+        "ancient-story-kang-revolution"
+      ]
+    },
+    {
+      "id": "ancient-story-kang-revolution",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "Empty hands become a promise",
+      "narration": "Kang looked upon a people denied weapons and found strength the empire had overlooked. An unarmed discipline could be practiced, taught, and carried where blades could not. Resistance spread from lesson to fellowship, and from one subjected people to many. The mogu order, made vast by obedience, broke when those beneath it learned to stand together.",
+      "durationMs": 45500,
+      "eventIds": [
+        "pandaren-revolution"
+      ],
+      "entityIds": [
+        "kang",
+        "pandaren-ancient",
+        "mogu-empire"
+      ],
+      "optionalExploreEntityIds": [
+        "kang",
+        "pandaren-ancient",
+        "mogu-empire"
+      ],
+      "camera": {
+        "position": [
+          0.9,
+          4.9,
+          4.4
+        ],
+        "target": [
+          0.9,
+          0,
+          1.8
+        ],
+        "durationMs": 1000
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "ancient-civilizations-southern-map-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "kang-enables-pandaren-revolution",
+            "revolution-ends-mogu-dominion"
+          ]
+        }
+      ],
+      "previousNodeId": "ancient-story-mogu-dominion",
+      "nextNodeIds": [
+        "ancient-story-people-apart"
+      ]
+    },
+    {
+      "id": "ancient-story-people-apart",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "A people apart follows the water",
+      "narration": "Far from empire and coalition, a nocturnal troll people kept to hidden places and their own company. In time they came toward the heart of Kalimdor, where the Well shone like a fallen heaven upon the earth. They did not know that dwelling beside its waters would change more than their home. It would change the shape of history itself.",
+      "durationMs": 46500,
+      "eventIds": [
+        "dark-trolls-settle-near-well"
+      ],
+      "entityIds": [
+        "dark-trolls",
+        "well-of-eternity"
+      ],
+      "locationIds": [
+        "well-of-eternity"
+      ],
+      "optionalExploreEntityIds": [
+        "dark-trolls",
+        "well-of-eternity"
+      ],
+      "camera": {
+        "position": [
+          -0.7,
+          4.8,
+          4.1
+        ],
+        "target": [
+          -0.4,
+          0,
+          0
+        ],
+        "durationMs": 1000
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "ancient-civilizations-map-research"
+        },
+        {
+          "type": "focus_location",
+          "locationId": "well-of-eternity"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "southern-revolution-precedes-kaldorei-rise",
+            "well-transforms-dark-trolls"
+          ]
+        }
+      ],
+      "previousNodeId": "ancient-story-kang-revolution",
+      "nextNodeIds": [
+        "ancient-story-well-changes-them"
+      ]
+    },
+    {
+      "id": "ancient-story-well-changes-them",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "Around the Well, the kaldorei arise",
+      "narration": "Generations passed beneath the Well's radiance. The people changed, and called themselves kaldorei. Curiosity became study; study became sorcery, cities, and roads. Their power carried them outward with astonishing speed. Older troll dominions yielded before them, until a civilization born beside one lake stood over much of the continent that had once seemed beyond measure.",
+      "durationMs": 47000,
+      "eventIds": [
+        "kaldorei-ascendance"
+      ],
+      "entityIds": [
+        "dark-trolls",
+        "kaldorei-empire",
+        "well-of-eternity"
+      ],
+      "optionalExploreEntityIds": [
+        "dark-trolls",
+        "kaldorei-empire",
+        "well-of-eternity"
+      ],
+      "camera": {
+        "position": [
+          0,
+          6.3,
+          5.6
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "durationMs": 1150
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "ancient-civilizations-map-research"
+        },
+        {
+          "type": "show_region",
+          "regionId": "kaldorei-influence-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "well-transforms-dark-trolls",
+            "kaldorei-rise-causes-troll-decline"
+          ]
+        }
+      ],
+      "previousNodeId": "ancient-story-people-apart",
+      "nextNodeIds": [
+        "ancient-story-azshara-dawn"
+      ]
+    },
+    {
+      "id": "ancient-story-azshara-dawn",
+      "guideId": "ancient-civilizations-guided-history",
+      "title": "A queen at the edge of ruin",
+      "narration": "At the height of this rising world, Azshara took the throne. Admiration gathered around her like light upon still water, and the most gifted of the kaldorei drew close to her court and to the Well. Ancient Kalimdor appeared united beneath splendor. Yet power had narrowed toward one queen, one circle, and one inexhaustible source. Beyond that bright horizon waited war and sundering.",
+      "durationMs": 50000,
+      "eventIds": [
+        "azshara-crowned"
+      ],
+      "entityIds": [
+        "azshara",
+        "kaldorei-empire",
+        "well-of-eternity"
+      ],
+      "optionalExploreEntityIds": [
+        "azshara",
+        "kaldorei-empire",
+        "well-of-eternity"
+      ],
+      "camera": {
+        "position": [
+          -0.3,
+          5.2,
+          4.8
+        ],
+        "target": [
+          0,
+          0,
+          0.2
+        ],
+        "durationMs": 1050
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "ancient-civilizations-map-research"
+        },
+        {
+          "type": "show_region",
+          "regionId": "kaldorei-influence-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "kaldorei-rise-precedes-azshara",
+            "azshara-precedes-war-ancients"
+          ]
+        }
+      ],
+      "previousNodeId": "ancient-story-well-changes-them",
+      "nextNodeIds": []
+    },
     {
       "id": "black-empire-story-cosmos",
       "guideId": "black-empire-guided-history",

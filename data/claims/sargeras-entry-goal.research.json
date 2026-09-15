@@ -1,0 +1,9 @@
+{
+  "id": "sargeras-entry-goal-claim",
+  "subjectId": "sargeras",
+  "predicate": "was_the_intended_final_entrant_through_the_well_portal",
+  "value": true,
+  "citationIds": ["chronicle-v1-war-ancients-opening", "blizzard-well-of-eternity-history"],
+  "confidence": "explicit",
+  "status": "active"
+}

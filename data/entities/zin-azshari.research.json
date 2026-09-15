@@ -1,0 +1,15 @@
+{
+  "id": "zin-azshari",
+  "type": "location",
+  "name": "Zin-Azshari",
+  "slug": "zin-azshari",
+  "shortDescription": "Azshara's capital at the shores of the Well of Eternity and the center of the Highborne portal ritual.",
+  "body": "The atlas places the capital only as an approximate focus beside the interpretive Well. It does not reconstruct streets, palace limits, or the full historical shoreline.",
+  "firstEraId": "ancient-civilizations",
+  "lastEraId": "war-of-the-ancients",
+  "featuredEraIds": ["war-of-the-ancients"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-well-of-eternity-preview"],
+  "claimIds": ["zin-azshari-well-location-claim"],
+  "tags": ["capital", "kaldorei", "well-of-eternity"],
+  "contentStatus": "research"
+}

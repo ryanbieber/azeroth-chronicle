@@ -1,0 +1,9 @@
+{
+  "id": "kaldorei-ascendance-event-claim",
+  "subjectId": "kaldorei-ascendance",
+  "predicate": "event-summary",
+  "value": "The civilization arising around the Well expanded until kaldorei power became the dominant political force on ancient Kalimdor.",
+  "citationIds": ["chronicle-v1-night-elves-rise"],
+  "confidence": "explicit",
+  "status": "active"
+}

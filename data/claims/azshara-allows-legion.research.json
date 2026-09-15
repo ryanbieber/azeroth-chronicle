@@ -1,0 +1,9 @@
+{
+  "id": "azshara-allows-legion-claim",
+  "subjectId": "azshara",
+  "predicate": "supported_the_highborne_portal_for_the_legion",
+  "value": true,
+  "citationIds": ["chronicle-v1-war-ancients-opening", "blizzard-well-of-eternity-history"],
+  "confidence": "explicit",
+  "status": "active"
+}

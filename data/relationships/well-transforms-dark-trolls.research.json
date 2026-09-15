@@ -1,0 +1,8 @@
+{
+  "id": "well-transforms-dark-trolls",
+  "fromId": "dark-trolls",
+  "toId": "kaldorei-empire",
+  "type": "transforms_into",
+  "citationIds": ["chronicle-v1-night-elves-rise"],
+  "confidence": "explicit"
+}

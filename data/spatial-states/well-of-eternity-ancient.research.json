@@ -1,0 +1,12 @@
+{
+  "id": "well-of-eternity-ancient-spatial-research",
+  "entityId": "well-of-eternity",
+  "eraId": "ancient-civilizations",
+  "worldspaceId": "azeroth",
+  "geometryId": "well-of-eternity-focus-research",
+  "geographicCertainty": "approximate",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "The Well remains a central approximate focus inherited from Era 2; the coordinate preserves narrative continuity rather than surveyed geography.",
+  "labelPriority": 136,
+  "visualPresence": "persistent"
+}

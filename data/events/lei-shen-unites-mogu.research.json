@@ -1,0 +1,16 @@
+{
+  "id": "lei-shen-unites-mogu",
+  "kind": "event",
+  "name": "Lei Shen Unites the Mogu",
+  "slug": "lei-shen-unites-mogu",
+  "eraId": "ancient-civilizations",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "During the age of divided southern kingdoms" },
+  "summary": "Lei Shen overcame rival mogu kings and gathered their competing realms into a single imperial power.",
+  "participantEntityIds": ["lei-shen", "mogu-empire"],
+  "causesEventIds": ["mogu-conquests"],
+  "relationshipIds": ["aqir-division-precedes-southern-empires", "lei-shen-causes-mogu-empire"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-thunder-king-portrait"],
+  "claimIds": ["lei-shen-unites-mogu-event-claim"],
+  "contentStatus": "research"
+}

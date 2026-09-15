@@ -1,0 +1,10 @@
+{
+  "id": "aqir-war-and-retreat-claim",
+  "subjectId": "aqir",
+  "predicate": "war-outcome",
+  "value": "The united troll campaign forced the aqir toward distant northern and southern refuges from which distinct successor powers later emerged.",
+  "citationIds": ["chronicle-v1-empire-zul-aqir"],
+  "confidence": "explicit",
+  "status": "active",
+  "editorNote": "The broad direction is supported; the atlas routes and refuge extents remain interpretive."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "kaldorei-ancient-spatial-research",
+  "entityId": "kaldorei-empire",
+  "eraId": "ancient-civilizations",
+  "worldspaceId": "azeroth",
+  "geometryId": "kaldorei-ancient-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "The collective figure is a narrative representation of a civilization distributed across many cities; it does not assign the entire empire to one point.",
+  "labelPriority": 129,
+  "visualPresence": "contextual"
+}

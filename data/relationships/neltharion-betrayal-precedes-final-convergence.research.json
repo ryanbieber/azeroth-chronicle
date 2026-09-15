@@ -1,0 +1,8 @@
+{
+  "id": "neltharion-betrayal-precedes-final-convergence",
+  "fromId": "neltharion-betrays-allies",
+  "toId": "portal-at-well-collapses",
+  "type": "precedes",
+  "citationIds": ["chronicle-v1-dragon-soul-betrayal", "chronicle-v1-great-sundering"],
+  "confidence": "strongly_supported"
+}

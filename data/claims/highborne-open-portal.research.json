@@ -1,0 +1,9 @@
+{
+  "id": "highborne-open-portal-claim",
+  "subjectId": "highborne",
+  "predicate": "opened_a_portal_through_the_well_for_the_legion",
+  "value": true,
+  "citationIds": ["chronicle-v1-war-ancients-opening", "blizzard-well-of-eternity-history"],
+  "confidence": "explicit",
+  "status": "active"
+}

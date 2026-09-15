@@ -1,0 +1,18 @@
+{
+  "id": "dark-trolls",
+  "type": "faction",
+  "name": "The Dark Trolls",
+  "slug": "dark-trolls",
+  "shortDescription": "A reclusive nocturnal troll people whose migration toward the Well of Eternity became the beginning of the kaldorei story.",
+  "body": "Chronicle places this community apart from the greater troll struggles. The atlas shows movement toward the Well as an interpretive transition, not as an exact migration route preserved by a contemporary record.",
+  "firstEraId": "ancient-civilizations",
+  "featuredEraIds": ["ancient-civilizations"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["dark-trolls-near-well-claim"],
+  "tags": ["troll", "well-of-eternity", "kaldorei-origins"],
+  "mapVisual": {
+    "asset": "images/subjects/ancient-civilizations/dark-trolls.research.webp",
+    "scale": 0.98
+  },
+  "contentStatus": "research"
+}

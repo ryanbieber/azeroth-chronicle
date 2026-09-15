@@ -1,0 +1,8 @@
+{
+  "id": "highborne-ritual-causes-legion-invasion",
+  "fromId": "highborne-open-legion-way",
+  "toId": "legion-invasion-begins",
+  "type": "causes",
+  "citationIds": ["chronicle-v1-war-ancients-opening", "blizzard-well-of-eternity-history"],
+  "confidence": "explicit"
+}

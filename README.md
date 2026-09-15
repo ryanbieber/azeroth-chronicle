@@ -4,7 +4,7 @@ Azeroth Chronicle is a desktop-first, time-aware 3D historical atlas for Warcraf
 
 > **Unofficial fan project:** Azeroth Chronicle is a fan-made interpretation of the Warcraft universe and is not affiliated with, endorsed by, sponsored by, or approved by Blizzard Entertainment.
 
-This repository implements the [product and technical specification](./docs/azeroth_3d_lore_atlas_product_technical_spec_UPDATED.docx). Cosmic Origins and Era 1 contain source-linked `research` content; the later navigable eras remain research scaffolds. None of it should be treated as human-reviewed Warcraft canon yet.
+This repository implements the [product and technical specification](./docs/azeroth_3d_lore_atlas_product_technical_spec_UPDATED.docx). Eras 0–3 contain source-linked `research` previews; the later navigable eras remain research scaffolds. None of it should be treated as human-reviewed Warcraft canon yet.
 
 ## What works now
 
@@ -16,7 +16,7 @@ This repository implements the [product and technical specification](./docs/azer
 - TypeScript domain contracts and Zod schemas
 - File-backed repository adapter with cross-record validation
 - Data-driven StoryNode action interpreter
-- Source-linked Cosmic Origins and Black Empire research slices plus empty research map states for the remaining eras
+- Source-linked Cosmic Origins, Black Empire, Ordering of Azeroth, and Ancient Civilizations research slices plus empty research map states for the remaining eras
 - Unit tests, linting, type checks, CI, and Render static-site configuration
 
 The full delivery sequence and architectural decisions are in [`docs/IMPLEMENTATION_PLAN.md`](./docs/IMPLEMENTATION_PLAN.md). The research, terrain, people, battle, and animated-tour program—including the implemented Cosmic Origins prologue—is in [`docs/eras/README.md`](./docs/eras/README.md).
@@ -35,6 +35,8 @@ pnpm dev
 Open the URL printed by Vite. Useful routes include:
 
 - `/map?era=black-empire`
+- `/map?era=ordering-of-azeroth`
+- `/map?era=ancient-civilizations`
 - `/map?era=black-empire&selected=battle:elemental-assault-on-black-empire`
 - `/eras/black-empire`
 - `/battles/elemental-assault-on-black-empire`
@@ -85,4 +87,4 @@ The repository deploys GitHub Pages from `.github/workflows/deploy-pages.yml`. T
 
 ## Project status
 
-The reusable engine, ten-era navigation, source-linked **Cosmic Origins**, and **Primordial Azeroth and the Black Empire** previews are implemented. The deployed site is an unofficial public research preview, not a lore-reviewed publication: both complete slices remain explicitly marked as research until their claims, citations, summaries, and interpretive visuals pass human review. See the current-status and content-gated sections of the implementation plan.
+The reusable engine, ten-era navigation, and source-linked previews for **Cosmic Origins**, **Primordial Azeroth and the Black Empire**, **Ordering of Azeroth**, and **Rise of the Ancient Civilizations** are implemented. The deployed site is an unofficial public research preview, not a lore-reviewed publication: all four complete slices remain explicitly marked as research until their claims, citations, summaries, causal interpretations, cartography, and original visuals pass human review. See the current-status and content-gated sections of the implementation plan.

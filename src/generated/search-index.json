@@ -24,9 +24,11 @@
     "eraId": "ancient-civilizations",
     "aliases": [],
     "tags": [],
-    "description": "The trolls and their empires, the aqir wars, the mogu, Pandaria, ancient humans, and the ascent of the kaldorei.",
+    "description": "The first troll powers, the war with the aqir, the rise and fall of the mogu empire, and the ascent of the kaldorei around the Well of Eternity.",
     "sourceIds": [
-      "warcraft-chronicle-volume-1"
+      "warcraft-chronicle-volume-1",
+      "blizzard-rise-zandalari",
+      "blizzard-thunder-king-portrait"
     ],
     "contentStatus": "research"
   },
@@ -224,9 +226,11 @@
     "tags": [
       "black-empire",
       "servants",
-      "aqir"
+      "aqir",
+      "ancient-kalimdor",
+      "old-god-servants"
     ],
-    "description": "Resilient insectoid servants formed from the Old Gods' organic matter and set to building the empire's cities and temples.",
+    "description": "Resilient insectoid servants formed from the Old Gods' organic matter, first set to building the Black Empire and later drawn into a world-spanning war with the ancient troll powers.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
     ],
@@ -248,6 +252,25 @@
       "primordial"
     ],
     "description": "A titan spirit developing within the young world's core, whose immense growth drew in much of Azeroth's Spirit.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "azshara",
+    "type": "entity",
+    "name": "Queen Azshara",
+    "slug": "azshara",
+    "path": "/locations/azshara",
+    "eraId": "ancient-civilizations",
+    "aliases": [],
+    "tags": [
+      "kaldorei",
+      "queen",
+      "highborne"
+    ],
+    "description": "The exceptionally gifted and widely admired queen under whom the kaldorei empire reached extraordinary power before the War of the Ancients.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
     ],
@@ -297,6 +320,25 @@
     "contentStatus": "research"
   },
   {
+    "id": "dark-trolls",
+    "type": "entity",
+    "name": "The Dark Trolls",
+    "slug": "dark-trolls",
+    "path": "/factions/dark-trolls",
+    "eraId": "ancient-civilizations",
+    "aliases": [],
+    "tags": [
+      "troll",
+      "well-of-eternity",
+      "kaldorei-origins"
+    ],
+    "description": "A reclusive nocturnal troll people whose migration toward the Well of Eternity became the beginning of the kaldorei story.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "elemental-hosts",
     "type": "entity",
     "name": "The Elemental Hosts",
@@ -312,6 +354,26 @@
     "description": "The innumerable air, fire, earth, and water spirits led by Azeroth's four Elemental Lords.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "empire-of-zul",
+    "type": "entity",
+    "name": "The Empire of Zul",
+    "slug": "empire-of-zul",
+    "path": "/factions/empire-of-zul",
+    "eraId": "ancient-civilizations",
+    "aliases": [],
+    "tags": [
+      "troll",
+      "coalition",
+      "ancient-kalimdor"
+    ],
+    "description": "A coalition of ancient troll peoples assembled under Zandalari leadership when the awakened aqir threatened them across Kalimdor.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-rise-zandalari"
     ],
     "contentStatus": "research"
   },
@@ -353,6 +415,44 @@
     "contentStatus": "research"
   },
   {
+    "id": "kaldorei-empire",
+    "type": "entity",
+    "name": "The Kaldorei Empire",
+    "slug": "kaldorei-empire",
+    "path": "/factions/kaldorei-empire",
+    "eraId": "ancient-civilizations",
+    "aliases": [],
+    "tags": [
+      "kaldorei",
+      "empire",
+      "well-of-eternity"
+    ],
+    "description": "The civilization that arose around the Well of Eternity, mastered its arcane energies, and expanded swiftly across ancient Kalimdor.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "kang",
+    "type": "entity",
+    "name": "Kang",
+    "slug": "kang",
+    "path": "/locations/kang",
+    "eraId": "ancient-civilizations",
+    "aliases": [],
+    "tags": [
+      "pandaren",
+      "teacher",
+      "revolution"
+    ],
+    "description": "The pandaren teacher associated with the unarmed discipline that helped turn resistance to the mogu into a wider revolution.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "keepers",
     "type": "entity",
     "name": "The Keepers",
@@ -369,6 +469,28 @@
     "sourceIds": [
       "warcraft-chronicle-volume-1",
       "blizzard-dragon-aspects-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "lei-shen",
+    "type": "entity",
+    "name": "Lei Shen",
+    "slug": "lei-shen",
+    "path": "/locations/lei-shen",
+    "eraId": "ancient-civilizations",
+    "aliases": [
+      "The Thunder King"
+    ],
+    "tags": [
+      "mogu",
+      "emperor",
+      "thunder-king"
+    ],
+    "description": "The first mogu emperor, who united rival kings and established a far-reaching imperial order in the southern lands.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-thunder-king-portrait"
     ],
     "contentStatus": "research"
   },
@@ -391,6 +513,26 @@
     "description": "Opposed primordial powers at the beginning of Chronicle's account of the Warcraft cosmos.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "mogu-empire",
+    "type": "entity",
+    "name": "The Mogu Empire",
+    "slug": "mogu-empire",
+    "path": "/factions/mogu-empire",
+    "eraId": "ancient-civilizations",
+    "aliases": [],
+    "tags": [
+      "mogu",
+      "empire",
+      "pandaria"
+    ],
+    "description": "The southern empire forged by Lei Shen from divided mogu kingdoms and expanded through the conquest and subjugation of neighboring peoples.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-thunder-king-portrait"
     ],
     "contentStatus": "research"
   },
@@ -452,6 +594,25 @@
     "sourceIds": [
       "warcraft-chronicle-volume-1",
       "blizzard-dragon-aspects-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "pandaren-ancient",
+    "type": "entity",
+    "name": "The Ancient Pandaren",
+    "slug": "pandaren-ancient",
+    "path": "/factions/pandaren-ancient",
+    "eraId": "ancient-civilizations",
+    "aliases": [],
+    "tags": [
+      "pandaren",
+      "pandaria",
+      "revolution"
+    ],
+    "description": "One of the peoples subjected by the mogu empire and central to the uprising that ended its rule.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
     ],
     "contentStatus": "research"
   },
@@ -693,6 +854,25 @@
     "contentStatus": "research"
   },
   {
+    "id": "zuldazar-ancient",
+    "type": "entity",
+    "name": "Ancient Zuldazar",
+    "slug": "zuldazar-ancient",
+    "path": "/locations/zuldazar-ancient",
+    "eraId": "ancient-civilizations",
+    "aliases": [],
+    "tags": [
+      "zuldazar",
+      "zandalari",
+      "troll"
+    ],
+    "description": "The highland center of the Zandalar tribe and a political heart of the earliest troll civilization represented in this era.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "amanthul-awakens",
     "type": "event",
     "name": "Awakening of Aman’Thul",
@@ -708,6 +888,36 @@
     "contentStatus": "research"
   },
   {
+    "id": "aqir-awakening",
+    "type": "event",
+    "name": "The Aqir Awaken",
+    "slug": "aqir-awakening",
+    "path": "/events/aqir-awakening",
+    "eraId": "ancient-civilizations",
+    "aliases": [],
+    "tags": [],
+    "description": "Ancient aqir forces emerged again and pressed into troll-held lands, turning scattered rivalry into a shared existential danger.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "aqir-successor-powers-emerge",
+    "type": "event",
+    "name": "The Aqir Successor Powers Emerge",
+    "slug": "aqir-successor-powers-emerge",
+    "path": "/events/aqir-successor-powers-emerge",
+    "eraId": "ancient-civilizations",
+    "aliases": [],
+    "tags": [],
+    "description": "Separated aqir populations entrenched themselves in distant refuges, producing new northern and southern powers rather than restoring one united dominion.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "azeroth-ordered",
     "type": "event",
     "name": "Azeroth Is Ordered",
@@ -717,6 +927,21 @@
     "aliases": [],
     "tags": [],
     "description": "The titan-forged raised mountains, opened waterways, dredged seas, maintained great works, and helped make the wounded world stable enough for life to flourish.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "azshara-crowned",
+    "type": "event",
+    "name": "Azshara Rises to the Throne",
+    "slug": "azshara-crowned",
+    "path": "/events/azshara-crowned",
+    "eraId": "ancient-civilizations",
+    "aliases": [],
+    "tags": [],
+    "description": "Azshara became queen of a powerful kaldorei civilization whose court and arcane ambitions stood at the threshold of the next catastrophe.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
     ],
@@ -749,6 +974,84 @@
     "description": "The n'raqi directed the aqir in building citadels and temple cities around the Old Gods; Y'Shaarj's central bastion became the greatest of these domains as their holdings spread.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "dark-trolls-settle-near-well",
+    "type": "event",
+    "name": "The Dark Trolls Settle Near the Well",
+    "slug": "dark-trolls-settle-near-well",
+    "path": "/events/dark-trolls-settle-near-well",
+    "eraId": "ancient-civilizations",
+    "aliases": [],
+    "tags": [],
+    "description": "A reclusive dark troll people moved toward the center of Kalimdor and made their home near the Well of Eternity.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "early-troll-powers-rise",
+    "type": "event",
+    "name": "The Early Troll Powers Rise",
+    "slug": "early-troll-powers-rise",
+    "path": "/events/early-troll-powers-rise",
+    "eraId": "ancient-civilizations",
+    "aliases": [],
+    "tags": [],
+    "description": "Troll peoples flourished across the forests and jungles of ordered Kalimdor, with the Zandalar, Amani, Gurubashi, and Drakkari among the powers that took shape.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-rise-zandalari"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "kaldorei-ascendance",
+    "type": "event",
+    "name": "The Kaldorei Ascend",
+    "slug": "kaldorei-ascendance",
+    "path": "/events/kaldorei-ascendance",
+    "eraId": "ancient-civilizations",
+    "aliases": [],
+    "tags": [],
+    "description": "Changed by long proximity to the Well, the emerging kaldorei mastered arcane power, built cities, and expanded across Kalimdor.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "lei-shen-unites-mogu",
+    "type": "event",
+    "name": "Lei Shen Unites the Mogu",
+    "slug": "lei-shen-unites-mogu",
+    "path": "/events/lei-shen-unites-mogu",
+    "eraId": "ancient-civilizations",
+    "aliases": [],
+    "tags": [],
+    "description": "Lei Shen overcame rival mogu kings and gathered their competing realms into a single imperial power.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-thunder-king-portrait"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "mogu-conquests",
+    "type": "event",
+    "name": "The Mogu Empire Expands",
+    "slug": "mogu-conquests",
+    "path": "/events/mogu-conquests",
+    "eraId": "ancient-civilizations",
+    "aliases": [],
+    "tags": [],
+    "description": "The new empire subdued neighboring peoples and imposed its rule across much of the southern lands later known as Pandaria.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-thunder-king-portrait"
     ],
     "contentStatus": "research"
   },
@@ -792,6 +1095,21 @@
     "aliases": [],
     "tags": [],
     "description": "The Void Lords made the Old Gods and cast them through the Great Dark, hoping that some would find and corrupt a world-soul.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "pandaren-revolution",
+    "type": "event",
+    "name": "The Pandaren Revolution",
+    "slug": "pandaren-revolution",
+    "path": "/events/pandaren-revolution",
+    "eraId": "ancient-civilizations",
+    "aliases": [],
+    "tags": [],
+    "description": "Resistance associated with Kang spread among the mogu's subject peoples until the imperial order broke and the southern lands entered a new age.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
     ],
@@ -977,6 +1295,36 @@
     "sourceIds": [
       "warcraft-chronicle-volume-1",
       "blizzard-dragon-aspects-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "troll-aqir-war",
+    "type": "battle",
+    "name": "The Troll–Aqir War",
+    "slug": "troll-aqir-war",
+    "path": "/battles/troll-aqir-war",
+    "eraId": "ancient-civilizations",
+    "aliases": [],
+    "tags": [],
+    "description": "A long, multi-front struggle in which the Empire of Zul resisted the aqir and pursued their retreating forces toward the distant reaches of Kalimdor.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "ancient-kalimdor-conflicts",
+    "type": "campaign",
+    "name": "Ancient Kalimdor Conflicts",
+    "slug": "ancient-kalimdor-conflicts",
+    "path": "/eras/ancient-civilizations",
+    "eraId": "ancient-civilizations",
+    "aliases": [],
+    "tags": [],
+    "description": "A research grouping for the long wars that redistributed peoples and power before kaldorei ascendance, beginning with the supported troll–aqir campaign.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
     ],
     "contentStatus": "research"
   },

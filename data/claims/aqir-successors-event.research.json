@@ -1,0 +1,9 @@
+{
+  "id": "aqir-successors-event-claim",
+  "subjectId": "aqir-successor-powers-emerge",
+  "predicate": "event-summary",
+  "value": "The troll pursuit divided surviving aqir populations between distant refuges where separate successor powers emerged.",
+  "citationIds": ["chronicle-v1-empire-zul-aqir"],
+  "confidence": "explicit",
+  "status": "active"
+}

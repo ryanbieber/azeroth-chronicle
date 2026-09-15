@@ -1,0 +1,18 @@
+{
+  "id": "pandaren-ancient",
+  "type": "faction",
+  "name": "The Ancient Pandaren",
+  "slug": "pandaren-ancient",
+  "shortDescription": "One of the peoples subjected by the mogu empire and central to the uprising that ended its rule.",
+  "body": "The public summary stays at the level supported by the current research packet: a people denied weapons and written learning who developed other means of preserving discipline and resisting imperial rule.",
+  "firstEraId": "ancient-civilizations",
+  "featuredEraIds": ["ancient-civilizations"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["pandaren-revolution-role-claim"],
+  "tags": ["pandaren", "pandaria", "revolution"],
+  "mapVisual": {
+    "asset": "images/characters/ancient-civilizations/kang.research.webp",
+    "scale": 0.92
+  },
+  "contentStatus": "research"
+}

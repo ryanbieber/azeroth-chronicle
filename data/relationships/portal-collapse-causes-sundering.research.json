@@ -1,0 +1,8 @@
+{
+  "id": "portal-collapse-causes-sundering",
+  "fromId": "portal-at-well-collapses",
+  "toId": "great-sundering",
+  "type": "causes",
+  "citationIds": ["chronicle-v1-great-sundering", "blizzard-well-of-eternity-history"],
+  "confidence": "explicit"
+}

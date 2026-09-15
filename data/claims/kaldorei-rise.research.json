@@ -1,0 +1,9 @@
+{
+  "id": "kaldorei-rise-claim",
+  "subjectId": "kaldorei-empire",
+  "predicate": "rise-and-expansion",
+  "value": "The kaldorei developed around the Well, became powerful arcane practitioners, and expanded rapidly across ancient Kalimdor.",
+  "citationIds": ["chronicle-v1-night-elves-rise"],
+  "confidence": "explicit",
+  "status": "active"
+}

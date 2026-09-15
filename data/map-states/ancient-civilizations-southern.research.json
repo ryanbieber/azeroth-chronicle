@@ -1,0 +1,19 @@
+{
+  "id": "ancient-civilizations-southern-map-research",
+  "name": "Southern empires and revolution — interpretive research map",
+  "worldspaceId": "azeroth",
+  "presentation": "terrain",
+  "cartographyLabel": "INTERPRETIVE POLITICAL TIME SLICE",
+  "interpretationNote": "This middle-era state frames the mogu empire and the peoples later associated with Pandaria as a southern theater. The region is deliberately approximate; it is not a traced pre-Sundering coastline or exact imperial boundary.",
+  "terrainTextureAsset": "textures/azeroth/ancient-civilizations-map-research/terrain-atlas.research.webp",
+  "terrainHeightAsset": "textures/azeroth/ancient-civilizations-map-research/terrain-height.research.webp",
+  "geometryIds": [
+    "ordered-kalimdor-landmass-research",
+    "well-of-eternity-focus-research",
+    "mogu-influence-research",
+    "mogu-empire-ancient-focus-research",
+    "lei-shen-ancient-focus-research",
+    "pandaren-ancient-focus-research",
+    "kang-ancient-focus-research"
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "id": "war-of-the-ancients",
+  "kind": "battle",
+  "name": "The War of the Ancients",
+  "slug": "war-of-the-ancients",
+  "eraId": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "approximate", "year": -10000, "label": "c. 10,000 years before the Dark Portal" },
+  "summary": "A continent-spanning war in which the Burning Legion devastated ancient Kalimdor before a changing alliance disrupted the gateway at the Well.",
+  "description": "This dossier presents five strategic phases rather than a tactical simulation. The invasion crossed many places and involved many participants; the surviving account does not support one exact battlefield marker or a single continuous front line.",
+  "locationIds": ["well-of-eternity", "zin-azshari"],
+  "participantEntityIds": ["burning-legion", "night-elf-resistance", "highborne", "azshara", "malfurion-stormrage", "tyrande-whisperwind", "illidan-stormrage", "cenarius", "neltharion", "dragon-soul", "sargeras"],
+  "causedByEventIds": ["legion-invasion-begins"],
+  "causesEventIds": ["portal-at-well-collapses"],
+  "relationshipIds": ["azshara-precedes-war-ancients", "legion-invasion-causes-war", "war-convergence-causes-portal-collapse"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-well-of-eternity-preview", "blizzard-dragon-aspects-history"],
+  "claimIds": ["war-of-the-ancients-event-claim"],
+  "campaignId": "war-of-the-ancients-campaign",
+  "combatants": [
+    { "factionId": "burning-legion", "role": "attacker", "commanderEntityIds": ["sargeras"] },
+    { "factionId": "highborne", "role": "attacker", "commanderEntityIds": ["azshara"] },
+    { "factionId": "night-elf-resistance", "role": "defender", "commanderEntityIds": ["malfurion-stormrage", "tyrande-whisperwind", "illidan-stormrage"] }
+  ],
+  "objectives": [
+    { "factionId": "burning-legion", "summary": "Secure the gateway, destroy resistance across Kalimdor, and enable Sargeras to enter Azeroth." },
+    { "factionId": "highborne", "summary": "Sustain and enlarge the portal at the Well in service of Azshara's alliance with the Legion." },
+    { "factionId": "night-elf-resistance", "summary": "Survive the invasion, gather allies, and disrupt the gateway before Sargeras can cross." }
+  ],
+  "phases": [
+    {
+      "id": "portal-and-invasion",
+      "title": "The court opens the gate",
+      "summary": "The Highborne channel the Well into a portal and Legion forces enter through Zin-Azshari.",
+      "durationMs": 7000,
+      "narration": "The empire's center became the road of its undoing. From the Well, the invasion widened across lands still joined beneath one sky.",
+      "camera": { "position": [0, 5.2, 4.7], "target": [0, 0, 0], "durationMs": 1050 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "war-of-the-ancients-invasion-map-research" },
+        { "type": "show_region", "regionId": "legion-pressure-region-research" },
+        { "type": "focus_location", "locationId": "zin-azshari" }
+      ]
+    },
+    {
+      "id": "resistance-gathers",
+      "title": "A divided people resists",
+      "summary": "Kaldorei opponents of Azshara organize and converge while the invasion spreads.",
+      "routeId": "resistance-convergence",
+      "durationMs": 7000,
+      "narration": "There was no single untouched road to victory. Defenders gathered through burning country, carrying different loyalties toward one necessity.",
+      "camera": { "position": [-1.0, 6.0, 5.5], "target": [-0.5, 0, 0.2], "durationMs": 1100 },
+      "visualActions": [
+        { "type": "show_route", "routeId": "resistance-convergence" },
+        { "type": "highlight_faction", "factionId": "night-elf-resistance" }
+      ]
+    },
+    {
+      "id": "ancient-allies",
+      "title": "The living world enters the war",
+      "summary": "Cenarius and other ancient powers join the defense while the Dragon Aspects prepare the Dragon Soul.",
+      "durationMs": 7000,
+      "narration": "Forest, wing, and mortal courage stood together, for the Legion's victory would leave no separate realm in which any could endure.",
+      "camera": { "position": [1.1, 5.8, 5.1], "target": [0.8, 0, -0.2], "durationMs": 1050 },
+      "visualActions": [
+        { "type": "highlight_entity", "entityId": "cenarius" },
+        { "type": "highlight_entity", "entityId": "neltharion" }
+      ]
+    },
+    {
+      "id": "earth-warders-betrayal",
+      "title": "The weapon turns upon its makers",
+      "summary": "Neltharion uses the Dragon Soul against allies as well as enemies, breaking the dragons' unity.",
+      "durationMs": 7000,
+      "narration": "A weapon made by many answered to one corrupted will. In the hour of alliance, betrayal opened another wound within the defense.",
+      "camera": { "position": [2.1, 4.8, 4.3], "target": [1.7, 0, 0.5], "durationMs": 1000 },
+      "visualActions": [
+        { "type": "highlight_entity", "entityId": "neltharion" },
+        { "type": "show_relationships", "relationshipIds": ["neltharion-controls-dragon-soul", "neltharion-betrayal-precedes-final-convergence"] }
+      ]
+    },
+    {
+      "id": "final-convergence",
+      "title": "All roads return to the Well",
+      "summary": "The defenders converge on the gateway and disrupt it before Sargeras can enter Azeroth.",
+      "routeId": "resistance-convergence",
+      "durationMs": 7500,
+      "narration": "At last the war returned to the water from which the empire's power had risen. The gate was broken, but the world beneath it could not remain whole.",
+      "camera": { "position": [0, 4.7, 4.1], "target": [0, 0, 0], "durationMs": 1050 },
+      "visualActions": [
+        { "type": "show_route", "routeId": "resistance-convergence" },
+        { "type": "focus_location", "locationId": "well-of-eternity" },
+        { "type": "show_relationships", "relationshipIds": ["war-convergence-causes-portal-collapse"] }
+      ]
+    }
+  ],
+  "outcome": {
+    "summary": "The Legion's immediate invasion was stopped and Sargeras did not enter Azeroth, but the Well collapsed and the resulting Sundering destroyed the old continental world.",
+    "winnerFactionId": "night-elf-resistance"
+  },
+  "geographicCertainty": "unknown",
+  "geographicEditorNote": "The war was continent-spanning. Only the Well and Zin-Azshari receive approximate location context; the battle itself has no exact marker.",
+  "importance": "era_defining",
+  "contentStatus": "research"
+}

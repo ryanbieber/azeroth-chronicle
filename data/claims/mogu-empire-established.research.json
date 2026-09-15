@@ -1,0 +1,9 @@
+{
+  "id": "mogu-empire-established-claim",
+  "subjectId": "mogu-empire",
+  "predicate": "establishment",
+  "value": "Lei Shen united divided mogu kingdoms and established an empire that conquered and subjected neighboring peoples in the southern lands.",
+  "citationIds": ["chronicle-v1-mogu-empire", "blizzard-lei-shen-empire"],
+  "confidence": "explicit",
+  "status": "active"
+}

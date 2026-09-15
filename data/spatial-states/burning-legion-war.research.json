@@ -1,0 +1,13 @@
+{
+  "id": "burning-legion-war-spatial-research",
+  "entityId": "burning-legion",
+  "eraId": "war-of-the-ancients",
+  "worldspaceId": "azeroth",
+  "geometryId": "burning-legion-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-well-of-eternity-preview"],
+  "editorNote": "The group figure represents the invasion as a whole and is not an exact army deployment.",
+  "labelPriority": 139,
+  "visualPresence": "contextual"
+}

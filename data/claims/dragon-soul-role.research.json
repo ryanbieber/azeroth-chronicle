@@ -1,0 +1,9 @@
+{
+  "id": "dragon-soul-role-claim",
+  "subjectId": "dragon-soul",
+  "predicate": "was_empowered_by_the_aspects_and_weaponized_by_neltharion",
+  "value": true,
+  "citationIds": ["chronicle-v1-dragon-soul-betrayal", "blizzard-aspects-neltharion"],
+  "confidence": "explicit",
+  "status": "active"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "azshara-authorizes-highborne-ritual",
+  "fromId": "azshara",
+  "toId": "highborne-open-legion-way",
+  "type": "participant_in",
+  "citationIds": ["chronicle-v1-war-ancients-opening", "blizzard-well-of-eternity-history"],
+  "confidence": "explicit"
+}

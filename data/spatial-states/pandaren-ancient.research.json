@@ -1,0 +1,13 @@
+{
+  "id": "pandaren-ancient-spatial-research",
+  "entityId": "pandaren-ancient",
+  "eraId": "ancient-civilizations",
+  "worldspaceId": "azeroth",
+  "geometryId": "pandaren-ancient-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "The shared Kang artwork serves as a deliberate visual for the people central to this story beat; the point is not an exact settlement or uprising location.",
+  "labelPriority": 120,
+  "visualPresence": "contextual"
+}

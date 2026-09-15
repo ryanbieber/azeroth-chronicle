@@ -1,0 +1,9 @@
+{
+  "id": "lei-shen-unites-mogu-event-claim",
+  "subjectId": "lei-shen-unites-mogu",
+  "predicate": "event-summary",
+  "value": "Lei Shen ended the age of rival mogu kingdoms by defeating their rulers and establishing himself as emperor.",
+  "citationIds": ["chronicle-v1-mogu-empire", "blizzard-lei-shen-empire"],
+  "confidence": "explicit",
+  "status": "active"
+}

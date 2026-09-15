@@ -1,0 +1,18 @@
+{
+  "id": "keepers",
+  "type": "faction",
+  "name": "The Keepers",
+  "slug": "keepers",
+  "shortDescription": "The greatest titan-forged, empowered by members of the Pantheon to command the war and safeguard the ordering of Azeroth.",
+  "body": "The keepers led the armies that broke the Black Empire, contained the remaining Old Gods, stabilized the world-wound, established Ulduar, and directed the works that reshaped Azeroth. Individual duties are summarized here without turning the guided era into separate biographies.",
+  "firstEraId": "ordering-of-azeroth",
+  "featuredEraIds": ["ordering-of-azeroth"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-dragon-aspects-history"],
+  "claimIds": ["keepers-command-claim", "keepers-stewardship-claim"],
+  "tags": ["keepers", "titan-forged", "stewardship"],
+  "mapVisual": {
+    "asset": "images/subjects/ordering-of-azeroth/keepers.research.webp",
+    "scale": 1.1
+  },
+  "contentStatus": "research"
+}

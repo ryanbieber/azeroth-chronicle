@@ -30,6 +30,8 @@ These notes route research; they do not authorize a claim for publication.
 - Dark Horse's [Volume 4 catalog entry](https://digital.darkhorse.com/books/9b17a6faf3a945f5a2b96bcbe1846fad/world-of-warcraft-chronicle-volume-4) describes coverage from *Mists of Pandaria* through *Shadowlands*.
 - Exact coverage for Volumes 2 and 3 still requires a physical/digital table-of-contents and page-index pass.
 - Dragonflight and the Worldsoul Saga occur outside Volume 4's stated endpoint, so Era 9 needs first-party game and Blizzard sources in addition to Chronicle.
+- Era 2 currently routes its claim review through Volume 1, Chapter II: “The Discovery of Azeroth” (pp. 30–31), “Wrath of the Titan-Forged” (pp. 31–33), “Fall of the Black Empire” (pp. 33–35), “The Well of Eternity and the World Forges” (pp. 36–38), “The Ordering of Azeroth” (pp. 39–40), and “The Pantheon's Departure” (p. 42). These page ranges are research indexes until checked against the selected complete edition.
+- Blizzard's first-party [Dragon Aspects history](https://worldofwarcraft.blizzard.com/en-us/news/23876527) independently corroborates Aggramar's proposed construct strategy, the Pantheon's empowerment of the keepers, and the keeper-led titan-forged campaign. It does not replace the Chronicle page review for details omitted from that overview.
 
 ## Warcraft Wiki research index
 

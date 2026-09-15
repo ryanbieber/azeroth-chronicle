@@ -111,6 +111,68 @@ describe('lore dataset', () => {
     }));
   });
 
+  it('contains a complete source-linked Ordering of Azeroth research slice', () => {
+    const data = loadDataset();
+    const era = data.eras.find((item) => item.id === 'ordering-of-azeroth')!;
+    const mapState = data.mapStates.find((item) => item.id === era.mapStateId)!;
+    const blackEmpireMapState = data.mapStates.find((item) => item.id === 'black-empire-map-research')!;
+    const entities = data.entities.filter((item) => entityVisibleInEra(item, era.id, data.eras));
+    const events = data.events.filter((item) => item.eraId === era.id);
+    const battles = data.battles.filter((item) => item.eraId === era.id);
+    const guide = data.storyGuides.find((item) => item.id === era.storyGuideId)!;
+    const nodes = guide.nodeIds.map((nodeId) => data.storyNodes.find((item) => item.id === nodeId)!);
+    const spatialStates = data.spatialStates.filter((item) => item.eraId === era.id);
+
+    expect(era.order).toBe(2);
+    expect(era.previousEraId).toBe('black-empire');
+    expect(era.nextEraId).toBe('ancient-civilizations');
+    expect(entities).toHaveLength(20);
+    expect(events).toHaveLength(8);
+    expect(battles).toHaveLength(1);
+    expect(guide.nodeIds).toHaveLength(11);
+    expect(spatialStates).toHaveLength(12);
+    expect(mapState.presentation).toBe('terrain');
+    expect(mapState.terrainTextureAsset).toBeTruthy();
+    expect(mapState.terrainHeightAsset).toBeTruthy();
+    expect(mapState.terrainTextureAsset).not.toBe(blackEmpireMapState.terrainTextureAsset);
+    expect(mapState.interpretationNote).toMatch(/preserves the Era 1 research coastline/i);
+    expect(battles[0]).toMatchObject({
+      geographicCertainty: 'unknown',
+      campaignId: 'titan-forged-ordering-campaign',
+    });
+    expect(battles[0]?.geometryId).toBeUndefined();
+    expect(data.routes.filter((route) => data.campaigns.some((campaign) =>
+      campaign.eraId === era.id && campaign.routeIds?.includes(route.id),
+    ))).toEqual([]);
+
+    const keyActorIds = [
+      'aggramar', 'amanthul', 'pantheon-of-order', 'titan-forged', 'keepers',
+      'old-gods', 'yshaarj', 'alakir', 'ragnaros', 'therazane', 'neptulon',
+    ];
+    expect(keyActorIds.every((entityId) => {
+      const entity = entities.find((item) => item.id === entityId);
+      const asset = entity?.mapFigure?.asset ?? entity?.mapVisual?.asset;
+      return Boolean(asset && existsSync(resolve('public', asset)));
+    })).toBe(true);
+    expect(['aggramar', 'amanthul', 'yshaarj-central-bastion'].every((entityId) =>
+      spatialStates.some((state) => state.entityId === entityId && state.visualPresence === 'contextual'),
+    )).toBe(true);
+    expect(spatialStates.filter((state) => state.placementKind === 'relational').every((state) =>
+      state.geographicCertainty === 'unknown' && Boolean(state.editorNote),
+    )).toBe(true);
+    expect([...entities, ...events, ...battles].every((subject) =>
+      data.claims.some((claim) => claim.subjectId === subject.id && claim.citationIds.length > 0),
+    )).toBe(true);
+    expect(nodes.slice(0, 6).every((node) => node.visualActions?.some((action) =>
+      action.type === 'set_map_state' && action.mapStateId === 'black-empire-map-research'))).toBe(true);
+    expect(nodes.slice(6).every((node) => node.visualActions?.some((action) =>
+      action.type === 'set_map_state' && action.mapStateId === 'ordering-of-azeroth-map-research'))).toBe(true);
+    expect(data.relationships).toContainEqual(expect.objectContaining({
+      id: 'ordering-precedes-ancient-civilizations',
+      type: 'precedes',
+    }));
+  });
+
   it('enforces the non-geographic relational visualization contract', () => {
     expect(mapStateSchema.safeParse({
       id: 'relational-test',
@@ -147,7 +209,7 @@ describe('lore dataset', () => {
 
   it('paces each guided-history pane for slow narration', () => {
     const data = loadDataset();
-    for (const guideId of ['black-empire-guided-history', 'cosmic-origins-guided-history']) {
+    for (const guideId of ['black-empire-guided-history', 'cosmic-origins-guided-history', 'ordering-of-azeroth-guided-history']) {
       const guide = data.storyGuides.find((item) => item.id === guideId)!;
       for (const nodeId of guide.nodeIds) {
         const node = data.storyNodes.find((item) => item.id === nodeId)!;

@@ -1,0 +1,12 @@
+{
+  "id": "titan-forged-ordering-spatial-research",
+  "entityId": "titan-forged",
+  "eraId": "ordering-of-azeroth",
+  "worldspaceId": "azeroth",
+  "geometryId": "titan-forged-ordering-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-dragon-aspects-history"],
+  "editorNote": "The army visual represents a world-spanning campaign with no mapped front. Its point is a story composition anchor, not a concentration of forces.",
+  "labelPriority": 120
+}

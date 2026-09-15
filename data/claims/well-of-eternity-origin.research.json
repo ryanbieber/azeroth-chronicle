@@ -1,0 +1,9 @@
+{
+  "id": "well-of-eternity-origin-claim",
+  "subjectId": "well-of-eternity",
+  "predicate": "origin",
+  "value": "The keepers constructed wards around the wound left by Y'Shaarj's removal until Azeroth's arcane lifeblood settled into the Well of Eternity.",
+  "citationIds": ["chronicle-v1-well-world-forges"],
+  "confidence": "explicit",
+  "status": "active"
+}

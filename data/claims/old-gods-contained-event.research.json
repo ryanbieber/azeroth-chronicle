@@ -1,0 +1,9 @@
+{
+  "id": "old-gods-contained-event-claim",
+  "subjectId": "old-gods-contained",
+  "predicate": "event-summary",
+  "value": "The surviving Old Gods were defeated and imprisoned beneath Azeroth because tearing them out risked fatal damage to the world-soul.",
+  "citationIds": ["chronicle-v1-fall-black-empire", "chronicle-v1-well-world-forges"],
+  "confidence": "explicit",
+  "status": "active"
+}

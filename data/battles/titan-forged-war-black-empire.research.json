@@ -1,0 +1,96 @@
+{
+  "id": "titan-forged-war-black-empire",
+  "kind": "battle",
+  "name": "The Titan-forged War against the Black Empire",
+  "slug": "titan-forged-war-black-empire",
+  "eraId": "ordering-of-azeroth",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "After the titan-forged were mustered", "relativeToId": "titan-forged-mustered" },
+  "summary": "Keeper-led armies of stone and metal fought across primordial Azeroth, defeated the Black Empire's forces, and subdued the powers that had ruled the world.",
+  "description": "This title groups a world-spanning campaign described across Chronicle's Ordering sequence. The sources do not establish a surveyable front or one battle coordinate, so the atlas provides phases without an invented route or marker.",
+  "campaignId": "titan-forged-ordering-campaign",
+  "participantEntityIds": ["titan-forged", "keepers", "black-empire-civilization", "old-gods", "yshaarj", "nraqi", "aqir", "alakir", "ragnaros", "therazane", "neptulon"],
+  "causedByEventIds": ["titan-forged-mustered"],
+  "causesEventIds": ["old-gods-contained"],
+  "relationshipIds": ["titan-forged-muster-causes-war", "titan-forged-war-causes-containment"],
+  "combatants": [
+    { "factionId": "titan-forged", "role": "attacker" },
+    { "factionId": "black-empire-civilization", "role": "defender" }
+  ],
+  "objectives": [
+    { "factionId": "titan-forged", "summary": "Break the Black Empire while preserving Azeroth's nascent world-soul." },
+    { "factionId": "black-empire-civilization", "summary": "Hold the Old Gods' dominion against the keeper-led invasion." }
+  ],
+  "phases": [
+    {
+      "id": "keepers-lead-hosts",
+      "title": "The keepers lead the hosts",
+      "summary": "Empowered keepers direct the first titan-forged armies into the corrupted world.",
+      "durationMs": 30000,
+      "narration": "The keepers went before the hosts of living stone and metal. They did not come to conquer a kingdom for themselves, but to reach the power buried beneath it without destroying the world they had been made to save.",
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "black-empire-map-research" },
+        { "type": "highlight_faction", "factionId": "keepers" },
+        { "type": "highlight_faction", "factionId": "titan-forged" }
+      ]
+    },
+    {
+      "id": "elemental-powers-subdued",
+      "title": "The elemental powers are subdued",
+      "summary": "The titan-forged overcome the elemental forces bound to the Old Gods.",
+      "durationMs": 29000,
+      "narration": "Storm, flame, stone, and sea rose against the invaders under the Old Gods' dominion. One by one those ancient powers were overcome, and the keepers prepared realms apart from the waking world in which the elemental hosts could be confined.",
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "black-empire-map-research" },
+        { "type": "highlight_entity", "entityId": "ragnaros" },
+        { "type": "highlight_entity", "entityId": "alakir" },
+        { "type": "highlight_entity", "entityId": "therazane" },
+        { "type": "highlight_entity", "entityId": "neptulon" }
+      ]
+    },
+    {
+      "id": "citadels-broken",
+      "title": "The citadels are broken",
+      "summary": "The keeper-led hosts dismantle the Black Empire's military dominion.",
+      "durationMs": 28500,
+      "narration": "Across unnamed fronts, the Black Empire's fortresses and servant hosts yielded. The sources give no single road by which the victory came, only a widening collapse as the titan-forged pressed toward the Old Gods themselves.",
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "black-empire-map-research" },
+        { "type": "show_region", "regionId": "black-empire-influence-research" },
+        { "type": "highlight_faction", "factionId": "titan-forged" }
+      ]
+    },
+    {
+      "id": "old-gods-bound",
+      "title": "The surviving Old Gods are bound",
+      "summary": "The remaining Old Gods are defeated and contained rather than torn from the world.",
+      "durationMs": 31500,
+      "narration": "The lesson of the world-wound could not be ignored. The surviving Old Gods were not pulled free. They were overcome, chained, and sealed beneath Azeroth, so that their roots might remain without tearing the sleeping titan apart.",
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "ordering-of-azeroth-map-research" },
+        { "type": "highlight_faction", "factionId": "old-gods" }
+      ]
+    },
+    {
+      "id": "world-left-for-healing",
+      "title": "A wounded world remains",
+      "summary": "Victory ends the empire but leaves a planet requiring containment and repair.",
+      "durationMs": 30000,
+      "narration": "The empire had fallen, yet victory was not wholeness. Prisons lay beneath the earth, a wound burned at the continent's heart, and the keepers turned from war toward the longer labor of making Azeroth stable again.",
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "ordering-of-azeroth-map-research" },
+        { "type": "focus_location", "locationId": "well-of-eternity" }
+      ]
+    }
+  ],
+  "outcome": {
+    "summary": "The Black Empire's rule was broken; its elemental powers were confined, the surviving Old Gods were imprisoned, and the keepers could begin healing and ordering Azeroth.",
+    "winnerFactionId": "titan-forged"
+  },
+  "geographicCertainty": "unknown",
+  "geographicEditorNote": "Chronicle describes a world-spanning campaign but does not provide an exact battle site, front line, or campaign route. No marker is asserted.",
+  "importance": "era_defining",
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-dragon-aspects-history"],
+  "claimIds": ["titan-forged-war-event-claim"],
+  "contentStatus": "research"
+}

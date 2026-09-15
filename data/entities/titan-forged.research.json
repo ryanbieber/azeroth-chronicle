@@ -1,0 +1,18 @@
+{
+  "id": "titan-forged",
+  "type": "faction",
+  "name": "The Titan-forged",
+  "slug": "titan-forged",
+  "shortDescription": "Armies and workers of living stone and metal created to defeat the Black Empire, protect Azeroth, and help shape the wounded world.",
+  "body": "The first hosts fought beneath empowered keepers. Later titan-forged peoples undertook different labors across Azeroth, from raising mountains and tending machinery to carving waterways and guarding the keepers' works.",
+  "firstEraId": "ordering-of-azeroth",
+  "featuredEraIds": ["ordering-of-azeroth"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-dragon-aspects-history"],
+  "claimIds": ["titan-forged-purpose-claim", "titan-forged-world-shaping-claim"],
+  "tags": ["titan-forged", "army", "world-shaping"],
+  "mapVisual": {
+    "asset": "images/subjects/ordering-of-azeroth/titan-forged.research.webp",
+    "scale": 1.1
+  },
+  "contentStatus": "research"
+}

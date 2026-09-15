@@ -1,0 +1,9 @@
+{
+  "id": "titan-forged-purpose-claim",
+  "subjectId": "titan-forged",
+  "predicate": "original-purpose",
+  "value": "The titan-forged were created from stone and metal to prosecute the Pantheon's campaign against the Black Empire without direct titan-scale devastation.",
+  "citationIds": ["chronicle-v1-wrath-titan-forged", "blizzard-ordering-titan-forged"],
+  "confidence": "explicit",
+  "status": "active"
+}

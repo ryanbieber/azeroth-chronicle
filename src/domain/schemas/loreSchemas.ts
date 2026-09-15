@@ -59,6 +59,7 @@ export const spatialStateSchema = z.object({
   sourceIds: z.array(id),
   editorNote: z.string().optional(),
   labelPriority: z.number().int().min(0).optional(),
+  visualPresence: z.enum(['persistent', 'contextual']).optional(),
 }).superRefine((value, context) => {
   const relational = value.placementKind === 'relational';
   if (!relational && value.geographicCertainty === 'unknown' && (value.geometryId || value.position)) {

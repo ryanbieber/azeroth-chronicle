@@ -1,0 +1,9 @@
+{
+  "id": "keepers-stewardship-claim",
+  "subjectId": "keepers",
+  "predicate": "stewardship-role",
+  "value": "The keepers contained the surviving Old Gods, calmed Azeroth's wound, established world-forges and directed the planet's reshaping.",
+  "citationIds": ["chronicle-v1-well-world-forges", "chronicle-v1-ordering-azeroth"],
+  "confidence": "explicit",
+  "status": "active"
+}

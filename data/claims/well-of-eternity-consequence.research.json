@@ -1,0 +1,9 @@
+{
+  "id": "well-of-eternity-consequence-claim",
+  "subjectId": "well-of-eternity",
+  "predicate": "world-consequence",
+  "value": "The stabilized Well radiated power through the world and helped create conditions in which life could flourish and change.",
+  "citationIds": ["chronicle-v1-well-world-forges", "chronicle-v1-ordering-azeroth"],
+  "confidence": "explicit",
+  "status": "active"
+}

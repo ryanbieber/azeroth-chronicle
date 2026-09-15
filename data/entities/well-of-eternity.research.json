@@ -1,0 +1,14 @@
+{
+  "id": "well-of-eternity",
+  "type": "location",
+  "name": "The Well of Eternity",
+  "slug": "well-of-eternity",
+  "shortDescription": "The immense arcane lake formed when the keepers stabilized the wound left by Y'Shaarj's removal.",
+  "body": "The Well was not created as an ornamental monument. It was Azeroth's exposed lifeblood brought into balance by wards, and its power would nourish life while shaping every era that followed.",
+  "firstEraId": "ordering-of-azeroth",
+  "featuredEraIds": ["ordering-of-azeroth"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["well-of-eternity-origin-claim", "well-of-eternity-consequence-claim"],
+  "tags": ["well-of-eternity", "arcane", "world-wound"],
+  "contentStatus": "research"
+}

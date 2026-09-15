@@ -1,0 +1,8 @@
+{
+  "id": "titan-forged-war-causes-containment",
+  "fromId": "titan-forged-war-black-empire",
+  "toId": "old-gods-contained",
+  "type": "causes",
+  "citationIds": ["chronicle-v1-fall-black-empire", "chronicle-v1-well-world-forges"],
+  "confidence": "explicit"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "titan-forged-mustered",
+  "kind": "event",
+  "name": "The Titan-forged Are Mustered",
+  "slug": "titan-forged-mustered",
+  "eraId": "ordering-of-azeroth",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "After direct intervention wounded Azeroth", "relativeToId": "yshaarj-removed" },
+  "summary": "The Pantheon created armies of stone and metal and empowered the greatest among them as keepers to lead the war for Azeroth.",
+  "participantEntityIds": ["pantheon-of-order", "aggramar", "titan-forged", "keepers"],
+  "causedByEventIds": ["yshaarj-removed"],
+  "causesEventIds": ["titan-forged-war-black-empire"],
+  "relationshipIds": ["yshaarj-removal-causes-titan-forged-method", "titan-forged-muster-causes-war"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-dragon-aspects-history"],
+  "claimIds": ["titan-forged-mustered-event-claim"],
+  "contentStatus": "research"
+}

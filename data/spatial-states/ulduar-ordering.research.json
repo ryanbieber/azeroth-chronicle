@@ -1,0 +1,11 @@
+{
+  "id": "ulduar-ordering-spatial-research",
+  "entityId": "ulduar",
+  "eraId": "ordering-of-azeroth",
+  "worldspaceId": "azeroth",
+  "geometryId": "ulduar-focus-research",
+  "geographicCertainty": "inferred",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "Chronicle places Ulduar in the far north. Its position on this original primordial coastline is an inferred regional focus, not an exact canonical coordinate.",
+  "labelPriority": 126
+}

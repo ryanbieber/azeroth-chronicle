@@ -1,0 +1,8 @@
+{
+  "id": "containment-enables-healing",
+  "fromId": "old-gods-contained",
+  "toId": "well-eternity-stabilized",
+  "type": "causes",
+  "citationIds": ["chronicle-v1-well-world-forges"],
+  "confidence": "strongly_supported"
+}

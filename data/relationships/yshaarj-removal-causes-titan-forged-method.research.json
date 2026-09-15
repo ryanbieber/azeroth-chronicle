@@ -1,0 +1,8 @@
+{
+  "id": "yshaarj-removal-causes-titan-forged-method",
+  "fromId": "yshaarj-removed",
+  "toId": "titan-forged-mustered",
+  "type": "causes",
+  "citationIds": ["chronicle-v1-fall-black-empire", "blizzard-ordering-titan-forged"],
+  "confidence": "strongly_supported"
+}

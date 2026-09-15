@@ -1,0 +1,9 @@
+{
+  "id": "forge-of-origination-purpose-claim",
+  "subjectId": "forge-of-origination",
+  "predicate": "world-forge-purpose",
+  "value": "The Forge of Origination worked with the Forge of Wills to stabilize Azeroth and also retained the capacity to re-originate life if corruption became absolute.",
+  "citationIds": ["chronicle-v1-well-world-forges"],
+  "confidence": "explicit",
+  "status": "active"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "titan-forged-ordering-campaign",
+  "name": "The Titan-forged War for Azeroth",
+  "slug": "titan-forged-ordering-campaign",
+  "eraId": "ordering-of-azeroth",
+  "summary": "An editorial campaign grouping for the keeper-led war that broke the Black Empire and made containment and planetary repair possible.",
+  "battleIds": ["titan-forged-war-black-empire"],
+  "routeIds": [],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-dragon-aspects-history"],
+  "contentStatus": "research"
+}

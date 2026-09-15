@@ -128,10 +128,55 @@ test('Cosmic Origins uses relational cosmography and reader-opened character con
   await expect(dossier.locator('.entity-overview-portrait')).toBeVisible();
 });
 
+test('Ordering of Azeroth moves from inherited empire to a contextual ordered world', async ({ page }) => {
+  const orderedTerrainResponse = page.waitForResponse((response) => response.url().endsWith('/ordering-of-azeroth-map-research/terrain-atlas.research.webp'));
+  await page.goto('/map?era=ordering-of-azeroth');
+
+  await expect(page.getByRole('combobox', { name: 'Choose era' })).toHaveValue('ordering-of-azeroth');
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE BEFORE/AFTER CARTOGRAPHY');
+  expect((await orderedTerrainResponse).status()).toBe(200);
+  await expect(page.getByRole('button', { name: 'Aggramar', exact: true })).toHaveCount(0);
+
+  await page.getByRole('button', { name: 'Guided tour' }).click();
+  await expect(page.getByRole('heading', { name: 'The world the keepers inherited' })).toBeVisible();
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE CARTOGRAPHY');
+  await expect(page.getByText(/Story \d+ of \d+/)).toHaveCount(0);
+  await expect(page.locator('.battle-playback')).toHaveCount(0);
+
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'A watcher finds the hidden world' })).toBeVisible();
+  const aggramar = page.getByRole('button', { name: 'Aggramar', exact: true });
+  await expect(aggramar).toBeVisible();
+  await expect(page.locator('.map-subject-visual').filter({ hasText: 'The Pantheon of Order' })).toBeVisible();
+  await aggramar.click();
+  const dossier = page.getByRole('complementary', { name: 'Selected atlas record' });
+  await expect(dossier.getByRole('heading', { name: 'Aggramar' })).toBeVisible();
+  await expect(dossier.locator('.entity-overview-portrait')).toBeVisible();
+  await page.getByRole('button', { name: 'Close dossier' }).click();
+
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Victory becomes a wound' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Aman’Thul', exact: true })).toBeVisible();
+  await expect(page.getByRole('button', { name: "Y'Shaarj", exact: true })).toBeVisible();
+  for (let index = 0; index < 4; index += 1) {
+    await page.getByRole('button', { name: 'Next', exact: true }).click();
+  }
+  await expect(page.getByRole('heading', { name: 'Chains beneath the earth' })).toBeVisible();
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE BEFORE/AFTER CARTOGRAPHY');
+  await expect(page.locator('.map-subject-visual').filter({ hasText: 'The Old Gods' })).toBeVisible();
+  await expect(page.locator('.map-subject-visual').filter({ hasText: 'The Keepers' })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'The wound becomes a well' })).toBeVisible();
+  await page.getByRole('button', { name: 'The Well of Eternity', exact: true }).click();
+  await expect(dossier.getByRole('heading', { name: 'The Well of Eternity' })).toBeVisible();
+  await expect(dossier.locator('.entity-overview-lede')).toContainText(/arcane lake/i);
+});
+
 test('landing page full tour chains every completed guided era', async ({ page }) => {
   await page.goto('/');
   await expect(page.getByRole('heading', { name: /the full history/i })).toBeVisible();
-  await expect(page.locator('.landing-still')).toHaveCount(5);
+  await expect(page.locator('.landing-still')).toHaveCount(6);
   await page.getByRole('button', { name: /full tour of the history/i }).click();
 
   await expect(page).toHaveURL(/map\?era=cosmic-origins&tour=full/);
@@ -148,6 +193,14 @@ test('landing page full tour chains every completed guided era', async ({ page }
     await page.getByRole('button', { name: 'Next', exact: true }).click();
   }
   await expect(page.getByRole('heading', { name: 'A world awaiting the Ordering' })).toBeVisible();
+  await page.getByRole('button', { name: 'Continue the chronicle' }).click();
+
+  await expect(page).toHaveURL(/map\?era=ordering-of-azeroth&tour=full/);
+  await expect(page.getByRole('heading', { name: 'The world the keepers inherited' })).toBeVisible();
+  for (let index = 0; index < 10; index += 1) {
+    await page.getByRole('button', { name: 'Next', exact: true }).click();
+  }
+  await expect(page.getByRole('heading', { name: 'The makers pass beyond the sky' })).toBeVisible();
   await page.getByRole('button', { name: 'Continue the chronicle' }).click();
 
   await expect(page).toHaveURL(/\?tour=complete$/);

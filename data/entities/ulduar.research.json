@@ -1,0 +1,14 @@
+{
+  "id": "ulduar",
+  "type": "site",
+  "name": "Ulduar",
+  "slug": "ulduar",
+  "shortDescription": "The keepers' great northern stronghold and the seat of the Forge of Wills during the ordering of Azeroth.",
+  "body": "Ulduar anchored the keepers' work in the far north of ancient Kalimdor. Its atlas marker is a broad reconstruction from that regional description, not a surveyed primordial coordinate.",
+  "firstEraId": "ordering-of-azeroth",
+  "featuredEraIds": ["ordering-of-azeroth"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["ulduar-ordering-role-claim"],
+  "tags": ["ulduar", "keeper-facility", "forge-of-wills"],
+  "contentStatus": "research"
+}

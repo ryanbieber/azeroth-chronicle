@@ -1,0 +1,9 @@
+{
+  "id": "world-forges-activated-event-claim",
+  "subjectId": "world-forges-activated",
+  "predicate": "event-summary",
+  "value": "The keepers established the Forge of Wills in Ulduar and the Forge of Origination in the south as complementary systems for Azeroth's stabilization.",
+  "citationIds": ["chronicle-v1-well-world-forges"],
+  "confidence": "explicit",
+  "status": "active"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "black-empire-ordering-spatial-research",
+  "entityId": "black-empire-civilization",
+  "eraId": "ordering-of-azeroth",
+  "worldspaceId": "azeroth",
+  "geometryId": "black-empire-influence-research",
+  "geographicCertainty": "inferred",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "This inherited Era 1 influence overlay appears only during the before-state. It remains a broad reconstruction rather than a border.",
+  "labelPriority": 90
+}

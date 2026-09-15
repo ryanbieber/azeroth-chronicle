@@ -1,0 +1,9 @@
+{
+  "id": "titan-forged-world-shaping-claim",
+  "subjectId": "titan-forged",
+  "predicate": "world-shaping-work",
+  "value": "After the war, titan-forged peoples helped raise mountains, carve deep places and waterways, dredge seas, maintain machinery, and guard the keepers' works.",
+  "citationIds": ["chronicle-v1-ordering-azeroth"],
+  "confidence": "explicit",
+  "status": "active"
+}

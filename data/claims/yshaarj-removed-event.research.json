@@ -1,0 +1,9 @@
+{
+  "id": "yshaarj-removed-event-claim",
+  "subjectId": "yshaarj-removed",
+  "predicate": "event-summary",
+  "value": "Aman’Thul destroyed Y'Shaarj by pulling it from Azeroth, and the Old God's deep roots tore open the world around its nascent titan.",
+  "citationIds": ["chronicle-v1-fall-black-empire"],
+  "confidence": "explicit",
+  "status": "active"
+}

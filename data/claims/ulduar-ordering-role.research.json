@@ -1,0 +1,10 @@
+{
+  "id": "ulduar-ordering-role-claim",
+  "subjectId": "ulduar",
+  "predicate": "ordering-role",
+  "value": "Ulduar served as the keepers' northern bastion and housed the Forge of Wills, one half of the system built to stabilize Azeroth.",
+  "citationIds": ["chronicle-v1-well-world-forges"],
+  "confidence": "explicit",
+  "status": "active",
+  "editorNote": "The role is explicit; the atlas placement on the primordial landmass remains an inferred regional reconstruction."
+}

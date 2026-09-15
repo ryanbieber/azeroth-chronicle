@@ -12,7 +12,7 @@ Application records live in `data/eras`. Each era owns a separate record in `dat
 | --- | --- | --- | --- |
 | 0 | `cosmic-origins` | Non-geographic cosmic forces and the formation of Azeroth | Public research-preview vertical slice implemented; human review pending |
 | 1 | `black-empire` | Primordial Azeroth, elemental domains, and Black Empire influence | Public research-preview vertical slice implemented; human review pending |
-| 2 | `ordering-of-azeroth` | Titan-forged campaigns and planetary reordering | Era shell and empty map state |
+| 2 | `ordering-of-azeroth` | Titan-forged campaigns and planetary reordering | Public research-preview vertical slice implemented; human review pending |
 | 3 | `ancient-civilizations` | Changing empires across primordial Kalimdor | Era shell and empty map state |
 | 4 | `war-of-the-ancients` | A campaign ending in a world-changing rupture | Era shell and empty map state |
 | 5 | `long-vigil-new-kingdoms` | Post-Sundering states, migrations, and borders | Era shell and empty map state |
@@ -21,7 +21,7 @@ Application records live in `data/eras`. Each era owns a separate record in `dat
 | 8 | `age-of-adventurers` | Many campaigns and repeated map-state changes | Era shell and empty map state |
 | 9 | `modern-cosmic-age` | Fourth War through the evolving Worldsoul Saga | Era shell and empty map state |
 
-Build the eras in this order. Cosmic Origins and Black Empire now establish the reference patterns for relational and terrain eras respectively. Finish the publication gate for one era before beginning production terrain for the next; reusable engine improvements may continue across eras.
+Build the eras in this order. Cosmic Origins, Black Empire, and Ordering of Azeroth now establish the reference patterns for relational cosmography, terrain eras, and explicit before/after map-state storytelling. Finish the publication gate for one era before beginning production terrain for the next; reusable engine improvements may continue across eras.
 
 ## Definition of done for every era
 
@@ -67,11 +67,17 @@ Era 9 extends beyond Chronicle Volume 4. Dragonflight and Worldsoul Saga materia
 
 **Historical question:** How did the Titan-forged campaign alter political control, containment, and the physical world?
 
+**Release boundary:** the slice begins with the Black Empire world inherited from Era 1 and ends after the Pantheon leaves its safeguards and servants to preserve the ordered world. Later keeper conflicts, Galakrond, the Dragon Aspects, and the rise of mortal civilizations belong to subsequent research. Every record remains a public `research` preview until a human verifies the cited edition pages, perspective, and cartographic interpretation.
+
 **Research packets:** Titan-forged forces and command relationships; Old God confrontations and imprisonments; keeper facilities; Ulduar; the Well of Eternity; ordering works; before/after geography; consequences inherited by later civilizations.
 
 **Map production:** preserve Era 1 as the before-state and create a distinct ordered-Azeroth after-state. The tour may switch between them; it must not morph continents unless later measurements justify that feature. Facility markers and campaign paths need explicit geography confidence.
 
 **Animated tour spine:** inherited Black Empire map → Titan-forged arrival → campaign fronts → pivotal confrontations → containment network → reshaped world and facilities → Well of Eternity → handoff to emerging civilizations.
+
+**Voice-over sequencing:** the eleven transcripts are timed for a slow, weighty delivery of roughly 82 words per minute plus breathing room. Recording and final audio synchronization remain deferred until all historical slices are stable.
+
+**Implemented research baseline:** six new indexed subjects, eight events, a five-phase campaign dossier, 11 source-aware relationships, 12 time-aware spatial states, separate before/after terrain, original actor visuals, and an eleven-pane guide. The detailed source, geography, and visual audit is in `docs/research/era-2-ordering-of-azeroth.md`.
 
 **Completion emphasis:** the final scene must make the causal transition to Era 3 visible, with source-backed relationships rather than narration alone.
 

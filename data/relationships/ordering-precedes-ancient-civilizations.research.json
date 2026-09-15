@@ -1,0 +1,8 @@
+{
+  "id": "ordering-precedes-ancient-civilizations",
+  "fromId": "azeroth-ordered",
+  "toId": "ancient-civilizations",
+  "type": "precedes",
+  "citationIds": ["chronicle-v1-ordering-azeroth"],
+  "confidence": "explicit"
+}

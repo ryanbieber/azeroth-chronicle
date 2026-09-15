@@ -1,0 +1,9 @@
+{
+  "id": "pantheon-discovers-azeroth-event-claim",
+  "subjectId": "pantheon-discovers-azeroth",
+  "predicate": "event-summary",
+  "value": "Aggramar found Azeroth's world-soul beneath the Black Empire and brought the endangered world to the Pantheon's attention.",
+  "citationIds": ["chronicle-v1-discovery-azeroth"],
+  "confidence": "explicit",
+  "status": "active"
+}

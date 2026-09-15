@@ -1,0 +1,9 @@
+{
+  "id": "azeroth-ordered-event-claim",
+  "subjectId": "azeroth-ordered",
+  "predicate": "event-summary",
+  "value": "Keeper-directed titan-forged labors reshaped and stabilized Azeroth, and the primary continent was named Kalimdor.",
+  "citationIds": ["chronicle-v1-ordering-azeroth"],
+  "confidence": "explicit",
+  "status": "active"
+}

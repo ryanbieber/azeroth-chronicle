@@ -1,0 +1,13 @@
+{
+  "id": "aggramar-ordering-spatial-research",
+  "entityId": "aggramar",
+  "eraId": "ordering-of-azeroth",
+  "worldspaceId": "azeroth",
+  "geometryId": "aggramar-ordering-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-dragon-aspects-history"],
+  "editorNote": "Aggramar is framed above the world as the discoverer in the story; this point is not a claim that he stood at a planetary coordinate.",
+  "labelPriority": 126,
+  "visualPresence": "contextual"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "yshaarj-removal-causes-world-wound",
+  "fromId": "yshaarj-removed",
+  "toId": "well-eternity-stabilized",
+  "type": "causes",
+  "citationIds": ["chronicle-v1-fall-black-empire", "chronicle-v1-well-world-forges"],
+  "confidence": "explicit"
+}

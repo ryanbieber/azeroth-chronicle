@@ -1,0 +1,211 @@
+{
+  "guide": {
+    "id": "ordering-of-azeroth-guided-history",
+    "eraId": "ordering-of-azeroth",
+    "title": "The Wounding and Ordering of Azeroth",
+    "description": "A continuous history of the Pantheon's discovery, the costly first intervention, the titan-forged war, the containment of the Old Gods, and the long work that transformed a conquered world into ancient Kalimdor.",
+    "nodeIds": [
+      "ordering-story-inherited-shadow",
+      "ordering-story-aggramar-discovers",
+      "ordering-story-yshaarj-wound",
+      "ordering-story-titan-forged",
+      "ordering-story-keepers",
+      "ordering-story-empire-falls",
+      "ordering-story-old-gods-contained",
+      "ordering-story-well-eternity",
+      "ordering-story-world-forges",
+      "ordering-story-world-shaped",
+      "ordering-story-pantheon-departs"
+    ],
+    "contentStatus": "research"
+  },
+  "nodes": [
+    {
+      "id": "ordering-story-inherited-shadow",
+      "guideId": "ordering-of-azeroth-guided-history",
+      "title": "The world the keepers inherited",
+      "narration": "The tale begins where the Black Empire left the world: beneath a dominion of citadels, servant hosts, and powers rooted deeper than any mountain. Azeroth's sleeping spirit endured below them, mighty beyond measure and yet unable to cast the corruption from its own skin. Nothing upon the world remained strong enough to break that reign.",
+      "durationMs": 46500,
+      "eventIds": ["black-empire-dominion"],
+      "entityIds": ["black-empire-civilization", "yshaarj"],
+      "optionalExploreEntityIds": ["black-empire-civilization", "yshaarj"],
+      "camera": { "position": [0.2, 6.3, 6.1], "target": [0.1, 0, 0.1], "durationMs": 1200 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "black-empire-map-research" },
+        { "type": "show_region", "regionId": "black-empire-influence-research" }
+      ],
+      "nextNodeIds": ["ordering-story-aggramar-discovers"]
+    },
+    {
+      "id": "ordering-story-aggramar-discovers",
+      "guideId": "ordering-of-azeroth-guided-history",
+      "title": "A watcher finds the hidden world",
+      "narration": "Far beyond those clouded skies, Aggramar found Azeroth. He perceived the nascent titan within, and also the Old Gods fastening their will around it. The news passed to the Pantheon like a bell across the Great Dark. Here was a spirit of extraordinary promise; here too was a peril that could turn such promise against all creation.",
+      "durationMs": 47500,
+      "eventIds": ["pantheon-discovers-azeroth"],
+      "entityIds": ["aggramar", "pantheon-of-order"],
+      "optionalExploreEntityIds": ["aggramar", "pantheon-of-order", "azeroth-world-soul"],
+      "camera": { "position": [-1.8, 5.8, 5.2], "target": [-1.3, 0, -1.6], "durationMs": 1100 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "black-empire-map-research" },
+        { "type": "show_relationships", "relationshipIds": ["black-empire-precedes-pantheon-discovery", "pantheon-discovery-causes-yshaarj-removal"] }
+      ],
+      "previousNodeId": "ordering-story-inherited-shadow",
+      "nextNodeIds": ["ordering-story-yshaarj-wound"]
+    },
+    {
+      "id": "ordering-story-yshaarj-wound",
+      "guideId": "ordering-of-azeroth-guided-history",
+      "title": "Victory becomes a wound",
+      "narration": "Aman’Thul reached toward the greatest of the Old Gods and tore Y'Shaarj from the world. The horror was destroyed, but its roots had entered too deeply. Stone, empire, and corruption came away together, and Azeroth's arcane lifeblood surged from the wound. In that instant the Pantheon learned that strength alone might kill the one it sought to save.",
+      "durationMs": 50000,
+      "eventIds": ["yshaarj-removed"],
+      "entityIds": ["amanthul", "yshaarj"],
+      "optionalExploreEntityIds": ["amanthul", "yshaarj", "azeroth-world-soul"],
+      "camera": { "position": [0.1, 4.9, 4.4], "target": [0.0, 0, 0.1], "durationMs": 950 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "black-empire-map-research" },
+        { "type": "show_relationships", "relationshipIds": ["yshaarj-removal-causes-world-wound", "yshaarj-removal-causes-titan-forged-method"] }
+      ],
+      "previousNodeId": "ordering-story-aggramar-discovers",
+      "nextNodeIds": ["ordering-story-titan-forged"]
+    },
+    {
+      "id": "ordering-story-titan-forged",
+      "guideId": "ordering-of-azeroth-guided-history",
+      "title": "Hands of stone and metal",
+      "narration": "The answer was not another titan's grasp. At Aggramar's urging, the Pantheon fashioned servants whose power could be brought against the Black Empire without shattering Azeroth beneath their feet. From stone and metal came the first titan-forged hosts: soldiers made for the war before them, and workers for labors not yet begun.",
+      "durationMs": 47000,
+      "eventIds": ["titan-forged-mustered"],
+      "entityIds": ["titan-forged", "aggramar"],
+      "optionalExploreEntityIds": ["titan-forged", "aggramar"],
+      "camera": { "position": [-2.0, 4.8, 4.5], "target": [-1.5, 0, 0.5], "durationMs": 1000 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "black-empire-map-research" },
+        { "type": "show_relationships", "relationshipIds": ["yshaarj-removal-causes-titan-forged-method", "titan-forged-muster-causes-war"] }
+      ],
+      "previousNodeId": "ordering-story-yshaarj-wound",
+      "nextNodeIds": ["ordering-story-keepers"]
+    },
+    {
+      "id": "ordering-story-keepers",
+      "guideId": "ordering-of-azeroth-guided-history",
+      "title": "The keepers take command",
+      "narration": "Among the titan-forged, the Pantheon raised a smaller company to bear greater power and judgment. These were the keepers. They would command the hosts, answer changing danger with more than brute force, and remain when distant makers had gone. Beneath their direction, the armies entered a world whose every horizon belonged to the enemy.",
+      "durationMs": 46500,
+      "eventIds": ["titan-forged-mustered"],
+      "entityIds": ["keepers", "titan-forged"],
+      "optionalExploreEntityIds": ["keepers", "titan-forged"],
+      "camera": { "position": [1.6, 5.0, 4.8], "target": [1.2, 0, -1.2], "durationMs": 1000 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "black-empire-map-research" },
+        { "type": "show_relationships", "relationshipIds": ["titan-forged-muster-causes-war"] }
+      ],
+      "previousNodeId": "ordering-story-titan-forged",
+      "nextNodeIds": ["ordering-story-empire-falls"]
+    },
+    {
+      "id": "ordering-story-empire-falls",
+      "guideId": "ordering-of-azeroth-guided-history",
+      "title": "The long dominion breaks",
+      "narration": "The war passed across fronts whose roads are no longer known. The titan-forged overcame the elemental powers bound to the Old Gods, broke servant hosts, and cast down the Black Empire's strongholds. No single stroke ended that shadow. It receded through a world-spanning campaign until the keepers stood before the powers beneath the empire itself.",
+      "durationMs": 49000,
+      "battleIds": ["titan-forged-war-black-empire"],
+      "entityIds": ["titan-forged", "black-empire-civilization"],
+      "optionalExploreEntityIds": ["titan-forged", "keepers", "black-empire-civilization"],
+      "camera": { "position": [0.4, 6.7, 6.3], "target": [0.0, 0, 0.0], "durationMs": 1250 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "black-empire-map-research" },
+        { "type": "show_region", "regionId": "black-empire-influence-research" },
+        { "type": "show_relationships", "relationshipIds": ["titan-forged-muster-causes-war", "titan-forged-war-causes-containment"] }
+      ],
+      "previousNodeId": "ordering-story-keepers",
+      "nextNodeIds": ["ordering-story-old-gods-contained"]
+    },
+    {
+      "id": "ordering-story-old-gods-contained",
+      "guideId": "ordering-of-azeroth-guided-history",
+      "title": "Chains beneath the earth",
+      "narration": "The surviving Old Gods could not be torn out without opening new wounds. Thus the keepers chose containment. The defeated horrors were bound in prisons beneath Azeroth, near enough to remain a danger, yet held from the sleeping titan's heart. Victory had not erased the corruption. It had made the long guarding of it possible.",
+      "durationMs": 47500,
+      "eventIds": ["old-gods-contained"],
+      "entityIds": ["old-gods", "keepers"],
+      "optionalExploreEntityIds": ["old-gods", "keepers"],
+      "camera": { "position": [2.6, 4.9, 4.5], "target": [2.0, 0, 0.7], "durationMs": 1050 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "ordering-of-azeroth-map-research" },
+        { "type": "show_relationships", "relationshipIds": ["titan-forged-war-causes-containment", "containment-enables-healing"] }
+      ],
+      "previousNodeId": "ordering-story-empire-falls",
+      "nextNodeIds": ["ordering-story-well-eternity"]
+    },
+    {
+      "id": "ordering-story-well-eternity",
+      "guideId": "ordering-of-azeroth-guided-history",
+      "title": "The wound becomes a well",
+      "narration": "At the continent's heart, Azeroth still bled light into the open world. The keepers labored around that ruin, raising wards until the torrent quieted and its power found balance. What remained was named the Well of Eternity: not a scar made beautiful, but a scar kept from becoming the death of the world.",
+      "durationMs": 46000,
+      "eventIds": ["well-eternity-stabilized"],
+      "entityIds": ["well-of-eternity", "keepers"],
+      "optionalExploreEntityIds": ["well-of-eternity", "keepers", "azeroth-world-soul"],
+      "camera": { "position": [0.0, 4.6, 3.9], "target": [0.1, 0, 0.0], "durationMs": 950 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "ordering-of-azeroth-map-research" },
+        { "type": "show_relationships", "relationshipIds": ["yshaarj-removal-causes-world-wound", "containment-enables-healing", "well-stabilization-precedes-world-forges"] }
+      ],
+      "previousNodeId": "ordering-story-old-gods-contained",
+      "nextNodeIds": ["ordering-story-world-forges"]
+    },
+    {
+      "id": "ordering-story-world-forges",
+      "guideId": "ordering-of-azeroth-guided-history",
+      "title": "Two forges hold the world",
+      "narration": "The work spread from the Well toward two great engines. In the far north, Ulduar held the Forge of Wills. Far to the south stood the Forge of Origination, made both to strengthen the wounded world and, should corruption become absolute, to begin it anew. Between them passed the hidden labor of preservation.",
+      "durationMs": 46500,
+      "eventIds": ["world-forges-activated"],
+      "entityIds": ["ulduar", "forge-of-origination"],
+      "optionalExploreEntityIds": ["ulduar", "forge-of-origination", "keepers"],
+      "camera": { "position": [1.0, 7.0, 6.6], "target": [0.6, 0, 0.0], "durationMs": 1250 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "ordering-of-azeroth-map-research" },
+        { "type": "show_relationships", "relationshipIds": ["well-stabilization-precedes-world-forges", "world-forges-enable-ordering"] }
+      ],
+      "previousNodeId": "ordering-story-well-eternity",
+      "nextNodeIds": ["ordering-story-world-shaped"]
+    },
+    {
+      "id": "ordering-story-world-shaped",
+      "guideId": "ordering-of-azeroth-guided-history",
+      "title": "Mountains rise, and rivers find the sea",
+      "narration": "Then began the labor by which victory became a world. Titan-forged hands raised ranges, opened deep places, cut waterways, dredged seas, tended engines, and guarded what had been built. The keepers fostered places where living things could flourish. When they looked across the primary continent they had shaped, they called it Kalimdor, the land beneath eternal starlight.",
+      "durationMs": 50000,
+      "eventIds": ["azeroth-ordered"],
+      "entityIds": ["keepers", "titan-forged", "primordial-kalimdor"],
+      "optionalExploreEntityIds": ["keepers", "titan-forged", "primordial-kalimdor"],
+      "camera": { "position": [0.0, 7.4, 6.9], "target": [0.0, 0, 0.0], "durationMs": 1350 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "ordering-of-azeroth-map-research" },
+        { "type": "show_relationships", "relationshipIds": ["world-forges-enable-ordering", "ordering-precedes-ancient-civilizations"] }
+      ],
+      "previousNodeId": "ordering-story-world-forges",
+      "nextNodeIds": ["ordering-story-pantheon-departs"]
+    },
+    {
+      "id": "ordering-story-pantheon-departs",
+      "guideId": "ordering-of-azeroth-guided-history",
+      "title": "The makers pass beyond the sky",
+      "narration": "At last the Pantheon judged Azeroth guarded well enough to leave. The keepers remained beside their forges, prisons, and appointed works, while the titan-forged watched a quieter horizon. Yet the ordered world was no finished monument. Around the Well, life would change, gather memory, and raise powers of its own. The age of ancient civilizations waited beyond the dawn.",
+      "durationMs": 49000,
+      "eventIds": ["pantheon-departs-azeroth"],
+      "entityIds": ["pantheon-of-order", "keepers", "well-of-eternity"],
+      "optionalExploreEntityIds": ["pantheon-of-order", "keepers", "well-of-eternity"],
+      "camera": { "position": [-0.8, 6.8, 6.5], "target": [0.0, 0, -0.1], "durationMs": 1250 },
+      "visualActions": [
+        { "type": "set_map_state", "mapStateId": "ordering-of-azeroth-map-research" },
+        { "type": "show_relationships", "relationshipIds": ["ordering-leads-to-pantheon-departure", "ordering-precedes-ancient-civilizations"] }
+      ],
+      "previousNodeId": "ordering-story-world-shaped",
+      "nextNodeIds": []
+    }
+  ]
+}

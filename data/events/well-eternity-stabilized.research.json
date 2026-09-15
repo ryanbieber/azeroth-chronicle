@@ -1,0 +1,18 @@
+{
+  "id": "well-eternity-stabilized",
+  "kind": "event",
+  "name": "The World-wound Is Stabilized",
+  "slug": "well-eternity-stabilized",
+  "eraId": "ordering-of-azeroth",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "After the surviving Old Gods were imprisoned", "relativeToId": "old-gods-contained" },
+  "summary": "The keepers raised wards around Azeroth's bleeding wound until its arcane energies settled into the Well of Eternity.",
+  "locationIds": ["well-of-eternity"],
+  "participantEntityIds": ["keepers", "azeroth-world-soul"],
+  "causedByEventIds": ["yshaarj-removed", "old-gods-contained"],
+  "causesEventIds": ["world-forges-activated"],
+  "relationshipIds": ["yshaarj-removal-causes-world-wound", "containment-enables-healing", "well-stabilization-precedes-world-forges"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["well-eternity-stabilized-event-claim"],
+  "contentStatus": "research"
+}

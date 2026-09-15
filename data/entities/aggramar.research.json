@@ -1,0 +1,18 @@
+{
+  "id": "aggramar",
+  "type": "character",
+  "name": "Aggramar",
+  "slug": "aggramar",
+  "shortDescription": "The titan who discovered the imperiled world of Azeroth and urged the Pantheon to act through purpose-built servants rather than overwhelming force.",
+  "body": "Aggramar recognized both the promise of Azeroth's sleeping world-soul and the danger posed by the Black Empire. Blizzard's first-party account emphasizes his concern that the Pantheon's colossal intervention could destroy what they meant to save.",
+  "firstEraId": "cosmic-origins",
+  "featuredEraIds": ["ordering-of-azeroth"],
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-dragon-aspects-history"],
+  "claimIds": ["aggramar-discovers-azeroth-claim", "aggramar-proposes-servants-claim"],
+  "tags": ["titan", "pantheon", "ordering"],
+  "mapFigure": {
+    "asset": "images/characters/ordering-of-azeroth/aggramar.research.webp",
+    "scale": 0.9
+  },
+  "contentStatus": "research"
+}

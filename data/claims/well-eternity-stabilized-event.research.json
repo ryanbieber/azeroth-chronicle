@@ -1,0 +1,9 @@
+{
+  "id": "well-eternity-stabilized-event-claim",
+  "subjectId": "well-eternity-stabilized",
+  "predicate": "event-summary",
+  "value": "The keepers' wards calmed Azeroth's exposed arcane lifeblood into the Well of Eternity.",
+  "citationIds": ["chronicle-v1-well-world-forges"],
+  "confidence": "explicit",
+  "status": "active"
+}

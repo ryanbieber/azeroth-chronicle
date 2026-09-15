@@ -1,0 +1,10 @@
+{
+  "id": "titan-forged-war-event-claim",
+  "subjectId": "titan-forged-war-black-empire",
+  "predicate": "conflict-outcome",
+  "value": "Keeper-led titan-forged armies defeated the Black Empire's forces, overcame its elemental servants, and enabled the surviving Old Gods to be imprisoned.",
+  "citationIds": ["chronicle-v1-wrath-titan-forged", "chronicle-v1-fall-black-empire", "blizzard-ordering-titan-forged"],
+  "confidence": "explicit",
+  "status": "active",
+  "editorNote": "This atlas title groups a world-spanning campaign described across the cited sections; it does not assert one localized battle."
+}

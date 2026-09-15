@@ -1,0 +1,18 @@
+{
+  "id": "azeroth-ordered",
+  "kind": "event",
+  "name": "Azeroth Is Ordered",
+  "slug": "azeroth-ordered",
+  "eraId": "ordering-of-azeroth",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "After the world-forges were established", "relativeToId": "world-forges-activated" },
+  "summary": "The titan-forged raised mountains, opened waterways, dredged seas, maintained great works, and helped make the wounded world stable enough for life to flourish.",
+  "locationIds": ["primordial-kalimdor", "well-of-eternity", "ulduar", "forge-of-origination"],
+  "participantEntityIds": ["keepers", "titan-forged", "azeroth-world-soul"],
+  "causedByEventIds": ["world-forges-activated"],
+  "causesEventIds": ["pantheon-departs-azeroth"],
+  "relationshipIds": ["world-forges-enable-ordering", "ordering-leads-to-pantheon-departure", "ordering-precedes-ancient-civilizations"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["azeroth-ordered-event-claim"],
+  "contentStatus": "research"
+}

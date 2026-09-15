@@ -91,9 +91,26 @@
     },
     {
       "id": "ordering-of-azeroth-map-research",
-      "name": "Ordering of Azeroth — cartography research",
+      "name": "Ordered primordial Azeroth — interpretive research map",
       "worldspaceId": "azeroth",
-      "geometryIds": []
+      "presentation": "terrain",
+      "cartographyLabel": "INTERPRETIVE BEFORE/AFTER CARTOGRAPHY",
+      "interpretationNote": "This after-state preserves the Era 1 research coastline so the historical change remains legible. The Well's central focus and the far-northern and far-southern facility placements follow broad Chronicle relationships; terrain details and coordinates are original reconstructions rather than traced or surveyed canon.",
+      "terrainTextureAsset": "textures/azeroth/ordering-of-azeroth-map-research/terrain-atlas.research.webp",
+      "terrainHeightAsset": "textures/azeroth/ordering-of-azeroth-map-research/terrain-height.research.webp",
+      "geometryIds": [
+        "ordered-kalimdor-landmass-research",
+        "well-of-eternity-focus-research",
+        "ulduar-focus-research",
+        "forge-of-origination-focus-research",
+        "aggramar-ordering-focus-research",
+        "pantheon-ordering-focus-research",
+        "amanthul-ordering-focus-research",
+        "yshaarj-ordering-focus-research",
+        "titan-forged-ordering-focus-research",
+        "keepers-ordering-focus-research",
+        "old-gods-containment-focus-research"
+      ]
     },
     {
       "id": "rise-of-the-horde-map-research",
@@ -115,6 +132,22 @@
     }
   ],
   "spatialStates": [
+    {
+      "id": "aggramar-ordering-spatial-research",
+      "entityId": "aggramar",
+      "eraId": "ordering-of-azeroth",
+      "worldspaceId": "azeroth",
+      "geometryId": "aggramar-ordering-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1",
+        "blizzard-dragon-aspects-history"
+      ],
+      "editorNote": "Aggramar is framed above the world as the discoverer in the story; this point is not a claim that he stood at a planetary coordinate.",
+      "labelPriority": 126,
+      "visualPresence": "contextual"
+    },
     {
       "id": "alakir-domain-black-empire-research",
       "entityId": "alakir",
@@ -144,6 +177,21 @@
       "labelPriority": 100
     },
     {
+      "id": "amanthul-ordering-spatial-research",
+      "entityId": "amanthul",
+      "eraId": "ordering-of-azeroth",
+      "worldspaceId": "azeroth",
+      "geometryId": "amanthul-ordering-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "Aman’Thul is composed beside the wound event for narrative clarity; no titan-scale coordinate or distance is asserted.",
+      "labelPriority": 128,
+      "visualPresence": "contextual"
+    },
+    {
       "id": "azeroth-world-soul-cosmic-research",
       "entityId": "azeroth-world-soul",
       "eraId": "cosmic-origins",
@@ -156,6 +204,19 @@
       ],
       "editorNote": "Closing story anchor that narrows the cosmic account toward Azeroth; it does not locate Azeroth within a canonical star map.",
       "labelPriority": 98
+    },
+    {
+      "id": "black-empire-ordering-spatial-research",
+      "entityId": "black-empire-civilization",
+      "eraId": "ordering-of-azeroth",
+      "worldspaceId": "azeroth",
+      "geometryId": "black-empire-influence-research",
+      "geographicCertainty": "inferred",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "This inherited Era 1 influence overlay appears only during the before-state. It remains a broad reconstruction rather than a border.",
+      "labelPriority": 90
     },
     {
       "id": "black-empire-spatial-research",
@@ -186,6 +247,19 @@
       "labelPriority": 86
     },
     {
+      "id": "forge-of-origination-ordering-spatial-research",
+      "entityId": "forge-of-origination",
+      "eraId": "ordering-of-azeroth",
+      "worldspaceId": "azeroth",
+      "geometryId": "forge-of-origination-focus-research",
+      "geographicCertainty": "inferred",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "Chronicle places the Forge of Origination in the far south. This focus is reconstructed on the atlas's original landmass and is not a surveyed facility coordinate.",
+      "labelPriority": 124
+    },
+    {
       "id": "great-dark-beyond-cosmic-research",
       "entityId": "great-dark-beyond",
       "eraId": "cosmic-origins",
@@ -198,6 +272,21 @@
       ],
       "editorNote": "Narrative anchor for the physical universe; the Great Dark Beyond is not reduced to a point or located relative to other markers.",
       "labelPriority": 94
+    },
+    {
+      "id": "keepers-ordering-spatial-research",
+      "entityId": "keepers",
+      "eraId": "ordering-of-azeroth",
+      "worldspaceId": "azeroth",
+      "geometryId": "keepers-ordering-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1",
+        "blizzard-dragon-aspects-history"
+      ],
+      "editorNote": "The collective keeper figure moves with the narrated work. This anchor does not assign all keepers to one geographic point.",
+      "labelPriority": 124
     },
     {
       "id": "light-and-shadow-cosmic-research",
@@ -228,6 +317,20 @@
       "labelPriority": 74
     },
     {
+      "id": "old-gods-containment-ordering-spatial-research",
+      "entityId": "old-gods",
+      "eraId": "ordering-of-azeroth",
+      "worldspaceId": "azeroth",
+      "geometryId": "old-gods-containment-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "The collective visual stands for multiple prisons and makes no claim about a single shared location or the exact position of any prison.",
+      "labelPriority": 116
+    },
+    {
       "id": "old-gods-cosmic-research",
       "entityId": "old-gods",
       "eraId": "cosmic-origins",
@@ -240,6 +343,19 @@
       ],
       "editorNote": "Narrative anchor for the Old Gods being cast into the Great Dark. It represents neither a shared origin point nor a trajectory.",
       "labelPriority": 93
+    },
+    {
+      "id": "ordered-kalimdor-spatial-research",
+      "entityId": "primordial-kalimdor",
+      "eraId": "ordering-of-azeroth",
+      "worldspaceId": "azeroth",
+      "geometryId": "ordered-kalimdor-landmass-research",
+      "geographicCertainty": "inferred",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "The coastline preserves the atlas's Era 1 research silhouette for before-and-after continuity. It is an original reconstruction, not a traced or surveyed canonical boundary.",
+      "labelPriority": 40
     },
     {
       "id": "pantheon-of-order-cosmic-research",
@@ -255,6 +371,20 @@
       ],
       "editorNote": "Relational anchor for the Pantheon's formation and work, not a headquarters or territorial claim.",
       "labelPriority": 90
+    },
+    {
+      "id": "pantheon-ordering-spatial-research",
+      "entityId": "pantheon-of-order",
+      "eraId": "ordering-of-azeroth",
+      "worldspaceId": "azeroth",
+      "geometryId": "pantheon-ordering-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "The Pantheon's map presence communicates attention and intervention from beyond Azeroth, not physical map position.",
+      "labelPriority": 122
     },
     {
       "id": "primordial-kalimdor-spatial-research",
@@ -299,6 +429,21 @@
       "labelPriority": 76
     },
     {
+      "id": "titan-forged-ordering-spatial-research",
+      "entityId": "titan-forged",
+      "eraId": "ordering-of-azeroth",
+      "worldspaceId": "azeroth",
+      "geometryId": "titan-forged-ordering-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1",
+        "blizzard-dragon-aspects-history"
+      ],
+      "editorNote": "The army visual represents a world-spanning campaign with no mapped front. Its point is a story composition anchor, not a concentration of forces.",
+      "labelPriority": 120
+    },
+    {
       "id": "twisting-nether-cosmic-research",
       "entityId": "twisting-nether",
       "eraId": "cosmic-origins",
@@ -311,6 +456,19 @@
       ],
       "editorNote": "Placed near the universe's origin beat to express the source's account of formation, not spatial adjacency or measured distance.",
       "labelPriority": 88
+    },
+    {
+      "id": "ulduar-ordering-spatial-research",
+      "entityId": "ulduar",
+      "eraId": "ordering-of-azeroth",
+      "worldspaceId": "azeroth",
+      "geometryId": "ulduar-focus-research",
+      "geographicCertainty": "inferred",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "Chronicle places Ulduar in the far north. Its position on this original primordial coastline is an inferred regional focus, not an exact canonical coordinate.",
+      "labelPriority": 126
     },
     {
       "id": "void-lords-cosmic-research",
@@ -327,6 +485,19 @@
       "labelPriority": 89
     },
     {
+      "id": "well-of-eternity-ordering-spatial-research",
+      "entityId": "well-of-eternity",
+      "eraId": "ordering-of-azeroth",
+      "worldspaceId": "azeroth",
+      "geometryId": "well-of-eternity-focus-research",
+      "geographicCertainty": "approximate",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "The focus follows the source-backed central relationship between Y'Shaarj's greatest bastion, the world-wound, and the Well; it is not an exact coordinate.",
+      "labelPriority": 132
+    },
+    {
       "id": "world-souls-cosmic-research",
       "entityId": "world-souls",
       "eraId": "cosmic-origins",
@@ -339,6 +510,21 @@
       ],
       "editorNote": "Narrative anchor connecting the physical universe to the awakening of titans; it does not represent one specific world.",
       "labelPriority": 92
+    },
+    {
+      "id": "yshaarj-central-bastion-ordering-spatial-research",
+      "entityId": "yshaarj-central-bastion",
+      "eraId": "ordering-of-azeroth",
+      "worldspaceId": "azeroth",
+      "geometryId": "yshaarj-ordering-focus-research",
+      "placementKind": "relational",
+      "geographicCertainty": "unknown",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "editorNote": "The figure anchor separates Aman’Thul and Y'Shaarj for legibility around their shared central event. It is narrative composition, not a second geographic claim.",
+      "labelPriority": 118,
+      "visualPresence": "contextual"
     },
     {
       "id": "yshaarj-central-bastion-spatial-research",
@@ -416,6 +602,22 @@
       "routeIds": [],
       "sourceIds": [
         "warcraft-chronicle-volume-1"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "titan-forged-ordering-campaign",
+      "name": "The Titan-forged War for Azeroth",
+      "slug": "titan-forged-ordering-campaign",
+      "eraId": "ordering-of-azeroth",
+      "summary": "An editorial campaign grouping for the keeper-led war that broke the Black Empire and made containment and planetary repair possible.",
+      "battleIds": [
+        "titan-forged-war-black-empire"
+      ],
+      "routeIds": [],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1",
+        "blizzard-dragon-aspects-history"
       ],
       "contentStatus": "research"
     }
@@ -588,8 +790,8 @@
       "slug": "ordering-of-azeroth",
       "worldspaceId": "azeroth",
       "order": 2,
-      "dateLabel": "Research boundary — dates pending citation review",
-      "summary": "The Titan-forged armies defeat and imprison the Old Gods, reshape the planet, create the Well of Eternity, and establish facilities such as Ulduar.",
+      "dateLabel": "After the Black Empire · before the rise of ancient civilizations",
+      "summary": "The Pantheon intervenes to save Azeroth, the keeper-led titan-forged break the Black Empire, the surviving Old Gods are imprisoned, and the wounded world is stabilized and reshaped.",
       "mapStateId": "ordering-of-azeroth-map-research",
       "defaultLayerIds": [
         "regions",
@@ -598,12 +800,25 @@
         "routes",
         "labels"
       ],
-      "featuredEventIds": [],
-      "featuredBattleIds": [],
+      "featuredEventIds": [
+        "pantheon-discovers-azeroth",
+        "yshaarj-removed",
+        "titan-forged-mustered",
+        "old-gods-contained",
+        "well-eternity-stabilized",
+        "world-forges-activated",
+        "azeroth-ordered",
+        "pantheon-departs-azeroth"
+      ],
+      "featuredBattleIds": [
+        "titan-forged-war-black-empire"
+      ],
+      "storyGuideId": "ordering-of-azeroth-guided-history",
       "previousEraId": "black-empire",
       "nextEraId": "ancient-civilizations",
       "sourceIds": [
-        "warcraft-chronicle-volume-1"
+        "warcraft-chronicle-volume-1",
+        "blizzard-dragon-aspects-history"
       ],
       "contentStatus": "research"
     },
@@ -686,6 +901,36 @@
   ],
   "entities": [
     {
+      "id": "aggramar",
+      "type": "character",
+      "name": "Aggramar",
+      "slug": "aggramar",
+      "shortDescription": "The titan who discovered the imperiled world of Azeroth and urged the Pantheon to act through purpose-built servants rather than overwhelming force.",
+      "body": "Aggramar recognized both the promise of Azeroth's sleeping world-soul and the danger posed by the Black Empire. Blizzard's first-party account emphasizes his concern that the Pantheon's colossal intervention could destroy what they meant to save.",
+      "firstEraId": "cosmic-origins",
+      "featuredEraIds": [
+        "ordering-of-azeroth"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1",
+        "blizzard-dragon-aspects-history"
+      ],
+      "claimIds": [
+        "aggramar-discovers-azeroth-claim",
+        "aggramar-proposes-servants-claim"
+      ],
+      "tags": [
+        "titan",
+        "pantheon",
+        "ordering"
+      ],
+      "mapFigure": {
+        "asset": "images/characters/ordering-of-azeroth/aggramar.research.webp",
+        "scale": 0.9
+      },
+      "contentStatus": "research"
+    },
+    {
       "id": "alakir",
       "type": "character",
       "name": "Al'Akir",
@@ -720,17 +965,19 @@
         "Highfather of the Pantheon"
       ],
       "shortDescription": "The first titan to awaken in Chronicle's account, who crossed the Great Dark in search of others of his kind.",
-      "body": "Aman’Thul's search gathered the awakened titans into the Pantheon. His placement here expresses narrative sequence and association, not a canonical position in the cosmos.",
+      "body": "Aman’Thul's search gathered the awakened titans into the Pantheon. When the Pantheon confronted the corruption on Azeroth, his direct removal of Y'Shaarj revealed how deeply the Old Gods had rooted themselves in the world.",
       "firstEraId": "cosmic-origins",
       "featuredEraIds": [
-        "cosmic-origins"
+        "cosmic-origins",
+        "ordering-of-azeroth"
       ],
       "sourceIds": [
         "warcraft-chronicle-volume-1"
       ],
       "claimIds": [
         "amanthul-first-awakening-claim",
-        "amanthul-search-claim"
+        "amanthul-search-claim",
+        "amanthul-removes-yshaarj-claim"
       ],
       "tags": [
         "titan",
@@ -862,6 +1109,30 @@
       "contentStatus": "research"
     },
     {
+      "id": "forge-of-origination",
+      "type": "site",
+      "name": "The Forge of Origination",
+      "slug": "forge-of-origination",
+      "shortDescription": "A southern titan-forged world-facility built to help stabilize Azeroth and retain a final re-origination safeguard against total corruption.",
+      "body": "The Forge worked in concert with the northern Forge of Wills. Its public overview states both its healing purpose and its terrible contingency without suggesting that the latter was used during this era.",
+      "firstEraId": "ordering-of-azeroth",
+      "featuredEraIds": [
+        "ordering-of-azeroth"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "forge-of-origination-purpose-claim"
+      ],
+      "tags": [
+        "forge-of-origination",
+        "uldum",
+        "keeper-facility"
+      ],
+      "contentStatus": "research"
+    },
+    {
       "id": "great-dark-beyond",
       "type": "location",
       "name": "The Great Dark Beyond",
@@ -882,6 +1153,36 @@
         "cosmology",
         "physical-universe"
       ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "keepers",
+      "type": "faction",
+      "name": "The Keepers",
+      "slug": "keepers",
+      "shortDescription": "The greatest titan-forged, empowered by members of the Pantheon to command the war and safeguard the ordering of Azeroth.",
+      "body": "The keepers led the armies that broke the Black Empire, contained the remaining Old Gods, stabilized the world-wound, established Ulduar, and directed the works that reshaped Azeroth. Individual duties are summarized here without turning the guided era into separate biographies.",
+      "firstEraId": "ordering-of-azeroth",
+      "featuredEraIds": [
+        "ordering-of-azeroth"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1",
+        "blizzard-dragon-aspects-history"
+      ],
+      "claimIds": [
+        "keepers-command-claim",
+        "keepers-stewardship-claim"
+      ],
+      "tags": [
+        "keepers",
+        "titan-forged",
+        "stewardship"
+      ],
+      "mapVisual": {
+        "asset": "images/subjects/ordering-of-azeroth/keepers.research.webp",
+        "scale": 1.1
+      },
       "contentStatus": "research"
     },
     {
@@ -997,17 +1298,19 @@
         "The Pantheon"
       ],
       "shortDescription": "A company of awakened titans who traveled the Great Dark, ordering worlds and seeking more world-souls.",
-      "body": "This Era 0 record follows Chronicle Volume 1's account and stops before the Pantheon's response to the Black Empire on Azeroth.",
+      "body": "After discovering Azeroth's threatened world-soul, the Pantheon intervened against the Black Empire, empowered the keepers, and left the ordered world in their care.",
       "firstEraId": "cosmic-origins",
       "featuredEraIds": [
-        "cosmic-origins"
+        "cosmic-origins",
+        "ordering-of-azeroth"
       ],
       "sourceIds": [
         "warcraft-chronicle-volume-1",
         "blizzard-dragon-aspects-history"
       ],
       "claimIds": [
-        "pantheon-purpose-claim"
+        "pantheon-purpose-claim",
+        "pantheon-orders-azeroth-claim"
       ],
       "tags": [
         "titans",
@@ -1096,6 +1399,36 @@
       "contentStatus": "research"
     },
     {
+      "id": "titan-forged",
+      "type": "faction",
+      "name": "The Titan-forged",
+      "slug": "titan-forged",
+      "shortDescription": "Armies and workers of living stone and metal created to defeat the Black Empire, protect Azeroth, and help shape the wounded world.",
+      "body": "The first hosts fought beneath empowered keepers. Later titan-forged peoples undertook different labors across Azeroth, from raising mountains and tending machinery to carving waterways and guarding the keepers' works.",
+      "firstEraId": "ordering-of-azeroth",
+      "featuredEraIds": [
+        "ordering-of-azeroth"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1",
+        "blizzard-dragon-aspects-history"
+      ],
+      "claimIds": [
+        "titan-forged-purpose-claim",
+        "titan-forged-world-shaping-claim"
+      ],
+      "tags": [
+        "titan-forged",
+        "army",
+        "world-shaping"
+      ],
+      "mapVisual": {
+        "asset": "images/subjects/ordering-of-azeroth/titan-forged.research.webp",
+        "scale": 1.1
+      },
+      "contentStatus": "research"
+    },
+    {
       "id": "twisting-nether",
       "type": "location",
       "name": "The Twisting Nether",
@@ -1116,6 +1449,30 @@
         "cosmology",
         "astral-realm",
         "disorder"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "ulduar",
+      "type": "site",
+      "name": "Ulduar",
+      "slug": "ulduar",
+      "shortDescription": "The keepers' great northern stronghold and the seat of the Forge of Wills during the ordering of Azeroth.",
+      "body": "Ulduar anchored the keepers' work in the far north of ancient Kalimdor. Its atlas marker is a broad reconstruction from that regional description, not a surveyed primordial coordinate.",
+      "firstEraId": "ordering-of-azeroth",
+      "featuredEraIds": [
+        "ordering-of-azeroth"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "ulduar-ordering-role-claim"
+      ],
+      "tags": [
+        "ulduar",
+        "keeper-facility",
+        "forge-of-wills"
       ],
       "contentStatus": "research"
     },
@@ -1146,6 +1503,31 @@
         "asset": "images/subjects/cosmic-origins/void-lords.research.webp",
         "scale": 1.08
       },
+      "contentStatus": "research"
+    },
+    {
+      "id": "well-of-eternity",
+      "type": "location",
+      "name": "The Well of Eternity",
+      "slug": "well-of-eternity",
+      "shortDescription": "The immense arcane lake formed when the keepers stabilized the wound left by Y'Shaarj's removal.",
+      "body": "The Well was not created as an ornamental monument. It was Azeroth's exposed lifeblood brought into balance by wards, and its power would nourish life while shaping every era that followed.",
+      "firstEraId": "ordering-of-azeroth",
+      "featuredEraIds": [
+        "ordering-of-azeroth"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "well-of-eternity-origin-claim",
+        "well-of-eternity-consequence-claim"
+      ],
+      "tags": [
+        "well-of-eternity",
+        "arcane",
+        "world-wound"
+      ],
       "contentStatus": "research"
     },
     {
@@ -1258,6 +1640,49 @@
       "contentStatus": "research"
     },
     {
+      "id": "azeroth-ordered",
+      "kind": "event",
+      "name": "Azeroth Is Ordered",
+      "slug": "azeroth-ordered",
+      "eraId": "ordering-of-azeroth",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "After the world-forges were established",
+        "relativeToId": "world-forges-activated"
+      },
+      "summary": "The titan-forged raised mountains, opened waterways, dredged seas, maintained great works, and helped make the wounded world stable enough for life to flourish.",
+      "locationIds": [
+        "primordial-kalimdor",
+        "well-of-eternity",
+        "ulduar",
+        "forge-of-origination"
+      ],
+      "participantEntityIds": [
+        "keepers",
+        "titan-forged",
+        "azeroth-world-soul"
+      ],
+      "causedByEventIds": [
+        "world-forges-activated"
+      ],
+      "causesEventIds": [
+        "pantheon-departs-azeroth"
+      ],
+      "relationshipIds": [
+        "world-forges-enable-ordering",
+        "ordering-leads-to-pantheon-departure",
+        "ordering-precedes-ancient-civilizations"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "azeroth-ordered-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
       "id": "black-empire-dominion",
       "kind": "event",
       "name": "Black Empire Dominion",
@@ -1363,6 +1788,42 @@
       "contentStatus": "research"
     },
     {
+      "id": "old-gods-contained",
+      "kind": "event",
+      "name": "The Old Gods Are Contained",
+      "slug": "old-gods-contained",
+      "eraId": "ordering-of-azeroth",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "After the fall of the Black Empire",
+        "relativeToId": "titan-forged-war-black-empire"
+      },
+      "summary": "Unable to remove the remaining Old Gods without repeating the wound caused by Y'Shaarj's destruction, the keepers bound them in prisons beneath Azeroth.",
+      "participantEntityIds": [
+        "keepers",
+        "titan-forged",
+        "old-gods"
+      ],
+      "causedByEventIds": [
+        "titan-forged-war-black-empire"
+      ],
+      "causesEventIds": [
+        "well-eternity-stabilized"
+      ],
+      "relationshipIds": [
+        "titan-forged-war-causes-containment",
+        "containment-enables-healing"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "old-gods-contained-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
       "id": "old-gods-scattered",
       "kind": "event",
       "name": "Scattering of the Old Gods",
@@ -1389,6 +1850,75 @@
       ],
       "claimIds": [
         "old-gods-scattered-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "pantheon-departs-azeroth",
+      "kind": "event",
+      "name": "The Pantheon Departs",
+      "slug": "pantheon-departs-azeroth",
+      "eraId": "ordering-of-azeroth",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "After the ordering of Azeroth",
+        "relativeToId": "azeroth-ordered"
+      },
+      "summary": "With Azeroth stabilized and its guardians appointed, the Pantheon departed while the keepers and titan-forged remained to watch over the world.",
+      "participantEntityIds": [
+        "pantheon-of-order",
+        "keepers",
+        "titan-forged",
+        "azeroth-world-soul"
+      ],
+      "causedByEventIds": [
+        "azeroth-ordered"
+      ],
+      "relationshipIds": [
+        "ordering-leads-to-pantheon-departure",
+        "ordering-precedes-ancient-civilizations"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "pantheon-departs-azeroth-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "pantheon-discovers-azeroth",
+      "kind": "event",
+      "name": "The Pantheon Discovers Azeroth",
+      "slug": "pantheon-discovers-azeroth",
+      "eraId": "ordering-of-azeroth",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "During the Black Empire's dominion",
+        "relativeToId": "black-empire-dominion"
+      },
+      "summary": "Aggramar discovered Azeroth's nascent titan and the Old Gods rooted around it, bringing the imperiled world to the Pantheon's attention.",
+      "participantEntityIds": [
+        "aggramar",
+        "pantheon-of-order",
+        "azeroth-world-soul",
+        "old-gods",
+        "black-empire-civilization"
+      ],
+      "causesEventIds": [
+        "yshaarj-removed"
+      ],
+      "relationshipIds": [
+        "black-empire-precedes-pantheon-discovery",
+        "pantheon-discovery-causes-yshaarj-removal"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "pantheon-discovers-azeroth-event-claim"
       ],
       "contentStatus": "research"
     },
@@ -1483,6 +2013,164 @@
       ],
       "claimIds": [
         "spirit-imbalance-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "titan-forged-mustered",
+      "kind": "event",
+      "name": "The Titan-forged Are Mustered",
+      "slug": "titan-forged-mustered",
+      "eraId": "ordering-of-azeroth",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "After direct intervention wounded Azeroth",
+        "relativeToId": "yshaarj-removed"
+      },
+      "summary": "The Pantheon created armies of stone and metal and empowered the greatest among them as keepers to lead the war for Azeroth.",
+      "participantEntityIds": [
+        "pantheon-of-order",
+        "aggramar",
+        "titan-forged",
+        "keepers"
+      ],
+      "causedByEventIds": [
+        "yshaarj-removed"
+      ],
+      "causesEventIds": [
+        "titan-forged-war-black-empire"
+      ],
+      "relationshipIds": [
+        "yshaarj-removal-causes-titan-forged-method",
+        "titan-forged-muster-causes-war"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1",
+        "blizzard-dragon-aspects-history"
+      ],
+      "claimIds": [
+        "titan-forged-mustered-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "well-eternity-stabilized",
+      "kind": "event",
+      "name": "The World-wound Is Stabilized",
+      "slug": "well-eternity-stabilized",
+      "eraId": "ordering-of-azeroth",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "After the surviving Old Gods were imprisoned",
+        "relativeToId": "old-gods-contained"
+      },
+      "summary": "The keepers raised wards around Azeroth's bleeding wound until its arcane energies settled into the Well of Eternity.",
+      "locationIds": [
+        "well-of-eternity"
+      ],
+      "participantEntityIds": [
+        "keepers",
+        "azeroth-world-soul"
+      ],
+      "causedByEventIds": [
+        "yshaarj-removed",
+        "old-gods-contained"
+      ],
+      "causesEventIds": [
+        "world-forges-activated"
+      ],
+      "relationshipIds": [
+        "yshaarj-removal-causes-world-wound",
+        "containment-enables-healing",
+        "well-stabilization-precedes-world-forges"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "well-eternity-stabilized-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "world-forges-activated",
+      "kind": "event",
+      "name": "The World-forges Are Established",
+      "slug": "world-forges-activated",
+      "eraId": "ordering-of-azeroth",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "During the healing of Azeroth",
+        "relativeToId": "well-eternity-stabilized"
+      },
+      "summary": "The keepers established complementary facilities in the far north and south to stabilize Azeroth and sustain the work of ordering it.",
+      "locationIds": [
+        "ulduar",
+        "forge-of-origination"
+      ],
+      "participantEntityIds": [
+        "keepers",
+        "titan-forged"
+      ],
+      "causedByEventIds": [
+        "well-eternity-stabilized"
+      ],
+      "causesEventIds": [
+        "azeroth-ordered"
+      ],
+      "relationshipIds": [
+        "well-stabilization-precedes-world-forges",
+        "world-forges-enable-ordering"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "world-forges-activated-event-claim"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "yshaarj-removed",
+      "kind": "event",
+      "name": "The Removal of Y'Shaarj",
+      "slug": "yshaarj-removed",
+      "eraId": "ordering-of-azeroth",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "At the beginning of the Pantheon's intervention",
+        "relativeToId": "pantheon-discovers-azeroth"
+      },
+      "summary": "Aman’Thul tore Y'Shaarj from Azeroth, destroying the Old God but opening a terrible wound in the sleeping world-soul.",
+      "locationIds": [
+        "yshaarj-central-bastion"
+      ],
+      "participantEntityIds": [
+        "amanthul",
+        "yshaarj",
+        "azeroth-world-soul",
+        "pantheon-of-order"
+      ],
+      "causedByEventIds": [
+        "pantheon-discovers-azeroth"
+      ],
+      "causesEventIds": [
+        "titan-forged-mustered",
+        "well-eternity-stabilized"
+      ],
+      "relationshipIds": [
+        "pantheon-discovery-causes-yshaarj-removal",
+        "yshaarj-removal-causes-world-wound"
+      ],
+      "sourceIds": [
+        "warcraft-chronicle-volume-1"
+      ],
+      "claimIds": [
+        "yshaarj-removed-event-claim"
       ],
       "contentStatus": "research"
     }
@@ -1770,6 +2458,187 @@
         "elemental-wars-claim"
       ],
       "contentStatus": "research"
+    },
+    {
+      "id": "titan-forged-war-black-empire",
+      "kind": "battle",
+      "name": "The Titan-forged War against the Black Empire",
+      "slug": "titan-forged-war-black-empire",
+      "eraId": "ordering-of-azeroth",
+      "worldspaceId": "azeroth",
+      "date": {
+        "precision": "relative",
+        "label": "After the titan-forged were mustered",
+        "relativeToId": "titan-forged-mustered"
+      },
+      "summary": "Keeper-led armies of stone and metal fought across primordial Azeroth, defeated the Black Empire's forces, and subdued the powers that had ruled the world.",
+      "description": "This title groups a world-spanning campaign described across Chronicle's Ordering sequence. The sources do not establish a surveyable front or one battle coordinate, so the atlas provides phases without an invented route or marker.",
+      "campaignId": "titan-forged-ordering-campaign",
+      "participantEntityIds": [
+        "titan-forged",
+        "keepers",
+        "black-empire-civilization",
+        "old-gods",
+        "yshaarj",
+        "nraqi",
+        "aqir",
+        "alakir",
+        "ragnaros",
+        "therazane",
+        "neptulon"
+      ],
+      "causedByEventIds": [
+        "titan-forged-mustered"
+      ],
+      "causesEventIds": [
+        "old-gods-contained"
+      ],
+      "relationshipIds": [
+        "titan-forged-muster-causes-war",
+        "titan-forged-war-causes-containment"
+      ],
+      "combatants": [
+        {
+          "factionId": "titan-forged",
+          "role": "attacker"
+        },
+        {
+          "factionId": "black-empire-civilization",
+          "role": "defender"
+        }
+      ],
+      "objectives": [
+        {
+          "factionId": "titan-forged",
+          "summary": "Break the Black Empire while preserving Azeroth's nascent world-soul."
+        },
+        {
+          "factionId": "black-empire-civilization",
+          "summary": "Hold the Old Gods' dominion against the keeper-led invasion."
+        }
+      ],
+      "phases": [
+        {
+          "id": "keepers-lead-hosts",
+          "title": "The keepers lead the hosts",
+          "summary": "Empowered keepers direct the first titan-forged armies into the corrupted world.",
+          "durationMs": 30000,
+          "narration": "The keepers went before the hosts of living stone and metal. They did not come to conquer a kingdom for themselves, but to reach the power buried beneath it without destroying the world they had been made to save.",
+          "visualActions": [
+            {
+              "type": "set_map_state",
+              "mapStateId": "black-empire-map-research"
+            },
+            {
+              "type": "highlight_faction",
+              "factionId": "keepers"
+            },
+            {
+              "type": "highlight_faction",
+              "factionId": "titan-forged"
+            }
+          ]
+        },
+        {
+          "id": "elemental-powers-subdued",
+          "title": "The elemental powers are subdued",
+          "summary": "The titan-forged overcome the elemental forces bound to the Old Gods.",
+          "durationMs": 29000,
+          "narration": "Storm, flame, stone, and sea rose against the invaders under the Old Gods' dominion. One by one those ancient powers were overcome, and the keepers prepared realms apart from the waking world in which the elemental hosts could be confined.",
+          "visualActions": [
+            {
+              "type": "set_map_state",
+              "mapStateId": "black-empire-map-research"
+            },
+            {
+              "type": "highlight_entity",
+              "entityId": "ragnaros"
+            },
+            {
+              "type": "highlight_entity",
+              "entityId": "alakir"
+            },
+            {
+              "type": "highlight_entity",
+              "entityId": "therazane"
+            },
+            {
+              "type": "highlight_entity",
+              "entityId": "neptulon"
+            }
+          ]
+        },
+        {
+          "id": "citadels-broken",
+          "title": "The citadels are broken",
+          "summary": "The keeper-led hosts dismantle the Black Empire's military dominion.",
+          "durationMs": 28500,
+          "narration": "Across unnamed fronts, the Black Empire's fortresses and servant hosts yielded. The sources give no single road by which the victory came, only a widening collapse as the titan-forged pressed toward the Old Gods themselves.",
+          "visualActions": [
+            {
+              "type": "set_map_state",
+              "mapStateId": "black-empire-map-research"
+            },
+            {
+              "type": "show_region",
+              "regionId": "black-empire-influence-research"
+            },
+            {
+              "type": "highlight_faction",
+              "factionId": "titan-forged"
+            }
+          ]
+        },
+        {
+          "id": "old-gods-bound",
+          "title": "The surviving Old Gods are bound",
+          "summary": "The remaining Old Gods are defeated and contained rather than torn from the world.",
+          "durationMs": 31500,
+          "narration": "The lesson of the world-wound could not be ignored. The surviving Old Gods were not pulled free. They were overcome, chained, and sealed beneath Azeroth, so that their roots might remain without tearing the sleeping titan apart.",
+          "visualActions": [
+            {
+              "type": "set_map_state",
+              "mapStateId": "ordering-of-azeroth-map-research"
+            },
+            {
+              "type": "highlight_faction",
+              "factionId": "old-gods"
+            }
+          ]
+        },
+        {
+          "id": "world-left-for-healing",
+          "title": "A wounded world remains",
+          "summary": "Victory ends the empire but leaves a planet requiring containment and repair.",
+          "durationMs": 30000,
+          "narration": "The empire had fallen, yet victory was not wholeness. Prisons lay beneath the earth, a wound burned at the continent's heart, and the keepers turned from war toward the longer labor of making Azeroth stable again.",
+          "visualActions": [
+            {
+              "type": "set_map_state",
+              "mapStateId": "ordering-of-azeroth-map-research"
+            },
+            {
+              "type": "focus_location",
+              "locationId": "well-of-eternity"
+            }
+          ]
+        }
+      ],
+      "outcome": {
+        "summary": "The Black Empire's rule was broken; its elemental powers were confined, the surviving Old Gods were imprisoned, and the keepers could begin healing and ordering Azeroth.",
+        "winnerFactionId": "titan-forged"
+      },
+      "geographicCertainty": "unknown",
+      "geographicEditorNote": "Chronicle describes a world-spanning campaign but does not provide an exact battle site, front line, or campaign route. No marker is asserted.",
+      "importance": "era_defining",
+      "sourceIds": [
+        "warcraft-chronicle-volume-1",
+        "blizzard-dragon-aspects-history"
+      ],
+      "claimIds": [
+        "titan-forged-war-event-claim"
+      ],
+      "contentStatus": "research"
     }
   ],
   "sources": [
@@ -1824,6 +2693,12 @@
       "note": "Supports the transition into the Ordering: Titan-forged armies were created and led against the Black Empire while protecting Azeroth's world-soul."
     },
     {
+      "id": "blizzard-ordering-titan-forged",
+      "sourceId": "blizzard-dragon-aspects-history",
+      "section": "The Rise of the Aspects",
+      "note": "First-party corroboration that Aggramar proposed powerful constructs to protect the world-soul, the Pantheon empowered keepers, and those keepers led titan-forged armies against the Black Empire."
+    },
+    {
       "id": "chronicle-v1-black-empire-map",
       "sourceId": "warcraft-chronicle-volume-1",
       "chapter": "II: Primordial Azeroth",
@@ -1851,6 +2726,33 @@
       "note": "Supports the cosmic frame and the roles of Light, Shadow/Void, Life, Death, Order, Disorder, and the elements."
     },
     {
+      "id": "chronicle-v1-discovery-azeroth",
+      "sourceId": "warcraft-chronicle-volume-1",
+      "chapter": "Chapter II: Primordial Azeroth",
+      "pageStart": 30,
+      "pageEnd": 31,
+      "section": "The Discovery of Azeroth",
+      "note": "Supports Aggramar's discovery of Azeroth, the Pantheon's recognition of the threatened world-soul, and the decision to intervene. Pagination is indexed for research and requires human confirmation against the selected complete edition."
+    },
+    {
+      "id": "chronicle-v1-fall-black-empire",
+      "sourceId": "warcraft-chronicle-volume-1",
+      "chapter": "Chapter II: Primordial Azeroth",
+      "pageStart": 33,
+      "pageEnd": 35,
+      "section": "Fall of the Black Empire",
+      "note": "Supports Y'Shaarj's destruction by Aman'Thul, the catastrophic wound left in Azeroth, and the defeat of the Black Empire. Exact wording and pagination require human review."
+    },
+    {
+      "id": "chronicle-v1-ordering-azeroth",
+      "sourceId": "warcraft-chronicle-volume-1",
+      "chapter": "Chapter II: Primordial Azeroth",
+      "pageStart": 39,
+      "pageEnd": 40,
+      "section": "The Ordering of Azeroth",
+      "note": "Supports the keepers' and titan-forged peoples' work shaping mountains, waterways, seas, living enclaves, and the primary continent called Kalimdor. Pagination requires human review."
+    },
+    {
       "id": "chronicle-v1-origins-universe",
       "sourceId": "warcraft-chronicle-volume-1",
       "chapter": "Chapter I: Mythos",
@@ -1858,6 +2760,15 @@
       "pageEnd": 18,
       "section": "Origins of the Universe",
       "note": "Supports Chronicle's account of primordial Light and Void, the birth of the Great Dark Beyond, and the formation of the Twisting Nether. Pagination requires human confirmation against the selected complete edition."
+    },
+    {
+      "id": "chronicle-v1-pantheon-departure",
+      "sourceId": "warcraft-chronicle-volume-1",
+      "chapter": "Chapter II: Primordial Azeroth",
+      "pageStart": 42,
+      "pageEnd": 42,
+      "section": "The Pantheon's Departure",
+      "note": "Supports the Pantheon's departure after leaving Azeroth in the care of its appointed servants and safeguards. Pagination requires human review."
     },
     {
       "id": "chronicle-v1-reign-elements",
@@ -1887,6 +2798,24 @@
       "note": "Supports Chronicle's account of the Void Lords' world-soul objective, their limited manifestation in the physical universe, and the creation and scattering of the Old Gods. Pagination requires human confirmation against the selected complete edition."
     },
     {
+      "id": "chronicle-v1-well-world-forges",
+      "sourceId": "warcraft-chronicle-volume-1",
+      "chapter": "Chapter II: Primordial Azeroth",
+      "pageStart": 36,
+      "pageEnd": 38,
+      "section": "The Well of Eternity and the World Forges",
+      "note": "Supports the Old Gods' imprisonment, the keepers' stabilization of Azeroth's wound into the Well of Eternity, and the complementary world-forge system. Pagination requires human review."
+    },
+    {
+      "id": "chronicle-v1-wrath-titan-forged",
+      "sourceId": "warcraft-chronicle-volume-1",
+      "chapter": "Chapter II: Primordial Azeroth",
+      "pageStart": 31,
+      "pageEnd": 33,
+      "section": "Wrath of the Titan-Forged",
+      "note": "Supports the stone-and-metal titan-forged, the empowered keepers, and their campaign against the Black Empire and its elemental servants. Pagination requires human review."
+    },
+    {
       "id": "warcraft-wiki-black-empire-ancient-times",
       "sourceId": "warcraft-wiki-chronicle-volume-1",
       "section": "Black Empire — History — Ancient times",
@@ -1894,6 +2823,28 @@
     }
   ],
   "claims": [
+    {
+      "id": "aggramar-discovers-azeroth-claim",
+      "subjectId": "aggramar",
+      "predicate": "discovery",
+      "value": "Aggramar discovered Azeroth and recognized a nascent titan threatened by the Black Empire.",
+      "citationIds": [
+        "chronicle-v1-discovery-azeroth"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "aggramar-proposes-servants-claim",
+      "subjectId": "aggramar",
+      "predicate": "intervention-method",
+      "value": "Aggramar urged the Pantheon to act through powerful constructs because direct intervention by colossal titans risked destroying Azeroth's world-soul.",
+      "citationIds": [
+        "blizzard-ordering-titan-forged"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
     {
       "id": "alakir-domain-placement-claim",
       "subjectId": "alakir",
@@ -1940,6 +2891,17 @@
       "status": "active"
     },
     {
+      "id": "amanthul-removes-yshaarj-claim",
+      "subjectId": "amanthul",
+      "predicate": "direct-intervention",
+      "value": "Aman’Thul tore Y'Shaarj from Azeroth, destroying the Old God but leaving a catastrophic wound in the world.",
+      "citationIds": [
+        "chronicle-v1-fall-black-empire"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
       "id": "amanthul-search-claim",
       "subjectId": "amanthul",
       "predicate": "search-for-titans",
@@ -1961,6 +2923,17 @@
       "confidence": "strongly_supported",
       "status": "active",
       "editorNote": "The labor role is explicit in the cited passage; the defensive military role follows from the same source's account of the elemental war and should be confirmed against the complete page sequence."
+    },
+    {
+      "id": "azeroth-ordered-event-claim",
+      "subjectId": "azeroth-ordered",
+      "predicate": "event-summary",
+      "value": "Keeper-directed titan-forged labors reshaped and stabilized Azeroth, and the primary continent was named Kalimdor.",
+      "citationIds": [
+        "chronicle-v1-ordering-azeroth"
+      ],
+      "confidence": "explicit",
+      "status": "active"
     },
     {
       "id": "azeroth-world-soul-cosmic-context-claim",
@@ -2081,12 +3054,47 @@
       "status": "active"
     },
     {
+      "id": "forge-of-origination-purpose-claim",
+      "subjectId": "forge-of-origination",
+      "predicate": "world-forge-purpose",
+      "value": "The Forge of Origination worked with the Forge of Wills to stabilize Azeroth and also retained the capacity to re-originate life if corruption became absolute.",
+      "citationIds": [
+        "chronicle-v1-well-world-forges"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
       "id": "great-dark-beyond-origin-claim",
       "subjectId": "great-dark-beyond",
       "predicate": "origin",
       "value": "The physical universe called the Great Dark Beyond arose from the cosmic clash described in Chronicle's opening account.",
       "citationIds": [
         "chronicle-v1-origins-universe"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "keepers-command-claim",
+      "subjectId": "keepers",
+      "predicate": "command-role",
+      "value": "Members of the Pantheon empowered the keepers to lead the titan-forged armies against the Black Empire.",
+      "citationIds": [
+        "chronicle-v1-wrath-titan-forged",
+        "blizzard-ordering-titan-forged"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "keepers-stewardship-claim",
+      "subjectId": "keepers",
+      "predicate": "stewardship-role",
+      "value": "The keepers contained the surviving Old Gods, calmed Azeroth's wound, established world-forges and directed the planet's reshaping.",
+      "citationIds": [
+        "chronicle-v1-well-world-forges",
+        "chronicle-v1-ordering-azeroth"
       ],
       "confidence": "explicit",
       "status": "active"
@@ -2149,6 +3157,18 @@
       "status": "active"
     },
     {
+      "id": "old-gods-contained-event-claim",
+      "subjectId": "old-gods-contained",
+      "predicate": "event-summary",
+      "value": "The surviving Old Gods were defeated and imprisoned beneath Azeroth because tearing them out risked fatal damage to the world-soul.",
+      "citationIds": [
+        "chronicle-v1-fall-black-empire",
+        "chronicle-v1-well-world-forges"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
       "id": "old-gods-cosmic-origin-claim",
       "subjectId": "old-gods",
       "predicate": "cosmic-origin-and-purpose",
@@ -2182,12 +3202,47 @@
       "status": "active"
     },
     {
+      "id": "pantheon-departs-azeroth-event-claim",
+      "subjectId": "pantheon-departs-azeroth",
+      "predicate": "event-summary",
+      "value": "After the ordering, the Pantheon departed and left the keepers and other safeguards responsible for Azeroth.",
+      "citationIds": [
+        "chronicle-v1-pantheon-departure"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "pantheon-discovers-azeroth-event-claim",
+      "subjectId": "pantheon-discovers-azeroth",
+      "predicate": "event-summary",
+      "value": "Aggramar found Azeroth's world-soul beneath the Black Empire and brought the endangered world to the Pantheon's attention.",
+      "citationIds": [
+        "chronicle-v1-discovery-azeroth"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
       "id": "pantheon-gathers-event-claim",
       "subjectId": "pantheon-gathers",
       "predicate": "event-summary",
       "value": "Aman’Thul's search brought awakened titans together as the Pantheon.",
       "citationIds": [
         "chronicle-v1-titans"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "pantheon-orders-azeroth-claim",
+      "subjectId": "pantheon-of-order",
+      "predicate": "azeroth-intervention",
+      "value": "The Pantheon acted to save Azeroth's world-soul, empowered keepers to lead its servants, and departed after the world had been stabilized and ordered.",
+      "citationIds": [
+        "chronicle-v1-discovery-azeroth",
+        "blizzard-ordering-titan-forged",
+        "chronicle-v1-pantheon-departure"
       ],
       "confidence": "explicit",
       "status": "active"
@@ -2285,6 +3340,55 @@
       "status": "active"
     },
     {
+      "id": "titan-forged-mustered-event-claim",
+      "subjectId": "titan-forged-mustered",
+      "predicate": "event-summary",
+      "value": "The Pantheon created titan-forged armies and empowered keepers to command them against the Black Empire.",
+      "citationIds": [
+        "chronicle-v1-wrath-titan-forged",
+        "blizzard-ordering-titan-forged"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "titan-forged-purpose-claim",
+      "subjectId": "titan-forged",
+      "predicate": "original-purpose",
+      "value": "The titan-forged were created from stone and metal to prosecute the Pantheon's campaign against the Black Empire without direct titan-scale devastation.",
+      "citationIds": [
+        "chronicle-v1-wrath-titan-forged",
+        "blizzard-ordering-titan-forged"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "titan-forged-war-event-claim",
+      "subjectId": "titan-forged-war-black-empire",
+      "predicate": "conflict-outcome",
+      "value": "Keeper-led titan-forged armies defeated the Black Empire's forces, overcame its elemental servants, and enabled the surviving Old Gods to be imprisoned.",
+      "citationIds": [
+        "chronicle-v1-wrath-titan-forged",
+        "chronicle-v1-fall-black-empire",
+        "blizzard-ordering-titan-forged"
+      ],
+      "confidence": "explicit",
+      "status": "active",
+      "editorNote": "This atlas title groups a world-spanning campaign described across the cited sections; it does not assert one localized battle."
+    },
+    {
+      "id": "titan-forged-world-shaping-claim",
+      "subjectId": "titan-forged",
+      "predicate": "world-shaping-work",
+      "value": "After the war, titan-forged peoples helped raise mountains, carve deep places and waterways, dredge seas, maintain machinery, and guard the keepers' works.",
+      "citationIds": [
+        "chronicle-v1-ordering-azeroth"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
       "id": "twisting-nether-origin-claim",
       "subjectId": "twisting-nether",
       "predicate": "origin-and-nature",
@@ -2296,12 +3400,69 @@
       "status": "active"
     },
     {
+      "id": "ulduar-ordering-role-claim",
+      "subjectId": "ulduar",
+      "predicate": "ordering-role",
+      "value": "Ulduar served as the keepers' northern bastion and housed the Forge of Wills, one half of the system built to stabilize Azeroth.",
+      "citationIds": [
+        "chronicle-v1-well-world-forges"
+      ],
+      "confidence": "explicit",
+      "status": "active",
+      "editorNote": "The role is explicit; the atlas placement on the primordial landmass remains an inferred regional reconstruction."
+    },
+    {
       "id": "void-lords-world-soul-plan-claim",
       "subjectId": "void-lords",
       "predicate": "world-soul-objective",
       "value": "Unable to exert their full power directly in the physical universe, the Void Lords made the Old Gods and cast them through the Great Dark in search of a world-soul to corrupt.",
       "citationIds": [
         "chronicle-v1-void-lords-old-gods"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "well-eternity-stabilized-event-claim",
+      "subjectId": "well-eternity-stabilized",
+      "predicate": "event-summary",
+      "value": "The keepers' wards calmed Azeroth's exposed arcane lifeblood into the Well of Eternity.",
+      "citationIds": [
+        "chronicle-v1-well-world-forges"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "well-of-eternity-consequence-claim",
+      "subjectId": "well-of-eternity",
+      "predicate": "world-consequence",
+      "value": "The stabilized Well radiated power through the world and helped create conditions in which life could flourish and change.",
+      "citationIds": [
+        "chronicle-v1-well-world-forges",
+        "chronicle-v1-ordering-azeroth"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "well-of-eternity-origin-claim",
+      "subjectId": "well-of-eternity",
+      "predicate": "origin",
+      "value": "The keepers constructed wards around the wound left by Y'Shaarj's removal until Azeroth's arcane lifeblood settled into the Well of Eternity.",
+      "citationIds": [
+        "chronicle-v1-well-world-forges"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "world-forges-activated-event-claim",
+      "subjectId": "world-forges-activated",
+      "predicate": "event-summary",
+      "value": "The keepers established the Forge of Wills in Ulduar and the Forge of Origination in the south as complementary systems for Azeroth's stabilization.",
+      "citationIds": [
+        "chronicle-v1-well-world-forges"
       ],
       "confidence": "explicit",
       "status": "active"
@@ -2324,6 +3485,17 @@
       "value": "The greatest Black Empire bastion was built around Y'Shaarj near the center of Azeroth's largest continent.",
       "citationIds": [
         "chronicle-v1-coming-old-gods"
+      ],
+      "confidence": "explicit",
+      "status": "active"
+    },
+    {
+      "id": "yshaarj-removed-event-claim",
+      "subjectId": "yshaarj-removed",
+      "predicate": "event-summary",
+      "value": "Aman’Thul destroyed Y'Shaarj by pulling it from Azeroth, and the Old God's deep roots tore open the world around its nascent titan.",
+      "citationIds": [
+        "chronicle-v1-fall-black-empire"
       ],
       "confidence": "explicit",
       "status": "active"
@@ -2351,6 +3523,16 @@
       "confidence": "explicit"
     },
     {
+      "id": "black-empire-precedes-pantheon-discovery",
+      "fromId": "black-empire-dominion",
+      "toId": "pantheon-discovers-azeroth",
+      "type": "precedes",
+      "citationIds": [
+        "chronicle-v1-discovery-azeroth"
+      ],
+      "confidence": "explicit"
+    },
+    {
       "id": "black-empire-prompts-elemental-resistance",
       "fromId": "black-empire-rises",
       "toId": "elemental-assault-on-black-empire",
@@ -2359,6 +3541,16 @@
         "chronicle-v1-coming-old-gods"
       ],
       "confidence": "explicit"
+    },
+    {
+      "id": "containment-enables-healing",
+      "fromId": "old-gods-contained",
+      "toId": "well-eternity-stabilized",
+      "type": "causes",
+      "citationIds": [
+        "chronicle-v1-well-world-forges"
+      ],
+      "confidence": "strongly_supported"
     },
     {
       "id": "elemental-resistance-causes-black-empire-dominion",
@@ -2403,6 +3595,38 @@
       "confidence": "explicit"
     },
     {
+      "id": "ordering-leads-to-pantheon-departure",
+      "fromId": "azeroth-ordered",
+      "toId": "pantheon-departs-azeroth",
+      "type": "causes",
+      "citationIds": [
+        "chronicle-v1-ordering-azeroth",
+        "chronicle-v1-pantheon-departure"
+      ],
+      "confidence": "strongly_supported"
+    },
+    {
+      "id": "ordering-precedes-ancient-civilizations",
+      "fromId": "azeroth-ordered",
+      "toId": "ancient-civilizations",
+      "type": "precedes",
+      "citationIds": [
+        "chronicle-v1-ordering-azeroth"
+      ],
+      "confidence": "explicit"
+    },
+    {
+      "id": "pantheon-discovery-causes-yshaarj-removal",
+      "fromId": "pantheon-discovers-azeroth",
+      "toId": "yshaarj-removed",
+      "type": "causes",
+      "citationIds": [
+        "chronicle-v1-discovery-azeroth",
+        "chronicle-v1-fall-black-empire"
+      ],
+      "confidence": "strongly_supported"
+    },
+    {
       "id": "pantheon-precedes-old-gods-scattered",
       "fromId": "pantheon-gathers",
       "toId": "old-gods-scattered",
@@ -2431,6 +3655,71 @@
       "type": "causes",
       "citationIds": [
         "chronicle-v1-reign-elements"
+      ],
+      "confidence": "explicit"
+    },
+    {
+      "id": "titan-forged-muster-causes-war",
+      "fromId": "titan-forged-mustered",
+      "toId": "titan-forged-war-black-empire",
+      "type": "causes",
+      "citationIds": [
+        "chronicle-v1-wrath-titan-forged",
+        "blizzard-ordering-titan-forged"
+      ],
+      "confidence": "explicit"
+    },
+    {
+      "id": "titan-forged-war-causes-containment",
+      "fromId": "titan-forged-war-black-empire",
+      "toId": "old-gods-contained",
+      "type": "causes",
+      "citationIds": [
+        "chronicle-v1-fall-black-empire",
+        "chronicle-v1-well-world-forges"
+      ],
+      "confidence": "explicit"
+    },
+    {
+      "id": "well-stabilization-precedes-world-forges",
+      "fromId": "well-eternity-stabilized",
+      "toId": "world-forges-activated",
+      "type": "precedes",
+      "citationIds": [
+        "chronicle-v1-well-world-forges"
+      ],
+      "confidence": "explicit"
+    },
+    {
+      "id": "world-forges-enable-ordering",
+      "fromId": "world-forges-activated",
+      "toId": "azeroth-ordered",
+      "type": "causes",
+      "citationIds": [
+        "chronicle-v1-well-world-forges",
+        "chronicle-v1-ordering-azeroth"
+      ],
+      "confidence": "strongly_supported"
+    },
+    {
+      "id": "yshaarj-removal-causes-titan-forged-method",
+      "fromId": "yshaarj-removed",
+      "toId": "titan-forged-mustered",
+      "type": "causes",
+      "citationIds": [
+        "chronicle-v1-fall-black-empire",
+        "blizzard-ordering-titan-forged"
+      ],
+      "confidence": "strongly_supported"
+    },
+    {
+      "id": "yshaarj-removal-causes-world-wound",
+      "fromId": "yshaarj-removed",
+      "toId": "well-eternity-stabilized",
+      "type": "causes",
+      "citationIds": [
+        "chronicle-v1-fall-black-empire",
+        "chronicle-v1-well-world-forges"
       ],
       "confidence": "explicit"
     }
@@ -2470,6 +3759,26 @@
         "cosmic-origins-story-pantheon",
         "cosmic-origins-story-void-design",
         "cosmic-origins-story-azeroth"
+      ],
+      "contentStatus": "research"
+    },
+    {
+      "id": "ordering-of-azeroth-guided-history",
+      "eraId": "ordering-of-azeroth",
+      "title": "The Wounding and Ordering of Azeroth",
+      "description": "A continuous history of the Pantheon's discovery, the costly first intervention, the titan-forged war, the containment of the Old Gods, and the long work that transformed a conquered world into ancient Kalimdor.",
+      "nodeIds": [
+        "ordering-story-inherited-shadow",
+        "ordering-story-aggramar-discovers",
+        "ordering-story-yshaarj-wound",
+        "ordering-story-titan-forged",
+        "ordering-story-keepers",
+        "ordering-story-empire-falls",
+        "ordering-story-old-gods-contained",
+        "ordering-story-well-eternity",
+        "ordering-story-world-forges",
+        "ordering-story-world-shaped",
+        "ordering-story-pantheon-departs"
       ],
       "contentStatus": "research"
     }
@@ -3260,6 +4569,541 @@
         }
       ],
       "previousNodeId": "cosmic-origins-story-void-design",
+      "nextNodeIds": []
+    },
+    {
+      "id": "ordering-story-inherited-shadow",
+      "guideId": "ordering-of-azeroth-guided-history",
+      "title": "The world the keepers inherited",
+      "narration": "The tale begins where the Black Empire left the world: beneath a dominion of citadels, servant hosts, and powers rooted deeper than any mountain. Azeroth's sleeping spirit endured below them, mighty beyond measure and yet unable to cast the corruption from its own skin. Nothing upon the world remained strong enough to break that reign.",
+      "durationMs": 46500,
+      "eventIds": [
+        "black-empire-dominion"
+      ],
+      "entityIds": [
+        "black-empire-civilization",
+        "yshaarj"
+      ],
+      "optionalExploreEntityIds": [
+        "black-empire-civilization",
+        "yshaarj"
+      ],
+      "camera": {
+        "position": [
+          0.2,
+          6.3,
+          6.1
+        ],
+        "target": [
+          0.1,
+          0,
+          0.1
+        ],
+        "durationMs": 1200
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "black-empire-map-research"
+        },
+        {
+          "type": "show_region",
+          "regionId": "black-empire-influence-research"
+        }
+      ],
+      "nextNodeIds": [
+        "ordering-story-aggramar-discovers"
+      ]
+    },
+    {
+      "id": "ordering-story-aggramar-discovers",
+      "guideId": "ordering-of-azeroth-guided-history",
+      "title": "A watcher finds the hidden world",
+      "narration": "Far beyond those clouded skies, Aggramar found Azeroth. He perceived the nascent titan within, and also the Old Gods fastening their will around it. The news passed to the Pantheon like a bell across the Great Dark. Here was a spirit of extraordinary promise; here too was a peril that could turn such promise against all creation.",
+      "durationMs": 47500,
+      "eventIds": [
+        "pantheon-discovers-azeroth"
+      ],
+      "entityIds": [
+        "aggramar",
+        "pantheon-of-order"
+      ],
+      "optionalExploreEntityIds": [
+        "aggramar",
+        "pantheon-of-order",
+        "azeroth-world-soul"
+      ],
+      "camera": {
+        "position": [
+          -1.8,
+          5.8,
+          5.2
+        ],
+        "target": [
+          -1.3,
+          0,
+          -1.6
+        ],
+        "durationMs": 1100
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "black-empire-map-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "black-empire-precedes-pantheon-discovery",
+            "pantheon-discovery-causes-yshaarj-removal"
+          ]
+        }
+      ],
+      "previousNodeId": "ordering-story-inherited-shadow",
+      "nextNodeIds": [
+        "ordering-story-yshaarj-wound"
+      ]
+    },
+    {
+      "id": "ordering-story-yshaarj-wound",
+      "guideId": "ordering-of-azeroth-guided-history",
+      "title": "Victory becomes a wound",
+      "narration": "Aman’Thul reached toward the greatest of the Old Gods and tore Y'Shaarj from the world. The horror was destroyed, but its roots had entered too deeply. Stone, empire, and corruption came away together, and Azeroth's arcane lifeblood surged from the wound. In that instant the Pantheon learned that strength alone might kill the one it sought to save.",
+      "durationMs": 50000,
+      "eventIds": [
+        "yshaarj-removed"
+      ],
+      "entityIds": [
+        "amanthul",
+        "yshaarj"
+      ],
+      "optionalExploreEntityIds": [
+        "amanthul",
+        "yshaarj",
+        "azeroth-world-soul"
+      ],
+      "camera": {
+        "position": [
+          0.1,
+          4.9,
+          4.4
+        ],
+        "target": [
+          0,
+          0,
+          0.1
+        ],
+        "durationMs": 950
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "black-empire-map-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "yshaarj-removal-causes-world-wound",
+            "yshaarj-removal-causes-titan-forged-method"
+          ]
+        }
+      ],
+      "previousNodeId": "ordering-story-aggramar-discovers",
+      "nextNodeIds": [
+        "ordering-story-titan-forged"
+      ]
+    },
+    {
+      "id": "ordering-story-titan-forged",
+      "guideId": "ordering-of-azeroth-guided-history",
+      "title": "Hands of stone and metal",
+      "narration": "The answer was not another titan's grasp. At Aggramar's urging, the Pantheon fashioned servants whose power could be brought against the Black Empire without shattering Azeroth beneath their feet. From stone and metal came the first titan-forged hosts: soldiers made for the war before them, and workers for labors not yet begun.",
+      "durationMs": 47000,
+      "eventIds": [
+        "titan-forged-mustered"
+      ],
+      "entityIds": [
+        "titan-forged",
+        "aggramar"
+      ],
+      "optionalExploreEntityIds": [
+        "titan-forged",
+        "aggramar"
+      ],
+      "camera": {
+        "position": [
+          -2,
+          4.8,
+          4.5
+        ],
+        "target": [
+          -1.5,
+          0,
+          0.5
+        ],
+        "durationMs": 1000
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "black-empire-map-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "yshaarj-removal-causes-titan-forged-method",
+            "titan-forged-muster-causes-war"
+          ]
+        }
+      ],
+      "previousNodeId": "ordering-story-yshaarj-wound",
+      "nextNodeIds": [
+        "ordering-story-keepers"
+      ]
+    },
+    {
+      "id": "ordering-story-keepers",
+      "guideId": "ordering-of-azeroth-guided-history",
+      "title": "The keepers take command",
+      "narration": "Among the titan-forged, the Pantheon raised a smaller company to bear greater power and judgment. These were the keepers. They would command the hosts, answer changing danger with more than brute force, and remain when distant makers had gone. Beneath their direction, the armies entered a world whose every horizon belonged to the enemy.",
+      "durationMs": 46500,
+      "eventIds": [
+        "titan-forged-mustered"
+      ],
+      "entityIds": [
+        "keepers",
+        "titan-forged"
+      ],
+      "optionalExploreEntityIds": [
+        "keepers",
+        "titan-forged"
+      ],
+      "camera": {
+        "position": [
+          1.6,
+          5,
+          4.8
+        ],
+        "target": [
+          1.2,
+          0,
+          -1.2
+        ],
+        "durationMs": 1000
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "black-empire-map-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "titan-forged-muster-causes-war"
+          ]
+        }
+      ],
+      "previousNodeId": "ordering-story-titan-forged",
+      "nextNodeIds": [
+        "ordering-story-empire-falls"
+      ]
+    },
+    {
+      "id": "ordering-story-empire-falls",
+      "guideId": "ordering-of-azeroth-guided-history",
+      "title": "The long dominion breaks",
+      "narration": "The war passed across fronts whose roads are no longer known. The titan-forged overcame the elemental powers bound to the Old Gods, broke servant hosts, and cast down the Black Empire's strongholds. No single stroke ended that shadow. It receded through a world-spanning campaign until the keepers stood before the powers beneath the empire itself.",
+      "durationMs": 49000,
+      "battleIds": [
+        "titan-forged-war-black-empire"
+      ],
+      "entityIds": [
+        "titan-forged",
+        "black-empire-civilization"
+      ],
+      "optionalExploreEntityIds": [
+        "titan-forged",
+        "keepers",
+        "black-empire-civilization"
+      ],
+      "camera": {
+        "position": [
+          0.4,
+          6.7,
+          6.3
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "durationMs": 1250
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "black-empire-map-research"
+        },
+        {
+          "type": "show_region",
+          "regionId": "black-empire-influence-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "titan-forged-muster-causes-war",
+            "titan-forged-war-causes-containment"
+          ]
+        }
+      ],
+      "previousNodeId": "ordering-story-keepers",
+      "nextNodeIds": [
+        "ordering-story-old-gods-contained"
+      ]
+    },
+    {
+      "id": "ordering-story-old-gods-contained",
+      "guideId": "ordering-of-azeroth-guided-history",
+      "title": "Chains beneath the earth",
+      "narration": "The surviving Old Gods could not be torn out without opening new wounds. Thus the keepers chose containment. The defeated horrors were bound in prisons beneath Azeroth, near enough to remain a danger, yet held from the sleeping titan's heart. Victory had not erased the corruption. It had made the long guarding of it possible.",
+      "durationMs": 47500,
+      "eventIds": [
+        "old-gods-contained"
+      ],
+      "entityIds": [
+        "old-gods",
+        "keepers"
+      ],
+      "optionalExploreEntityIds": [
+        "old-gods",
+        "keepers"
+      ],
+      "camera": {
+        "position": [
+          2.6,
+          4.9,
+          4.5
+        ],
+        "target": [
+          2,
+          0,
+          0.7
+        ],
+        "durationMs": 1050
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "ordering-of-azeroth-map-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "titan-forged-war-causes-containment",
+            "containment-enables-healing"
+          ]
+        }
+      ],
+      "previousNodeId": "ordering-story-empire-falls",
+      "nextNodeIds": [
+        "ordering-story-well-eternity"
+      ]
+    },
+    {
+      "id": "ordering-story-well-eternity",
+      "guideId": "ordering-of-azeroth-guided-history",
+      "title": "The wound becomes a well",
+      "narration": "At the continent's heart, Azeroth still bled light into the open world. The keepers labored around that ruin, raising wards until the torrent quieted and its power found balance. What remained was named the Well of Eternity: not a scar made beautiful, but a scar kept from becoming the death of the world.",
+      "durationMs": 46000,
+      "eventIds": [
+        "well-eternity-stabilized"
+      ],
+      "entityIds": [
+        "well-of-eternity",
+        "keepers"
+      ],
+      "optionalExploreEntityIds": [
+        "well-of-eternity",
+        "keepers",
+        "azeroth-world-soul"
+      ],
+      "camera": {
+        "position": [
+          0,
+          4.6,
+          3.9
+        ],
+        "target": [
+          0.1,
+          0,
+          0
+        ],
+        "durationMs": 950
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "ordering-of-azeroth-map-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "yshaarj-removal-causes-world-wound",
+            "containment-enables-healing",
+            "well-stabilization-precedes-world-forges"
+          ]
+        }
+      ],
+      "previousNodeId": "ordering-story-old-gods-contained",
+      "nextNodeIds": [
+        "ordering-story-world-forges"
+      ]
+    },
+    {
+      "id": "ordering-story-world-forges",
+      "guideId": "ordering-of-azeroth-guided-history",
+      "title": "Two forges hold the world",
+      "narration": "The work spread from the Well toward two great engines. In the far north, Ulduar held the Forge of Wills. Far to the south stood the Forge of Origination, made both to strengthen the wounded world and, should corruption become absolute, to begin it anew. Between them passed the hidden labor of preservation.",
+      "durationMs": 46500,
+      "eventIds": [
+        "world-forges-activated"
+      ],
+      "entityIds": [
+        "ulduar",
+        "forge-of-origination"
+      ],
+      "optionalExploreEntityIds": [
+        "ulduar",
+        "forge-of-origination",
+        "keepers"
+      ],
+      "camera": {
+        "position": [
+          1,
+          7,
+          6.6
+        ],
+        "target": [
+          0.6,
+          0,
+          0
+        ],
+        "durationMs": 1250
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "ordering-of-azeroth-map-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "well-stabilization-precedes-world-forges",
+            "world-forges-enable-ordering"
+          ]
+        }
+      ],
+      "previousNodeId": "ordering-story-well-eternity",
+      "nextNodeIds": [
+        "ordering-story-world-shaped"
+      ]
+    },
+    {
+      "id": "ordering-story-world-shaped",
+      "guideId": "ordering-of-azeroth-guided-history",
+      "title": "Mountains rise, and rivers find the sea",
+      "narration": "Then began the labor by which victory became a world. Titan-forged hands raised ranges, opened deep places, cut waterways, dredged seas, tended engines, and guarded what had been built. The keepers fostered places where living things could flourish. When they looked across the primary continent they had shaped, they called it Kalimdor, the land beneath eternal starlight.",
+      "durationMs": 50000,
+      "eventIds": [
+        "azeroth-ordered"
+      ],
+      "entityIds": [
+        "keepers",
+        "titan-forged",
+        "primordial-kalimdor"
+      ],
+      "optionalExploreEntityIds": [
+        "keepers",
+        "titan-forged",
+        "primordial-kalimdor"
+      ],
+      "camera": {
+        "position": [
+          0,
+          7.4,
+          6.9
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "durationMs": 1350
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "ordering-of-azeroth-map-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "world-forges-enable-ordering",
+            "ordering-precedes-ancient-civilizations"
+          ]
+        }
+      ],
+      "previousNodeId": "ordering-story-world-forges",
+      "nextNodeIds": [
+        "ordering-story-pantheon-departs"
+      ]
+    },
+    {
+      "id": "ordering-story-pantheon-departs",
+      "guideId": "ordering-of-azeroth-guided-history",
+      "title": "The makers pass beyond the sky",
+      "narration": "At last the Pantheon judged Azeroth guarded well enough to leave. The keepers remained beside their forges, prisons, and appointed works, while the titan-forged watched a quieter horizon. Yet the ordered world was no finished monument. Around the Well, life would change, gather memory, and raise powers of its own. The age of ancient civilizations waited beyond the dawn.",
+      "durationMs": 49000,
+      "eventIds": [
+        "pantheon-departs-azeroth"
+      ],
+      "entityIds": [
+        "pantheon-of-order",
+        "keepers",
+        "well-of-eternity"
+      ],
+      "optionalExploreEntityIds": [
+        "pantheon-of-order",
+        "keepers",
+        "well-of-eternity"
+      ],
+      "camera": {
+        "position": [
+          -0.8,
+          6.8,
+          6.5
+        ],
+        "target": [
+          0,
+          0,
+          -0.1
+        ],
+        "durationMs": 1250
+      },
+      "visualActions": [
+        {
+          "type": "set_map_state",
+          "mapStateId": "ordering-of-azeroth-map-research"
+        },
+        {
+          "type": "show_relationships",
+          "relationshipIds": [
+            "ordering-leads-to-pantheon-departure",
+            "ordering-precedes-ancient-civilizations"
+          ]
+        }
+      ],
+      "previousNodeId": "ordering-story-world-shaped",
       "nextNodeIds": []
     }
   ]

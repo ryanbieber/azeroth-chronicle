@@ -1,0 +1,12 @@
+{
+  "id": "pantheon-ordering-spatial-research",
+  "entityId": "pantheon-of-order",
+  "eraId": "ordering-of-azeroth",
+  "worldspaceId": "azeroth",
+  "geometryId": "pantheon-ordering-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "The Pantheon's map presence communicates attention and intervention from beyond Azeroth, not physical map position.",
+  "labelPriority": 122
+}

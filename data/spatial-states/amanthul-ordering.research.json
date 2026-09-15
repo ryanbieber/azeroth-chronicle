@@ -1,0 +1,13 @@
+{
+  "id": "amanthul-ordering-spatial-research",
+  "entityId": "amanthul",
+  "eraId": "ordering-of-azeroth",
+  "worldspaceId": "azeroth",
+  "geometryId": "amanthul-ordering-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "Aman’Thul is composed beside the wound event for narrative clarity; no titan-scale coordinate or distance is asserted.",
+  "labelPriority": 128,
+  "visualPresence": "contextual"
+}

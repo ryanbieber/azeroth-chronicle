@@ -1,0 +1,11 @@
+{
+  "id": "forge-of-origination-ordering-spatial-research",
+  "entityId": "forge-of-origination",
+  "eraId": "ordering-of-azeroth",
+  "worldspaceId": "azeroth",
+  "geometryId": "forge-of-origination-focus-research",
+  "geographicCertainty": "inferred",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "Chronicle places the Forge of Origination in the far south. This focus is reconstructed on the atlas's original landmass and is not a surveyed facility coordinate.",
+  "labelPriority": 124
+}

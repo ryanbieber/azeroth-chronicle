@@ -1,0 +1,9 @@
+{
+  "id": "pantheon-departs-azeroth-event-claim",
+  "subjectId": "pantheon-departs-azeroth",
+  "predicate": "event-summary",
+  "value": "After the ordering, the Pantheon departed and left the keepers and other safeguards responsible for Azeroth.",
+  "citationIds": ["chronicle-v1-pantheon-departure"],
+  "confidence": "explicit",
+  "status": "active"
+}

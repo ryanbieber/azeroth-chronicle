@@ -1,0 +1,14 @@
+{
+  "id": "forge-of-origination",
+  "type": "site",
+  "name": "The Forge of Origination",
+  "slug": "forge-of-origination",
+  "shortDescription": "A southern titan-forged world-facility built to help stabilize Azeroth and retain a final re-origination safeguard against total corruption.",
+  "body": "The Forge worked in concert with the northern Forge of Wills. Its public overview states both its healing purpose and its terrible contingency without suggesting that the latter was used during this era.",
+  "firstEraId": "ordering-of-azeroth",
+  "featuredEraIds": ["ordering-of-azeroth"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["forge-of-origination-purpose-claim"],
+  "tags": ["forge-of-origination", "uldum", "keeper-facility"],
+  "contentStatus": "research"
+}

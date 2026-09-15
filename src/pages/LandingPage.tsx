@@ -8,6 +8,7 @@ const base = import.meta.env.BASE_URL;
 const movingStills = [
   { className: 'landing-still-cosmos', src: `${base}textures/cosmos/cosmic-origins-map-research/cosmic-field.research.webp` },
   { className: 'landing-still-empire', src: `${base}textures/azeroth/black-empire-map-research/terrain-atlas.research.webp` },
+  { className: 'landing-still-ordering', src: `${base}textures/azeroth/ordering-of-azeroth-map-research/terrain-atlas.research.webp` },
   { className: 'landing-still-amanthul', src: `${base}images/characters/cosmic-origins/amanthul.research.webp` },
   { className: 'landing-still-ragnaros', src: `${base}images/characters/black-empire/ragnaros.research.webp` },
   { className: 'landing-still-yshaarj', src: `${base}images/characters/black-empire/yshaarj.research.webp` },

@@ -1,0 +1,12 @@
+{
+  "id": "old-gods-containment-ordering-spatial-research",
+  "entityId": "old-gods",
+  "eraId": "ordering-of-azeroth",
+  "worldspaceId": "azeroth",
+  "geometryId": "old-gods-containment-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "The collective visual stands for multiple prisons and makes no claim about a single shared location or the exact position of any prison.",
+  "labelPriority": 116
+}

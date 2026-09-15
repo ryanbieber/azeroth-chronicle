@@ -1,0 +1,16 @@
+{
+  "id": "pantheon-discovers-azeroth",
+  "kind": "event",
+  "name": "The Pantheon Discovers Azeroth",
+  "slug": "pantheon-discovers-azeroth",
+  "eraId": "ordering-of-azeroth",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "During the Black Empire's dominion", "relativeToId": "black-empire-dominion" },
+  "summary": "Aggramar discovered Azeroth's nascent titan and the Old Gods rooted around it, bringing the imperiled world to the Pantheon's attention.",
+  "participantEntityIds": ["aggramar", "pantheon-of-order", "azeroth-world-soul", "old-gods", "black-empire-civilization"],
+  "causesEventIds": ["yshaarj-removed"],
+  "relationshipIds": ["black-empire-precedes-pantheon-discovery", "pantheon-discovery-causes-yshaarj-removal"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["pantheon-discovers-azeroth-event-claim"],
+  "contentStatus": "research"
+}

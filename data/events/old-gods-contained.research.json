@@ -1,0 +1,17 @@
+{
+  "id": "old-gods-contained",
+  "kind": "event",
+  "name": "The Old Gods Are Contained",
+  "slug": "old-gods-contained",
+  "eraId": "ordering-of-azeroth",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "After the fall of the Black Empire", "relativeToId": "titan-forged-war-black-empire" },
+  "summary": "Unable to remove the remaining Old Gods without repeating the wound caused by Y'Shaarj's destruction, the keepers bound them in prisons beneath Azeroth.",
+  "participantEntityIds": ["keepers", "titan-forged", "old-gods"],
+  "causedByEventIds": ["titan-forged-war-black-empire"],
+  "causesEventIds": ["well-eternity-stabilized"],
+  "relationshipIds": ["titan-forged-war-causes-containment", "containment-enables-healing"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["old-gods-contained-event-claim"],
+  "contentStatus": "research"
+}

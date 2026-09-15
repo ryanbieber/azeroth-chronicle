@@ -1,0 +1,8 @@
+{
+  "id": "well-stabilization-precedes-world-forges",
+  "fromId": "well-eternity-stabilized",
+  "toId": "world-forges-activated",
+  "type": "precedes",
+  "citationIds": ["chronicle-v1-well-world-forges"],
+  "confidence": "explicit"
+}

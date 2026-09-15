@@ -1,0 +1,9 @@
+{
+  "id": "amanthul-removes-yshaarj-claim",
+  "subjectId": "amanthul",
+  "predicate": "direct-intervention",
+  "value": "Aman’Thul tore Y'Shaarj from Azeroth, destroying the Old God but leaving a catastrophic wound in the world.",
+  "citationIds": ["chronicle-v1-fall-black-empire"],
+  "confidence": "explicit",
+  "status": "active"
+}

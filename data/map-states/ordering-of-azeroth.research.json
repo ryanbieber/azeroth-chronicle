@@ -1,6 +1,23 @@
 {
   "id": "ordering-of-azeroth-map-research",
-  "name": "Ordering of Azeroth — cartography research",
+  "name": "Ordered primordial Azeroth — interpretive research map",
   "worldspaceId": "azeroth",
-  "geometryIds": []
+  "presentation": "terrain",
+  "cartographyLabel": "INTERPRETIVE BEFORE/AFTER CARTOGRAPHY",
+  "interpretationNote": "This after-state preserves the Era 1 research coastline so the historical change remains legible. The Well's central focus and the far-northern and far-southern facility placements follow broad Chronicle relationships; terrain details and coordinates are original reconstructions rather than traced or surveyed canon.",
+  "terrainTextureAsset": "textures/azeroth/ordering-of-azeroth-map-research/terrain-atlas.research.webp",
+  "terrainHeightAsset": "textures/azeroth/ordering-of-azeroth-map-research/terrain-height.research.webp",
+  "geometryIds": [
+    "ordered-kalimdor-landmass-research",
+    "well-of-eternity-focus-research",
+    "ulduar-focus-research",
+    "forge-of-origination-focus-research",
+    "aggramar-ordering-focus-research",
+    "pantheon-ordering-focus-research",
+    "amanthul-ordering-focus-research",
+    "yshaarj-ordering-focus-research",
+    "titan-forged-ordering-focus-research",
+    "keepers-ordering-focus-research",
+    "old-gods-containment-focus-research"
+  ]
 }

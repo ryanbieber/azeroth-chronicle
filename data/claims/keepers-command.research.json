@@ -1,0 +1,9 @@
+{
+  "id": "keepers-command-claim",
+  "subjectId": "keepers",
+  "predicate": "command-role",
+  "value": "Members of the Pantheon empowered the keepers to lead the titan-forged armies against the Black Empire.",
+  "citationIds": ["chronicle-v1-wrath-titan-forged", "blizzard-ordering-titan-forged"],
+  "confidence": "explicit",
+  "status": "active"
+}

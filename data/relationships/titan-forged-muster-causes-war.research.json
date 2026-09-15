@@ -1,0 +1,8 @@
+{
+  "id": "titan-forged-muster-causes-war",
+  "fromId": "titan-forged-mustered",
+  "toId": "titan-forged-war-black-empire",
+  "type": "causes",
+  "citationIds": ["chronicle-v1-wrath-titan-forged", "blizzard-ordering-titan-forged"],
+  "confidence": "explicit"
+}

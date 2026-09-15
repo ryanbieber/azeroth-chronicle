@@ -1,0 +1,13 @@
+{
+  "id": "yshaarj-central-bastion-ordering-spatial-research",
+  "entityId": "yshaarj-central-bastion",
+  "eraId": "ordering-of-azeroth",
+  "worldspaceId": "azeroth",
+  "geometryId": "yshaarj-ordering-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "The figure anchor separates Aman’Thul and Y'Shaarj for legibility around their shared central event. It is narrative composition, not a second geographic claim.",
+  "labelPriority": 118,
+  "visualPresence": "contextual"
+}

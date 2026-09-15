@@ -141,6 +141,7 @@ export interface SpatialState {
   sourceIds: EntityId[];
   editorNote?: string;
   labelPriority?: number;
+  visualPresence?: 'persistent' | 'contextual';
 }
 
 export interface LayerDefinition {

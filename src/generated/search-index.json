@@ -99,9 +99,10 @@
     "eraId": "ordering-of-azeroth",
     "aliases": [],
     "tags": [],
-    "description": "The Titan-forged armies defeat and imprison the Old Gods, reshape the planet, create the Well of Eternity, and establish facilities such as Ulduar.",
+    "description": "The Pantheon intervenes to save Azeroth, the keeper-led titan-forged break the Black Empire, the surviving Old Gods are imprisoned, and the wounded world is stabilized and reshaped.",
     "sourceIds": [
-      "warcraft-chronicle-volume-1"
+      "warcraft-chronicle-volume-1",
+      "blizzard-dragon-aspects-history"
     ],
     "contentStatus": "research"
   },
@@ -148,6 +149,26 @@
     "description": "Queen Azshara, the Burning Legion's first invasion, the destruction of the Well of Eternity, and the shattering of primordial Kalimdor.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "aggramar",
+    "type": "entity",
+    "name": "Aggramar",
+    "slug": "aggramar",
+    "path": "/locations/aggramar",
+    "eraId": "cosmic-origins",
+    "aliases": [],
+    "tags": [
+      "titan",
+      "pantheon",
+      "ordering"
+    ],
+    "description": "The titan who discovered the imperiled world of Azeroth and urged the Pantheon to act through purpose-built servants rather than overwhelming force.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-dragon-aspects-history"
     ],
     "contentStatus": "research"
   },
@@ -295,6 +316,25 @@
     "contentStatus": "research"
   },
   {
+    "id": "forge-of-origination",
+    "type": "entity",
+    "name": "The Forge of Origination",
+    "slug": "forge-of-origination",
+    "path": "/locations/forge-of-origination",
+    "eraId": "ordering-of-azeroth",
+    "aliases": [],
+    "tags": [
+      "forge-of-origination",
+      "uldum",
+      "keeper-facility"
+    ],
+    "description": "A southern titan-forged world-facility built to help stabilize Azeroth and retain a final re-origination safeguard against total corruption.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "great-dark-beyond",
     "type": "entity",
     "name": "The Great Dark Beyond",
@@ -309,6 +349,26 @@
     "description": "The physical universe of innumerable worlds and stars described in Chronicle's cosmological account.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "keepers",
+    "type": "entity",
+    "name": "The Keepers",
+    "slug": "keepers",
+    "path": "/factions/keepers",
+    "eraId": "ordering-of-azeroth",
+    "aliases": [],
+    "tags": [
+      "keepers",
+      "titan-forged",
+      "stewardship"
+    ],
+    "description": "The greatest titan-forged, empowered by members of the Pantheon to command the war and safeguard the ordering of Azeroth.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-dragon-aspects-history"
     ],
     "contentStatus": "research"
   },
@@ -478,6 +538,26 @@
     "contentStatus": "research"
   },
   {
+    "id": "titan-forged",
+    "type": "entity",
+    "name": "The Titan-forged",
+    "slug": "titan-forged",
+    "path": "/factions/titan-forged",
+    "eraId": "ordering-of-azeroth",
+    "aliases": [],
+    "tags": [
+      "titan-forged",
+      "army",
+      "world-shaping"
+    ],
+    "description": "Armies and workers of living stone and metal created to defeat the Black Empire, protect Azeroth, and help shape the wounded world.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-dragon-aspects-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "twisting-nether",
     "type": "entity",
     "name": "The Twisting Nether",
@@ -491,6 +571,25 @@
       "disorder"
     ],
     "description": "A volatile astral realm formed from energies released around the creation of the physical universe.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "ulduar",
+    "type": "entity",
+    "name": "Ulduar",
+    "slug": "ulduar",
+    "path": "/locations/ulduar",
+    "eraId": "ordering-of-azeroth",
+    "aliases": [],
+    "tags": [
+      "ulduar",
+      "keeper-facility",
+      "forge-of-wills"
+    ],
+    "description": "The keepers' great northern stronghold and the seat of the Forge of Wills during the ordering of Azeroth.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
     ],
@@ -511,6 +610,25 @@
       "cosmology"
     ],
     "description": "Shadow-aligned beings who sought to corrupt a world-soul but could not directly manifest their full power in the physical universe.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "well-of-eternity",
+    "type": "entity",
+    "name": "The Well of Eternity",
+    "slug": "well-of-eternity",
+    "path": "/locations/well-of-eternity",
+    "eraId": "ordering-of-azeroth",
+    "aliases": [],
+    "tags": [
+      "well-of-eternity",
+      "arcane",
+      "world-wound"
+    ],
+    "description": "The immense arcane lake formed when the keepers stabilized the wound left by Y'Shaarj's removal.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
     ],
@@ -590,6 +708,21 @@
     "contentStatus": "research"
   },
   {
+    "id": "azeroth-ordered",
+    "type": "event",
+    "name": "Azeroth Is Ordered",
+    "slug": "azeroth-ordered",
+    "path": "/events/azeroth-ordered",
+    "eraId": "ordering-of-azeroth",
+    "aliases": [],
+    "tags": [],
+    "description": "The titan-forged raised mountains, opened waterways, dredged seas, maintained great works, and helped make the wounded world stable enough for life to flourish.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "black-empire-dominion",
     "type": "event",
     "name": "Black Empire Dominion",
@@ -635,6 +768,21 @@
     "contentStatus": "research"
   },
   {
+    "id": "old-gods-contained",
+    "type": "event",
+    "name": "The Old Gods Are Contained",
+    "slug": "old-gods-contained",
+    "path": "/events/old-gods-contained",
+    "eraId": "ordering-of-azeroth",
+    "aliases": [],
+    "tags": [],
+    "description": "Unable to remove the remaining Old Gods without repeating the wound caused by Y'Shaarj's destruction, the keepers bound them in prisons beneath Azeroth.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "old-gods-scattered",
     "type": "event",
     "name": "Scattering of the Old Gods",
@@ -644,6 +792,36 @@
     "aliases": [],
     "tags": [],
     "description": "The Void Lords made the Old Gods and cast them through the Great Dark, hoping that some would find and corrupt a world-soul.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "pantheon-departs-azeroth",
+    "type": "event",
+    "name": "The Pantheon Departs",
+    "slug": "pantheon-departs-azeroth",
+    "path": "/events/pantheon-departs-azeroth",
+    "eraId": "ordering-of-azeroth",
+    "aliases": [],
+    "tags": [],
+    "description": "With Azeroth stabilized and its guardians appointed, the Pantheon departed while the keepers and titan-forged remained to watch over the world.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "pantheon-discovers-azeroth",
+    "type": "event",
+    "name": "The Pantheon Discovers Azeroth",
+    "slug": "pantheon-discovers-azeroth",
+    "path": "/events/pantheon-discovers-azeroth",
+    "eraId": "ordering-of-azeroth",
+    "aliases": [],
+    "tags": [],
+    "description": "Aggramar discovered Azeroth's nascent titan and the Old Gods rooted around it, bringing the imperiled world to the Pantheon's attention.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
     ],
@@ -695,6 +873,67 @@
     "contentStatus": "research"
   },
   {
+    "id": "titan-forged-mustered",
+    "type": "event",
+    "name": "The Titan-forged Are Mustered",
+    "slug": "titan-forged-mustered",
+    "path": "/events/titan-forged-mustered",
+    "eraId": "ordering-of-azeroth",
+    "aliases": [],
+    "tags": [],
+    "description": "The Pantheon created armies of stone and metal and empowered the greatest among them as keepers to lead the war for Azeroth.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-dragon-aspects-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "well-eternity-stabilized",
+    "type": "event",
+    "name": "The World-wound Is Stabilized",
+    "slug": "well-eternity-stabilized",
+    "path": "/events/well-eternity-stabilized",
+    "eraId": "ordering-of-azeroth",
+    "aliases": [],
+    "tags": [],
+    "description": "The keepers raised wards around Azeroth's bleeding wound until its arcane energies settled into the Well of Eternity.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "world-forges-activated",
+    "type": "event",
+    "name": "The World-forges Are Established",
+    "slug": "world-forges-activated",
+    "path": "/events/world-forges-activated",
+    "eraId": "ordering-of-azeroth",
+    "aliases": [],
+    "tags": [],
+    "description": "The keepers established complementary facilities in the far north and south to stabilize Azeroth and sustain the work of ordering it.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "yshaarj-removed",
+    "type": "event",
+    "name": "The Removal of Y'Shaarj",
+    "slug": "yshaarj-removed",
+    "path": "/events/yshaarj-removed",
+    "eraId": "ordering-of-azeroth",
+    "aliases": [],
+    "tags": [],
+    "description": "Aman’Thul tore Y'Shaarj from Azeroth, destroying the Old God but opening a terrible wound in the sleeping world-soul.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "elemental-assault-on-black-empire",
     "type": "battle",
     "name": "The Elemental Assault on the Black Empire",
@@ -726,6 +965,22 @@
     "contentStatus": "research"
   },
   {
+    "id": "titan-forged-war-black-empire",
+    "type": "battle",
+    "name": "The Titan-forged War against the Black Empire",
+    "slug": "titan-forged-war-black-empire",
+    "path": "/battles/titan-forged-war-black-empire",
+    "eraId": "ordering-of-azeroth",
+    "aliases": [],
+    "tags": [],
+    "description": "Keeper-led armies of stone and metal fought across primordial Azeroth, defeated the Black Empire's forces, and subdued the powers that had ruled the world.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-dragon-aspects-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "elemental-resistance-campaign",
     "type": "campaign",
     "name": "The Elemental Resistance to the Black Empire",
@@ -753,6 +1008,22 @@
     "description": "A descriptive campaign grouping for the prolonged struggle among Azeroth's four elemental hosts.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "titan-forged-ordering-campaign",
+    "type": "campaign",
+    "name": "The Titan-forged War for Azeroth",
+    "slug": "titan-forged-ordering-campaign",
+    "path": "/eras/ordering-of-azeroth",
+    "eraId": "ordering-of-azeroth",
+    "aliases": [],
+    "tags": [],
+    "description": "An editorial campaign grouping for the keeper-led war that broke the Black Empire and made containment and planetary repair possible.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-1",
+      "blizzard-dragon-aspects-history"
     ],
     "contentStatus": "research"
   }

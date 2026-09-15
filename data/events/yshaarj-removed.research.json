@@ -1,0 +1,18 @@
+{
+  "id": "yshaarj-removed",
+  "kind": "event",
+  "name": "The Removal of Y'Shaarj",
+  "slug": "yshaarj-removed",
+  "eraId": "ordering-of-azeroth",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "At the beginning of the Pantheon's intervention", "relativeToId": "pantheon-discovers-azeroth" },
+  "summary": "Aman’Thul tore Y'Shaarj from Azeroth, destroying the Old God but opening a terrible wound in the sleeping world-soul.",
+  "locationIds": ["yshaarj-central-bastion"],
+  "participantEntityIds": ["amanthul", "yshaarj", "azeroth-world-soul", "pantheon-of-order"],
+  "causedByEventIds": ["pantheon-discovers-azeroth"],
+  "causesEventIds": ["titan-forged-mustered", "well-eternity-stabilized"],
+  "relationshipIds": ["pantheon-discovery-causes-yshaarj-removal", "yshaarj-removal-causes-world-wound"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["yshaarj-removed-event-claim"],
+  "contentStatus": "research"
+}

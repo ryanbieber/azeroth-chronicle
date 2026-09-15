@@ -283,6 +283,7 @@ function AtlasScene({
     const anchorState = spatialStates.find((state) => state.entityId === anchorId);
     const runtime = geometry.find((item) => item.id === anchorState?.geometryId && item.kind === 'point');
     const active = highlightedIds.includes(entity.id) || selectedId === entity.id;
+    if (anchorState?.visualPresence === 'contextual' && !active) return [];
     return runtime?.kind === 'point' ? [{ active, entity, runtime }] : [];
   }), [entities, geometry, highlightedIds, selectedId, spatialStates]);
 

@@ -1,0 +1,9 @@
+{
+  "id": "aggramar-discovers-azeroth-claim",
+  "subjectId": "aggramar",
+  "predicate": "discovery",
+  "value": "Aggramar discovered Azeroth and recognized a nascent titan threatened by the Black Empire.",
+  "citationIds": ["chronicle-v1-discovery-azeroth"],
+  "confidence": "explicit",
+  "status": "active"
+}

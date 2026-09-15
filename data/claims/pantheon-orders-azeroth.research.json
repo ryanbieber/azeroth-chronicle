@@ -1,0 +1,9 @@
+{
+  "id": "pantheon-orders-azeroth-claim",
+  "subjectId": "pantheon-of-order",
+  "predicate": "azeroth-intervention",
+  "value": "The Pantheon acted to save Azeroth's world-soul, empowered keepers to lead its servants, and departed after the world had been stabilized and ordered.",
+  "citationIds": ["chronicle-v1-discovery-azeroth", "blizzard-ordering-titan-forged", "chronicle-v1-pantheon-departure"],
+  "confidence": "explicit",
+  "status": "active"
+}

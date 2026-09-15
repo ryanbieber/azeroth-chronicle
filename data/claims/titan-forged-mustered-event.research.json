@@ -1,0 +1,9 @@
+{
+  "id": "titan-forged-mustered-event-claim",
+  "subjectId": "titan-forged-mustered",
+  "predicate": "event-summary",
+  "value": "The Pantheon created titan-forged armies and empowered keepers to command them against the Black Empire.",
+  "citationIds": ["chronicle-v1-wrath-titan-forged", "blizzard-ordering-titan-forged"],
+  "confidence": "explicit",
+  "status": "active"
+}

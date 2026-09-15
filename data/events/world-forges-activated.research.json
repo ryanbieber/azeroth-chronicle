@@ -1,0 +1,18 @@
+{
+  "id": "world-forges-activated",
+  "kind": "event",
+  "name": "The World-forges Are Established",
+  "slug": "world-forges-activated",
+  "eraId": "ordering-of-azeroth",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "During the healing of Azeroth", "relativeToId": "well-eternity-stabilized" },
+  "summary": "The keepers established complementary facilities in the far north and south to stabilize Azeroth and sustain the work of ordering it.",
+  "locationIds": ["ulduar", "forge-of-origination"],
+  "participantEntityIds": ["keepers", "titan-forged"],
+  "causedByEventIds": ["well-eternity-stabilized"],
+  "causesEventIds": ["azeroth-ordered"],
+  "relationshipIds": ["well-stabilization-precedes-world-forges", "world-forges-enable-ordering"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["world-forges-activated-event-claim"],
+  "contentStatus": "research"
+}

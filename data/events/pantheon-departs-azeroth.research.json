@@ -1,0 +1,16 @@
+{
+  "id": "pantheon-departs-azeroth",
+  "kind": "event",
+  "name": "The Pantheon Departs",
+  "slug": "pantheon-departs-azeroth",
+  "eraId": "ordering-of-azeroth",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "After the ordering of Azeroth", "relativeToId": "azeroth-ordered" },
+  "summary": "With Azeroth stabilized and its guardians appointed, the Pantheon departed while the keepers and titan-forged remained to watch over the world.",
+  "participantEntityIds": ["pantheon-of-order", "keepers", "titan-forged", "azeroth-world-soul"],
+  "causedByEventIds": ["azeroth-ordered"],
+  "relationshipIds": ["ordering-leads-to-pantheon-departure", "ordering-precedes-ancient-civilizations"],
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "claimIds": ["pantheon-departs-azeroth-event-claim"],
+  "contentStatus": "research"
+}

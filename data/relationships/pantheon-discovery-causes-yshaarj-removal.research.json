@@ -1,0 +1,8 @@
+{
+  "id": "pantheon-discovery-causes-yshaarj-removal",
+  "fromId": "pantheon-discovers-azeroth",
+  "toId": "yshaarj-removed",
+  "type": "causes",
+  "citationIds": ["chronicle-v1-discovery-azeroth", "chronicle-v1-fall-black-empire"],
+  "confidence": "strongly_supported"
+}

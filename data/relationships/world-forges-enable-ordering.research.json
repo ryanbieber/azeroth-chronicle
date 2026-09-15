@@ -1,0 +1,8 @@
+{
+  "id": "world-forges-enable-ordering",
+  "fromId": "world-forges-activated",
+  "toId": "azeroth-ordered",
+  "type": "causes",
+  "citationIds": ["chronicle-v1-well-world-forges", "chronicle-v1-ordering-azeroth"],
+  "confidence": "strongly_supported"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "well-of-eternity-ordering-spatial-research",
+  "entityId": "well-of-eternity",
+  "eraId": "ordering-of-azeroth",
+  "worldspaceId": "azeroth",
+  "geometryId": "well-of-eternity-focus-research",
+  "geographicCertainty": "approximate",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "The focus follows the source-backed central relationship between Y'Shaarj's greatest bastion, the world-wound, and the Well; it is not an exact coordinate.",
+  "labelPriority": 132
+}

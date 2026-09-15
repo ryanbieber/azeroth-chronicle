@@ -1,0 +1,12 @@
+{
+  "id": "keepers-ordering-spatial-research",
+  "entityId": "keepers",
+  "eraId": "ordering-of-azeroth",
+  "worldspaceId": "azeroth",
+  "geometryId": "keepers-ordering-focus-research",
+  "placementKind": "relational",
+  "geographicCertainty": "unknown",
+  "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-dragon-aspects-history"],
+  "editorNote": "The collective keeper figure moves with the narrated work. This anchor does not assign all keepers to one geographic point.",
+  "labelPriority": 124
+}

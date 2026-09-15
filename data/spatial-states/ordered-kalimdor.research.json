@@ -1,0 +1,11 @@
+{
+  "id": "ordered-kalimdor-spatial-research",
+  "entityId": "primordial-kalimdor",
+  "eraId": "ordering-of-azeroth",
+  "worldspaceId": "azeroth",
+  "geometryId": "ordered-kalimdor-landmass-research",
+  "geographicCertainty": "inferred",
+  "sourceIds": ["warcraft-chronicle-volume-1"],
+  "editorNote": "The coastline preserves the atlas's Era 1 research silhouette for before-and-after continuity. It is an original reconstruction, not a traced or surveyed canonical boundary.",
+  "labelPriority": 40
+}

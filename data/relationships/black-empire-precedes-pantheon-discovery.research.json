@@ -1,0 +1,8 @@
+{
+  "id": "black-empire-precedes-pantheon-discovery",
+  "fromId": "black-empire-dominion",
+  "toId": "pantheon-discovers-azeroth",
+  "type": "precedes",
+  "citationIds": ["chronicle-v1-discovery-azeroth"],
+  "confidence": "explicit"
+}

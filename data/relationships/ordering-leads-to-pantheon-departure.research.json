@@ -1,0 +1,8 @@
+{
+  "id": "ordering-leads-to-pantheon-departure",
+  "fromId": "azeroth-ordered",
+  "toId": "pantheon-departs-azeroth",
+  "type": "causes",
+  "citationIds": ["chronicle-v1-ordering-azeroth", "chronicle-v1-pantheon-departure"],
+  "confidence": "strongly_supported"
+}

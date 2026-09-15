@@ -31,6 +31,6 @@
   "storyGuideId": "rise-of-the-horde-guided-history",
   "previousEraId": "long-vigil-new-kingdoms",
   "nextEraId": "third-war-frozen-throne",
-  "sourceIds": ["warcraft-chronicle-volume-2", "blizzard-chronicle-volume-2-overview", "blizzard-rise-of-the-horde-library", "blizzard-burning-crusade-draenor-history", "blizzard-tides-of-darkness-library"],
+  "sourceIds": ["warcraft-chronicle-volume-2", "blizzard-chronicle-volume-2-overview", "blizzard-rise-of-the-horde-library", "blizzard-burning-crusade-draenor-history", "blizzard-tides-of-darkness-library", "blizzard-wow-classic-overview"],
   "contentStatus": "research"
 }

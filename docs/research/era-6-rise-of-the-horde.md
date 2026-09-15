@@ -17,6 +17,7 @@ This era joins two worlds. Draenor and Azeroth have independent local `0..10000`
 | `blizzard-rise-of-the-horde-library` | First-party broad account of Legion manipulation, Mannoroth's blood, the Horde, and devastation on Draenor | Use for broad corroboration, not details absent from the article |
 | `blizzard-burning-crusade-draenor-history` | First-party account of the draenei on Draenor, Kil'jaeden, Ner'zhul, Gul'dan, the draenei war, and the Dark Portal | Preserve its perspective and compression explicitly |
 | `blizzard-tides-of-darkness-library` | First-party account of Stormwind's fall, the Alliance of Lordaeron, and the Second War | Its short promotional summary compresses First War leadership; Chronicle review governs detailed sequencing |
+| `blizzard-wow-classic-overview` | First-party confirmation that Classic Azeroth is principally read through the vast continents of Kalimdor and the Eastern Kingdoms | Macro-geographic hierarchy only; never use or reproduce Blizzard map art, coastlines, or zone layout |
 
 Working Chronicle chapter spans are pages 62–103 for **Rise of the Horde**, 104–145 for **The First War**, and 146–181 for **The Second War**. These broad spans are indexing aids until a human verifies exact claim pages.
 
@@ -26,6 +27,7 @@ First-party entry points:
 - [The Library — Rise of the Horde](https://worldofwarcraft.blizzard.com/en-gb/news/10001380/the-library-rise-of-the-horde)
 - [Burning Crusade Classic — The Story So Far](https://worldofwarcraft.blizzard.com/en-us/news/23679744/burning-crusade-classic-the-story-so-far)
 - [The Library — Tides of Darkness](https://worldofwarcraft.blizzard.com/en-gb/news/9979033/the-library-tides-of-darkness)
+- [World of Warcraft Classic](https://worldofwarcraft.blizzard.com/en-us/classic)
 
 ## Guided-history spine
 
@@ -63,8 +65,10 @@ Four map states carry the era:
 
 - `rise-of-the-horde-draenor-before-map-research`: original intact Draenor and broad coexistence;
 - `rise-of-the-horde-draenor-corrupted-map-research`: same intact landforms with restrained war and fel decline;
-- `rise-of-the-horde-first-war-map-research`: inherited post-Sundering Azeroth with southern First War pressure;
+- `rise-of-the-horde-first-war-map-research`: an original post-Sundering reconstruction with southern First War pressure;
 - `rise-of-the-horde-second-war-map-research`: the northern coalition, broad Horde offensive, Blackrock turning point, and counteroffensive.
+
+The two Azeroth states share an Era 6-specific terrain plate revised after visual review. Its hierarchy is deliberately legible at atlas scale: Kalimdor is one dominant western continent, the Eastern Kingdoms are one dominant eastern continent, Northrend is a distinct northern mass, secondary islands are subordinate, and the Maelstrom occupies the central Great Sea without turning the world into an archipelago. The silhouette and terrain are an original interpretive reconstruction rather than a tracing of official or community cartography.
 
 All four campaign routes are inferred strategic diagrams. Neither war receives a single exact battlefield marker. Shattrath, Stormwind, Lordaeron, Blackrock Spire, and both portal anchors are approximate atlas-scale centers, not reproduced coordinates or settlement footprints. Political regions are broad influence reconstructions, not surveyed borders.
 

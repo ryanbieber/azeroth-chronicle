@@ -4,8 +4,8 @@
   "worldspaceId": "azeroth",
   "presentation": "terrain",
   "cartographyLabel": "INTERPRETIVE FIRST WAR CAMPAIGN STATE",
-  "interpretationNote": "The state uses inherited post-Sundering terrain and broad, phase-aware pressure rather than treating game missions as a surveyed campaign. The portal changes worldspace; it is not rendered as a geographic line between planets.",
-  "terrainTextureAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-atlas.research.webp",
-  "terrainHeightAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-height.research.webp",
+  "interpretationNote": "The state uses an original post-Sundering reconstruction whose large-scale hierarchy emphasizes coherent western Kalimdor, eastern Eastern Kingdoms, and northern Northrend around the Great Sea. Campaign pressure remains broad rather than treating game missions as a surveyed campaign. The portal changes worldspace; it is not rendered as a geographic line between planets.",
+  "terrainTextureAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-atlas.research.webp",
+  "terrainHeightAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-height.research.webp",
   "geometryIds": ["dark-portal-azeroth-focus-research", "stormwind-city-era-six-focus-research", "stormwind-kingdom-region-research", "old-horde-first-war-focus-research", "blackhand-first-war-focus-research", "medivh-first-war-focus-research", "lothar-first-war-focus-research", "first-war-advance-route-research"]
 }

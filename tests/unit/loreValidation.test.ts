@@ -429,6 +429,13 @@ describe('lore dataset', () => {
         && existsSync(resolve('public', texture))
         && existsSync(resolve('public', height)));
     })).toBe(true);
+    const azerothMapStates = mapStates.filter((state) => state.worldspaceId === 'azeroth');
+    expect(new Set(azerothMapStates.map((state) => state.terrainTextureAsset))).toEqual(new Set([
+      'textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-atlas.research.webp',
+    ]));
+    expect(new Set(azerothMapStates.map((state) => state.terrainHeightAsset))).toEqual(new Set([
+      'textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-height.research.webp',
+    ]));
     expect(nodes.slice(0, 2).every((node) => node.visualActions?.some((action) =>
       action.type === 'set_map_state' && action.mapStateId === mapStateIds[0]))).toBe(true);
     expect(nodes.slice(2, 6).every((node) => node.visualActions?.some((action) =>

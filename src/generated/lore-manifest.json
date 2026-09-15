@@ -291,9 +291,9 @@
       "worldspaceId": "azeroth",
       "presentation": "terrain",
       "cartographyLabel": "INTERPRETIVE FIRST WAR CAMPAIGN STATE",
-      "interpretationNote": "The state uses inherited post-Sundering terrain and broad, phase-aware pressure rather than treating game missions as a surveyed campaign. The portal changes worldspace; it is not rendered as a geographic line between planets.",
-      "terrainTextureAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-atlas.research.webp",
-      "terrainHeightAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-height.research.webp",
+      "interpretationNote": "The state uses an original post-Sundering reconstruction whose large-scale hierarchy emphasizes coherent western Kalimdor, eastern Eastern Kingdoms, and northern Northrend around the Great Sea. Campaign pressure remains broad rather than treating game missions as a surveyed campaign. The portal changes worldspace; it is not rendered as a geographic line between planets.",
+      "terrainTextureAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-atlas.research.webp",
+      "terrainHeightAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-height.research.webp",
       "geometryIds": [
         "dark-portal-azeroth-focus-research",
         "stormwind-city-era-six-focus-research",
@@ -311,9 +311,9 @@
       "worldspaceId": "azeroth",
       "presentation": "terrain",
       "cartographyLabel": "INTERPRETIVE SECOND WAR CAMPAIGN STATE",
-      "interpretationNote": "This late state shows the Alliance coalition, the Horde's broad northern offensive, Blackrock, and the return to the Dark Portal. Its regions and routes are interpretive strategic summaries, not exact national borders, fleet tracks, or troop movements.",
-      "terrainTextureAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-atlas.research.webp",
-      "terrainHeightAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-height.research.webp",
+      "interpretationNote": "This late state uses the same original continental reconstruction as the First War state, with coherent western Kalimdor, eastern Eastern Kingdoms, and northern Northrend clearly separated by ocean. It shows the Alliance coalition, the Horde's broad northern offensive, Blackrock, and the return to the Dark Portal. Its regions and routes are interpretive strategic summaries, not exact national borders, fleet tracks, or troop movements.",
+      "terrainTextureAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-atlas.research.webp",
+      "terrainHeightAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-height.research.webp",
       "geometryIds": [
         "dark-portal-azeroth-focus-research",
         "stormwind-city-era-six-focus-research",
@@ -2456,7 +2456,8 @@
         "blizzard-chronicle-volume-2-overview",
         "blizzard-rise-of-the-horde-library",
         "blizzard-burning-crusade-draenor-history",
-        "blizzard-tides-of-darkness-library"
+        "blizzard-tides-of-darkness-library",
+        "blizzard-wow-classic-overview"
       ],
       "contentStatus": "research"
     },
@@ -9020,6 +9021,12 @@
       "sourceType": "website",
       "publicationDate": "2011-09-19",
       "notes": "First-party Blizzard overview: https://worldofwarcraft.blizzard.com/en-us/news/3502666/patch-43-dungeons-preview-part-two-well-of-eternity. It corroborates Zin-Azshari, the Highborne portal, Azshara's role, the struggle at the Well, the Great Sundering, and the Maelstrom. Dungeon mechanics and time-travel framing are not generalized into the historical atlas."
+    },
+    {
+      "id": "blizzard-wow-classic-overview",
+      "title": "World of Warcraft Classic",
+      "sourceType": "website",
+      "notes": "First-party Blizzard overview: https://worldofwarcraft.blizzard.com/en-us/classic. It confirms that the original World of Warcraft experience is principally framed across the vast continents of Kalimdor and the Eastern Kingdoms. This project uses that statement only to inform macro-geographic hierarchy and does not reproduce Blizzard cartography."
     },
     {
       "id": "warcraft-chronicle-volume-1",

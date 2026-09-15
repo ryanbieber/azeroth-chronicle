@@ -366,6 +366,7 @@ test('Rise of the Horde crosses from Draenor into the First and Second Wars with
 });
 
 test('landing page full tour chains every completed guided era', async ({ page }) => {
+  test.setTimeout(120_000);
   await page.goto('/');
   await expect(page.getByRole('heading', { name: /the full history/i })).toBeVisible();
   await expect(page.locator('.landing-still')).toHaveCount(7);

@@ -1,0 +1,6 @@
+{
+  "id": "outland",
+  "name": "Outland",
+  "slug": "outland",
+  "coordinateSystem": { "width": 10000, "height": 10000, "origin": "bottom-left", "units": "atlas-units" }
+}

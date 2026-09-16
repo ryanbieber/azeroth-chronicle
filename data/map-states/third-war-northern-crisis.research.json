@@ -1,0 +1,11 @@
+{
+  "id": "third-war-northern-crisis-map-research",
+  "name": "The northern crisis and fall of Lordaeron — interpretive state",
+  "worldspaceId": "azeroth",
+  "presentation": "terrain",
+  "cartographyLabel": "INTERPRETIVE NORTHERN CRISIS STATE",
+  "interpretationNote": "The plague, Arthas's northern pursuit, and the Scourge advance are shown as broad narrative pressure. No exact outbreak boundary, city footprint, or complete army route is asserted.",
+  "terrainTextureAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-atlas.research.webp",
+  "terrainHeightAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-height.research.webp",
+  "geometryIds": ["lordaeron-era-seven-region-research", "lordaeron-era-seven-focus-research", "stratholme-focus-research", "quelthalas-era-seven-focus-research", "sunwell-era-seven-focus-research", "northrend-expedition-focus-research", "arthas-crisis-focus-research", "jaina-crisis-focus-research", "kelthuzad-crisis-focus-research", "scourge-crisis-focus-research", "sylvanas-crisis-focus-research", "forsaken-lordaeron-focus-research", "scourge-advance-route-research", "arthas-northrend-route-research"]
+}

@@ -478,6 +478,91 @@ describe('lore dataset', () => {
     )).toBe(true);
   });
 
+  it('contains an intertwined Third War and Frozen Throne research preview', () => {
+    const data = loadDataset();
+    const era = data.eras.find((item) => item.id === 'third-war-frozen-throne')!;
+    const events = data.events.filter((item) => item.eraId === era.id);
+    const battles = data.battles.filter((item) => item.eraId === era.id);
+    const spatialStates = data.spatialStates.filter((item) => item.eraId === era.id);
+    const featuredEntities = data.entities.filter((item) => item.featuredEraIds?.includes(era.id));
+    const guide = data.storyGuides.find((item) => item.id === era.storyGuideId)!;
+    const nodes = guide.nodeIds.map((nodeId) => data.storyNodes.find((item) => item.id === nodeId)!);
+    const mapStateIds = [
+      'third-war-northern-crisis-map-research',
+      'third-war-hyjal-map-research',
+      'third-war-outland-map-research',
+      'third-war-frozen-throne-map-research',
+    ];
+    const mapStates = mapStateIds.map((id) => data.mapStates.find((item) => item.id === id)!);
+
+    expect(era.order).toBe(7);
+    expect(era.previousEraId).toBe('rise-of-the-horde');
+    expect(era.nextEraId).toBe('age-of-adventurers');
+    expect(featuredEntities).toHaveLength(25);
+    expect(events).toHaveLength(15);
+    expect(battles).toHaveLength(2);
+    expect(spatialStates).toHaveLength(25);
+    expect(guide.nodeIds).toHaveLength(15);
+    expect(mapStates.map((state) => state.worldspaceId)).toEqual(['azeroth', 'azeroth', 'outland', 'azeroth']);
+    expect(mapStates.every((state) => state.presentation === 'terrain'
+      && Boolean(state.terrainTextureAsset)
+      && Boolean(state.terrainHeightAsset)
+      && Boolean(state.cartographyLabel)
+      && Boolean(state.interpretationNote))).toBe(true);
+    expect(mapStates.every((state) => {
+      const texture = state.terrainTextureAsset;
+      const height = state.terrainHeightAsset;
+      return Boolean(texture && height
+        && existsSync(resolve('public', texture))
+        && existsSync(resolve('public', height)));
+    })).toBe(true);
+
+    const requiredTransitions = new Map([
+      ['third-war-story-after-the-camps', mapStateIds[0]],
+      ['third-war-story-westward-crossing', mapStateIds[1]],
+      ['third-war-story-wills-break-free', mapStateIds[0]],
+      ['third-war-story-outland-refuge', mapStateIds[2]],
+      ['third-war-story-race-to-icecrown', mapStateIds[3]],
+    ]);
+    expect([...requiredTransitions].every(([nodeId, mapStateId]) => nodes
+      .find((node) => node.id === nodeId)?.visualActions?.some((action) =>
+        action.type === 'set_map_state' && action.mapStateId === mapStateId))).toBe(true);
+    expect(nodes.every((node) => !node.visualActions?.some((action) => action.type === 'show_battle'))).toBe(true);
+
+    const keyActorIds = [
+      'arthas-menethil', 'scourge', 'kelthuzad', 'jaina-proudmoore',
+      'sylvanas-windrunner', 'thrall', 'new-horde', 'grom-hellscream',
+      'mannoroth', 'archimonde', 'burning-legion', 'hyjal-defenders',
+      'illidan-stormrage', 'illidan-outland-coalition',
+    ];
+    expect(keyActorIds.every((entityId) => {
+      const entity = data.entities.find((item) => item.id === entityId);
+      const asset = entity?.mapFigure?.asset ?? entity?.mapVisual?.asset;
+      return Boolean(asset && existsSync(resolve('public', asset)));
+    })).toBe(true);
+    expect(keyActorIds.every((entityId) => spatialStates.some((state) =>
+      state.entityId === entityId
+      && state.placementKind === 'relational'
+      && state.geographicCertainty === 'unknown'
+      && Boolean(state.editorNote),
+    ))).toBe(true);
+    expect(battles.every((battle) => battle.geographicCertainty === 'unknown'
+      && battle.geometryId === undefined
+      && battle.campaignId === 'third-war-and-frozen-throne')).toBe(true);
+    expect(data.routes.filter((route) => [
+      'arthas-northrend-expedition', 'scourge-advance', 'horde-westward-passage',
+      'legion-kalimdor-advance', 'hyjal-convergence', 'outland-portal-campaign', 'icecrown-race',
+    ].includes(route.id)).every((route) => route.geographicCertainty === 'inferred'
+      && Boolean(route.editorNote))).toBe(true);
+    expect([...events, ...battles].every((subject) =>
+      data.claims.some((claim) => claim.subjectId === subject.id && claim.citationIds.length > 0),
+    )).toBe(true);
+    expect(data.relationships).toContainEqual(expect.objectContaining({
+      id: 'arthas-ascent-precedes-adventurers',
+      type: 'precedes',
+    }));
+  });
+
   it('enforces the non-geographic relational visualization contract', () => {
     expect(mapStateSchema.safeParse({
       id: 'relational-test',
@@ -522,6 +607,7 @@ describe('lore dataset', () => {
       'war-of-the-ancients-guided-history',
       'long-vigil-new-kingdoms-guided-history',
       'rise-of-the-horde-guided-history',
+      'third-war-frozen-throne-guided-history',
     ]) {
       const guide = data.storyGuides.find((item) => item.id === guideId)!;
       for (const nodeId of guide.nodeIds) {

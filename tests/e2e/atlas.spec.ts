@@ -428,6 +428,14 @@ test('landing page full tour chains every completed guided era', async ({ page }
   await expect(page.getByRole('heading', { name: 'The gate falls, but the road remains in memory' })).toBeVisible();
   await page.getByRole('button', { name: 'Continue the chronicle' }).click();
 
+  await expect(page).toHaveURL(/map\?era=third-war-frozen-throne&tour=full/);
+  await expect(page.getByRole('heading', { name: 'The defeated inherit another beginning' })).toBeVisible();
+  for (let index = 0; index < 14; index += 1) {
+    await page.getByRole('button', { name: 'Next', exact: true }).click();
+  }
+  await expect(page.getByRole('heading', { name: 'The lost prince ascends into a colder age' })).toBeVisible();
+  await page.getByRole('button', { name: 'Continue the chronicle' }).click();
+
   await expect(page).toHaveURL(/\?tour=complete$/);
   await expect(page.getByRole('status')).toContainText('edge of the current chronicle');
 });

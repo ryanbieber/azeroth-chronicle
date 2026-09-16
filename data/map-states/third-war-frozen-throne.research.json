@@ -1,6 +1,11 @@
 {
   "id": "third-war-frozen-throne-map-research",
-  "name": "Third War and Frozen Throne — cartography research",
+  "name": "Icecrown and the Frozen Throne — interpretive conclusion state",
   "worldspaceId": "azeroth",
-  "geometryIds": []
+  "presentation": "terrain",
+  "cartographyLabel": "INTERPRETIVE FROZEN THRONE CONCLUSION STATE",
+  "interpretationNote": "This state centers the race toward Icecrown and Arthas's ascent. Sites and routes are approximate strategic anchors on an original continental reconstruction, not reproduced game coordinates or mission paths.",
+  "terrainTextureAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-atlas.research.webp",
+  "terrainHeightAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-height.research.webp",
+  "geometryIds": ["icecrown-era-seven-focus-research", "frozen-throne-focus-research", "arthas-icecrown-focus-research", "illidan-icecrown-focus-research", "icecrown-race-route-research"]
 }

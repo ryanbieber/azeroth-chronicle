@@ -17,7 +17,7 @@ Application records live in `data/eras`. Each era owns a separate record in `dat
 | 4 | `war-of-the-ancients` | A campaign ending in a world-changing rupture | Public research-preview vertical slice implemented; human review pending |
 | 5 | `long-vigil-new-kingdoms` | Post-Sundering states, migrations, and borders | Public research-preview vertical slice implemented; human review pending |
 | 6 | `rise-of-the-horde` | Two worlds, the Dark Portal, and two wars | Public research-preview vertical slice implemented; human review pending |
-| 7 | `third-war-frozen-throne` | Multi-front collapse and the path to Icecrown | Era shell and empty map state |
+| 7 | `third-war-frozen-throne` | Multi-front collapse and the path to Icecrown | Public research-preview vertical slice implemented; human review pending |
 | 8 | `age-of-adventurers` | Many campaigns and repeated map-state changes | Era shell and empty map state |
 | 9 | `modern-cosmic-age` | Fourth War through the evolving Worldsoul Saga | Era shell and empty map state |
 
@@ -148,6 +148,8 @@ Era 9 extends beyond Chronicle Volume 4. Dragonflight and Worldsoul Saga materia
 **Animated tour spine:** northern crisis → Arthas's decisions → Lordaeron collapse → Quel'Thalas campaign → Legion return → westward convergence → Mount Hyjal → race to Icecrown → new order at the Frozen Throne.
 
 **Completion emphasis:** this is the stress test for intertwined character, faction, battle, and causal stories without turning the atlas into tactical simulation.
+
+**Implemented research baseline:** an Outland worldspace; four chronological theater states across Azeroth and Outland; 15 events; two five-phase strategic conflict dossiers; seven inferred local routes; 25 time-aware spatial states; source-aware causal relationships; original actor and embodied-group visuals; and a fifteen-pane guided history. Cross-world transitions change map state without drawing false geographic lines. The detailed source, causality, cartography, interaction, and visual audit is in `docs/research/era-7-third-war-frozen-throne.md`. Human review remains required before promotion.
 
 ## Era 8 — The Age of Adventurers
 

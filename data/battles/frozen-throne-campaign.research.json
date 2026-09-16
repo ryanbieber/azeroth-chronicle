@@ -1,0 +1,81 @@
+{
+  "id": "frozen-throne-campaign",
+  "kind": "battle",
+  "name": "The Frozen Throne Campaign",
+  "slug": "frozen-throne-campaign",
+  "eraId": "third-war-frozen-throne",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "After the Battle of Mount Hyjal", "relativeToId": "archimonde-is-destroyed-at-hyjal" },
+  "summary": "A cross-world sequence in which Illidan established power in Outland, returned to strike Icecrown, and lost the final race to Arthas.",
+  "description": "The dossier links Outland and Icecrown through deterministic map-state changes. Each world keeps local coordinates, and no false geographic route is drawn between them.",
+  "locationIds": ["icecrown", "frozen-throne"],
+  "participantEntityIds": ["illidan-stormrage", "illidan-outland-coalition", "arthas-menethil", "scourge"],
+  "causedByEventIds": ["illidan-seizes-power-in-outland"],
+  "causesEventIds": ["illidan-assaults-the-frozen-throne", "arthas-ascends-the-frozen-throne"],
+  "relationshipIds": ["hyjal-aftermath-precedes-outland", "outland-seizure-enables-icecrown-assault", "arthas-defeats-illidan"],
+  "sourceIds": ["warcraft-chronicle-volume-3", "blizzard-burning-crusade-story-so-far", "blizzard-warcraft-iii-reforged-overview"],
+  "claimIds": ["frozen-throne-campaign-claim"],
+  "campaignId": "third-war-and-frozen-throne",
+  "combatants": [
+    { "factionId": "illidan-outland-coalition", "role": "attacker", "commanderEntityIds": ["illidan-stormrage"] },
+    { "factionId": "scourge", "role": "defender", "commanderEntityIds": ["arthas-menethil"] }
+  ],
+  "objectives": [
+    { "factionId": "illidan-outland-coalition", "summary": "Build the strength to assault Icecrown and destroy the Frozen Throne." },
+    { "factionId": "scourge", "summary": "Reach and preserve the Frozen Throne before Illidan's coalition can break it." }
+  ],
+  "phases": [
+    {
+      "id": "outland-portals-close",
+      "title": "Illidan turns exile into a campaign",
+      "summary": "Illidan and his allies close portals within Outland and challenge its existing ruler.",
+      "routeId": "outland-portal-campaign",
+      "durationMs": 7600,
+      "narration": "Beyond Azeroth, Illidan made refuge into preparation. His coalition moved through a broken world, closing the roads by which greater powers might follow and gathering strength beneath an alien sky.",
+      "camera": { "position": [0.2, 6.8, 5.8], "target": [0.2, 0, 0], "durationMs": 1150 },
+      "visualActions": [{ "type": "set_map_state", "mapStateId": "third-war-outland-map-research" }, { "type": "show_route", "routeId": "outland-portal-campaign" }]
+    },
+    {
+      "id": "outland-power-seized",
+      "title": "A new power rises in Outland",
+      "summary": "The coalition overthrows Magtheridon's rule and establishes a base for the next command.",
+      "durationMs": 7400,
+      "narration": "The shattered world did not become whole beneath new masters. Yet its balance changed. Illidan stood at the center of a coalition held together by need, ambition, and the enemies waiting beyond it.",
+      "camera": { "position": [0.5, 5.3, 4.7], "target": [0.4, 0, -0.2], "durationMs": 1080 },
+      "visualActions": [{ "type": "show_relationships", "relationshipIds": ["hyjal-aftermath-precedes-outland", "outland-seizure-enables-icecrown-assault"] }]
+    },
+    {
+      "id": "icecrown-race-begins",
+      "title": "The contest returns to Azeroth",
+      "summary": "Illidan's forces and Arthas move toward Icecrown from different purposes and paths.",
+      "routeId": "icecrown-race",
+      "durationMs": 7600,
+      "narration": "The next road cannot be drawn across the void between worlds. The atlas therefore changes states: Outland recedes, Icecrown rises, and two purposes narrow toward the same throne.",
+      "camera": { "position": [0, 7.2, 6.2], "target": [0, 0, -2.8], "durationMs": 1150 },
+      "visualActions": [{ "type": "set_map_state", "mapStateId": "third-war-frozen-throne-map-research" }, { "type": "show_route", "routeId": "icecrown-race" }]
+    },
+    {
+      "id": "icecrown-final-contest",
+      "title": "The last passage is contested",
+      "summary": "Illidan reaches Icecrown but Arthas defeats him before the Frozen Throne.",
+      "durationMs": 7600,
+      "narration": "At Icecrown the broad campaign became a final contest. Illidan's assault failed before the throne could be destroyed, and the way above remained open to Arthas.",
+      "camera": { "position": [0.1, 4.8, 4.2], "target": [0, 0, -3.0], "durationMs": 1050 },
+      "visualActions": [{ "type": "show_battle", "battleId": "frozen-throne-campaign" }, { "type": "show_relationships", "relationshipIds": ["arthas-defeats-illidan"] }]
+    },
+    {
+      "id": "icecrown-arthas-ascends",
+      "title": "Arthas climbs into a new order",
+      "summary": "Arthas reaches the Frozen Throne and becomes the Lich King.",
+      "durationMs": 8000,
+      "narration": "Arthas climbed the last height and took the Frozen Throne's power into himself. The prince who had ridden out to save a kingdom now presided over the force that had destroyed it, and a darker inheritance passed into the coming age.",
+      "camera": { "position": [0, 4.2, 3.5], "target": [0, 0, -3.2], "durationMs": 1050 },
+      "visualActions": [{ "type": "focus_location", "locationId": "frozen-throne" }, { "type": "show_relationships", "relationshipIds": ["arthas-ascent-precedes-adventurers"] }]
+    }
+  ],
+  "outcome": { "summary": "Illidan's assault failed; Arthas reached the Frozen Throne and became the Lich King, establishing a new power inherited by the Age of Adventurers.", "winnerFactionId": "scourge" },
+  "geographicCertainty": "unknown",
+  "geographicEditorNote": "The campaign spans separate worldspaces and broad theaters. Only local inferred routes are shown, never a line between Outland and Azeroth.",
+  "importance": "era_defining",
+  "contentStatus": "research"
+}

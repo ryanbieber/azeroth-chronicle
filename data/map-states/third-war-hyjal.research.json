@@ -1,0 +1,11 @@
+{
+  "id": "third-war-hyjal-map-research",
+  "name": "The Legion's return and Mount Hyjal — interpretive state",
+  "worldspaceId": "azeroth",
+  "presentation": "terrain",
+  "cartographyLabel": "INTERPRETIVE LEGION AND HYJAL STATE",
+  "interpretationNote": "This state summarizes westward migration, corruption, and the convergence at Mount Hyjal through inferred routes and relational actor anchors. It does not reconstruct RTS missions or exact troop movements.",
+  "terrainTextureAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-atlas.research.webp",
+  "terrainHeightAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-height.research.webp",
+  "geometryIds": ["kalimdor-era-seven-region-research", "mount-hyjal-era-seven-focus-research", "nordrassil-era-seven-focus-research", "thrall-hyjal-focus-research", "new-horde-hyjal-focus-research", "jaina-hyjal-focus-research", "grom-hyjal-focus-research", "mannoroth-hyjal-focus-research", "archimonde-hyjal-focus-research", "burning-legion-hyjal-focus-research", "malfurion-hyjal-focus-research", "tyrande-hyjal-focus-research", "hyjal-defenders-focus-research", "horde-westward-route-research", "legion-kalimdor-route-research", "hyjal-convergence-route-research"]
+}

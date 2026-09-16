@@ -142,7 +142,11 @@
     "tags": [],
     "description": "The Scourge, Arthas's downfall, destruction of Lordaeron and Quel'Thalas, the Legion's return, the Battle of Mount Hyjal, and the creation of the Lich King's new order.",
     "sourceIds": [
-      "warcraft-chronicle-volume-3"
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-story-so-far",
+      "blizzard-warcraft-iii-reforged-overview",
+      "blizzard-mount-hyjal-history",
+      "blizzard-burning-crusade-story-so-far"
     ],
     "contentStatus": "research"
   },
@@ -327,6 +331,48 @@
     "contentStatus": "research"
   },
   {
+    "id": "archimonde",
+    "type": "entity",
+    "name": "Archimonde",
+    "slug": "archimonde",
+    "path": "/locations/archimonde",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [
+      "burning-legion",
+      "hyjal",
+      "commander"
+    ],
+    "description": "A Burning Legion commander summoned into Azeroth who led the advance toward Nordrassil and was destroyed at Mount Hyjal.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-story-so-far",
+      "blizzard-mount-hyjal-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "arthas-menethil",
+    "type": "entity",
+    "name": "Arthas Menethil",
+    "slug": "arthas-menethil",
+    "path": "/locations/arthas-menethil",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [
+      "lordaeron",
+      "scourge",
+      "lich-king"
+    ],
+    "description": "A prince of Lordaeron whose pursuit of the plague led through Stratholme and Northrend, into the service of the Lich King, and ultimately to the Frozen Throne.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-story-so-far",
+      "blizzard-warcraft-iii-reforged-overview"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "azeroth-world-soul",
     "type": "entity",
     "name": "Azeroth's World-Soul",
@@ -443,7 +489,10 @@
     "description": "The demonic army that entered ancient Kalimdor through the Highborne portal and devastated the kaldorei empire.",
     "sourceIds": [
       "warcraft-chronicle-volume-1",
-      "blizzard-well-of-eternity-preview"
+      "blizzard-well-of-eternity-preview",
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-story-so-far",
+      "blizzard-mount-hyjal-history"
     ],
     "contentStatus": "research"
   },
@@ -709,6 +758,46 @@
     "contentStatus": "research"
   },
   {
+    "id": "forsaken",
+    "type": "entity",
+    "name": "The Forsaken",
+    "slug": "forsaken",
+    "path": "/factions/forsaken",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [
+      "undead",
+      "lordaeron",
+      "sylvanas"
+    ],
+    "description": "Free-willed undead who broke from the Lich King's control and established a foothold in fallen Lordaeron under Sylvanas.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-reforged-overview"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "frozen-throne",
+    "type": "entity",
+    "name": "The Frozen Throne",
+    "slug": "frozen-throne",
+    "path": "/locations/frozen-throne",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [
+      "icecrown",
+      "lich-king",
+      "northrend"
+    ],
+    "description": "The prison and seat of the Lich King at Icecrown, reached by Arthas after his victory over Illidan.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-burning-crusade-story-so-far"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "great-dark-beyond",
     "type": "entity",
     "name": "The Great Dark Beyond",
@@ -743,6 +832,26 @@
     "sourceIds": [
       "warcraft-chronicle-volume-1",
       "blizzard-grim-batol-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "grom-hellscream",
+    "type": "entity",
+    "name": "Grom Hellscream",
+    "slug": "grom-hellscream",
+    "path": "/locations/grom-hellscream",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [
+      "orc",
+      "warsong",
+      "mannoroth"
+    ],
+    "description": "An orc chieftain who fell again beneath Mannoroth's corruption and then died breaking the pit lord's hold over his people.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-story-so-far"
     ],
     "contentStatus": "research"
   },
@@ -809,6 +918,26 @@
     "contentStatus": "research"
   },
   {
+    "id": "hyjal-defenders",
+    "type": "entity",
+    "name": "The Defenders of Mount Hyjal",
+    "slug": "hyjal-defenders",
+    "path": "/factions/hyjal-defenders",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [
+      "coalition",
+      "hyjal",
+      "third-war"
+    ],
+    "description": "A temporary coalition of night elves, Horde forces, Alliance survivors, and their leaders assembled against the Legion's advance.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-mount-hyjal-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "hyjal-well-of-eternity",
     "type": "entity",
     "name": "The Second Well of Eternity",
@@ -828,6 +957,46 @@
     "contentStatus": "research"
   },
   {
+    "id": "icecrown",
+    "type": "entity",
+    "name": "Icecrown",
+    "slug": "icecrown",
+    "path": "/locations/icecrown",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [
+      "northrend",
+      "lich-king",
+      "frozen-throne"
+    ],
+    "description": "The northern region containing the Frozen Throne and the final contest between Arthas and Illidan in this era.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-burning-crusade-story-so-far"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "illidan-outland-coalition",
+    "type": "entity",
+    "name": "Illidan's Outland Coalition",
+    "slug": "illidan-outland-coalition",
+    "path": "/factions/illidan-outland-coalition",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [
+      "outland",
+      "illidan",
+      "coalition"
+    ],
+    "description": "The temporary coalition through which Illidan, Kael'thas, Lady Vashj, and their forces closed portals and seized power in Outland.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-burning-crusade-story-so-far"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "illidan-stormrage",
     "type": "entity",
     "name": "Illidan Stormrage",
@@ -843,7 +1012,10 @@
     "description": "A gifted kaldorei sorcerer whose dangerous choices and knowledge of the Legion became part of the struggle at the Well.",
     "sourceIds": [
       "warcraft-chronicle-volume-1",
-      "blizzard-well-of-eternity-preview"
+      "blizzard-well-of-eternity-preview",
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-story-so-far",
+      "blizzard-burning-crusade-story-so-far"
     ],
     "contentStatus": "research"
   },
@@ -864,6 +1036,27 @@
     "sourceIds": [
       "warcraft-chronicle-volume-1",
       "blizzard-grim-batol-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "jaina-proudmoore",
+    "type": "entity",
+    "name": "Jaina Proudmoore",
+    "slug": "jaina-proudmoore",
+    "path": "/locations/jaina-proudmoore",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [
+      "mage",
+      "alliance",
+      "hyjal"
+    ],
+    "description": "A mage who investigated the plague, rejected Arthas's course at Stratholme, led survivors west, and joined the defense of Mount Hyjal.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-story-so-far",
+      "blizzard-mount-hyjal-history"
     ],
     "contentStatus": "research"
   },
@@ -922,6 +1115,26 @@
     "sourceIds": [
       "warcraft-chronicle-volume-1",
       "blizzard-dragon-aspects-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "kelthuzad",
+    "type": "entity",
+    "name": "Kel'Thuzad",
+    "slug": "kelthuzad",
+    "path": "/locations/kelthuzad",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [
+      "scourge",
+      "cult",
+      "necromancer"
+    ],
+    "description": "A necromancer and Scourge agent whose plague cult helped prepare Lordaeron for destruction and the Legion's return.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-story-so-far"
     ],
     "contentStatus": "research"
   },
@@ -1042,12 +1255,15 @@
     "tags": [
       "kingdom",
       "lordaeron",
-      "second-war"
+      "second-war",
+      "third-war"
     ],
-    "description": "The northern human kingdom around which the wartime Alliance formed after refugees arrived from Stormwind.",
+    "description": "The northern human kingdom around which the wartime Alliance formed, later broken by the Scourge during the Third War.",
     "sourceIds": [
       "warcraft-chronicle-volume-2",
-      "blizzard-tides-of-darkness-library"
+      "blizzard-tides-of-darkness-library",
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-reforged-overview"
     ],
     "contentStatus": "research"
   },
@@ -1086,7 +1302,9 @@
     ],
     "description": "A young druid whose bond with the natural world became central to opposing the Legion and closing the way through the Well.",
     "sourceIds": [
-      "warcraft-chronicle-volume-1"
+      "warcraft-chronicle-volume-1",
+      "warcraft-chronicle-volume-3",
+      "blizzard-mount-hyjal-history"
     ],
     "contentStatus": "research"
   },
@@ -1106,7 +1324,9 @@
     "description": "A pit lord whose blood bound much of the forming Horde more tightly to the Burning Legion's design.",
     "sourceIds": [
       "warcraft-chronicle-volume-2",
-      "blizzard-rise-of-the-horde-library"
+      "blizzard-rise-of-the-horde-library",
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-story-so-far"
     ],
     "contentStatus": "research"
   },
@@ -1166,7 +1386,9 @@
     ],
     "description": "The mountain refuge reached by many survivors after the Sundering and a threshold into the Long Vigil.",
     "sourceIds": [
-      "warcraft-chronicle-volume-1"
+      "warcraft-chronicle-volume-1",
+      "warcraft-chronicle-volume-3",
+      "blizzard-mount-hyjal-history"
     ],
     "contentStatus": "research"
   },
@@ -1234,6 +1456,26 @@
     "contentStatus": "research"
   },
   {
+    "id": "new-horde",
+    "type": "entity",
+    "name": "The New Horde",
+    "slug": "new-horde",
+    "path": "/factions/new-horde",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [
+      "horde",
+      "orcs",
+      "kalimdor"
+    ],
+    "description": "The community Thrall gathered from liberated orcs and new allies, distinguished from the Old Horde by its changing purpose and future in Kalimdor.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-story-so-far"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "night-elf-resistance",
     "type": "entity",
     "name": "The Night Elf Resistance",
@@ -1269,7 +1511,9 @@
     ],
     "description": "The World Tree planted over the second Well of Eternity on Mount Hyjal.",
     "sourceIds": [
-      "warcraft-chronicle-volume-1"
+      "warcraft-chronicle-volume-1",
+      "warcraft-chronicle-volume-3",
+      "blizzard-mount-hyjal-history"
     ],
     "contentStatus": "research"
   },
@@ -1451,7 +1695,9 @@
     "description": "The high-elven kingdom founded in the northern Eastern Kingdoms around the Sunwell.",
     "sourceIds": [
       "warcraft-chronicle-volume-1",
-      "blizzard-burning-crusade-story-so-far"
+      "blizzard-burning-crusade-story-so-far",
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-reforged-overview"
     ],
     "contentStatus": "research"
   },
@@ -1492,6 +1738,26 @@
     "sourceIds": [
       "warcraft-chronicle-volume-1",
       "blizzard-well-of-eternity-preview"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "scourge",
+    "type": "entity",
+    "name": "The Scourge",
+    "slug": "scourge",
+    "path": "/factions/scourge",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [
+      "undead",
+      "plague",
+      "lich-king"
+    ],
+    "description": "The undead host and plague apparatus serving the Lich King, used to break the northern kingdoms and prepare the Legion's return.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-story-so-far"
     ],
     "contentStatus": "research"
   },
@@ -1574,6 +1840,26 @@
     "contentStatus": "research"
   },
   {
+    "id": "stratholme",
+    "type": "entity",
+    "name": "Stratholme",
+    "slug": "stratholme",
+    "path": "/locations/stratholme",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [
+      "lordaeron",
+      "plague",
+      "city"
+    ],
+    "description": "A Lordaeron city whose infected population became the center of Arthas's catastrophic decision to purge it.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-story-so-far"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "strom",
     "type": "entity",
     "name": "Strom",
@@ -1608,7 +1894,29 @@
     "description": "The arcane fount created by the high elves at a convergence of ley energies in their new homeland.",
     "sourceIds": [
       "warcraft-chronicle-volume-1",
-      "blizzard-burning-crusade-story-so-far"
+      "blizzard-burning-crusade-story-so-far",
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-reforged-overview"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "sylvanas-windrunner",
+    "type": "entity",
+    "name": "Sylvanas Windrunner",
+    "slug": "sylvanas-windrunner",
+    "path": "/locations/sylvanas-windrunner",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [
+      "quelthalas",
+      "forsaken",
+      "undead"
+    ],
+    "description": "The ranger-general who resisted the Scourge at Quel'Thalas, was raised into undeath, and later led free-willed undead in Lordaeron.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-reforged-overview"
     ],
     "contentStatus": "research"
   },
@@ -1669,6 +1977,27 @@
     "sourceIds": [
       "warcraft-chronicle-volume-1",
       "blizzard-stromkar-thoradin"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "thrall",
+    "type": "entity",
+    "name": "Thrall",
+    "slug": "thrall",
+    "path": "/locations/thrall",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [
+      "orc",
+      "new-horde",
+      "hyjal"
+    ],
+    "description": "The orc leader who liberated interned orcs, formed a new Horde, crossed to Kalimdor, and joined the defense of Mount Hyjal.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-story-so-far",
+      "blizzard-mount-hyjal-history"
     ],
     "contentStatus": "research"
   },
@@ -1746,7 +2075,10 @@
     "description": "A priestess of Elune who fought with and sustained the resistance during the War of the Ancients.",
     "sourceIds": [
       "warcraft-chronicle-volume-1",
-      "blizzard-well-of-eternity-preview"
+      "blizzard-well-of-eternity-preview",
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-story-so-far",
+      "blizzard-mount-hyjal-history"
     ],
     "contentStatus": "research"
   },
@@ -1999,6 +2331,71 @@
     "contentStatus": "research"
   },
   {
+    "id": "archimonde-is-destroyed-at-hyjal",
+    "type": "event",
+    "name": "Archimonde Is Destroyed at Mount Hyjal",
+    "slug": "archimonde-is-destroyed-at-hyjal",
+    "path": "/events/archimonde-is-destroyed-at-hyjal",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [],
+    "description": "The defenders delayed Archimonde until Malfurion released Nordrassil's gathered power, destroying the Legion commander and repelling the assault.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-mount-hyjal-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "archimonde-is-summoned",
+    "type": "event",
+    "name": "Archimonde Is Summoned into Azeroth",
+    "slug": "archimonde-is-summoned",
+    "path": "/events/archimonde-is-summoned",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [],
+    "description": "The Scourge's campaign opened the way for Archimonde and the Burning Legion to return and turn their advance toward Kalimdor and Nordrassil.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-story-so-far"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "arthas-ascends-the-frozen-throne",
+    "type": "event",
+    "name": "Arthas Ascends the Frozen Throne",
+    "slug": "arthas-ascends-the-frozen-throne",
+    "path": "/events/arthas-ascends-the-frozen-throne",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [],
+    "description": "After defeating Illidan, Arthas reached the Frozen Throne and joined with the Lich King, establishing the new order that closes this era.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-burning-crusade-story-so-far",
+      "blizzard-warcraft-iii-reforged-overview"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "arthas-claims-frostmourne",
+    "type": "event",
+    "name": "Arthas Claims Frostmourne",
+    "slug": "arthas-claims-frostmourne",
+    "path": "/events/arthas-claims-frostmourne",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [],
+    "description": "Arthas pursued the Scourge into Northrend and took up Frostmourne, a choice that bound his fate more tightly to the Lich King.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-story-so-far"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "azeroth-ordered",
     "type": "event",
     "name": "Azeroth Is Ordered",
@@ -2137,6 +2534,22 @@
     "contentStatus": "research"
   },
   {
+    "id": "forsaken-emerge-in-lordaeron",
+    "type": "event",
+    "name": "The Forsaken Emerge in Lordaeron",
+    "slug": "forsaken-emerge-in-lordaeron",
+    "path": "/events/forsaken-emerge-in-lordaeron",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [],
+    "description": "Sylvanas and other undead broke from the Lich King's control and established a new, precarious power in the ruins of Lordaeron.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-reforged-overview"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "great-sundering",
     "type": "event",
     "name": "The Great Sundering",
@@ -2150,6 +2563,22 @@
       "warcraft-chronicle-volume-1",
       "blizzard-well-of-eternity-preview",
       "blizzard-warbringers-azshara"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "grom-breaks-mannoroths-bond",
+    "type": "event",
+    "name": "Grom Breaks Mannoroth's Bond",
+    "slug": "grom-breaks-mannoroths-bond",
+    "path": "/events/grom-breaks-mannoroths-bond",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [],
+    "description": "After falling again beneath Mannoroth's corruption, Grom joined Thrall against the pit lord and died in the act that broke the immediate demonic bond over their people.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-story-so-far"
     ],
     "contentStatus": "research"
   },
@@ -2231,6 +2660,38 @@
     "contentStatus": "research"
   },
   {
+    "id": "hyjal-defenders-unite",
+    "type": "event",
+    "name": "The Defenders of Hyjal Unite",
+    "slug": "hyjal-defenders-unite",
+    "path": "/events/hyjal-defenders-unite",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [],
+    "description": "Night elves, the New Horde, and Alliance survivors accepted a temporary common defense as the Legion advanced toward Mount Hyjal.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-mount-hyjal-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "illidan-assaults-the-frozen-throne",
+    "type": "event",
+    "name": "Illidan Assaults the Frozen Throne",
+    "slug": "illidan-assaults-the-frozen-throne",
+    "path": "/events/illidan-assaults-the-frozen-throne",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [],
+    "description": "Illidan returned from Outland and drove toward Icecrown, but Arthas defeated him before reaching the Frozen Throne.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-burning-crusade-story-so-far"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "illidan-creates-second-well",
     "type": "event",
     "name": "Illidan Creates a Second Well",
@@ -2242,6 +2703,22 @@
     "description": "Illidan used preserved water from the original Well to create a new arcane well upon Mount Hyjal and was imprisoned after the act was discovered.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "illidan-seizes-power-in-outland",
+    "type": "event",
+    "name": "Illidan Seizes Power in Outland",
+    "slug": "illidan-seizes-power-in-outland",
+    "path": "/events/illidan-seizes-power-in-outland",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [],
+    "description": "Illidan and his allies closed portals, defeated Magtheridon's rule, and established a new center of power in Outland.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-burning-crusade-story-so-far"
     ],
     "contentStatus": "research"
   },
@@ -2325,6 +2802,22 @@
     "contentStatus": "research"
   },
   {
+    "id": "lordaeron-falls-to-the-scourge",
+    "type": "event",
+    "name": "Lordaeron Falls to the Scourge",
+    "slug": "lordaeron-falls-to-the-scourge",
+    "path": "/events/lordaeron-falls-to-the-scourge",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [],
+    "description": "Arthas returned as a death knight, killed his father, and helped bring the kingdom of Lordaeron under the Scourge.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-reforged-overview"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "lothar-falls-at-blackrock",
     "type": "event",
     "name": "Anduin Lothar Falls Near Blackrock Spire",
@@ -2384,6 +2877,23 @@
     "sourceIds": [
       "warcraft-chronicle-volume-2",
       "blizzard-burning-crusade-draenor-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "new-horde-crosses-to-kalimdor",
+    "type": "event",
+    "name": "The New Horde Crosses to Kalimdor",
+    "slug": "new-horde-crosses-to-kalimdor",
+    "path": "/events/new-horde-crosses-to-kalimdor",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [],
+    "description": "Warned of the coming danger, Thrall led the New Horde west across the sea and began building a future in Kalimdor.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-story-so-far",
+      "blizzard-warcraft-iii-reforged-overview"
     ],
     "contentStatus": "research"
   },
@@ -2569,6 +3079,22 @@
     "contentStatus": "research"
   },
   {
+    "id": "plague-spreads-through-lordaeron",
+    "type": "event",
+    "name": "The Plague Spreads Through Lordaeron",
+    "slug": "plague-spreads-through-lordaeron",
+    "path": "/events/plague-spreads-through-lordaeron",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [],
+    "description": "A mysterious plague spread through Lordaeron as the Cult of the Damned and Scourge prepared the kingdom's destruction.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-story-so-far"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "portal-at-well-collapses",
     "type": "event",
     "name": "The Portal at the Well Collapses",
@@ -2597,6 +3123,22 @@
     "sourceIds": [
       "warcraft-chronicle-volume-1",
       "blizzard-burning-crusade-story-so-far"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "quelthalas-and-the-sunwell-fall",
+    "type": "event",
+    "name": "Quel'Thalas and the Sunwell Fall",
+    "slug": "quelthalas-and-the-sunwell-fall",
+    "path": "/events/quelthalas-and-the-sunwell-fall",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [],
+    "description": "The Scourge broke Quel'Thalas, raised Sylvanas into undeath, and corrupted the Sunwell while advancing its larger design.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-reforged-overview"
     ],
     "contentStatus": "research"
   },
@@ -2698,6 +3240,22 @@
     "contentStatus": "research"
   },
   {
+    "id": "stratholme-is-purged",
+    "type": "event",
+    "name": "Stratholme Is Purged",
+    "slug": "stratholme-is-purged",
+    "path": "/events/stratholme-is-purged",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [],
+    "description": "Convinced Stratholme's people were infected, Arthas ordered the city purged; Jaina and Uther rejected the course, deepening his isolation.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-story-so-far"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "survivors-reach-hyjal",
     "type": "event",
     "name": "Survivors Reach Mount Hyjal",
@@ -2725,6 +3283,22 @@
     "sourceIds": [
       "warcraft-chronicle-volume-1",
       "blizzard-stromkar-thoradin"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "thrall-liberates-interned-orcs",
+    "type": "event",
+    "name": "Thrall Liberates Interned Orcs",
+    "slug": "thrall-liberates-interned-orcs",
+    "path": "/events/thrall-liberates-interned-orcs",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [],
+    "description": "Thrall freed orcs from internment and gathered a new Horde whose purpose was not identical to the conquered Old Horde.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-story-so-far"
     ],
     "contentStatus": "research"
   },
@@ -2821,6 +3395,22 @@
     "contentStatus": "research"
   },
   {
+    "id": "battle-of-mount-hyjal",
+    "type": "battle",
+    "name": "The Battle of Mount Hyjal",
+    "slug": "battle-of-mount-hyjal",
+    "path": "/battles/battle-of-mount-hyjal",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [],
+    "description": "A temporary coalition delayed Archimonde's advance long enough for Malfurion to call upon Nordrassil's power and destroy him.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-mount-hyjal-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "elemental-assault-on-black-empire",
     "type": "battle",
     "name": "The Elemental Assault on the Black Empire",
@@ -2864,6 +3454,23 @@
     "sourceIds": [
       "warcraft-chronicle-volume-2",
       "blizzard-tides-of-darkness-library"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "frozen-throne-campaign",
+    "type": "battle",
+    "name": "The Frozen Throne Campaign",
+    "slug": "frozen-throne-campaign",
+    "path": "/battles/frozen-throne-campaign",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [],
+    "description": "A cross-world sequence in which Illidan established power in Outland, returned to strike Icecrown, and lost the final race to Arthas.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-burning-crusade-story-so-far",
+      "blizzard-warcraft-iii-reforged-overview"
     ],
     "contentStatus": "research"
   },
@@ -3043,6 +3650,24 @@
       "blizzard-rise-of-the-horde-library",
       "blizzard-burning-crusade-draenor-history",
       "blizzard-tides-of-darkness-library"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "third-war-and-frozen-throne",
+    "type": "campaign",
+    "name": "The Third War and the Frozen Throne",
+    "slug": "third-war-and-frozen-throne",
+    "path": "/eras/third-war-frozen-throne",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [],
+    "description": "A strategic grouping of the coalition defense at Mount Hyjal and the later cross-world contest that ended at the Frozen Throne.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-warcraft-iii-story-so-far",
+      "blizzard-mount-hyjal-history",
+      "blizzard-burning-crusade-story-so-far"
     ],
     "contentStatus": "research"
   },

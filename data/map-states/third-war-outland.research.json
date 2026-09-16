@@ -1,0 +1,11 @@
+{
+  "id": "third-war-outland-map-research",
+  "name": "Illidan's Outland campaign — interpretive episode state",
+  "worldspaceId": "outland",
+  "presentation": "terrain",
+  "cartographyLabel": "INTERPRETIVE OUTLAND EPISODE · SEPARATE WORLDSPACE",
+  "interpretationNote": "Outland uses its own local atlas coordinate system. The episode records portal closures and the overthrow of Magtheridon without drawing a false spatial line back to Azeroth or copying game-zone cartography.",
+  "terrainTextureAsset": "textures/outland/third-war-outland-map-research/terrain-atlas.research.webp",
+  "terrainHeightAsset": "textures/outland/third-war-outland-map-research/terrain-height.research.webp",
+  "geometryIds": ["outland-era-seven-region-research", "illidan-outland-focus-research", "illidan-coalition-outland-focus-research", "outland-portal-campaign-route-research"]
+}

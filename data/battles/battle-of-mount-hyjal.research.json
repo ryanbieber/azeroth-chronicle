@@ -1,0 +1,81 @@
+{
+  "id": "battle-of-mount-hyjal",
+  "kind": "battle",
+  "name": "The Battle of Mount Hyjal",
+  "slug": "battle-of-mount-hyjal",
+  "eraId": "third-war-frozen-throne",
+  "worldspaceId": "azeroth",
+  "date": { "precision": "relative", "label": "At the culmination of the Third War", "relativeToId": "hyjal-defenders-unite" },
+  "summary": "A temporary coalition delayed Archimonde's advance long enough for Malfurion to call upon Nordrassil's power and destroy him.",
+  "description": "This dossier treats Mount Hyjal as an era-defining strategic defense. Its phases explain convergence, delay, and outcome without replaying Warcraft III missions or asserting exact camps and troop paths.",
+  "locationIds": ["mount-hyjal-ancient", "nordrassil"],
+  "participantEntityIds": ["hyjal-defenders", "burning-legion", "archimonde", "thrall", "jaina-proudmoore", "malfurion-stormrage", "tyrande-whisperwind"],
+  "causedByEventIds": ["archimonde-is-summoned", "hyjal-defenders-unite"],
+  "causesEventIds": ["archimonde-is-destroyed-at-hyjal"],
+  "relationshipIds": ["legion-return-causes-hyjal-defense", "hyjal-alliance-enables-archimonde-defeat"],
+  "sourceIds": ["warcraft-chronicle-volume-3", "blizzard-mount-hyjal-history"],
+  "claimIds": ["battle-of-mount-hyjal-claim"],
+  "campaignId": "third-war-and-frozen-throne",
+  "combatants": [
+    { "factionId": "burning-legion", "role": "attacker", "commanderEntityIds": ["archimonde"] },
+    { "factionId": "hyjal-defenders", "role": "defender", "commanderEntityIds": ["thrall", "jaina-proudmoore", "malfurion-stormrage", "tyrande-whisperwind"] }
+  ],
+  "objectives": [
+    { "factionId": "burning-legion", "summary": "Reach Nordrassil and seize the power gathered at Mount Hyjal." },
+    { "factionId": "hyjal-defenders", "summary": "Delay the Legion's advance and preserve the mountain long enough for a final answer." }
+  ],
+  "phases": [
+    {
+      "id": "hyjal-threat-approaches",
+      "title": "The Legion turns toward the mountain",
+      "summary": "Archimonde drives the invasion toward Mount Hyjal and Nordrassil.",
+      "routeId": "legion-kalimdor-advance",
+      "durationMs": 7600,
+      "narration": "The northern kingdoms had already paid the price of the Scourge's design. In Kalimdor, the Legion now bent its strength toward the crown of the mountain and the power rooted there.",
+      "camera": { "position": [-2.1, 6.8, 5.8], "target": [-2.4, 0, -1.8], "durationMs": 1150 },
+      "visualActions": [{ "type": "set_map_state", "mapStateId": "third-war-hyjal-map-research" }, { "type": "show_route", "routeId": "legion-kalimdor-advance" }]
+    },
+    {
+      "id": "hyjal-coalition-gathers",
+      "title": "Old enemies accept one defense",
+      "summary": "Night elves, New Horde forces, and Alliance survivors converge under a temporary common purpose.",
+      "routeId": "hyjal-convergence",
+      "durationMs": 7800,
+      "narration": "No single people could hold the road alone. Those who had met as strangers and rivals gathered beneath one necessity, retaining their own names even as they took their places in a shared defense.",
+      "camera": { "position": [-2.3, 5.7, 5.0], "target": [-2.3, 0, -1.1], "durationMs": 1100 },
+      "visualActions": [{ "type": "show_route", "routeId": "hyjal-convergence" }, { "type": "show_relationships", "relationshipIds": ["legion-return-causes-hyjal-defense"] }]
+    },
+    {
+      "id": "hyjal-lines-delay",
+      "title": "The ascent is made costly",
+      "summary": "The defenders yield ground while buying the time on which the mountain's survival depends.",
+      "durationMs": 7600,
+      "narration": "This was not a clean wall drawn across the land. It was delay purchased in stages, positions abandoned only after time had been wrested from the invader and carried upward toward Nordrassil.",
+      "camera": { "position": [-2.0, 5.0, 4.4], "target": [-2.45, 0, -2.0], "durationMs": 1050 },
+      "visualActions": [{ "type": "show_battle", "battleId": "battle-of-mount-hyjal" }]
+    },
+    {
+      "id": "hyjal-archimonde-reaches-nordrassil",
+      "title": "Archimonde reaches for Nordrassil",
+      "summary": "The Legion commander reaches the World Tree as Malfurion's final response gathers.",
+      "durationMs": 7400,
+      "narration": "Archimonde climbed within reach of the ancient tree. The long defense had not barred every step; it had created the moment in which another kind of strength could answer him.",
+      "camera": { "position": [-2.4, 4.5, 3.9], "target": [-2.3, 0, -2.45], "durationMs": 1050 },
+      "visualActions": [{ "type": "focus_location", "locationId": "nordrassil" }, { "type": "highlight_entity", "entityId": "archimonde" }]
+    },
+    {
+      "id": "hyjal-archimonde-destroyed",
+      "title": "The tree's gathered power is released",
+      "summary": "Malfurion calls upon Nordrassil's power; Archimonde is destroyed and the invasion is broken.",
+      "durationMs": 8000,
+      "narration": "At the last height, Malfurion called upon the power gathered around Nordrassil. Archimonde was destroyed. Victory did not restore the kingdoms already fallen, but it broke the Legion's assault and left the survivors to shape what came after.",
+      "camera": { "position": [-2.2, 4.2, 3.6], "target": [-2.3, 0, -2.4], "durationMs": 1050 },
+      "visualActions": [{ "type": "show_relationships", "relationshipIds": ["hyjal-alliance-enables-archimonde-defeat", "archimonde-defeat-ends-third-war-assault"] }]
+    }
+  ],
+  "outcome": { "summary": "The coalition delayed the advance until Nordrassil's released power destroyed Archimonde, ending the Legion's immediate invasion while leaving the northern kingdoms transformed.", "winnerFactionId": "hyjal-defenders" },
+  "geographicCertainty": "unknown",
+  "geographicEditorNote": "Mount Hyjal and Nordrassil are broadly located, but the conflict comprised several defensive positions whose exact mission geography is not asserted here.",
+  "importance": "era_defining",
+  "contentStatus": "research"
+}

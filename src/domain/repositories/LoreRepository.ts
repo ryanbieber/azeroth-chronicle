@@ -1,6 +1,7 @@
 import type { Battle, Era, LoreDataset, LoreEntity, LoreEvent, StoryGuide, StoryNode } from '../types/lore';
 import type { GeoJsonFeatureCollection } from '../../lib/map/geometryAdapter';
 import type { SearchEntry, SearchOptions } from '../../lib/search/searchIndex';
+import type { ArchiveEntry } from '../types/archive';
 
 export interface LoreRepository {
   getDataset(): LoreDataset;
@@ -14,5 +15,6 @@ export interface LoreRepository {
   getGeometry(id: string): GeoJsonFeatureCollection | undefined;
   listEntitiesForEra(eraId: string, sourceIds?: string[]): LoreEntity[];
   listBattlesForEra(eraId: string, sourceIds?: string[]): Battle[];
+  listArchiveEntries(): ArchiveEntry[];
   search(query: string, options?: SearchOptions): SearchEntry[];
 }

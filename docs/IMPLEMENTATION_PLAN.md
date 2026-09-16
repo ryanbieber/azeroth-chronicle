@@ -6,7 +6,7 @@ Build the Black Empire vertical slice as a static, client-heavy historical atlas
 
 The reusable engine must not contain Black Empire-specific behavior. Black Empire records live in the data layer and exercise generic era, map-state, battle, story, source, and relationship systems.
 
-## Current implementation status — 2026-09-15
+## Current implementation status — 2026-09-16
 
 The repository contains a complete reusable technical vertical slice and the first source-linked era baseline:
 
@@ -23,16 +23,19 @@ The repository contains a complete reusable technical vertical slice and the fir
 - Era 5, **The Long Vigil and the New Kingdoms**, now has a source-linked public research preview with three political time states over inherited post-Sundering terrain, 11 events, two five-phase strategic conflict dossiers, 16 new subjects, two explicitly inferred migration routes, source-aware relationships, and an unnumbered fourteen-node guide. The Long Vigil kaldorei, Highborne exiles, Dath'Remar, Amani, Arathor, Thoradin, and the three dwarven clans have deliberate clickable representation; uncertain wars and migrations are not presented as surveyed paths or exact battlefields. Human source, chronology, cartography, interpretation, and visual review still gates promotion.
 - Era 6, **The Rise of the Horde and the First Two Wars**, now has a source-linked research preview with a new Draenor worldspace, intact and war-scarred Draenor terrain, separate First and Second War Azeroth states, 15 events, two strategic war dossiers, four explicitly inferred campaign routes, and an unnumbered fifteen-node cross-world guide. The Dark Portal is represented by corresponding local anchors and a deterministic map-state transition rather than a false geographic line between planets. Human source, chronology, cartography, interpretation, and visual review still gates promotion.
 - Era 7, **The Third War and the Frozen Throne**, now has a source-linked research preview with four chronological theater states across Azeroth and a separate Outland worldspace, 15 events, two five-phase strategic conflict dossiers, seven explicitly inferred local routes, 25 time-aware spatial states, source-aware causality, and an unnumbered fifteen-node guide. The atlas changes map state between Azeroth and Outland rather than drawing a false cross-world route. Human source, chronology, cartography, interpretation, asset-provenance, and visual review still gates promotion.
+- Era 8, **The Age of Adventurers**, now has a source-linked research preview with eight lazy map states across Azeroth, Outland, alternate Draenor, and Argus; ten events; two five-phase strategic dossiers; source-aware causal handoffs; interpretive coalition visuals; and an unnumbered ten-node guide. The Cataclysm is a separate major-change state and cross-world passages change worldspace without false geographic bridges. Human source, chronology, cartography, interpretation, asset-provenance, and visual review still gates promotion.
+- Era 9, **The Modern Cosmic Age**, now has a source-linked, explicitly ongoing research preview with six states across Azeroth and a relational Shadowlands worldspace; nine events; two five-phase strategic dossiers; deliberate subject visuals; and an unnumbered nine-node guide. Its announcement-only Midnight horizon preserves unknown outcomes in the map, event, claim, and narration. Human source-freshness, chronology, cartography, interpretation, asset-provenance, and visual review still gates promotion.
+- A repository-backed illustrated archive at `/archive` is generated from the validated lore dataset. It automatically includes every map state, entity, battle, and event; supports category and text filters; distinguishes dedicated illustrations from contextual map art; and restores the selected record through the URL. Its text-first detail view exposes lore, record facts, provenance, full dossiers, and atlas links without requiring WebGL.
 - The scene contract now distinguishes terrain cartography from relational cosmography. Relational spatial states are validated as non-geographic and must explain their editorial composition; reusable rendering contains no era-ID branches. A reusable `visualPresence` spatial-state field allows a figure to appear only during a relevant story beat without changing the entity's asset contract.
 
-The reusable engine acceptance path and the Era 0–7 research-preview implementations are complete. This authorizes explicitly labeled public previews, not promotion of the records to `published`: all eight eras still require human review of their claim-level Chronicle citations, original summaries, interpretive visuals, stories, and causal chains. Later eras remain research scaffolds, and production-scale label density remains a future measurement gate.
+The reusable engine acceptance path and all ten Era 0–9 research-preview implementations are complete. This authorizes explicitly labeled public previews, not promotion of the records to `published`: every era still requires human review of its claim-level citations, original summaries, interpretive visuals, stories, and causal chains. Era 9 also remains deliberately open-ended as Warcraft's current history develops, and production-scale label density remains a future measurement gate.
 
 ## Architectural decisions
 
 ### Application and routing
 
 - Use Vite, React, and strict TypeScript as a single-page application.
-- Use `/` as the public landing page and primary full-history tour entry; retain `/map` as the shareable atlas workspace.
+- Use `/` as the public landing page and primary full-history tour entry; retain `/map` as the shareable atlas workspace and `/archive` as the generated text-first visual collection.
 - Use React Router with permanent routes for `/eras/:slug`, `/battles/:slug`, `/events/:slug`, `/locations/:slug`, and `/factions/:slug`.
 - Use `/map` query parameters for restorable explorer state: `era`, selected record, and optionally a compact camera bookmark. Public layer visibility is curated by era and story state rather than exposed as visitor configuration.
 - Keep the 3D explorer client-rendered. Generate static dossier HTML only after measuring an actual search-indexing or link-preview need. If needed, add a build-time prerender step rather than a server runtime.
@@ -241,6 +244,7 @@ Acceptance criteria:
 Reusable engine work:
 
 - Implement top-level era selection, curated era layers, selection state, labels, and permanent dossier views.
+- Generate a filterable archive gallery from repository records so newly validated map states, entities, battles, and events appear without UI index maintenance.
 - Add loading, empty, error, keyboard focus, and WebGL-unavailable states.
 - Implement URL synchronization for era and selection.
 
@@ -254,6 +258,7 @@ Acceptance criteria:
 - A user can enter Black Empire, navigate the map, see the curated historical layers, and open dossiers.
 - Dossiers remain usable without interacting with the 3D canvas.
 - Shared URLs restore the same era and selection.
+- Archive URLs restore the same category, search, and enlarged record, and each entry links back to its permanent dossier or atlas context.
 
 ### Phase 3 Battle system
 

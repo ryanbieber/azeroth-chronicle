@@ -60,6 +60,7 @@ export function LandingPage() {
             <small>{guidedEras.length} completed eras · begins with Cosmic Origins</small>
           </button>
           <Link to="/map?era=cosmic-origins">Explore the atlas freely</Link>
+          <Link to="/archive">Browse the illustrated archive</Link>
         </div>
       </section>
       <div className="landing-era-thread" aria-label="Current guided history coverage">

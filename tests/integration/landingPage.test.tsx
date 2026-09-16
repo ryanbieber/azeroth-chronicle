@@ -24,6 +24,7 @@ describe('landing page', () => {
     expect(screen.getByRole('heading', { name: /the full history/i })).toBeVisible();
     expect(screen.getByRole('button', { name: /full tour of the history/i })).toBeVisible();
     expect(screen.getByRole('link', { name: /explore the atlas freely/i })).toBeVisible();
+    expect(screen.getByRole('link', { name: /browse the illustrated archive/i })).toHaveAttribute('href', '/archive');
     expect(container.querySelectorAll('.landing-still')).toHaveLength(7);
 
     await user.click(screen.getByRole('button', { name: /full tour of the history/i }));

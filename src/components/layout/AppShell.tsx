@@ -55,6 +55,7 @@ export function AppShell({ children }: { children: ReactNode }) {
           )}
           <nav aria-label="Primary navigation">
             <NavLink to={`/map?era=${selectedEra?.slug ?? 'black-empire'}`}>Atlas</NavLink>
+            <NavLink to="/archive">Archive gallery</NavLink>
             <NavLink to={`/eras/${selectedEra?.slug ?? 'black-empire'}`}>Era dossier</NavLink>
           </nav>
         </div>}

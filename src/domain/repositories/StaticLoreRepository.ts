@@ -3,9 +3,11 @@ import { loadGeometry } from '../../lib/lore/loadGeometry';
 import { searchLore } from '../../lib/search/searchIndex';
 import { entityVisibleInEra } from '../../lib/lore/eraVisibility';
 import type { LoreRepository } from './LoreRepository';
+import { buildArchiveEntries } from '../../lib/lore/archiveLibrary';
 
 const publishedOnly = import.meta.env.VITE_CONTENT_MODE === 'published';
 const dataset = loadDataset({ publishedOnly });
+const archiveEntries = buildArchiveEntries(dataset);
 
 export const staticLoreRepository: LoreRepository = {
   getDataset: () => dataset,
@@ -23,6 +25,7 @@ export const staticLoreRepository: LoreRepository = {
   listBattlesForEra: (eraId, sourceIds = []) => dataset.battles.filter((battle) =>
     battle.eraId === eraId
     && (sourceIds.length === 0 || battle.sourceIds.some((id) => sourceIds.includes(id)))),
+  listArchiveEntries: () => archiveEntries,
   search: (query, options = {}) => searchLore(query, {
     ...options,
     includeUnpublished: publishedOnly ? false : options.includeUnpublished,

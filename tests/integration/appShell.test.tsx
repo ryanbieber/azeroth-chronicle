@@ -14,5 +14,6 @@ describe('application shell', () => {
     expect(screen.getByRole('option', { name: 'Cosmic Origins' })).toBeVisible();
     expect(screen.getByRole('option', { name: 'Primordial Azeroth and the Black Empire' })).toBeVisible();
     expect(screen.getByRole('option', { name: 'The Modern Cosmic Age' })).toBeVisible();
+    expect(screen.getByRole('link', { name: 'Archive gallery' })).toHaveAttribute('href', '/archive');
   });
 });

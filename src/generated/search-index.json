@@ -8,10 +8,17 @@
     "eraId": "age-of-adventurers",
     "aliases": [],
     "tags": [],
-    "description": "The period beginning with World of Warcraft: renewed faction conflict, Ahn'Qiraj, campaigns in Outland and Northrend, the Cataclysm, Pandaria, alternate Draenor, and the Legion's final invasion.",
+    "description": "The age in which expeditions and champions repeatedly crossed the world's thresholds: Ahn'Qiraj, Outland, Northrend, the Cataclysm, Pandaria, alternate Draenor, the Broken Isles, and Argus.",
     "sourceIds": [
       "warcraft-chronicle-volume-3",
-      "warcraft-chronicle-volume-4"
+      "warcraft-chronicle-volume-4",
+      "blizzard-ahnqiraj-remembrance",
+      "blizzard-wrath-icecrown-guide",
+      "blizzard-cataclysm-deathwing",
+      "blizzard-pandaria-siege-orgrimmar",
+      "blizzard-warlords-draenor-reveal",
+      "blizzard-legion-now-live",
+      "blizzard-argus-shadows"
     ],
     "contentStatus": "research"
   },
@@ -89,9 +96,15 @@
     "eraId": "modern-cosmic-age",
     "aliases": [],
     "tags": [],
-    "description": "The Fourth War, N'Zoth's return, Shadowlands, the awakening of the Dragon Isles, and Azeroth's increasingly direct role in the Worldsoul Saga.",
+    "description": "A wounded world's history widens through the Fourth War, N'Zoth's assault, the Shadowlands, the awakened Dragon Isles, Khaz Algar, and an explicitly unfinished Worldsoul Saga.",
     "sourceIds": [
-      "warcraft-chronicle-volume-4"
+      "warcraft-chronicle-volume-4",
+      "blizzard-fourth-war-recap",
+      "blizzard-visions-nzoth",
+      "blizzard-shadowlands-live",
+      "blizzard-dragonflight-deep-dive",
+      "blizzard-war-within-live",
+      "blizzard-midnight-overview"
     ],
     "contentStatus": "research"
   },
@@ -169,6 +182,26 @@
     "contentStatus": "research"
   },
   {
+    "id": "adventurers-of-azeroth",
+    "type": "entity",
+    "name": "Adventurers of Azeroth",
+    "slug": "adventurers-of-azeroth",
+    "path": "/factions/adventurers-of-azeroth",
+    "eraId": "age-of-adventurers",
+    "aliases": [],
+    "tags": [
+      "adventurers",
+      "expeditions",
+      "interpretive-grouping"
+    ],
+    "description": "A broad interpretive grouping for the independent champions and expeditionary bands who repeatedly entered the era's crises.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "warcraft-chronicle-volume-4"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "aggramar",
     "type": "entity",
     "name": "Aggramar",
@@ -185,6 +218,24 @@
     "sourceIds": [
       "warcraft-chronicle-volume-1",
       "blizzard-dragon-aspects-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "ahnqiraj",
+    "type": "entity",
+    "name": "Ahn'Qiraj",
+    "slug": "ahnqiraj",
+    "path": "/locations/ahnqiraj",
+    "eraId": "age-of-adventurers",
+    "aliases": [],
+    "tags": [
+      "kalimdor",
+      "qiraji"
+    ],
+    "description": "The sealed southern stronghold opened during a cross-faction war effort against C'Thun's forces.",
+    "sourceIds": [
+      "blizzard-ahnqiraj-remembrance"
     ],
     "contentStatus": "research"
   },
@@ -352,6 +403,24 @@
     "contentStatus": "research"
   },
   {
+    "id": "argus-location",
+    "type": "entity",
+    "name": "Argus",
+    "slug": "argus-location",
+    "path": "/locations/argus-location",
+    "eraId": "age-of-adventurers",
+    "aliases": [],
+    "tags": [
+      "argus",
+      "legion"
+    ],
+    "description": "The shattered world that served as the Burning Legion's seat of power and the final theater of this era's Legion campaign.",
+    "sourceIds": [
+      "blizzard-argus-shadows"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "arthas-menethil",
     "type": "entity",
     "name": "Arthas Menethil",
@@ -474,6 +543,24 @@
     "contentStatus": "research"
   },
   {
+    "id": "broken-isles",
+    "type": "entity",
+    "name": "The Broken Isles",
+    "slug": "broken-isles",
+    "path": "/locations/broken-isles",
+    "eraId": "war-of-the-ancients",
+    "aliases": [],
+    "tags": [
+      "legion",
+      "isles"
+    ],
+    "description": "The island region at the center of the Burning Legion's renewed invasion of Azeroth.",
+    "sourceIds": [
+      "blizzard-legion-now-live"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "burning-legion",
     "type": "entity",
     "name": "The Burning Legion",
@@ -512,6 +599,25 @@
     "description": "An ancient guardian of the wilds and Malfurion's teacher who joined the defense of Kalimdor against the Legion.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "class-orders",
+    "type": "entity",
+    "name": "The Class Orders",
+    "slug": "class-orders",
+    "path": "/factions/class-orders",
+    "eraId": "age-of-adventurers",
+    "aliases": [],
+    "tags": [
+      "legion",
+      "champions",
+      "coalition"
+    ],
+    "description": "Distinct orders of champions who organized against the Burning Legion when established armies were divided.",
+    "sourceIds": [
+      "blizzard-legion-now-live"
     ],
     "contentStatus": "research"
   },
@@ -636,6 +742,24 @@
     "contentStatus": "research"
   },
   {
+    "id": "dragon-isles",
+    "type": "entity",
+    "name": "The Dragon Isles",
+    "slug": "dragon-isles",
+    "path": "/locations/dragon-isles",
+    "eraId": "modern-cosmic-age",
+    "aliases": [],
+    "tags": [
+      "dragons",
+      "isles"
+    ],
+    "description": "The ancestral isles of dragonkind, awakened and returned to the world's history.",
+    "sourceIds": [
+      "blizzard-dragonflight-deep-dive"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "dragon-soul",
     "type": "entity",
     "name": "The Dragon Soul",
@@ -654,6 +778,25 @@
     "sourceIds": [
       "warcraft-chronicle-volume-1",
       "blizzard-dragon-aspects-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "dragonflights",
+    "type": "entity",
+    "name": "The Dragonflights",
+    "slug": "dragonflights",
+    "path": "/factions/dragonflights",
+    "eraId": "ordering-of-azeroth",
+    "aliases": [],
+    "tags": [
+      "dragons",
+      "dragon-isles",
+      "aspects"
+    ],
+    "description": "Azeroth's great dragonflights, recalled to the Dragon Isles and drawn into the age's renewed struggles.",
+    "sourceIds": [
+      "blizzard-dragonflight-deep-dive"
     ],
     "contentStatus": "research"
   },
@@ -700,6 +843,25 @@
     "contentStatus": "research"
   },
   {
+    "id": "earthen-khaz-algar",
+    "type": "entity",
+    "name": "The Earthen of Khaz Algar",
+    "slug": "earthen-khaz-algar",
+    "path": "/factions/earthen-khaz-algar",
+    "eraId": "modern-cosmic-age",
+    "aliases": [],
+    "tags": [
+      "khaz-algar",
+      "earthen",
+      "titan-forged"
+    ],
+    "description": "Titan-forged peoples whose long-isolated cultures are encountered beneath and across Khaz Algar.",
+    "sourceIds": [
+      "blizzard-war-within-live"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "elemental-hosts",
     "type": "entity",
     "name": "The Elemental Hosts",
@@ -735,6 +897,25 @@
     "sourceIds": [
       "warcraft-chronicle-volume-1",
       "blizzard-rise-zandalari"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "eversong-woods",
+    "type": "entity",
+    "name": "Eversong Woods",
+    "slug": "eversong-woods",
+    "path": "/locations/eversong-woods",
+    "eraId": "long-vigil-new-kingdoms",
+    "aliases": [],
+    "tags": [
+      "quelthalas",
+      "midnight",
+      "announced"
+    ],
+    "description": "The blood elf homeland named in the announced premise for Midnight; no campaign outcome is asserted here.",
+    "sourceIds": [
+      "blizzard-midnight-overview"
     ],
     "contentStatus": "research"
   },
@@ -1020,6 +1201,25 @@
     "contentStatus": "research"
   },
   {
+    "id": "iron-horde",
+    "type": "entity",
+    "name": "The Iron Horde",
+    "slug": "iron-horde",
+    "path": "/factions/iron-horde",
+    "eraId": "age-of-adventurers",
+    "aliases": [],
+    "tags": [
+      "alternate-draenor",
+      "invasion",
+      "industrial-war"
+    ],
+    "description": "A war machine formed on an alternate Draenor that opened an invasion route toward Azeroth.",
+    "sourceIds": [
+      "blizzard-warlords-draenor-reveal"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "ironforge-ancient",
     "type": "entity",
     "name": "Ironforge",
@@ -1135,6 +1335,24 @@
     "sourceIds": [
       "warcraft-chronicle-volume-3",
       "blizzard-warcraft-iii-story-so-far"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "khaz-algar",
+    "type": "entity",
+    "name": "Khaz Algar",
+    "slug": "khaz-algar",
+    "path": "/locations/khaz-algar",
+    "eraId": "modern-cosmic-age",
+    "aliases": [],
+    "tags": [
+      "worldsoul-saga",
+      "earthen"
+    ],
+    "description": "The island and subterranean regions at the opening of The War Within.",
+    "sourceIds": [
+      "blizzard-war-within-live"
     ],
     "contentStatus": "research"
   },
@@ -1518,6 +1736,24 @@
     "contentStatus": "research"
   },
   {
+    "id": "northrend",
+    "type": "entity",
+    "name": "Northrend",
+    "slug": "northrend",
+    "path": "/locations/northrend",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [
+      "icecrown",
+      "scourge"
+    ],
+    "description": "The northern continent from which the Lich King's power threatened the living.",
+    "sourceIds": [
+      "blizzard-wrath-icecrown-guide"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "nraqi",
     "type": "entity",
     "name": "N'raqi",
@@ -1619,6 +1855,26 @@
     "contentStatus": "research"
   },
   {
+    "id": "outland-location",
+    "type": "entity",
+    "name": "Outland",
+    "slug": "outland-location",
+    "path": "/locations/outland-location",
+    "eraId": "third-war-frozen-throne",
+    "aliases": [],
+    "tags": [
+      "draenor",
+      "dark-portal",
+      "separate-worldspace"
+    ],
+    "description": "The shattered remnants of Draenor, treated as a separate worldspace rather than a distant region of Azeroth.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3",
+      "blizzard-burning-crusade-story-so-far"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "pandaren-ancient",
     "type": "entity",
     "name": "The Ancient Pandaren",
@@ -1634,6 +1890,24 @@
     "description": "One of the peoples subjected by the mogu empire and central to the uprising that ended its rule.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "pandaria",
+    "type": "entity",
+    "name": "Pandaria",
+    "slug": "pandaria",
+    "path": "/locations/pandaria",
+    "eraId": "ancient-civilizations",
+    "aliases": [],
+    "tags": [
+      "pandaren",
+      "vale"
+    ],
+    "description": "A long-hidden land drawn into renewed faction conflict and the consequences of that conflict.",
+    "sourceIds": [
+      "blizzard-pandaria-siege-orgrimmar"
     ],
     "contentStatus": "research"
   },
@@ -1796,6 +2070,43 @@
     "description": "Gul'dan's concealed circle of warlocks and agents, created to steer the Horde behind its visible warchief.",
     "sourceIds": [
       "warcraft-chronicle-volume-2"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "shadowlands-covenants",
+    "type": "entity",
+    "name": "The Shadowlands Covenants",
+    "slug": "shadowlands-covenants",
+    "path": "/factions/shadowlands-covenants",
+    "eraId": "modern-cosmic-age",
+    "aliases": [],
+    "tags": [
+      "shadowlands",
+      "covenants",
+      "relational"
+    ],
+    "description": "The distinct powers encountered across the realms of the Shadowlands during the struggle beyond the broken veil.",
+    "sourceIds": [
+      "blizzard-shadowlands-live"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "shadowlands-realms",
+    "type": "entity",
+    "name": "The Realms of the Shadowlands",
+    "slug": "shadowlands-realms",
+    "path": "/locations/shadowlands-realms",
+    "eraId": "modern-cosmic-age",
+    "aliases": [],
+    "tags": [
+      "afterlife",
+      "relational-map"
+    ],
+    "description": "Afterlife realms presented here as a relational field, not a measured geographic continent.",
+    "sourceIds": [
+      "blizzard-shadowlands-live"
     ],
     "contentStatus": "research"
   },
@@ -2162,6 +2473,26 @@
     "contentStatus": "research"
   },
   {
+    "id": "xalatath",
+    "type": "entity",
+    "name": "Xal'atath",
+    "slug": "xalatath",
+    "path": "/locations/xalatath",
+    "eraId": "age-of-adventurers",
+    "aliases": [],
+    "tags": [
+      "void",
+      "worldsoul-saga",
+      "ongoing"
+    ],
+    "description": "A Void-aligned power whose designs frame the opening movement of the Worldsoul Saga.",
+    "sourceIds": [
+      "blizzard-war-within-live",
+      "blizzard-midnight-overview"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "yshaarj-central-bastion",
     "type": "entity",
     "name": "Y'Shaarj's Central Bastion",
@@ -2234,6 +2565,22 @@
     "description": "The highland center of the Zandalar tribe and a political heart of the earliest troll civilization represented in this era.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "ahnqiraj-war-effort",
+    "type": "event",
+    "name": "The War Effort Opens Ahn'Qiraj",
+    "slug": "ahnqiraj-war-effort",
+    "path": "/events/ahnqiraj-war-effort",
+    "eraId": "age-of-adventurers",
+    "aliases": [],
+    "tags": [],
+    "description": "Alliance and Horde communities supplied a shared war effort before champions entered Ahn'Qiraj to confront C'Thun's forces.",
+    "sourceIds": [
+      "blizzard-ahnqiraj-remembrance",
+      "warcraft-chronicle-volume-3"
     ],
     "contentStatus": "research"
   },
@@ -2363,6 +2710,21 @@
     "contentStatus": "research"
   },
   {
+    "id": "argus-campaign-opens",
+    "type": "event",
+    "name": "The Campaign Reaches Argus",
+    "slug": "argus-campaign-opens",
+    "path": "/events/argus-campaign-opens",
+    "eraId": "age-of-adventurers",
+    "aliases": [],
+    "tags": [],
+    "description": "A direct link carried the coalition to shattered Argus and the Burning Legion's seat of power.",
+    "sourceIds": [
+      "blizzard-argus-shadows"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "arthas-ascends-the-frozen-throne",
     "type": "event",
     "name": "Arthas Ascends the Frozen Throne",
@@ -2456,6 +2818,37 @@
     "contentStatus": "research"
   },
   {
+    "id": "burning-legion-defeated",
+    "type": "event",
+    "name": "The Legion's Crusade Is Broken",
+    "slug": "burning-legion-defeated",
+    "path": "/events/burning-legion-defeated",
+    "eraId": "age-of-adventurers",
+    "aliases": [],
+    "tags": [],
+    "description": "The Argus campaign broke the Burning Legion's immediate cosmic crusade, closing the era with victory and a wounded world left behind.",
+    "sourceIds": [
+      "blizzard-argus-shadows",
+      "warcraft-chronicle-volume-4"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "class-orders-unite",
+    "type": "event",
+    "name": "The Class Orders Rise Against the Legion",
+    "slug": "class-orders-unite",
+    "path": "/events/class-orders-unite",
+    "eraId": "age-of-adventurers",
+    "aliases": [],
+    "tags": [],
+    "description": "As the Burning Legion invaded through the Broken Isles, distinct class orders organized champions for a common defense.",
+    "sourceIds": [
+      "blizzard-legion-now-live"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "dark-portal-opens",
     "type": "event",
     "name": "The Dark Portal Opens",
@@ -2483,6 +2876,37 @@
     "description": "A reclusive dark troll people moved toward the center of Kalimdor and made their home near the Well of Eternity.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "deathwing-shatters-azeroth",
+    "type": "event",
+    "name": "Deathwing Shatters the World",
+    "slug": "deathwing-shatters-azeroth",
+    "path": "/events/deathwing-shatters-azeroth",
+    "eraId": "age-of-adventurers",
+    "aliases": [],
+    "tags": [],
+    "description": "Deathwing's return caused the Cataclysm, violently reshaping regions across Azeroth and forcing a world-spanning defense.",
+    "sourceIds": [
+      "blizzard-cataclysm-deathwing",
+      "warcraft-chronicle-volume-3"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "dragon-isles-awaken",
+    "type": "event",
+    "name": "The Dragon Isles Awaken",
+    "slug": "dragon-isles-awaken",
+    "path": "/events/dragon-isles-awaken",
+    "eraId": "modern-cosmic-age",
+    "aliases": [],
+    "tags": [],
+    "description": "The Dragon Isles awakened, calling the dragonflights home and opening a new expedition into their ancient inheritance.",
+    "sourceIds": [
+      "blizzard-dragonflight-deep-dive"
     ],
     "contentStatus": "research"
   },
@@ -2546,6 +2970,38 @@
     "sourceIds": [
       "warcraft-chronicle-volume-3",
       "blizzard-warcraft-iii-reforged-overview"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "fourth-war-ends",
+    "type": "event",
+    "name": "The Fourth War Campaign Ends",
+    "slug": "fourth-war-ends",
+    "path": "/events/fourth-war-ends",
+    "eraId": "modern-cosmic-age",
+    "aliases": [],
+    "tags": [],
+    "description": "A rebellion joined with Alliance pressure against Sylvanas's rule, bringing the war campaign to its end without erasing its losses.",
+    "sourceIds": [
+      "blizzard-fourth-war-recap",
+      "warcraft-chronicle-volume-4"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "fourth-war-erupts",
+    "type": "event",
+    "name": "The Fourth War Erupts",
+    "slug": "fourth-war-erupts",
+    "path": "/events/fourth-war-erupts",
+    "eraId": "modern-cosmic-age",
+    "aliases": [],
+    "tags": [],
+    "description": "Alliance and Horde entered a global war of footholds, reprisals, and deepening fractures after the Legion's defeat.",
+    "sourceIds": [
+      "blizzard-fourth-war-recap",
+      "warcraft-chronicle-volume-4"
     ],
     "contentStatus": "research"
   },
@@ -2723,6 +3179,21 @@
     "contentStatus": "research"
   },
   {
+    "id": "iron-horde-invades",
+    "type": "event",
+    "name": "The Iron Horde Opens an Alternate Front",
+    "slug": "iron-horde-invades",
+    "path": "/events/iron-horde-invades",
+    "eraId": "age-of-adventurers",
+    "aliases": [],
+    "tags": [],
+    "description": "An invasion from an alternate Draenor opened a separate-world campaign against the Iron Horde.",
+    "sourceIds": [
+      "blizzard-warlords-draenor-reveal"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "kaldorei-ascendance",
     "type": "event",
     "name": "The Kaldorei Ascend",
@@ -2787,6 +3258,22 @@
     "contentStatus": "research"
   },
   {
+    "id": "lich-king-falls-at-icecrown",
+    "type": "event",
+    "name": "The Lich King Falls at Icecrown",
+    "slug": "lich-king-falls-at-icecrown",
+    "path": "/events/lich-king-falls-at-icecrown",
+    "eraId": "age-of-adventurers",
+    "aliases": [],
+    "tags": [],
+    "description": "The campaign through Northrend reached Icecrown, where Arthas's reign as the Lich King ended.",
+    "sourceIds": [
+      "blizzard-wrath-icecrown-guide",
+      "warcraft-chronicle-volume-3"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "long-vigil-begins",
     "type": "event",
     "name": "The Long Vigil Begins",
@@ -2829,6 +3316,21 @@
     "description": "Lothar died during the confrontation near Blackrock Spire, creating a moment of shock that Turalyon turned into resolve.",
     "sourceIds": [
       "warcraft-chronicle-volume-2"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "midnight-announced",
+    "type": "event",
+    "name": "Midnight Stands at the Archive's Horizon",
+    "slug": "midnight-announced",
+    "path": "/events/midnight-announced",
+    "eraId": "modern-cosmic-age",
+    "aliases": [],
+    "tags": [],
+    "description": "The announced Midnight premise turns toward Xal'atath's assault on the blood elf homelands; its outcome remains outside this archive's evidence boundary.",
+    "sourceIds": [
+      "blizzard-midnight-overview"
     ],
     "contentStatus": "research"
   },
@@ -2928,6 +3430,36 @@
     "contentStatus": "research"
   },
   {
+    "id": "nzoth-defeated",
+    "type": "event",
+    "name": "The Assault of N'Zoth Is Defeated",
+    "slug": "nzoth-defeated",
+    "path": "/events/nzoth-defeated",
+    "eraId": "modern-cosmic-age",
+    "aliases": [],
+    "tags": [],
+    "description": "Champions carried the struggle into Ny'alotha and ended N'Zoth's immediate assault on Azeroth.",
+    "sourceIds": [
+      "blizzard-visions-nzoth"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "nzoth-unleashed",
+    "type": "event",
+    "name": "N'Zoth Is Unleashed",
+    "slug": "nzoth-unleashed",
+    "path": "/events/nzoth-unleashed",
+    "eraId": "modern-cosmic-age",
+    "aliases": [],
+    "tags": [],
+    "description": "N'Zoth's release brought assaults and corrupting visions against an already wounded Azeroth.",
+    "sourceIds": [
+      "blizzard-visions-nzoth"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "old-gods-arrive",
     "type": "event",
     "name": "Arrival of the Old Gods",
@@ -3004,6 +3536,21 @@
     "contentStatus": "research"
   },
   {
+    "id": "outland-campaign-begins",
+    "type": "event",
+    "name": "The Dark Portal Leads Back to Outland",
+    "slug": "outland-campaign-begins",
+    "path": "/events/outland-campaign-begins",
+    "eraId": "age-of-adventurers",
+    "aliases": [],
+    "tags": [],
+    "description": "A renewed passage through the Dark Portal carried Azeroth's forces into shattered Outland and the conflicts rooted there.",
+    "sourceIds": [
+      "warcraft-chronicle-volume-3"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "pandaren-revolution",
     "type": "event",
     "name": "The Pandaren Revolution",
@@ -3015,6 +3562,22 @@
     "description": "Resistance associated with Kang spread among the mogu's subject peoples until the imperial order broke and the southern lands entered a new age.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "pandaria-emerges",
+    "type": "event",
+    "name": "Pandaria Returns to the Wider World",
+    "slug": "pandaria-emerges",
+    "path": "/events/pandaria-emerges",
+    "eraId": "age-of-adventurers",
+    "aliases": [],
+    "tags": [],
+    "description": "The long-hidden land of Pandaria became a theater of exploration and intensifying Alliance–Horde conflict.",
+    "sourceIds": [
+      "blizzard-pandaria-siege-orgrimmar",
+      "warcraft-chronicle-volume-3"
     ],
     "contentStatus": "research"
   },
@@ -3192,6 +3755,21 @@
     "contentStatus": "research"
   },
   {
+    "id": "shadowlands-covenants-unite",
+    "type": "event",
+    "name": "The Covenant Campaigns Converge",
+    "slug": "shadowlands-covenants-unite",
+    "path": "/events/shadowlands-covenants-unite",
+    "eraId": "modern-cosmic-age",
+    "aliases": [],
+    "tags": [],
+    "description": "Champions worked among distinct covenant realms whose campaigns formed the broad framework of resistance in the afterlife.",
+    "sourceIds": [
+      "blizzard-shadowlands-live"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "shattrath-falls-to-horde",
     "type": "event",
     "name": "Shattrath Falls to the Horde",
@@ -3205,6 +3783,22 @@
       "warcraft-chronicle-volume-2",
       "blizzard-rise-of-the-horde-library",
       "blizzard-burning-crusade-draenor-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "siege-orgrimmar-ends",
+    "type": "event",
+    "name": "The Siege Ends Garrosh's Rule",
+    "slug": "siege-orgrimmar-ends",
+    "path": "/events/siege-orgrimmar-ends",
+    "eraId": "age-of-adventurers",
+    "aliases": [],
+    "tags": [],
+    "description": "Opposition from within and beyond the Horde converged on Orgrimmar and ended Garrosh Hellscream's rule.",
+    "sourceIds": [
+      "blizzard-pandaria-siege-orgrimmar",
+      "warcraft-chronicle-volume-3"
     ],
     "contentStatus": "research"
   },
@@ -3334,6 +3928,36 @@
     "contentStatus": "research"
   },
   {
+    "id": "veil-shattered",
+    "type": "event",
+    "name": "The Veil into the Shadowlands Is Shattered",
+    "slug": "veil-shattered",
+    "path": "/events/veil-shattered",
+    "eraId": "modern-cosmic-age",
+    "aliases": [],
+    "tags": [],
+    "description": "Sylvanas shattered the veil between life and death, drawing champions into the Shadowlands and its covenant realms.",
+    "sourceIds": [
+      "blizzard-shadowlands-live"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "war-within-khaz-algar",
+    "type": "event",
+    "name": "The War Within Opens in Khaz Algar",
+    "slug": "war-within-khaz-algar",
+    "path": "/events/war-within-khaz-algar",
+    "eraId": "modern-cosmic-age",
+    "aliases": [],
+    "tags": [],
+    "description": "Xal'atath's gathering threat led champions into Khaz Algar and its subterranean worlds, where the Earthen became central allies and witnesses.",
+    "sourceIds": [
+      "blizzard-war-within-live"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "well-eternity-stabilized",
     "type": "event",
     "name": "The World-wound Is Stabilized",
@@ -3458,6 +4082,22 @@
     "contentStatus": "research"
   },
   {
+    "id": "fourth-war-campaign",
+    "type": "battle",
+    "name": "The Fourth War Campaign",
+    "slug": "fourth-war-campaign",
+    "path": "/battles/fourth-war-campaign",
+    "eraId": "modern-cosmic-age",
+    "aliases": [],
+    "tags": [],
+    "description": "A strategic dossier of the faction war's widening fronts, internal rebellion, and political conclusion.",
+    "sourceIds": [
+      "blizzard-fourth-war-recap",
+      "warcraft-chronicle-volume-4"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "frozen-throne-campaign",
     "type": "battle",
     "name": "The Frozen Throne Campaign",
@@ -3471,6 +4111,22 @@
       "warcraft-chronicle-volume-3",
       "blizzard-burning-crusade-story-so-far",
       "blizzard-warcraft-iii-reforged-overview"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "icecrown-citadel-campaign",
+    "type": "battle",
+    "name": "The Icecrown Citadel Campaign",
+    "slug": "icecrown-citadel-campaign",
+    "path": "/battles/icecrown-citadel-campaign",
+    "eraId": "age-of-adventurers",
+    "aliases": [],
+    "tags": [],
+    "description": "A broad strategic dossier tracing the coalition's advance through Icecrown to the fall of Arthas as the Lich King.",
+    "sourceIds": [
+      "blizzard-wrath-icecrown-guide",
+      "warcraft-chronicle-volume-3"
     ],
     "contentStatus": "research"
   },
@@ -3539,6 +4195,37 @@
     "contentStatus": "research"
   },
   {
+    "id": "visions-of-nzoth-campaign",
+    "type": "battle",
+    "name": "The Visions of N'Zoth Campaign",
+    "slug": "visions-of-nzoth-campaign",
+    "path": "/battles/visions-of-nzoth-campaign",
+    "eraId": "modern-cosmic-age",
+    "aliases": [],
+    "tags": [],
+    "description": "A strategic dossier of N'Zoth's assaults, the defense of mind and world, and the campaign into Ny'alotha.",
+    "sourceIds": [
+      "blizzard-visions-nzoth"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "war-against-legion",
+    "type": "battle",
+    "name": "The War Against the Burning Legion",
+    "slug": "war-against-legion",
+    "path": "/battles/war-against-legion",
+    "eraId": "age-of-adventurers",
+    "aliases": [],
+    "tags": [],
+    "description": "A cross-world strategic dossier from the Legion's return to the coalition's campaign on Argus.",
+    "sourceIds": [
+      "blizzard-legion-now-live",
+      "blizzard-argus-shadows"
+    ],
+    "contentStatus": "research"
+  },
+  {
     "id": "war-of-the-ancients-conflict",
     "type": "battle",
     "name": "The War of the Ancients",
@@ -3568,6 +4255,23 @@
     "sourceIds": [
       "warcraft-chronicle-volume-1",
       "blizzard-grim-batol-history"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "age-of-adventurers-campaigns",
+    "type": "campaign",
+    "name": "Campaigns of the Adventuring Age",
+    "slug": "age-of-adventurers-campaigns",
+    "path": "/eras/age-of-adventurers",
+    "eraId": "age-of-adventurers",
+    "aliases": [],
+    "tags": [],
+    "description": "A dossier index for the Northrend war and the later world-to-world campaign against the Burning Legion.",
+    "sourceIds": [
+      "blizzard-wrath-icecrown-guide",
+      "blizzard-legion-now-live",
+      "blizzard-argus-shadows"
     ],
     "contentStatus": "research"
   },
@@ -3614,6 +4318,22 @@
     "description": "A descriptive campaign grouping for the prolonged struggle among Azeroth's four elemental hosts.",
     "sourceIds": [
       "warcraft-chronicle-volume-1"
+    ],
+    "contentStatus": "research"
+  },
+  {
+    "id": "modern-cosmic-campaigns",
+    "type": "campaign",
+    "name": "Wars of a Wounded World",
+    "slug": "modern-cosmic-campaigns",
+    "path": "/eras/modern-cosmic-age",
+    "eraId": "modern-cosmic-age",
+    "aliases": [],
+    "tags": [],
+    "description": "A dossier index for the Fourth War and the assaults surrounding N'Zoth's release.",
+    "sourceIds": [
+      "blizzard-fourth-war-recap",
+      "blizzard-visions-nzoth"
     ],
     "contentStatus": "research"
   },

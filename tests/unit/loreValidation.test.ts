@@ -563,6 +563,126 @@ describe('lore dataset', () => {
     }));
   });
 
+  it('contains a multi-worldspace Age of Adventurers research preview', () => {
+    const data = loadDataset();
+    const era = data.eras.find((item) => item.id === 'age-of-adventurers')!;
+    const events = data.events.filter((item) => item.eraId === era.id);
+    const battles = data.battles.filter((item) => item.eraId === era.id);
+    const guide = data.storyGuides.find((item) => item.id === era.storyGuideId)!;
+    const nodes = guide.nodeIds.map((nodeId) => data.storyNodes.find((item) => item.id === nodeId)!);
+    const mapStateIds = [
+      'age-of-adventurers-map-research',
+      'age-of-adventurers-outland-map-research',
+      'age-of-adventurers-northrend-map-research',
+      'age-of-adventurers-cataclysm-map-research',
+      'age-of-adventurers-pandaria-map-research',
+      'age-of-adventurers-alternate-draenor-map-research',
+      'age-of-adventurers-broken-isles-map-research',
+      'age-of-adventurers-argus-map-research',
+    ];
+    const mapStates = mapStateIds.map((id) => data.mapStates.find((item) => item.id === id)!);
+
+    expect(era.order).toBe(8);
+    expect(era.previousEraId).toBe('third-war-frozen-throne');
+    expect(era.nextEraId).toBe('modern-cosmic-age');
+    expect(events).toHaveLength(10);
+    expect(battles).toHaveLength(2);
+    expect(guide.nodeIds).toHaveLength(10);
+    expect(mapStates.map((state) => state.worldspaceId)).toEqual([
+      'azeroth', 'outland', 'azeroth', 'azeroth', 'azeroth', 'alternate-draenor', 'azeroth', 'argus',
+    ]);
+    expect(mapStates.every((state) => state.presentation === 'terrain'
+      && Boolean(state.terrainTextureAsset)
+      && Boolean(state.terrainHeightAsset)
+      && Boolean(state.interpretationNote))).toBe(true);
+    expect(mapStates.every((state) => Boolean(state.terrainTextureAsset
+      && state.terrainHeightAsset
+      && existsSync(resolve('public', state.terrainTextureAsset))
+      && existsSync(resolve('public', state.terrainHeightAsset))))).toBe(true);
+    expect(nodes.every((node) => !node.visualActions?.some((action) => action.type === 'show_battle'))).toBe(true);
+    const keyActorIds = [
+      'adventurers-of-azeroth', 'old-gods', 'illidan-stormrage', 'arthas-menethil', 'scourge',
+      'neltharion', 'new-horde', 'thrall', 'jaina-proudmoore', 'iron-horde', 'class-orders',
+      'burning-legion', 'turalyon',
+    ];
+    expect(keyActorIds.every((entityId) => {
+      const entity = data.entities.find((item) => item.id === entityId);
+      const asset = entity?.mapFigure?.asset ?? entity?.mapVisual?.asset;
+      return Boolean(asset && existsSync(resolve('public', asset)));
+    })).toBe(true);
+    expect(keyActorIds.every((entityId) => data.spatialStates.some((state) =>
+      state.entityId === entityId
+      && state.eraId === era.id
+      && state.placementKind === 'relational'
+      && state.geographicCertainty === 'unknown'
+      && Boolean(state.editorNote),
+    ))).toBe(true);
+    expect([...events, ...battles].every((subject) =>
+      data.claims.some((claim) => claim.subjectId === subject.id && claim.citationIds.length > 0),
+    )).toBe(true);
+    expect(battles.every((battle) => battle.phases?.length === 5
+      && battle.campaignId === 'age-of-adventurers-campaigns')).toBe(true);
+  });
+
+  it('contains an evidence-bounded Modern Cosmic Age research preview', () => {
+    const data = loadDataset();
+    const era = data.eras.find((item) => item.id === 'modern-cosmic-age')!;
+    const events = data.events.filter((item) => item.eraId === era.id);
+    const battles = data.battles.filter((item) => item.eraId === era.id);
+    const guide = data.storyGuides.find((item) => item.id === era.storyGuideId)!;
+    const nodes = guide.nodeIds.map((nodeId) => data.storyNodes.find((item) => item.id === nodeId)!);
+    const mapStateIds = [
+      'modern-cosmic-age-map-research',
+      'modern-cosmic-nzoth-map-research',
+      'modern-cosmic-shadowlands-map-research',
+      'modern-cosmic-dragon-isles-map-research',
+      'modern-cosmic-khaz-algar-map-research',
+      'modern-cosmic-midnight-map-research',
+    ];
+    const mapStates = mapStateIds.map((id) => data.mapStates.find((item) => item.id === id)!);
+    const shadowlands = mapStates[2]!;
+    const midnight = data.events.find((item) => item.id === 'midnight-announced')!;
+
+    expect(era.order).toBe(9);
+    expect(era.previousEraId).toBe('age-of-adventurers');
+    expect(era.nextEraId).toBeUndefined();
+    expect(era.endDate).toEqual(expect.objectContaining({ precision: 'unknown' }));
+    expect(events).toHaveLength(9);
+    expect(battles).toHaveLength(2);
+    expect(guide.nodeIds).toHaveLength(9);
+    expect(shadowlands.presentation).toBe('relational');
+    expect(shadowlands.worldspaceId).toBe('shadowlands');
+    expect(shadowlands.terrainTextureAsset).toBeTruthy();
+    expect(shadowlands.terrainHeightAsset).toBeUndefined();
+    expect(shadowlands.interpretationNote).toMatch(/not.*geography|not.*geographic|symbolic/i);
+    expect(mapStates.every((state) => Boolean(state.terrainTextureAsset
+      && existsSync(resolve('public', state.terrainTextureAsset))))).toBe(true);
+    expect(nodes.every((node) => !node.visualActions?.some((action) => action.type === 'show_battle'))).toBe(true);
+    const keyActorIds = [
+      'sylvanas-windrunner', 'jaina-proudmoore', 'thrall', 'new-horde', 'old-gods',
+      'adventurers-of-azeroth', 'shadowlands-covenants', 'dragonflights', 'xalatath', 'earthen-khaz-algar',
+    ];
+    expect(keyActorIds.every((entityId) => {
+      const entity = data.entities.find((item) => item.id === entityId);
+      const asset = entity?.mapFigure?.asset ?? entity?.mapVisual?.asset;
+      return Boolean(asset && existsSync(resolve('public', asset)));
+    })).toBe(true);
+    expect(keyActorIds.every((entityId) => data.spatialStates.some((state) =>
+      state.entityId === entityId
+      && state.eraId === era.id
+      && state.placementKind === 'relational'
+      && state.geographicCertainty === 'unknown'
+      && Boolean(state.editorNote),
+    ))).toBe(true);
+    expect(midnight.summary).toMatch(/outcome remains outside|announced/i);
+    expect(midnight.description).toMatch(/not a completed historical outcome/i);
+    expect([...events, ...battles].every((subject) =>
+      data.claims.some((claim) => claim.subjectId === subject.id && claim.citationIds.length > 0),
+    )).toBe(true);
+    expect(battles.every((battle) => battle.phases?.length === 5
+      && battle.campaignId === 'modern-cosmic-campaigns')).toBe(true);
+  });
+
   it('enforces the non-geographic relational visualization contract', () => {
     expect(mapStateSchema.safeParse({
       id: 'relational-test',
@@ -608,6 +728,8 @@ describe('lore dataset', () => {
       'long-vigil-new-kingdoms-guided-history',
       'rise-of-the-horde-guided-history',
       'third-war-frozen-throne-guided-history',
+      'age-of-adventurers-guided-history',
+      'modern-cosmic-age-guided-history',
     ]) {
       const guide = data.storyGuides.find((item) => item.id === guideId)!;
       for (const nodeId of guide.nodeIds) {

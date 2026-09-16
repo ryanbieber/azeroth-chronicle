@@ -1,0 +1,8 @@
+{"type":"FeatureCollection","features":[
+ {"type":"Feature","id":"argus-shattered-region-research","properties":{"name":"Shattered Argus campaign theater (interpretive)","contentStatus":"research","styleRole":"influence","geographicCertainty":"inferred"},"geometry":{"type":"Polygon","coordinates":[[[700,700],[1200,5900],[8800,6000],[9300,800],[700,700]]]}},
+ {"type":"Feature","id":"argus-location-focus-research","properties":{"name":"Argus world focus","contentStatus":"research","styleRole":"site","geographicCertainty":"approximate"},"geometry":{"type":"Point","coordinates":[5000,3300]}},
+ {"type":"Feature","id":"legion-argus-focus-research","properties":{"name":"Legion Argus narrative focus","contentStatus":"research","styleRole":"site","geographicCertainty":"unknown"},"geometry":{"type":"Point","coordinates":[6500,3900]}},
+ {"type":"Feature","id":"adventurers-argus-focus-research","properties":{"name":"Argus coalition narrative focus","contentStatus":"research","styleRole":"site","geographicCertainty":"unknown"},"geometry":{"type":"Point","coordinates":[4300,2800]}},
+ {"type":"Feature","id":"illidan-argus-focus-research","properties":{"name":"Illidan Argus narrative focus","contentStatus":"research","styleRole":"site","geographicCertainty":"unknown"},"geometry":{"type":"Point","coordinates":[5300,2400]}},
+ {"type":"Feature","id":"turalyon-argus-focus-research","properties":{"name":"Turalyon Argus narrative focus","contentStatus":"research","styleRole":"site","geographicCertainty":"unknown"},"geometry":{"type":"Point","coordinates":[3700,3600]}}
+]}

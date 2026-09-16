@@ -1,6 +1,11 @@
 {
   "id": "modern-cosmic-age-map-research",
-  "name": "Modern Cosmic Age — cartography research",
+  "name": "The Fourth War — interpretive global state",
   "worldspaceId": "azeroth",
-  "geometryIds": []
+  "presentation": "terrain",
+  "cartographyLabel": "INTERPRETIVE FOURTH WAR GLOBAL STATE",
+  "interpretationNote": "This state communicates a multi-theater faction war through broad narrative anchors. It does not assert precise fronts, territorial boundaries, or mission routes.",
+  "terrainTextureAsset": "textures/azeroth/age-of-adventurers-cataclysm-map-research/terrain-atlas.research.webp",
+  "terrainHeightAsset": "textures/azeroth/age-of-adventurers-cataclysm-map-research/terrain-height.research.webp",
+  "geometryIds": ["fourth-war-western-focus-research", "fourth-war-eastern-focus-research", "sylvanas-fourth-war-focus-research", "jaina-fourth-war-focus-research", "thrall-fourth-war-focus-research", "new-horde-fourth-war-focus-research"]
 }

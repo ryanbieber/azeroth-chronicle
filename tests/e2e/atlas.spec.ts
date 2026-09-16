@@ -365,6 +365,59 @@ test('Rise of the Horde crosses from Draenor into the First and Second Wars with
   await expect(page.getByRole('heading', { name: 'The gate falls, but the road remains in memory' })).toBeVisible();
 });
 
+test('Age of Adventurers changes worldspaces and major map states without geographic shortcuts', async ({ page }) => {
+  await page.goto('/map?era=age-of-adventurers');
+  await expect(page.getByRole('combobox', { name: 'Choose era' })).toHaveValue('age-of-adventurers');
+  await expect(page.locator('.map-caption')).toContainText("INTERPRETIVE AHN'QIRAJ WAR-EFFORT STATE");
+
+  await page.getByRole('button', { name: 'Guided tour' }).click();
+  await expect(page.getByRole('heading', { name: 'The great powers call upon unnumbered hands' })).toBeVisible();
+  await expect(page.locator('.map-subject-visual').filter({ hasText: 'Adventurers of Azeroth' })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'The road crosses into a broken world' })).toBeVisible();
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE OUTLAND EXPEDITION STATE');
+
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'The northern crown receives its reckoning' })).toBeVisible();
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE NORTHREND CAMPAIGN STATE');
+  await expect(page.locator('.battle-playback')).toHaveCount(0);
+
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'The earth remembers its betrayed guardian' })).toBeVisible();
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE CATACLYSM WORLD-CHANGE STATE');
+
+  for (let index = 0; index < 5; index += 1) {
+    await page.getByRole('button', { name: 'Next', exact: true }).click();
+  }
+  await expect(page.getByRole('heading', { name: 'The defenders carry the war to Argus' })).toBeVisible();
+  await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE SHATTERED ARGUS STATE');
+});
+
+test('Modern Cosmic Age uses relational cartography and stops at an announced horizon', async ({ page }) => {
+  await page.goto('/map?era=modern-cosmic-age');
+  await expect(page.getByRole('combobox', { name: 'Choose era' })).toHaveValue('modern-cosmic-age');
+  await page.getByRole('button', { name: 'Guided tour' }).click();
+  await expect(page.getByRole('heading', { name: 'The wounded inherit another war' })).toBeVisible();
+
+  for (let index = 0; index < 4; index += 1) {
+    await page.getByRole('button', { name: 'Next', exact: true }).click();
+  }
+  await expect(page.getByRole('heading', { name: 'The sky above Icecrown is torn' })).toBeVisible();
+  await expect(page.locator('.map-caption')).toContainText('RELATIONAL SHADOWLANDS FIELD — NOT GEOGRAPHIC');
+
+  for (let index = 0; index < 3; index += 1) {
+    await page.getByRole('button', { name: 'Next', exact: true }).click();
+  }
+  await expect(page.getByRole('heading', { name: 'The warning descends beneath Khaz Algar' })).toBeVisible();
+  await expect(page.getByRole('button', { name: "Xal'atath", exact: true })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'The chronicle ends where announcement begins' })).toBeVisible();
+  await expect(page.locator('.map-caption')).toContainText('ANNOUNCED MIDNIGHT PREMISE — OUTCOME UNKNOWN');
+  await expect(page.getByText(/no victor is named, no fate presumed/i)).toBeVisible();
+});
+
 test('landing page full tour chains every completed guided era', async ({ page }) => {
   test.setTimeout(120_000);
   await page.goto('/');
@@ -434,6 +487,22 @@ test('landing page full tour chains every completed guided era', async ({ page }
     await page.getByRole('button', { name: 'Next', exact: true }).click();
   }
   await expect(page.getByRole('heading', { name: 'The lost prince ascends into a colder age' })).toBeVisible();
+  await page.getByRole('button', { name: 'Continue the chronicle' }).click();
+
+  await expect(page).toHaveURL(/map\?era=age-of-adventurers&tour=full/);
+  await expect(page.getByRole('heading', { name: 'The great powers call upon unnumbered hands' })).toBeVisible();
+  for (let index = 0; index < 9; index += 1) {
+    await page.getByRole('button', { name: 'Next', exact: true }).click();
+  }
+  await expect(page.getByRole('heading', { name: 'Victory returns to a wounded world' })).toBeVisible();
+  await page.getByRole('button', { name: 'Continue the chronicle' }).click();
+
+  await expect(page).toHaveURL(/map\?era=modern-cosmic-age&tour=full/);
+  await expect(page.getByRole('heading', { name: 'The wounded inherit another war' })).toBeVisible();
+  for (let index = 0; index < 8; index += 1) {
+    await page.getByRole('button', { name: 'Next', exact: true }).click();
+  }
+  await expect(page.getByRole('heading', { name: 'The chronicle ends where announcement begins' })).toBeVisible();
   await page.getByRole('button', { name: 'Continue the chronicle' }).click();
 
   await expect(page).toHaveURL(/\?tour=complete$/);

@@ -163,6 +163,8 @@ Era 9 extends beyond Chronicle Volume 4. Dragonflight and Worldsoul Saga materia
 
 **Completion emphasis:** define a sub-era data pattern before content production. The top selector remains ten eras; a secondary chapter control handles expansion-scale stories inside this era.
 
+**Implemented research baseline:** eight lazy map states across Azeroth, Outland, alternate Draenor, and Argus; ten events; two five-phase strategic dossiers; source-aware causal handoffs; new interpretive coalition visuals; and a ten-pane guided history. The Cataclysm uses a separate major-change terrain state, while every cross-world passage changes worldspace without a geographic bridge. The compact preview uses tour nodes as the MVP's secondary chronological chapter pattern rather than introducing another store or engine concept. See `docs/research/era-8-age-of-adventurers.md` for the source, cartography, visual, and human-review audit.
+
 ## Era 9 — The Modern Cosmic Age
 
 **Historical question:** How do the Fourth War, N'Zoth, the Shadowlands, the Dragon Isles, and the Worldsoul Saga increasingly center Azeroth itself?
@@ -174,6 +176,8 @@ Era 9 extends beyond Chronicle Volume 4. Dragonflight and Worldsoul Saga materia
 **Animated tour spine:** Fourth War escalation → faction-war consequences → N'Zoth threat → Shadowlands transition → return to Azeroth → Dragon Isles awakening → world-soul focus → current Worldsoul chapter → explicit “ongoing record” ending.
 
 **Completion emphasis:** add a source freshness review and an “ongoing” status before publication. Never infer unreleased outcomes.
+
+**Implemented research baseline:** six states across Azeroth and a relational Shadowlands worldspace; nine events; two five-phase strategic dossiers; deliberate visuals for the covenants, dragonflights, Xal'atath, and Khaz Algar's Earthen; and a nine-pane guided history. The era ends with an announcement-only Midnight state whose caption, event, claim, and narration all preserve an unknown outcome. See `docs/research/era-9-modern-cosmic-age.md` for the source-freshness boundary and review checklist.
 
 ## Story-animation authoring template
 

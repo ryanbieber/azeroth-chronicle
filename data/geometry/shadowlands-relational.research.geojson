@@ -1,0 +1,6 @@
+{"type":"FeatureCollection","features":[
+ {"type":"Feature","id":"shadowlands-realms-relational-research","properties":{"name":"Shadowlands relational domain field","contentStatus":"research","styleRole":"influence","geographicCertainty":"unknown"},"geometry":{"type":"Polygon","coordinates":[[[900,500],[800,6100],[9200,6100],[9300,500],[900,500]]]}},
+ {"type":"Feature","id":"covenants-relational-focus-research","properties":{"name":"Covenant relationship focus","contentStatus":"research","styleRole":"site","geographicCertainty":"unknown"},"geometry":{"type":"Point","coordinates":[5000,3400]}},
+ {"type":"Feature","id":"adventurers-shadowlands-focus-research","properties":{"name":"Mortal journey relational focus","contentStatus":"research","styleRole":"site","geographicCertainty":"unknown"},"geometry":{"type":"Point","coordinates":[4300,2700]}},
+ {"type":"Feature","id":"sylvanas-shadowlands-focus-research","properties":{"name":"Sylvanas Shadowlands narrative focus","contentStatus":"research","styleRole":"site","geographicCertainty":"unknown"},"geometry":{"type":"Point","coordinates":[5800,2600]}}
+]}

@@ -1,6 +1,11 @@
 {
   "id": "age-of-adventurers-map-research",
-  "name": "Age of Adventurers — cartography research",
+  "name": "Ahn'Qiraj and the opening adventuring age — interpretive state",
   "worldspaceId": "azeroth",
-  "geometryIds": []
+  "presentation": "terrain",
+  "cartographyLabel": "INTERPRETIVE AHN'QIRAJ WAR-EFFORT STATE",
+  "interpretationNote": "This state places Ahn'Qiraj approximately on an original continental reconstruction; it does not reproduce game coordinates, contribution routes, or raid layouts.",
+  "terrainTextureAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-atlas.research.webp",
+  "terrainHeightAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-height.research.webp",
+  "geometryIds": ["ahnqiraj-focus-research", "adventurers-ahnqiraj-focus-research", "old-gods-ahnqiraj-focus-research"]
 }

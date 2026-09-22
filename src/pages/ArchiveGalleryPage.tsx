@@ -52,10 +52,10 @@ export function ArchiveGalleryPage() {
       <header className="archive-library-hero">
         <div>
           <p className="eyebrow">The illustrated archive</p>
-          <h1>Every record, gathered into one gallery.</h1>
+          <h1>Explore the archive.</h1>
           <p>
-            Browse the atlas’s maps, people, powers, places, battles, and events. Open any record to enlarge its
-            visual treatment and read the history, evidence status, and connections carried with it.
+            Browse maps, characters, places, battles, and events from across Azeroth’s history. Open a record for
+            its artwork, lore, sources, and related entries.
           </p>
         </div>
         <dl aria-label="Archive library summary">

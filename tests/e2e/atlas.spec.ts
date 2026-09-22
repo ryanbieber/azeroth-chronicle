@@ -52,7 +52,7 @@ test('guide advances as one unnumbered sequence with only previous and next', as
   await expect(page.locator('.battle-playback')).toHaveCount(0);
   await expect(page.getByRole('heading', { name: 'The sleeping titan within' })).toBeVisible({ timeout: 42_000 });
   await expect(page.getByRole('progressbar', { name: 'Time until next story point' })).toBeVisible();
-  await expect(page.locator('.story-card button')).toHaveCount(2);
+  await expect(page.locator('.story-card button')).toHaveCount(3);
 
   await page.getByRole('button', { name: 'Next', exact: true }).click();
   await page.getByRole('button', { name: 'Next', exact: true }).click();
@@ -76,6 +76,51 @@ test('guide advances as one unnumbered sequence with only previous and next', as
   }
   await page.getByRole('button', { name: 'Next', exact: true }).click();
   await expect(page.getByRole('button', { name: 'Guided tour' })).toBeVisible();
+});
+
+test('guided voice-over can be turned on, off, and on again across chapters', async ({ page }) => {
+  await page.goto('/map?era=cosmic-origins');
+  await expect(page.getByRole('combobox', { name: 'Choose era' })).toHaveValue('cosmic-origins');
+  await page.getByRole('button', { name: 'Guided tour' }).click();
+  await expect(page.getByRole('heading', { name: 'Before time could be counted' })).toBeVisible();
+
+  const voiceToggle = page.locator('.story-voiceover button');
+  const firstTrackResponse = page.waitForResponse((response) =>
+    response.url().endsWith('/cosmic-origins-story-light-shadow.mp3'));
+  await voiceToggle.click();
+  expect([200, 206]).toContain((await firstTrackResponse).status());
+  await expect(voiceToggle).toHaveAttribute('aria-pressed', 'true');
+  await page.waitForFunction(() => {
+    const audio = document.querySelector('audio');
+    return audio && !audio.paused && audio.readyState >= 3 && audio.currentTime > 0;
+  });
+
+  await voiceToggle.click();
+  await expect(voiceToggle).toHaveAttribute('aria-pressed', 'false');
+  await expect.poll(() => page.locator('audio').evaluate((audio) => ({
+    paused: (audio as HTMLAudioElement).paused,
+    currentTime: (audio as HTMLAudioElement).currentTime,
+  }))).toEqual({ paused: true, currentTime: 0 });
+
+  await voiceToggle.click();
+  await expect(voiceToggle).toHaveAttribute('aria-pressed', 'true');
+  await page.waitForFunction(() => {
+    const audio = document.querySelector('audio');
+    return audio && !audio.paused && audio.currentTime > 0;
+  });
+
+  const nextTrackResponse = page.waitForResponse((response) =>
+    response.url().endsWith('/cosmic-origins-story-universe.mp3'));
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  expect([200, 206]).toContain((await nextTrackResponse).status());
+  await expect(page.getByRole('heading', { name: 'The Great Dark opens' })).toBeVisible();
+  await page.waitForFunction(() => {
+    const audio = document.querySelector('audio');
+    return audio
+      && audio.currentSrc.endsWith('/cosmic-origins-story-universe.mp3')
+      && !audio.paused
+      && audio.currentTime > 0;
+  });
 });
 
 test('the curated Chronicle scope cannot be disabled by visitors', async ({ page }) => {

@@ -741,6 +741,22 @@ describe('lore dataset', () => {
     }
   });
 
+  it('provides one repository-backed AI voice-over for every guided-history pane', () => {
+    const data = loadDataset();
+    const guidedNodeIds = new Set(data.storyGuides.flatMap((guide) => guide.nodeIds));
+    const guidedNodes = data.storyNodes.filter((node) => guidedNodeIds.has(node.id));
+
+    expect(guidedNodes.length).toBeGreaterThan(0);
+    for (const node of guidedNodes) {
+      expect(node.voiceover).toMatchObject({
+        voiceId: 'kokoro-am-onyx',
+        aiGenerated: true,
+      });
+      expect(node.voiceover?.assetPath).toMatch(/^audio\/guided\/.+\.mp3$/);
+      expect(node.voiceover?.durationMs).toBeGreaterThan(10_000);
+    }
+  });
+
   it('can exclude placeholder and research records from a publication build', () => {
     const data = loadDataset({ publishedOnly: true });
     expect(data.eras).toEqual([]);

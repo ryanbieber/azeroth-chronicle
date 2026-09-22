@@ -1,3 +1,5 @@
+import { access } from 'node:fs/promises';
+import { resolve } from 'node:path';
 import { loadDataset } from '../src/lib/lore/loadDataset';
 import { validateDatasetReferences } from '../src/lib/lore/validateDataset';
 import { geometryIds, loadGeometry } from '../src/lib/lore/loadGeometry';
@@ -5,6 +7,20 @@ import { validateGeometry } from '../src/lib/map/geometryAdapter';
 
 const dataset = loadDataset();
 const issues = validateDatasetReferences(dataset, { geometryIds: geometryIds() });
+
+for (const node of dataset.storyNodes) {
+  if (!node.voiceover) continue;
+  const assetPath = resolve('public', node.voiceover.assetPath);
+  try {
+    await access(assetPath);
+  } catch {
+    issues.push({
+      code: 'broken-reference',
+      path: `storyNodes.${node.id}.voiceover.assetPath`,
+      message: `Missing repository voice-over asset: ${node.voiceover.assetPath}`,
+    });
+  }
+}
 
 for (const mapState of dataset.mapStates) {
   const worldspace = dataset.worldspaces.find((item) => item.id === mapState.worldspaceId);

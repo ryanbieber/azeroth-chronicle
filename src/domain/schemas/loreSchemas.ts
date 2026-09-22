@@ -254,6 +254,12 @@ export const storyNodeSchema = z.object({
   title: z.string().min(1),
   narration: z.string().min(1),
   durationMs: z.number().int().positive().optional(),
+  voiceover: z.object({
+    assetPath: z.string().regex(/^audio\/guided\/[a-z0-9-]+\/[a-z0-9-]+\.mp3$/),
+    durationMs: z.number().int().positive(),
+    voiceId: id,
+    aiGenerated: z.literal(true),
+  }).optional(),
   eventIds: z.array(id).optional(),
   battleIds: z.array(id).optional(),
   entityIds: z.array(id).optional(),

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-22T12:20:22.416Z",
+  "disclosure": "AI-generated narration using a stock synthetic voice; not a human performance or a Warcraft performer.",
+  "scope": "Guided-tour StoryNode narration only.",
+  "model": "hexgrad/Kokoro-82M",
+  "modelLicense": "Apache-2.0",
+  "modelSha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "gradioSpace": "hexgrad/Kokoro-TTS",
+  "voice": "am_onyx",
+  "voiceId": "kokoro-am-onyx",
+  "speed": 0.5,
+  "postTempo": 0.9,
+  "referenceAudioUsed": false,
+  "direction": "Original low male chronicler; restrained, ancient, deliberate, and unhurried. Tonal reference only; no imitation of a Warcraft character or performer."
+}

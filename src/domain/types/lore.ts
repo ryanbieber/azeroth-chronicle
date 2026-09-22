@@ -267,12 +267,20 @@ export interface CameraInstruction {
   durationMs?: number;
 }
 
+export interface StoryVoiceover {
+  assetPath: string;
+  durationMs: number;
+  voiceId: EntityId;
+  aiGenerated: true;
+}
+
 export interface StoryNode {
   id: EntityId;
   guideId: EntityId;
   title: string;
   narration: string;
   durationMs?: number;
+  voiceover?: StoryVoiceover;
   eventIds?: EntityId[];
   battleIds?: EntityId[];
   entityIds?: EntityId[];

@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-22T13:53:57.483Z",
+  "productionUse": false,
+  "passage": "Before any world carried mountain, sea, or name, Chronicle begins with a boundless opposition. Light shone without measure, and beyond its reach gathered Shadow—the Void. They were not kingdoms upon a chart, but primordial powers, divided in nature and bound within the first telling of the cosmos.",
+  "referenceAudioUsed": false,
+  "disclosure": "AI-generated voice auditions using stock or text-designed synthetic voices. No Warcraft performer or character voice was cloned.",
+  "candidates": [
+    {
+      "id": "qwen-designed-ancient-scholar",
+      "provider": "Qwen3-TTS VoiceDesign",
+      "space": "Qwen/Qwen3-TTS",
+      "apiName": "/generate_voice_design",
+      "direction": "Resonant ancient scholar; deliberate, lucid, quietly awed.",
+      "file": null,
+      "status": "failed",
+      "error": "You have exceeded your ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens"
+    },
+    {
+      "id": "qwen-designed-sentinel",
+      "provider": "Qwen3-TTS VoiceDesign",
+      "space": "Qwen/Qwen3-TTS",
+      "apiName": "/generate_voice_design",
+      "direction": "Mature sentinel; weighty, humane, protective.",
+      "file": null,
+      "status": "failed",
+      "error": "You have exceeded your ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens"
+    },
+    {
+      "id": "qwen-aiden-measured",
+      "provider": "Qwen3-TTS CustomVoice",
+      "space": "Qwen/Qwen3-TTS",
+      "apiName": "/generate_custom_voice",
+      "direction": "Stock Aiden voice; composed historical guide.",
+      "file": null,
+      "status": "failed",
+      "error": "You have exceeded your ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens"
+    },
+    {
+      "id": "qwen-uncle-fu-elder",
+      "provider": "Qwen3-TTS CustomVoice",
+      "space": "Qwen/Qwen3-TTS",
+      "apiName": "/generate_custom_voice",
+      "direction": "Stock Uncle Fu voice; elder chronicler.",
+      "file": null,
+      "status": "failed",
+      "error": "You have exceeded your ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens"
+    },
+    {
+      "id": "qwen-preset-aiden",
+      "provider": "Qwen3-TTS Preset",
+      "space": "Qwen/Qwen3-TTS-Demo",
+      "apiName": "/tts_interface",
+      "direction": "Aiden preset; direct English narration baseline.",
+      "file": "qwen-preset-aiden.mp3",
+      "bytes": 218061,
+      "sha256": "bea41909b9535853361bb4ef54cb7040b0325bfed4d8e1849ba1bcb7e2b6f325",
+      "status": "generated"
+    },
+    {
+      "id": "qwen-preset-eldric-sage",
+      "provider": "Qwen3-TTS Preset",
+      "space": "Qwen/Qwen3-TTS-Demo",
+      "apiName": "/tts_interface",
+      "direction": "Eldric Sage preset; elder male narration baseline.",
+      "file": "qwen-preset-eldric-sage.mp3",
+      "bytes": 359181,
+      "sha256": "2f34c043f0e1554eeff46e49d65b3793d844fa41fe3e2bac93b3cc49559ee0c2",
+      "status": "generated"
+    },
+    {
+      "id": "parler-resonant-chronicler",
+      "provider": "Parler-TTS",
+      "space": "parler-tts/parler_tts",
+      "apiName": "/gen_tts",
+      "direction": "Deep baritone chronicler; grounded and clean.",
+      "file": "parler-resonant-chronicler.mp3",
+      "bytes": 223821,
+      "sha256": "843080e286b106e32d8ab49c3cb8e0a1a44bb2c9cf26c348b015cc15b71bab71",
+      "status": "generated"
+    },
+    {
+      "id": "parler-distinguished-scholar",
+      "provider": "Parler-TTS",
+      "space": "parler-tts/parler_tts",
+      "apiName": "/gen_tts",
+      "direction": "Distinguished older scholar; precise and restrained.",
+      "file": "parler-distinguished-scholar.mp3",
+      "bytes": 219789,
+      "sha256": "2bf19967bb7d2c77ed8f4935f74b0a33524b533e7181377f2814906d6e5188dc",
+      "status": "generated"
+    },
+    {
+      "id": "kokoro-george-natural",
+      "provider": "Kokoro-82M",
+      "space": "hexgrad/Kokoro-TTS",
+      "apiName": 4,
+      "direction": "George British male preset at natural measured speed.",
+      "file": "kokoro-george-natural.mp3",
+      "bytes": 252045,
+      "sha256": "17101b5606c5362fc8a1c6b899d058dc86e9edb0f96a1a6bb73335c94873636c",
+      "status": "generated"
+    },
+    {
+      "id": "kokoro-lewis-natural",
+      "provider": "Kokoro-82M",
+      "space": "hexgrad/Kokoro-TTS",
+      "apiName": 4,
+      "direction": "Lewis British male preset at natural measured speed.",
+      "file": "kokoro-lewis-natural.mp3",
+      "bytes": 255213,
+      "sha256": "9237cb675b510eca1e2bae384050399615b1114213b9ed7320135a7e4e416a97",
+      "status": "generated"
+    },
+    {
+      "id": "kokoro-adam-natural",
+      "provider": "Kokoro-82M",
+      "space": "hexgrad/Kokoro-TTS",
+      "apiName": 4,
+      "direction": "Adam American male preset at natural measured speed.",
+      "file": "kokoro-adam-natural.mp3",
+      "bytes": 229869,
+      "sha256": "a7606f4b47a41a96e53427977b0ded828fed7b68419e8e2e8b3658f8f9a9dffd",
+      "status": "generated"
+    },
+    {
+      "id": "kokoro-michael-natural",
+      "provider": "Kokoro-82M",
+      "space": "hexgrad/Kokoro-TTS",
+      "apiName": 4,
+      "direction": "Michael American male preset at natural measured speed.",
+      "file": "kokoro-michael-natural.mp3",
+      "bytes": 271629,
+      "sha256": "5a0058d3bf3b633f6c46befc59e17712ce818c988674e9393dfbb7070660f239",
+      "status": "generated"
+    },
+    {
+      "id": "kokoro-fenrir-natural",
+      "provider": "Kokoro-82M",
+      "space": "hexgrad/Kokoro-TTS",
+      "apiName": 4,
+      "direction": "Fenrir American male preset at natural measured speed.",
+      "file": "kokoro-fenrir-natural.mp3",
+      "bytes": 230445,
+      "sha256": "6a57ff6c29dc66bd2b56c9a8062ec25b603384492f2359edaeeeb7b179a1779e",
+      "status": "generated"
+    },
+    {
+      "id": "kokoro-fable-natural",
+      "provider": "Kokoro-82M",
+      "space": "hexgrad/Kokoro-TTS",
+      "apiName": 4,
+      "direction": "Fable British male preset at natural measured speed.",
+      "file": "kokoro-fable-natural.mp3",
+      "bytes": 208557,
+      "sha256": "b76404f6f8054688145be51f3cb61dbd1f883fdfb06f1905822f75b9e7c0f57d",
+      "status": "generated"
+    },
+    {
+      "id": "kokoro-puck-natural",
+      "provider": "Kokoro-82M",
+      "space": "hexgrad/Kokoro-TTS",
+      "apiName": 4,
+      "direction": "Puck American male preset at natural measured speed.",
+      "file": "kokoro-puck-natural.mp3",
+      "bytes": 222381,
+      "sha256": "7d058467e40367258d9738104d2280aac63db92cab78c5b7adcff1ed3dee0b13",
+      "status": "generated"
+    },
+    {
+      "id": "kokoro-daniel-natural",
+      "provider": "Kokoro-82M",
+      "space": "hexgrad/Kokoro-TTS",
+      "apiName": 4,
+      "direction": "Daniel British male preset at natural measured speed.",
+      "file": "kokoro-daniel-natural.mp3",
+      "bytes": 201933,
+      "sha256": "ed0b086fd0339928e7162698e22dc01cede64dc4574002e88ddfcdefc1cc832a",
+      "status": "generated"
+    },
+    {
+      "id": "orpheus-leo",
+      "provider": "Orpheus-TTS",
+      "space": "MohamedRashad/Orpheus-TTS",
+      "apiName": "/generate_speech",
+      "direction": "Leo male preset; lower-variance narrative read.",
+      "file": null,
+      "status": "failed",
+      "error": "You have exceeded your ZeroGPU runs limit. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens"
+    },
+    {
+      "id": "orpheus-dan",
+      "provider": "Orpheus-TTS",
+      "space": "MohamedRashad/Orpheus-TTS",
+      "apiName": "/generate_speech",
+      "direction": "Dan male preset; controlled narrative read.",
+      "file": null,
+      "status": "failed",
+      "error": "You have exceeded your ZeroGPU runs limit. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens"
+    },
+    {
+      "id": "styletts2-male-2",
+      "provider": "StyleTTS2",
+      "space": "Pendrokar/style-tts-2",
+      "apiName": "/synthesize",
+      "direction": "Male preset 2; diffusion-based baseline.",
+      "file": "styletts2-male-2.mp3",
+      "bytes": 242829,
+      "sha256": "cb85fa64b31cf4321d3e3dec5083f76683a1514bba5ab6b7b9bd55971f56ae8e",
+      "status": "generated"
+    },
+    {
+      "id": "styletts2-male-4",
+      "provider": "StyleTTS2",
+      "space": "Pendrokar/style-tts-2",
+      "apiName": "/synthesize",
+      "direction": "Male preset 4; diffusion-based baseline.",
+      "file": "styletts2-male-4.mp3",
+      "bytes": 225261,
+      "sha256": "9ba5267f0c7c1f32e1d8e32dcf585264d68acec7b4b4f0a2b00d45a5df0e7b87",
+      "status": "generated"
+    }
+  ]
+}

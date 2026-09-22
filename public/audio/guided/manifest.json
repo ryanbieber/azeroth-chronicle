@@ -1,953 +1,953 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-22T12:20:22.416Z",
+  "generatedAt": "2026-09-22T14:10:21.315Z",
   "generator": {
     "spaceId": "hexgrad/Kokoro-TTS",
     "functionIndex": 4,
-    "voice": "am_onyx",
-    "voiceId": "kokoro-am-onyx",
-    "speed": 0.5,
-    "postTempo": 0.9,
+    "voice": "bm_lewis",
+    "voiceId": "kokoro-bm-lewis",
+    "speed": 0.9,
+    "postTempo": 1,
     "hardware": "cpu"
   },
   "trackCount": 117,
-  "totalDurationMs": 5225912,
+  "totalDurationMs": 3021075,
   "tracks": [
     {
       "nodeId": "adventurers-story-gates",
       "guideId": "age-of-adventurers-guided-history",
       "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-gates.mp3",
-      "durationMs": 47028,
-      "sha256": "ee8304267a2cc4fe96ddfc75a15d6e66bddc8fa79dcc2257cd7f5f525e6dd352",
-      "bytes": 376749
+      "durationMs": 27975,
+      "sha256": "065ccb362eb0c256347a08cd68da7413a6ed8e4c2ada7090b4f8f2ef67a09410",
+      "bytes": 336717
     },
     {
       "nodeId": "adventurers-story-outland",
       "guideId": "age-of-adventurers-guided-history",
       "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-outland.mp3",
-      "durationMs": 45000,
-      "sha256": "bde5679a6037f82daa56613e07a222d2d61dc98037cdc15fc0a49851ddb47821",
-      "bytes": 360429
+      "durationMs": 25725,
+      "sha256": "61c30e767ac08bdf45887673f86bace0a6afc5c11ac9975c13cc90ab685c2ea5",
+      "bytes": 309645
     },
     {
       "nodeId": "adventurers-story-icecrown",
       "guideId": "age-of-adventurers-guided-history",
       "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-icecrown.mp3",
-      "durationMs": 46167,
-      "sha256": "64a10765610725238323ca30528fe2f2d9afaf87160bf517545ae1edcdf8cf5a",
-      "bytes": 369837
+      "durationMs": 26500,
+      "sha256": "28a514d7c2ec536692ff02968795ad3c5331ef1317cb1daed36cf2b13801d68d",
+      "bytes": 319149
     },
     {
       "nodeId": "adventurers-story-cataclysm",
       "guideId": "age-of-adventurers-guided-history",
       "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-cataclysm.mp3",
-      "durationMs": 48750,
-      "sha256": "00ff94b163d2967caa38e62015a3b987a2b1f99aee6cdffd383699208589951d",
-      "bytes": 390573
+      "durationMs": 28575,
+      "sha256": "8a58a4afa3463ef871b4dccafe3822126c11215544b14c4e576083c0b834f693",
+      "bytes": 343917
     },
     {
       "nodeId": "adventurers-story-pandaria",
       "guideId": "age-of-adventurers-guided-history",
       "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-pandaria.mp3",
-      "durationMs": 49889,
-      "sha256": "5164e316fcce3c17962a50470796aa297a352201a3093c2b3d504f716693feb9",
-      "bytes": 399597
+      "durationMs": 27925,
+      "sha256": "c28639ce3d914d970842c7d46c8388c550371a42d7122f1425e1e26b1a49538b",
+      "bytes": 336141
     },
     {
       "nodeId": "adventurers-story-siege",
       "guideId": "age-of-adventurers-guided-history",
       "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-siege.mp3",
-      "durationMs": 49944,
-      "sha256": "cec7ee3f110f717b27ae3421fc46498e5df727b80fa1bae53f76ed312b1d2299",
-      "bytes": 399981
+      "durationMs": 29125,
+      "sha256": "9879a14f96b24c3d98793fcc53b07eb650473bed234221c23908a2165536d4dc",
+      "bytes": 350541
     },
     {
       "nodeId": "adventurers-story-alternate-draenor",
       "guideId": "age-of-adventurers-guided-history",
       "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-alternate-draenor.mp3",
-      "durationMs": 50333,
-      "sha256": "316dc7414b2a3962d3564fac2e8ea14958142548bca94ac43f05f240a4ac5093",
-      "bytes": 403245
+      "durationMs": 28875,
+      "sha256": "ebda3c7719c3431f8e4293eb71e22088461fa8f7e2b6b78cc4fff1b7082270d2",
+      "bytes": 347661
     },
     {
       "nodeId": "adventurers-story-legion",
       "guideId": "age-of-adventurers-guided-history",
       "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-legion.mp3",
-      "durationMs": 51333,
-      "sha256": "eed126072afdb75c5cd93635cd31c3edbb70ec84a112bc677c1d5d5d858ab939",
-      "bytes": 411117
+      "durationMs": 29925,
+      "sha256": "026c4a76645089104cf68397e6bd3da2b75f538f9a5cce4f0706d9127a03f973",
+      "bytes": 360045
     },
     {
       "nodeId": "adventurers-story-argus",
       "guideId": "age-of-adventurers-guided-history",
       "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-argus.mp3",
-      "durationMs": 49111,
-      "sha256": "1b94c7a62d8e8969e8f81ccc5583ba490f3cf2c9c0544d446a5ac2578527ec6c",
-      "bytes": 393453
+      "durationMs": 28800,
+      "sha256": "0b8ed1952bccd0b46f955a51bda2fefae504ff74b75d1c0dbb130d95567b4c04",
+      "bytes": 346509
     },
     {
       "nodeId": "adventurers-story-wounded-world",
       "guideId": "age-of-adventurers-guided-history",
       "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-wounded-world.mp3",
-      "durationMs": 50639,
-      "sha256": "b7c4fa1754de3a58e67e858fc7f2fd83288cde7e408f150fcc650cf11fcb1f58",
-      "bytes": 405549
+      "durationMs": 29100,
+      "sha256": "b526216eeb43bcc994068f4d9e81f40dd0043e0b1c2858e57976b798310e489c",
+      "bytes": 350253
     },
     {
       "nodeId": "ancient-story-ordered-dawn",
       "guideId": "ancient-civilizations-guided-history",
       "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-ordered-dawn.mp3",
-      "durationMs": 39444,
-      "sha256": "5a8bd430068ef0c39ac5c5c148d64dad109355daf771cb14e74cd8bc1f1d49f1",
-      "bytes": 316077
+      "durationMs": 22800,
+      "sha256": "16890e91750e153b8e729554d6df4e013cb6a86f7089228c3b5f4a08bd52cfec",
+      "bytes": 274509
     },
     {
       "nodeId": "ancient-story-first-troll-powers",
       "guideId": "ancient-civilizations-guided-history",
       "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-first-troll-powers.mp3",
-      "durationMs": 43833,
-      "sha256": "cdb862e3536cc97503553998de059941512346b652a1cd6f2e57cdae786790ef",
-      "bytes": 351213
+      "durationMs": 25100,
+      "sha256": "3794d1626a60e28ba9e157d2fcf3a6da8e5ed0e46624cd139d9d35d6f18b97c8",
+      "bytes": 302157
     },
     {
       "nodeId": "ancient-story-aqir-awaken",
       "guideId": "ancient-civilizations-guided-history",
       "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-aqir-awaken.mp3",
-      "durationMs": 37528,
-      "sha256": "c6bb5f9cc377778a47b5b89a214b6e5bfe46fd3a5cef952d2d87f4ae0434039e",
-      "bytes": 300717
+      "durationMs": 22225,
+      "sha256": "f41c73981431716e422bc3bad4dc641534e72dad95f829f3957955e92100c533",
+      "bytes": 267885
     },
     {
       "nodeId": "ancient-story-empire-zul",
       "guideId": "ancient-civilizations-guided-history",
       "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-empire-zul.mp3",
-      "durationMs": 44778,
-      "sha256": "2f60081fd8ae388a07de7313032ebb6cd39fc6623fcb9c03ad4b3e86acc5a20b",
-      "bytes": 358701
+      "durationMs": 25375,
+      "sha256": "e64e42486720b08a278135454c49022213b4029383ed85b0309145d4e2eab9d8",
+      "bytes": 305613
     },
     {
       "nodeId": "ancient-story-aqir-divided",
       "guideId": "ancient-civilizations-guided-history",
       "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-aqir-divided.mp3",
-      "durationMs": 42278,
-      "sha256": "03e60f7633dfe25ac2736804f5d919409699fd698715737c49b4bec7b68fb589",
-      "bytes": 338733
+      "durationMs": 23475,
+      "sha256": "7865da7e3aac5ad17b79739a0e572d89b02082db5f159790fa57f45a99f84ac5",
+      "bytes": 282861
     },
     {
       "nodeId": "ancient-story-southern-kingdoms",
       "guideId": "ancient-civilizations-guided-history",
       "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-southern-kingdoms.mp3",
-      "durationMs": 42556,
-      "sha256": "a2b64a70b154b6a4147b14369f2aefa64cd845b56b26a2984158838ca33af154",
-      "bytes": 341037
+      "durationMs": 23875,
+      "sha256": "2ec7dc1c181a3b2fdf7110d475bf48ce1e6191c1ca32778aa71d8935591c8532",
+      "bytes": 287469
     },
     {
       "nodeId": "ancient-story-thunder-king",
       "guideId": "ancient-civilizations-guided-history",
       "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-thunder-king.mp3",
-      "durationMs": 37583,
-      "sha256": "c78eaa2acba7e7c472657a415b81e58c03bd17169872093ff3c8456881020ff2",
-      "bytes": 301101
+      "durationMs": 21150,
+      "sha256": "7ef084f1d04768f9cf9299b6016170a5acdb170db5ce97ed175e8fa19e1eba40",
+      "bytes": 254925
     },
     {
       "nodeId": "ancient-story-mogu-dominion",
       "guideId": "ancient-civilizations-guided-history",
       "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-mogu-dominion.mp3",
-      "durationMs": 39639,
-      "sha256": "4b485a8fed86e965547dd15d3c98ce05e9de8284b4ad6670c13c0cfef90dd6a9",
-      "bytes": 317613
+      "durationMs": 22650,
+      "sha256": "a95984616ad3ab2ce1ad79c721554d1113722b9c4fe8a4a272e3fa291a640266",
+      "bytes": 272781
     },
     {
       "nodeId": "ancient-story-kang-revolution",
       "guideId": "ancient-civilizations-guided-history",
       "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-kang-revolution.mp3",
-      "durationMs": 40972,
-      "sha256": "8f414181814425f85fdedef9edf46b27984b355f49a36798b0d2faba8f9a93d0",
-      "bytes": 328365
+      "durationMs": 23750,
+      "sha256": "48e492f2d544de2ee115aabf2e3d22235fa054533551adf927f94f6c27aa5de4",
+      "bytes": 286029
     },
     {
       "nodeId": "ancient-story-people-apart",
       "guideId": "ancient-civilizations-guided-history",
       "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-people-apart.mp3",
-      "durationMs": 39000,
-      "sha256": "1a4b33692b451739b74b86a4197d0d1199d7ed1e8a0a185f5adee7c067014980",
-      "bytes": 312429
+      "durationMs": 22400,
+      "sha256": "6bdf4462a8027f3de7133bb76d0843ed3a2c4c8158e8451652fcfd7d33e2c4fa",
+      "bytes": 269901
     },
     {
       "nodeId": "ancient-story-well-changes-them",
       "guideId": "ancient-civilizations-guided-history",
       "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-well-changes-them.mp3",
-      "durationMs": 45000,
-      "sha256": "e573e1c7caa1ce28817363829cf2c796ca415c2415493599723facaeb95d697b",
-      "bytes": 360429
+      "durationMs": 25900,
+      "sha256": "3362ccfcc19d2c389065f0abe6e2e9b84ed036cae5e043034cefa51588ef824a",
+      "bytes": 311949
     },
     {
       "nodeId": "ancient-story-azshara-dawn",
       "guideId": "ancient-civilizations-guided-history",
       "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-azshara-dawn.mp3",
-      "durationMs": 44833,
-      "sha256": "927dc0a6b6e6179c9d2d17c5d2efc2fd908ccefa5bef95ac1174688dce91fc73",
-      "bytes": 359277
+      "durationMs": 26425,
+      "sha256": "98b3174d4073ce3624bb9debca47f977e1055dc1c0d65bb2163edba055cc3dd1",
+      "bytes": 318285
     },
     {
       "nodeId": "black-empire-story-cosmos",
       "guideId": "black-empire-guided-history",
       "assetPath": "audio/guided/black-empire-guided-history/black-empire-story-cosmos.mp3",
-      "durationMs": 34000,
-      "sha256": "8f66a1d60172ef6f5614bcd280dbe1a480eef64b54d3f3affaba4dd3c4795723",
-      "bytes": 272493
+      "durationMs": 19525,
+      "sha256": "5c7edf5ebee85ca46818bf2f02d96eef08090b96a08ff3978799beaeb279f951",
+      "bytes": 235341
     },
     {
       "nodeId": "black-empire-story-world-soul",
       "guideId": "black-empire-guided-history",
       "assetPath": "audio/guided/black-empire-guided-history/black-empire-story-world-soul.mp3",
-      "durationMs": 31056,
-      "sha256": "4c47d7b219df7e485dec3a16eb23ad531a041c5ab26e3ab142126454b85adc83",
-      "bytes": 248877
+      "durationMs": 17850,
+      "sha256": "ba1060b00d2a2d6d51ea94daf4e6f7a196913bed7c1553097e3eb6bf441838de",
+      "bytes": 215181
     },
     {
       "nodeId": "black-empire-story-elemental-lords",
       "guideId": "black-empire-guided-history",
       "assetPath": "audio/guided/black-empire-guided-history/black-empire-story-elemental-lords.mp3",
-      "durationMs": 30833,
-      "sha256": "695e106b7bb78d4126bcb42707f81e7508faf1ff97a5688a08bc59fb7df4877a",
-      "bytes": 247149
+      "durationMs": 17775,
+      "sha256": "2d526f62c2b30446f7ebd7a7641b61e14dbd5c7a110a2a1220fb037182af4ebf",
+      "bytes": 214317
     },
     {
       "nodeId": "black-empire-story-elemental-wars",
       "guideId": "black-empire-guided-history",
       "assetPath": "audio/guided/black-empire-guided-history/black-empire-story-elemental-wars.mp3",
-      "durationMs": 29833,
-      "sha256": "419efed7f0d6b15f38c4f9ba6881530461c3ad5750de7d0aec646b818059d4de",
-      "bytes": 239277
+      "durationMs": 17325,
+      "sha256": "ca5bec93f9ab6febfcb680d77dbac4b7c2bde0d1a5a1bdf92f6bfbdbdd78bf10",
+      "bytes": 208845
     },
     {
       "nodeId": "black-empire-story-old-gods-arrive",
       "guideId": "black-empire-guided-history",
       "assetPath": "audio/guided/black-empire-guided-history/black-empire-story-old-gods-arrive.mp3",
-      "durationMs": 29389,
-      "sha256": "787483941a7ef6b82e02ae1441bccc8613a35a8122f4bcff5f0290d2f52cbf00",
-      "bytes": 235629
+      "durationMs": 16975,
+      "sha256": "780b9c56b4e53faa5c81b2cb572b5f3fd5b3fb50f652df0b5300e767f1b40df2",
+      "bytes": 204813
     },
     {
       "nodeId": "black-empire-story-servant-races",
       "guideId": "black-empire-guided-history",
       "assetPath": "audio/guided/black-empire-guided-history/black-empire-story-servant-races.mp3",
-      "durationMs": 31972,
-      "sha256": "0cbca0ef69b78e2b94497a5360ab16c99e48e191282d52e7fa5187d02f4af479",
-      "bytes": 256365
+      "durationMs": 17900,
+      "sha256": "ce92fa172e15de835b9a19ff504f0616640015d7f3eecc9077c2b0516fa88247",
+      "bytes": 215757
     },
     {
       "nodeId": "black-empire-story-central-bastion",
       "guideId": "black-empire-guided-history",
       "assetPath": "audio/guided/black-empire-guided-history/black-empire-story-central-bastion.mp3",
-      "durationMs": 35528,
-      "sha256": "f1032044e0c3d3f1e1ba57018ac81ac9b4a483799bfefc699db74492b991743e",
-      "bytes": 284781
+      "durationMs": 20050,
+      "sha256": "3a1292f329b1c69036da9dabd27f265132c0f7f4810cfb60cbba31f129ac1e6f",
+      "bytes": 241677
     },
     {
       "nodeId": "black-empire-story-empire-spreads",
       "guideId": "black-empire-guided-history",
       "assetPath": "audio/guided/black-empire-guided-history/black-empire-story-empire-spreads.mp3",
-      "durationMs": 32250,
-      "sha256": "2b150bb5e2b2b6d75c21c3014aa7816a60974fbb79ea196c7bf29039da30a514",
-      "bytes": 258477
+      "durationMs": 18625,
+      "sha256": "179f952bd57d7fc985eff9ea321e8ec2416d14697ae922e2c2f242bfdeba7797",
+      "bytes": 224685
     },
     {
       "nodeId": "black-empire-story-elemental-resistance",
       "guideId": "black-empire-guided-history",
       "assetPath": "audio/guided/black-empire-guided-history/black-empire-story-elemental-resistance.mp3",
-      "durationMs": 30444,
-      "sha256": "dd8656da24e7623f8d67d63079c3b106bb817fca43b2b557154e198e132e42c6",
-      "bytes": 244077
+      "durationMs": 17325,
+      "sha256": "6afde31d509f0cfdfcdd99553a92b0b4782e4a8cd97a484e1183106c1af52677",
+      "bytes": 208845
     },
     {
       "nodeId": "black-empire-story-dominion",
       "guideId": "black-empire-guided-history",
       "assetPath": "audio/guided/black-empire-guided-history/black-empire-story-dominion.mp3",
-      "durationMs": 30750,
-      "sha256": "d4a11c0a0acec412221e7cd9122266bc83f20143537b5df9b2cd827302db8f89",
-      "bytes": 246573
+      "durationMs": 16975,
+      "sha256": "1da3c1c06220f570fd879eb355ebd3c554b5cf72ab2d4dd84e4d302d1cdc970b",
+      "bytes": 204813
     },
     {
       "nodeId": "cosmic-origins-story-light-shadow",
       "guideId": "cosmic-origins-guided-history",
       "assetPath": "audio/guided/cosmic-origins-guided-history/cosmic-origins-story-light-shadow.mp3",
-      "durationMs": 36139,
-      "sha256": "1d1ff495c374fc673a44d0c4186af6387b5afb80f495635419cd9c40faec4e2c",
-      "bytes": 289581
+      "durationMs": 21175,
+      "sha256": "39b33856199ccaa9afddd3fa40f5a8419f6c2a61ab41c79c8964bab99c551f43",
+      "bytes": 255213
     },
     {
       "nodeId": "cosmic-origins-story-universe",
       "guideId": "cosmic-origins-guided-history",
       "assetPath": "audio/guided/cosmic-origins-guided-history/cosmic-origins-story-universe.mp3",
-      "durationMs": 36222,
-      "sha256": "6a8f264de1a8e9a0268e9ce4799b8f88bb650ac71cc4a2cc96880f9353c9c89a",
-      "bytes": 290349
+      "durationMs": 21475,
+      "sha256": "1302171ceb0ac9cc9c35f456ef4f5e3b1eaa3f8967b190afe317c57ec07edb8e",
+      "bytes": 258669
     },
     {
       "nodeId": "cosmic-origins-story-nether",
       "guideId": "cosmic-origins-guided-history",
       "assetPath": "audio/guided/cosmic-origins-guided-history/cosmic-origins-story-nether.mp3",
-      "durationMs": 37972,
-      "sha256": "d0ad4965560316e35ad006dd4b7471c18a46d03b9e865e1f44729762b0dc8350",
-      "bytes": 304365
+      "durationMs": 21600,
+      "sha256": "3f44db48117e58beec3a58a50d5836a91ba86dba3daaaa6a0813cf9c7b18279c",
+      "bytes": 260109
     },
     {
       "nodeId": "cosmic-origins-story-forces",
       "guideId": "cosmic-origins-guided-history",
       "assetPath": "audio/guided/cosmic-origins-guided-history/cosmic-origins-story-forces.mp3",
-      "durationMs": 40333,
-      "sha256": "3453dc62d7732b14d955b8946d9f2153a83d9f7feded570dbf137f08155b866d",
-      "bytes": 323181
+      "durationMs": 22875,
+      "sha256": "45b35c123c653c5647fd4553e41379b2cad7b575972d29b87a56a8af668369f6",
+      "bytes": 275661
     },
     {
       "nodeId": "cosmic-origins-story-world-souls",
       "guideId": "cosmic-origins-guided-history",
       "assetPath": "audio/guided/cosmic-origins-guided-history/cosmic-origins-story-world-souls.mp3",
-      "durationMs": 38083,
-      "sha256": "0189cf4de486cf74514501a7a20ca2564ef79b6df2370244e8043defb021cc60",
-      "bytes": 305133
+      "durationMs": 21750,
+      "sha256": "c54a79f5ab23d8931f9b39a575e55d81802c4880175ef11fb183c1cd31a5b627",
+      "bytes": 262125
     },
     {
       "nodeId": "cosmic-origins-story-amanthul",
       "guideId": "cosmic-origins-guided-history",
       "assetPath": "audio/guided/cosmic-origins-guided-history/cosmic-origins-story-amanthul.mp3",
-      "durationMs": 34917,
-      "sha256": "d1ed9284bfbe8073f7a4e12aab7ae725762929588e1b78f1578eb5b0765e4112",
-      "bytes": 279789
+      "durationMs": 19700,
+      "sha256": "3b0679539ec207dc2fdb26d8d59c555c495850caf4625945f3e131af3eaf7d8a",
+      "bytes": 237357
     },
     {
       "nodeId": "cosmic-origins-story-pantheon",
       "guideId": "cosmic-origins-guided-history",
       "assetPath": "audio/guided/cosmic-origins-guided-history/cosmic-origins-story-pantheon.mp3",
-      "durationMs": 37444,
-      "sha256": "9b43722b1cb4952d6d115359272968697f9db683367d61fa571527f8a953f979",
-      "bytes": 300141
+      "durationMs": 21250,
+      "sha256": "cb27e68fe9750b84205dca87c96c824a27b05215933f26fdef9a529fd9e6fe17",
+      "bytes": 256077
     },
     {
       "nodeId": "cosmic-origins-story-void-design",
       "guideId": "cosmic-origins-guided-history",
       "assetPath": "audio/guided/cosmic-origins-guided-history/cosmic-origins-story-void-design.mp3",
-      "durationMs": 34917,
-      "sha256": "2e1f68b5e84a93de207155bb3ed7b4e109d8ae829f1a416f93ee190e57807dcc",
-      "bytes": 279789
+      "durationMs": 20275,
+      "sha256": "b2353cf14a5007ee5f610ab06324652395c771de6b411d2e32debd922435980e",
+      "bytes": 244269
     },
     {
       "nodeId": "cosmic-origins-story-azeroth",
       "guideId": "cosmic-origins-guided-history",
       "assetPath": "audio/guided/cosmic-origins-guided-history/cosmic-origins-story-azeroth.mp3",
-      "durationMs": 38361,
-      "sha256": "7e4f63437afd63ed288cff3d9c36db25ebbb3e6be3804661e46ff6c0140e21fb",
-      "bytes": 307437
+      "durationMs": 22250,
+      "sha256": "74ebd3627b8404d38e36d29030dad2a167c360e7680ce1d115bd635621e698a4",
+      "bytes": 268173
     },
     {
       "nodeId": "long-vigil-story-broken-shores",
       "guideId": "long-vigil-new-kingdoms-guided-history",
       "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-broken-shores.mp3",
-      "durationMs": 44750,
-      "sha256": "a6507924a551270881b817b12233d7d2ef73146213054b4028b0feeee91a9dcf",
-      "bytes": 358509
+      "durationMs": 25850,
+      "sha256": "712f29cd591111a65456e42236624c4292ee4976790f5920f3335de43b630d49",
+      "bytes": 311373
     },
     {
       "nodeId": "long-vigil-story-second-well",
       "guideId": "long-vigil-new-kingdoms-guided-history",
       "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-second-well.mp3",
-      "durationMs": 47056,
-      "sha256": "3ec816380ff696c940d952c80c4d375d8d17600933adb7600fa49ac2d1346bf2",
-      "bytes": 376941
+      "durationMs": 28000,
+      "sha256": "1a10d7c154e45b8a8cb5c471c620cb6bb852a842d9ff7423aa5c32cf669e7e23",
+      "bytes": 337005
     },
     {
       "nodeId": "long-vigil-story-world-tree",
       "guideId": "long-vigil-new-kingdoms-guided-history",
       "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-world-tree.mp3",
-      "durationMs": 48194,
-      "sha256": "21b543bdaa7e4ca20f69b35fceee25f4ed012cbaeeab575f5a3592c2486d541f",
-      "bytes": 386157
+      "durationMs": 27700,
+      "sha256": "07ebf67554fc7034f42e6f6237c28190dbc9a14ee8d06c52fe5785b27a2d75ad",
+      "bytes": 333549
     },
     {
       "nodeId": "long-vigil-story-watch-begins",
       "guideId": "long-vigil-new-kingdoms-guided-history",
       "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-watch-begins.mp3",
-      "durationMs": 48778,
-      "sha256": "b8a1fd89bded3f2e8e92ada36678c958d05505653aa6ddbbaebe6863c512e2a7",
-      "bytes": 390765
+      "durationMs": 28400,
+      "sha256": "c5cff3a23c95a7dda974ed00ed182965ee6534dbba3bd62b85e2e8d3134f502e",
+      "bytes": 341901
     },
     {
       "nodeId": "long-vigil-story-exile-decreed",
       "guideId": "long-vigil-new-kingdoms-guided-history",
       "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-exile-decreed.mp3",
-      "durationMs": 48944,
-      "sha256": "00650a8e41c5bb4d977aae937364523e53e2f178d7ca382cb89e186d7a198587",
-      "bytes": 392109
+      "durationMs": 28350,
+      "sha256": "7ce0b252bad5d957d5e296929e116057198aa20c8a98a914ef5871fd76f2d551",
+      "bytes": 341325
     },
     {
       "nodeId": "long-vigil-story-crossing-east",
       "guideId": "long-vigil-new-kingdoms-guided-history",
       "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-crossing-east.mp3",
-      "durationMs": 49250,
-      "sha256": "7dc2bdac637acc64e6cbee83103f0885b8cd3788c131da91136a9948f6a3fa48",
-      "bytes": 394605
+      "durationMs": 28775,
+      "sha256": "bc5d634dbcf538f80727a08d311805bf5c31f48f025f62ae6406a367f5076f42",
+      "bytes": 346221
     },
     {
       "nodeId": "long-vigil-story-new-sun",
       "guideId": "long-vigil-new-kingdoms-guided-history",
       "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-new-sun.mp3",
-      "durationMs": 49722,
-      "sha256": "913fca91b771713e82f636620ca4041745aa2f83bd62670f2dad00e4339da412",
-      "bytes": 398253
+      "durationMs": 28600,
+      "sha256": "9fde03cdfc92e9fac72b8b08801098447cd05507bb2cc5ca306b223c1f94e934",
+      "bytes": 344205
     },
     {
       "nodeId": "long-vigil-story-thoradin-unites",
       "guideId": "long-vigil-new-kingdoms-guided-history",
       "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-thoradin-unites.mp3",
-      "durationMs": 50611,
-      "sha256": "07f7d14e81ec9a4ae4dbf3a6b9cdccc8859a6b4742b8ac348bcb5d9d298556f1",
-      "bytes": 405357
+      "durationMs": 29150,
+      "sha256": "dc5bb2da649f4b642ac32ff8945db5a4096959c4c7ae7d750a76672d16a385d5",
+      "bytes": 350829
     },
     {
       "nodeId": "long-vigil-story-alliance-of-need",
       "guideId": "long-vigil-new-kingdoms-guided-history",
       "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-alliance-of-need.mp3",
-      "durationMs": 52444,
-      "sha256": "680f2f5988a3acd4b9ab606989783e2bcde4a152331a3b99e55514f490265831",
-      "bytes": 420141
+      "durationMs": 29975,
+      "sha256": "74e521af089ac5a133728a77a04c66bf1adc533ad413c0607d534a9b563c74c6",
+      "bytes": 360621
     },
     {
       "nodeId": "long-vigil-story-fire-in-forest",
       "guideId": "long-vigil-new-kingdoms-guided-history",
       "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-fire-in-forest.mp3",
-      "durationMs": 52694,
-      "sha256": "b31e1ca02fbd362b59f6bf40e7162a85e5b92f65635f3ea58719bddc956d5293",
-      "bytes": 422061
+      "durationMs": 30775,
+      "sha256": "bf65becd2ed9673e8eb2c7780144ba93166004f451ffb61d4a2389e22c88f927",
+      "bytes": 370413
     },
     {
       "nodeId": "long-vigil-story-seven-crowns",
       "guideId": "long-vigil-new-kingdoms-guided-history",
       "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-seven-crowns.mp3",
-      "durationMs": 54722,
-      "sha256": "e701ef2f54ca583ca7a02ec971bad113c4fa7d0ccfa4b3492491cbacf211c4d2",
-      "bytes": 438381
+      "durationMs": 31750,
+      "sha256": "d6bc7712c388145c87586585000568048f38ab5b039c0337b7fbc4164e68ea6b",
+      "bytes": 381933
     },
     {
       "nodeId": "long-vigil-story-three-hammers",
       "guideId": "long-vigil-new-kingdoms-guided-history",
       "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-three-hammers.mp3",
-      "durationMs": 50333,
-      "sha256": "8f0c0da7f0daeaa64f7cdda0e12b4a7f4cb416263f594ff3eaecc64653a7b7d8",
-      "bytes": 403245
+      "durationMs": 29600,
+      "sha256": "44c1fc0f5d80d8ca98e6faa651803092f539ccded5f93f115e9dd04c20fd24ef",
+      "bytes": 356301
     },
     {
       "nodeId": "long-vigil-story-firelord-returns",
       "guideId": "long-vigil-new-kingdoms-guided-history",
       "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-firelord-returns.mp3",
-      "durationMs": 53667,
-      "sha256": "783746ffa44f1cdb0c28d43e36e7f050526ac0c7cf9569a1f751864a7f437630",
-      "bytes": 429933
+      "durationMs": 30500,
+      "sha256": "c002018bb416db37463c4166047cf2c3b21023ba0ccfb2602b059c72820c8cdb",
+      "bytes": 366957
     },
     {
       "nodeId": "long-vigil-story-world-before-gate",
       "guideId": "long-vigil-new-kingdoms-guided-history",
       "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-world-before-gate.mp3",
-      "durationMs": 53694,
-      "sha256": "e9453700f0937d0f7705b75b690dc09e48133ea1d8fcf651a25228724c72b98b",
-      "bytes": 430125
+      "durationMs": 31400,
+      "sha256": "7c104f8561c034d69da29992e4bc585218f8e21954ab2302fe7eefc8189214c0",
+      "bytes": 377901
     },
     {
       "nodeId": "modern-story-fourth-war",
       "guideId": "modern-cosmic-age-guided-history",
       "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-fourth-war.mp3",
-      "durationMs": 46083,
-      "sha256": "c42f5403084d931fb5cb1e2b649586a5698ec979d4dcb7c9c127da4474311d38",
-      "bytes": 369261
+      "durationMs": 26625,
+      "sha256": "1f9a14596f69295dff2e7e7b9b662abfbeba68b44d18e0e82884052d884c8868",
+      "bytes": 320589
     },
     {
       "nodeId": "modern-story-war-ends",
       "guideId": "modern-cosmic-age-guided-history",
       "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-war-ends.mp3",
-      "durationMs": 47222,
-      "sha256": "261a42ec5577f935ffb88940f82918f34f13b664a31cf49bb52e5fff1edf8c4a",
-      "bytes": 378285
+      "durationMs": 27725,
+      "sha256": "3aae47fb5491309f24ec4ba79acb6fe4e440f2585710627e43f8840ed289d005",
+      "bytes": 333837
     },
     {
       "nodeId": "modern-story-nzoth",
       "guideId": "modern-cosmic-age-guided-history",
       "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-nzoth.mp3",
-      "durationMs": 48917,
-      "sha256": "096885e7eb3c7bc492cbd744f789339e6706bab304eb2f8264a36b207df75df7",
-      "bytes": 391917
+      "durationMs": 28275,
+      "sha256": "144a1ccc581c0762432182535277013300d002ba4e4bbe705b3d5fed979fae60",
+      "bytes": 340461
     },
     {
       "nodeId": "modern-story-nzoth-falls",
       "guideId": "modern-cosmic-age-guided-history",
       "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-nzoth-falls.mp3",
-      "durationMs": 48806,
-      "sha256": "cfb87eac3588d20be92859cd0f7ff91f5679b52e5f5d56ced179dd9e9961a391",
-      "bytes": 390957
+      "durationMs": 28200,
+      "sha256": "06dffc05ff992d9fc11166ee2e26f89462224b066049c2f39fda7b7881495121",
+      "bytes": 339309
     },
     {
       "nodeId": "modern-story-veil",
       "guideId": "modern-cosmic-age-guided-history",
       "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-veil.mp3",
-      "durationMs": 51194,
-      "sha256": "9f66d4e7d26783beac7edd213ff0d15b0bd6a17fbfe02bbceaae340fbfbe39d0",
-      "bytes": 410157
+      "durationMs": 29775,
+      "sha256": "1612e23cb80a062d9354e01289621e5ee802bc5dc5b5cc385849b45341f58af4",
+      "bytes": 358317
     },
     {
       "nodeId": "modern-story-covenants",
       "guideId": "modern-cosmic-age-guided-history",
       "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-covenants.mp3",
-      "durationMs": 48167,
-      "sha256": "5180f879f69035fdaaacd537f4929f6e2cfb11f62feecdc72ac05288c2c865e5",
-      "bytes": 385773
+      "durationMs": 27625,
+      "sha256": "28db2f2bce694af4ca3ced61544cf727946b86dec3d80256a8c7148980561305",
+      "bytes": 332685
     },
     {
       "nodeId": "modern-story-dragon-isles",
       "guideId": "modern-cosmic-age-guided-history",
       "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-dragon-isles.mp3",
-      "durationMs": 52861,
-      "sha256": "28ea921e8a3b4b817955eab14912522a4f0b074c9482943dae47a2909a567a4f",
-      "bytes": 423405
+      "durationMs": 30425,
+      "sha256": "cd358c2a718b426ce66d7184bc30231f521eae3368a3e54551c35e0eff84e139",
+      "bytes": 366093
     },
     {
       "nodeId": "modern-story-war-within",
       "guideId": "modern-cosmic-age-guided-history",
       "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-war-within.mp3",
-      "durationMs": 52250,
-      "sha256": "baaa06ccd7d24080b4ed5b52f9702951a88ee70e9d84212da9b7e3271b33276a",
-      "bytes": 418413
+      "durationMs": 29600,
+      "sha256": "19a3831e8528b4054a9940cc0a1955352ffcd359bd9dc39e407bfaf5c8d24371",
+      "bytes": 356301
     },
     {
       "nodeId": "modern-story-midnight-horizon",
       "guideId": "modern-cosmic-age-guided-history",
       "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-midnight-horizon.mp3",
-      "durationMs": 49000,
-      "sha256": "2ad59d5e5881246be8fda5fc7293c7f2017ebefc9444baf7fa8158ceb7716f2c",
-      "bytes": 392493
+      "durationMs": 29175,
+      "sha256": "d519cfd8c98fa018268203be93ee0848c44b23e35468c4b98b4a2f2aa040ed9a",
+      "bytes": 351117
     },
     {
       "nodeId": "ordering-story-inherited-shadow",
       "guideId": "ordering-of-azeroth-guided-history",
       "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-inherited-shadow.mp3",
-      "durationMs": 40972,
-      "sha256": "1f01196b2d734cd2b14b3128bdf71dae56991c071aa0f46df5126070f173cdec",
-      "bytes": 328365
+      "durationMs": 22850,
+      "sha256": "523b25f7735f1455213890a874293831e10f62ae2a2b75959aabc536faec1cde",
+      "bytes": 275373
     },
     {
       "nodeId": "ordering-story-aggramar-discovers",
       "guideId": "ordering-of-azeroth-guided-history",
       "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-aggramar-discovers.mp3",
-      "durationMs": 39778,
-      "sha256": "91a0a3064898cb05d935fb32e6f3889e8cfae4fea2d664cd60835dc143872770",
-      "bytes": 318765
+      "durationMs": 23075,
+      "sha256": "15964ce0c7e3d1727e73b40ebf4494a739f3bd74a03053dab77275f4fd45547f",
+      "bytes": 277965
     },
     {
       "nodeId": "ordering-story-yshaarj-wound",
       "guideId": "ordering-of-azeroth-guided-history",
       "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-yshaarj-wound.mp3",
-      "durationMs": 41083,
-      "sha256": "b88201cbcf93a48e63400d37bc6d13b63fd2f4ccb776ae1d93bc2dc8c522b02d",
-      "bytes": 329133
+      "durationMs": 23950,
+      "sha256": "501daa498e8263821dc10f346ac72e5af23fd9510222b968d1306f59b998da49",
+      "bytes": 288333
     },
     {
       "nodeId": "ordering-story-titan-forged",
       "guideId": "ordering-of-azeroth-guided-history",
       "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-titan-forged.mp3",
-      "durationMs": 39750,
-      "sha256": "7790d4cf666427f8e41926d13a68a31514d0ca31cccca70b49ff0c4762f5d45f",
-      "bytes": 318573
+      "durationMs": 22375,
+      "sha256": "96c9a544b830fb565dfd512c7d61166e8a02e9d31336fca4433e4397b8d17074",
+      "bytes": 269613
     },
     {
       "nodeId": "ordering-story-keepers",
       "guideId": "ordering-of-azeroth-guided-history",
       "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-keepers.mp3",
-      "durationMs": 40167,
-      "sha256": "468fc4d29bdaa18e9dcd8712f2e2c1ddabe7bb8dadb3d1c263f0bada597bca00",
-      "bytes": 321837
+      "durationMs": 22875,
+      "sha256": "c58c8f4d7856733e4113cbfb8477d0557130c1e8b7d1115067fa56898013cc17",
+      "bytes": 275661
     },
     {
       "nodeId": "ordering-story-empire-falls",
       "guideId": "ordering-of-azeroth-guided-history",
       "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-empire-falls.mp3",
-      "durationMs": 42333,
-      "sha256": "edde39bac6015941c87dff758135d260ace21e6faaedb483c3d7c7268937d736",
-      "bytes": 339117
+      "durationMs": 23850,
+      "sha256": "93c7ff0da4549e1393d27293d8449b7bb95afbf52e52c5aca8cc0b7e008bb28f",
+      "bytes": 287181
     },
     {
       "nodeId": "ordering-story-old-gods-contained",
       "guideId": "ordering-of-azeroth-guided-history",
       "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-old-gods-contained.mp3",
-      "durationMs": 38972,
-      "sha256": "d2817ece6cc659dc227d4c91bafd6c4f4ea922670389054f552b54a93b31b2f1",
-      "bytes": 312237
+      "durationMs": 22275,
+      "sha256": "bc99b049f9aa66ad8b6f7277e7cc9d34084c7a8e822cf2a0cb27b59dacc4d9a1",
+      "bytes": 268461
     },
     {
       "nodeId": "ordering-story-well-eternity",
       "guideId": "ordering-of-azeroth-guided-history",
       "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-well-eternity.mp3",
-      "durationMs": 37083,
-      "sha256": "c653b3276d4388e386ae1b19cfc529404a043838a82160c07d362c671ebd9005",
-      "bytes": 297261
+      "durationMs": 21875,
+      "sha256": "427299b3b62f774eef17ab9c505ab5e727286df55a96fed9fd33692cde999e3c",
+      "bytes": 263565
     },
     {
       "nodeId": "ordering-story-world-forges",
       "guideId": "ordering-of-azeroth-guided-history",
       "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-world-forges.mp3",
-      "durationMs": 36333,
-      "sha256": "cbf8c601daba33e7f2b1426922a7f8381dffe66c95b93fe8655a3ad93bcfd1d8",
-      "bytes": 291117
+      "durationMs": 21250,
+      "sha256": "f5a72a5fd9300467e64e5eb1ab002259769db227b59e4286544216bbef6b89f7",
+      "bytes": 256077
     },
     {
       "nodeId": "ordering-story-world-shaped",
       "guideId": "ordering-of-azeroth-guided-history",
       "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-world-shaped.mp3",
-      "durationMs": 43417,
-      "sha256": "55a250fac40097f5140070415ac2d893929918e4df488acdce45d87cc30f00c7",
-      "bytes": 347757
+      "durationMs": 25425,
+      "sha256": "2c12e6c9e732e97d620fc9b928ad07a7dc5c28fb5ed3fb9b92068a0e1ed650ef",
+      "bytes": 306189
     },
     {
       "nodeId": "ordering-story-pantheon-departs",
       "guideId": "ordering-of-azeroth-guided-history",
       "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-pantheon-departs.mp3",
-      "durationMs": 44056,
-      "sha256": "2949852875a387c0057c03ba517a01d2e215c92480b2ebef7ca8d6be1bfa6a65",
-      "bytes": 352941
+      "durationMs": 25575,
+      "sha256": "11eddb7ed2f5f55b9f576157ef998985245f2eeee22f8e6bf20df212f8db7df0",
+      "bytes": 307917
     },
     {
       "nodeId": "horde-rise-story-two-peoples",
       "guideId": "rise-of-the-horde-guided-history",
       "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-two-peoples.mp3",
-      "durationMs": 48361,
-      "sha256": "0734916317ea8540f3d586e445f6c1633327e5f2d23f1b3831187a10bdaa92f6",
-      "bytes": 387309
+      "durationMs": 28075,
+      "sha256": "5d5fab8e6c055468b4622955c54ad5e91aac9f9e15adbd705425a032fe59b2cf",
+      "bytes": 337869
     },
     {
       "nodeId": "horde-rise-story-deceiver-finds-draenor",
       "guideId": "rise-of-the-horde-guided-history",
       "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-deceiver-finds-draenor.mp3",
-      "durationMs": 46306,
-      "sha256": "b32f9ba53cd541e8c0a542ace713377cb9576e8fb854b7dab91a02f19c49dfec",
-      "bytes": 370989
+      "durationMs": 26675,
+      "sha256": "3c0d89b35727e0ae4ee00ebc395888ad37ae4c380e4d5ca9fc76b7b4497eaf77",
+      "bytes": 321165
     },
     {
       "nodeId": "horde-rise-story-nerzhul-deceived",
       "guideId": "rise-of-the-horde-guided-history",
       "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-nerzhul-deceived.mp3",
-      "durationMs": 50306,
-      "sha256": "57060cedc965d8c3eb87b9004760ebada009d9730bd78901998c421aba45d95c",
-      "bytes": 402861
+      "durationMs": 29350,
+      "sha256": "cd1a3cbf84d7897c10925f2b61ac97dcb49a48996debd3b9fb348452a7b8f5e6",
+      "bytes": 353133
     },
     {
       "nodeId": "horde-rise-story-shadow-council",
       "guideId": "rise-of-the-horde-guided-history",
       "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-shadow-council.mp3",
-      "durationMs": 51222,
-      "sha256": "6b230df4e90e163c54034fe29d7c5d3d0b8e8b8a7ea1c26c3f5657d2cf1c9a81",
-      "bytes": 410349
+      "durationMs": 29950,
+      "sha256": "a257405a53fd17623d97d77fa1e589b7740a7dcc87a8ee7850cb5d7a3ff5c451",
+      "bytes": 360333
     },
     {
       "nodeId": "horde-rise-story-blood-pact",
       "guideId": "rise-of-the-horde-guided-history",
       "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-blood-pact.mp3",
-      "durationMs": 49583,
-      "sha256": "e925245937832a3b75327914b61ee1fb486aa0e90d5c456c2a1c815fc2bed79b",
-      "bytes": 397101
+      "durationMs": 29125,
+      "sha256": "05fb5aae236c4212d9a2d6d1809e61e1a114d67c88a9427d142cb127d45621f4",
+      "bytes": 350541
     },
     {
       "nodeId": "horde-rise-story-shattrath-falls",
       "guideId": "rise-of-the-horde-guided-history",
       "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-shattrath-falls.mp3",
-      "durationMs": 49583,
-      "sha256": "83ce244307e6534afe2b98b46ef66942fa455537e5f319896aeacb040f4b9eb6",
-      "bytes": 397101
+      "durationMs": 28800,
+      "sha256": "d53133cbd12bf814868537f3567339287b4207a4b2b84b824c6ba75b6f4cd875",
+      "bytes": 346509
     },
     {
       "nodeId": "horde-rise-story-gate-between-worlds",
       "guideId": "rise-of-the-horde-guided-history",
       "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-gate-between-worlds.mp3",
-      "durationMs": 51500,
-      "sha256": "241dd9c0b737c1e5345dc7b36f9433f3146e070356c3f12c192969e9cea32433",
-      "bytes": 412461
+      "durationMs": 30375,
+      "sha256": "db933cd09f679b5188b179ccc7f18c7d9ff6210a1f6b8f24d00a6e2f829c1b47",
+      "bytes": 365517
     },
     {
       "nodeId": "horde-rise-story-first-war",
       "guideId": "rise-of-the-horde-guided-history",
       "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-first-war.mp3",
-      "durationMs": 51972,
-      "sha256": "6cdb1c8614ed32bb29ea31f6e497ab970763f4395ce75b94dd569214567c906e",
-      "bytes": 416301
+      "durationMs": 29750,
+      "sha256": "065972113f31393ac101b8f7e81e1c3be41cb2957b3e94f16834d268493cf217",
+      "bytes": 358029
     },
     {
       "nodeId": "horde-rise-story-orgrim-rises",
       "guideId": "rise-of-the-horde-guided-history",
       "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-orgrim-rises.mp3",
-      "durationMs": 51722,
-      "sha256": "d9511c449792292b7ecb9abbd14487cb0b178915e6c30040b7b03a70bd11a84d",
-      "bytes": 414381
+      "durationMs": 29750,
+      "sha256": "6ee3cf38d172b8f6f7709cdb65bceee1bd33602e16b7f2c815c503082348c5ed",
+      "bytes": 358029
     },
     {
       "nodeId": "horde-rise-story-stormwind-falls",
       "guideId": "rise-of-the-horde-guided-history",
       "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-stormwind-falls.mp3",
-      "durationMs": 47833,
-      "sha256": "35b5c749f694c58c2f1a4e9a5ca880591b5ca160364c3303744139ba6fe5ca7c",
-      "bytes": 383085
+      "durationMs": 28525,
+      "sha256": "e622b19a999f987d462e8277106f519d50139b7d1739ac4379d68d9a71664aa3",
+      "bytes": 343341
     },
     {
       "nodeId": "horde-rise-story-alliance-forms",
       "guideId": "rise-of-the-horde-guided-history",
       "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-alliance-forms.mp3",
-      "durationMs": 49639,
-      "sha256": "1ff1d8411ff7ac9dfc0b15ccbb5f4c7924c149e17fa898894609dfc735c39fbc",
-      "bytes": 397677
+      "durationMs": 29575,
+      "sha256": "3ba3ae891d20dc1c427318f063c411f59939046d2ad07409ffe1f22da931a75e",
+      "bytes": 356013
     },
     {
       "nodeId": "horde-rise-story-second-war",
       "guideId": "rise-of-the-horde-guided-history",
       "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-second-war.mp3",
-      "durationMs": 49694,
-      "sha256": "874b22b33c5d4c807b43f2bd8fbed1c6f47cd4f3692276e41ad3bc0248819149",
-      "bytes": 398061
+      "durationMs": 28525,
+      "sha256": "4d848ca1902020e0137b400ac7209f961f169b8e2587c3a232288f37c4225acd",
+      "bytes": 343341
     },
     {
       "nodeId": "horde-rise-story-broken-purpose",
       "guideId": "rise-of-the-horde-guided-history",
       "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-broken-purpose.mp3",
-      "durationMs": 50917,
-      "sha256": "8e55e3823802a64397e6fa7f8e00d63c15f5fe03c7a781ae02383b3b1e6065bd",
-      "bytes": 407853
+      "durationMs": 28825,
+      "sha256": "4e03c37d1266befc970b715fd485467ffd81ed925acc67b008fe580f3ce159a9",
+      "bytes": 347085
     },
     {
       "nodeId": "horde-rise-story-blackrock-rally",
       "guideId": "rise-of-the-horde-guided-history",
       "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-blackrock-rally.mp3",
-      "durationMs": 48389,
-      "sha256": "cd45851ee1fa96cdb741f2746030670e9a6b9004f30c7d174f02b9b63ee3a780",
-      "bytes": 387693
+      "durationMs": 28350,
+      "sha256": "fc491d02e845c1274bc72caa89f9ba8c49bc0c72b628a05e234551115c90312d",
+      "bytes": 341325
     },
     {
       "nodeId": "horde-rise-story-gate-broken",
       "guideId": "rise-of-the-horde-guided-history",
       "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-gate-broken.mp3",
-      "durationMs": 51806,
-      "sha256": "39a6e1276a3b0950346169cf4747b4043cceb4fed239641977fbbf1c2f31ad66",
-      "bytes": 414957
+      "durationMs": 30350,
+      "sha256": "2c10d77a2a88c2131638f02dd664109089215d1e975114f6304bf69e58a99671",
+      "bytes": 365229
     },
     {
       "nodeId": "third-war-story-after-the-camps",
       "guideId": "third-war-frozen-throne-guided-history",
       "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-after-the-camps.mp3",
-      "durationMs": 48611,
-      "sha256": "62a596e8cc5a7aa28e1a0d858dd56bb9623ad1e3555e25559d130956597972d3",
-      "bytes": 389421
+      "durationMs": 28350,
+      "sha256": "64a32540777604fffe392dcb7458dd41a44acc2ccfd94b7ce32c4cc27fff5096",
+      "bytes": 341325
     },
     {
       "nodeId": "third-war-story-grain-and-shadow",
       "guideId": "third-war-frozen-throne-guided-history",
       "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-grain-and-shadow.mp3",
-      "durationMs": 49000,
-      "sha256": "30189ef07c9bcf9aee10aa3a8d17a200f5d04c192f3d918a06fc64702edc1f1e",
-      "bytes": 392493
+      "durationMs": 28600,
+      "sha256": "ea5c4efbfaf842a1c310ff9cb81c06e5cddd8e8174bee570d3f9c117d34b30b9",
+      "bytes": 344205
     },
     {
       "nodeId": "third-war-story-stratholme-choice",
       "guideId": "third-war-frozen-throne-guided-history",
       "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-stratholme-choice.mp3",
-      "durationMs": 47222,
-      "sha256": "6d0551ed9f7c55a0050fd627f450cd19b6f7a536410faf575984097759f65fbb",
-      "bytes": 378285
+      "durationMs": 27825,
+      "sha256": "37eb441e2e496c9eab77ff35b04958eff7c5a0e0235b86db5e74163fc29a89d9",
+      "bytes": 334989
     },
     {
       "nodeId": "third-war-story-northern-blade",
       "guideId": "third-war-frozen-throne-guided-history",
       "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-northern-blade.mp3",
-      "durationMs": 47000,
-      "sha256": "bdec3fcfb3142e18c023e9bf64e6a1008327594629b4d1a9cf2556e822172bd0",
-      "bytes": 376557
+      "durationMs": 27400,
+      "sha256": "605af39611330551383f24755fde6582d4aa1ce2c1012d1fef6b6fe802397786",
+      "bytes": 329805
     },
     {
       "nodeId": "third-war-story-lordaeron-falls",
       "guideId": "third-war-frozen-throne-guided-history",
       "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-lordaeron-falls.mp3",
-      "durationMs": 49861,
-      "sha256": "7695c6f3e06a51f21aa5999dc3d714beebe6fd0905f92b2398ec8c27b29b4a46",
-      "bytes": 399405
+      "durationMs": 29550,
+      "sha256": "3cca563285a35202bb67230a8fc610f5ef62f5c340e3bdcd748a85c66e44ae07",
+      "bytes": 355725
     },
     {
       "nodeId": "third-war-story-sunwell-darkens",
       "guideId": "third-war-frozen-throne-guided-history",
       "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-sunwell-darkens.mp3",
-      "durationMs": 53278,
-      "sha256": "740690e6863262005f372b940d3954f8ae071f8eb3fa15a30e2eee22b8d020c6",
-      "bytes": 426669
+      "durationMs": 30575,
+      "sha256": "7415e986acbf6e62bec147aca1e58831f4b10932eed1c47f5392adbcb481895d",
+      "bytes": 367821
     },
     {
       "nodeId": "third-war-story-legion-returns",
       "guideId": "third-war-frozen-throne-guided-history",
       "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-legion-returns.mp3",
-      "durationMs": 50417,
-      "sha256": "21aecdd00a1207cecd6aa82438fed88104e6c74f465b9063dffb03fe75a26d9f",
-      "bytes": 403821
+      "durationMs": 29450,
+      "sha256": "95169d5012ca9a1a5431da6dfc34edb943bb93b29e9d24ed55650dfe654e5ca8",
+      "bytes": 354573
     },
     {
       "nodeId": "third-war-story-westward-crossing",
       "guideId": "third-war-frozen-throne-guided-history",
       "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-westward-crossing.mp3",
-      "durationMs": 50889,
-      "sha256": "f4a9ffa27bcef9eccfd2bf5e26a778ee7a3126096d8b88132289b9924a7df24e",
-      "bytes": 407661
+      "durationMs": 29550,
+      "sha256": "30ca98e4c769d6dd769a3b5b52fa62435abd471a43b63b046d1c8045a05d1177",
+      "bytes": 355725
     },
     {
       "nodeId": "third-war-story-bond-is-broken",
       "guideId": "third-war-frozen-throne-guided-history",
       "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-bond-is-broken.mp3",
-      "durationMs": 50556,
-      "sha256": "109406021e0d76bca3daebc4843f39ca8f160edb3ff15b6a5efe617be6c5f299",
-      "bytes": 404973
+      "durationMs": 29300,
+      "sha256": "428b98d2aa73108f7e1ae4db0a636fac8f63142606ea7f0c5f98e9ff14a646c7",
+      "bytes": 352557
     },
     {
       "nodeId": "third-war-story-unlikely-defense",
       "guideId": "third-war-frozen-throne-guided-history",
       "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-unlikely-defense.mp3",
-      "durationMs": 54694,
-      "sha256": "7eb4098cb72e12cdb9bf21c8a7aa45ae2152f2cb6118f2a52159ac02bd02c509",
-      "bytes": 437997
+      "durationMs": 31825,
+      "sha256": "3e01e7a487342b1fb12d2383bea604442122c0a7e4be636efe524434083c1c81",
+      "bytes": 383085
     },
     {
       "nodeId": "third-war-story-hyjal-holds",
       "guideId": "third-war-frozen-throne-guided-history",
       "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-hyjal-holds.mp3",
-      "durationMs": 53111,
-      "sha256": "9ea0051f39a249fb976e9d73f5a6581976da470576246fac2fe4f606aef68a12",
-      "bytes": 425325
+      "durationMs": 30675,
+      "sha256": "23d4a5663bc5fc7ffed4498ae446b028eafaaec4406792f293a3ebc03612467b",
+      "bytes": 369261
     },
     {
       "nodeId": "third-war-story-wills-break-free",
       "guideId": "third-war-frozen-throne-guided-history",
       "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-wills-break-free.mp3",
-      "durationMs": 51778,
-      "sha256": "c50db39466c7956b76ddd7dfbb9cfcc436a7577bddaff278fd2d67249220f44c",
-      "bytes": 414765
+      "durationMs": 30200,
+      "sha256": "01249b10329bf6fb2a8790edec7c0b2f1393221dd9f9af60f7de65d7dcee0ff8",
+      "bytes": 363501
     },
     {
       "nodeId": "third-war-story-outland-refuge",
       "guideId": "third-war-frozen-throne-guided-history",
       "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-outland-refuge.mp3",
-      "durationMs": 51417,
-      "sha256": "6ec398c36f738da634a02d187222120b15512dfad770236daaee1c26f19f9a8f",
-      "bytes": 411885
+      "durationMs": 30075,
+      "sha256": "0032c62c2c5258ec43fde4c66c3c91f033f96495dc0df56000b34065088ac31c",
+      "bytes": 362061
     },
     {
       "nodeId": "third-war-story-race-to-icecrown",
       "guideId": "third-war-frozen-throne-guided-history",
       "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-race-to-icecrown.mp3",
-      "durationMs": 51972,
-      "sha256": "f184c05042789814da74533bb7883bb165f4f8beb3862e35754ccb46abb209f0",
-      "bytes": 416301
+      "durationMs": 30600,
+      "sha256": "4679725ef7c55891dfe98f08e95d6f636231270f0950c14c3a3dd58c8e2f4daf",
+      "bytes": 368109
     },
     {
       "nodeId": "third-war-story-crown-of-winter",
       "guideId": "third-war-frozen-throne-guided-history",
       "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-crown-of-winter.mp3",
-      "durationMs": 51472,
-      "sha256": "65921e312538b5546a4e32738433b1b0a2e69b29fa9c2b4d7dccadc525c8d064",
-      "bytes": 412269
+      "durationMs": 30350,
+      "sha256": "f79a4361768f06f7243aa27404db4bd8dc2c3df9fd5f9fd792eb5f95439e24e9",
+      "bytes": 365229
     },
     {
       "nodeId": "ancients-war-story-last-bright-court",
       "guideId": "war-of-the-ancients-guided-history",
       "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-last-bright-court.mp3",
-      "durationMs": 42806,
-      "sha256": "2c859ce5efd6b4e36616ef9908ca205088755b62ebb47778adaadd6f0906afa9",
-      "bytes": 342957
+      "durationMs": 24075,
+      "sha256": "87974b946cb879fd3b928f19ac4ac95cb62da1fd9ea129dcaf00c85142f2e176",
+      "bytes": 290061
     },
     {
       "nodeId": "ancients-war-story-circle-at-well",
       "guideId": "war-of-the-ancients-guided-history",
       "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-circle-at-well.mp3",
-      "durationMs": 37417,
-      "sha256": "8d05995fbf18850f587a91e88d3b0c251a1043119e4feaefc5faed1321adca48",
-      "bytes": 299757
+      "durationMs": 20975,
+      "sha256": "7d43fff389c7b5d9b517a472a3617c7e80c412ef86912fd5dbc3ff63ea1c96a9",
+      "bytes": 252621
     },
     {
       "nodeId": "ancients-war-story-shadow-beyond-gate",
       "guideId": "war-of-the-ancients-guided-history",
       "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-shadow-beyond-gate.mp3",
-      "durationMs": 37667,
-      "sha256": "570db6044cc8ebaa18fde2fada1e4f06976a1ac25b1ea386cde068a67afa029e",
-      "bytes": 301869
+      "durationMs": 21700,
+      "sha256": "651a497f95e45ca445083748fab618f5ba6d8920ed862f39ac8f0512e5110fc2",
+      "bytes": 261549
     },
     {
       "nodeId": "ancients-war-story-invasion-enters",
       "guideId": "war-of-the-ancients-guided-history",
       "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-invasion-enters.mp3",
-      "durationMs": 42694,
-      "sha256": "d4e9e6694ee63f9a470b0a669cefa03fa4465432ec5fec2436a6a3842b3a62d8",
-      "bytes": 341997
+      "durationMs": 23925,
+      "sha256": "7dccc9506ab8b9b0aadebd3fa39b05263b909094fc3ce1ca17a9b4875aedf20f",
+      "bytes": 288045
     },
     {
       "nodeId": "ancients-war-story-resistance-rises",
       "guideId": "war-of-the-ancients-guided-history",
       "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-resistance-rises.mp3",
-      "durationMs": 44750,
-      "sha256": "5a7449a2d5de710ebb4f2c797dae80442aa856a799f82accb847b219db2a1319",
-      "bytes": 358509
+      "durationMs": 25650,
+      "sha256": "131650cdcffd718868aea9ce2edb8023537da7fb033649d13954ae66c5ed3a36",
+      "bytes": 308781
     },
     {
       "nodeId": "ancients-war-story-three-different-paths",
       "guideId": "war-of-the-ancients-guided-history",
       "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-three-different-paths.mp3",
-      "durationMs": 40361,
-      "sha256": "d8d115b5da743a51ed03d410a4f223e2e01d6ec67aaf5cb46a7a16e29adf5239",
-      "bytes": 323373
+      "durationMs": 23475,
+      "sha256": "8ba71d146108e7240ab70f79465156112c29d2b69b9b157b3468918bf51ac0c6",
+      "bytes": 282861
     },
     {
       "nodeId": "ancients-war-story-living-world-answers",
       "guideId": "war-of-the-ancients-guided-history",
       "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-living-world-answers.mp3",
-      "durationMs": 41417,
-      "sha256": "4b87892bee65327a50ec705cbb29a66b5dbdcadbc3b8d760197c9acaf0ac6592",
-      "bytes": 331821
+      "durationMs": 24225,
+      "sha256": "a30ecb3a125e3a61c9632f3072ed5544f0cee97ce4ef47135134b086b193219e",
+      "bytes": 291789
     },
     {
       "nodeId": "ancients-war-story-dragon-soul-betrayal",
       "guideId": "war-of-the-ancients-guided-history",
       "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-dragon-soul-betrayal.mp3",
-      "durationMs": 38667,
-      "sha256": "61649c35ab0b782e5dfa313ee8be036de2df23b6476626372ca0c94ec72675f9",
-      "bytes": 309933
+      "durationMs": 22200,
+      "sha256": "706fbd5a5cad4c4aabc64e59d4abdac76bc25baf0f396c2254b13c48b6332577",
+      "bytes": 267309
     },
     {
       "nodeId": "ancients-war-story-return-to-well",
       "guideId": "war-of-the-ancients-guided-history",
       "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-return-to-well.mp3",
-      "durationMs": 40583,
-      "sha256": "bfccdd69330a203939224f8393785505ce3e185fcab7743c177650715cd2f1bb",
-      "bytes": 325101
+      "durationMs": 23050,
+      "sha256": "e4ca0cd2f2fa5310f5bf4115ec3eef8a4486b0d2c71d71baeac04f98e9a8fd5f",
+      "bytes": 277677
     },
     {
       "nodeId": "ancients-war-story-world-breaks",
       "guideId": "war-of-the-ancients-guided-history",
       "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-world-breaks.mp3",
-      "durationMs": 39111,
-      "sha256": "baff44ecc6ede5f9e524eaca1b9bfdd44f2958307c24ddc0e15acdb0d3965042",
-      "bytes": 313389
+      "durationMs": 23300,
+      "sha256": "33ee0842d1bb088fd21fca0889ed6f07f6fae429158eb2985ef5d6501139283c",
+      "bytes": 280557
     },
     {
       "nodeId": "ancients-war-story-queen-beneath-sea",
       "guideId": "war-of-the-ancients-guided-history",
       "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-queen-beneath-sea.mp3",
-      "durationMs": 40222,
-      "sha256": "c2a76fdae89aeeb10a3b6c22ba1bb6a3ea5d44bcc26839f7a6616ff476d8f96d",
-      "bytes": 322221
+      "durationMs": 22750,
+      "sha256": "677b6b0bcefd58b35475b3ce83931eed2a2b8458a9a6cb48714fb52ed76b8823",
+      "bytes": 273933
     },
     {
       "nodeId": "ancients-war-story-road-to-hyjal",
       "guideId": "war-of-the-ancients-guided-history",
       "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-road-to-hyjal.mp3",
-      "durationMs": 40722,
-      "sha256": "1f83060455f73f8d66bd1a2043c83cef62394252c658268d87e1ce964b562559",
-      "bytes": 326253
+      "durationMs": 23475,
+      "sha256": "3f6e433baaf7eddaa927fdd00e5564a48eb15caef2b97c5cdf1eb3a81e97c566",
+      "bytes": 282861
     }
   ]
 }

@@ -3,7 +3,7 @@ import { expect, test } from '@playwright/test';
 test('the generated archive opens Aman’Thul as an illustrated, shareable record', async ({ page }) => {
   await page.goto('/archive');
 
-  await expect(page.getByRole('heading', { name: /Every record, gathered into one gallery/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Explore the archive.' })).toBeVisible();
   await page.getByRole('searchbox', { name: 'Search the collection' }).fill('Aman’Thul');
   await page.getByRole('button', { name: 'Open Aman’Thul' }).click();
 

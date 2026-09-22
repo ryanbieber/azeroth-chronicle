@@ -10,7 +10,9 @@ Voice-over applies only to the continuous guided-history narration. Dossiers, in
 
 The voice is an original low male chronicler: mature, resonant, restrained, landscape-conscious, and unhurried. The desired weight and spacious cadence are broad tonal references; no Warcraft recording, character voice, or performer sample is used or imitated.
 
-The production set uses Kokoro's stock `am_onyx` voice at native speed `0.5`, followed by a light `0.9` tempo pass. Across the current 7,256-word corpus this yields approximately 83 words per minute, close to the story engine's existing 82-WPM slow-narration contract. Avoid heavy reverb or effects that reduce intelligibility.
+The original production set used Kokoro's `am_onyx` voice at speed `0.5` followed by another `0.9` tempo pass. Listening review rejected that result as unnaturally slow and difficult to understand.
+
+The replacement production set uses Kokoro's stock British male `bm_lewis` voice at native speed `0.9`, selected from a fourteen-candidate audition spanning four model families. It receives loudness normalization only; no secondary tempo manipulation, reverb, pitch shift, voice cloning, or performer reference is used. The intended result is measured and authoritative without sacrificing natural cadence or intelligibility.
 
 ## Asset contract
 
@@ -33,7 +35,7 @@ The production set uses Kokoro's stock `am_onyx` voice at native speed `0.5`, fo
 ## Validation performed
 
 - 117 StoryNodes, 117 MP3 files, zero missing assets.
-- Approximately 87.1 minutes and 39.9 MiB of repository audio.
+- The Lewis replacement corpus is approximately 50.4 minutes and 34.7 MiB, with measured duration and hashes recorded in `public/audio/guided/manifest.json`.
 - Browser playback reached `readyState 4`, advanced `currentTime`, stopped on disable, restarted on re-enable, and loaded the next chapter's distinct MP3.
 - A focused Playwright regression covers on, off, on again, and next-chapter playback.
 

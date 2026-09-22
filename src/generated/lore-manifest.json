@@ -18669,8 +18669,8 @@
       "durationMs": 70000,
       "voiceover": {
         "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-gates.mp3",
-        "durationMs": 47028,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 27975,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -18727,8 +18727,8 @@
       "durationMs": 68000,
       "voiceover": {
         "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-outland.mp3",
-        "durationMs": 45000,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 25725,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -18788,8 +18788,8 @@
       "durationMs": 72000,
       "voiceover": {
         "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-icecrown.mp3",
-        "durationMs": 46167,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 26500,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -18852,8 +18852,8 @@
       "durationMs": 71000,
       "voiceover": {
         "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-cataclysm.mp3",
-        "durationMs": 48750,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 28575,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -18910,8 +18910,8 @@
       "durationMs": 70000,
       "voiceover": {
         "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-pandaria.mp3",
-        "durationMs": 49889,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 27925,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -18968,8 +18968,8 @@
       "durationMs": 70000,
       "voiceover": {
         "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-siege.mp3",
-        "durationMs": 49944,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 29125,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -19028,8 +19028,8 @@
       "durationMs": 71000,
       "voiceover": {
         "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-alternate-draenor.mp3",
-        "durationMs": 50333,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 28875,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -19079,8 +19079,8 @@
       "durationMs": 72000,
       "voiceover": {
         "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-legion.mp3",
-        "durationMs": 51333,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 29925,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -19142,8 +19142,8 @@
       "durationMs": 71000,
       "voiceover": {
         "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-argus.mp3",
-        "durationMs": 49111,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 28800,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -19209,8 +19209,8 @@
       "durationMs": 73000,
       "voiceover": {
         "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-wounded-world.mp3",
-        "durationMs": 50639,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 29100,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -19260,8 +19260,8 @@
       "durationMs": 48000,
       "voiceover": {
         "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-ordered-dawn.mp3",
-        "durationMs": 39444,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 22800,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -19312,8 +19312,8 @@
       "durationMs": 49500,
       "voiceover": {
         "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-first-troll-powers.mp3",
-        "durationMs": 43833,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 25100,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -19370,8 +19370,8 @@
       "durationMs": 46000,
       "voiceover": {
         "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-aqir-awaken.mp3",
-        "durationMs": 37528,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 22225,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -19428,8 +19428,8 @@
       "durationMs": 49000,
       "voiceover": {
         "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-empire-zul.mp3",
-        "durationMs": 44778,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 25375,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "battleIds": [
@@ -19490,8 +19490,8 @@
       "durationMs": 45500,
       "voiceover": {
         "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-aqir-divided.mp3",
-        "durationMs": 42278,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 23475,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -19544,8 +19544,8 @@
       "durationMs": 44500,
       "voiceover": {
         "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-southern-kingdoms.mp3",
-        "durationMs": 42556,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 23875,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -19599,8 +19599,8 @@
       "durationMs": 44500,
       "voiceover": {
         "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-thunder-king.mp3",
-        "durationMs": 37583,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 21150,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -19652,8 +19652,8 @@
       "durationMs": 44000,
       "voiceover": {
         "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-mogu-dominion.mp3",
-        "durationMs": 39639,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 22650,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -19712,8 +19712,8 @@
       "durationMs": 46000,
       "voiceover": {
         "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-kang-revolution.mp3",
-        "durationMs": 40972,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 23750,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -19768,8 +19768,8 @@
       "durationMs": 49000,
       "voiceover": {
         "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-people-apart.mp3",
-        "durationMs": 39000,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 22400,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -19829,8 +19829,8 @@
       "durationMs": 47000,
       "voiceover": {
         "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-well-changes-them.mp3",
-        "durationMs": 45000,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 25900,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -19889,8 +19889,8 @@
       "durationMs": 51000,
       "voiceover": {
         "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-azshara-dawn.mp3",
-        "durationMs": 44833,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 26425,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -19947,8 +19947,8 @@
       "durationMs": 36500,
       "voiceover": {
         "assetPath": "audio/guided/black-empire-guided-history/black-empire-story-cosmos.mp3",
-        "durationMs": 34000,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 19525,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "camera": {
@@ -19987,8 +19987,8 @@
       "durationMs": 34500,
       "voiceover": {
         "assetPath": "audio/guided/black-empire-guided-history/black-empire-story-world-soul.mp3",
-        "durationMs": 31056,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 17850,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -20034,8 +20034,8 @@
       "durationMs": 33000,
       "voiceover": {
         "assetPath": "audio/guided/black-empire-guided-history/black-empire-story-elemental-lords.mp3",
-        "durationMs": 30833,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 17775,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "entityIds": [
@@ -20076,8 +20076,8 @@
       "durationMs": 30000,
       "voiceover": {
         "assetPath": "audio/guided/black-empire-guided-history/black-empire-story-elemental-wars.mp3",
-        "durationMs": 29833,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 17325,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "battleIds": [
@@ -20121,8 +20121,8 @@
       "durationMs": 34500,
       "voiceover": {
         "assetPath": "audio/guided/black-empire-guided-history/black-empire-story-old-gods-arrive.mp3",
-        "durationMs": 29389,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 16975,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -20169,8 +20169,8 @@
       "durationMs": 32000,
       "voiceover": {
         "assetPath": "audio/guided/black-empire-guided-history/black-empire-story-servant-races.mp3",
-        "durationMs": 31972,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 17900,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "entityIds": [
@@ -20207,8 +20207,8 @@
       "durationMs": 37000,
       "voiceover": {
         "assetPath": "audio/guided/black-empire-guided-history/black-empire-story-central-bastion.mp3",
-        "durationMs": 35528,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 20050,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -20250,8 +20250,8 @@
       "durationMs": 35500,
       "voiceover": {
         "assetPath": "audio/guided/black-empire-guided-history/black-empire-story-empire-spreads.mp3",
-        "durationMs": 32250,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 18625,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -20303,8 +20303,8 @@
       "durationMs": 36500,
       "voiceover": {
         "assetPath": "audio/guided/black-empire-guided-history/black-empire-story-elemental-resistance.mp3",
-        "durationMs": 30444,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 17325,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "battleIds": [
@@ -20353,8 +20353,8 @@
       "durationMs": 34500,
       "voiceover": {
         "assetPath": "audio/guided/black-empire-guided-history/black-empire-story-dominion.mp3",
-        "durationMs": 30750,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 16975,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -20406,8 +20406,8 @@
       "durationMs": 42500,
       "voiceover": {
         "assetPath": "audio/guided/cosmic-origins-guided-history/cosmic-origins-story-light-shadow.mp3",
-        "durationMs": 36139,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 21175,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "entityIds": [
@@ -20451,8 +20451,8 @@
       "durationMs": 42500,
       "voiceover": {
         "assetPath": "audio/guided/cosmic-origins-guided-history/cosmic-origins-story-universe.mp3",
-        "durationMs": 36222,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 21475,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -20503,8 +20503,8 @@
       "durationMs": 44000,
       "voiceover": {
         "assetPath": "audio/guided/cosmic-origins-guided-history/cosmic-origins-story-nether.mp3",
-        "durationMs": 37972,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 21600,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -20548,8 +20548,8 @@
       "durationMs": 45500,
       "voiceover": {
         "assetPath": "audio/guided/cosmic-origins-guided-history/cosmic-origins-story-forces.mp3",
-        "durationMs": 40333,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 22875,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "entityIds": [
@@ -20590,8 +20590,8 @@
       "durationMs": 44500,
       "voiceover": {
         "assetPath": "audio/guided/cosmic-origins-guided-history/cosmic-origins-story-world-souls.mp3",
-        "durationMs": 38083,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 21750,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "entityIds": [
@@ -20632,8 +20632,8 @@
       "durationMs": 43000,
       "voiceover": {
         "assetPath": "audio/guided/cosmic-origins-guided-history/cosmic-origins-story-amanthul.mp3",
-        "durationMs": 34917,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 19700,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -20683,8 +20683,8 @@
       "durationMs": 44000,
       "voiceover": {
         "assetPath": "audio/guided/cosmic-origins-guided-history/cosmic-origins-story-pantheon.mp3",
-        "durationMs": 37444,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 21250,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -20737,8 +20737,8 @@
       "durationMs": 45500,
       "voiceover": {
         "assetPath": "audio/guided/cosmic-origins-guided-history/cosmic-origins-story-void-design.mp3",
-        "durationMs": 34917,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 20275,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -20795,8 +20795,8 @@
       "durationMs": 45000,
       "voiceover": {
         "assetPath": "audio/guided/cosmic-origins-guided-history/cosmic-origins-story-azeroth.mp3",
-        "durationMs": 38361,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 22250,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "entityIds": [
@@ -20848,8 +20848,8 @@
       "durationMs": 54000,
       "voiceover": {
         "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-broken-shores.mp3",
-        "durationMs": 44750,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 25850,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -20905,8 +20905,8 @@
       "durationMs": 61000,
       "voiceover": {
         "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-second-well.mp3",
-        "durationMs": 47056,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 28000,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -20965,8 +20965,8 @@
       "durationMs": 59000,
       "voiceover": {
         "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-world-tree.mp3",
-        "durationMs": 48194,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 27700,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -21026,8 +21026,8 @@
       "durationMs": 56000,
       "voiceover": {
         "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-watch-begins.mp3",
-        "durationMs": 48778,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 28400,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -21084,8 +21084,8 @@
       "durationMs": 56000,
       "voiceover": {
         "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-exile-decreed.mp3",
-        "durationMs": 48944,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 28350,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -21144,8 +21144,8 @@
       "durationMs": 56500,
       "voiceover": {
         "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-crossing-east.mp3",
-        "durationMs": 49250,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 28775,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -21201,8 +21201,8 @@
       "durationMs": 58000,
       "voiceover": {
         "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-new-sun.mp3",
-        "durationMs": 49722,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 28600,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -21270,8 +21270,8 @@
       "durationMs": 56500,
       "voiceover": {
         "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-thoradin-unites.mp3",
-        "durationMs": 50611,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 29150,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -21333,8 +21333,8 @@
       "durationMs": 57500,
       "voiceover": {
         "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-alliance-of-need.mp3",
-        "durationMs": 52444,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 29975,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -21399,8 +21399,8 @@
       "durationMs": 59500,
       "voiceover": {
         "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-fire-in-forest.mp3",
-        "durationMs": 52694,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 30775,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -21458,8 +21458,8 @@
       "durationMs": 56000,
       "voiceover": {
         "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-seven-crowns.mp3",
-        "durationMs": 54722,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 31750,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -21519,8 +21519,8 @@
       "durationMs": 61000,
       "voiceover": {
         "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-three-hammers.mp3",
-        "durationMs": 50333,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 29600,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -21587,8 +21587,8 @@
       "durationMs": 58000,
       "voiceover": {
         "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-firelord-returns.mp3",
-        "durationMs": 53667,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 30500,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -21647,8 +21647,8 @@
       "durationMs": 62000,
       "voiceover": {
         "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-world-before-gate.mp3",
-        "durationMs": 53694,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 31400,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "entityIds": [
@@ -21704,8 +21704,8 @@
       "durationMs": 70000,
       "voiceover": {
         "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-fourth-war.mp3",
-        "durationMs": 46083,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 26625,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -21764,8 +21764,8 @@
       "durationMs": 71000,
       "voiceover": {
         "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-war-ends.mp3",
-        "durationMs": 47222,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 27725,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -21828,8 +21828,8 @@
       "durationMs": 70000,
       "voiceover": {
         "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-nzoth.mp3",
-        "durationMs": 48917,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 28275,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -21886,8 +21886,8 @@
       "durationMs": 69000,
       "voiceover": {
         "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-nzoth-falls.mp3",
-        "durationMs": 48806,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 28200,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -21943,8 +21943,8 @@
       "durationMs": 70000,
       "voiceover": {
         "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-veil.mp3",
-        "durationMs": 51194,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 29775,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -22003,8 +22003,8 @@
       "durationMs": 70000,
       "voiceover": {
         "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-covenants.mp3",
-        "durationMs": 48167,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 27625,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -22060,8 +22060,8 @@
       "durationMs": 71000,
       "voiceover": {
         "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-dragon-isles.mp3",
-        "durationMs": 52861,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 30425,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -22119,8 +22119,8 @@
       "durationMs": 70000,
       "voiceover": {
         "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-war-within.mp3",
-        "durationMs": 52250,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 29600,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -22183,8 +22183,8 @@
       "durationMs": 72000,
       "voiceover": {
         "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-midnight-horizon.mp3",
-        "durationMs": 49000,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 29175,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -22245,8 +22245,8 @@
       "durationMs": 46500,
       "voiceover": {
         "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-inherited-shadow.mp3",
-        "durationMs": 40972,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 22850,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -22295,8 +22295,8 @@
       "durationMs": 47500,
       "voiceover": {
         "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-aggramar-discovers.mp3",
-        "durationMs": 39778,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 23075,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -22350,8 +22350,8 @@
       "durationMs": 50000,
       "voiceover": {
         "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-yshaarj-wound.mp3",
-        "durationMs": 41083,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 23950,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -22405,8 +22405,8 @@
       "durationMs": 47000,
       "voiceover": {
         "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-titan-forged.mp3",
-        "durationMs": 39750,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 22375,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -22459,8 +22459,8 @@
       "durationMs": 46500,
       "voiceover": {
         "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-keepers.mp3",
-        "durationMs": 40167,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 22875,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -22512,8 +22512,8 @@
       "durationMs": 49000,
       "voiceover": {
         "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-empire-falls.mp3",
-        "durationMs": 42333,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 23850,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "battleIds": [
@@ -22571,8 +22571,8 @@
       "durationMs": 47500,
       "voiceover": {
         "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-old-gods-contained.mp3",
-        "durationMs": 38972,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 22275,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -22625,8 +22625,8 @@
       "durationMs": 46000,
       "voiceover": {
         "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-well-eternity.mp3",
-        "durationMs": 37083,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 21875,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -22681,8 +22681,8 @@
       "durationMs": 46500,
       "voiceover": {
         "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-world-forges.mp3",
-        "durationMs": 36333,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 21250,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -22736,8 +22736,8 @@
       "durationMs": 50000,
       "voiceover": {
         "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-world-shaped.mp3",
-        "durationMs": 43417,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 25425,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -22792,8 +22792,8 @@
       "durationMs": 49000,
       "voiceover": {
         "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-pantheon-departs.mp3",
-        "durationMs": 44056,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 25575,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -22846,8 +22846,8 @@
       "durationMs": 62000,
       "voiceover": {
         "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-two-peoples.mp3",
-        "durationMs": 48361,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 28075,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "entityIds": [
@@ -22899,8 +22899,8 @@
       "durationMs": 62000,
       "voiceover": {
         "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-deceiver-finds-draenor.mp3",
-        "durationMs": 46306,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 26675,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -22955,8 +22955,8 @@
       "durationMs": 63500,
       "voiceover": {
         "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-nerzhul-deceived.mp3",
-        "durationMs": 50306,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 29350,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -23011,8 +23011,8 @@
       "durationMs": 63500,
       "voiceover": {
         "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-shadow-council.mp3",
-        "durationMs": 51222,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 29950,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -23067,8 +23067,8 @@
       "durationMs": 65000,
       "voiceover": {
         "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-blood-pact.mp3",
-        "durationMs": 49583,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 29125,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -23126,8 +23126,8 @@
       "durationMs": 65000,
       "voiceover": {
         "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-shattrath-falls.mp3",
-        "durationMs": 49583,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 28800,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -23190,8 +23190,8 @@
       "durationMs": 66000,
       "voiceover": {
         "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-gate-between-worlds.mp3",
-        "durationMs": 51500,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 30375,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -23252,8 +23252,8 @@
       "durationMs": 65000,
       "voiceover": {
         "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-first-war.mp3",
-        "durationMs": 51972,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 29750,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -23321,8 +23321,8 @@
       "durationMs": 65000,
       "voiceover": {
         "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-orgrim-rises.mp3",
-        "durationMs": 51722,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 29750,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -23382,8 +23382,8 @@
       "durationMs": 64000,
       "voiceover": {
         "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-stormwind-falls.mp3",
-        "durationMs": 47833,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 28525,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -23445,8 +23445,8 @@
       "durationMs": 65000,
       "voiceover": {
         "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-alliance-forms.mp3",
-        "durationMs": 49639,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 29575,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -23511,8 +23511,8 @@
       "durationMs": 64000,
       "voiceover": {
         "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-second-war.mp3",
-        "durationMs": 49694,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 28525,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -23576,8 +23576,8 @@
       "durationMs": 65000,
       "voiceover": {
         "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-broken-purpose.mp3",
-        "durationMs": 50917,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 28825,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -23635,8 +23635,8 @@
       "durationMs": 64000,
       "voiceover": {
         "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-blackrock-rally.mp3",
-        "durationMs": 48389,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 28350,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -23704,8 +23704,8 @@
       "durationMs": 65000,
       "voiceover": {
         "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-gate-broken.mp3",
-        "durationMs": 51806,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 30350,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -23771,8 +23771,8 @@
       "durationMs": 66000,
       "voiceover": {
         "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-after-the-camps.mp3",
-        "durationMs": 48611,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 28350,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -23828,8 +23828,8 @@
       "durationMs": 65000,
       "voiceover": {
         "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-grain-and-shadow.mp3",
-        "durationMs": 49000,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 28600,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -23890,8 +23890,8 @@
       "durationMs": 67500,
       "voiceover": {
         "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-stratholme-choice.mp3",
-        "durationMs": 47222,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 27825,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -23948,8 +23948,8 @@
       "durationMs": 67000,
       "voiceover": {
         "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-northern-blade.mp3",
-        "durationMs": 47000,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 27400,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -24006,8 +24006,8 @@
       "durationMs": 67500,
       "voiceover": {
         "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-lordaeron-falls.mp3",
-        "durationMs": 49861,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 29550,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -24065,8 +24065,8 @@
       "durationMs": 67500,
       "voiceover": {
         "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-sunwell-darkens.mp3",
-        "durationMs": 53278,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 30575,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -24128,8 +24128,8 @@
       "durationMs": 66000,
       "voiceover": {
         "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-legion-returns.mp3",
-        "durationMs": 50417,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 29450,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -24184,8 +24184,8 @@
       "durationMs": 67000,
       "voiceover": {
         "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-westward-crossing.mp3",
-        "durationMs": 50889,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 29550,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -24239,8 +24239,8 @@
       "durationMs": 68000,
       "voiceover": {
         "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-bond-is-broken.mp3",
-        "durationMs": 50556,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 29300,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -24300,8 +24300,8 @@
       "durationMs": 67500,
       "voiceover": {
         "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-unlikely-defense.mp3",
-        "durationMs": 54694,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 31825,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -24366,8 +24366,8 @@
       "durationMs": 68500,
       "voiceover": {
         "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-hyjal-holds.mp3",
-        "durationMs": 53111,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 30675,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -24434,8 +24434,8 @@
       "durationMs": 67000,
       "voiceover": {
         "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-wills-break-free.mp3",
-        "durationMs": 51778,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 30200,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -24497,8 +24497,8 @@
       "durationMs": 69000,
       "voiceover": {
         "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-outland-refuge.mp3",
-        "durationMs": 51417,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 30075,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -24562,8 +24562,8 @@
       "durationMs": 68500,
       "voiceover": {
         "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-race-to-icecrown.mp3",
-        "durationMs": 51972,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 30600,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -24631,8 +24631,8 @@
       "durationMs": 70000,
       "voiceover": {
         "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-crown-of-winter.mp3",
-        "durationMs": 51472,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 30350,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -24691,8 +24691,8 @@
       "durationMs": 50000,
       "voiceover": {
         "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-last-bright-court.mp3",
-        "durationMs": 42806,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 24075,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -24751,8 +24751,8 @@
       "durationMs": 49000,
       "voiceover": {
         "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-circle-at-well.mp3",
-        "durationMs": 37417,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 20975,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -24812,8 +24812,8 @@
       "durationMs": 49000,
       "voiceover": {
         "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-shadow-beyond-gate.mp3",
-        "durationMs": 37667,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 21700,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -24868,8 +24868,8 @@
       "durationMs": 50000,
       "voiceover": {
         "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-invasion-enters.mp3",
-        "durationMs": 42694,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 23925,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -24935,8 +24935,8 @@
       "durationMs": 51000,
       "voiceover": {
         "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-resistance-rises.mp3",
-        "durationMs": 44750,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 25650,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -24990,8 +24990,8 @@
       "durationMs": 50000,
       "voiceover": {
         "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-three-different-paths.mp3",
-        "durationMs": 40361,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 23475,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -25047,8 +25047,8 @@
       "durationMs": 50000,
       "voiceover": {
         "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-living-world-answers.mp3",
-        "durationMs": 41417,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 24225,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -25105,8 +25105,8 @@
       "durationMs": 49000,
       "voiceover": {
         "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-dragon-soul-betrayal.mp3",
-        "durationMs": 38667,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 22200,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -25159,8 +25159,8 @@
       "durationMs": 51000,
       "voiceover": {
         "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-return-to-well.mp3",
-        "durationMs": 40583,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 23050,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -25230,8 +25230,8 @@
       "durationMs": 51000,
       "voiceover": {
         "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-world-breaks.mp3",
-        "durationMs": 39111,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 23300,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -25286,8 +25286,8 @@
       "durationMs": 49000,
       "voiceover": {
         "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-queen-beneath-sea.mp3",
-        "durationMs": 40222,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 22750,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [
@@ -25338,8 +25338,8 @@
       "durationMs": 51000,
       "voiceover": {
         "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-road-to-hyjal.mp3",
-        "durationMs": 40722,
-        "voiceId": "kokoro-am-onyx",
+        "durationMs": 23475,
+        "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
       "eventIds": [

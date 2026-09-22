@@ -749,7 +749,7 @@ describe('lore dataset', () => {
     expect(guidedNodes.length).toBeGreaterThan(0);
     for (const node of guidedNodes) {
       expect(node.voiceover).toMatchObject({
-        voiceId: 'kokoro-am-onyx',
+        voiceId: 'kokoro-bm-lewis',
         aiGenerated: true,
       });
       expect(node.voiceover?.assetPath).toMatch(/^audio\/guided\/.+\.mp3$/);

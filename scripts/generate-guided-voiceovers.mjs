@@ -9,9 +9,9 @@ import process from 'node:process';
 
 const SPACE_ID = 'hexgrad/Kokoro-TTS';
 const FUNCTION_INDEX = 4;
-const DEFAULT_VOICE = 'am_onyx';
-const DEFAULT_SPEED = 0.5;
-const POST_TEMPO = 0.9;
+const DEFAULT_VOICE = 'bm_lewis';
+const DEFAULT_SPEED = 0.9;
+const POST_TEMPO = 1;
 const OUTPUT_ROOT = resolve('public/audio/guided');
 const args = new Map(process.argv.slice(2).map((arg) => {
   const [key, value = 'true'] = arg.replace(/^--/, '').split('=', 2);
@@ -56,9 +56,9 @@ function runFfmpeg(inputPath, outputPath) {
       '-map_metadata', '-1',
       '-ac', '1',
       '-ar', '24000',
-      '-filter:a', `atempo=${POST_TEMPO}`,
+      '-filter:a', 'loudnorm=I=-16:TP=-1.5:LRA=11',
       '-codec:a', 'libmp3lame',
-      '-b:a', '64k',
+      '-b:a', '96k',
       outputPath,
     ], { stdio: ['ignore', 'inherit', 'inherit'] });
     child.once('error', reject);
@@ -192,6 +192,6 @@ await writeJson(resolve(OUTPUT_ROOT, 'provenance.json'), {
   speed,
   postTempo: POST_TEMPO,
   referenceAudioUsed: false,
-  direction: 'Original low male chronicler; restrained, ancient, deliberate, and unhurried. Tonal reference only; no imitation of a Warcraft character or performer.',
+  direction: 'Original British male chronicler; resonant, intelligent, measured, and natural. Selected through a repository-backed audition; no imitation of a Warcraft character or performer.',
 });
 process.stdout.write(`Generated ${tracks.length} repository-backed guided voice-over tracks.\n`);

@@ -9,6 +9,7 @@ import { useSelectionStore } from '../../app/state/selectionStore';
 import { useSceneEffectsStore } from '../../app/state/sceneEffectsStore';
 import type { Battle, LoreEntity, Route, SpatialState } from '../../domain/types/lore';
 import type { RuntimeGeometry, RuntimePolygon } from '../../lib/map/geometryAdapter';
+import { layoutMapFigures, type ScreenRect } from '../../lib/map/layoutMapFigures';
 import { CameraRig } from './CameraRig';
 
 interface MapViewport3DProps {
@@ -70,6 +71,53 @@ function PerformanceProbe({ onReport, routeStartedAt }: {
     });
   });
 
+  return null;
+}
+
+function projectedRect(element: HTMLElement): { rect: ScreenRect; scale: number } {
+  const image = element.getBoundingClientRect();
+  const label = element.querySelector('span')?.getBoundingClientRect();
+  const x = Math.min(image.left, label?.left ?? image.left);
+  const y = Math.min(image.top, label?.top ?? image.top);
+  const right = Math.max(image.right, label?.right ?? image.right);
+  const bottom = Math.max(image.bottom, label?.bottom ?? image.bottom);
+  const scale = element.offsetWidth > 0 ? image.width / element.offsetWidth : 1;
+  const previousX = Number(element.dataset.layoutCssX ?? 0) * scale;
+  const previousY = Number(element.dataset.layoutCssY ?? 0) * scale;
+  return { rect: { x: x - previousX, y: y - previousY, width: right - x, height: bottom - y }, scale };
+}
+
+function MapFigureLayout() {
+  const lastLayout = useRef(0);
+  useFrame(({ clock, gl }) => {
+    if (clock.elapsedTime - lastLayout.current < 0.08) return;
+    lastLayout.current = clock.elapsedTime;
+    const viewport = gl.domElement.closest('.map-viewport');
+    if (!viewport) return;
+    const bounds = viewport.getBoundingClientRect();
+    const frame = { x: bounds.x, y: bounds.y, width: bounds.width, height: bounds.height };
+    const figures = [...viewport.querySelectorAll<HTMLElement>('.map-character-figure, .map-subject-visual, .map-label')]
+      .map((element) => ({ element, ...projectedRect(element) }))
+      .filter(({ rect }) => rect.width > 0 && rect.height > 0
+        && rect.x + rect.width > frame.x && rect.x < frame.x + frame.width
+        && rect.y + rect.height > frame.y && rect.y < frame.y + frame.height)
+      .sort((a, b) => Number(b.element.classList.contains('is-active')) - Number(a.element.classList.contains('is-active')));
+    const obstacles = [...viewport.parentElement?.querySelectorAll<HTMLElement>('.story-overlay .story-card, .selection-overlay, .map-legend details[open]') ?? []]
+      .map((element) => {
+        const rect = element.getBoundingClientRect();
+        return { x: rect.x, y: rect.y, width: rect.width, height: rect.height };
+      });
+    const offsets = layoutMapFigures(figures.map(({ rect }) => rect), frame, obstacles);
+    figures.forEach(({ element, scale }, index) => {
+      const offset = offsets[index] ?? { x: 0, y: 0 };
+      const cssX = Math.round(offset.x / scale);
+      const cssY = Math.round(offset.y / scale);
+      if (element.dataset.layoutCssX === String(cssX) && element.dataset.layoutCssY === String(cssY)) return;
+      element.style.translate = `${cssX}px ${cssY}px`;
+      element.dataset.layoutCssX = String(cssX);
+      element.dataset.layoutCssY = String(cssY);
+    });
+  });
   return null;
 }
 
@@ -226,7 +274,7 @@ function ElementalPresence({ entityId }: { entityId: string }) {
 
 function CharacterFigure({ entity, active, onSelect }: { entity: LoreEntity; active: boolean; onSelect: () => void }) {
   if (!entity.mapFigure) return null;
-  const width = Math.round(164 * (entity.mapFigure.scale ?? 1));
+  const width = Math.round(132 * (entity.mapFigure.scale ?? 1));
   return (
     <Html center position={[0, 1.02, 0]} distanceFactor={5} zIndexRange={[4, 1]}>
       <button className={`map-character-figure${active ? ' is-active' : ''}`} type="button" onClick={onSelect} aria-label={entity.name}>
@@ -239,7 +287,7 @@ function CharacterFigure({ entity, active, onSelect }: { entity: LoreEntity; act
 
 function ContextualSubjectVisual({ entity, onSelect }: { entity: LoreEntity; onSelect: () => void }) {
   if (!entity.mapVisual) return null;
-  const width = Math.round(174 * (entity.mapVisual.scale ?? 1));
+  const width = Math.round(140 * (entity.mapVisual.scale ?? 1));
   return (
     <Html center position={[0, 0.94, 0]} distanceFactor={5} zIndexRange={[4, 1]}>
       <button className="map-subject-visual is-active" type="button" onClick={onSelect} aria-label={entity.name}>
@@ -462,6 +510,7 @@ export function MapViewport3D(props: MapViewport3DProps) {
       <Canvas camera={{ position: [0, 5.6, 6.3], fov: 48 }} dpr={[1, 1.75]}>
         <Suspense fallback={null}>
           <AtlasScene {...props} />
+          <MapFigureLayout />
           {profile && <PerformanceProbe onReport={setPerformanceReport} routeStartedAt={routeStartedAt} />}
         </Suspense>
       </Canvas>

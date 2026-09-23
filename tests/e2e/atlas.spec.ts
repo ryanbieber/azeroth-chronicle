@@ -43,7 +43,7 @@ test('representative desktop renderer stays inside the Phase 0 scene budgets', a
   expect(report.usefulSceneMs).toBeLessThanOrEqual(2500);
 });
 
-test('guide advances as one unnumbered sequence with only previous and next', async ({ page }) => {
+test('guide advances as one unnumbered sequence with clear playback controls', async ({ page }) => {
   test.setTimeout(120_000);
   await page.goto('/map?era=black-empire');
   await page.getByRole('button', { name: 'Guided tour' }).click();
@@ -52,7 +52,8 @@ test('guide advances as one unnumbered sequence with only previous and next', as
   await expect(page.locator('.battle-playback')).toHaveCount(0);
   await expect(page.getByRole('heading', { name: 'The sleeping titan within' })).toBeVisible({ timeout: 42_000 });
   await expect(page.getByRole('progressbar', { name: 'Time until next story point' })).toBeVisible();
-  await expect(page.locator('.story-card button')).toHaveCount(3);
+  await expect(page.locator('.story-card button')).toHaveCount(4);
+  await expect(page.getByRole('button', { name: 'Pause tour' })).toBeVisible();
 
   await page.getByRole('button', { name: 'Next', exact: true }).click();
   await page.getByRole('button', { name: 'Next', exact: true }).click();
@@ -121,6 +122,45 @@ test('guided voice-over can be turned on, off, and on again across chapters', as
       && !audio.paused
       && audio.currentTime > 0;
   });
+});
+
+test('tour pause and resume preserve the current voice position and chapter', async ({ page }) => {
+  await page.goto('/map?era=cosmic-origins&tour=full');
+  await expect(page.getByRole('heading', { name: 'Before time could be counted' })).toBeVisible();
+  await page.getByRole('button', { name: 'Enable voice-over' }).click();
+  await page.waitForFunction(() => {
+    const audio = document.querySelector('audio');
+    return audio && !audio.paused && audio.currentTime > 0.2;
+  });
+
+  await page.getByRole('button', { name: 'Pause tour' }).click();
+  await expect(page.getByRole('button', { name: 'Resume tour' })).toBeVisible();
+  await expect(page.locator('.story-timer span')).toHaveCSS('animation-play-state', 'paused');
+  const pausedAt = await page.locator('audio').evaluate((audio) => (audio as HTMLAudioElement).currentTime);
+  await page.waitForTimeout(500);
+  expect(await page.locator('audio').evaluate((audio) => (audio as HTMLAudioElement).paused)).toBe(true);
+  expect(await page.locator('audio').evaluate((audio) => (audio as HTMLAudioElement).currentTime)).toBeCloseTo(pausedAt, 1);
+  await expect(page.getByRole('heading', { name: 'Before time could be counted' })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Resume tour' }).click();
+  await page.waitForFunction((time) => {
+    const audio = document.querySelector('audio');
+    return audio && !audio.paused && audio.currentTime > time + 0.1;
+  }, pausedAt);
+  await expect(page.locator('.story-timer span')).toHaveCSS('animation-play-state', 'running');
+});
+
+test('paused silent tour does not advance until resumed', async ({ page }) => {
+  await page.clock.install();
+  await page.goto('/map?era=cosmic-origins&tour=full');
+  await expect(page.getByRole('heading', { name: 'Before time could be counted' })).toBeVisible();
+  await page.getByRole('button', { name: 'Pause tour' }).click();
+  await page.clock.fastForward(120_000);
+  await expect(page.getByRole('heading', { name: 'Before time could be counted' })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Resume tour' }).click();
+  await page.clock.fastForward(120_000);
+  await expect(page.getByRole('heading', { name: 'The Great Dark opens' })).toBeVisible();
 });
 
 test('the curated Chronicle scope cannot be disabled by visitors', async ({ page }) => {

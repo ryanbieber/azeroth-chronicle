@@ -18,14 +18,20 @@ export function StoryGuidePanel({ guideId, showLauncher = true }: { guideId: str
   const fullTour = params.get('tour') === 'full';
   const setEra = useEraStore((state) => state.setEra);
   const guide = staticLoreRepository.findStoryGuide(guideId);
+  const activeGuideId = useStoryStore((state) => state.guideId);
   const activeNodeId = useStoryStore((state) => state.nodeId);
   const status = useStoryStore((state) => state.status);
   const play = useStoryStore((state) => state.play);
+  const pause = useStoryStore((state) => state.pause);
   const narrationEnabled = useNarrationStore((state) => state.enabled);
   const setNarrationEnabled = useNarrationStore((state) => state.setEnabled);
   const audioRef = useRef<HTMLAudioElement>(null);
+  const remainingMs = useRef(0);
+  const timerStartedAt = useRef(0);
   const [audioStatus, setAudioStatus] = useState<'idle' | 'playing' | 'awaiting'>('idle');
-  const node = activeNodeId ? staticLoreRepository.findStoryNode(activeNodeId) : undefined;
+  const node = activeGuideId === guide?.id && activeNodeId && guide.nodeIds.includes(activeNodeId)
+    ? staticLoreRepository.findStoryNode(activeNodeId)
+    : undefined;
   const voiceoverSrc = node?.voiceover
     ? `${import.meta.env.BASE_URL}${node.voiceover.assetPath}`
     : undefined;
@@ -34,9 +40,11 @@ export function StoryGuidePanel({ guideId, showLauncher = true }: { guideId: str
     if (fullTour && guide && !node) beginStoryGuide(guide.id);
   }, [fullTour, guide, node]);
 
+  const durationMs = node?.durationMs ?? (node ? narrationDurationMs(node.narration) : 0);
+
   useEffect(() => {
-    if (node && status === 'paused') play();
-  }, [node, play, status]);
+    remainingMs.current = durationMs;
+  }, [node?.id, durationMs, narrationEnabled]);
 
   useEffect(() => {
     if (!node || status !== 'playing') return;
@@ -44,27 +52,36 @@ export function StoryGuidePanel({ guideId, showLauncher = true }: { guideId: str
     const currentIndex = guide?.nodeIds.indexOf(node.id) ?? -1;
     const nextNodeId = guide?.nodeIds[currentIndex + 1];
     if (!nextNodeId) return;
+    timerStartedAt.current = performance.now();
     const timer = window.setTimeout(() => {
       const nextNode = staticLoreRepository.findStoryNode(nextNodeId);
       if (nextNode) enterStoryNode(nextNode);
-    }, node.durationMs ?? narrationDurationMs(node.narration));
-    return () => window.clearTimeout(timer);
+    }, remainingMs.current);
+    return () => {
+      window.clearTimeout(timer);
+      remainingMs.current = Math.max(0, remainingMs.current - (performance.now() - timerStartedAt.current));
+    };
   }, [guide, narrationEnabled, node, status]);
 
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
     audio.pause();
-    audio.currentTime = 0;
+    audio.load();
+  }, [node?.id, voiceoverSrc]);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
     if (!narrationEnabled || !node?.voiceover || status !== 'playing') {
+      audio.pause();
       return;
     }
-    audio.load();
     void audio.play()
       .then(() => setAudioStatus('playing'))
       .catch(() => setAudioStatus('awaiting'));
     return () => audio.pause();
-  }, [narrationEnabled, node?.id, node?.voiceover, status, voiceoverSrc]);
+  }, [narrationEnabled, node?.id, node?.voiceover, status]);
 
   if (!guide) return null;
 
@@ -94,18 +111,18 @@ export function StoryGuidePanel({ guideId, showLauncher = true }: { guideId: str
   const currentIndex = guide.nodeIds.indexOf(node.id);
   const previous = currentIndex > 0 ? guide.nodeIds[currentIndex - 1] : undefined;
   const next = currentIndex < guide.nodeIds.length - 1 ? guide.nodeIds[currentIndex + 1] : undefined;
-  const durationMs = node.durationMs ?? narrationDurationMs(node.narration);
   const voiceoverAvailable = Boolean(node.voiceover && voiceoverSrc);
   const toggleVoiceover = () => {
     const audio = audioRef.current;
     if (narrationEnabled) {
       audio?.pause();
+      if (audio) audio.currentTime = 0;
       setNarrationEnabled(false);
       setAudioStatus('idle');
       return;
     }
     setNarrationEnabled(true);
-    if (audio) {
+    if (audio && status === 'playing') {
       void audio.play()
         .then(() => setAudioStatus('playing'))
         .catch(() => setAudioStatus('awaiting'));
@@ -154,6 +171,12 @@ export function StoryGuidePanel({ guideId, showLauncher = true }: { guideId: str
           />
         </div>
       )}
+      <div className="story-playback">
+        <button type="button" aria-pressed={status === 'paused'} onClick={status === 'playing' ? pause : play}>
+          {status === 'playing' ? 'Pause tour' : 'Resume tour'}
+        </button>
+        <span>{status === 'playing' ? 'Playing' : 'Paused'}</span>
+      </div>
       <div className="story-actions">
         <button type="button" disabled={!previous} onClick={() => previous && activate(previous)}>Previous</button>
         <button type="button" onClick={() => next ? activate(next) : finish()}>{next ? 'Next' : fullTour ? 'Continue the chronicle' : 'Next'}</button>
@@ -162,7 +185,7 @@ export function StoryGuidePanel({ guideId, showLauncher = true }: { guideId: str
         <span
           key={`${node.id}-${narrationEnabled}`}
           className={narrationEnabled && node.voiceover ? 'is-audio-timed' : undefined}
-          style={{ animationDuration: `${narrationEnabled && node.voiceover ? node.voiceover.durationMs : durationMs}ms` }}
+          style={{ animationDuration: `${narrationEnabled && node.voiceover ? node.voiceover.durationMs : durationMs}ms`, animationPlayState: status === 'playing' ? 'running' : 'paused' }}
         />
       </div>
     </section>

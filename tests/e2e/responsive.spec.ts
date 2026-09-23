@@ -43,6 +43,23 @@ test.describe('responsive application shell', () => {
     await expectNoHorizontalOverflow(page);
   });
 
+  test('keeps guided playback controls in view on a phone', async ({ page }) => {
+    await page.setViewportSize(phoneViewport);
+    await page.goto('/map?era=third-war-frozen-throne&tour=full');
+    const card = page.locator('.story-card');
+    await expect(card.getByRole('heading', { name: 'The defeated inherit another beginning' })).toBeVisible();
+    await expect(card.getByRole('button', { name: 'Pause tour' })).toBeVisible();
+    const next = card.getByRole('button', { name: 'Next', exact: true });
+    const nextBox = await next.boundingBox();
+    const stageBox = await page.getByLabel('Atlas map workspace').boundingBox();
+    expect(nextBox).not.toBeNull();
+    expect(stageBox).not.toBeNull();
+    expect(nextBox!.y + nextBox!.height).toBeLessThanOrEqual(stageBox!.y + stageBox!.height);
+    await card.getByRole('button', { name: 'Pause tour' }).click();
+    await expect(card.getByRole('button', { name: 'Resume tour' })).toBeVisible();
+    await expectNoHorizontalOverflow(page);
+  });
+
   test('uses readable single-column archive cards on a phone', async ({ page }) => {
     await page.setViewportSize(phoneViewport);
     await page.goto('/archive');

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-22T14:10:21.315Z",
+  "generatedAt": "2026-09-24T15:12:58.354Z",
   "disclosure": "AI-generated narration using a stock synthetic voice; not a human performance or a Warcraft performer.",
   "scope": "Guided-tour StoryNode narration only.",
   "model": "hexgrad/Kokoro-82M",

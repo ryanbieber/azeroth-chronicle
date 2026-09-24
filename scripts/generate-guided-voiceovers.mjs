@@ -20,6 +20,7 @@ const args = new Map(process.argv.slice(2).map((arg) => {
 const force = args.has('force');
 const useGpu = args.has('gpu');
 const limit = args.has('limit') ? Number(args.get('limit')) : Number.POSITIVE_INFINITY;
+const selectedNodeIds = args.has('nodes') ? new Set(args.get('nodes').split(',').filter(Boolean)) : undefined;
 const voice = args.get('voice') ?? DEFAULT_VOICE;
 const speed = Number(args.get('speed') ?? DEFAULT_SPEED);
 const voiceId = `kokoro-${voice.replaceAll('_', '-')}`;
@@ -121,7 +122,11 @@ const stories = await Promise.all(storyFiles.map(async (filename) => ({
   path: resolve('data/stories', filename),
   value: JSON.parse(await readFile(resolve('data/stories', filename), 'utf8')),
 })));
-const work = stories.flatMap((story) => story.value.nodes.map((node) => ({ story, node }))).slice(0, limit);
+const allWork = stories.flatMap((story) => story.value.nodes.map((node) => ({ story, node })));
+const work = allWork.filter(({ node }) => !selectedNodeIds || selectedNodeIds.has(node.id)).slice(0, limit);
+if (selectedNodeIds && work.length !== selectedNodeIds.size) {
+  throw new Error(`Expected ${selectedNodeIds.size} selected nodes, found ${work.length}. Check --nodes and --limit.`);
+}
 const client = await Client.connect(SPACE_ID);
 const tracks = [];
 
@@ -170,13 +175,19 @@ for (const [index, { story, node }] of work.entries()) {
 }
 
 const generatedAt = new Date().toISOString();
-await writeJson(resolve(OUTPUT_ROOT, 'manifest.json'), {
+const manifestPath = resolve(OUTPUT_ROOT, 'manifest.json');
+const priorManifest = selectedNodeIds ? JSON.parse(await readFile(manifestPath, 'utf8')) : undefined;
+const updatedTracks = new Map(tracks.map((track) => [track.nodeId, track]));
+const completeTracks = priorManifest
+  ? priorManifest.tracks.map((track) => updatedTracks.get(track.nodeId) ?? track)
+  : tracks;
+await writeJson(manifestPath, {
   schemaVersion: 1,
   generatedAt,
   generator: { spaceId: SPACE_ID, functionIndex: FUNCTION_INDEX, voice, voiceId, speed, postTempo: POST_TEMPO, hardware: useGpu ? 'zerogpu' : 'cpu' },
-  trackCount: tracks.length,
-  totalDurationMs: tracks.reduce((sum, track) => sum + (track.durationMs ?? 0), 0),
-  tracks,
+  trackCount: completeTracks.length,
+  totalDurationMs: completeTracks.reduce((sum, track) => sum + (track.durationMs ?? 0), 0),
+  tracks: completeTracks,
 });
 await writeJson(resolve(OUTPUT_ROOT, 'provenance.json'), {
   schemaVersion: 1,

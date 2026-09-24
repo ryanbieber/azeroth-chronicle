@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-22T14:10:21.315Z",
+  "generatedAt": "2026-09-24T15:12:58.354Z",
   "generator": {
     "spaceId": "hexgrad/Kokoro-TTS",
     "functionIndex": 4,
@@ -11,7 +11,7 @@
     "hardware": "cpu"
   },
   "trackCount": 117,
-  "totalDurationMs": 3021075,
+  "totalDurationMs": 3026600,
   "tracks": [
     {
       "nodeId": "adventurers-story-gates",
@@ -129,9 +129,9 @@
       "nodeId": "ancient-story-aqir-divided",
       "guideId": "ancient-civilizations-guided-history",
       "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-aqir-divided.mp3",
-      "durationMs": 23475,
-      "sha256": "7865da7e3aac5ad17b79739a0e572d89b02082db5f159790fa57f45a99f84ac5",
-      "bytes": 282861
+      "durationMs": 27500,
+      "sha256": "00f0f4f5ad151afdc74a8c6990f9424ccc059157309c36abcf28bc12a4b884e5",
+      "bytes": 330957
     },
     {
       "nodeId": "ancient-story-southern-kingdoms",
@@ -169,9 +169,9 @@
       "nodeId": "ancient-story-people-apart",
       "guideId": "ancient-civilizations-guided-history",
       "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-people-apart.mp3",
-      "durationMs": 22400,
-      "sha256": "6bdf4462a8027f3de7133bb76d0843ed3a2c4c8158e8451652fcfd7d33e2c4fa",
-      "bytes": 269901
+      "durationMs": 27550,
+      "sha256": "24f4b294e64f04bc2c3342de23d597630aab408aee0a72201457fa5c881b6f1b",
+      "bytes": 331533
     },
     {
       "nodeId": "ancient-story-well-changes-them",
@@ -377,17 +377,17 @@
       "nodeId": "long-vigil-story-exile-decreed",
       "guideId": "long-vigil-new-kingdoms-guided-history",
       "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-exile-decreed.mp3",
-      "durationMs": 28350,
-      "sha256": "7ce0b252bad5d957d5e296929e116057198aa20c8a98a914ef5871fd76f2d551",
-      "bytes": 341325
+      "durationMs": 26525,
+      "sha256": "0df6ee3746a411b8e14198fbbc040ae53d211639059880866e2b65fd5c50455e",
+      "bytes": 319437
     },
     {
       "nodeId": "long-vigil-story-crossing-east",
       "guideId": "long-vigil-new-kingdoms-guided-history",
       "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-crossing-east.mp3",
-      "durationMs": 28775,
-      "sha256": "bc5d634dbcf538f80727a08d311805bf5c31f48f025f62ae6406a367f5076f42",
-      "bytes": 346221
+      "durationMs": 29025,
+      "sha256": "5eb9d3d2c121ee0cb028b6df8365791d4383b148bdc995a2d8322049c35386e5",
+      "bytes": 349389
     },
     {
       "nodeId": "long-vigil-story-new-sun",
@@ -433,9 +433,9 @@
       "nodeId": "long-vigil-story-three-hammers",
       "guideId": "long-vigil-new-kingdoms-guided-history",
       "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-three-hammers.mp3",
-      "durationMs": 29600,
-      "sha256": "44c1fc0f5d80d8ca98e6faa651803092f539ccded5f93f115e9dd04c20fd24ef",
-      "bytes": 356301
+      "durationMs": 28975,
+      "sha256": "84c9c3b906593fab7ab642be5ef5ab5fb718cbb71884d5ca2fb2f5fcdf873fde",
+      "bytes": 348813
     },
     {
       "nodeId": "long-vigil-story-firelord-returns",
@@ -689,9 +689,9 @@
       "nodeId": "horde-rise-story-stormwind-falls",
       "guideId": "rise-of-the-horde-guided-history",
       "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-stormwind-falls.mp3",
-      "durationMs": 28525,
-      "sha256": "e622b19a999f987d462e8277106f519d50139b7d1739ac4379d68d9a71664aa3",
-      "bytes": 343341
+      "durationMs": 27000,
+      "sha256": "37c77ec47f1d44f6a7d7b165fe42d34e8be66a0c4164969e946b96474e638dc5",
+      "bytes": 324909
     },
     {
       "nodeId": "horde-rise-story-alliance-forms",
@@ -793,9 +793,9 @@
       "nodeId": "third-war-story-westward-crossing",
       "guideId": "third-war-frozen-throne-guided-history",
       "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-westward-crossing.mp3",
-      "durationMs": 29550,
-      "sha256": "30ca98e4c769d6dd769a3b5b52fa62435abd471a43b63b046d1c8045a05d1177",
-      "bytes": 355725
+      "durationMs": 26950,
+      "sha256": "4a56c884bb897f7b39cf5e50c27c38adacc211b6c80e9af1d019445e21048592",
+      "bytes": 324333
     },
     {
       "nodeId": "third-war-story-bond-is-broken",
@@ -945,9 +945,9 @@
       "nodeId": "ancients-war-story-road-to-hyjal",
       "guideId": "war-of-the-ancients-guided-history",
       "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-road-to-hyjal.mp3",
-      "durationMs": 23475,
-      "sha256": "3f6e433baaf7eddaa927fdd00e5564a48eb15caef2b97c5cdf1eb3a81e97c566",
-      "bytes": 282861
+      "durationMs": 26150,
+      "sha256": "1d59d2a713d23855517c1175774082553b7b80c3804fd1b5fc2025aceeee7184",
+      "bytes": 314829
     }
   ]
 }

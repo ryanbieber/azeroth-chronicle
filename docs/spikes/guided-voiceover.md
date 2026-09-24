@@ -21,6 +21,7 @@ The replacement production set uses Kokoro's stock British male `bm_lewis` voice
 - `public/audio/guided/manifest.json` records hashes, byte sizes, durations, and generator settings.
 - `public/audio/guided/provenance.json` records model, license, voice, speed, disclosure, and the absence of reference audio.
 - `pnpm generate:voiceovers` regenerates or resumes the corpus through `hexgrad/Kokoro-TTS`; `--force` replaces existing files and `--gpu` opts into the public accelerated queue.
+- `pnpm generate:voiceovers --nodes=<comma-separated-node-ids> --force` replaces only edited narration cards and preserves the remaining tracks in the complete manifest.
 - `pnpm validate:data` fails when a declared voice-over asset is absent.
 
 ## Playback contract

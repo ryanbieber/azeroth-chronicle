@@ -89,9 +89,9 @@
     },
     {
       "id": "third-war-story-westward-crossing", "guideId": "third-war-frozen-throne-guided-history", "title": "A warning sends the New Horde beyond the sunset",
-      "narration": "Warned that a greater darkness was coming, Thrall led the New Horde westward. The sea passage shown here is a narrative direction, not a captain's measured chart. Across it moved a people seeking ground on which a different future might stand, even while old violence traveled within them. Kalimdor offered no empty refuge. It held ancient guardians, unfamiliar powers, and conflicts that would test whether the new name could survive the habits of the old.",
+      "narration": "After freeing the interned orcs, Thrall gathered them into a New Horde. A warning of the coming danger drove him to lead them west across the sea. He also sought a place where his people could build a future beyond captivity and the defeated Old Horde. They reached Kalimdor, which was already home to other peoples. The crossing brought them into new conflicts, but it also placed them where they would join the defense of Mount Hyjal.",
       "durationMs": 67000,
-      "voiceover":{"assetPath":"audio/guided/third-war-frozen-throne-guided-history/third-war-story-westward-crossing.mp3","durationMs":29550,"voiceId":"kokoro-bm-lewis","aiGenerated":true}, "eventIds": ["new-horde-crosses-to-kalimdor"], "entityIds": ["thrall", "new-horde"], "optionalExploreEntityIds": ["thrall", "new-horde"],
+      "voiceover":{"assetPath":"audio/guided/third-war-frozen-throne-guided-history/third-war-story-westward-crossing.mp3","durationMs":26950,"voiceId":"kokoro-bm-lewis","aiGenerated":true}, "eventIds": ["new-horde-crosses-to-kalimdor"], "entityIds": ["thrall", "new-horde"], "optionalExploreEntityIds": ["thrall", "new-horde"],
       "camera": { "position": [-1.6, 7.0, 6.0], "target": [-2.0, 0, 0.3], "durationMs": 1180 },
       "visualActions": [{ "type": "set_map_state", "mapStateId": "third-war-hyjal-map-research" }, { "type": "show_route", "routeId": "horde-westward-passage" }, { "type": "highlight_faction", "factionId": "new-horde" }],
       "previousNodeId": "third-war-story-legion-returns", "nextNodeIds": ["third-war-story-bond-is-broken"]

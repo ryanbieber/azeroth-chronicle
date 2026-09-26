@@ -312,8 +312,8 @@
       "presentation": "terrain",
       "cartographyLabel": "INTERPRETIVE EARLY POST-SUNDERING STATE",
       "interpretationNote": "This state inherits the separate post-Sundering terrain from Era 4 and concentrates on Hyjal. Character points are narrative anchors; the map does not imply that the postwar kaldorei or their leaders remained at one permanent coordinate.",
-      "terrainTextureAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-atlas.research.webp",
-      "terrainHeightAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-height.research.webp",
+      "terrainTextureAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-atlas.research.webp",
+      "terrainHeightAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-height.research.webp",
       "geometryIds": [
         "maelstrom-aftermath-focus-research",
         "hyjal-era-five-focus-research",
@@ -332,8 +332,8 @@
       "presentation": "terrain",
       "cartographyLabel": "INTERPRETIVE MIGRATION AND FOUNDING STATE",
       "interpretationNote": "This state spans centuries of migration and political foundation. The voyage line and influence regions communicate relationships and sequence, not a single-date border survey, exact sailing track, or claim that all travelers moved together.",
-      "terrainTextureAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-atlas.research.webp",
-      "terrainHeightAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-height.research.webp",
+      "terrainTextureAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-atlas.research.webp",
+      "terrainHeightAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-height.research.webp",
       "geometryIds": [
         "maelstrom-aftermath-focus-research",
         "hyjal-era-five-focus-research",
@@ -360,8 +360,8 @@
       "presentation": "terrain",
       "cartographyLabel": "INTERPRETIVE LATE KINGDOM STATE",
       "interpretationNote": "This late time slice makes the geopolitical plurality inherited by the Horde's rise readable at world scale. Its broad influence areas are not surveyed borders, do not imply simultaneous founding dates, and preserve overlapping claims where the sources require them.",
-      "terrainTextureAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-atlas.research.webp",
-      "terrainHeightAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-height.research.webp",
+      "terrainTextureAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-atlas.research.webp",
+      "terrainHeightAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-height.research.webp",
       "geometryIds": [
         "maelstrom-aftermath-focus-research",
         "hyjal-era-five-focus-research",

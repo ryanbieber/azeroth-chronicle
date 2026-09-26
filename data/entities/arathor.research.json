@@ -4,7 +4,7 @@
   "name": "Arathor",
   "slug": "arathor",
   "shortDescription": "The first great human nation, united under Thoradin and centered at Strom.",
-  "body": "Arathor's atlas region is a broad political reading across a long era. The generated group image represents a coalition of early human communities rather than one uniform army or later kingdom culture.",
+  "body": "Thoradin united early human communities under Arathor, with Strom as its center. That union gave the human kingdoms a shared political origin, though the realm later divided into separate states.",
   "firstEraId": "long-vigil-new-kingdoms",
   "featuredEraIds": ["long-vigil-new-kingdoms"],
   "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-stromkar-thoradin"],

@@ -4,7 +4,7 @@
   "name": "Aqir",
   "slug": "aqir",
   "shortDescription": "Resilient insectoid servants formed from the Old Gods' organic matter, first set to building the Black Empire and later drawn into a world-spanning war with the ancient troll powers.",
-  "body": "The atlas treats the aqir as a changing ancient people rather than a single timeless empire. The northern and southern successor societies that emerged from their retreat belong to later map states and should not be collapsed into one precise border.",
+  "body": "The aqir first served the Old Gods in the building of the Black Empire. After their war with the ancient troll powers, surviving groups retreated in different directions and gave rise to separate northern and southern societies.",
   "firstEraId": "black-empire",
   "sourceIds": ["warcraft-chronicle-volume-1"],
   "claimIds": ["aqir-role-claim", "aqir-war-and-retreat-claim"],

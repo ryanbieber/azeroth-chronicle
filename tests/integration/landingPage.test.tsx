@@ -23,7 +23,8 @@ describe('landing page', () => {
 
     expect(screen.getByRole('heading', { name: /the full history/i })).toBeVisible();
     expect(screen.getByRole('button', { name: /full tour of the history/i })).toBeVisible();
-    expect(screen.getByRole('link', { name: /explore the atlas freely/i })).toBeVisible();
+    expect(screen.getByRole('combobox', { name: 'Choose an era to tour' })).toBeVisible();
+    expect(screen.getByRole('button', { name: 'Tour this era' })).toBeVisible();
     expect(screen.getByRole('link', { name: /browse the illustrated archive/i })).toHaveAttribute('href', '/archive');
     expect(container.querySelectorAll('.landing-still')).toHaveLength(7);
 
@@ -34,5 +35,14 @@ describe('landing page', () => {
       nodeId: 'cosmic-origins-story-light-shadow',
       status: 'playing',
     });
+  });
+
+  it('starts only the selected era tour', async () => {
+    const user = userEvent.setup();
+    render(<MemoryRouter><LandingPage /></MemoryRouter>);
+    await user.selectOptions(screen.getByRole('combobox', { name: 'Choose an era to tour' }), 'long-vigil-new-kingdoms');
+    await user.click(screen.getByRole('button', { name: 'Tour this era' }));
+    expect(useEraStore.getState().eraId).toBe('long-vigil-new-kingdoms');
+    expect(useStoryStore.getState().guideId).toBe('long-vigil-new-kingdoms-guided-history');
   });
 });

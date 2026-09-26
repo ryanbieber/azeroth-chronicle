@@ -8,12 +8,9 @@ describe('application shell', () => {
     render(<MemoryRouter initialEntries={['/map?era=black-empire']}><AppShell><main>Atlas</main></AppShell></MemoryRouter>);
     expect(screen.getByText(/not affiliated with, endorsed by, sponsored by, or approved by Blizzard Entertainment/i)).toBeVisible();
     expect(screen.getByText('Unofficial fan atlas')).toBeVisible();
-    const selector = screen.getByRole('combobox', { name: 'Choose era' });
-    expect(selector).toBeVisible();
-    expect(screen.getAllByRole('option')).toHaveLength(10);
-    expect(screen.getByRole('option', { name: 'Cosmic Origins' })).toBeVisible();
-    expect(screen.getByRole('option', { name: 'Primordial Azeroth and the Black Empire' })).toBeVisible();
-    expect(screen.getByRole('option', { name: 'The Modern Cosmic Age' })).toBeVisible();
+    expect(screen.getByRole('link', { name: 'Choose a tour' })).toHaveAttribute('href', '/');
     expect(screen.getByRole('link', { name: 'Archive gallery' })).toHaveAttribute('href', '/archive');
+    expect(screen.queryByRole('link', { name: 'Atlas' })).not.toBeInTheDocument();
+    expect(screen.queryByRole('link', { name: 'Era dossier' })).not.toBeInTheDocument();
   });
 });

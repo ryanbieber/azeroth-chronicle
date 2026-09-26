@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 
 for (const viewport of [{ width: 1440, height: 900 }, { width: 768, height: 1024 }, { width: 390, height: 844 }, { width: 844, height: 390 }]) {
-  test(`story fills the viewport and can return to the atlas at ${viewport.width}x${viewport.height}`, async ({ page }) => {
+  test(`story fills the viewport and can return to the tour chooser at ${viewport.width}x${viewport.height}`, async ({ page }) => {
     await page.setViewportSize(viewport);
     await page.emulateMedia({ reducedMotion: 'reduce' });
     const errors: string[] = [];
@@ -21,7 +21,7 @@ for (const viewport of [{ width: 1440, height: 900 }, { width: 768, height: 1024
     await transcript.focus();
     await expect(transcript).toBeFocused();
     expect((await transcript.boundingBox())!.height).toBeGreaterThan(24);
-    for (const name of ['Return to atlas', 'Enable voice-over', 'Resume tour', 'Next']) {
+    for (const name of ['Leave tour', 'Enable voice-over', 'Resume tour', 'Next']) {
       const button = page.getByRole('button', { name, exact: true });
       await expect(button).toBeInViewport();
       const box = (await button.boundingBox())!;
@@ -36,13 +36,13 @@ for (const viewport of [{ width: 1440, height: 900 }, { width: 768, height: 1024
     await page.getByRole('button', { name: 'Next', exact: true }).click();
     await expect(page.getByRole('heading', { name: 'The Great Dark opens' })).toBeVisible();
     await expect(page.getByRole('button', { name: 'Resume tour' })).toBeVisible();
-    await page.getByRole('button', { name: 'Return to atlas' }).click();
+    await page.getByRole('button', { name: 'Leave tour' }).click();
     await expect(page).not.toHaveURL(/tour=full/);
     await expect(page.locator('.story-card')).toHaveCount(0);
     await expect(environment).toHaveCount(0);
-    await expect(page.getByRole('combobox', { name: 'Choose era' })).toBeVisible();
+    await expect(page.getByRole('combobox', { name: 'Choose an era to tour' })).toBeVisible();
     await page.reload();
-    await expect(page.getByRole('button', { name: 'Guided tour' })).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Tour this era' })).toBeVisible();
     await expect(page.locator('.story-card')).toHaveCount(0);
     expect(errors).toEqual([]);
   });

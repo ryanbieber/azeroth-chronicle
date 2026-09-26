@@ -14,8 +14,8 @@ export function BattlePage() {
     <main className="document-page">
       <BattleDossier battle={battle} entities={dataset.entities} />
       <StoryReturnLink eraId={battle.eraId} />
-      <Link className="primary-link" to={`/map?era=${battle.eraId}&selected=battle:${battle.slug}`}>
-        Locate this battle on the atlas
+      <Link className="primary-link" to={`/?era=${battle.eraId}`}>
+        Choose this era’s tour
       </Link>
     </main>
   );

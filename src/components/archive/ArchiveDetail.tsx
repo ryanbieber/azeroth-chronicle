@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
 import type { ArchiveEntry } from '../../domain/types/archive';
 import type { LoreDataset } from '../../domain/types/lore';
 import { formatLoreDate } from '../../lib/lore/formatLoreDate';
@@ -150,10 +149,6 @@ export function ArchiveDetail({
             {entry.contentStatus && <p className="status-chip">{entry.contentStatus}</p>}
             <p className="archive-detail-lede" id="archive-detail-summary">{entry.summary}</p>
             <ArchiveRecordFacts entry={entry} dataset={dataset} />
-            <div className="archive-detail-links">
-              {entry.recordPath && <Link className="primary-link" to={entry.recordPath}>Open full dossier</Link>}
-              {entry.atlasPath && <Link className="primary-link secondary-link" to={entry.atlasPath}>Open in atlas</Link>}
-            </div>
             {entry.recordType !== 'mapState' && <ProvenancePanel subjectId={entry.recordId} />}
           </article>
         </div>

@@ -14,6 +14,7 @@ import { CameraRig } from './CameraRig';
 
 interface MapViewport3DProps {
   immersive?: boolean;
+  readOnly?: boolean;
   battles: Battle[];
   geometry: RuntimeGeometry[];
   terrainAsset?: string;
@@ -325,40 +326,42 @@ function ElementalPresence({ entityId }: { entityId: string }) {
 
 // Keep illustrated actors readable without enlarging them with cinematic framing.
 function useFigureDistanceFactor(immersive?: boolean) {
-  const size = useThree((state) => state.size);
-  return immersive ? 5 * (size.width > size.height ? 1.45 / 1.65 : 1 / 1.12) : 5;
+  // Cinematic cameras can approach anchors closely. Keep tour portraits at their
+  // authored screen size so crowded chapters still have room for every name.
+  return immersive ? undefined : 5;
 }
 
-function CharacterFigure({ entity, active, immersive, onSelect }: { entity: LoreEntity; active: boolean; immersive?: boolean; onSelect: () => void }) {
+function CharacterFigure({ entity, active, immersive, readOnly, onSelect }: { entity: LoreEntity; active: boolean; immersive?: boolean; readOnly?: boolean; onSelect: () => void }) {
   const distanceFactor = useFigureDistanceFactor(immersive);
   if (!entity.mapFigure) return null;
   const width = Math.round(132 * (entity.mapFigure.scale ?? 1));
+  const content = <><img src={`${import.meta.env.BASE_URL}${entity.mapFigure.asset}`} alt="" width={width} /><span>{entity.name}</span></>;
   return (
     <Html center position={[0, 1.02, 0]} distanceFactor={distanceFactor} zIndexRange={[4, 1]}>
-      <button className={`map-character-figure${active ? ' is-active' : ''}`} type="button" onClick={onSelect} aria-label={entity.name}>
-        <img src={`${import.meta.env.BASE_URL}${entity.mapFigure.asset}`} alt="" width={width} />
-        <span>{entity.name}</span>
-      </button>
+      {readOnly
+        ? <div className={`map-character-figure${active ? ' is-active' : ''}`} aria-label={entity.name}>{content}</div>
+        : <button className={`map-character-figure${active ? ' is-active' : ''}`} type="button" onClick={onSelect} aria-label={entity.name}>{content}</button>}
     </Html>
   );
 }
 
-function ContextualSubjectVisual({ entity, immersive, onSelect }: { entity: LoreEntity; immersive?: boolean; onSelect: () => void }) {
+function ContextualSubjectVisual({ entity, immersive, readOnly, onSelect }: { entity: LoreEntity; immersive?: boolean; readOnly?: boolean; onSelect: () => void }) {
   const distanceFactor = useFigureDistanceFactor(immersive);
   if (!entity.mapVisual) return null;
   const width = Math.round(140 * (entity.mapVisual.scale ?? 1));
+  const content = <><img src={`${import.meta.env.BASE_URL}${entity.mapVisual.asset}`} alt="" width={width} /><span>{entity.name}</span></>;
   return (
     <Html center position={[0, 0.94, 0]} distanceFactor={distanceFactor} zIndexRange={[4, 1]}>
-      <button className="map-subject-visual is-active" type="button" onClick={onSelect} aria-label={entity.name}>
-        <img src={`${import.meta.env.BASE_URL}${entity.mapVisual.asset}`} alt="" width={width} />
-        <span>{entity.name}</span>
-      </button>
+      {readOnly
+        ? <div className="map-subject-visual is-active" aria-label={entity.name}>{content}</div>
+        : <button className="map-subject-visual is-active" type="button" onClick={onSelect} aria-label={entity.name}>{content}</button>}
     </Html>
   );
 }
 
 function AtlasScene({
   immersive,
+  readOnly,
   battles,
   geometry,
   terrainAsset,
@@ -462,16 +465,18 @@ function AtlasScene({
             </mesh>
           )}
           {presentation !== 'relational' && !entity.mapFigure && !entity.mapVisual && (
-            <group onClick={(event) => { event.stopPropagation(); select({ kind: 'entity', id: entity.id }); }}>
+            <group onClick={readOnly ? undefined : (event) => { event.stopPropagation(); select({ kind: 'entity', id: entity.id }); }}>
               <ElementalPresence entityId={entity.id} />
             </group>
           )}
           {entity.mapVisual && (
-            <ContextualSubjectVisual immersive={immersive} entity={entity} onSelect={() => select({ kind: 'entity', id: entity.id })} />
+            <ContextualSubjectVisual immersive={immersive} readOnly={readOnly} entity={entity} onSelect={() => select({ kind: 'entity', id: entity.id })} />
           )}
           {layers.labels && !entity.mapFigure && !entity.mapVisual && (
             <Html center position={[0, 0.38, 0]} distanceFactor={7}>
-              <button className="map-label" type="button" onClick={() => select({ kind: 'entity', id: entity.id })}>{entity.name}</button>
+              {readOnly
+                ? <span className="map-label">{entity.name}</span>
+                : <button className="map-label" type="button" onClick={() => select({ kind: 'entity', id: entity.id })}>{entity.name}</button>}
             </Html>
           )}
         </group>
@@ -486,7 +491,7 @@ function AtlasScene({
               <meshBasicMaterial color="#d7b777" transparent opacity={0.5} depthTest={false} />
             </mesh>
           )}
-          <CharacterFigure immersive={immersive} active={active} entity={entity} onSelect={() => select({ kind: 'entity', id: entity.id })} />
+          <CharacterFigure immersive={immersive} readOnly={readOnly} active={active} entity={entity} onSelect={() => select({ kind: 'entity', id: entity.id })} />
         </group>
       ))}
 
@@ -509,7 +514,7 @@ function AtlasScene({
               </mesh>
             )}
             <mesh
-              onClick={(event) => {
+              onClick={readOnly ? undefined : (event) => {
                 event.stopPropagation();
                 select({ kind: 'battle', id: battle.id });
               }}
@@ -522,9 +527,9 @@ function AtlasScene({
             </mesh>
             {layers.labels && (
               <Html center position={[0, 0.52, 0]} distanceFactor={7}>
-                <button className="map-label" type="button" aria-label={`${battle.name}, ${battle.importance.replace('_', ' ')}`} onClick={() => select({ kind: 'battle', id: battle.id })}>
-                  {battle.name}
-                </button>
+                {readOnly
+                  ? <span className="map-label">{battle.name}</span>
+                  : <button className="map-label" type="button" aria-label={`${battle.name}, ${battle.importance.replace('_', ' ')}`} onClick={() => select({ kind: 'battle', id: battle.id })}>{battle.name}</button>}
               </Html>
             )}
           </group>
@@ -533,12 +538,13 @@ function AtlasScene({
 
       <OrbitControls
         ref={controls}
+        enabled={!readOnly}
         makeDefault
         enableDamping
         minDistance={4}
         maxDistance={13}
         maxPolarAngle={Math.PI / 2.25}
-        onStart={cancelCamera}
+        onStart={readOnly ? undefined : cancelCamera}
       />
       <CameraRig controls={controls} />
     </>
@@ -564,20 +570,20 @@ export function MapViewport3D(props: MapViewport3DProps) {
       <section className="map-fallback" role="status">
         <p className="eyebrow">Text-first atlas</p>
         <h2>3D map unavailable</h2>
-        <p>Your browser could not start WebGL. The permanent dossiers remain fully available.</p>
-        <Link to={props.fallbackDossierPath}>Open the era dossier</Link>
+        <p>Your browser could not start WebGL. The illustrated archive remains available.</p>
+        <Link to={props.fallbackDossierPath}>Open the archive gallery</Link>
       </section>
     );
   }
 
   return (
-    <div className="map-viewport" data-environment={props.presentation ?? 'terrain'} aria-label="Interactive three-dimensional historical map">
+    <div className="map-viewport" data-environment={props.presentation ?? 'terrain'} aria-label={props.readOnly ? 'Guided historical scene' : 'Interactive three-dimensional historical map'}>
       {props.immersive && props.terrainTextureAsset && (
         <div className="story-atmosphere" aria-hidden="true" key={props.terrainTextureAsset}>
           <img src={`${import.meta.env.BASE_URL}${props.terrainTextureAsset}`} alt="" />
         </div>
       )}
-      <Canvas camera={{ position: [0, 5.6, 6.3], fov: 48 }} dpr={[1, 1.75]}>
+      <Canvas camera={{ position: [0, 5.6, 6.3], fov: 48 }} dpr={[1, 1.75]} style={props.readOnly ? { pointerEvents: 'none' } : undefined}>
         <StoryFraming immersive={Boolean(props.immersive)} />
         <Suspense fallback={null}>
           <AtlasScene {...props} />
@@ -586,7 +592,7 @@ export function MapViewport3D(props: MapViewport3DProps) {
         </Suspense>
       </Canvas>
       <div className="map-caption" aria-hidden="true">
-        {props.cartographyLabel ?? 'ATLAS CARTOGRAPHY'} · DRAG TO ORBIT · SCROLL TO ZOOM
+        {props.cartographyLabel ?? 'ATLAS CARTOGRAPHY'}{props.readOnly ? '' : ' · DRAG TO ORBIT · SCROLL TO ZOOM'}
       </div>
       {profile && (
         <output className="performance-report" data-testid="performance-report">

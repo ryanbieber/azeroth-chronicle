@@ -36,7 +36,7 @@ The reusable engine acceptance path and all ten Era 0–9 research-preview imple
 ### Application and routing
 
 - Use Vite, React, and strict TypeScript as a single-page application.
-- Use `/` as the public landing page and primary full-history tour entry; retain `/map` as the shareable atlas workspace and `/archive` as the generated text-first visual collection.
+- Use `/` as the public chooser for a full-history or selected-era tour. `/map?era=<slug>&tour=full|era` is the shareable, noninteractive guided scene; `/archive` is the generated asset gallery. The tour-led decision is recorded in `docs/decisions/tour-led-public-experience.md`.
 - Use React Router with permanent routes for `/eras/:slug`, `/battles/:slug`, `/events/:slug`, `/locations/:slug`, and `/factions/:slug`.
 - Use `/map` query parameters for restorable explorer state: `era`, selected record, and optionally a compact camera bookmark. Public layer visibility is curated by era and story state rather than exposed as visitor configuration.
 - Keep the 3D explorer client-rendered. Generate static dossier HTML only after measuring an actual search-indexing or link-preview need. If needed, add a build-time prerender step rather than a server runtime.

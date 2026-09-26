@@ -1,6 +1,7 @@
 import { expect, test } from '@playwright/test';
 
 test('Third War tour keeps projected people and names readable', async ({ page }) => {
+  test.setTimeout(60_000);
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto('/map?era=third-war-frozen-throne&tour=full');
   await expect(page.locator('.story-card h2')).toHaveText('The defeated inherit another beginning');

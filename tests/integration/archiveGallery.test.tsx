@@ -16,7 +16,8 @@ describe('archive gallery', () => {
     expect(within(dialog).getByRole('img', { name: 'Visual archive asset for Aman’Thul' })).toBeVisible();
     expect(within(dialog).getByText('Highfather of the Pantheon')).toBeVisible();
     expect(within(dialog).getByText(/search gathered the awakened titans/i)).toBeVisible();
-    expect(within(dialog).getByRole('link', { name: 'Open full dossier' })).toHaveAttribute('href', '/characters/amanthul');
+    expect(within(dialog).queryByRole('link', { name: 'Open full dossier' })).not.toBeInTheDocument();
+    expect(within(dialog).queryByRole('link', { name: 'Open in atlas' })).not.toBeInTheDocument();
 
     await user.keyboard('{Escape}');
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument();

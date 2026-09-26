@@ -17,6 +17,8 @@ export function StoryGuidePanel({ guideId, showLauncher = true, voiceControlsHos
   const navigate = useNavigate();
   const [params] = useSearchParams();
   const fullTour = params.get('tour') === 'full';
+  const selectedEraTour = params.get('tour') === 'era';
+  const tourActive = fullTour || selectedEraTour;
   const setEra = useEraStore((state) => state.setEra);
   const guide = staticLoreRepository.findStoryGuide(guideId);
   const activeGuideId = useStoryStore((state) => state.guideId);
@@ -39,14 +41,14 @@ export function StoryGuidePanel({ guideId, showLauncher = true, voiceControlsHos
     : undefined;
 
   useEffect(() => {
-    if (!fullTour) {
+    if (!tourActive) {
       autoStartedGuide.current = null;
       return;
     }
     if (!guide || autoStartedGuide.current === guide.id) return;
     autoStartedGuide.current = guide.id;
     if (!node) beginStoryGuide(guide.id);
-  }, [fullTour, guide, node]);
+  }, [tourActive, guide, node]);
 
   const finish = useCallback(() => {
     if (!guide) return;
@@ -66,6 +68,7 @@ export function StoryGuidePanel({ guideId, showLauncher = true, voiceControlsHos
       return;
     }
     endStoryGuide();
+    navigate(`/?tour=era-complete&era=${guide.eraId}`);
   }, [fullTour, guide, navigate, setEra]);
 
   const durationMs = node?.durationMs ?? (node ? narrationDurationMs(node.narration) : 0);
@@ -79,7 +82,7 @@ export function StoryGuidePanel({ guideId, showLauncher = true, voiceControlsHos
     if (narrationEnabled && node.voiceover) return;
     const currentIndex = guide?.nodeIds.indexOf(node.id) ?? -1;
     const nextNodeId = guide?.nodeIds[currentIndex + 1];
-    if (!nextNodeId && !fullTour) return;
+    if (!nextNodeId && !tourActive) return;
     timerStartedAt.current = performance.now();
     const timer = window.setTimeout(() => {
       const nextNode = nextNodeId ? staticLoreRepository.findStoryNode(nextNodeId) : undefined;
@@ -90,7 +93,7 @@ export function StoryGuidePanel({ guideId, showLauncher = true, voiceControlsHos
       window.clearTimeout(timer);
       remainingMs.current = Math.max(0, remainingMs.current - (performance.now() - timerStartedAt.current));
     };
-  }, [finish, fullTour, guide, narrationEnabled, node, status]);
+  }, [finish, tourActive, guide, narrationEnabled, node, status]);
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -191,7 +194,7 @@ export function StoryGuidePanel({ guideId, showLauncher = true, voiceControlsHos
           onEnded={() => {
             if (!narrationEnabled || status !== 'playing') return;
             if (next) activate(next);
-            else if (fullTour) finish();
+            else if (tourActive) finish();
           }}
         />}
         <div className="story-playback">
@@ -202,7 +205,7 @@ export function StoryGuidePanel({ guideId, showLauncher = true, voiceControlsHos
         </div>
         <div className="story-actions">
           <button type="button" disabled={!previous} onClick={() => previous && activate(previous)}>Previous</button>
-          <button type="button" onClick={() => next ? activate(next) : finish()}>{next ? 'Next' : fullTour ? 'Continue the journey' : 'Next'}</button>
+          <button type="button" onClick={() => next ? activate(next) : finish()}>{next ? 'Next' : fullTour ? 'Continue the journey' : 'Finish this era'}</button>
         </div>
       </div>
       <div className="story-timer" role="progressbar" aria-label="Time until next story point">

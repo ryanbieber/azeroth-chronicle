@@ -1,45 +1,28 @@
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { useLayerStore } from '../../src/app/state/layerStore';
 import { useSelectionStore } from '../../src/app/state/selectionStore';
-import { useSourceFilterStore } from '../../src/app/state/sourceFilterStore';
+import { useStoryStore } from '../../src/app/state/storyStore';
 import { MapPage } from '../../src/pages/MapPage';
 
 vi.mock('../../src/components/map/MapViewport3D', () => ({
-  MapViewport3D: () => <div aria-label="Mock 3D map" />,
+  MapViewport3D: ({ readOnly }: { readOnly?: boolean }) => <div aria-label="Mock guided scene" data-read-only={String(readOnly)} />,
 }));
 
-describe('explorer UI', () => {
+describe('guided scene UI', () => {
   beforeEach(() => {
-    useLayerStore.getState().reset();
     useSelectionStore.getState().select(null);
-    useSourceFilterStore.getState().setSourceIds([]);
+    useStoryStore.setState({ guideId: null, nodeId: null, status: 'paused', branchReturn: null });
   });
 
-  it('restores selection while keeping the curated atlas layers visible', async () => {
+  it('keeps the scene noninteractive and does not open a selected record dossier', () => {
     render(
-      <MemoryRouter initialEntries={['/map?era=black-empire&selected=battle:elemental-assault-on-black-empire&layers=regions,battles']}>
+      <MemoryRouter initialEntries={['/map?era=black-empire&tour=era&selected=entity:yshaarj-central-bastion']}>
         <MapPage />
       </MemoryRouter>,
     );
-    expect(useSelectionStore.getState().selection).toEqual({ kind: 'battle', id: 'elemental-assault-on-black-empire' });
-    expect(useLayerStore.getState().visible).toEqual({ regions: true, battles: true, locations: true, routes: true, labels: true });
-    expect(screen.queryByText('Visible layers')).not.toBeInTheDocument();
-    expect(screen.queryByText('Source filters')).not.toBeInTheDocument();
-    expect(screen.queryByRole('region', { name: 'Interpretation note' })).not.toBeInTheDocument();
-    expect(screen.queryByRole('complementary')).not.toBeInTheDocument();
-  });
-
-  it('opens a compact dossier for a selected map entity without restoring archive controls', async () => {
-    render(
-      <MemoryRouter initialEntries={['/map?era=black-empire&selected=entity:yshaarj-central-bastion']}>
-        <MapPage />
-      </MemoryRouter>,
-    );
-    expect(screen.queryByRole('button', { name: /history/i })).not.toBeInTheDocument();
-    const dossier = screen.getByRole('complementary', { name: 'Selected atlas record' });
-    expect(dossier).toHaveTextContent("Y'Shaarj's Central Bastion");
-    expect(screen.queryByRole('link', { name: 'Read full dossier' })).not.toBeInTheDocument();
+    expect(screen.getByLabelText('Mock guided scene')).toHaveAttribute('data-read-only', 'true');
+    expect(screen.queryByRole('complementary', { name: 'Selected atlas record' })).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: 'Close dossier' })).not.toBeInTheDocument();
   });
 });

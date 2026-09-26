@@ -16,13 +16,13 @@ test.describe('responsive application shell', () => {
     await page.goto('/');
 
     const primaryAction = page.getByRole('button', { name: /Full tour of the history/i });
-    const freeExplore = page.getByRole('link', { name: 'Explore the atlas freely' });
+    const eraChoice = page.getByRole('button', { name: 'Tour this era' });
     const eraThread = page.getByLabel('Current guided history coverage');
     await expect(primaryAction).toBeVisible();
-    await expect(freeExplore).toBeVisible();
+    await expect(eraChoice).toBeVisible();
     await expect(eraThread).toBeVisible();
 
-    const actionBox = await freeExplore.boundingBox();
+    const actionBox = await eraChoice.boundingBox();
     const threadBox = await eraThread.boundingBox();
     expect(actionBox).not.toBeNull();
     expect(threadBox).not.toBeNull();
@@ -31,15 +31,13 @@ test.describe('responsive application shell', () => {
     await expectNoHorizontalOverflow(page);
   });
 
-  test('keeps atlas navigation and controls available on a phone', async ({ page }) => {
+  test('keeps tour choice and archive access available on a phone', async ({ page }) => {
     await page.setViewportSize(phoneViewport);
-    await page.goto('/map?era=cosmic-origins');
+    await page.goto('/');
 
-    await expect(page.getByRole('combobox', { name: 'Choose era' })).toBeVisible();
-    await expect(page.getByRole('button', { name: 'Guided tour' })).toBeVisible();
-    await expect(page.getByRole('navigation', { name: 'Primary navigation' })).toBeVisible();
-    await expect(page.getByRole('link', { name: 'Archive gallery' })).toBeVisible();
-    await expect(page.getByRole('link', { name: 'Era dossier' })).toBeVisible();
+    await expect(page.getByRole('combobox', { name: 'Choose an era to tour' })).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Tour this era' })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Browse the illustrated archive' })).toBeVisible();
     await expectNoHorizontalOverflow(page);
   });
 
@@ -80,23 +78,23 @@ test.describe('responsive application shell', () => {
     await expectNoHorizontalOverflow(page);
   });
 
-  test('preserves the full desktop header and atlas workspace', async ({ page }) => {
+  test('preserves the tour and archive navigation on desktop', async ({ page }) => {
     await page.setViewportSize({ width: 1440, height: 900 });
-    await page.goto('/map?era=cosmic-origins');
+    await page.goto('/archive');
 
     await expect(page.getByText('Unofficial fan atlas')).toBeVisible();
     await expect(page.getByRole('navigation', { name: 'Primary navigation' })).toBeVisible();
-    await expect(page.getByLabel('Atlas map workspace')).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Choose a tour' })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Archive gallery' })).toBeVisible();
     await expectNoHorizontalOverflow(page);
   });
 
-  test('switches the crowded header to the compact layout on a tablet', async ({ page }) => {
+  test('keeps the era choice readable on a tablet', async ({ page }) => {
     await page.setViewportSize({ width: 768, height: 1024 });
-    await page.goto('/map?era=cosmic-origins');
+    await page.goto('/');
 
     await expect(page.getByRole('link', { name: /Azerothium/ })).toBeVisible();
-    await expect(page.getByRole('navigation', { name: 'Primary navigation' })).toBeVisible();
-    await expect(page.getByRole('combobox', { name: 'Choose era' })).toBeVisible();
+    await expect(page.getByRole('combobox', { name: 'Choose an era to tour' })).toBeVisible();
     await expectNoHorizontalOverflow(page);
   });
 });

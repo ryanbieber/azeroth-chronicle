@@ -62,7 +62,7 @@ Temporal proximity is not silently converted into causation. The Long Vigil mere
 
 ## Cartography and uncertainty
 
-Three map states reuse the separate post-Sundering terrain created for Era 4:
+Three map states use the contiguous post-Sundering terrain plate shared with Era 6. The earlier Era 4 aftermath plate broke the eastern landmass into islands, leaving Strom, Arathor, and several dwarven markers over open water:
 
 - `long-vigil-new-kingdoms-early-map-research` — Hyjal, the second Well, Nordrassil, and the Long Vigil;
 - `long-vigil-new-kingdoms-founding-map-research` — Highborne migration, Quel'Thalas/Amani overlap, Strom, and Arathor;
@@ -76,6 +76,8 @@ The geometry is an original atlas reconstruction in worldspace-local coordinates
 - the dwarven dispersal line is a diagram of division between Ironforge, Grim Batol, and the southern Dark Iron realm, not one literal march;
 - the Troll Wars and War of the Three Hammers have `unknown` geographic certainty and no exact battle marker;
 - actor and embodied-group placements are relational story composition with explicit editor notes, never claims of a person's measured coordinates.
+
+The Era 5 cartographic re-audit checked every site and area against the replacement plate and the first-party source ledger above. Hyjal, the second Well, and Nordrassil remain together in northern Kalimdor. The sea crossing remains a directional route, while Quel'Thalas and the Sunwell remain north of the Amani focus. Strom and Arathor now sit on the northern Eastern Kingdoms landmass, south of the elven and Amani centers. The late human-kingdom influence remains broad rather than a precise border. Ironforge, Grim Batol, and Thaurissan now occupy the eastern landmass with Grim Batol north of Ironforge and Thaurissan to the south; the dwarven dispersal line follows those corrected anchors. Ragnaros remains a relational story figure near the southern catastrophe, not an exact volcanic coordinate. All placement remains `research` and requires human cartographic review before promotion.
 
 ## Visual representation audit
 

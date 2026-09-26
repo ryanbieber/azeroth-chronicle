@@ -1,10 +1,10 @@
-# Azeroth Chronicle Repository Guidance
+# Azerothium Repository Guidance
 
 These instructions apply to every file in this repository. Future agents must read this file and `docs/IMPLEMENTATION_PLAN.md` before making architectural, data-model, lore-content, or deployment changes.
 
 ## Product north star
 
-Azeroth Chronicle is a time-aware lore database and causal history engine whose primary interface is a 3D historical atlas. It is not merely a map with lore annotations. Every significant feature should help a user answer:
+Azerothium is a time-aware lore database and causal history engine whose primary interface is a 3D historical atlas. It is not merely a map with lore annotations. Every significant feature should help a user answer:
 
 - What was the world like in this era?
 - Who controlled this place?

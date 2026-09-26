@@ -4,7 +4,7 @@
   "name": "Y'Shaarj's Central Bastion",
   "slug": "yshaarj-central-bastion",
   "shortDescription": "An editorial label for the greatest Black Empire bastion, built around Y'Shaarj near the center of Azeroth's largest continent.",
-  "body": "Chronicle does not provide a proper name or exact coordinates for this bastion. The atlas marker is approximate and exists to communicate the source's near-the-center relationship, not a canonical point location.",
+  "body": "The cited account does not provide a proper name or exact coordinates for this bastion. The atlas marker is approximate and exists to communicate the source's near-the-center relationship, not a canonical point location.",
   "firstEraId": "black-empire",
   "lastEraId": "ordering-of-azeroth",
   "sourceIds": ["warcraft-chronicle-volume-1"],

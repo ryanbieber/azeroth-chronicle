@@ -270,7 +270,7 @@
       "worldspaceId": "azeroth",
       "presentation": "terrain",
       "cartographyLabel": "INTERPRETIVE CARTOGRAPHY",
-      "interpretationNote": "The illuminated landmass follows Chronicle's broad published composition. Highlighted domains and influence are research reconstructions, not surveyed borders or exact coordinates; each dossier states its certainty and source basis.",
+      "interpretationNote": "The illuminated landmass follows the source account’s broad published composition. Highlighted domains and influence are research reconstructions, not surveyed borders or exact coordinates; each dossier states its certainty and source basis.",
       "terrainAsset": "models/azeroth/black-empire-map-research/terrain.research.glb",
       "terrainTextureAsset": "textures/azeroth/black-empire-map-research/terrain-atlas.research.webp",
       "terrainHeightAsset": "textures/azeroth/black-empire-map-research/terrain-height.research.webp",
@@ -482,7 +482,7 @@
       "worldspaceId": "azeroth",
       "presentation": "terrain",
       "cartographyLabel": "INTERPRETIVE BEFORE/AFTER CARTOGRAPHY",
-      "interpretationNote": "This after-state preserves the Era 1 research coastline so the historical change remains legible. The Well's central focus and the far-northern and far-southern facility placements follow broad Chronicle relationships; terrain details and coordinates are original reconstructions rather than traced or surveyed canon.",
+      "interpretationNote": "This after-state preserves the Era 1 research coastline so the historical change remains legible. The Well's central focus and the far-northern and far-southern facility placements follow broad relationships in the cited account; terrain details and coordinates are original reconstructions rather than traced or surveyed canon.",
       "terrainTextureAsset": "textures/azeroth/ordering-of-azeroth-map-research/terrain-atlas.research.webp",
       "terrainHeightAsset": "textures/azeroth/ordering-of-azeroth-map-research/terrain-height.research.webp",
       "geometryIds": [
@@ -3790,7 +3790,7 @@
       "worldspaceId": "cosmos",
       "order": 0,
       "dateLabel": "Before the ordering of worlds · chronology without measured dates",
-      "summary": "Chronicle's account begins with Light and Shadow, the birth of the physical universe and Twisting Nether, the awakening of world-souls, the gathering of the titan Pantheon, and the Void Lords' attempt to corrupt a nascent titan through the Old Gods.",
+      "summary": "The cited account begins with Light and Shadow, the birth of the physical universe and Twisting Nether, the awakening of world-souls, the gathering of the titan Pantheon, and the Void Lords' attempt to corrupt a nascent titan through the Old Gods.",
       "mapStateId": "cosmic-origins-map-research",
       "defaultLayerIds": [
         "locations",
@@ -4291,7 +4291,7 @@
       "aliases": [
         "Highfather of the Pantheon"
       ],
-      "shortDescription": "The first titan to awaken in Chronicle's account, who crossed the Great Dark in search of others of his kind.",
+      "shortDescription": "The first titan to awaken in the cited account, who crossed the Great Dark in search of others of his kind.",
       "body": "Aman’Thul's search gathered the awakened titans into the Pantheon. When the Pantheon confronted the corruption on Azeroth, his direct removal of Y'Shaarj revealed how deeply the Old Gods had rooted themselves in the world.",
       "firstEraId": "cosmic-origins",
       "featuredEraIds": [
@@ -4491,7 +4491,7 @@
         "Nascent Titan Azeroth"
       ],
       "shortDescription": "A titan spirit developing within the young world's core, whose immense growth drew in much of Azeroth's Spirit.",
-      "body": "Chronicle presents the world-soul as the reason Azeroth's elementals lacked the balancing fifth element. This record describes the primordial account and does not resolve later perspectives on Azeroth's nature.",
+      "body": "The cited account presents the world-soul as the reason Azeroth's elementals lacked the balancing fifth element. This record describes the primordial account and does not resolve later perspectives on Azeroth's nature.",
       "firstEraId": "cosmic-origins",
       "sourceIds": [
         "warcraft-chronicle-volume-1"
@@ -4544,7 +4544,7 @@
       "name": "The Black Empire",
       "slug": "black-empire-civilization",
       "shortDescription": "The civilization of Old God domains, citadels, and temple cities that spread across primordial Azeroth.",
-      "body": "The shaded atlas extent communicates broad influence only. Chronicle supports world-spanning expansion but does not provide survey-grade borders, so every boundary shown here is explicitly inferred.",
+      "body": "The shaded atlas extent communicates broad influence only. The cited account supports world-spanning expansion but does not provide survey-grade borders, so every boundary shown here is explicitly inferred.",
       "firstEraId": "black-empire",
       "lastEraId": "ordering-of-azeroth",
       "sourceIds": [
@@ -4726,7 +4726,7 @@
       "type": "other",
       "name": "The Cosmic Forces",
       "slug": "cosmic-forces",
-      "shortDescription": "Chronicle's cosmology arranges reality through opposed forces: Light and Shadow, Life and Death, and Order and Disorder.",
+      "shortDescription": "The cited cosmology arranges reality through opposed forces: Light and Shadow, Life and Death, and Order and Disorder.",
       "body": "The familiar cosmology chart is used as a subject index, not copied as artwork. Later accounts may qualify how complete or objective this arrangement is.",
       "firstEraId": "cosmic-origins",
       "featuredEraIds": [
@@ -4780,7 +4780,7 @@
       "name": "The Dark Trolls",
       "slug": "dark-trolls",
       "shortDescription": "A reclusive nocturnal troll people whose migration toward the Well of Eternity became the beginning of the kaldorei story.",
-      "body": "Chronicle places this community apart from the greater troll struggles. The atlas shows movement toward the Well as an interpretive transition, not as an exact migration route preserved by a contemporary record.",
+      "body": "The cited account places this community apart from the greater troll struggles. The atlas shows movement toward the Well as an interpretive transition, not as an exact migration route preserved by a contemporary record.",
       "firstEraId": "ancient-civilizations",
       "featuredEraIds": [
         "ancient-civilizations"
@@ -5046,7 +5046,7 @@
       "name": "The Elemental Hosts",
       "slug": "elemental-hosts",
       "shortDescription": "The innumerable air, fire, earth, and water spirits led by Azeroth's four Elemental Lords.",
-      "body": "This collective editorial label groups the four rival elemental forces for battle playback. Chronicle describes them as separate hosts whose control of Azeroth shifted constantly, not as a permanent unified state.",
+      "body": "This collective editorial label groups the four rival elemental forces for battle playback. The cited account describes them as separate hosts whose control of Azeroth shifted constantly, not as a permanent unified state.",
       "firstEraId": "black-empire",
       "lastEraId": "black-empire",
       "sourceIds": [
@@ -5186,7 +5186,7 @@
       "type": "location",
       "name": "The Great Dark Beyond",
       "slug": "great-dark-beyond",
-      "shortDescription": "The physical universe of innumerable worlds and stars described in Chronicle's cosmological account.",
+      "shortDescription": "The physical universe of innumerable worlds and stars described in the cited cosmological account.",
       "body": "Its point on the cosmography is a reading aid only. A universe has not been reduced to a literal map marker.",
       "firstEraId": "cosmic-origins",
       "featuredEraIds": [
@@ -5788,7 +5788,7 @@
       "aliases": [
         "Light and Void"
       ],
-      "shortDescription": "Opposed primordial powers at the beginning of Chronicle's account of the Warcraft cosmos.",
+      "shortDescription": "Opposed primordial powers at the beginning of the cited account of the Warcraft cosmos.",
       "body": "This record keeps Chronicle Volume 1's creation account distinct from later cosmological perspectives. It does not claim that the diagram gives either power a physical location.",
       "firstEraId": "cosmic-origins",
       "featuredEraIds": [
@@ -6256,7 +6256,7 @@
       "name": "The Old Gods",
       "slug": "old-gods",
       "shortDescription": "Void-linked entities that struck Azeroth, spread corruption through the world, and drove tendrils toward its core.",
-      "body": "The Era 1 account treats the Old Gods collectively except where Chronicle specifically identifies Y'Shaarj. Later sources name and distinguish additional Old Gods; those records should be introduced only with their own citations.",
+      "body": "The Era 1 account treats the Old Gods collectively except where the cited account specifically identifies Y'Shaarj. Later sources name and distinguish additional Old Gods; those records should be introduced only with their own citations.",
       "firstEraId": "cosmic-origins",
       "sourceIds": [
         "warcraft-chronicle-volume-1",
@@ -7024,7 +7024,7 @@
       "name": "The Twisting Nether",
       "slug": "twisting-nether",
       "shortDescription": "A volatile astral realm formed from energies released around the creation of the physical universe.",
-      "body": "Chronicle describes the Nether as interwoven with the Great Dark Beyond while remaining distinct from it. The atlas uses no geographic distance between the two.",
+      "body": "The cited account describes the Nether as interwoven with the Great Dark Beyond while remaining distinct from it. The atlas uses no geographic distance between the two.",
       "firstEraId": "cosmic-origins",
       "featuredEraIds": [
         "cosmic-origins"
@@ -7106,7 +7106,7 @@
       "name": "The Void Lords",
       "slug": "void-lords",
       "shortDescription": "Shadow-aligned beings who sought to corrupt a world-soul but could not directly manifest their full power in the physical universe.",
-      "body": "Chronicle presents the Old Gods as instruments of this design. The record does not map the Void Lords to a physical territory.",
+      "body": "The cited account presents the Old Gods as instruments of this design. The record does not map the Void Lords to a physical territory.",
       "firstEraId": "cosmic-origins",
       "featuredEraIds": [
         "cosmic-origins"
@@ -7216,7 +7216,7 @@
       "name": "Y'Shaarj's Central Bastion",
       "slug": "yshaarj-central-bastion",
       "shortDescription": "An editorial label for the greatest Black Empire bastion, built around Y'Shaarj near the center of Azeroth's largest continent.",
-      "body": "Chronicle does not provide a proper name or exact coordinates for this bastion. The atlas marker is approximate and exists to communicate the source's near-the-center relationship, not a canonical point location.",
+      "body": "The cited account does not provide a proper name or exact coordinates for this bastion. The atlas marker is approximate and exists to communicate the source's near-the-center relationship, not a canonical point location.",
       "firstEraId": "black-empire",
       "lastEraId": "ordering-of-azeroth",
       "sourceIds": [
@@ -7237,7 +7237,7 @@
       "type": "character",
       "name": "Y'Shaarj",
       "slug": "yshaarj",
-      "shortDescription": "The Old God identified by Chronicle as the greatest of the group, surrounded by the Black Empire's largest bastion.",
+      "shortDescription": "The Old God identified by the cited account as the greatest of the group, surrounded by the Black Empire's largest bastion.",
       "firstEraId": "black-empire",
       "lastEraId": "ordering-of-azeroth",
       "sourceIds": [
@@ -10237,7 +10237,7 @@
         "label": "Before the arrival of the Old Gods"
       },
       "summary": "As Azeroth's world-soul developed, it consumed much of the fifth element, Spirit, leaving the native elementals without its balancing influence.",
-      "description": "This descriptive event record captures Chronicle's causal explanation for the violent state of primordial Azeroth's elementals.",
+      "description": "This descriptive event record captures the source account’s causal explanation for the violent state of primordial Azeroth's elementals.",
       "participantEntityIds": [
         "azeroth-world-soul",
         "elemental-hosts"
@@ -10998,7 +10998,7 @@
         "relativeToId": "black-empire-rises"
       },
       "summary": "For the first time, Azeroth's rival elemental hosts united against the Old Gods and attacked the Black Empire's growing cities.",
-      "description": "This descriptive title groups a broad conflict rather than asserting one localized battle. Chronicle describes firestorms and stone barriers striking Black Empire cities but does not provide mappable routes.",
+      "description": "This descriptive title groups a broad conflict rather than asserting one localized battle. The cited account describes firestorms and stone barriers striking Black Empire cities but does not provide mappable routes.",
       "campaignId": "elemental-resistance-campaign",
       "participantEntityIds": [
         "elemental-hosts",
@@ -11166,7 +11166,7 @@
         "label": "Untold ages before the Old Gods' arrival"
       },
       "summary": "The four Elemental Lords and their hosts fought across primordial Azeroth for ages, with dominion shifting continually and no lasting victor.",
-      "description": "The title is a descriptive grouping for Chronicle's world-spanning elemental conflict. Because the source supplies no stable front or exact battlefield, the atlas records its geography as unknown.",
+      "description": "The title is a descriptive grouping for the source account’s world-spanning elemental conflict. Because the source supplies no stable front or exact battlefield, the atlas records its geography as unknown.",
       "campaignId": "elemental-wars-campaign",
       "participantEntityIds": [
         "alakir",
@@ -12343,7 +12343,7 @@
         "relativeToId": "titan-forged-mustered"
       },
       "summary": "Keeper-led armies of stone and metal fought across primordial Azeroth, defeated the Black Empire's forces, and subdued the powers that had ruled the world.",
-      "description": "This title groups a world-spanning campaign described across Chronicle's Ordering sequence. The sources do not establish a surveyable front or one battle coordinate, so the atlas provides phases without an invented route or marker.",
+      "description": "This title groups a world-spanning campaign described across the source account’s Ordering sequence. The sources do not establish a surveyable front or one battle coordinate, so the atlas provides phases without an invented route or marker.",
       "campaignId": "titan-forged-ordering-campaign",
       "participantEntityIds": [
         "titan-forged",
@@ -18515,7 +18515,7 @@
       "id": "cosmic-origins-guided-history",
       "eraId": "cosmic-origins",
       "title": "Before the First World Was Ordered",
-      "description": "A continuous guided history from Chronicle's primordial cosmic powers through the birth of the universe, the awakening of the titans, and the design that sent the Old Gods toward worlds such as Azeroth.",
+      "description": "A continuous guided history from the primordial cosmic powers through the birth of the universe, the awakening of the titans, and the design that sent the Old Gods toward worlds such as Azeroth.",
       "nodeIds": [
         "cosmic-origins-story-light-shadow",
         "cosmic-origins-story-universe",
@@ -18665,11 +18665,11 @@
       "id": "adventurers-story-gates",
       "guideId": "age-of-adventurers-guided-history",
       "title": "The great powers call upon unnumbered hands",
-      "narration": "The age opened without a single crowned hero at its center. At Ahn'Qiraj, Alliance and Horde communities gathered a vast war effort while independent champions prepared to cross the opened gates. Their fellowship was temporary, their motives varied, and the atlas names them only as adventurers: an interpretive company standing for the many who entered dangers that armies alone had not resolved.",
+      "narration": "The age opened without a single crowned hero at its center. At Ahn'Qiraj, Alliance and Horde communities gathered a vast war effort while independent champions prepared to cross the opened gates. Their fellowship was temporary and their motives varied. Yet together these adventurers entered dangers that armies alone had not resolved, carrying the hopes of rival peoples beyond the same threshold.",
       "durationMs": 70000,
       "voiceover": {
         "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-gates.mp3",
-        "durationMs": 27975,
+        "durationMs": 27600,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -18723,11 +18723,11 @@
       "id": "adventurers-story-outland",
       "guideId": "age-of-adventurers-guided-history",
       "title": "The road crosses into a broken world",
-      "narration": "The Dark Portal opened again, and the chronicle changed its ground. Outland was not a distant province on Azeroth's sea, but the remains of Draenor under another sky. The atlas therefore closes one worldspace and opens another. Across that shattered land, old exiles, demonic powers, and new expeditions met within consequences already centuries in the making.",
+      "narration": "The Dark Portal opened again, and the road led beneath another sky. Outland was not a distant province beyond Azeroth’s seas, but the shattered remains of Draenor. Those who crossed the threshold entered a world broken long before their arrival. Across that wounded land, old exiles, demonic powers, and new expeditions met within consequences already centuries in the making.",
       "durationMs": 68000,
       "voiceover": {
         "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-outland.mp3",
-        "durationMs": 25725,
+        "durationMs": 26700,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -18784,11 +18784,11 @@
       "id": "adventurers-story-icecrown",
       "guideId": "age-of-adventurers-guided-history",
       "title": "The northern crown receives its reckoning",
-      "narration": "The next great campaign returned to Azeroth and climbed through Northrend toward Icecrown. Arthas had once crossed this cold seeking the strength to save his kingdom; now others followed the ruin of that choice to its throne. The stages shown are strategic memory, not a raid plan. At the citadel's height, the Lich King's reign ended, though the burdens bound to Northrend did not vanish with him.",
+      "narration": "The next great campaign returned to Azeroth and climbed through Northrend toward Icecrown. Arthas had once crossed this cold seeking the strength to save his kingdom; now others followed the ruin of that choice to its throne. At the citadel's height, the Lich King's reign ended, though the burdens bound to Northrend did not vanish with him.",
       "durationMs": 72000,
       "voiceover": {
         "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-icecrown.mp3",
-        "durationMs": 26500,
+        "durationMs": 22525,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -18848,11 +18848,11 @@
       "id": "adventurers-story-cataclysm",
       "guideId": "age-of-adventurers-guided-history",
       "title": "The earth remembers its betrayed guardian",
-      "narration": "Then Deathwing returned, and the land itself became testimony. Coasts broke, mountains opened, and old regions entered a new state that could not honestly be shown as a mere overlay upon yesterday. The scarred terrain before you is interpretive rather than surveyed. Its purpose is to make one consequence unmistakable: Azeroth after the Cataclysm was not the same world the northern victors had left behind.",
+      "narration": "Then Deathwing returned, and the land itself became testimony. Coasts broke, mountains opened, and familiar lands were torn apart. The upheaval reached far beyond the armies that had fought in Northrend. Those who had survived the northern war now faced a wounded homeland, where even the earth beneath their feet could no longer promise the safety they remembered.",
       "durationMs": 71000,
       "voiceover": {
         "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-cataclysm.mp3",
-        "durationMs": 28575,
+        "durationMs": 24175,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -18906,11 +18906,11 @@
       "id": "adventurers-story-pandaria",
       "guideId": "age-of-adventurers-guided-history",
       "title": "A hidden land receives an old quarrel",
-      "narration": "Beyond the Cataclysm's upheaval, Pandaria returned to the wider world's knowledge. Its peoples and landscapes were not an empty stage awaiting foreign banners. Yet Alliance and Horde carried their rivalry ashore, and the consequences deepened within a land that had long endured histories of its own. The atlas holds Pandaria as a place encountered, not discovered into existence by those who arrived from elsewhere.",
+      "narration": "Beyond the Cataclysm's upheaval, Pandaria returned to the wider world's knowledge. Its peoples had long kept histories, customs, and struggles of their own. Yet Alliance and Horde carried their rivalry ashore, drawing an ancient land into the quarrels of distant powers. Beneath unfamiliar skies, the war found new ground, and those who already called it home would bear its consequences.",
       "durationMs": 70000,
       "voiceover": {
         "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-pandaria.mp3",
-        "durationMs": 27925,
+        "durationMs": 26075,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -18964,11 +18964,11 @@
       "id": "adventurers-story-siege",
       "guideId": "age-of-adventurers-guided-history",
       "title": "The war turns upon its own warchief",
-      "narration": "The conflict carried home from Pandaria did not leave the Horde whole. Opposition to Garrosh's rule gathered within it while Alliance forces advanced upon Orgrimmar. Their purposes met in a siege that ended his leadership, not in a simple reconciliation of every grievance. The city marker is only a narrative anchor; the greater change was political, dividing obedience from belonging and leaving another unsettled road ahead.",
+      "narration": "The conflict carried home from Pandaria did not leave the Horde whole. Opposition to Garrosh's rule gathered within it while Alliance forces advanced upon Orgrimmar. Their purposes met in a siege that ended his leadership, without reconciling every grievance. The struggle divided obedience from belonging. Those who had stood against the warchief still faced the harder task of living with what his rule had left behind.",
       "durationMs": 70000,
       "voiceover": {
         "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-siege.mp3",
-        "durationMs": 29125,
+        "durationMs": 27900,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -19024,11 +19024,11 @@
       "id": "adventurers-story-alternate-draenor",
       "guideId": "age-of-adventurers-guided-history",
       "title": "History opens beside itself",
-      "narration": "The next invasion came from an alternate Draenor: neither the intact world remembered in earlier centuries nor the Outland made by its destruction. Iron and ambition had formed the Iron Horde there. A separate worldspace keeps that distinction visible. This terrain is an interpretive echo of unbroken Draenor, while the anonymous war host represents an embodied power rather than any one named commander or exact camp.",
+      "narration": "The next invasion came from an alternate Draenor, a world that had not suffered the destruction that made Outland. There, iron and ambition had formed the Iron Horde. A familiar name now belonged to a different course of history, and beyond Azeroth's sky another host prepared to carry its war into the world.",
       "durationMs": 71000,
       "voiceover": {
         "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-alternate-draenor.mp3",
-        "durationMs": 28875,
+        "durationMs": 21025,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -19075,11 +19075,11 @@
       "id": "adventurers-story-legion",
       "guideId": "age-of-adventurers-guided-history",
       "title": "The ancient enemy returns to the Broken Isles",
-      "narration": "From the alternate war's ending rose the way for an older enemy to return. The Burning Legion invaded through the Broken Isles. Established armies could not answer every wound, and distinct class orders gathered champions according to calling rather than kingdom. The ensemble before you is symbolic: many orders, many traditions, one immediate necessity. Beside them stood Illidan, carrying his own long and perilous history into the defense.",
+      "narration": "From the alternate war's ending rose the way for an older enemy to return. The Burning Legion invaded through the Broken Isles. Established armies could not answer every wound, and distinct class orders gathered champions according to calling rather than kingdom. Many traditions answered the same danger. Beside them stood Illidan, carrying his own long and perilous history into the defense.",
       "durationMs": 72000,
       "voiceover": {
         "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-legion.mp3",
-        "durationMs": 29925,
+        "durationMs": 26625,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -19138,11 +19138,11 @@
       "id": "adventurers-story-argus",
       "guideId": "age-of-adventurers-guided-history",
       "title": "The defenders carry the war to Argus",
-      "narration": "Defense became pursuit, and pursuit crossed the dark between worlds. Argus appears in its own atlas measure: a shattered realm of broken plateaus and fel-lit wounds, rendered as interpretive terrain rather than surveyed fact. There old exiles, the Army of the Light, Illidan, and Azeroth's champions struck at the Legion's seat. No geographic line joins the worlds; the change of state tells the crossing honestly.",
+      "narration": "Defense became pursuit, and pursuit crossed the dark between worlds. On Argus, the Legion's power had left a shattered realm of broken plateaus and fel-lit wounds. There, old exiles, the Army of the Light, Illidan, and Azeroth's champions struck at the Legion's seat. The defenders had carried the war beyond their own sky, into the heart of the power that had pursued them.",
       "durationMs": 71000,
       "voiceover": {
         "assetPath": "audio/guided/age-of-adventurers-guided-history/adventurers-story-argus.mp3",
-        "durationMs": 28800,
+        "durationMs": 25375,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -19424,11 +19424,11 @@
       "id": "ancient-story-empire-zul",
       "guideId": "ancient-civilizations-guided-history",
       "title": "The Empire of Zul stands together",
-      "narration": "Under Zandalari leadership, the tribes entered a wartime union remembered as the Empire of Zul. It was alliance, not sameness: forest, jungle, ice, and highland peoples carried their own customs into the struggle. Together they survived the first pressure, then followed the retreating aqir across distances too great for any honest map to draw as a single road.",
+      "narration": "Under Zandalari leadership, the tribes entered a wartime union remembered as the Empire of Zul. Forest, jungle, ice, and highland peoples carried their own customs into the struggle. Together they survived the first pressure, then followed the retreating aqir into distant lands. The danger that had threatened to destroy them had drawn their divided strength into a common cause.",
       "durationMs": 49000,
       "voiceover": {
         "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-empire-zul.mp3",
-        "durationMs": 25375,
+        "durationMs": 25925,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -19764,11 +19764,11 @@
       "id": "ancient-story-people-apart",
       "guideId": "ancient-civilizations-guided-history",
       "title": "A people apart follows the water",
-      "narration": "A reclusive dark troll people left their earlier home and settled beside the Well of Eternity in central Kalimdor. The surviving account does not give their reason. A search for a secluded home near abundant water is a plausible reading, not a recorded motive. What matters for the history that follows is where they settled: over generations, the Well's power changed their people, and the kaldorei arose.",
+      "narration": "A reclusive dark troll people left their earlier home and settled beside the Well of Eternity in central Kalimdor. There, generations lived beneath its radiance. The Well's power changed them, and from that long transformation arose the kaldorei. A people who had once stood apart would become the heart of a civilization whose reach spread far beyond the water beside which it began.",
       "durationMs": 54000,
       "voiceover": {
         "assetPath": "audio/guided/ancient-civilizations-guided-history/ancient-story-people-apart.mp3",
-        "durationMs": 27550,
+        "durationMs": 26200,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -19943,11 +19943,11 @@
       "id": "black-empire-story-cosmos",
       "guideId": "black-empire-guided-history",
       "title": "Before the empire",
-      "narration": "Before mountain or sea had received a name, Azeroth's tale had already begun amid powers vaster than the world. Chronicle sets Light against Shadow, Life against Death, and Order against Disorder, while fire, air, earth, water, Spirit, and Decay shaped the mortal realm.",
+      "narration": "Before mountain or sea had received a name, Azeroth’s tale had already begun amid powers vaster than the world. Light stood against Shadow, Life against Death, and Order against Disorder, while fire, air, earth, water, Spirit, and Decay shaped the mortal realm.",
       "durationMs": 36500,
       "voiceover": {
         "assetPath": "audio/guided/black-empire-guided-history/black-empire-story-cosmos.mp3",
-        "durationMs": 19525,
+        "durationMs": 18850,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -20203,11 +20203,11 @@
       "id": "black-empire-story-central-bastion",
       "guideId": "black-empire-guided-history",
       "title": "A bastion near the world's center",
-      "narration": "Greatest among those strongholds stood the bastion raised about Y'Shaarj, near the heart of Azeroth's largest continent. Its light upon this map is only approximate: Chronicle names its place in relation to the continent, but grants neither exact measure nor a proper city name.",
-      "durationMs": 37000,
+      "narration": "Near the heart of Azeroth’s largest continent rose the greatest stronghold of the Black Empire. Built around Y’Shaarj, it stood at the heart of his dominion, a vast bastion in a world ruled by the Old Gods.",
+      "durationMs": 39500,
       "voiceover": {
         "assetPath": "audio/guided/black-empire-guided-history/black-empire-story-central-bastion.mp3",
-        "durationMs": 20050,
+        "durationMs": 15625,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -20246,11 +20246,11 @@
       "id": "black-empire-story-empire-spreads",
       "guideId": "black-empire-guided-history",
       "title": "The Black Empire spreads",
-      "narration": "From that dreadful heart, the holdings of Y'Shaarj and the domains of the other Old Gods spread until together they formed the Black Empire. The boundary now revealed is a broad reconstruction of influence, not a surveyed frontier preserved by the source.",
-      "durationMs": 35500,
+      "narration": "From that dreadful heart, the holdings of Y'Shaarj and the domains of the other Old Gods spread until together they formed the Black Empire. Around their masters, servant hosts raised citadels and temple cities. A world once shaken by the endless wars of the elements now lay beneath a darker dominion.",
+      "durationMs": 42500,
       "voiceover": {
         "assetPath": "audio/guided/black-empire-guided-history/black-empire-story-empire-spreads.mp3",
-        "durationMs": 18625,
+        "durationMs": 21575,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -20402,11 +20402,11 @@
       "id": "cosmic-origins-story-light-shadow",
       "guideId": "cosmic-origins-guided-history",
       "title": "Before time could be counted",
-      "narration": "Before any world carried mountain, sea, or name, Chronicle begins with a boundless opposition. Light shone without measure, and beyond its reach gathered Shadow—the Void. They were not kingdoms upon a chart, but primordial powers, divided in nature and bound within the first telling of the cosmos.",
+      "narration": "Before any world carried mountain, sea, or name, there was Light, shining without measure. Beyond its reach gathered Shadow, the Void. These primordial powers stood opposed before the first mortal life, before the lands and seas of Azeroth, and before the stars that would one day kindle the Great Dark.",
       "durationMs": 42500,
       "voiceover": {
         "assetPath": "audio/guided/cosmic-origins-guided-history/cosmic-origins-story-light-shadow.mp3",
-        "durationMs": 21175,
+        "durationMs": 20950,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -20499,11 +20499,11 @@
       "id": "cosmic-origins-story-nether",
       "guideId": "cosmic-origins-guided-history",
       "title": "A storm beside creation",
-      "narration": "Yet creation did not settle into silence. Unstable energies gathered into the Twisting Nether, a volatile astral realm interwoven with the Great Dark and unlike its ordered substance. The nearness shown here is only the nearness of one thought to the next; no source grants these realms a measured border.",
+      "narration": "Yet creation did not settle into silence. Unstable energies gathered into the Twisting Nether, a volatile astral realm interwoven with the Great Dark and unlike its ordered substance. While stars kindled across the physical universe, the Nether remained a realm of tumult, woven through a creation that had not found peace.",
       "durationMs": 44000,
       "voiceover": {
         "assetPath": "audio/guided/cosmic-origins-guided-history/cosmic-origins-story-nether.mp3",
-        "durationMs": 21600,
+        "durationMs": 22425,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -20544,11 +20544,11 @@
       "id": "cosmic-origins-story-forces",
       "guideId": "cosmic-origins-guided-history",
       "title": "Powers that shape reality",
-      "narration": "Across this vast account stand six great forces. Light answers Shadow; Life answers Death; Order answers Disorder. Fire, air, earth, water, Spirit, and Decay move within the mortal realm beneath them. This is Chronicle's framework, offered here as a lantern for the story—not as the last word on every mystery.",
+      "narration": "Across the vastness move six great forces. Light answers Shadow; Life answers Death; Order answers Disorder. Fire, air, earth, water, Spirit, and Decay move within the mortal realm beneath them. From the reaches beyond the stars to the youngest worlds, these powers shape the struggles through which the ages will unfold.",
       "durationMs": 45500,
       "voiceover": {
         "assetPath": "audio/guided/cosmic-origins-guided-history/cosmic-origins-story-forces.mp3",
-        "durationMs": 22875,
+        "durationMs": 22800,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -21140,11 +21140,11 @@
       "id": "long-vigil-story-crossing-east",
       "guideId": "long-vigil-new-kingdoms-guided-history",
       "title": "The exiles cross a sea made by yesterday",
-      "narration": "Dath'Remar led the exiled Highborne east across the sea because they needed a home beyond the kaldorei ban on arcane magic. Families traveled with them; this was the movement of a people, not simply a military expedition. They reached the northern Eastern Kingdoms and began building a new society. The exact stops of the crossing are uncertain, but its cause and destination are clear: exile from Kalimdor and a new home in the east.",
+      "narration": "Dath'Remar led the exiled Highborne east across the sea because they needed a home beyond the kaldorei ban on arcane magic. Families traveled with them; this was the movement of a people, carrying the memory of Kalimdor toward another shore. They reached the northern Eastern Kingdoms and began building a new society, where the magic they had refused to abandon would shape their future.",
       "durationMs": 59000,
       "voiceover": {
         "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-crossing-east.mp3",
-        "durationMs": 29025,
+        "durationMs": 25900,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -21454,11 +21454,11 @@
       "id": "long-vigil-story-seven-crowns",
       "guideId": "long-vigil-new-kingdoms-guided-history",
       "title": "One human empire becomes seven kingdoms",
-      "narration": "Arathor's victory did not preserve its center forever. Roads lengthened, ports prospered, city-states acquired customs and interests of their own, and Strom's authority weakened across generations. No single morning raised seven crowns at once. The change was slower: one common realm becoming several sovereign powers until the old unity survived chiefly as ancestry and memory. The late map therefore shows a broad plurality, not borders frozen upon one date.",
+      "narration": "Arathor's victory did not preserve its center forever. Roads lengthened, ports prospered, city-states acquired customs and interests of their own, and Strom's authority weakened across generations. No single morning raised seven crowns at once. One common realm slowly became several sovereign powers, until the old unity survived chiefly as ancestry and memory.",
       "durationMs": 56000,
       "voiceover": {
         "assetPath": "audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-seven-crowns.mp3",
-        "durationMs": 31750,
+        "durationMs": 25750,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -21700,11 +21700,11 @@
       "id": "modern-story-fourth-war",
       "guideId": "modern-cosmic-age-guided-history",
       "title": "The wounded inherit another war",
-      "narration": "Victory over the Legion did not quiet the world. Alliance and Horde entered a new war across distant footholds, carrying grief, fear, and old distrust into regions that possessed their own histories. The two broad fields on this atlas do not claim territorial borders. They mark a conflict too wide for one battlefield and too entangled to be explained as the will of one people alone.",
+      "narration": "Victory over the Legion did not quiet the world. Alliance and Horde entered a new war across distant footholds, carrying grief, fear, and old distrust into regions that possessed their own histories. The conflict spread beyond any single battlefield. Peoples who had endured the same invasion now turned their strength against one another, while the wounds of the last war still lay open.",
       "durationMs": 70000,
       "voiceover": {
         "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-fourth-war.mp3",
-        "durationMs": 26625,
+        "durationMs": 26750,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -21760,11 +21760,11 @@
       "id": "modern-story-war-ends",
       "guideId": "modern-cosmic-age-guided-history",
       "title": "A people turns against its warchief",
-      "narration": "Within the Horde, loyalty to community and obedience to Sylvanas no longer led along the same road. Rebellion gathered, and Alliance pressure converged with it against her rule. The war campaign ended, but its dead did not return and its broken trust did not mend at a command. History moved on because actors chose an ending; consequence remained because no choice could restore what the war had taken.",
+      "narration": "Within the Horde, loyalty to community and obedience to Sylvanas no longer led along the same road. Rebellion gathered, and Alliance pressure converged with it against her rule. The war campaign ended, but its dead did not return and its broken trust did not mend at a command. The fighting could be brought to an end; the losses would remain with those who survived it.",
       "durationMs": 71000,
       "voiceover": {
         "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-war-ends.mp3",
-        "durationMs": 27725,
+        "durationMs": 25050,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -21824,11 +21824,11 @@
       "id": "modern-story-nzoth",
       "guideId": "modern-cosmic-age-guided-history",
       "title": "The last prison opens beneath the wounds",
-      "narration": "N'Zoth emerged into a world already strained by war. Assaults struck more than fortifications; they pressed upon perception, memory, and will. The violet region spread across this map is not a border of empire. It is an interpretive field of pressure, for Ny'alotha cannot honestly be placed as an ordinary neighboring province. The oldest darkness returned by making uncertainty itself part of the battlefield.",
+      "narration": "N'Zoth emerged into a world already strained by war. Assaults struck more than fortifications; they pressed upon perception, memory, and will. The nightmare of Ny'alotha reached into the struggle, turning the mind itself into contested ground. Against this ancient enemy, strength of arms alone offered little shelter from the fear that even one's own senses could betray.",
       "durationMs": 70000,
       "voiceover": {
         "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-nzoth.mp3",
-        "durationMs": 28275,
+        "durationMs": 25800,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -21882,11 +21882,11 @@
       "id": "modern-story-nzoth-falls",
       "guideId": "modern-cosmic-age-guided-history",
       "title": "The nightmare is entered and broken",
-      "narration": "To end the assault, champions carried the struggle into Ny'alotha. This chronicle records the crossing and the outcome without pretending the nightmare has ordinary coordinates or reducing it to encounter steps. N'Zoth's immediate campaign was defeated. Yet the relief was brief: the world had scarcely turned from an Old God's visions when another boundary—the veil between life and death—was violently opened.",
+      "narration": "To end the assault, champions carried the struggle into Ny'alotha and confronted N'Zoth within the nightmare. There, the Old God's immediate campaign was defeated. Yet the relief was brief: the world had scarcely turned from those visions when another boundary, the veil between life and death, was violently opened.",
       "durationMs": 69000,
       "voiceover": {
         "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-nzoth-falls.mp3",
-        "durationMs": 28200,
+        "durationMs": 22225,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -21939,11 +21939,11 @@
       "id": "modern-story-veil",
       "guideId": "modern-cosmic-age-guided-history",
       "title": "The sky above Icecrown is torn",
-      "narration": "Sylvanas shattered the veil, and the next road did not cross an ocean or portal into another material world. It descended into the realms of death. The field before you is deliberately relational: distinct domains gather around a central waystation through luminous bonds. Distance, direction, and adjacency are symbolic. Here the atlas abandons terrain rather than disguise metaphysical relationship as conventional geography.",
+      "narration": "Sylvanas shattered the veil above Icecrown, opening the way into the realms of death. Beyond it lay the Shadowlands, where mortal life gave way to another order of existence. Distinct realms held their own duties and powers, and the crisis drawing Azeroth's champions across that threshold reached beyond the fate of any living kingdom.",
       "durationMs": 70000,
       "voiceover": {
         "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-veil.mp3",
-        "durationMs": 29775,
+        "durationMs": 22900,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -21999,11 +21999,11 @@
       "id": "modern-story-covenants",
       "guideId": "modern-cosmic-age-guided-history",
       "title": "Four realms keep their separate callings",
-      "narration": "Within the Shadowlands, the covenants were not interchangeable colors upon one realm. Each carried its own duty, memory, and crisis. The four envoys shown here are anonymous symbols, composed to keep those differences embodied without claiming a canonical meeting. Mortal champions moved among their campaigns, and distinct powers found reasons to resist a danger that had reached through the order of death itself.",
+      "narration": "Within the Shadowlands, four covenants kept their separate callings. Each carried its own duty, memory, and crisis. Mortal champions moved among their campaigns, encountering powers whose purposes had been shaped far from the struggles of Azeroth. Yet the danger reached through the order of death itself, and those distinct realms found reasons to resist it together.",
       "durationMs": 70000,
       "voiceover": {
         "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-covenants.mp3",
-        "durationMs": 27625,
+        "durationMs": 24725,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -22056,11 +22056,11 @@
       "id": "modern-story-dragon-isles",
       "guideId": "modern-cosmic-age-guided-history",
       "title": "The ancient isles awaken to a changed world",
-      "narration": "After the journey beyond death, the Dragon Isles awakened and called the dragonflights home. Their return was not merely a recovery of forgotten ground. It reopened questions of inheritance, purpose, and the meaning of guardianship in an age when Azeroth's oldest institutions had repeatedly failed or changed. The five dragons spiral symbolically above an approximate island focus; they are the flights remembered together, not one literal formation.",
+      "narration": "After the journey beyond death, the Dragon Isles awakened and called the dragonflights home. Their return reopened questions of inheritance, purpose, and the meaning of guardianship. Azeroth's oldest powers had endured betrayal, loss, and change. Now the flights turned again toward their ancient homeland, carrying all that history into the task of finding their place in a changed world.",
       "durationMs": 71000,
       "voiceover": {
         "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-dragon-isles.mp3",
-        "durationMs": 30425,
+        "durationMs": 26375,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -22115,11 +22115,11 @@
       "id": "modern-story-war-within",
       "guideId": "modern-cosmic-age-guided-history",
       "title": "The warning descends beneath Khaz Algar",
-      "narration": "The Worldsoul Saga opened in Khaz Algar, where surface and subterranean histories meet within one compressed atlas focus. Xal'atath gathered her designs while the Earthen revealed cultures shaped beyond the familiar kingdoms. The figure and ensemble are interpretive, but the uncertainty is not decorative: this chapter remains near the living edge of the archive, where evidence is newer and consequence has not yet settled into distant perspective.",
+      "narration": "In Khaz Algar, the lands beneath the surface drew Azeroth into another struggle. Xal'atath gathered her designs while the Earthen revealed cultures shaped beyond the familiar kingdoms. After wars that had crossed oceans, stars, and the veil of death, the road now led into the depths of the world itself, where older inheritances met a gathering threat.",
       "durationMs": 70000,
       "voiceover": {
         "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-war-within.mp3",
-        "durationMs": 29600,
+        "durationMs": 24200,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -22178,12 +22178,12 @@
     {
       "id": "modern-story-midnight-horizon",
       "guideId": "modern-cosmic-age-guided-history",
-      "title": "The chronicle ends where announcement begins",
-      "narration": "At this archive's present edge stands Midnight: announced, not concluded. Its premise turns Xal'atath's assault toward the blood elf homelands and names Eversong among the coming theaters. The shadow on the map is therefore a boundary of knowledge, not a predicted front. No victor is named, no fate presumed. The chronicle leaves the last road open, because honest history must know when tomorrow has not yet become its evidence.",
+      "title": "Where history meets the unknown",
+      "narration": "Beyond these wars looms Midnight, and the threat of Xal'atath's assault upon the blood elf homelands. Eversong stands beneath that gathering shadow. The struggle ahead carries the weight of all that came before, but its ending remains beyond the horizon. For those who call these lands home, tomorrow has not yet become history.",
       "durationMs": 72000,
       "voiceover": {
         "assetPath": "audio/guided/modern-cosmic-age-guided-history/modern-story-midnight-horizon.mp3",
-        "durationMs": 29175,
+        "durationMs": 22750,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -22241,11 +22241,11 @@
       "id": "ordering-story-inherited-shadow",
       "guideId": "ordering-of-azeroth-guided-history",
       "title": "The world the keepers inherited",
-      "narration": "The tale begins where the Black Empire left the world: beneath a dominion of citadels, servant hosts, and powers rooted deeper than any mountain. Azeroth's sleeping spirit endured below them, mighty beyond measure and yet unable to cast the corruption from its own skin. Nothing upon the world remained strong enough to break that reign.",
+      "narration": "The Black Empire held Azeroth beneath a dominion of citadels, servant hosts, and powers rooted deeper than any mountain. The world's sleeping spirit endured below them, mighty beyond measure and yet unable to cast the corruption from its own skin. Nothing upon Azeroth remained strong enough to break that reign.",
       "durationMs": 46500,
       "voiceover": {
         "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-inherited-shadow.mp3",
-        "durationMs": 22850,
+        "durationMs": 21600,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -22508,11 +22508,11 @@
       "id": "ordering-story-empire-falls",
       "guideId": "ordering-of-azeroth-guided-history",
       "title": "The long dominion breaks",
-      "narration": "The war passed across fronts whose roads are no longer known. The titan-forged overcame the elemental powers bound to the Old Gods, broke servant hosts, and cast down the Black Empire's strongholds. No single stroke ended that shadow. It receded through a world-spanning campaign until the keepers stood before the powers beneath the empire itself.",
+      "narration": "The war spread across Azeroth. The titan-forged overcame the elemental powers bound to the Old Gods, broke servant hosts, and cast down the Black Empire's strongholds. No single stroke ended that shadow. It receded through a world-spanning campaign until the keepers stood before the powers beneath the empire itself.",
       "durationMs": 49000,
       "voiceover": {
         "assetPath": "audio/guided/ordering-of-azeroth-guided-history/ordering-story-empire-falls.mp3",
-        "durationMs": 23850,
+        "durationMs": 22375,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -22842,11 +22842,11 @@
       "id": "horde-rise-story-two-peoples",
       "guideId": "rise-of-the-horde-guided-history",
       "title": "Draenor holds more than one remembered home",
-      "narration": "Before there was a Horde, the orcs lived as many clans beneath Draenor's sky, bound by ancestry, rivalry, and the voices of the elements. The draenei also called this world home after a long exile among the stars. Their cities and the clans' hunting grounds did not make a perfect peace, yet neither people was born for the war that would consume them. The first map therefore shows coexistence before conspiracy.",
+      "narration": "Before there was a Horde, the orcs lived as many clans beneath Draenor's sky, bound by ancestry, rivalry, and the voices of the elements. The draenei also called this world home after a long exile among the stars. Their cities and the clans' hunting grounds did not make a perfect peace, yet neither people was born for the war that would consume them.",
       "durationMs": 62000,
       "voiceover": {
         "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-two-peoples.mp3",
-        "durationMs": 28075,
+        "durationMs": 24350,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -23007,11 +23007,11 @@
       "id": "horde-rise-story-shadow-council",
       "guideId": "rise-of-the-horde-guided-history",
       "title": "A council grows behind the warchief's chair",
-      "narration": "Gul'dan accepted what Ner'zhul would not. Around him gathered warlocks and agents whose authority was strongest when unseen. The Shadow Council helped turn many clans toward a single war while Blackhand stood before them as warchief. Unity came, but not as freely chosen kinship: command, fear, new magic, and concealed bargains bound the structure together. Draenor's political map had begun to narrow beneath a hand most warriors could not see.",
+      "narration": "Gul'dan accepted what Ner'zhul would not. Around him gathered warlocks and agents whose authority was strongest when unseen. The Shadow Council helped turn many clans toward a single war while Blackhand stood before them as warchief. Command, fear, new magic, and concealed bargains bound the host together. The clans' strength had begun to serve a hand most warriors could not see.",
       "durationMs": 63500,
       "voiceover": {
         "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-shadow-council.mp3",
-        "durationMs": 29950,
+        "durationMs": 26700,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -23185,12 +23185,12 @@
     {
       "id": "horde-rise-story-gate-between-worlds",
       "guideId": "rise-of-the-horde-guided-history",
-      "title": "The road does not cross a map—it leaves a world",
-      "narration": "Across the gulf between worlds, Medivh's corrupted will answered Gul'dan. Together their workings opened the Dark Portal. The atlas does not draw that passage as a road across oceans, for no shared geography joins these skies. It changes worldspace. Draenor falls away; Azeroth appears, and the same threshold stands in another land. Through it came scouts, warriors, and at last the weight of the Horde. The calendar of the modern wars begins here.",
+      "title": "A gateway opens between worlds",
+      "narration": "Across the gulf between worlds, Medivh's corrupted will answered Gul'dan. Together their workings opened the Dark Portal. Beyond its threshold lay Azeroth, beneath a sky the clans had never known. Through it came scouts, warriors, and at last the weight of the Horde. Draenor's war had found another world, and the kingdoms of Azeroth would bear its coming.",
       "durationMs": 66000,
       "voiceover": {
         "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-gate-between-worlds.mp3",
-        "durationMs": 30375,
+        "durationMs": 24250,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -23248,11 +23248,11 @@
       "id": "horde-rise-story-first-war",
       "guideId": "rise-of-the-horde-guided-history",
       "title": "Stormwind discovers that the enemy has another sky",
-      "narration": "The first war widened by returns. Early assaults could be resisted, but the Horde learned the southern kingdom while greater forces crossed behind them. Stormwind fought an enemy whose reserves lay beyond the edge of its world, even as Medivh's betrayal divided trust within its own defense. The line shown is only strategic direction from portal to kingdom. It does not turn many campaigns into one neat march, or game missions into surveyed history.",
+      "narration": "The first war widened by returns. Early assaults could be resisted, but the Horde learned the southern kingdom while greater forces crossed behind them. Stormwind fought an enemy whose reserves lay beyond the edge of its world, even as Medivh's betrayal divided trust within its own defense. Each new assault carried the danger farther from the portal and deeper into the kingdom.",
       "durationMs": 65000,
       "voiceover": {
         "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-first-war.mp3",
-        "durationMs": 29750,
+        "durationMs": 25075,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -23507,11 +23507,11 @@
       "id": "horde-rise-story-second-war",
       "guideId": "rise-of-the-horde-guided-history",
       "title": "The Second War spreads across many roads",
-      "narration": "Orgrim drove the Horde north against a coalition still learning how to endure. The struggle crossed land and water, threatened several realms, and drew peoples beyond humanity into its widening account. No single line can contain such a war. The route shown is a strategic summary: pressure rising from the conquered south toward the Alliance heartlands, answered by forces whose shared purpose grew under the strain meant to break it.",
+      "narration": "Orgrim drove the Horde north against a coalition still learning how to endure. The struggle crossed land and water, threatened several realms, and drew peoples beyond humanity into its widening reach. Pressure rose from the conquered south toward the Alliance heartlands. Against it stood forces whose shared purpose grew under the strain meant to break them.",
       "durationMs": 64000,
       "voiceover": {
         "assetPath": "audio/guided/rise-of-the-horde-guided-history/horde-rise-story-second-war.mp3",
-        "durationMs": 28525,
+        "durationMs": 23925,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -23886,11 +23886,11 @@
       "id": "third-war-story-stratholme-choice",
       "guideId": "third-war-frozen-throne-guided-history",
       "title": "At Stratholme, purpose hardens into ruin",
-      "narration": "At Stratholme, fear of what the infected might become narrowed Arthas's answer until no mercy remained within it. He ordered the city purged. Jaina and Uther would not follow that road, and the prince passed onward without them. The city stands here as an approximate light upon the atlas, for the deeper boundary crossed that day was not a city wall. It lay within the man who believed every cost could be justified by pursuit.",
+      "narration": "At Stratholme, fear of what the infected might become narrowed Arthas's answer until no mercy remained within it. He ordered the city purged. Jaina and Uther would not follow that road, and the prince passed onward without them. The deeper boundary crossed that day lay within the man who believed every cost could be justified by pursuit.",
       "durationMs": 67500,
       "voiceover": {
         "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-stratholme-choice.mp3",
-        "durationMs": 27825,
+        "durationMs": 22875,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -23944,11 +23944,11 @@
       "id": "third-war-story-northern-blade",
       "guideId": "third-war-frozen-throne-guided-history",
       "title": "The hunter follows winter into the north",
-      "narration": "Arthas carried his pursuit over the cold sea to Northrend. The route shown is only the shape of obsession across the world, not a chart of every landing and march. There he claimed Frostmourne, seeking the strength to defeat the enemy before him. The blade answered that desire by binding him to a greater enemy's will. He had ridden north to save Lordaeron; the man who turned homeward would become the kingdom's destroyer.",
+      "narration": "Arthas carried his pursuit over the cold sea to Northrend. There he claimed Frostmourne, seeking the strength to defeat the enemy before him. The blade answered that desire by binding him to a greater enemy's will. He had ridden north to save Lordaeron; the man who turned homeward would become the kingdom's destroyer.",
       "durationMs": 67000,
       "voiceover": {
         "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-northern-blade.mp3",
-        "durationMs": 27400,
+        "durationMs": 21475,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -24002,11 +24002,11 @@
       "id": "third-war-story-lordaeron-falls",
       "guideId": "third-war-frozen-throne-guided-history",
       "title": "The prince returns beneath a colder allegiance",
-      "narration": "The gates of Lordaeron opened to a returning prince and received a servant of the Lich King. Arthas killed his father, and the Scourge passed through the old kingdom's heart. A realm that had survived the Horde's northern war fell through the son it had trusted to defend it. The advance drawn across the map is broad and interpretive, because the catastrophe was larger than one army line: government, memory, and the safety of the living all gave way together.",
+      "narration": "The gates of Lordaeron opened to a returning prince and received a servant of the Lich King. Arthas killed his father, and the Scourge passed through the old kingdom's heart. A realm that had survived the Horde's northern war fell through the son it had trusted to defend it. Government, memory, and the safety of the living gave way together beneath the advance of the dead.",
       "durationMs": 67500,
       "voiceover": {
         "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-lordaeron-falls.mp3",
-        "durationMs": 29550,
+        "durationMs": 24425,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -24061,11 +24061,11 @@
       "id": "third-war-story-sunwell-darkens",
       "guideId": "third-war-frozen-throne-guided-history",
       "title": "The northern light is broken",
-      "narration": "The Scourge turned next upon Quel'Thalas. Sylvanas resisted the advance and was answered with a captivity beyond death. The kingdom was broken, and the Sunwell corrupted as the invaders pursued a design reaching farther still. This passage must hold two truths together: a people suffered devastation, and one defender's transformation would later help create a power the Scourge could not wholly command. Ruin had begun to divide even the army of the dead.",
+      "narration": "The Scourge turned next upon Quel'Thalas. Sylvanas resisted the advance and was answered with a captivity beyond death. The kingdom was broken, and the Sunwell corrupted as the invaders pursued a design reaching farther still. Yet the defender they had transformed would one day help create a power the Scourge could not wholly command. Even this devastation carried the seeds of resistance to come.",
       "durationMs": 67500,
       "voiceover": {
         "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-sunwell-darkens.mp3",
-        "durationMs": 30575,
+        "durationMs": 27175,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -24296,11 +24296,11 @@
       "id": "third-war-story-unlikely-defense",
       "guideId": "third-war-frozen-throne-guided-history",
       "title": "Three histories gather beneath one mountain",
-      "narration": "Night elves, New Horde forces, and Alliance survivors did not arrive at Hyjal emptied of suspicion. Each carried losses, loyalties, and reasons to mistrust the others. The Legion gave them a danger none could outlast alone. Their coalition was temporary, and the atlas names it as such. Its meaning lies not in pretending difference vanished, but in showing that distinct peoples accepted one defense when the survival of every road behind them depended upon the mountain ahead.",
+      "narration": "Night elves, New Horde forces, and Alliance survivors did not arrive at Hyjal emptied of suspicion. Each carried losses, loyalties, and reasons to mistrust the others. The Legion gave them a danger none could outlast alone. Their alliance was fragile, but they accepted one defense. The survival of the lands behind them now depended upon the mountain ahead.",
       "durationMs": 67500,
       "voiceover": {
         "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-unlikely-defense.mp3",
-        "durationMs": 31825,
+        "durationMs": 25525,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -24493,11 +24493,11 @@
       "id": "third-war-story-outland-refuge",
       "guideId": "third-war-frozen-throne-guided-history",
       "title": "Exile crosses into a world already broken",
-      "narration": "Illidan's path led beyond Azeroth into Outland, where every horizon bore the memory of Draenor's ruin. With Kael'thas, Lady Vashj, and their followers, he closed portals and overthrew Magtheridon's rule. This was not the founding of a peaceful realm. It was the making of a stronghold by an uneasy coalition, shown within Outland's own local atlas. No line joins it falsely to Azeroth; the change of worlds is a change of map and measure.",
+      "narration": "Illidan's path led beyond Azeroth into Outland, where every horizon bore the memory of Draenor's ruin. With Kael'thas, Lady Vashj, and their followers, he closed portals and overthrew Magtheridon's rule. An uneasy coalition had gained a stronghold in a broken world. Victory gave them power, but little promise of the peace for which exiles might have hoped.",
       "durationMs": 69000,
       "voiceover": {
         "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-outland-refuge.mp3",
-        "durationMs": 30075,
+        "durationMs": 25175,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -24558,11 +24558,11 @@
       "id": "third-war-story-race-to-icecrown",
       "guideId": "third-war-frozen-throne-guided-history",
       "title": "Two purposes narrow toward the throne",
-      "narration": "From Outland the story returns to Azeroth without pretending the worlds share one road. Illidan came to destroy the Frozen Throne; Arthas hastened north to preserve the power that had claimed him. Around Icecrown, the long histories of plague, exile, and demonic command drew into one contest. The route is a compact diagram of convergence, not a reconstruction of every campaign path. At its end, Illidan fell before he could reach the throne.",
+      "narration": "Illidan left Outland to destroy the Frozen Throne; Arthas hastened north to preserve the power that had claimed him. Around Icecrown, the long histories of plague, exile, and demonic command drew into one contest. Two purposes met beneath the same cold heights. Illidan fell before he could reach the throne, and the path above lay open to Arthas.",
       "durationMs": 68500,
       "voiceover": {
         "assetPath": "audio/guided/third-war-frozen-throne-guided-history/third-war-story-race-to-icecrown.mp3",
-        "durationMs": 30600,
+        "durationMs": 24550,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -24808,11 +24808,11 @@
       "id": "ancients-war-story-shadow-beyond-gate",
       "guideId": "war-of-the-ancients-guided-history",
       "title": "Beyond the gate waits a will vast as ruin",
-      "narration": "The force answering the Highborne was the Burning Legion, and beyond its first hosts stood Sargeras. The portal was meant to become wide enough for that fallen titan to enter Azeroth. He never stood upon this ground; the figure shown here belongs to the threshold, a warning of the presence the ritual sought to make real.",
+      "narration": "The force answering the Highborne was the Burning Legion, and beyond its first hosts stood Sargeras. The portal was meant to become wide enough for that fallen titan to enter Azeroth. While demonic armies crossed ahead of him, the ritual continued. The danger beyond the gateway was greater still than the hosts already bringing ruin to the land.",
       "durationMs": 49000,
       "voiceover": {
         "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-shadow-beyond-gate.mp3",
-        "durationMs": 21700,
+        "durationMs": 22575,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -24864,11 +24864,11 @@
       "id": "ancients-war-story-invasion-enters",
       "guideId": "war-of-the-ancients-guided-history",
       "title": "The invasion enters through the heart of empire",
-      "narration": "Demonic hosts came through Zin-Azshari, and the bright center of the empire became the source of its burning. The Legion's destruction spread beyond any single road or battlefield. This wartime map therefore shows pressure and devastation in broad form, not a false wall of exact fronts across a continent whose campaigns are imperfectly measured.",
+      "narration": "Demonic hosts came through Zin-Azshari, and the bright center of the empire became the source of its burning. The Legion's destruction spread beyond the capital, carrying devastation into the lands around it. The power gathered beside the Well had opened the way to an enemy whose purpose reached far beyond the queen's court, threatening the world that had sustained it.",
       "durationMs": 50000,
       "voiceover": {
         "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-invasion-enters.mp3",
-        "durationMs": 23925,
+        "durationMs": 23575,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -25226,11 +25226,11 @@
       "id": "ancients-war-story-world-breaks",
       "guideId": "war-of-the-ancients-guided-history",
       "title": "One continent becomes a memory",
-      "narration": "The Well collapsed. Seas rushed into the wound, the old land broke, and distances that had been crossed by road became oceans. At the center remained the Maelstrom, turning above the place where power and pride had drawn ruin together. This is a separate world state, not an ornament laid over the old one: ancient Kalimdor was gone.",
+      "narration": "The Well collapsed. Seas rushed into the wound, the old land broke, and distances that had been crossed by road became oceans. At the center remained the Maelstrom, turning above the place where power and pride had drawn ruin together. Ancient Kalimdor was gone. The survivors would inherit separated shores where one vast continent had once stood.",
       "durationMs": 51000,
       "voiceover": {
         "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-world-breaks.mp3",
-        "durationMs": 23300,
+        "durationMs": 24200,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },
@@ -25282,11 +25282,11 @@
       "id": "ancients-war-story-queen-beneath-sea",
       "guideId": "war-of-the-ancients-guided-history",
       "title": "The sea closes over the queen's old world",
-      "narration": "Azshara and Highborne followers were taken beneath the waters, yet the depths did not end their history. They survived through transformation, while the cities that had proclaimed their permanence vanished below the new sea. The tour marks this fate without placing an exact underwater court upon a map whose drowned geography remains uncertain.",
+      "narration": "Azshara and Highborne followers were taken beneath the waters, yet the depths did not end their history. They survived through transformation, while the cities that had proclaimed their permanence vanished below the new sea. Above them, the broken shores marked the end of their empire. Beneath the waves, the queen and her followers endured in altered forms.",
       "durationMs": 49000,
       "voiceover": {
         "assetPath": "audio/guided/war-of-the-ancients-guided-history/ancients-war-story-queen-beneath-sea.mp3",
-        "durationMs": 22750,
+        "durationMs": 23650,
         "voiceId": "kokoro-bm-lewis",
         "aiGenerated": true
       },

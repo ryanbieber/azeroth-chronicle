@@ -40,6 +40,24 @@ The replacement production set uses Kokoro's stock British male `bm_lewis` voice
 - Browser playback reached `readyState 4`, advanced `currentTime`, stopped on disable, restarted on re-enable, and loaded the next chapter's distinct MP3.
 - A focused Playwright regression covers on, off, on again, and next-chapter playback.
 
+## Azerothium wording refresh — 2026-09-25
+
+Seven guided passages were rewritten to remove source-book framing from the spoken history: `adventurers-story-outland`, `black-empire-story-cosmos`, `black-empire-story-central-bastion`, `cosmic-origins-story-light-shadow`, `cosmic-origins-story-forces`, `modern-story-nzoth-falls`, and `modern-story-midnight-horizon`. Their MP3 files were regenerated through the existing production command using `bm_lewis` at speed `0.9`. The complete 117-track manifest retains the other 110 recordings and updates the seven replacement hashes, sizes, and measured durations.
+
+All 117 manifest hashes and StoryNode duration/path pairs were checked; all seven replacements passed FFmpeg decoding. The silent-reading duration for the central bastion passage increased to 39.5 seconds to preserve the existing reading-pace contract. Source titles and citation IDs remain accurate; publication status remains research.
+
+## Central-bastion narration revision
+
+The central-bastion passage was subsequently rewritten as direct historical narration, removing the spoken cartography aside. Its single MP3 was rebuilt with `--nodes=black-empire-story-central-bastion --force` using the same Lewis voice and speed. The source record retains its approximate geography and research status; the manifest records the replacement audio hash and measured duration.
+
+## Immersive narration pass — 2026-09-25
+
+The guided corpus was read for asides about source analysis, uncertain cartography, symbolic figures, map states, and renderer behavior. Forty-three passages across all ten eras were rewritten to stay within the historical telling. Unsupported motives and geographic details were omitted rather than replaced with invented certainty. The Midnight passage retains an unresolved future horizon. Source, claim, geographic-certainty, and research-status records retain their existing editorial scope.
+
+Replacement counts: Cosmic Origins 3; Black Empire 1; Ordering 2; Ancient Civilizations 2; War of the Ancients 4; Long Vigil 2; Rise of the Horde 5; Third War 7; Age of Adventurers 8; Modern Cosmic Age 9. The Dark Portal chapter is now titled “A gateway opens between worlds.”
+
+The selected-node generation command uses the existing stock `bm_lewis` voice at native speed `0.9`, with loudness normalization and no extra tempo processing. All 43 corresponding MP3s are regenerated; the remaining 74 recordings are retained. The Black Empire expansion chapter's silent-reading duration is 42.5 seconds to accommodate its revised transcript.
+
 ## Prior-art lesson
 
-The Ocarina of Trump repository established useful production discipline: deterministic filenames, authored manifests, provenance, normalization, duration awareness, and explicit interruption testing. Azeroth Chronicle adopts those general safeguards while keeping its implementation web-native, opt-in, and independent of any ROM audio system.
+The Ocarina of Trump repository established useful production discipline: deterministic filenames, authored manifests, provenance, normalization, duration awareness, and explicit interruption testing. Azerothium adopts those general safeguards while keeping its implementation web-native, opt-in, and independent of any ROM audio system.

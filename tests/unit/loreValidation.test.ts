@@ -8,6 +8,22 @@ import { entityVisibleInEra } from '../../src/lib/lore/eraVisibility';
 import { mapStateSchema, spatialStateSchema } from '../../src/domain/schemas/loreSchemas';
 
 describe('lore dataset', () => {
+  it('keeps source-book naming out of guided narration and chapter titles', () => {
+    const data = loadDataset();
+    for (const node of data.storyNodes) {
+      expect(`${node.title} ${node.narration}`, node.id).not.toMatch(/\bchronicle\b/i);
+    }
+  });
+
+  it('keeps cartographic and production commentary out of the spoken history', () => {
+    const data = loadDataset();
+    for (const node of data.storyNodes) {
+      expect(`${node.title} ${node.narration}`, node.id).not.toMatch(
+        /\b(?:atlas|worldspace|interpretive|surveyed|diagram|map|maps)\b|\bworld state\b|\b(?:surviving account|recorded motive|narrative anchor|figure shown|field before you)\b/i,
+      );
+    }
+  });
+
   it('parses and has no broken cross-record references', () => {
     expect(validateDatasetReferences(loadDataset(), { geometryIds: geometryIds() })).toEqual([]);
   });

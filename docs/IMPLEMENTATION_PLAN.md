@@ -1,4 +1,4 @@
-# Azeroth Chronicle Implementation Plan
+# Azerothium Implementation Plan
 
 ## Outcome
 
@@ -116,6 +116,11 @@ MapViewport3D
 - Reusable branch-return state remains available to future tours, but the Black Empire tour keeps optional dossiers separate from the guided sequence. Clicking a map figure outside the tour opens a concise reader-facing overview; research and provenance detail remains on permanent routes.
 - Tests cover every action type, node transitions, skip behavior, and branch-and-return state.
 - Node narration remains the accessible transcript and canonical voice-over script. Optional repository-backed audio may enhance a node, but never replaces the text or its skip/reduced-motion behavior. Voice preference is separate from story progress, and narration must stop cleanly on disable, chapter change, guide exit, or era change.
+- Guided playback uses the whole viewport with a borderless narration area and compact controls. Terrain boundaries fade into a non-geographic atmospheric backdrop derived from the existing map art; authored coordinates and camera commands remain unchanged. Only relevant character figures appear during story beats. The persistent return-to-atlas action ends playback and restores navigation, timeline, and dossiers. This is reusable Phase 4/6 presentation work; transcripts remain keyboard-scrollable at compact and landscape sizes.
+- The public app is named **Azerothium**. Guided narration tells the history directly rather than naming the source books; their exact titles remain in citations. Existing storage keys, source IDs, repository URLs, and deployment identifiers are retained for compatibility. Story framing adjusts the camera projection above the transcript without changing authored camera poses or geographic anchors.
+- Guided environments use closer landscape and portrait framing, with full-viewport atmosphere from the active map asset. Relational scenes crop the atmospheric texture separately from the anchored field; terrain backdrops remain softly defocused so they do not imply additional mapped geography. Figure sizing compensates for projection magnification to preserve room for dense casts. This is reusable Phase 4/6 presentation work, with desktop, tablet, phone, landscape, and crowded-chapter browser coverage.
+- Full-history playback automatically advances between guided eras after the final chapter's audio or silent-reading timer completes, and ends at the coverage message after the last era. Pausing also pauses the era handoff. The compact voice toggle sits beside the return action in the world header; narration disclosure is available on hover or keyboard focus. Map note overlays are removed; record-level certainty and provenance remain available in the archive and dossiers.
+- Guided prose stays within the historical telling. Cartographic approximations, symbolic compositions, renderer terminology, and source-analysis asides belong in the supporting records rather than the spoken transcript. Omit unsupported details instead of assigning unknown motives, exact locations, or outcomes. The Phase 4 narration pass replaces 43 passages across all ten guided eras and regenerates their corresponding audio; the remaining 74 recordings are retained.
 
 ### Battle playback
 

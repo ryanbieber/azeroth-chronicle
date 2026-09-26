@@ -7,7 +7,7 @@
   "worldspaceId": "azeroth",
   "date": { "precision": "unknown", "label": "Untold ages before the Old Gods' arrival" },
   "summary": "The four Elemental Lords and their hosts fought across primordial Azeroth for ages, with dominion shifting continually and no lasting victor.",
-  "description": "The title is a descriptive grouping for Chronicle's world-spanning elemental conflict. Because the source supplies no stable front or exact battlefield, the atlas records its geography as unknown.",
+  "description": "The title is a descriptive grouping for the source account’s world-spanning elemental conflict. Because the source supplies no stable front or exact battlefield, the atlas records its geography as unknown.",
   "campaignId": "elemental-wars-campaign",
   "participantEntityIds": ["alakir", "ragnaros", "therazane", "neptulon", "elemental-hosts"],
   "causedByEventIds": ["spirit-imbalance"],

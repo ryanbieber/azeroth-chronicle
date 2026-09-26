@@ -39,8 +39,8 @@ export function EntityDossier({ entity, compact = false }: { entity: LoreEntity;
           </section>
         )}
         {relatedBattles.length > 0 && (
-          <section className="entity-overview-section" aria-labelledby="chronicle-appearances-title">
-            <h3 id="chronicle-appearances-title">In this chronicle</h3>
+          <section className="entity-overview-section" aria-labelledby="history-appearances-title">
+            <h3 id="history-appearances-title">In this history</h3>
             <ul>{relatedBattles.map((battle) => (
               <li key={battle.id}><Link to={`/battles/${battle.slug}`}>{battle.name}</Link></li>
             ))}</ul>

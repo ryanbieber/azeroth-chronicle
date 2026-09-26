@@ -2,7 +2,8 @@ import { staticLoreRepository } from '../../domain/repositories/StaticLoreReposi
 import { beginStoryGuide, endStoryGuide, enterStoryNode } from '../../lib/story/storyRuntime';
 import { useStoryStore } from '../../app/state/storyStore';
 import { useNarrationStore } from '../../app/state/narrationStore';
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useEraStore } from '../../app/state/eraStore';
 
@@ -12,7 +13,7 @@ function narrationDurationMs(narration: string): number {
   return Math.min(90_000, Math.max(18_000, Math.round(spokenMs / 500) * 500 + 5_000));
 }
 
-export function StoryGuidePanel({ guideId, showLauncher = true }: { guideId: string; showLauncher?: boolean }) {
+export function StoryGuidePanel({ guideId, showLauncher = true, voiceControlsHost }: { guideId: string; showLauncher?: boolean; voiceControlsHost?: HTMLElement | null }) {
   const navigate = useNavigate();
   const [params] = useSearchParams();
   const fullTour = params.get('tour') === 'full';
@@ -26,6 +27,7 @@ export function StoryGuidePanel({ guideId, showLauncher = true }: { guideId: str
   const narrationEnabled = useNarrationStore((state) => state.enabled);
   const setNarrationEnabled = useNarrationStore((state) => state.setEnabled);
   const audioRef = useRef<HTMLAudioElement>(null);
+  const autoStartedGuide = useRef<string | null>(null);
   const remainingMs = useRef(0);
   const timerStartedAt = useRef(0);
   const [audioStatus, setAudioStatus] = useState<'idle' | 'playing' | 'awaiting'>('idle');
@@ -37,8 +39,34 @@ export function StoryGuidePanel({ guideId, showLauncher = true }: { guideId: str
     : undefined;
 
   useEffect(() => {
-    if (fullTour && guide && !node) beginStoryGuide(guide.id);
+    if (!fullTour) {
+      autoStartedGuide.current = null;
+      return;
+    }
+    if (!guide || autoStartedGuide.current === guide.id) return;
+    autoStartedGuide.current = guide.id;
+    if (!node) beginStoryGuide(guide.id);
   }, [fullTour, guide, node]);
+
+  const finish = useCallback(() => {
+    if (!guide) return;
+    if (fullTour) {
+      const eras = staticLoreRepository.listEras();
+      const currentEraIndex = eras.findIndex((era) => era.id === guide.eraId);
+      const nextGuidedEra = eras.slice(currentEraIndex + 1).find((era) => era.storyGuideId);
+      if (nextGuidedEra?.storyGuideId) {
+        endStoryGuide();
+        setEra(nextGuidedEra.id);
+        beginStoryGuide(nextGuidedEra.storyGuideId);
+        navigate(`/map?era=${nextGuidedEra.slug}&tour=full`);
+        return;
+      }
+      endStoryGuide();
+      navigate('/?tour=complete');
+      return;
+    }
+    endStoryGuide();
+  }, [fullTour, guide, navigate, setEra]);
 
   const durationMs = node?.durationMs ?? (node ? narrationDurationMs(node.narration) : 0);
 
@@ -51,17 +79,18 @@ export function StoryGuidePanel({ guideId, showLauncher = true }: { guideId: str
     if (narrationEnabled && node.voiceover) return;
     const currentIndex = guide?.nodeIds.indexOf(node.id) ?? -1;
     const nextNodeId = guide?.nodeIds[currentIndex + 1];
-    if (!nextNodeId) return;
+    if (!nextNodeId && !fullTour) return;
     timerStartedAt.current = performance.now();
     const timer = window.setTimeout(() => {
-      const nextNode = staticLoreRepository.findStoryNode(nextNodeId);
+      const nextNode = nextNodeId ? staticLoreRepository.findStoryNode(nextNodeId) : undefined;
       if (nextNode) enterStoryNode(nextNode);
+      else finish();
     }, remainingMs.current);
     return () => {
       window.clearTimeout(timer);
       remainingMs.current = Math.max(0, remainingMs.current - (performance.now() - timerStartedAt.current));
     };
-  }, [guide, narrationEnabled, node, status]);
+  }, [finish, fullTour, guide, narrationEnabled, node, status]);
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -128,58 +157,53 @@ export function StoryGuidePanel({ guideId, showLauncher = true }: { guideId: str
         .catch(() => setAudioStatus('awaiting'));
     }
   };
-  const finish = () => {
-    if (fullTour) {
-      const eras = staticLoreRepository.listEras();
-      const currentEraIndex = eras.findIndex((era) => era.id === guide.eraId);
-      const nextGuidedEra = eras.slice(currentEraIndex + 1).find((era) => era.storyGuideId);
-      if (nextGuidedEra?.storyGuideId) {
-        endStoryGuide();
-        setEra(nextGuidedEra.id);
-        beginStoryGuide(nextGuidedEra.storyGuideId);
-        navigate(`/map?era=${nextGuidedEra.slug}&tour=full`);
-        return;
-      }
-      endStoryGuide();
-      navigate('/?tour=complete');
-      return;
-    }
-    endStoryGuide();
-  };
+
+  const voiceControl = (
+    <div className="story-voiceover">
+      <button type="button" aria-label={narrationEnabled ? 'Voice-over on' : 'Enable voice-over'}
+        aria-pressed={narrationEnabled} aria-describedby="voiceover-description" onClick={toggleVoiceover}>
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+          <path d="M11 5 6 9H3v6h3l5 4V5Z" />
+          {narrationEnabled ? <path d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14" /> : <path d="m16 9 5 6m0-6-5 6" />}
+        </svg>
+        <span>Voice {narrationEnabled ? 'on' : 'off'}</span>
+      </button>
+      <small id="voiceover-description">
+        {audioStatus === 'awaiting' ? 'Playback blocked. Toggle voice off and on to retry. ' : ''}
+        AI-generated narration · transcript remains visible
+      </small>
+    </div>
+  );
 
   return (
     <section className="story-card" aria-live="polite">
-      <p className="eyebrow">Guided chronicle</p>
+      <p className="eyebrow">Guided history</p>
       <h2>{node.title}</h2>
-      <p>{node.narration}</p>
-      {voiceoverAvailable && (
-        <div className="story-voiceover">
-          <button type="button" aria-pressed={narrationEnabled} onClick={toggleVoiceover}>
-            {narrationEnabled ? 'Voice-over on' : 'Enable voice-over'}
+      <p className="story-transcript" tabIndex={0} aria-label="Chapter transcript">{node.narration}</p>
+      <div className="story-controls">
+        {voiceoverAvailable && (voiceControlsHost ? createPortal(voiceControl, voiceControlsHost) : voiceControl)}
+        {voiceoverAvailable && <audio
+          ref={audioRef}
+          src={voiceoverSrc}
+          preload="metadata"
+          onPlay={() => setAudioStatus('playing')}
+          onPause={() => setAudioStatus('idle')}
+          onEnded={() => {
+            if (!narrationEnabled || status !== 'playing') return;
+            if (next) activate(next);
+            else if (fullTour) finish();
+          }}
+        />}
+        <div className="story-playback">
+          <button type="button" aria-pressed={status === 'paused'} onClick={status === 'playing' ? pause : play}>
+            {status === 'playing' ? 'Pause tour' : 'Resume tour'}
           </button>
-          <small>
-            {audioStatus === 'awaiting' ? 'Press again to begin playback. ' : ''}
-            AI-generated guide narration · transcript remains visible
-          </small>
-          <audio
-            ref={audioRef}
-            src={voiceoverSrc}
-            preload="metadata"
-            onPlay={() => setAudioStatus('playing')}
-            onPause={() => setAudioStatus('idle')}
-            onEnded={() => next && activate(next)}
-          />
+          <span>{status === 'playing' ? 'Playing' : 'Paused'}</span>
         </div>
-      )}
-      <div className="story-playback">
-        <button type="button" aria-pressed={status === 'paused'} onClick={status === 'playing' ? pause : play}>
-          {status === 'playing' ? 'Pause tour' : 'Resume tour'}
-        </button>
-        <span>{status === 'playing' ? 'Playing' : 'Paused'}</span>
-      </div>
-      <div className="story-actions">
-        <button type="button" disabled={!previous} onClick={() => previous && activate(previous)}>Previous</button>
-        <button type="button" onClick={() => next ? activate(next) : finish()}>{next ? 'Next' : fullTour ? 'Continue the chronicle' : 'Next'}</button>
+        <div className="story-actions">
+          <button type="button" disabled={!previous} onClick={() => previous && activate(previous)}>Previous</button>
+          <button type="button" onClick={() => next ? activate(next) : finish()}>{next ? 'Next' : fullTour ? 'Continue the journey' : 'Next'}</button>
+        </div>
       </div>
       <div className="story-timer" role="progressbar" aria-label="Time until next story point">
         <span

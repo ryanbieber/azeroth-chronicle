@@ -7,7 +7,7 @@
   "worldspaceId": "azeroth",
   "date": { "precision": "relative", "label": "After the titan-forged were mustered", "relativeToId": "titan-forged-mustered" },
   "summary": "Keeper-led armies of stone and metal fought across primordial Azeroth, defeated the Black Empire's forces, and subdued the powers that had ruled the world.",
-  "description": "This title groups a world-spanning campaign described across Chronicle's Ordering sequence. The sources do not establish a surveyable front or one battle coordinate, so the atlas provides phases without an invented route or marker.",
+  "description": "This title groups a world-spanning campaign described across the source account’s Ordering sequence. The sources do not establish a surveyable front or one battle coordinate, so the atlas provides phases without an invented route or marker.",
   "campaignId": "titan-forged-ordering-campaign",
   "participantEntityIds": ["titan-forged", "keepers", "black-empire-civilization", "old-gods", "yshaarj", "nraqi", "aqir", "alakir", "ragnaros", "therazane", "neptulon"],
   "causedByEventIds": ["titan-forged-mustered"],

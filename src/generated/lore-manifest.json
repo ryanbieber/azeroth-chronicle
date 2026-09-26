@@ -4260,7 +4260,7 @@
       "name": "The Amani Empire",
       "slug": "amani-empire",
       "shortDescription": "The forest-troll power whose ancestral northern lands came into conflict with Quel'Thalas and later Arathor.",
-      "body": "This record presents the Amani as an organized people defending and contesting lands, not as anonymous obstacles in another kingdom's founding story. The influence area and generated group representation are interpretive.",
+      "body": "The Amani were an organized forest-troll people with ancestral ties to the northern lands. The founding of Quel'Thalas brought them into conflict with the high elves, and that struggle later drew Arathor into the Troll Wars.",
       "firstEraId": "long-vigil-new-kingdoms",
       "featuredEraIds": [
         "long-vigil-new-kingdoms"
@@ -4352,7 +4352,7 @@
       "name": "Aqir",
       "slug": "aqir",
       "shortDescription": "Resilient insectoid servants formed from the Old Gods' organic matter, first set to building the Black Empire and later drawn into a world-spanning war with the ancient troll powers.",
-      "body": "The atlas treats the aqir as a changing ancient people rather than a single timeless empire. The northern and southern successor societies that emerged from their retreat belong to later map states and should not be collapsed into one precise border.",
+      "body": "The aqir first served the Old Gods in the building of the Black Empire. After their war with the ancient troll powers, surviving groups retreated in different directions and gave rise to separate northern and southern societies.",
       "firstEraId": "black-empire",
       "sourceIds": [
         "warcraft-chronicle-volume-1"
@@ -4380,7 +4380,7 @@
       "name": "Arathor",
       "slug": "arathor",
       "shortDescription": "The first great human nation, united under Thoradin and centered at Strom.",
-      "body": "Arathor's atlas region is a broad political reading across a long era. The generated group image represents a coalition of early human communities rather than one uniform army or later kingdom culture.",
+      "body": "Thoradin united early human communities under Arathor, with Strom as its center. That union gave the human kingdoms a shared political origin, though the realm later divided into separate states.",
       "firstEraId": "long-vigil-new-kingdoms",
       "featuredEraIds": [
         "long-vigil-new-kingdoms"
@@ -4544,7 +4544,7 @@
       "name": "The Black Empire",
       "slug": "black-empire-civilization",
       "shortDescription": "The civilization of Old God domains, citadels, and temple cities that spread across primordial Azeroth.",
-      "body": "The shaded atlas extent communicates broad influence only. The cited account supports world-spanning expansion but does not provide survey-grade borders, so every boundary shown here is explicitly inferred.",
+      "body": "The Old Gods' domains grew into a civilization of citadels and temple cities built by their servant peoples. After the Elemental Lords' resistance failed, their dominion spread across much of primordial Azeroth.",
       "firstEraId": "black-empire",
       "lastEraId": "ordering-of-azeroth",
       "sourceIds": [
@@ -4780,7 +4780,7 @@
       "name": "The Dark Trolls",
       "slug": "dark-trolls",
       "shortDescription": "A reclusive nocturnal troll people whose migration toward the Well of Eternity became the beginning of the kaldorei story.",
-      "body": "The cited account places this community apart from the greater troll struggles. The atlas shows movement toward the Well as an interpretive transition, not as an exact migration route preserved by a contemporary record.",
+      "body": "The Dark Trolls lived apart from the greater troll struggles. Their movement toward the Well of Eternity began the transformation that would lead to the kaldorei.",
       "firstEraId": "ancient-civilizations",
       "featuredEraIds": [
         "ancient-civilizations"
@@ -5564,7 +5564,7 @@
       "name": "The Kaldorei Empire",
       "slug": "kaldorei-empire",
       "shortDescription": "The civilization that arose around the Well of Eternity, mastered its arcane energies, and expanded swiftly across ancient Kalimdor.",
-      "body": "Its rise changed the political balance inherited from the trolls and southern empires. The broad influence shown by the atlas is a research visualization, not a claim that ancient rule followed a precise modern-style frontier.",
+      "body": "The kaldorei grew powerful around the Well of Eternity through their mastery of its arcane energies. Their rapid expansion changed the balance among the ancient peoples of Kalimdor and set the stage for the empire that faced the War of the Ancients.",
       "firstEraId": "ancient-civilizations",
       "featuredEraIds": [
         "ancient-civilizations",
@@ -5991,7 +5991,7 @@
       "name": "The Mogu Empire",
       "slug": "mogu-empire",
       "shortDescription": "The southern empire forged by Lei Shen from divided mogu kingdoms and expanded through the conquest and subjugation of neighboring peoples.",
-      "body": "This dossier distinguishes Lei Shen's imperial project from the earlier keeper-directed role of the mogu. Its map extent is interpretive and deliberately avoids a hard frontier unsupported by the research sources.",
+      "body": "Lei Shen united divided mogu kingdoms into an empire and expanded its power through the conquest and subjugation of neighboring peoples. This imperial order came after the mogu's earlier role under the keepers.",
       "firstEraId": "ancient-civilizations",
       "featuredEraIds": [
         "ancient-civilizations"
@@ -6495,7 +6495,7 @@
       "name": "Quel'Thalas",
       "slug": "quelthalas-ancient",
       "shortDescription": "The high-elven kingdom founded in the northern Eastern Kingdoms around the Sunwell.",
-      "body": "The political region is intentionally broad and changes meaning across the founding and later-kingdom map states. It does not claim a surveyed ancient border or erase the Amani relationship to the same lands.",
+      "body": "Highborne exiles founded Quel'Thalas around the Sunwell in lands with an existing Amani history. Conflict with the Amani became part of the kingdom's early story and later drew it into alliance with Arathor.",
       "firstEraId": "long-vigil-new-kingdoms",
       "featuredEraIds": [
         "long-vigil-new-kingdoms",
@@ -6607,7 +6607,7 @@
       "name": "The Seven Human Kingdoms",
       "slug": "seven-human-kingdoms",
       "shortDescription": "The sovereign human states that emerged from Arathor's long political fragmentation.",
-      "body": "This aggregate record preserves the atlas-scale transition from one empire to several states without pretending that all seven separated on one date or shared one culture. Individual kingdom dossiers belong to later era production where they become causal actors.",
+      "body": "Arathor's political unity did not endure as a single realm. Over time, seven sovereign human kingdoms emerged from its fragmentation, carrying a shared origin into different histories.",
       "firstEraId": "long-vigil-new-kingdoms",
       "featuredEraIds": [
         "long-vigil-new-kingdoms",

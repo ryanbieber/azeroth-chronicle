@@ -4,7 +4,7 @@
   "name": "The Black Empire",
   "slug": "black-empire-civilization",
   "shortDescription": "The civilization of Old God domains, citadels, and temple cities that spread across primordial Azeroth.",
-  "body": "The shaded atlas extent communicates broad influence only. The cited account supports world-spanning expansion but does not provide survey-grade borders, so every boundary shown here is explicitly inferred.",
+  "body": "The Old Gods' domains grew into a civilization of citadels and temple cities built by their servant peoples. After the Elemental Lords' resistance failed, their dominion spread across much of primordial Azeroth.",
   "firstEraId": "black-empire",
   "lastEraId": "ordering-of-azeroth",
   "sourceIds": ["warcraft-chronicle-volume-1", "warcraft-wiki-chronicle-volume-1"],

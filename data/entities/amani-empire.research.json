@@ -4,7 +4,7 @@
   "name": "The Amani Empire",
   "slug": "amani-empire",
   "shortDescription": "The forest-troll power whose ancestral northern lands came into conflict with Quel'Thalas and later Arathor.",
-  "body": "This record presents the Amani as an organized people defending and contesting lands, not as anonymous obstacles in another kingdom's founding story. The influence area and generated group representation are interpretive.",
+  "body": "The Amani were an organized forest-troll people with ancestral ties to the northern lands. The founding of Quel'Thalas brought them into conflict with the high elves, and that struggle later drew Arathor into the Troll Wars.",
   "firstEraId": "long-vigil-new-kingdoms",
   "featuredEraIds": ["long-vigil-new-kingdoms"],
   "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-burning-crusade-story-so-far"],

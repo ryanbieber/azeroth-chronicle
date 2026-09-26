@@ -378,7 +378,9 @@ function AtlasScene({
   const requestedRouteIds = useSceneEffectsStore((state) => state.routeIds);
   const focusedLocationId = useSceneEffectsStore((state) => state.focusedLocationId);
   const controls = useRef<ElementRef<typeof OrbitControls>>(null);
-  const regions = geometry.filter((item): item is RuntimePolygon => item.kind === 'polygon');
+  // Broad research polygons suggest borders and control that the sources do not establish.
+  // Keep only the landmass silhouette; factions and events appear through their figures and anchors.
+  const regions = geometry.filter((item): item is RuntimePolygon => item.kind === 'polygon' && item.styleRole === 'landmass');
   const routeGeometry = geometry.filter((item) => item.kind === 'line');
   const locations = useMemo(() => spatialStates.flatMap((state) => {
     const runtime = geometry.find((item) => item.id === state.geometryId && item.kind === 'point');

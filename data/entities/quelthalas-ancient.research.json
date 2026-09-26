@@ -4,7 +4,7 @@
   "name": "Quel'Thalas",
   "slug": "quelthalas-ancient",
   "shortDescription": "The high-elven kingdom founded in the northern Eastern Kingdoms around the Sunwell.",
-  "body": "The political region is intentionally broad and changes meaning across the founding and later-kingdom map states. It does not claim a surveyed ancient border or erase the Amani relationship to the same lands.",
+  "body": "Highborne exiles founded Quel'Thalas around the Sunwell in lands with an existing Amani history. Conflict with the Amani became part of the kingdom's early story and later drew it into alliance with Arathor.",
   "firstEraId": "long-vigil-new-kingdoms",
   "featuredEraIds": ["long-vigil-new-kingdoms", "third-war-frozen-throne"],
   "sourceIds": ["warcraft-chronicle-volume-1", "blizzard-burning-crusade-story-so-far", "warcraft-chronicle-volume-3", "blizzard-warcraft-iii-reforged-overview"],

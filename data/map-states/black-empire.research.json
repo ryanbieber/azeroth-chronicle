@@ -4,7 +4,7 @@
   "worldspaceId": "azeroth",
   "presentation": "terrain",
   "cartographyLabel": "INTERPRETIVE CARTOGRAPHY",
-  "interpretationNote": "The illuminated landmass follows Chronicle's broad published composition. Highlighted domains and influence are research reconstructions, not surveyed borders or exact coordinates; each dossier states its certainty and source basis.",
+  "interpretationNote": "The illuminated landmass follows the source account’s broad published composition. Highlighted domains and influence are research reconstructions, not surveyed borders or exact coordinates; each dossier states its certainty and source basis.",
   "terrainAsset": "models/azeroth/black-empire-map-research/terrain.research.glb",
   "terrainTextureAsset": "textures/azeroth/black-empire-map-research/terrain-atlas.research.webp",
   "terrainHeightAsset": "textures/azeroth/black-empire-map-research/terrain-height.research.webp",

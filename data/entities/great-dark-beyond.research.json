@@ -3,7 +3,7 @@
   "type": "location",
   "name": "The Great Dark Beyond",
   "slug": "great-dark-beyond",
-  "shortDescription": "The physical universe of innumerable worlds and stars described in Chronicle's cosmological account.",
+  "shortDescription": "The physical universe of innumerable worlds and stars described in the cited cosmological account.",
   "body": "Its point on the cosmography is a reading aid only. A universe has not been reduced to a literal map marker.",
   "firstEraId": "cosmic-origins",
   "featuredEraIds": ["cosmic-origins"],

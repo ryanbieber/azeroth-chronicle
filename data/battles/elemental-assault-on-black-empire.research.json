@@ -7,7 +7,7 @@
   "worldspaceId": "azeroth",
   "date": { "precision": "relative", "label": "After the Black Empire began to spread", "relativeToId": "black-empire-rises" },
   "summary": "For the first time, Azeroth's rival elemental hosts united against the Old Gods and attacked the Black Empire's growing cities.",
-  "description": "This descriptive title groups a broad conflict rather than asserting one localized battle. Chronicle describes firestorms and stone barriers striking Black Empire cities but does not provide mappable routes.",
+  "description": "This descriptive title groups a broad conflict rather than asserting one localized battle. The cited account describes firestorms and stone barriers striking Black Empire cities but does not provide mappable routes.",
   "campaignId": "elemental-resistance-campaign",
   "participantEntityIds": ["elemental-hosts", "black-empire-civilization", "old-gods", "nraqi", "aqir", "alakir", "ragnaros", "therazane", "neptulon"],
   "causedByEventIds": ["black-empire-rises"],

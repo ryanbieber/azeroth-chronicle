@@ -181,7 +181,7 @@ function ArchiveRecordFacts({ entry, dataset }: { entry: ArchiveEntry; dataset: 
           <div><dt>Aliases</dt><dd>{entity.aliases?.join(', ') || 'None recorded'}</dd></div>
           <div><dt>Sources</dt><dd>{entity.sourceIds.length}</dd></div>
           <div><dt>Atlas states</dt><dd>{states.length || 'No exact placement asserted'}</dd></div>
-          <div><dt>Chronicle appearances</dt><dd>{events.length} events · {battles.length} battles</dd></div>
+          <div><dt>Historical appearances</dt><dd>{events.length} events · {battles.length} battles</dd></div>
         </dl>
         {entity.tags && entity.tags.length > 0 && (
           <ul className="archive-tags" aria-label="Record tags">

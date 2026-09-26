@@ -5,7 +5,7 @@
   "worldspaceId": "cosmos",
   "order": 0,
   "dateLabel": "Before the ordering of worlds · chronology without measured dates",
-  "summary": "Chronicle's account begins with Light and Shadow, the birth of the physical universe and Twisting Nether, the awakening of world-souls, the gathering of the titan Pantheon, and the Void Lords' attempt to corrupt a nascent titan through the Old Gods.",
+  "summary": "The cited account begins with Light and Shadow, the birth of the physical universe and Twisting Nether, the awakening of world-souls, the gathering of the titan Pantheon, and the Void Lords' attempt to corrupt a nascent titan through the Old Gods.",
   "mapStateId": "cosmic-origins-map-research",
   "defaultLayerIds": ["locations", "labels"],
   "featuredEventIds": ["physical-universe-emerges", "amanthul-awakens", "pantheon-gathers", "old-gods-scattered"],

@@ -4,7 +4,7 @@
   "worldspaceId": "azeroth",
   "presentation": "terrain",
   "cartographyLabel": "INTERPRETIVE BEFORE/AFTER CARTOGRAPHY",
-  "interpretationNote": "This after-state preserves the Era 1 research coastline so the historical change remains legible. The Well's central focus and the far-northern and far-southern facility placements follow broad Chronicle relationships; terrain details and coordinates are original reconstructions rather than traced or surveyed canon.",
+  "interpretationNote": "This after-state preserves the Era 1 research coastline so the historical change remains legible. The Well's central focus and the far-northern and far-southern facility placements follow broad relationships in the cited account; terrain details and coordinates are original reconstructions rather than traced or surveyed canon.",
   "terrainTextureAsset": "textures/azeroth/ordering-of-azeroth-map-research/terrain-atlas.research.webp",
   "terrainHeightAsset": "textures/azeroth/ordering-of-azeroth-map-research/terrain-height.research.webp",
   "geometryIds": [

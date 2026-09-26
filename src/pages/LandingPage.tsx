@@ -43,15 +43,15 @@ export function LandingPage() {
       </div>
       <div className="landing-veil" aria-hidden="true" />
       <section className="landing-hero" aria-labelledby="landing-title">
-        <p className="eyebrow">A living chronicle of Azeroth</p>
+        <p className="eyebrow">Step into the history of Azeroth</p>
         <h1 id="landing-title">The full history,<br />from the first light onward.</h1>
         <p className="landing-lede">
           Follow one continuous path through the powers, people, wars, and consequences that shaped the world.
-          The chronicle begins before Azeroth had a name and moves forward through every completed era.
+          Your journey begins before Azeroth had a name and moves forward through every completed era.
         </p>
         {tourComplete && (
           <p className="landing-tour-complete" role="status">
-            You have reached the edge of the current chronicle. New eras will join this path as their research is completed.
+            You have reached the edge of the known history. New eras will join this path as their research is completed.
           </p>
         )}
         <div className="landing-actions">
@@ -67,7 +67,7 @@ export function LandingPage() {
         {guidedEras.map((era, index) => (
           <span key={era.id}><i /> {index === 0 ? 'First' : 'Then'} · {era.name}</span>
         ))}
-        <span className="is-future"><i /> The chronicle continues</span>
+        <span className="is-future"><i /> The journey continues</span>
       </div>
     </main>
   );

@@ -26,9 +26,9 @@
   "nodes": [
     {
       "id":"horde-rise-story-two-peoples","guideId":"rise-of-the-horde-guided-history","title":"Draenor holds more than one remembered home",
-      "narration":"Before there was a Horde, the orcs lived as many clans beneath Draenor's sky, bound by ancestry, rivalry, and the voices of the elements. The draenei also called this world home after a long exile among the stars. Their cities and the clans' hunting grounds did not make a perfect peace, yet neither people was born for the war that would consume them. The first map therefore shows coexistence before conspiracy.",
+      "narration":"Before there was a Horde, the orcs lived as many clans beneath Draenor's sky, bound by ancestry, rivalry, and the voices of the elements. The draenei also called this world home after a long exile among the stars. Their cities and the clans' hunting grounds did not make a perfect peace, yet neither people was born for the war that would consume them.",
       "durationMs":62000,
-      "voiceover":{"assetPath":"audio/guided/rise-of-the-horde-guided-history/horde-rise-story-two-peoples.mp3","durationMs":28075,"voiceId":"kokoro-bm-lewis","aiGenerated":true},"entityIds":["draenor-ancient","orc-clans-draenor","draenei-draenor"],"optionalExploreEntityIds":["draenor-ancient","orc-clans-draenor","draenei-draenor"],
+      "voiceover":{"assetPath":"audio/guided/rise-of-the-horde-guided-history/horde-rise-story-two-peoples.mp3","durationMs":24350,"voiceId":"kokoro-bm-lewis","aiGenerated":true},"entityIds":["draenor-ancient","orc-clans-draenor","draenei-draenor"],"optionalExploreEntityIds":["draenor-ancient","orc-clans-draenor","draenei-draenor"],
       "camera":{"position":[0,7.6,7.0],"target":[0,0,0],"durationMs":1300},
       "visualActions":[{"type":"set_map_state","mapStateId":"rise-of-the-horde-draenor-before-map-research"},{"type":"show_region","regionId":"orc-clans-draenor-region-research"},{"type":"show_region","regionId":"draenei-draenor-region-research"}],"nextNodeIds":["horde-rise-story-deceiver-finds-draenor"]
     },
@@ -50,9 +50,9 @@
     },
     {
       "id":"horde-rise-story-shadow-council","guideId":"rise-of-the-horde-guided-history","title":"A council grows behind the warchief's chair",
-      "narration":"Gul'dan accepted what Ner'zhul would not. Around him gathered warlocks and agents whose authority was strongest when unseen. The Shadow Council helped turn many clans toward a single war while Blackhand stood before them as warchief. Unity came, but not as freely chosen kinship: command, fear, new magic, and concealed bargains bound the structure together. Draenor's political map had begun to narrow beneath a hand most warriors could not see.",
+      "narration":"Gul'dan accepted what Ner'zhul would not. Around him gathered warlocks and agents whose authority was strongest when unseen. The Shadow Council helped turn many clans toward a single war while Blackhand stood before them as warchief. Command, fear, new magic, and concealed bargains bound the host together. The clans' strength had begun to serve a hand most warriors could not see.",
       "durationMs":63500,
-      "voiceover":{"assetPath":"audio/guided/rise-of-the-horde-guided-history/horde-rise-story-shadow-council.mp3","durationMs":29950,"voiceId":"kokoro-bm-lewis","aiGenerated":true},"eventIds":["guldan-forms-shadow-council"],"entityIds":["guldan","shadow-council","old-horde"],"optionalExploreEntityIds":["guldan","shadow-council","old-horde"],
+      "voiceover":{"assetPath":"audio/guided/rise-of-the-horde-guided-history/horde-rise-story-shadow-council.mp3","durationMs":26700,"voiceId":"kokoro-bm-lewis","aiGenerated":true},"eventIds":["guldan-forms-shadow-council"],"entityIds":["guldan","shadow-council","old-horde"],"optionalExploreEntityIds":["guldan","shadow-council","old-horde"],
       "camera":{"position":[0.6,5.5,4.8],"target":[0.2,0,0.5],"durationMs":1100},
       "visualActions":[{"type":"set_map_state","mapStateId":"rise-of-the-horde-draenor-corrupted-map-research"},{"type":"show_relationships","relationshipIds":["guldan-controls-shadow-council","shadow-council-controls-old-horde"]}],"previousNodeId":"horde-rise-story-nerzhul-deceived","nextNodeIds":["horde-rise-story-blood-pact"]
     },
@@ -73,18 +73,18 @@
       "visualActions":[{"type":"set_map_state","mapStateId":"rise-of-the-horde-draenor-corrupted-map-research"},{"type":"show_route","routeId":"horde-draenor-campaign"},{"type":"show_relationships","relationshipIds":["old-horde-opposes-draenei","blood-pact-precedes-shattrath-fall","shattrath-fall-precedes-dark-portal"]}],"previousNodeId":"horde-rise-story-blood-pact","nextNodeIds":["horde-rise-story-gate-between-worlds"]
     },
     {
-      "id":"horde-rise-story-gate-between-worlds","guideId":"rise-of-the-horde-guided-history","title":"The road does not cross a map—it leaves a world",
-      "narration":"Across the gulf between worlds, Medivh's corrupted will answered Gul'dan. Together their workings opened the Dark Portal. The atlas does not draw that passage as a road across oceans, for no shared geography joins these skies. It changes worldspace. Draenor falls away; Azeroth appears, and the same threshold stands in another land. Through it came scouts, warriors, and at last the weight of the Horde. The calendar of the modern wars begins here.",
+      "id":"horde-rise-story-gate-between-worlds","guideId":"rise-of-the-horde-guided-history","title":"A gateway opens between worlds",
+      "narration":"Across the gulf between worlds, Medivh's corrupted will answered Gul'dan. Together their workings opened the Dark Portal. Beyond its threshold lay Azeroth, beneath a sky the clans had never known. Through it came scouts, warriors, and at last the weight of the Horde. Draenor's war had found another world, and the kingdoms of Azeroth would bear its coming.",
       "durationMs":66000,
-      "voiceover":{"assetPath":"audio/guided/rise-of-the-horde-guided-history/horde-rise-story-gate-between-worlds.mp3","durationMs":30375,"voiceId":"kokoro-bm-lewis","aiGenerated":true},"eventIds":["dark-portal-opens"],"entityIds":["dark-portal","guldan","medivh","old-horde"],"locationIds":["dark-portal"],"optionalExploreEntityIds":["dark-portal","guldan","medivh","old-horde"],
+      "voiceover":{"assetPath":"audio/guided/rise-of-the-horde-guided-history/horde-rise-story-gate-between-worlds.mp3","durationMs":24250,"voiceId":"kokoro-bm-lewis","aiGenerated":true},"eventIds":["dark-portal-opens"],"entityIds":["dark-portal","guldan","medivh","old-horde"],"locationIds":["dark-portal"],"optionalExploreEntityIds":["dark-portal","guldan","medivh","old-horde"],
       "camera":{"position":[2.3,4.8,4.2],"target":[2.0,0,2.7],"durationMs":1200},
       "visualActions":[{"type":"set_map_state","mapStateId":"rise-of-the-horde-first-war-map-research"},{"type":"show_relationships","relationshipIds":["guldan-participates-in-dark-portal","medivh-participates-in-dark-portal","dark-portal-causes-first-war"]}],"previousNodeId":"horde-rise-story-shattrath-falls","nextNodeIds":["horde-rise-story-first-war"]
     },
     {
       "id":"horde-rise-story-first-war","guideId":"rise-of-the-horde-guided-history","title":"Stormwind discovers that the enemy has another sky",
-      "narration":"The first war widened by returns. Early assaults could be resisted, but the Horde learned the southern kingdom while greater forces crossed behind them. Stormwind fought an enemy whose reserves lay beyond the edge of its world, even as Medivh's betrayal divided trust within its own defense. The line shown is only strategic direction from portal to kingdom. It does not turn many campaigns into one neat march, or game missions into surveyed history.",
+      "narration":"The first war widened by returns. Early assaults could be resisted, but the Horde learned the southern kingdom while greater forces crossed behind them. Stormwind fought an enemy whose reserves lay beyond the edge of its world, even as Medivh's betrayal divided trust within its own defense. Each new assault carried the danger farther from the portal and deeper into the kingdom.",
       "durationMs":65000,
-      "voiceover":{"assetPath":"audio/guided/rise-of-the-horde-guided-history/horde-rise-story-first-war.mp3","durationMs":29750,"voiceId":"kokoro-bm-lewis","aiGenerated":true},"eventIds":["first-war-begins"],"battleIds":["first-war"],"entityIds":["old-horde","kingdom-of-stormwind","blackhand","anduin-lothar"],"locationIds":["dark-portal","stormwind-city-ancient"],"optionalExploreEntityIds":["old-horde","kingdom-of-stormwind","blackhand","anduin-lothar"],
+      "voiceover":{"assetPath":"audio/guided/rise-of-the-horde-guided-history/horde-rise-story-first-war.mp3","durationMs":25075,"voiceId":"kokoro-bm-lewis","aiGenerated":true},"eventIds":["first-war-begins"],"battleIds":["first-war"],"entityIds":["old-horde","kingdom-of-stormwind","blackhand","anduin-lothar"],"locationIds":["dark-portal","stormwind-city-ancient"],"optionalExploreEntityIds":["old-horde","kingdom-of-stormwind","blackhand","anduin-lothar"],
       "camera":{"position":[2.5,6.0,5.4],"target":[2.2,0,2.0],"durationMs":1150},
       "visualActions":[{"type":"set_map_state","mapStateId":"rise-of-the-horde-first-war-map-research"},{"type":"show_route","routeId":"first-war-advance"},{"type":"show_relationships","relationshipIds":["dark-portal-causes-first-war","old-horde-opposes-stormwind"]}],"previousNodeId":"horde-rise-story-gate-between-worlds","nextNodeIds":["horde-rise-story-orgrim-rises"]
     },
@@ -114,9 +114,9 @@
     },
     {
       "id":"horde-rise-story-second-war","guideId":"rise-of-the-horde-guided-history","title":"The Second War spreads across many roads",
-      "narration":"Orgrim drove the Horde north against a coalition still learning how to endure. The struggle crossed land and water, threatened several realms, and drew peoples beyond humanity into its widening account. No single line can contain such a war. The route shown is a strategic summary: pressure rising from the conquered south toward the Alliance heartlands, answered by forces whose shared purpose grew under the strain meant to break it.",
+      "narration":"Orgrim drove the Horde north against a coalition still learning how to endure. The struggle crossed land and water, threatened several realms, and drew peoples beyond humanity into its widening reach. Pressure rose from the conquered south toward the Alliance heartlands. Against it stood forces whose shared purpose grew under the strain meant to break them.",
       "durationMs":64000,
-      "voiceover":{"assetPath":"audio/guided/rise-of-the-horde-guided-history/horde-rise-story-second-war.mp3","durationMs":28525,"voiceId":"kokoro-bm-lewis","aiGenerated":true},"eventIds":["second-war-begins"],"battleIds":["second-war"],"entityIds":["old-horde","alliance-of-lordaeron","orgrim-doomhammer","anduin-lothar"],"optionalExploreEntityIds":["old-horde","alliance-of-lordaeron","orgrim-doomhammer","anduin-lothar"],
+      "voiceover":{"assetPath":"audio/guided/rise-of-the-horde-guided-history/horde-rise-story-second-war.mp3","durationMs":23925,"voiceId":"kokoro-bm-lewis","aiGenerated":true},"eventIds":["second-war-begins"],"battleIds":["second-war"],"entityIds":["old-horde","alliance-of-lordaeron","orgrim-doomhammer","anduin-lothar"],"optionalExploreEntityIds":["old-horde","alliance-of-lordaeron","orgrim-doomhammer","anduin-lothar"],
       "camera":{"position":[2.2,7.0,6.2],"target":[2.0,0,0],"durationMs":1200},
       "visualActions":[{"type":"set_map_state","mapStateId":"rise-of-the-horde-second-war-map-research"},{"type":"show_route","routeId":"second-war-horde-offensive"},{"type":"show_relationships","relationshipIds":["old-horde-opposes-alliance","alliance-formation-precedes-second-war"]}],"previousNodeId":"horde-rise-story-alliance-forms","nextNodeIds":["horde-rise-story-broken-purpose"]
     },

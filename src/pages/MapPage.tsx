@@ -8,12 +8,21 @@ import { useMapViewStore } from '../app/state/mapViewStore';
 import { useSelectionStore } from '../app/state/selectionStore';
 import { EntityDossier } from '../components/dossier/EntityDossier';
 import { resolveEraMapState } from '../lib/map/resolveEraMapState';
+import { useStoryStore } from '../app/state/storyStore';
+import { endStoryGuide } from '../lib/story/storyRuntime';
+import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 export function MapPage() {
+  const [voiceControlsHost, setVoiceControlsHost] = useState<HTMLDivElement | null>(null);
+  const navigate = useNavigate();
   const dataset = staticLoreRepository.getDataset();
   useAtlasUrlState(dataset);
   const eraId = useEraStore((state) => state.eraId);
   const era = dataset.eras.find((item) => item.id === eraId) ?? dataset.eras[0];
+  const activeGuideId = useStoryStore((state) => state.guideId);
+  const activeNodeId = useStoryStore((state) => state.nodeId);
+  const immersive = Boolean(activeNodeId && activeGuideId === era?.storyGuideId);
   const requestedMapStateId = useMapViewStore((state) => state.mapStateId);
   const selection = useSelectionStore((state) => state.selection);
   const selectionOrigin = useSelectionStore((state) => state.selectionOrigin);
@@ -57,9 +66,22 @@ export function MapPage() {
   const geometry = allGeometry;
 
   return (
-    <main className="atlas-layout">
+    <main className={`atlas-layout${immersive ? ' is-story-active' : ''}`}>
       <section className="map-stage" aria-label="Atlas map workspace">
+        {immersive && (
+          <header className="story-world-header">
+            <div><p className="eyebrow">Azerothium · Unofficial fan atlas</p><strong>{era.name}</strong></div>
+            <div className="story-world-actions">
+            <div ref={setVoiceControlsHost} />
+            <button type="button" onClick={() => {
+              navigate(`/map?era=${era.slug}`, { replace: true });
+              endStoryGuide();
+            }}>Return to atlas</button>
+            </div>
+          </header>
+        )}
         <MapViewport3D
+          immersive={immersive}
           battles={visibleBattles}
           entities={visibleEntities}
           fallbackDossierPath={`/eras/${era.slug}`}
@@ -72,14 +94,6 @@ export function MapPage() {
           presentation={mapState.presentation}
           cartographyLabel={mapState.cartographyLabel}
         />
-        {mapState.interpretationNote && (
-          <section className="map-legend" aria-label="Interpretation note">
-            <details>
-              <summary>{mapState.presentation === 'relational' ? 'How to read this cosmography' : 'Cartographer’s note'}</summary>
-              <p>{mapState.interpretationNote}</p>
-            </details>
-          </section>
-        )}
         {mapState.geometryIds.length === 0
           && visibleBattles.length === 0
           && visibleSpatialStates.length === 0 && (
@@ -91,7 +105,7 @@ export function MapPage() {
         )}
         {era.storyGuideId && (
           <div className="story-overlay">
-            <StoryGuidePanel guideId={era.storyGuideId} showLauncher={false} />
+            <StoryGuidePanel guideId={era.storyGuideId} showLauncher={false} voiceControlsHost={voiceControlsHost} />
           </div>
         )}
         {selectedEntity && selectionOrigin !== 'story' && (

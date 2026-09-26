@@ -88,9 +88,9 @@
     {
       "id": "long-vigil-story-crossing-east", "guideId": "long-vigil-new-kingdoms-guided-history",
       "title": "The exiles cross a sea made by yesterday",
-      "narration": "Dath'Remar led the exiled Highborne east across the sea because they needed a home beyond the kaldorei ban on arcane magic. Families traveled with them; this was the movement of a people, not simply a military expedition. They reached the northern Eastern Kingdoms and began building a new society. The exact stops of the crossing are uncertain, but its cause and destination are clear: exile from Kalimdor and a new home in the east.",
+      "narration": "Dath'Remar led the exiled Highborne east across the sea because they needed a home beyond the kaldorei ban on arcane magic. Families traveled with them; this was the movement of a people, carrying the memory of Kalimdor toward another shore. They reached the northern Eastern Kingdoms and began building a new society, where the magic they had refused to abandon would shape their future.",
       "durationMs": 59000,
-      "voiceover":{"assetPath":"audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-crossing-east.mp3","durationMs":29025,"voiceId":"kokoro-bm-lewis","aiGenerated":true},
+      "voiceover":{"assetPath":"audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-crossing-east.mp3","durationMs":25900,"voiceId":"kokoro-bm-lewis","aiGenerated":true},
       "eventIds": ["highborne-exiled-from-kalimdor"], "entityIds": ["highborne-exiles", "dathremar-sunstrider"],
       "optionalExploreEntityIds": ["highborne-exiles", "dathremar-sunstrider"],
       "camera": { "position": [0, 7.0, 6.5], "target": [0, 0, -0.6], "durationMs": 1250 },
@@ -150,9 +150,9 @@
     {
       "id": "long-vigil-story-seven-crowns", "guideId": "long-vigil-new-kingdoms-guided-history",
       "title": "One human empire becomes seven kingdoms",
-      "narration": "Arathor's victory did not preserve its center forever. Roads lengthened, ports prospered, city-states acquired customs and interests of their own, and Strom's authority weakened across generations. No single morning raised seven crowns at once. The change was slower: one common realm becoming several sovereign powers until the old unity survived chiefly as ancestry and memory. The late map therefore shows a broad plurality, not borders frozen upon one date.",
+      "narration": "Arathor's victory did not preserve its center forever. Roads lengthened, ports prospered, city-states acquired customs and interests of their own, and Strom's authority weakened across generations. No single morning raised seven crowns at once. One common realm slowly became several sovereign powers, until the old unity survived chiefly as ancestry and memory.",
       "durationMs": 56000,
-      "voiceover":{"assetPath":"audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-seven-crowns.mp3","durationMs":31750,"voiceId":"kokoro-bm-lewis","aiGenerated":true},
+      "voiceover":{"assetPath":"audio/guided/long-vigil-new-kingdoms-guided-history/long-vigil-story-seven-crowns.mp3","durationMs":25750,"voiceId":"kokoro-bm-lewis","aiGenerated":true},
       "eventIds": ["arathor-fragments-into-seven-kingdoms"], "entityIds": ["arathor", "seven-human-kingdoms"], "locationIds": ["strom"],
       "optionalExploreEntityIds": ["arathor", "seven-human-kingdoms", "strom"],
       "camera": { "position": [2.2, 7.0, 6.4], "target": [2.2, 0, 0], "durationMs": 1200 },

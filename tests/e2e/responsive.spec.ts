@@ -94,7 +94,7 @@ test.describe('responsive application shell', () => {
     await page.setViewportSize({ width: 768, height: 1024 });
     await page.goto('/map?era=cosmic-origins');
 
-    await expect(page.getByRole('link', { name: /Azeroth Chronicle/ })).toBeVisible();
+    await expect(page.getByRole('link', { name: /Azerothium/ })).toBeVisible();
     await expect(page.getByRole('navigation', { name: 'Primary navigation' })).toBeVisible();
     await expect(page.getByRole('combobox', { name: 'Choose era' })).toBeVisible();
     await expectNoHorizontalOverflow(page);

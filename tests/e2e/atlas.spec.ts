@@ -10,7 +10,7 @@ test('production deep link restores the era and selection with curated layers an
   await expect(page.getByRole('combobox', { name: 'Choose era' })).toHaveValue('black-empire');
   await expect(page.getByText('Visible layers')).toHaveCount(0);
   await expect(page.getByText('Source filters')).toHaveCount(0);
-  await expect(page.getByRole('region', { name: 'Interpretation note' })).toBeVisible();
+  await expect(page.getByRole('region', { name: 'Interpretation note' })).toHaveCount(0);
   await expect(page.getByRole('complementary')).toHaveCount(0);
   expect((await terrainResponses).every((response) => response.status() === 200)).toBe(true);
   const viewport = await page.evaluate(() => ({ pageHeight: document.documentElement.scrollHeight, viewportHeight: window.innerHeight }));
@@ -52,7 +52,8 @@ test('guide advances as one unnumbered sequence with clear playback controls', a
   await expect(page.locator('.battle-playback')).toHaveCount(0);
   await expect(page.getByRole('heading', { name: 'The sleeping titan within' })).toBeVisible({ timeout: 42_000 });
   await expect(page.getByRole('progressbar', { name: 'Time until next story point' })).toBeVisible();
-  await expect(page.locator('.story-card button')).toHaveCount(4);
+  await expect(page.locator('.story-card button')).toHaveCount(3);
+  await expect(page.locator('.story-world-header .story-voiceover button')).toBeVisible();
   await expect(page.getByRole('button', { name: 'Pause tour' })).toBeVisible();
 
   await page.getByRole('button', { name: 'Next', exact: true }).click();
@@ -194,16 +195,16 @@ test('Cosmic Origins uses relational cosmography and reader-opened character con
   await expect(page.getByText(/Story \d+ of \d+/)).toHaveCount(0);
   await expect(page.locator('.battle-playback')).toHaveCount(0);
 
+  await expect(page.getByRole('button', { name: 'Aman’Thul', exact: true })).toHaveCount(0);
+  for (let chapter = 0; chapter < 5; chapter += 1) {
+    await page.getByRole('button', { name: 'Next', exact: true }).click();
+  }
+  await expect(page.getByRole('heading', { name: 'The first titan wakes' })).toBeVisible();
   await page.getByRole('button', { name: 'Aman’Thul', exact: true }).click();
   const dossier = page.getByRole('complementary', { name: 'Selected atlas record' });
   await expect(dossier.getByRole('heading', { name: 'Aman’Thul' })).toBeVisible();
   await expect(dossier.locator('.entity-overview-lede')).toContainText(/first titan to awaken/i);
 
-  await page.getByRole('button', { name: 'Next', exact: true }).click();
-  await page.getByRole('button', { name: 'Next', exact: true }).click();
-  await page.getByRole('button', { name: 'Next', exact: true }).click();
-  await page.getByRole('button', { name: 'Next', exact: true }).click();
-  await page.getByRole('button', { name: 'Next', exact: true }).click();
   await page.getByRole('button', { name: 'Next', exact: true }).click();
   await expect(page.getByRole('heading', { name: 'The Pantheon gathers' })).toBeVisible();
   const pantheonVisual = page.locator('.map-subject-visual').filter({ hasText: 'The Pantheon of Order' });
@@ -420,7 +421,7 @@ test('Rise of the Horde crosses from Draenor into the First and Second Wars with
   await expect(page.locator('.battle-playback')).toHaveCount(0);
 
   await page.getByRole('button', { name: 'Next', exact: true }).click();
-  await expect(page.getByRole('heading', { name: 'The road does not cross a map—it leaves a world' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'A gateway opens between worlds' })).toBeVisible();
   await expect(page.locator('.map-caption')).toContainText('INTERPRETIVE FIRST WAR CAMPAIGN STATE');
   await expect(page.getByRole('button', { name: 'Medivh', exact: true })).toBeVisible();
   await expect(page.getByRole('button', { name: 'The Dark Portal', exact: true })).toBeVisible();
@@ -498,13 +499,14 @@ test('Modern Cosmic Age uses relational cartography and stops at an announced ho
   await expect(page.getByRole('button', { name: "Xal'atath", exact: true })).toBeVisible();
 
   await page.getByRole('button', { name: 'Next', exact: true }).click();
-  await expect(page.getByRole('heading', { name: 'The chronicle ends where announcement begins' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Where history meets the unknown' })).toBeVisible();
   await expect(page.locator('.map-caption')).toContainText('ANNOUNCED MIDNIGHT PREMISE — OUTCOME UNKNOWN');
-  await expect(page.getByText(/no victor is named, no fate presumed/i)).toBeVisible();
+  await expect(page.getByText(/its ending remains beyond the horizon/i)).toBeVisible();
 });
 
-test('landing page full tour chains every completed guided era', async ({ page }) => {
+test('landing page full tour automatically chains every completed guided era', async ({ page }) => {
   test.setTimeout(120_000);
+  await page.clock.install();
   await page.goto('/');
   await expect(page.getByRole('heading', { name: /the full history/i })).toBeVisible();
   await expect(page.locator('.landing-still')).toHaveCount(7);
@@ -516,7 +518,7 @@ test('landing page full tour chains every completed guided era', async ({ page }
     await page.getByRole('button', { name: 'Next', exact: true }).click();
   }
   await expect(page.getByRole('heading', { name: 'One world among the stars' })).toBeVisible();
-  await page.getByRole('button', { name: 'Continue the chronicle' }).click();
+  await page.clock.fastForward(120_000);
 
   await expect(page).toHaveURL(/map\?era=black-empire&tour=full/);
   await expect(page.getByRole('heading', { name: 'Before the empire' })).toBeVisible();
@@ -524,7 +526,7 @@ test('landing page full tour chains every completed guided era', async ({ page }
     await page.getByRole('button', { name: 'Next', exact: true }).click();
   }
   await expect(page.getByRole('heading', { name: 'A world awaiting the Ordering' })).toBeVisible();
-  await page.getByRole('button', { name: 'Continue the chronicle' }).click();
+  await page.clock.fastForward(120_000);
 
   await expect(page).toHaveURL(/map\?era=ordering-of-azeroth&tour=full/);
   await expect(page.getByRole('heading', { name: 'The world the keepers inherited' })).toBeVisible();
@@ -532,7 +534,7 @@ test('landing page full tour chains every completed guided era', async ({ page }
     await page.getByRole('button', { name: 'Next', exact: true }).click();
   }
   await expect(page.getByRole('heading', { name: 'The makers pass beyond the sky' })).toBeVisible();
-  await page.getByRole('button', { name: 'Continue the chronicle' }).click();
+  await page.clock.fastForward(120_000);
 
   await expect(page).toHaveURL(/map\?era=ancient-civilizations&tour=full/);
   await expect(page.getByRole('heading', { name: 'The ordered world begins to remember' })).toBeVisible();
@@ -540,7 +542,7 @@ test('landing page full tour chains every completed guided era', async ({ page }
     await page.getByRole('button', { name: 'Next', exact: true }).click();
   }
   await expect(page.getByRole('heading', { name: 'A queen at the edge of ruin' })).toBeVisible();
-  await page.getByRole('button', { name: 'Continue the chronicle' }).click();
+  await page.clock.fastForward(120_000);
 
   await expect(page).toHaveURL(/map\?era=war-of-the-ancients&tour=full/);
   await expect(page.getByRole('heading', { name: 'The empire stands beneath its last unbroken sky' })).toBeVisible();
@@ -548,7 +550,7 @@ test('landing page full tour chains every completed guided era', async ({ page }
     await page.getByRole('button', { name: 'Next', exact: true }).click();
   }
   await expect(page.getByRole('heading', { name: 'Survivors carry the old world toward Hyjal' })).toBeVisible();
-  await page.getByRole('button', { name: 'Continue the chronicle' }).click();
+  await page.clock.fastForward(120_000);
 
   await expect(page).toHaveURL(/map\?era=long-vigil-new-kingdoms&tour=full/);
   await expect(page.getByRole('heading', { name: 'The broken world waits for new promises' })).toBeVisible();
@@ -556,7 +558,7 @@ test('landing page full tour chains every completed guided era', async ({ page }
     await page.getByRole('button', { name: 'Next', exact: true }).click();
   }
   await expect(page.getByRole('heading', { name: 'Many realms stand before an unopened gate' })).toBeVisible();
-  await page.getByRole('button', { name: 'Continue the chronicle' }).click();
+  await page.clock.fastForward(120_000);
 
   await expect(page).toHaveURL(/map\?era=rise-of-the-horde&tour=full/);
   await expect(page.getByRole('heading', { name: 'Draenor holds more than one remembered home' })).toBeVisible();
@@ -564,7 +566,7 @@ test('landing page full tour chains every completed guided era', async ({ page }
     await page.getByRole('button', { name: 'Next', exact: true }).click();
   }
   await expect(page.getByRole('heading', { name: 'The gate falls, but the road remains in memory' })).toBeVisible();
-  await page.getByRole('button', { name: 'Continue the chronicle' }).click();
+  await page.clock.fastForward(120_000);
 
   await expect(page).toHaveURL(/map\?era=third-war-frozen-throne&tour=full/);
   await expect(page.getByRole('heading', { name: 'The defeated inherit another beginning' })).toBeVisible();
@@ -572,7 +574,7 @@ test('landing page full tour chains every completed guided era', async ({ page }
     await page.getByRole('button', { name: 'Next', exact: true }).click();
   }
   await expect(page.getByRole('heading', { name: 'The lost prince ascends into a colder age' })).toBeVisible();
-  await page.getByRole('button', { name: 'Continue the chronicle' }).click();
+  await page.clock.fastForward(120_000);
 
   await expect(page).toHaveURL(/map\?era=age-of-adventurers&tour=full/);
   await expect(page.getByRole('heading', { name: 'The great powers call upon unnumbered hands' })).toBeVisible();
@@ -580,16 +582,16 @@ test('landing page full tour chains every completed guided era', async ({ page }
     await page.getByRole('button', { name: 'Next', exact: true }).click();
   }
   await expect(page.getByRole('heading', { name: 'Victory returns to a wounded world' })).toBeVisible();
-  await page.getByRole('button', { name: 'Continue the chronicle' }).click();
+  await page.clock.fastForward(120_000);
 
   await expect(page).toHaveURL(/map\?era=modern-cosmic-age&tour=full/);
   await expect(page.getByRole('heading', { name: 'The wounded inherit another war' })).toBeVisible();
   for (let index = 0; index < 8; index += 1) {
     await page.getByRole('button', { name: 'Next', exact: true }).click();
   }
-  await expect(page.getByRole('heading', { name: 'The chronicle ends where announcement begins' })).toBeVisible();
-  await page.getByRole('button', { name: 'Continue the chronicle' }).click();
+  await expect(page.getByRole('heading', { name: 'Where history meets the unknown' })).toBeVisible();
+  await page.clock.fastForward(120_000);
 
   await expect(page).toHaveURL(/\?tour=complete$/);
-  await expect(page.getByRole('status')).toContainText('edge of the current chronicle');
+  await expect(page.getByRole('status')).toContainText('edge of the known history');
 });

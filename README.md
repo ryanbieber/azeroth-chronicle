@@ -1,10 +1,10 @@
-# Azeroth Chronicle
+# Azerothium
 
-Azeroth Chronicle is a desktop-first, time-aware 3D historical atlas for Warcraft lore. It is designed around eras, changing spatial states, structured battles, causal relationships, guided stories, and source provenance.
+Azerothium is a desktop-first, time-aware 3D historical atlas for Warcraft lore. It is designed around eras, changing spatial states, structured battles, causal relationships, guided stories, and source provenance.
 
-> **Unofficial fan project:** Azeroth Chronicle is a fan-made interpretation of the Warcraft universe and is not affiliated with, endorsed by, sponsored by, or approved by Blizzard Entertainment.
+> **Unofficial fan project:** Azerothium is a fan-made interpretation of the Warcraft universe and is not affiliated with, endorsed by, sponsored by, or approved by Blizzard Entertainment.
 
-This repository implements the [product and technical specification](./docs/azeroth_3d_lore_atlas_product_technical_spec_UPDATED.docx). Eras 0–6 contain source-linked `research` previews; the later navigable eras remain research scaffolds. None of it should be treated as human-reviewed Warcraft canon yet.
+This repository implements the [product and technical specification](./docs/azeroth_3d_lore_atlas_product_technical_spec_UPDATED.docx). All ten eras contain source-linked `research` previews. None of this content should be treated as human-reviewed Warcraft canon yet.
 
 ## What works now
 
@@ -16,7 +16,8 @@ This repository implements the [product and technical specification](./docs/azer
 - TypeScript domain contracts and Zod schemas
 - File-backed repository adapter with cross-record validation
 - Data-driven StoryNode action interpreter
-- Source-linked Cosmic Origins through the Rise of the Horde and First Two Wars research slices plus empty research map states for the remaining eras
+- Source-linked research previews for all ten eras, from Cosmic Origins through the Modern Cosmic Age
+- Optional voice-over for every guided chapter, with visible transcripts and an uninterrupted full-history journey
 - Unit tests, linting, type checks, CI, and Render static-site configuration
 
 The full delivery sequence and architectural decisions are in [`docs/IMPLEMENTATION_PLAN.md`](./docs/IMPLEMENTATION_PLAN.md). The research, terrain, people, battle, and animated-tour program—including the implemented Cosmic Origins prologue—is in [`docs/eras/README.md`](./docs/eras/README.md).
@@ -90,4 +91,4 @@ The repository deploys GitHub Pages from `.github/workflows/deploy-pages.yml`. T
 
 ## Project status
 
-The reusable engine, ten-era navigation, and source-linked previews for Eras 0–6—from **Cosmic Origins** through **The Rise of the Horde and the First Two Wars**—are implemented. The deployed site is an unofficial public research preview, not a lore-reviewed publication: all seven complete slices remain explicitly marked as research until their claims, citations, summaries, causal interpretations, cartography, and original visuals pass human review. See the current-status and content-gated sections of the implementation plan.
+The reusable engine, ten-era navigation, and source-linked previews for Eras 0–9—from **Cosmic Origins** through **The Modern Cosmic Age**—are implemented. The public site remains an unofficial research preview, not a lore-reviewed publication: all ten slices are explicitly marked as research until their claims, citations, summaries, causal interpretations, cartography, and original visuals pass human review. See the current-status and content-gated sections of the implementation plan.

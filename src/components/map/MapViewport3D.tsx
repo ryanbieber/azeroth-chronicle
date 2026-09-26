@@ -1,8 +1,8 @@
 import { Html, Line, OrbitControls, useGLTF, useTexture } from '@react-three/drei';
-import { Canvas, useFrame } from '@react-three/fiber';
+import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { Suspense, useEffect, useMemo, useRef, useState, type ElementRef } from 'react';
 import { Link } from 'react-router-dom';
-import { Group, Path, Shape, ShapeGeometry, SRGBColorSpace, Vector2 } from 'three';
+import { DataTexture, Group, LinearFilter, Path, PerspectiveCamera, RGBAFormat, Shape, ShapeGeometry, SRGBColorSpace, Vector2 } from 'three';
 import { useLayerStore } from '../../app/state/layerStore';
 import { useMapViewStore } from '../../app/state/mapViewStore';
 import { useSelectionStore } from '../../app/state/selectionStore';
@@ -13,6 +13,7 @@ import { layoutMapFigures, type ScreenRect } from '../../lib/map/layoutMapFigure
 import { CameraRig } from './CameraRig';
 
 interface MapViewport3DProps {
+  immersive?: boolean;
   battles: Battle[];
   geometry: RuntimeGeometry[];
   terrainAsset?: string;
@@ -74,6 +75,28 @@ function PerformanceProbe({ onReport, routeStartedAt }: {
   return null;
 }
 
+function StoryFraming({ immersive }: { immersive: boolean }) {
+  const camera = useThree((state) => state.camera);
+  const size = useThree((state) => state.size);
+  const baseFov = useRef(camera instanceof PerspectiveCamera ? camera.fov : 48);
+  useEffect(() => {
+    if (!(camera instanceof PerspectiveCamera)) return;
+    // Frame the authored camera above the transcript without moving map anchors.
+    const fov = baseFov.current;
+    const focalLength = camera.getFilmHeight() / (2 * Math.tan(fov * Math.PI / 360));
+    const landscape = size.width > size.height;
+    camera.setFocalLength(focalLength * (immersive ? (landscape ? 1.65 : 1.12) : 1));
+    if (immersive) camera.setViewOffset(size.width, size.height, 0, size.height * 0.12, size.width, size.height);
+    else camera.clearViewOffset();
+    camera.updateProjectionMatrix();
+    return () => {
+      camera.setFocalLength(camera.getFilmHeight() / (2 * Math.tan(fov * Math.PI / 360)));
+      camera.clearViewOffset();
+    };
+  }, [camera, immersive, size.width, size.height]);
+  return null;
+}
+
 function projectedRect(element: HTMLElement): { rect: ScreenRect; scale: number } {
   const image = element.getBoundingClientRect();
   const label = element.querySelector('span')?.getBoundingClientRect();
@@ -102,7 +125,7 @@ function MapFigureLayout() {
         && rect.x + rect.width > frame.x && rect.x < frame.x + frame.width
         && rect.y + rect.height > frame.y && rect.y < frame.y + frame.height)
       .sort((a, b) => Number(b.element.classList.contains('is-active')) - Number(a.element.classList.contains('is-active')));
-    const obstacles = [...viewport.parentElement?.querySelectorAll<HTMLElement>('.story-overlay .story-card, .selection-overlay, .map-legend details[open]') ?? []]
+    const obstacles = [...viewport.parentElement?.querySelectorAll<HTMLElement>('.story-overlay .story-card, .story-world-header, .selection-overlay') ?? []]
       .map((element) => {
         const rect = element.getBoundingClientRect();
         return { x: rect.x, y: rect.y, width: rect.width, height: rect.height };
@@ -167,10 +190,35 @@ function Terrain({ asset }: { asset: string }) {
   return <primitive object={scene} />;
 }
 
-function ReliefTerrain({ textureAsset, heightAsset }: {
+// Fade only the authored surface boundary; keep its geography and UVs intact.
+function useEnvironmentEdgeFade() {
+  const texture = useMemo(() => {
+    const size = 128;
+    const pixels = new Uint8Array(size * size * 4);
+    for (let y = 0; y < size; y += 1) {
+      for (let x = 0; x < size; x += 1) {
+        const edge = Math.min(x, y, size - 1 - x, size - 1 - y) / (size - 1);
+        const t = Math.min(1, edge / 0.16);
+        const opacity = Math.round(t * t * (3 - 2 * t) * 255);
+        pixels.set([opacity, opacity, opacity, 255], (y * size + x) * 4);
+      }
+    }
+    const result = new DataTexture(pixels, size, size, RGBAFormat);
+    result.magFilter = LinearFilter;
+    result.minFilter = LinearFilter;
+    result.needsUpdate = true;
+    return result;
+  }, []);
+  useEffect(() => () => texture.dispose(), [texture]);
+  return texture;
+}
+
+function ReliefTerrain({ textureAsset, heightAsset, immersive }: {
   textureAsset: string;
   heightAsset: string;
+  immersive?: boolean;
 }) {
+  const edgeFade = useEnvironmentEdgeFade();
   const textureUrl = `${import.meta.env.BASE_URL}${textureAsset}`;
   const heightUrl = `${import.meta.env.BASE_URL}${heightAsset}`;
   const [texture, height] = useTexture([textureUrl, heightUrl]);
@@ -188,6 +236,8 @@ function ReliefTerrain({ textureAsset, heightAsset }: {
     <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.12, 0]} receiveShadow>
       <planeGeometry args={[10, 6.67, 96, 64]} />
       <meshStandardMaterial
+        alphaMap={immersive ? edgeFade : null}
+        transparent={immersive}
         map={colorTexture}
         displacementMap={height}
         displacementScale={0.24}
@@ -199,7 +249,8 @@ function ReliefTerrain({ textureAsset, heightAsset }: {
   );
 }
 
-function RelationalField({ textureAsset }: { textureAsset: string }) {
+function RelationalField({ textureAsset, immersive }: { textureAsset: string; immersive?: boolean }) {
+  const edgeFade = useEnvironmentEdgeFade();
   const texture = useTexture(`${import.meta.env.BASE_URL}${textureAsset}`);
   const colorTexture = useMemo(() => {
     const copy = texture.clone();
@@ -212,7 +263,7 @@ function RelationalField({ textureAsset }: { textureAsset: string }) {
   return (
     <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.14, 0]}>
       <planeGeometry args={[10, 6.67]} />
-      <meshBasicMaterial map={colorTexture} toneMapped={false} />
+      <meshBasicMaterial map={colorTexture} toneMapped={false} alphaMap={immersive ? edgeFade : null} transparent={immersive} />
     </mesh>
   );
 }
@@ -272,11 +323,18 @@ function ElementalPresence({ entityId }: { entityId: string }) {
   );
 }
 
-function CharacterFigure({ entity, active, onSelect }: { entity: LoreEntity; active: boolean; onSelect: () => void }) {
+// Keep illustrated actors readable without enlarging them with cinematic framing.
+function useFigureDistanceFactor(immersive?: boolean) {
+  const size = useThree((state) => state.size);
+  return immersive ? 5 * (size.width > size.height ? 1.45 / 1.65 : 1 / 1.12) : 5;
+}
+
+function CharacterFigure({ entity, active, immersive, onSelect }: { entity: LoreEntity; active: boolean; immersive?: boolean; onSelect: () => void }) {
+  const distanceFactor = useFigureDistanceFactor(immersive);
   if (!entity.mapFigure) return null;
   const width = Math.round(132 * (entity.mapFigure.scale ?? 1));
   return (
-    <Html center position={[0, 1.02, 0]} distanceFactor={5} zIndexRange={[4, 1]}>
+    <Html center position={[0, 1.02, 0]} distanceFactor={distanceFactor} zIndexRange={[4, 1]}>
       <button className={`map-character-figure${active ? ' is-active' : ''}`} type="button" onClick={onSelect} aria-label={entity.name}>
         <img src={`${import.meta.env.BASE_URL}${entity.mapFigure.asset}`} alt="" width={width} />
         <span>{entity.name}</span>
@@ -285,11 +343,12 @@ function CharacterFigure({ entity, active, onSelect }: { entity: LoreEntity; act
   );
 }
 
-function ContextualSubjectVisual({ entity, onSelect }: { entity: LoreEntity; onSelect: () => void }) {
+function ContextualSubjectVisual({ entity, immersive, onSelect }: { entity: LoreEntity; immersive?: boolean; onSelect: () => void }) {
+  const distanceFactor = useFigureDistanceFactor(immersive);
   if (!entity.mapVisual) return null;
   const width = Math.round(140 * (entity.mapVisual.scale ?? 1));
   return (
-    <Html center position={[0, 0.94, 0]} distanceFactor={5} zIndexRange={[4, 1]}>
+    <Html center position={[0, 0.94, 0]} distanceFactor={distanceFactor} zIndexRange={[4, 1]}>
       <button className="map-subject-visual is-active" type="button" onClick={onSelect} aria-label={entity.name}>
         <img src={`${import.meta.env.BASE_URL}${entity.mapVisual.asset}`} alt="" width={width} />
         <span>{entity.name}</span>
@@ -299,6 +358,7 @@ function ContextualSubjectVisual({ entity, onSelect }: { entity: LoreEntity; onS
 }
 
 function AtlasScene({
+  immersive,
   battles,
   geometry,
   terrainAsset,
@@ -330,10 +390,13 @@ function AtlasScene({
     const anchorId = entity.mapFigure.anchorEntityId ?? entity.id;
     const anchorState = spatialStates.find((state) => state.entityId === anchorId);
     const runtime = geometry.find((item) => item.id === anchorState?.geometryId && item.kind === 'point');
-    const active = highlightedIds.includes(entity.id) || selectedId === entity.id;
+    const active = highlightedIds.includes(entity.id) || selectedId === entity.id
+      || (immersive === true && battles.some((battle) => (battle.id === selectedId || highlightedIds.includes(battle.id))
+        && battle.participantEntityIds?.includes(entity.id)));
+    if (immersive && !active) return [];
     if (anchorState?.visualPresence === 'contextual' && !active) return [];
     return runtime?.kind === 'point' ? [{ active, entity, runtime }] : [];
-  }), [entities, geometry, highlightedIds, selectedId, spatialStates]);
+  }), [battles, entities, geometry, highlightedIds, immersive, selectedId, spatialStates]);
 
   useEffect(() => {
     const focused = locations.find((item) => item.entity.id === focusedLocationId);
@@ -344,14 +407,14 @@ function AtlasScene({
 
   return (
     <>
-      <color attach="background" args={['#07090d']} />
+      {!immersive && <color attach="background" args={['#07090d']} />}
       <ambientLight intensity={1.1} />
       <directionalLight position={[4, 8, 2]} intensity={2.2} color="#dfbd79" />
 
       {presentation === 'relational' && terrainTextureAsset ? (
-        <RelationalField textureAsset={terrainTextureAsset} />
+        <RelationalField textureAsset={terrainTextureAsset} immersive={immersive} />
       ) : terrainTextureAsset && terrainHeightAsset ? (
-        <ReliefTerrain textureAsset={terrainTextureAsset} heightAsset={terrainHeightAsset} />
+        <ReliefTerrain textureAsset={terrainTextureAsset} heightAsset={terrainHeightAsset} immersive={immersive} />
       ) : terrainAsset ? (
         <Terrain asset={terrainAsset} />
       ) : (
@@ -402,7 +465,7 @@ function AtlasScene({
             </group>
           )}
           {entity.mapVisual && (
-            <ContextualSubjectVisual entity={entity} onSelect={() => select({ kind: 'entity', id: entity.id })} />
+            <ContextualSubjectVisual immersive={immersive} entity={entity} onSelect={() => select({ kind: 'entity', id: entity.id })} />
           )}
           {layers.labels && !entity.mapFigure && !entity.mapVisual && (
             <Html center position={[0, 0.38, 0]} distanceFactor={7}>
@@ -421,7 +484,7 @@ function AtlasScene({
               <meshBasicMaterial color="#d7b777" transparent opacity={0.5} depthTest={false} />
             </mesh>
           )}
-          <CharacterFigure active={active} entity={entity} onSelect={() => select({ kind: 'entity', id: entity.id })} />
+          <CharacterFigure immersive={immersive} active={active} entity={entity} onSelect={() => select({ kind: 'entity', id: entity.id })} />
         </group>
       ))}
 
@@ -506,8 +569,14 @@ export function MapViewport3D(props: MapViewport3DProps) {
   }
 
   return (
-    <div className="map-viewport" aria-label="Interactive three-dimensional historical map">
+    <div className="map-viewport" data-environment={props.presentation ?? 'terrain'} aria-label="Interactive three-dimensional historical map">
+      {props.immersive && props.terrainTextureAsset && (
+        <div className="story-atmosphere" aria-hidden="true" key={props.terrainTextureAsset}>
+          <img src={`${import.meta.env.BASE_URL}${props.terrainTextureAsset}`} alt="" />
+        </div>
+      )}
       <Canvas camera={{ position: [0, 5.6, 6.3], fov: 48 }} dpr={[1, 1.75]}>
+        <StoryFraming immersive={Boolean(props.immersive)} />
         <Suspense fallback={null}>
           <AtlasScene {...props} />
           <MapFigureLayout />

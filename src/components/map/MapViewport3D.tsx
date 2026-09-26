@@ -326,8 +326,9 @@ function ElementalPresence({ entityId }: { entityId: string }) {
 
 // Keep illustrated actors readable without enlarging them with cinematic framing.
 function useFigureDistanceFactor(immersive?: boolean) {
-  const size = useThree((state) => state.size);
-  return immersive ? 5 * (size.width > size.height ? 1.45 / 1.65 : 1 / 1.12) : 5;
+  // Cinematic cameras can approach anchors closely. Keep tour portraits at their
+  // authored screen size so crowded chapters still have room for every name.
+  return immersive ? undefined : 5;
 }
 
 function CharacterFigure({ entity, active, immersive, readOnly, onSelect }: { entity: LoreEntity; active: boolean; immersive?: boolean; readOnly?: boolean; onSelect: () => void }) {

@@ -66,7 +66,7 @@ export function EraPage() {
           <p>{guide.description}</p>
         </section>
       )}
-      <Link className="primary-link" to={`/map?era=${era.slug}`}>Open this era in the atlas</Link>
+      <Link className="primary-link" to={`/?era=${era.slug}`}>Choose this era’s tour</Link>
     </main>
   );
 }
@@ -77,7 +77,7 @@ export function NotFound() {
       <p className="eyebrow">Archive error</p>
       <h1>Record not found</h1>
       <p>The requested record is not present in the validated static dataset.</p>
-      <Link className="primary-link" to="/map?era=black-empire">Return to the atlas</Link>
+      <Link className="primary-link" to="/">Choose a tour</Link>
     </main>
   );
 }

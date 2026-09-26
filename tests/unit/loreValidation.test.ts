@@ -3,11 +3,42 @@ import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { loadDataset } from '../../src/lib/lore/loadDataset';
 import { validateDatasetReferences } from '../../src/lib/lore/validateDataset';
-import { geometryIds } from '../../src/lib/lore/loadGeometry';
+import { geometryIds, loadGeometry } from '../../src/lib/lore/loadGeometry';
 import { entityVisibleInEra } from '../../src/lib/lore/eraVisibility';
 import { mapStateSchema, spatialStateSchema } from '../../src/domain/schemas/loreSchemas';
 
 describe('lore dataset', () => {
+  it('keeps Era 5 sites on the intended sides of the sea and in source-backed north-south order', () => {
+    const point = (id: string): [number, number] => {
+      const feature = loadGeometry(id)?.features.find((item) => item.id === id);
+      expect(feature?.geometry.type, id).toBe('Point');
+      if (feature?.geometry.type !== 'Point') throw new Error(`Missing point: ${id}`);
+      return feature.geometry.coordinates as [number, number];
+    };
+    const hyjal = point('hyjal-era-five-focus-research');
+    const secondWell = point('hyjal-second-well-focus-research');
+    const nordrassil = point('nordrassil-focus-research');
+    const quelthalas = point('quelthalas-focus-research');
+    const sunwell = point('sunwell-focus-research');
+    const amani = point('amani-focus-research');
+    const strom = point('strom-focus-research');
+    const ironforge = point('ironforge-focus-research');
+    const grimBatol = point('grim-batol-focus-research');
+    const thaurissan = point('thaurissan-city-focus-research');
+
+    expect([hyjal, secondWell, nordrassil].every(([x]) => x < 4000)).toBe(true);
+    expect(Math.abs(hyjal[0] - secondWell[0])).toBeLessThan(500);
+    expect(Math.abs(hyjal[1] - secondWell[1])).toBeLessThan(500);
+    expect([quelthalas, sunwell, amani, strom, ironforge, grimBatol, thaurissan]
+      .every(([x]) => x >= 7000)).toBe(true);
+    expect(sunwell[1]).toBeGreaterThan(quelthalas[1]);
+    expect(quelthalas[1]).toBeGreaterThan(strom[1]);
+    expect(amani[1]).toBeGreaterThan(strom[1]);
+    expect(strom[1]).toBeGreaterThan(grimBatol[1]);
+    expect(grimBatol[1]).toBeGreaterThan(ironforge[1]);
+    expect(ironforge[1]).toBeGreaterThan(thaurissan[1]);
+  });
+
   it('keeps source-book naming out of guided narration and chapter titles', () => {
     const data = loadDataset();
     for (const node of data.storyNodes) {
@@ -361,7 +392,7 @@ describe('lore dataset', () => {
       && Boolean(state.cartographyLabel)
       && Boolean(state.interpretationNote))).toBe(true);
     expect(new Set(mapStates.map((state) => state.terrainTextureAsset))).toEqual(new Set([
-      'textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-atlas.research.webp',
+      'textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-atlas.research.webp',
     ]));
     expect(mapStates.every((state) => {
       const texture = state.terrainTextureAsset;

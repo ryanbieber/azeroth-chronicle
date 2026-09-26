@@ -8,10 +8,10 @@ This repository implements the [product and technical specification](./docs/azer
 
 ## What works now
 
-- Cinematic landing page with an accessible full-history tour that chains every completed guided era
+- Cinematic landing page with a choice of one era tour or an uninterrupted full-history tour
 - Vite, React, and TypeScript application shell
-- React Three Fiber atlas with orbit, pan, zoom, generated terrain, relational cosmography, uncertainty-aware regions, and sourced site markers
-- Ten available eras in the top navigation, beginning with a complete Cosmic Origins research prologue
+- React Three Fiber guided scenes with generated terrain, relational cosmography, uncertainty-aware regions, and sourced site markers; public camera and map-object interaction is disabled
+- Ten guided eras selectable from the landing page, beginning with a complete Cosmic Origins research prologue
 - Separate Zustand stores for era, layers, selection, story, and source filters
 - TypeScript domain contracts and Zod schemas
 - File-backed repository adapter with cross-record validation
@@ -35,13 +35,9 @@ pnpm dev
 
 Open the URL printed by Vite. Useful routes include:
 
-- `/map?era=black-empire`
-- `/map?era=ordering-of-azeroth`
-- `/map?era=ancient-civilizations`
-- `/map?era=war-of-the-ancients`
-- `/map?era=long-vigil-new-kingdoms`
-- `/map?era=rise-of-the-horde`
-- `/map?era=black-empire&selected=battle:elemental-assault-on-black-empire`
+- `/map?era=cosmic-origins&tour=full`
+- `/map?era=long-vigil-new-kingdoms&tour=era`
+- `/archive`
 - `/eras/black-empire`
 - `/battles/elemental-assault-on-black-empire`
 

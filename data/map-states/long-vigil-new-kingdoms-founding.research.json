@@ -5,8 +5,8 @@
   "presentation": "terrain",
   "cartographyLabel": "INTERPRETIVE MIGRATION AND FOUNDING STATE",
   "interpretationNote": "This state spans centuries of migration and political foundation. The voyage line and influence regions communicate relationships and sequence, not a single-date border survey, exact sailing track, or claim that all travelers moved together.",
-  "terrainTextureAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-atlas.research.webp",
-  "terrainHeightAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-height.research.webp",
+  "terrainTextureAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-atlas.research.webp",
+  "terrainHeightAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-height.research.webp",
   "geometryIds": [
     "maelstrom-aftermath-focus-research",
     "hyjal-era-five-focus-research", "nordrassil-focus-research", "long-vigil-kaldorei-focus-research",

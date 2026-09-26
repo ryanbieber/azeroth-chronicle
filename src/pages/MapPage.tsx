@@ -5,17 +5,16 @@ import { staticLoreRepository } from '../domain/repositories/StaticLoreRepositor
 import { adaptGeometry } from '../lib/map/geometryAdapter';
 import { useAtlasUrlState } from '../lib/map/useAtlasUrlState';
 import { useMapViewStore } from '../app/state/mapViewStore';
-import { useSelectionStore } from '../app/state/selectionStore';
-import { EntityDossier } from '../components/dossier/EntityDossier';
 import { resolveEraMapState } from '../lib/map/resolveEraMapState';
 import { useStoryStore } from '../app/state/storyStore';
 import { endStoryGuide } from '../lib/story/storyRuntime';
-import { useNavigate } from 'react-router-dom';
+import { Navigate, useNavigate, useSearchParams } from 'react-router-dom';
 import { useState } from 'react';
 
 export function MapPage() {
   const [voiceControlsHost, setVoiceControlsHost] = useState<HTMLDivElement | null>(null);
   const navigate = useNavigate();
+  const [params] = useSearchParams();
   const dataset = staticLoreRepository.getDataset();
   useAtlasUrlState(dataset);
   const eraId = useEraStore((state) => state.eraId);
@@ -24,9 +23,6 @@ export function MapPage() {
   const activeNodeId = useStoryStore((state) => state.nodeId);
   const immersive = Boolean(activeNodeId && activeGuideId === era?.storyGuideId);
   const requestedMapStateId = useMapViewStore((state) => state.mapStateId);
-  const selection = useSelectionStore((state) => state.selection);
-  const selectionOrigin = useSelectionStore((state) => state.selectionOrigin);
-  const select = useSelectionStore((state) => state.select);
   const mapState = era ? resolveEraMapState(dataset, era, requestedMapStateId) : undefined;
   const worldspace = dataset.worldspaces.find((item) => item.id === mapState?.worldspaceId);
   const visibleBattles = staticLoreRepository.listBattlesForEra(era?.id ?? '')
@@ -41,10 +37,6 @@ export function MapPage() {
   const visibleSpatialStates = dataset.spatialStates.filter((state) => state.eraId === era?.id
     && visibleEntityIds.has(state.entityId)
     && state.worldspaceId === worldspace?.id);
-  const selectedEntity = selection?.kind === 'entity'
-    ? visibleEntities.find((entity) => entity.id === selection.id)
-    : undefined;
-
   if (!era || !mapState || !worldspace) {
     return <main className="empty-state">No validated era fixture is available.</main>;
   }
@@ -64,6 +56,9 @@ export function MapPage() {
     mapState.terrainTextureAsset ? 6.67 : 10,
   );
   const geometry = allGeometry;
+  if (params.get('tour') !== 'full' && params.get('tour') !== 'era') {
+    return <Navigate to={`/?era=${era.slug}`} replace />;
+  }
 
   return (
     <main className={`atlas-layout${immersive ? ' is-story-active' : ''}`}>
@@ -74,17 +69,18 @@ export function MapPage() {
             <div className="story-world-actions">
             <div ref={setVoiceControlsHost} />
             <button type="button" onClick={() => {
-              navigate(`/map?era=${era.slug}`, { replace: true });
+              navigate('/', { replace: true });
               endStoryGuide();
-            }}>Return to atlas</button>
+            }}>Leave tour</button>
             </div>
           </header>
         )}
         <MapViewport3D
           immersive={immersive}
+          readOnly
           battles={visibleBattles}
           entities={visibleEntities}
-          fallbackDossierPath={`/eras/${era.slug}`}
+          fallbackDossierPath="/archive"
           geometry={geometry}
           routeRecords={visibleRoutes}
           spatialStates={visibleSpatialStates}
@@ -107,12 +103,6 @@ export function MapPage() {
           <div className="story-overlay">
             <StoryGuidePanel guideId={era.storyGuideId} showLauncher={false} voiceControlsHost={voiceControlsHost} />
           </div>
-        )}
-        {selectedEntity && selectionOrigin !== 'story' && (
-          <aside className="selection-overlay" aria-label="Selected atlas record">
-            <button className="selection-close" type="button" onClick={() => select(null)} aria-label="Close dossier">×</button>
-            <EntityDossier entity={selectedEntity} compact />
-          </aside>
         )}
       </section>
 

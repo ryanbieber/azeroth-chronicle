@@ -1,4 +1,5 @@
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
+import { useState } from 'react';
 import { useEraStore } from '../app/state/eraStore';
 import { staticLoreRepository } from '../domain/repositories/StaticLoreRepository';
 import { beginStoryGuide, endStoryGuide } from '../lib/story/storyRuntime';
@@ -22,14 +23,17 @@ export function LandingPage() {
   const eras = staticLoreRepository.listEras();
   const guidedEras = eras.filter((era) => era.storyGuideId);
   const firstEra = guidedEras[0];
+  const [chosenEraId, setChosenEraId] = useState(() => guidedEras.find((era) => era.slug === params.get('era'))?.id ?? firstEra?.id ?? '');
   const tourComplete = params.get('tour') === 'complete';
+  const eraComplete = params.get('tour') === 'era-complete';
 
-  const beginFullTour = () => {
-    if (!firstEra?.storyGuideId) return;
+  const beginTour = (eraId: string, mode: 'full' | 'era') => {
+    const chosenEra = guidedEras.find((item) => item.id === eraId);
+    if (!chosenEra?.storyGuideId) return;
     endStoryGuide();
-    setEra(firstEra.id);
-    beginStoryGuide(firstEra.storyGuideId);
-    navigate(`/map?era=${firstEra.slug}&tour=full`);
+    setEra(chosenEra.id);
+    beginStoryGuide(chosenEra.storyGuideId);
+    navigate(`/map?era=${chosenEra.slug}&tour=${mode}`);
   };
 
   return (
@@ -54,12 +58,21 @@ export function LandingPage() {
             You have reached the edge of the known history. New eras will join this path as their research is completed.
           </p>
         )}
+        {eraComplete && <p className="landing-tour-complete" role="status">That era’s story is complete. Choose another era or follow the full history.</p>}
         <div className="landing-actions">
-          <button className="landing-tour-button" type="button" onClick={beginFullTour} disabled={!firstEra}>
+          <button className="landing-tour-button" type="button" onClick={() => firstEra && beginTour(firstEra.id, 'full')} disabled={!firstEra}>
             <span>Full tour of the history</span>
             <small>{guidedEras.length} completed eras · begins with Cosmic Origins</small>
           </button>
-          <Link to="/map?era=cosmic-origins">Explore the atlas freely</Link>
+          <div className="landing-era-choice">
+            <label htmlFor="choose-era-tour">Choose an era to tour</label>
+            <div>
+              <select id="choose-era-tour" value={chosenEraId} onChange={(event) => setChosenEraId(event.target.value)}>
+                {guidedEras.map((guidedEra) => <option key={guidedEra.id} value={guidedEra.id}>{guidedEra.name}</option>)}
+              </select>
+              <button type="button" onClick={() => beginTour(chosenEraId, 'era')} disabled={!chosenEraId}>Tour this era</button>
+            </div>
+          </div>
           <Link to="/archive">Browse the illustrated archive</Link>
         </div>
       </section>

@@ -5,8 +5,8 @@
   "presentation": "terrain",
   "cartographyLabel": "INTERPRETIVE EARLY POST-SUNDERING STATE",
   "interpretationNote": "This state inherits the separate post-Sundering terrain from Era 4 and concentrates on Hyjal. Character points are narrative anchors; the map does not imply that the postwar kaldorei or their leaders remained at one permanent coordinate.",
-  "terrainTextureAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-atlas.research.webp",
-  "terrainHeightAsset": "textures/azeroth/war-of-the-ancients-sundered-map-research/terrain-height.research.webp",
+  "terrainTextureAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-atlas.research.webp",
+  "terrainHeightAsset": "textures/azeroth/rise-of-the-horde-post-sundering-map-research/terrain-height.research.webp",
   "geometryIds": [
     "maelstrom-aftermath-focus-research",
     "hyjal-era-five-focus-research", "hyjal-second-well-focus-research", "nordrassil-focus-research",
